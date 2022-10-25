@@ -1,0 +1,127 @@
+#mode settings:
+#  loop: false
+#  autoplay: false
+#  disabled: false
+
+#state defaults:
+#  bufferingSpinner: false
+#  autohide: false
+#  canhide: true
+#  controls: false
+#  play: false
+#  pause: false
+#  replay: false
+#  shadow: true
+#  showOnStateChange: false
+#  hideOnStateChange: false
+
+modes:
+  video:
+    idle:
+      controls: false
+      play: true
+
+    buffering:
+      bufferingSpinner: true
+      canhide: false
+      controls: false
+      showOnStateChange: true
+      muteAlwaysVisible: true
+
+    paused:
+      controls: false
+      play: true
+
+    playing:
+      autohide: true
+      controls: false
+      pause: false
+      shadow: false
+      showOnStateChange: false
+      hideOnStateChange: true
+      muteAlwaysVisible: true
+
+    ended:
+      canhide: false
+      controls: false
+      replay: true
+      showOnStateChange: true
+      hideOnStateChange: false
+      muteAlwaysVisible: true
+
+  gif:
+    settings:
+      loop: true
+
+    idle:
+      play: true
+      shadow: false
+      canhide: false
+      showOnStateChange: true
+
+    buffering:
+      bufferingSpinner: true
+      canhide: false
+      shadow: false
+      showOnStateChange: true
+
+    paused:
+      play: true
+      shadow: false
+      canhide: false
+      showOnStateChange: true
+
+    playing:
+      shadow: false
+      canhide: false
+
+  ad:
+    idle:
+      controls: false
+      play: true
+
+    buffering:
+      bufferingSpinner: true
+      canhide: false
+      controls: false
+      showOnStateChange: true
+
+    paused:
+      controls: true
+      play: true
+
+    playing:
+      autohide: true
+      controls: true
+      pause: true
+      hideOnStateChange: true
+
+    ended:
+      controls: true
+      replay: true
+      showOnStateChange: true
+      callToAction: true
+
+  mediaSubmit:
+    idle:
+      play: true
+
+    buffering:
+      bufferingSpinner: true
+      canhide: false
+      showOnStateChange: true
+
+    paused:
+      play: true
+
+    playing:
+      autohide: true
+      pause: true
+
+    ended:
+      replay: true
+      showOnStateChange: true
+
+  noUi:
+    settings:
+      disabled: true

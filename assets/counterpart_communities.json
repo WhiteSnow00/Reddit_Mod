@@ -1,0 +1,2425 @@
+{
+    "regions": [
+        {
+            "language": "de",
+            "mappings": [
+                {
+                    "subreddit_name": "PCBaumeister",
+                    "subreddit_counterpart": "buildapcforme"
+                },
+                {
+                    "subreddit_name": "einfach_posten",
+                    "subreddit_counterpart": "just_post"
+                },
+                {
+                    "subreddit_name": "oculusquest2deutsch",
+                    "subreddit_counterpart": "OculusQuest2"
+                },
+                {
+                    "subreddit_name": "oculusquest2deutsch",
+                    "subreddit_counterpart": "OculusQuest"
+                },
+                {
+                    "subreddit_name": "oculusquest2deutsch",
+                    "subreddit_counterpart": "Oculus"
+                },
+                {
+                    "subreddit_name": "3DDruck",
+                    "subreddit_counterpart": "3Dprinting"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "vegetablegardening"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "Permaculture"
+                },
+                {
+                    "subreddit_name": "Automobil",
+                    "subreddit_counterpart": "Justrolledintotheshop"
+                },
+                {
+                    "subreddit_name": "germanrap",
+                    "subreddit_counterpart": "hiphopheads"
+                },
+                {
+                    "subreddit_name": "germanrap",
+                    "subreddit_counterpart": "rap"
+                },
+                {
+                    "subreddit_name": "startupdach",
+                    "subreddit_counterpart": "startups"
+                },
+                {
+                    "subreddit_name": "startupdach",
+                    "subreddit_counterpart": "startup"
+                },
+                {
+                    "subreddit_name": "startupdach",
+                    "subreddit_counterpart": "sweatystartup"
+                },
+                {
+                    "subreddit_name": "startupdach",
+                    "subreddit_counterpart": "startup_ideas"
+                },
+                {
+                    "subreddit_name": "600euro",
+                    "subreddit_counterpart": "infowarriorrides"
+                },
+                {
+                    "subreddit_name": "BinIchDasArschloch",
+                    "subreddit_counterpart": "amithecuntrag"
+                },
+                {
+                    "subreddit_name": "BinIchDasArschloch",
+                    "subreddit_counterpart": "AmItheIdiot"
+                },
+                {
+                    "subreddit_name": "BinIchDasArschloch",
+                    "subreddit_counterpart": "AmITheKaren"
+                },
+                {
+                    "subreddit_name": "600euro",
+                    "subreddit_counterpart": "HermanCainAward"
+                },
+                {
+                    "subreddit_name": "Finanzen",
+                    "subreddit_counterpart": "EuropeFire"
+                },
+                {
+                    "subreddit_name": "OlympischeSpiele",
+                    "subreddit_counterpart": "olympics"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "food"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "eatcheapandhealthy"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "recipes"
+                },
+                {
+                    "subreddit_name": "seltsamenachrichten",
+                    "subreddit_counterpart": "offbeat"
+                },
+                {
+                    "subreddit_name": "seltsamenachrichten",
+                    "subreddit_counterpart": "newsoftheweird"
+                },
+                {
+                    "subreddit_name": "IdiotenInAutos",
+                    "subreddit_counterpart": "Idiotsincars"
+                },
+                {
+                    "subreddit_name": "Augenbleiche",
+                    "subreddit_counterpart": "cute"
+                },
+                {
+                    "subreddit_name": "FrauenBL",
+                    "subreddit_counterpart": "WomensSoccer"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "birding"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "birdpics"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "Ornithology"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "duck"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "birds"
+                },
+                {
+                    "subreddit_name": "BirdingGermany",
+                    "subreddit_counterpart": "birdsofprey"
+                },
+                {
+                    "subreddit_name": "lostarkDE",
+                    "subreddit_counterpart": "lostark"
+                },
+                {
+                    "subreddit_name": "lostarkDE",
+                    "subreddit_counterpart": "lostarkguild"
+                },
+                {
+                    "subreddit_name": "lostarkDE",
+                    "subreddit_counterpart": "lostarkguilds"
+                },
+                {
+                    "subreddit_name": "musik",
+                    "subreddit_counterpart": "musicians"
+                },
+                {
+                    "subreddit_name": "metallmaimais",
+                    "subreddit_counterpart": "metalmemes"
+                },
+                {
+                    "subreddit_name": "metallmaimais",
+                    "subreddit_counterpart": "okbuddymetal"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "anime"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "animedubs"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "myanimelist"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "nisekoi"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "bokutachinoremake"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "fumetsunoanatae"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "animenews"
+                },
+                {
+                    "subreddit_name": "kpopde",
+                    "subreddit_counterpart": "kpop"
+                },
+                {
+                    "subreddit_name": "kpopde",
+                    "subreddit_counterpart": "kpoppers"
+                },
+                {
+                    "subreddit_name": "kpopde",
+                    "subreddit_counterpart": "got7"
+                },
+                {
+                    "subreddit_name": "kpopde",
+                    "subreddit_counterpart": "kpopnoir"
+                },
+                {
+                    "subreddit_name": "kpopde",
+                    "subreddit_counterpart": "monstax"
+                },
+                {
+                    "subreddit_name": "southparkde",
+                    "subreddit_counterpart": "southpark"
+                },
+                {
+                    "subreddit_name": "diesimpsons",
+                    "subreddit_counterpart": "thesimpsons"
+                },
+                {
+                    "subreddit_name": "diesimpsons",
+                    "subreddit_counterpart": "simpsonsshitposting"
+                },
+                {
+                    "subreddit_name": "strangerthingsde",
+                    "subreddit_counterpart": "strangerthings"
+                },
+                {
+                    "subreddit_name": "selfpublish_de",
+                    "subreddit_counterpart": "selfpublish"
+                },
+                {
+                    "subreddit_name": "selfpublish_de",
+                    "subreddit_counterpart": "publishing"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "suggestmeabook"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "booksuggestions"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "yalit"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "books"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "mm_romancebooks"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "printsf"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "fantasy"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "romancebooks"
+                },
+                {
+                    "subreddit_name": "buecher",
+                    "subreddit_counterpart": "horrorlit"
+                },
+                {
+                    "subreddit_name": "harrypotterde",
+                    "subreddit_counterpart": "harrypotter"
+                },
+                {
+                    "subreddit_name": "harrypotterde",
+                    "subreddit_counterpart": "harrypotterbooks"
+                },
+                {
+                    "subreddit_name": "harrypotterde",
+                    "subreddit_counterpart": "harrypottermemes"
+                },
+                {
+                    "subreddit_name": "harrypotterde",
+                    "subreddit_counterpart": "hpmor"
+                },
+                {
+                    "subreddit_name": "harrypotterde",
+                    "subreddit_counterpart": "hpfanfiction"
+                },
+                {
+                    "subreddit_name": "filme",
+                    "subreddit_counterpart": "imdbfilmgeneral"
+                },
+                {
+                    "subreddit_name": "filme",
+                    "subreddit_counterpart": "movies"
+                },
+                {
+                    "subreddit_name": "filme",
+                    "subreddit_counterpart": "flicks"
+                },
+                {
+                    "subreddit_name": "filme",
+                    "subreddit_counterpart": "film"
+                },
+                {
+                    "subreddit_name": "filme",
+                    "subreddit_counterpart": "moviesuggestions"
+                },
+                {
+                    "subreddit_name": "streamen",
+                    "subreddit_counterpart": "netflix"
+                },
+                {
+                    "subreddit_name": "streamen",
+                    "subreddit_counterpart": "television"
+                },
+                {
+                    "subreddit_name": "streamen",
+                    "subreddit_counterpart": "bestofnetflix"
+                },
+                {
+                    "subreddit_name": "streamen",
+                    "subreddit_counterpart": "tvplus"
+                },
+                {
+                    "subreddit_name": "dokumentationen",
+                    "subreddit_counterpart": "documentaries"
+                },
+                {
+                    "subreddit_name": "dokumentationen",
+                    "subreddit_counterpart": "breadtube"
+                },
+                {
+                    "subreddit_name": "dokumentationen",
+                    "subreddit_counterpart": "videos"
+                },
+                {
+                    "subreddit_name": "mediathek",
+                    "subreddit_counterpart": "documentaries"
+                },
+                {
+                    "subreddit_name": "mediathek",
+                    "subreddit_counterpart": "obscuremedia"
+                },
+                {
+                    "subreddit_name": "mediathek",
+                    "subreddit_counterpart": "lostmedia"
+                },
+                {
+                    "subreddit_name": "mediathek",
+                    "subreddit_counterpart": "filmclubph"
+                },
+                {
+                    "subreddit_name": "mediathek",
+                    "subreddit_counterpart": "film"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "avengers"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "makeminemarvel"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "marvelstudiosspoilers"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "marvelstudios"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "marvelstudiosplus"
+                },
+                {
+                    "subreddit_name": "marvelde",
+                    "subreddit_counterpart": "marvel"
+                },
+                {
+                    "subreddit_name": "kriegdersterne",
+                    "subreddit_counterpart": "starwarsleaks"
+                },
+                {
+                    "subreddit_name": "kriegdersterne",
+                    "subreddit_counterpart": "starwarscantina"
+                },
+                {
+                    "subreddit_name": "kriegdersterne",
+                    "subreddit_counterpart": "starwars"
+                },
+                {
+                    "subreddit_name": "kriegdersterne",
+                    "subreddit_counterpart": "starwarseu"
+                },
+                {
+                    "subreddit_name": "kriegdersterne",
+                    "subreddit_counterpart": "starwarscomics"
+                },
+                {
+                    "subreddit_name": "katzengruppe",
+                    "subreddit_counterpart": "kitten"
+                },
+                {
+                    "subreddit_name": "katzengruppe",
+                    "subreddit_counterpart": "catsenjoyingpets"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "catpics"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "catpictures"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "catsbeingcats"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "blackcats"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "tuxedocats"
+                },
+                {
+                    "subreddit_name": "hundeschule",
+                    "subreddit_counterpart": "dogs"
+                },
+                {
+                    "subreddit_name": "hundeschule",
+                    "subreddit_counterpart": "dogtraining"
+                },
+                {
+                    "subreddit_name": "hundeschule",
+                    "subreddit_counterpart": "reactivedogs"
+                },
+                {
+                    "subreddit_name": "hundeschule",
+                    "subreddit_counterpart": "opendogtraining"
+                },
+                {
+                    "subreddit_name": "hundeschule",
+                    "subreddit_counterpart": "dogadvice"
+                },
+                {
+                    "subreddit_name": "de_podcasts",
+                    "subreddit_counterpart": "podcasts"
+                },
+                {
+                    "subreddit_name": "de_podcasts",
+                    "subreddit_counterpart": "podcast"
+                },
+                {
+                    "subreddit_name": "bushcraft_de",
+                    "subreddit_counterpart": "bushcraft"
+                },
+                {
+                    "subreddit_name": "bushcraft_de",
+                    "subreddit_counterpart": "survival"
+                },
+                {
+                    "subreddit_name": "verfluchtekommentare",
+                    "subreddit_counterpart": "cursedcomments"
+                },
+                {
+                    "subreddit_name": "memesindeutsch",
+                    "subreddit_counterpart": "memes_of_the_dank"
+                },
+                {
+                    "subreddit_name": "memesindeutsch",
+                    "subreddit_counterpart": "funnymemes"
+                },
+                {
+                    "subreddit_name": "memesindeutsch",
+                    "subreddit_counterpart": "memes"
+                },
+                {
+                    "subreddit_name": "deutschememes",
+                    "subreddit_counterpart": "funnymemes"
+                },
+                {
+                    "subreddit_name": "deutschememes",
+                    "subreddit_counterpart": "comedyhell"
+                },
+                {
+                    "subreddit_name": "deutschememes",
+                    "subreddit_counterpart": "meme"
+                },
+                {
+                    "subreddit_name": "deutschememes",
+                    "subreddit_counterpart": "memes_of_the_dank"
+                },
+                {
+                    "subreddit_name": "deutschememes",
+                    "subreddit_counterpart": "okbuddyretard"
+                },
+                {
+                    "subreddit_name": "germanmemes",
+                    "subreddit_counterpart": "meme"
+                },
+                {
+                    "subreddit_name": "germanmemes",
+                    "subreddit_counterpart": "limenade"
+                },
+                {
+                    "subreddit_name": "germanmemes",
+                    "subreddit_counterpart": "memes_of_the_dank"
+                },
+                {
+                    "subreddit_name": "germanmemes",
+                    "subreddit_counterpart": "funnymemes"
+                },
+                {
+                    "subreddit_name": "germanmemes",
+                    "subreddit_counterpart": "dankmeme"
+                },
+                {
+                    "subreddit_name": "ichbin40undlustig",
+                    "subreddit_counterpart": "terriblefacebookmemes"
+                },
+                {
+                    "subreddit_name": "ichbin14unddasisttief",
+                    "subreddit_counterpart": "im14andthisisdeep"
+                },
+                {
+                    "subreddit_name": "ichbin14unddasisttief",
+                    "subreddit_counterpart": "iamveryedgy"
+                },
+                {
+                    "subreddit_name": "gekte",
+                    "subreddit_counterpart": "dankmemesylyl"
+                },
+                {
+                    "subreddit_name": "gekte",
+                    "subreddit_counterpart": "funnymemes"
+                },
+                {
+                    "subreddit_name": "wortwitzkasse",
+                    "subreddit_counterpart": "puns"
+                },
+                {
+                    "subreddit_name": "wortwitzkasse",
+                    "subreddit_counterpart": "punny"
+                },
+                {
+                    "subreddit_name": "wortwitzkasse",
+                    "subreddit_counterpart": "3amjokes"
+                },
+                {
+                    "subreddit_name": "wortwitzkasse",
+                    "subreddit_counterpart": "dadjokes"
+                },
+                {
+                    "subreddit_name": "dingore",
+                    "subreddit_counterpart": "osha"
+                },
+                {
+                    "subreddit_name": "dingore",
+                    "subreddit_counterpart": "redneckengineering"
+                },
+                {
+                    "subreddit_name": "wissenschaftsmemes",
+                    "subreddit_counterpart": "sciencememes"
+                },
+                {
+                    "subreddit_name": "wissenschaftsmemes",
+                    "subreddit_counterpart": "physicsmemes"
+                },
+                {
+                    "subreddit_name": "wissenschaftsmemes",
+                    "subreddit_counterpart": "chemistrymemes"
+                },
+                {
+                    "subreddit_name": "wissenschaftsmemes",
+                    "subreddit_counterpart": "okbuddyphd"
+                },
+                {
+                    "subreddit_name": "wissenschaftsmemes",
+                    "subreddit_counterpart": "biologymemes"
+                },
+                {
+                    "subreddit_name": "wasletztepreis",
+                    "subreddit_counterpart": "crackheadcraigslist"
+                },
+                {
+                    "subreddit_name": "nostalgie",
+                    "subreddit_counterpart": "90s"
+                },
+                {
+                    "subreddit_name": "nostalgie",
+                    "subreddit_counterpart": "nostalgia"
+                },
+                {
+                    "subreddit_name": "nostalgie",
+                    "subreddit_counterpart": "80s"
+                },
+                {
+                    "subreddit_name": "nostalgie",
+                    "subreddit_counterpart": "zillennials"
+                },
+                {
+                    "subreddit_name": "pokemongogermany",
+                    "subreddit_counterpart": "pokemongofriends"
+                },
+                {
+                    "subreddit_name": "pokemongogermany",
+                    "subreddit_counterpart": "pokemongoraidinvites"
+                },
+                {
+                    "subreddit_name": "pokemongogermany",
+                    "subreddit_counterpart": "pokemongoraids"
+                },
+                {
+                    "subreddit_name": "pokemongogermany",
+                    "subreddit_counterpart": "pokemongomystic"
+                },
+                {
+                    "subreddit_name": "pokemongogermany",
+                    "subreddit_counterpart": "pokeraid"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemon"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "truepokemon"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemonlegendsarceus"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemonromhacks"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemonbdsp"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemoncirclejerk"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemonmemes"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokememes"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemongo"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokeleaks"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "thesilphroad"
+                },
+                {
+                    "subreddit_name": "pokemonde",
+                    "subreddit_counterpart": "pokemonemerald"
+                },
+                {
+                    "subreddit_name": "dsa_rpg",
+                    "subreddit_counterpart": "dungeonmasters"
+                },
+                {
+                    "subreddit_name": "germanrpg",
+                    "subreddit_counterpart": "lfg"
+                },
+                {
+                    "subreddit_name": "germanrpg",
+                    "subreddit_counterpart": "dungeonmasters"
+                },
+                {
+                    "subreddit_name": "brettspiele",
+                    "subreddit_counterpart": "boardgames"
+                },
+                {
+                    "subreddit_name": "brettspiele",
+                    "subreddit_counterpart": "tabletopgamedesign"
+                },
+                {
+                    "subreddit_name": "brettspiele",
+                    "subreddit_counterpart": "soloboardgaming"
+                },
+                {
+                    "subreddit_name": "brettspiele",
+                    "subreddit_counterpart": "tabletopsimulator"
+                },
+                {
+                    "subreddit_name": "simsde",
+                    "subreddit_counterpart": "thesims"
+                },
+                {
+                    "subreddit_name": "simsde",
+                    "subreddit_counterpart": "sims3"
+                },
+                {
+                    "subreddit_name": "simsde",
+                    "subreddit_counterpart": "sims2"
+                },
+                {
+                    "subreddit_name": "simsde",
+                    "subreddit_counterpart": "sims4"
+                },
+                {
+                    "subreddit_name": "luftraum",
+                    "subreddit_counterpart": "aviation"
+                },
+                {
+                    "subreddit_name": "luftraum",
+                    "subreddit_counterpart": "aerospace"
+                },
+                {
+                    "subreddit_name": "luftraum",
+                    "subreddit_counterpart": "weirdwings"
+                },
+                {
+                    "subreddit_name": "gtade",
+                    "subreddit_counterpart": "gtav"
+                },
+                {
+                    "subreddit_name": "gtade",
+                    "subreddit_counterpart": "gta"
+                },
+                {
+                    "subreddit_name": "gtade",
+                    "subreddit_counterpart": "grandtheftautov"
+                },
+                {
+                    "subreddit_name": "gtade",
+                    "subreddit_counterpart": "grandtheftautov_pc"
+                },
+                {
+                    "subreddit_name": "dachgaming",
+                    "subreddit_counterpart": "gamingnews"
+                },
+                {
+                    "subreddit_name": "dachgaming",
+                    "subreddit_counterpart": "gamernews"
+                },
+                {
+                    "subreddit_name": "dachgaming",
+                    "subreddit_counterpart": "pcgaming"
+                },
+                {
+                    "subreddit_name": "dachgaming",
+                    "subreddit_counterpart": "games"
+                },
+                {
+                    "subreddit_name": "dachgaming",
+                    "subreddit_counterpart": "gamesarelife"
+                },
+                {
+                    "subreddit_name": "pcgamingde",
+                    "subreddit_counterpart": "pcgaming"
+                },
+                {
+                    "subreddit_name": "pcgamingde",
+                    "subreddit_counterpart": "gamingnews"
+                },
+                {
+                    "subreddit_name": "pcgamingde",
+                    "subreddit_counterpart": "gamernews"
+                },
+                {
+                    "subreddit_name": "pcgamingde",
+                    "subreddit_counterpart": "games"
+                },
+                {
+                    "subreddit_name": "zocken",
+                    "subreddit_counterpart": "videogames"
+                },
+                {
+                    "subreddit_name": "zocken",
+                    "subreddit_counterpart": "pcgaming"
+                },
+                {
+                    "subreddit_name": "zocken",
+                    "subreddit_counterpart": "gamers"
+                },
+                {
+                    "subreddit_name": "zocken",
+                    "subreddit_counterpart": "gaming4gamers"
+                },
+                {
+                    "subreddit_name": "zocken",
+                    "subreddit_counterpart": "xboxone"
+                },
+                {
+                    "subreddit_name": "minecraftde",
+                    "subreddit_counterpart": "minecraftone"
+                },
+                {
+                    "subreddit_name": "minecraftde",
+                    "subreddit_counterpart": "minecraftinventions"
+                },
+                {
+                    "subreddit_name": "minecraftde",
+                    "subreddit_counterpart": "feedthebeast"
+                },
+                {
+                    "subreddit_name": "minecraftde",
+                    "subreddit_counterpart": "minecraft"
+                },
+                {
+                    "subreddit_name": "minecraftde",
+                    "subreddit_counterpart": "goldenageminecraft"
+                },
+                {
+                    "subreddit_name": "battlefieldde",
+                    "subreddit_counterpart": "battlefield2042"
+                },
+                {
+                    "subreddit_name": "battlefieldde",
+                    "subreddit_counterpart": "battlefield3"
+                },
+                {
+                    "subreddit_name": "battlefieldde",
+                    "subreddit_counterpart": "battlefield"
+                },
+                {
+                    "subreddit_name": "battlefieldde",
+                    "subreddit_counterpart": "battlefieldv"
+                },
+                {
+                    "subreddit_name": "dotade",
+                    "subreddit_counterpart": "dotamasterrace"
+                },
+                {
+                    "subreddit_name": "esports_de",
+                    "subreddit_counterpart": "esports"
+                },
+                {
+                    "subreddit_name": "lolde",
+                    "subreddit_counterpart": "lolesports"
+                },
+                {
+                    "subreddit_name": "counterstrikede",
+                    "subreddit_counterpart": "globaloffensive"
+                },
+                {
+                    "subreddit_name": "twitch_de",
+                    "subreddit_counterpart": "twitchstreams"
+                },
+                {
+                    "subreddit_name": "twitch_de",
+                    "subreddit_counterpart": "twitch"
+                },
+                {
+                    "subreddit_name": "twitch_de",
+                    "subreddit_counterpart": "twitch_startup"
+                },
+                {
+                    "subreddit_name": "fortnitede",
+                    "subreddit_counterpart": "fortnitebattleroyale"
+                },
+                {
+                    "subreddit_name": "fortnitede",
+                    "subreddit_counterpart": "fortniteswitch"
+                },
+                {
+                    "subreddit_name": "fortnitede",
+                    "subreddit_counterpart": "fortnitecompetitive"
+                },
+                {
+                    "subreddit_name": "fortnitede",
+                    "subreddit_counterpart": "fortnitebr"
+                },
+                {
+                    "subreddit_name": "overwatchde",
+                    "subreddit_counterpart": "owconsole"
+                },
+                {
+                    "subreddit_name": "overwatchde",
+                    "subreddit_counterpart": "overwatch"
+                },
+                {
+                    "subreddit_name": "overwatchde",
+                    "subreddit_counterpart": "competitiveoverwatch"
+                },
+                {
+                    "subreddit_name": "overwatchde",
+                    "subreddit_counterpart": "mercymains"
+                },
+                {
+                    "subreddit_name": "rainbowsixde",
+                    "subreddit_counterpart": "r6proleague"
+                },
+                {
+                    "subreddit_name": "rainbowsixde",
+                    "subreddit_counterpart": "rainbow6"
+                },
+                {
+                    "subreddit_name": "raketenliga",
+                    "subreddit_counterpart": "rocketleagueesports"
+                },
+                {
+                    "subreddit_name": "apexlegendsde",
+                    "subreddit_counterpart": "apexlegends"
+                },
+                {
+                    "subreddit_name": "nintendode",
+                    "subreddit_counterpart": "nintendo"
+                },
+                {
+                    "subreddit_name": "nintendode",
+                    "subreddit_counterpart": "nintendoswitch"
+                },
+                {
+                    "subreddit_name": "nintendode",
+                    "subreddit_counterpart": "tomorrow"
+                },
+                {
+                    "subreddit_name": "nintendode",
+                    "subreddit_counterpart": "casualnintendo"
+                },
+                {
+                    "subreddit_name": "nintendode",
+                    "subreddit_counterpart": "nintendomemes"
+                },
+                {
+                    "subreddit_name": "zeldade",
+                    "subreddit_counterpart": "truezelda"
+                },
+                {
+                    "subreddit_name": "zeldade",
+                    "subreddit_counterpart": "legendofzelda"
+                },
+                {
+                    "subreddit_name": "zeldade",
+                    "subreddit_counterpart": "zelda"
+                },
+                {
+                    "subreddit_name": "bitcoinde",
+                    "subreddit_counterpart": "bitcoin"
+                },
+                {
+                    "subreddit_name": "bitcoinde",
+                    "subreddit_counterpart": "btc"
+                },
+                {
+                    "subreddit_name": "bitcoinde",
+                    "subreddit_counterpart": "bitcoincash"
+                },
+                {
+                    "subreddit_name": "bitcoinde",
+                    "subreddit_counterpart": "bitcoincashsv"
+                },
+                {
+                    "subreddit_name": "kryptostrassenwetten",
+                    "subreddit_counterpart": "satoshistreetbets"
+                },
+                {
+                    "subreddit_name": "cardanode",
+                    "subreddit_counterpart": "cardano"
+                },
+                {
+                    "subreddit_name": "cardanode",
+                    "subreddit_counterpart": "cardanocoin"
+                },
+                {
+                    "subreddit_name": "cardanode",
+                    "subreddit_counterpart": "cardanomarkets"
+                },
+                {
+                    "subreddit_name": "cardanode",
+                    "subreddit_counterpart": "cardanotrading"
+                },
+                {
+                    "subreddit_name": "aktienanalyse",
+                    "subreddit_counterpart": "valueinvesting"
+                },
+                {
+                    "subreddit_name": "aktienanalyse",
+                    "subreddit_counterpart": "stockmarket"
+                },
+                {
+                    "subreddit_name": "aktienanalyse",
+                    "subreddit_counterpart": "fluentinfinance"
+                },
+                {
+                    "subreddit_name": "aktienanalyse",
+                    "subreddit_counterpart": "investing_discussion"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "stocks"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "investing"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "valueinvesting"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "dividends"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "investingforbeginners"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "nepalstock"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "etfs"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "stockmarket"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "trading"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "options"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "qyldgang"
+                },
+                {
+                    "subreddit_name": "aktien",
+                    "subreddit_counterpart": "trakstocks"
+                },
+                {
+                    "subreddit_name": "gme_schmelzunter",
+                    "subreddit_counterpart": "gme_meltdown"
+                },
+                {
+                    "subreddit_name": "spielstopp",
+                    "subreddit_counterpart": "deepfuckingvalue"
+                },
+                {
+                    "subreddit_name": "spielstopp",
+                    "subreddit_counterpart": "gme"
+                },
+                {
+                    "subreddit_name": "spielstopp",
+                    "subreddit_counterpart": "gmejungle"
+                },
+                {
+                    "subreddit_name": "wallstreetbetsger",
+                    "subreddit_counterpart": "wsbafterhours"
+                },
+                {
+                    "subreddit_name": "kickbasemanager",
+                    "subreddit_counterpart": "fantasycl"
+                },
+                {
+                    "subreddit_name": "american_football",
+                    "subreddit_counterpart": "xfl"
+                },
+                {
+                    "subreddit_name": "baseball_de",
+                    "subreddit_counterpart": "mlb"
+                },
+                {
+                    "subreddit_name": "baseball_de",
+                    "subreddit_counterpart": "baseball"
+                },
+                {
+                    "subreddit_name": "formel1",
+                    "subreddit_counterpart": "formula1"
+                },
+                {
+                    "subreddit_name": "formel1",
+                    "subreddit_counterpart": "formula1point5"
+                },
+                {
+                    "subreddit_name": "motorsport_de",
+                    "subreddit_counterpart": "motorsports"
+                },
+                {
+                    "subreddit_name": "motorsport_de",
+                    "subreddit_counterpart": "motorsportsreplays"
+                },
+                {
+                    "subreddit_name": "motorsport_de",
+                    "subreddit_counterpart": "rally"
+                },
+                {
+                    "subreddit_name": "radsport",
+                    "subreddit_counterpart": "peloton"
+                },
+                {
+                    "subreddit_name": "klettern",
+                    "subreddit_counterpart": "climbing"
+                },
+                {
+                    "subreddit_name": "klettern",
+                    "subreddit_counterpart": "alpinism"
+                },
+                {
+                    "subreddit_name": "platzreife",
+                    "subreddit_counterpart": "progolf"
+                },
+                {
+                    "subreddit_name": "platzreife",
+                    "subreddit_counterpart": "ultimategolf"
+                },
+                {
+                    "subreddit_name": "platzreife",
+                    "subreddit_counterpart": "golf"
+                },
+                {
+                    "subreddit_name": "tennis_de",
+                    "subreddit_counterpart": "tennis"
+                },
+                {
+                    "subreddit_name": "coronavirusdach",
+                    "subreddit_counterpart": "china_flu"
+                },
+                {
+                    "subreddit_name": "coronavirusdach",
+                    "subreddit_counterpart": "wuhan_flu"
+                },
+                {
+                    "subreddit_name": "coronavirusdach",
+                    "subreddit_counterpart": "coronavirus"
+                },
+                {
+                    "subreddit_name": "umwelt_de",
+                    "subreddit_counterpart": "climate"
+                },
+                {
+                    "subreddit_name": "umwelt_de",
+                    "subreddit_counterpart": "environment"
+                },
+                {
+                    "subreddit_name": "umwelt_de",
+                    "subreddit_counterpart": "climatechange"
+                },
+                {
+                    "subreddit_name": "umwelt_de",
+                    "subreddit_counterpart": "climateactionplan"
+                },
+                {
+                    "subreddit_name": "satire_de_en",
+                    "subreddit_counterpart": "nottheonion"
+                },
+                {
+                    "subreddit_name": "dokuliebe",
+                    "subreddit_counterpart": "documentaries"
+                },
+                {
+                    "subreddit_name": "erdkunde",
+                    "subreddit_counterpart": "geology"
+                },
+                {
+                    "subreddit_name": "erdkunde",
+                    "subreddit_counterpart": "geography"
+                },
+                {
+                    "subreddit_name": "biologie",
+                    "subreddit_counterpart": "biology"
+                },
+                {
+                    "subreddit_name": "biologie",
+                    "subreddit_counterpart": "zoology"
+                },
+                {
+                    "subreddit_name": "wissenschaft",
+                    "subreddit_counterpart": "sciences"
+                },
+                {
+                    "subreddit_name": "wissenschaft",
+                    "subreddit_counterpart": "scienceuncensored"
+                },
+                {
+                    "subreddit_name": "wissenschaft",
+                    "subreddit_counterpart": "everythingscience"
+                },
+                {
+                    "subreddit_name": "wissenschaft",
+                    "subreddit_counterpart": "science"
+                },
+                {
+                    "subreddit_name": "technologie",
+                    "subreddit_counterpart": "tech"
+                },
+                {
+                    "subreddit_name": "technologie",
+                    "subreddit_counterpart": "technology"
+                },
+                {
+                    "subreddit_name": "technologie",
+                    "subreddit_counterpart": "technews"
+                },
+                {
+                    "subreddit_name": "futurologie",
+                    "subreddit_counterpart": "futurology"
+                },
+                {
+                    "subreddit_name": "weltraum",
+                    "subreddit_counterpart": "space"
+                },
+                {
+                    "subreddit_name": "weltraum",
+                    "subreddit_counterpart": "spaceflight"
+                },
+                {
+                    "subreddit_name": "weltraum",
+                    "subreddit_counterpart": "marssociety"
+                },
+                {
+                    "subreddit_name": "weltraum",
+                    "subreddit_counterpart": "astrobiology"
+                },
+                {
+                    "subreddit_name": "weltraum",
+                    "subreddit_counterpart": "nasa"
+                },
+                {
+                    "subreddit_name": "raumfahrt",
+                    "subreddit_counterpart": "spaceflight"
+                },
+                {
+                    "subreddit_name": "raumfahrt",
+                    "subreddit_counterpart": "space"
+                },
+                {
+                    "subreddit_name": "raumfahrt",
+                    "subreddit_counterpart": "marssociety"
+                },
+                {
+                    "subreddit_name": "raumfahrt",
+                    "subreddit_counterpart": "nasa"
+                },
+                {
+                    "subreddit_name": "raumfahrt",
+                    "subreddit_counterpart": "spacexlounge"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "todayilearned"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "facts"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "til_uncensored"
+                },
+                {
+                    "subreddit_name": "wehrmacht",
+                    "subreddit_counterpart": "germanww2photos"
+                },
+                {
+                    "subreddit_name": "geschichte",
+                    "subreddit_counterpart": "history"
+                },
+                {
+                    "subreddit_name": "vor100jahren",
+                    "subreddit_counterpart": "100yearsago"
+                },
+                {
+                    "subreddit_name": "geschichtsmaimais",
+                    "subreddit_counterpart": "historymemes"
+                },
+                {
+                    "subreddit_name": "musizierende",
+                    "subreddit_counterpart": "metalmusicians"
+                },
+                {
+                    "subreddit_name": "musizierende",
+                    "subreddit_counterpart": "musicians"
+                },
+                {
+                    "subreddit_name": "apfel",
+                    "subreddit_counterpart": "apple"
+                },
+                {
+                    "subreddit_name": "apfel",
+                    "subreddit_counterpart": "iphone"
+                },
+                {
+                    "subreddit_name": "apfel",
+                    "subreddit_counterpart": "iphone13"
+                },
+                {
+                    "subreddit_name": "apfel",
+                    "subreddit_counterpart": "applepay"
+                },
+                {
+                    "subreddit_name": "bapcsalesgermany",
+                    "subreddit_counterpart": "buildapcsales"
+                },
+                {
+                    "subreddit_name": "bapcsalesgermany",
+                    "subreddit_counterpart": "buildapcsalesuk"
+                },
+                {
+                    "subreddit_name": "bapcsalesgermany",
+                    "subreddit_counterpart": "pcpartsales"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "buildapc"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "pcmasterracebuilds"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "pcbuild"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "pcbuildhelp"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "buildmeapc"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "phbuildapc"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "suggestapc"
+                },
+                {
+                    "subreddit_name": "pcbaumeister",
+                    "subreddit_counterpart": "gamingpc"
+                },
+                {
+                    "subreddit_name": "fenster",
+                    "subreddit_counterpart": "windows11"
+                },
+                {
+                    "subreddit_name": "fenster",
+                    "subreddit_counterpart": "windows"
+                },
+                {
+                    "subreddit_name": "fenster",
+                    "subreddit_counterpart": "windowsinsiders"
+                },
+                {
+                    "subreddit_name": "fenster",
+                    "subreddit_counterpart": "windows10"
+                },
+                {
+                    "subreddit_name": "fenster",
+                    "subreddit_counterpart": "windowshelp"
+                },
+                {
+                    "subreddit_name": "de_edv",
+                    "subreddit_counterpart": "it"
+                },
+                {
+                    "subreddit_name": "de_edv",
+                    "subreddit_counterpart": "techsupport"
+                },
+                {
+                    "subreddit_name": "de_edv",
+                    "subreddit_counterpart": "computertechs"
+                },
+                {
+                    "subreddit_name": "de_edv",
+                    "subreddit_counterpart": "homeserver"
+                },
+                {
+                    "subreddit_name": "fahrrad",
+                    "subreddit_counterpart": "bikecommuting"
+                },
+                {
+                    "subreddit_name": "fahrrad",
+                    "subreddit_counterpart": "cycling"
+                },
+                {
+                    "subreddit_name": "fahrrad",
+                    "subreddit_counterpart": "roadbikes"
+                },
+                {
+                    "subreddit_name": "fahrrad",
+                    "subreddit_counterpart": "gravelcycling"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "usedcars"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "whatcarshouldibuy"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "askcarguys"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "carbuying"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "auto"
+                },
+                {
+                    "subreddit_name": "elektroautos",
+                    "subreddit_counterpart": "electricvehicles"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "classiccars"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "carporn"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "vintagejapaneseautos"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "weirdwheels"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "autos"
+                },
+                {
+                    "subreddit_name": "kreisvegs",
+                    "subreddit_counterpart": "vegancirclejerk"
+                },
+                {
+                    "subreddit_name": "vegande",
+                    "subreddit_counterpart": "vegan"
+                },
+                {
+                    "subreddit_name": "vegande",
+                    "subreddit_counterpart": "australianvegans"
+                },
+                {
+                    "subreddit_name": "vegetarischkochen",
+                    "subreddit_counterpart": "meatlessmealprep"
+                },
+                {
+                    "subreddit_name": "vegetarischkochen",
+                    "subreddit_counterpart": "vegetarianrecipes"
+                },
+                {
+                    "subreddit_name": "vegetarischkochen",
+                    "subreddit_counterpart": "vegetarian"
+                },
+                {
+                    "subreddit_name": "vegetarischkochen",
+                    "subreddit_counterpart": "vegrecipes"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "cooking"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "cookingforbeginners"
+                },
+                {
+                    "subreddit_name": "asiatischkochen",
+                    "subreddit_counterpart": "chinesefood"
+                },
+                {
+                    "subreddit_name": "asiatischkochen",
+                    "subreddit_counterpart": "asianeats"
+                },
+                {
+                    "subreddit_name": "augenschmaus",
+                    "subreddit_counterpart": "foodporn"
+                },
+                {
+                    "subreddit_name": "grillen",
+                    "subreddit_counterpart": "grilling"
+                },
+                {
+                    "subreddit_name": "grillen",
+                    "subreddit_counterpart": "bbq"
+                },
+                {
+                    "subreddit_name": "pizzade",
+                    "subreddit_counterpart": "pizza"
+                },
+                {
+                    "subreddit_name": "backen",
+                    "subreddit_counterpart": "bakingnoobs"
+                },
+                {
+                    "subreddit_name": "brot",
+                    "subreddit_counterpart": "breadit"
+                },
+                {
+                    "subreddit_name": "brot",
+                    "subreddit_counterpart": "sourdough"
+                },
+                {
+                    "subreddit_name": "gaumengraus",
+                    "subreddit_counterpart": "shittyfoodporn"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "austingardening"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "horticulture"
+                },
+                {
+                    "subreddit_name": "angelfreunde",
+                    "subreddit_counterpart": "fishing"
+                },
+                {
+                    "subreddit_name": "angelfreunde",
+                    "subreddit_counterpart": "fishingforbeginners"
+                },
+                {
+                    "subreddit_name": "pilze",
+                    "subreddit_counterpart": "mushrooms"
+                },
+                {
+                    "subreddit_name": "pilze",
+                    "subreddit_counterpart": "mushroom_hunting"
+                },
+                {
+                    "subreddit_name": "fotografie",
+                    "subreddit_counterpart": "amateurphotography"
+                },
+                {
+                    "subreddit_name": "fotografie",
+                    "subreddit_counterpart": "photography"
+                },
+                {
+                    "subreddit_name": "himmel",
+                    "subreddit_counterpart": "skyporn"
+                },
+                {
+                    "subreddit_name": "drehscheibe",
+                    "subreddit_counterpart": "trains"
+                },
+                {
+                    "subreddit_name": "drehscheibe",
+                    "subreddit_counterpart": "trainporn"
+                },
+                {
+                    "subreddit_name": "silberhandel",
+                    "subreddit_counterpart": "wallstreetsilver"
+                },
+                {
+                    "subreddit_name": "makefriendsingermany",
+                    "subreddit_counterpart": "makingfriends"
+                },
+                {
+                    "subreddit_name": "makefriendsingermany",
+                    "subreddit_counterpart": "meetnewpeoplehere"
+                },
+                {
+                    "subreddit_name": "makefriendsingermany",
+                    "subreddit_counterpart": "meetup"
+                },
+                {
+                    "subreddit_name": "lolteamsuche",
+                    "subreddit_counterpart": "teamredditteams"
+                },
+                {
+                    "subreddit_name": "lolteamsuche",
+                    "subreddit_counterpart": "leagueconnect"
+                },
+                {
+                    "subreddit_name": "bier",
+                    "subreddit_counterpart": "craftbeer"
+                },
+                {
+                    "subreddit_name": "bier",
+                    "subreddit_counterpart": "beer"
+                },
+                {
+                    "subreddit_name": "handarbeiten",
+                    "subreddit_counterpart": "casualknitting"
+                },
+                {
+                    "subreddit_name": "handarbeiten",
+                    "subreddit_counterpart": "yarnaddicts"
+                },
+                {
+                    "subreddit_name": "handarbeiten",
+                    "subreddit_counterpart": "yarntrolls"
+                },
+                {
+                    "subreddit_name": "handarbeiten",
+                    "subreddit_counterpart": "brochet"
+                },
+                {
+                    "subreddit_name": "handarbeiten",
+                    "subreddit_counterpart": "knitting"
+                },
+                {
+                    "subreddit_name": "modellbau",
+                    "subreddit_counterpart": "modelmakers"
+                },
+                {
+                    "subreddit_name": "modellbau",
+                    "subreddit_counterpart": "terrainbuilding"
+                },
+                {
+                    "subreddit_name": "modellbau",
+                    "subreddit_counterpart": "modelcars"
+                },
+                {
+                    "subreddit_name": "klemmbausteine",
+                    "subreddit_counterpart": "lepin"
+                },
+                {
+                    "subreddit_name": "holzwerken",
+                    "subreddit_counterpart": "beginnerwoodworking"
+                },
+                {
+                    "subreddit_name": "holzwerken",
+                    "subreddit_counterpart": "woodworking"
+                },
+                {
+                    "subreddit_name": "holzwerken",
+                    "subreddit_counterpart": "carpentry"
+                },
+                {
+                    "subreddit_name": "holzwerken",
+                    "subreddit_counterpart": "turning"
+                },
+                {
+                    "subreddit_name": "selbermachen",
+                    "subreddit_counterpart": "diy"
+                },
+                {
+                    "subreddit_name": "selbermachen",
+                    "subreddit_counterpart": "diynz"
+                },
+                {
+                    "subreddit_name": "selbermachen",
+                    "subreddit_counterpart": "renovations"
+                },
+                {
+                    "subreddit_name": "selbermachen",
+                    "subreddit_counterpart": "carpentry"
+                },
+                {
+                    "subreddit_name": "selbermachen",
+                    "subreddit_counterpart": "homeimprovement"
+                },
+                {
+                    "subreddit_name": "mineraleundgesteine",
+                    "subreddit_counterpart": "mineralporn"
+                },
+                {
+                    "subreddit_name": "mineraleundgesteine",
+                    "subreddit_counterpart": "mineralgore"
+                },
+                {
+                    "subreddit_name": "mineraleundgesteine",
+                    "subreddit_counterpart": "rockhounds"
+                },
+                {
+                    "subreddit_name": "mineraleundgesteine",
+                    "subreddit_counterpart": "geology"
+                },
+                {
+                    "subreddit_name": "mineraleundgesteine",
+                    "subreddit_counterpart": "minerals"
+                },
+                {
+                    "subreddit_name": "fitnessde",
+                    "subreddit_counterpart": "strongerbyscience"
+                },
+                {
+                    "subreddit_name": "eltern",
+                    "subreddit_counterpart": "askparents"
+                },
+                {
+                    "subreddit_name": "eltern",
+                    "subreddit_counterpart": "nanny"
+                },
+                {
+                    "subreddit_name": "eltern",
+                    "subreddit_counterpart": "breakingmom"
+                },
+                {
+                    "subreddit_name": "beziehungen",
+                    "subreddit_counterpart": "love"
+                },
+                {
+                    "subreddit_name": "gedichte",
+                    "subreddit_counterpart": "poems"
+                },
+                {
+                    "subreddit_name": "gedichte",
+                    "subreddit_counterpart": "poetry"
+                },
+                {
+                    "subreddit_name": "gedichte",
+                    "subreddit_counterpart": "ocpoetry"
+                },
+                {
+                    "subreddit_name": "einfach_schreiben",
+                    "subreddit_counterpart": "creativewriting"
+                },
+                {
+                    "subreddit_name": "einfach_schreiben",
+                    "subreddit_counterpart": "ocpoetry"
+                },
+                {
+                    "subreddit_name": "lagerfeuer",
+                    "subreddit_counterpart": "shortstories"
+                },
+                {
+                    "subreddit_name": "lagerfeuer",
+                    "subreddit_counterpart": "stories"
+                },
+                {
+                    "subreddit_name": "lagerfeuer",
+                    "subreddit_counterpart": "creativewriting"
+                },
+                {
+                    "subreddit_name": "kopiernudeln",
+                    "subreddit_counterpart": "copypasta"
+                },
+                {
+                    "subreddit_name": "binichdasarschloch",
+                    "subreddit_counterpart": "amithebuttface"
+                },
+                {
+                    "subreddit_name": "binichdasarschloch",
+                    "subreddit_counterpart": "amitheasshole"
+                },
+                {
+                    "subreddit_name": "einfach_posten",
+                    "subreddit_counterpart": "casualconversation"
+                },
+                {
+                    "subreddit_name": "einfach_posten",
+                    "subreddit_counterpart": "self"
+                },
+                {
+                    "subreddit_name": "ratschlag",
+                    "subreddit_counterpart": "needadvice"
+                },
+                {
+                    "subreddit_name": "ratschlag",
+                    "subreddit_counterpart": "lifeadvice"
+                },
+                {
+                    "subreddit_name": "ratschlag",
+                    "subreddit_counterpart": "advice"
+                },
+                {
+                    "subreddit_name": "fragreddit",
+                    "subreddit_counterpart": "ask"
+                },
+                {
+                    "subreddit_name": "gutefragepunktnicht",
+                    "subreddit_counterpart": "insanepeoplequora"
+                },
+                {
+                    "subreddit_name": "fragnenmann",
+                    "subreddit_counterpart": "askmen"
+                },
+                {
+                    "subreddit_name": "fragnefrau",
+                    "subreddit_counterpart": "askgirls"
+                },
+                {
+                    "subreddit_name": "fragnefrau",
+                    "subreddit_counterpart": "askwomen"
+                },
+                {
+                    "subreddit_name": "griechischemythen",
+                    "subreddit_counterpart": "greekmythology"
+                },
+                {
+                    "subreddit_name": "duschgedanken",
+                    "subreddit_counterpart": "showerthoughts"
+                },
+                {
+                    "subreddit_name": "duschgedanken",
+                    "subreddit_counterpart": "randomthoughts"
+                },
+                {
+                    "subreddit_name": "famoseworte",
+                    "subreddit_counterpart": "words"
+                },
+                {
+                    "subreddit_name": "deutschemods",
+                    "subreddit_counterpart": "modsupport"
+                },
+                {
+                    "subreddit_name": "deutschemods",
+                    "subreddit_counterpart": "needamod"
+                },
+                {
+                    "subreddit_name": "deutschemods",
+                    "subreddit_counterpart": "modhelp"
+                },
+                {
+                    "subreddit_name": "zelten",
+                    "subreddit_counterpart": "campingandhiking"
+                },
+                {
+                    "subreddit_name": "zelten",
+                    "subreddit_counterpart": "camping"
+                },
+                {
+                    "subreddit_name": "zelten",
+                    "subreddit_counterpart": "campinggear"
+                },
+                {
+                    "subreddit_name": "mannaussachsen",
+                    "subreddit_counterpart": "newsofthestupid"
+                },
+                {
+                    "subreddit_name": "reisende",
+                    "subreddit_counterpart": "travel"
+                },
+                {
+                    "subreddit_name": "medizin",
+                    "subreddit_counterpart": "medschool"
+                },
+                {
+                    "subreddit_name": "medizin",
+                    "subreddit_counterpart": "medicalschooleu"
+                },
+                {
+                    "subreddit_name": "medizin",
+                    "subreddit_counterpart": "residency"
+                },
+                {
+                    "subreddit_name": "medizin",
+                    "subreddit_counterpart": "medicalschool"
+                },
+                {
+                    "subreddit_name": "lehrerzimmer",
+                    "subreddit_counterpart": "teaching"
+                },
+                {
+                    "subreddit_name": "lehrerzimmer",
+                    "subreddit_counterpart": "teacher"
+                },
+                {
+                    "subreddit_name": "lehrerzimmer",
+                    "subreddit_counterpart": "education"
+                },
+                {
+                    "subreddit_name": "samplesize_dach",
+                    "subreddit_counterpart": "samplesize"
+                },
+                {
+                    "subreddit_name": "informatik",
+                    "subreddit_counterpart": "informationtechnology"
+                },
+                {
+                    "subreddit_name": "dejobs",
+                    "subreddit_counterpart": "nycjobs"
+                },
+                {
+                    "subreddit_name": "dejobs",
+                    "subreddit_counterpart": "develeire"
+                },
+                {
+                    "subreddit_name": "dejobs",
+                    "subreddit_counterpart": "jobfair"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "careerguidance"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "careeradvice"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "getemployed"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "jobs"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "career_advice"
+                },
+                {
+                    "subreddit_name": "arbeitsleben",
+                    "subreddit_counterpart": "work"
+                },
+                {
+                    "subreddit_name": "steuern",
+                    "subreddit_counterpart": "tax"
+                },
+                {
+                    "subreddit_name": "steuern",
+                    "subreddit_counterpart": "irishpersonalfinance"
+                },
+                {
+                    "subreddit_name": "steuern",
+                    "subreddit_counterpart": "taxpros"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "personalfinancenz"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "eupersonalfinance"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "singaporefi"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "malaysianpf"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "financialplanning"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "personalfinance"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "irishpersonalfinance"
+                },
+                {
+                    "subreddit_name": "blaulicht",
+                    "subreddit_counterpart": "firefighting"
+                },
+                {
+                    "subreddit_name": "blaulicht",
+                    "subreddit_counterpart": "protectandserve"
+                },
+                {
+                    "subreddit_name": "blaulicht",
+                    "subreddit_counterpart": "police"
+                },
+                {
+                    "subreddit_name": "recht",
+                    "subreddit_counterpart": "ask_lawyers"
+                },
+                {
+                    "subreddit_name": "recht",
+                    "subreddit_counterpart": "legal"
+                },
+                {
+                    "subreddit_name": "recht",
+                    "subreddit_counterpart": "legaladviceofftopic"
+                },
+                {
+                    "subreddit_name": "recht",
+                    "subreddit_counterpart": "legaladviceeurope"
+                },
+                {
+                    "subreddit_name": "legaladvicegerman",
+                    "subreddit_counterpart": "legaladviceeurope"
+                },
+                {
+                    "subreddit_name": "legaladvicegerman",
+                    "subreddit_counterpart": "legaladvice"
+                },
+                {
+                    "subreddit_name": "legaladvicegerman",
+                    "subreddit_counterpart": "legal"
+                },
+                {
+                    "subreddit_name": "legaladvicegerman",
+                    "subreddit_counterpart": "ask_lawyers"
+                },
+                {
+                    "subreddit_name": "kratzbaum",
+                    "subreddit_counterpart": "cats"
+                },
+                {
+                    "subreddit_name": "ich_iel",
+                    "subreddit_counterpart": "me_irl"
+                },
+                {
+                    "subreddit_name": "kreiswichs",
+                    "subreddit_counterpart": "circlejerk"
+                },
+                {
+                    "subreddit_name": "ichbin40undlustig",
+                    "subreddit_counterpart": "boomershumor"
+                },
+                {
+                    "subreddit_name": "augenbleiche",
+                    "subreddit_counterpart": "eyebleach"
+                },
+                {
+                    "subreddit_name": "lustig",
+                    "subreddit_counterpart": "funny"
+                },
+                {
+                    "subreddit_name": "discord_iel",
+                    "subreddit_counterpart": "discord_irl"
+                },
+                {
+                    "subreddit_name": "zocken ",
+                    "subreddit_counterpart": "gaming"
+                },
+                {
+                    "subreddit_name": "dotade",
+                    "subreddit_counterpart": "dota2"
+                },
+                {
+                    "subreddit_name": "lolde",
+                    "subreddit_counterpart": "leagueoflegends"
+                },
+                {
+                    "subreddit_name": "rainbowsixde",
+                    "subreddit_counterpart": "rainbowsix"
+                },
+                {
+                    "subreddit_name": "raketenliga",
+                    "subreddit_counterpart": "rocketleague"
+                },
+                {
+                    "subreddit_name": "annode",
+                    "subreddit_counterpart": "anno"
+                },
+                {
+                    "subreddit_name": "annode",
+                    "subreddit_counterpart": "anno1800"
+                },
+                {
+                    "subreddit_name": "annode",
+                    "subreddit_counterpart": "anno2205"
+                },
+                {
+                    "subreddit_name": "annode",
+                    "subreddit_counterpart": "anno2070"
+                },
+                {
+                    "subreddit_name": "annode",
+                    "subreddit_counterpart": "anno1404"
+                },
+                {
+                    "subreddit_name": "mauerstrassenwetten",
+                    "subreddit_counterpart": "wallstreetbets"
+                },
+                {
+                    "subreddit_name": "pfennigfuchser",
+                    "subreddit_counterpart": "pennystocks"
+                },
+                {
+                    "subreddit_name": "fifa_de",
+                    "subreddit_counterpart": "fifa"
+                },
+                {
+                    "subreddit_name": "american_football",
+                    "subreddit_counterpart": "football"
+                },
+                {
+                    "subreddit_name": "american_football",
+                    "subreddit_counterpart": "nfl"
+                },
+                {
+                    "subreddit_name": "fussball",
+                    "subreddit_counterpart": "soccer"
+                },
+                {
+                    "subreddit_name": "kampfsport",
+                    "subreddit_counterpart": "martialarts"
+                },
+                {
+                    "subreddit_name": "radsport",
+                    "subreddit_counterpart": "bicycling"
+                },
+                {
+                    "subreddit_name": "turnen",
+                    "subreddit_counterpart": "gymnastics"
+                },
+                {
+                    "subreddit_name": "skating_de",
+                    "subreddit_counterpart": "newskaters"
+                },
+                {
+                    "subreddit_name": "skating_de",
+                    "subreddit_counterpart": "oldskaters"
+                },
+                {
+                    "subreddit_name": "egenbogen",
+                    "subreddit_counterpart": "ainbow"
+                },
+                {
+                    "subreddit_name": "privatsphaereimnetz",
+                    "subreddit_counterpart": "europrivacy"
+                },
+                {
+                    "subreddit_name": "netzpolitik",
+                    "subreddit_counterpart": "netsec"
+                },
+                {
+                    "subreddit_name": "umwelt_de",
+                    "subreddit_counterpart": "environmentalism"
+                },
+                {
+                    "subreddit_name": "automobil",
+                    "subreddit_counterpart": "cars"
+                },
+                {
+                    "subreddit_name": "vegetarisch_de",
+                    "subreddit_counterpart": "vegetarian"
+                },
+                {
+                    "subreddit_name": "vegetarisch_de",
+                    "subreddit_counterpart": "vegetarianism"
+                },
+                {
+                    "subreddit_name": "asiatischkochen",
+                    "subreddit_counterpart": "asiancooking"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "gardening"
+                },
+                {
+                    "subreddit_name": "garten",
+                    "subreddit_counterpart": "garden"
+                },
+                {
+                    "subreddit_name": "angeln",
+                    "subreddit_counterpart": "fishing"
+                },
+                {
+                    "subreddit_name": "angeln",
+                    "subreddit_counterpart": "Fishing_Gear"
+                },
+                {
+                    "subreddit_name": "naturfreunde",
+                    "subreddit_counterpart": "outdoors"
+                },
+                {
+                    "subreddit_name": "himmel",
+                    "subreddit_counterpart": "skyporn"
+                },
+                {
+                    "subreddit_name": "schwanger",
+                    "subreddit_counterpart": "pregnant"
+                },
+                {
+                    "subreddit_name": "beziehungen",
+                    "subreddit_counterpart": "relationships"
+                },
+                {
+                    "subreddit_name": "de_iama",
+                    "subreddit_counterpart": "iama"
+                },
+                {
+                    "subreddit_name": "germansgonewild",
+                    "subreddit_counterpart": "gonewild"
+                },
+                {
+                    "subreddit_name": "fragreddit",
+                    "subreddit_counterpart": "askreddit"
+                },
+                {
+                    "subreddit_name": "datingde",
+                    "subreddit_counterpart": "dating_advice"
+                },
+                {
+                    "subreddit_name": "germantrees",
+                    "subreddit_counterpart": "trees"
+                },
+                {
+                    "subreddit_name": "recht",
+                    "subreddit_counterpart": "law"
+                },
+                {
+                    "subreddit_name": "ich_iel",
+                    "subreddit_counterpart": "memes"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "finance"
+                },
+                {
+                    "subreddit_name": "bundesliga",
+                    "subreddit_counterpart": "soccer"
+                },
+                {
+                    "subreddit_name": "Nachrichten",
+                    "subreddit_counterpart": "news"
+                },
+                {
+                    "subreddit_name": "tja",
+                    "subreddit_counterpart": "wellthatsucks"
+                },
+                {
+                    "subreddit_name": "DatingDE",
+                    "subreddit_counterpart": "dating"
+                },
+                {
+                    "subreddit_name": "YoutubeDE",
+                    "subreddit_counterpart": "youtube"
+                },
+                {
+                    "subreddit_name": "augenbleiche",
+                    "subreddit_counterpart": "aww"
+                },
+                {
+                    "subreddit_name": "backen",
+                    "subreddit_counterpart": "baking"
+                },
+                {
+                    "subreddit_name": "brot",
+                    "subreddit_counterpart": "bread"
+                },
+                {
+                    "subreddit_name": "vegetarischDE",
+                    "subreddit_counterpart": "vegetariancooking"
+                },
+                {
+                    "subreddit_name": "DACHGaming",
+                    "subreddit_counterpart": "gaming"
+                },
+                {
+                    "subreddit_name": "fussball",
+                    "subreddit_counterpart": "fifa"
+                },
+                {
+                    "subreddit_name": "oldtimer",
+                    "subreddit_counterpart": "cars"
+                },
+                {
+                    "subreddit_name": "finanzen",
+                    "subreddit_counterpart": "financialindependence"
+                },
+                {
+                    "subreddit_name": "wasletztepreis",
+                    "subreddit_counterpart": "choosingbeggars"
+                },
+                {
+                    "subreddit_name": "bundesliga",
+                    "subreddit_counterpart": "footballhighlights"
+                },
+                {
+                    "subreddit_name": "GuteNachrichten",
+                    "subreddit_counterpart": "happy"
+                },
+                {
+                    "subreddit_name": "Lustig",
+                    "subreddit_counterpart": "humor"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "interestingasfuck"
+                },
+                {
+                    "subreddit_name": "FragNeFrau",
+                    "subreddit_counterpart": "askwomenover30"
+                },
+                {
+                    "subreddit_name": "FragNenMann",
+                    "subreddit_counterpart": "askmenover30"
+                },
+                {
+                    "subreddit_name": "DatingDE",
+                    "subreddit_counterpart": "relationships"
+                },
+                {
+                    "subreddit_name": "KPopDE",
+                    "subreddit_counterpart": "twice"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "animemes"
+                },
+                {
+                    "subreddit_name": "YoutubeDE",
+                    "subreddit_counterpart": "youtubers"
+                },
+                {
+                    "subreddit_name": "Twitch_DE",
+                    "subreddit_counterpart": "livestreamfails"
+                },
+                {
+                    "subreddit_name": "vegetarischDE",
+                    "subreddit_counterpart": "vegetarianrecipes"
+                },
+                {
+                    "subreddit_name": "PCGamingDE",
+                    "subreddit_counterpart": "pcmasterrace"
+                },
+                {
+                    "subreddit_name": "MinecraftDE",
+                    "subreddit_counterpart": "minecraftmemes"
+                },
+                {
+                    "subreddit_name": "fussball",
+                    "subreddit_counterpart": "football"
+                },
+                {
+                    "subreddit_name": "fotografie",
+                    "subreddit_counterpart": "pics"
+                },
+                {
+                    "subreddit_name": "Futurologie",
+                    "subreddit_counterpart": "futurism"
+                },
+                {
+                    "subreddit_name": "fragreddit",
+                    "subreddit_counterpart": "tooafraidtoask"
+                },
+                {
+                    "subreddit_name": "kochen",
+                    "subreddit_counterpart": "askculinary"
+                },
+                {
+                    "subreddit_name": "Buecher",
+                    "subreddit_counterpart": "literature"
+                },
+                {
+                    "subreddit_name": "germanrap",
+                    "subreddit_counterpart": "rapbattles"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "explainlikeimfive"
+                },
+                {
+                    "subreddit_name": "DatingDE",
+                    "subreddit_counterpart": "relationship_advice"
+                },
+                {
+                    "subreddit_name": "KPopDE",
+                    "subreddit_counterpart": "blackpink"
+                },
+                {
+                    "subreddit_name": "ueber8000",
+                    "subreddit_counterpart": "ShingekiNoKyojin"
+                },
+                {
+                    "subreddit_name": "YoutubeDE",
+                    "subreddit_counterpart": "deepintoyoutube"
+                },
+                {
+                    "subreddit_name": "augenbleiche",
+                    "subreddit_counterpart": "dogpictures"
+                },
+                {
+                    "subreddit_name": "backen",
+                    "subreddit_counterpart": "cakewin"
+                },
+                {
+                    "subreddit_name": "brot",
+                    "subreddit_counterpart": "artisanbread"
+                },
+                {
+                    "subreddit_name": "reisende",
+                    "subreddit_counterpart": "japantravel"
+                },
+                {
+                    "subreddit_name": "heutelernteich",
+                    "subreddit_counterpart": "mildlyinteresting"
+                },
+                {
+                    "subreddit_name": "DatingDE",
+                    "subreddit_counterpart": "breakups"
+                },
+                {
+                    "subreddit_name": "KPopDE",
+                    "subreddit_counterpart": "kpopfashion"
+                },
+                {
+                    "subreddit_name": "augenbleiche",
+                    "subreddit_counterpart": "animalsbeingderps"
+                },
+                {
+                    "subreddit_name": "brot",
+                    "subreddit_counterpart": "breadmachines"
+                },
+                {
+                    "subreddit_name": "kryptostrassenwetten",
+                    "subreddit_counterpart": "wallstreetbetscrypto"
+                },
+                {
+                    "subreddit_name": "kryptostrassenwetten",
+                    "subreddit_counterpart": "cryptocurrency"
+                }
+            ]
+        }
+    ]
+}

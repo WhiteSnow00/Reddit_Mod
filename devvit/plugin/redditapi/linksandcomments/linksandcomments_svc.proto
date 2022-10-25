@@ -1,0 +1,97 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.linksandcomments;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.linksandcomments";
+
+import "google/protobuf/empty.proto";
+import "devvit/plugin/redditapi/common/common_msg.proto";
+import "devvit/plugin/redditapi/linksandcomments/linksandcomments_msg.proto";
+
+// LINKS & COMMENTS - https://www.reddit.com/dev/api#section_links_and_comments
+// Note: all endpoints require oauth
+// Note: For most of these methods, if return_rtjson isn't set to true, a jquery response is sent
+service LinksAndComments {
+  // https://www.reddit.com/dev/api#POST_api_comment
+  rpc Comment(CommentRequest) returns (devvit.plugin.redditapi.common.RedditObject); 
+
+  // https://www.reddit.com/dev/api#POST_api_del
+  // Note: The id can also be passed as form-data
+  rpc Del(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_editusertext
+  rpc EditUserText(CommentRequest) returns (devvit.plugin.redditapi.common.RedditObject); 
+
+  // https://www.reddit.com/dev/api#POST_api_event_post_time
+  rpc EventPostTime(EventPostTimeRequest) returns (EventPostTimeResponse); 
+
+  // https://www.reddit.com/dev/api#POST_api_follow_post
+  rpc FollowPost(FollowPostRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_hide
+  rpc Hide(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#GET_api_info
+  rpc Info(InfoRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#POST_api_lock
+  rpc Lock(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_marknsfw
+  rpc MarkNSFW(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#GET_api_morechildren
+  rpc MoreChildren(MoreChildrenRequest) returns (MoreChildrenResponse); 
+
+  // https://www.reddit.com/dev/api#POST_api_report
+  rpc Report(ReportRequest) returns (devvit.plugin.redditapi.common.BasicJsonObject);
+
+  // https://www.reddit.com/dev/api#POST_api_report_award
+  rpc ReportAward(ReportAwardRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_save
+  rpc Save(SaveRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#GET_api_saved_categories
+  rpc SavedCategories(google.protobuf.Empty) returns (SavedCategoriesResponse); 
+
+  // https://www.reddit.com/dev/api#POST_api_sendreplies
+  rpc SendReplies(SendRepliesRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_set_contest_mode
+  rpc SetContestMode(SetContestModeRequest) returns (devvit.plugin.redditapi.common.BasicJsonObject); 
+
+  // https://www.reddit.com/dev/api#POST_api_set_subreddit_sticky
+  rpc SetSubredditSticky(SetSubredditStickyRequest) returns (devvit.plugin.redditapi.common.BasicJsonObject); 
+
+  // https://www.reddit.com/dev/api#POST_api_set_suggested_sort
+  rpc SetSuggestedSort(SetSuggestedSortRequest) returns (devvit.plugin.redditapi.common.BasicJsonObject); 
+
+  // https://www.reddit.com/dev/api#POST_api_spoiler
+  rpc Spoiler(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_store_visits
+  rpc StoreVisits(StoreVisitsRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_submit
+  rpc Submit(SubmitRequest) returns (SubmitResponse); 
+
+  // https://www.reddit.com/dev/api#POST_api_unhide
+  rpc Unhide(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_unlock
+  rpc Unlock(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_unmarknsfw
+  rpc UnmarkNSFW(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_unsave
+  rpc Unsave(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_unspoiler
+  rpc Unspoiler(BasicIdRequest) returns (google.protobuf.Empty); 
+
+  // https://www.reddit.com/dev/api#POST_api_vote
+  rpc Vote(VoteRequest) returns (google.protobuf.Empty); 
+} 

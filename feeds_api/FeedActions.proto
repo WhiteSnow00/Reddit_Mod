@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "com.reddit.feedsapi";
+
+enum FeedActionID {
+  unknownAction = 0;
+  displayPostDetails = 1;
+  upvotePost = 2;
+  downvotePost = 3;
+}
+
+message EmptyActionData {}
+
+message DisplayPostDetailsActionData { string postID = 1; }
+
+message UpvotePostActionData { string postID = 1; }
+
+message DownvotePostActionData { string postID = 1; }

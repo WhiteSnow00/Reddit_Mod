@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package devvit.plugin.logger;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/logger";
+option java_package = "com.reddit.devvit.plugin.logger";
+
+import "google/protobuf/empty.proto";
+
+enum Severity {
+  DEBUG = 0;
+  INFO = 1;
+  WARN = 2;
+  ERROR = 3;
+}
+
+message LogMessage {
+  Severity severity = 1;
+  string message = 2;
+}
+
+service Logger { rpc Log(LogMessage) returns (google.protobuf.Empty); }

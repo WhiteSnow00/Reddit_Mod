@@ -1,0 +1,291 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.newmodmail;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.newmodmail";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/wrappers.proto";
+
+// Shared Objects
+message ConversationData {
+  message ObjId {
+    google.protobuf.StringValue id = 1;
+    google.protobuf.StringValue key = 2;
+  }
+
+  message Owner {
+    google.protobuf.StringValue display_name = 1;
+    google.protobuf.StringValue type = 2;
+    google.protobuf.StringValue id = 3;
+  }
+
+  google.protobuf.BoolValue is_auto = 1;
+  Participant participant = 2;
+  repeated ObjId obj_ids = 3;
+  google.protobuf.BoolValue is_repliable = 4;
+  google.protobuf.StringValue last_user_update = 5;
+  google.protobuf.BoolValue is_internal = 6;
+  google.protobuf.StringValue last_mod_update = 7;
+  repeated Participant authors = 8;
+  google.protobuf.StringValue last_updated = 9;
+  google.protobuf.StringValue legacy_first_message_id = 10;
+  google.protobuf.Int32Value state = 11;
+  google.protobuf.StringValue conversation_type = 12;
+  google.protobuf.StringValue last_unread = 13;
+  Owner owner = 14;
+  google.protobuf.StringValue subject = 15;
+  google.protobuf.StringValue id = 16;
+  google.protobuf.BoolValue is_highlighted = 17;
+  google.protobuf.Int64Value num_messages = 18;
+
+  // from createconversationmessageresponse
+  map<string, ModActionData> mod_actions = 19;
+}
+
+message MessageData {
+  google.protobuf.StringValue body = 1;
+  Participant author = 2;
+  google.protobuf.BoolValue is_internal = 3;
+  google.protobuf.StringValue date = 4;
+  google.protobuf.StringValue body_markdown = 5;
+  google.protobuf.StringValue id = 6;
+  google.protobuf.StringValue participating_as = 7;
+}
+
+message ConversationUserData {
+  message CommentData {
+    google.protobuf.StringValue comment = 1;
+    google.protobuf.StringValue date = 2;
+    google.protobuf.StringValue permalink = 3;
+    google.protobuf.StringValue title = 4;
+  }
+  message MuteStatus {
+    google.protobuf.Int64Value mute_count = 1;
+    google.protobuf.BoolValue is_muted = 2;
+    google.protobuf.StringValue end_date = 3;
+    google.protobuf.StringValue reason = 4;
+  }
+  message BanStatus {
+    google.protobuf.BoolValue is_banned = 1;
+    google.protobuf.BoolValue is_permanent = 2;
+    google.protobuf.StringValue end_date = 3;
+    google.protobuf.StringValue reason = 4;
+  }
+  message ApproveStatus {
+    google.protobuf.BoolValue is_approved = 1;
+  }
+  message PostData {
+    google.protobuf.StringValue date = 1;
+    google.protobuf.StringValue permalink = 2;
+    google.protobuf.StringValue title = 3;
+  }
+  message ConvoData {
+    google.protobuf.StringValue date = 1;
+    google.protobuf.StringValue permalink = 2;
+    google.protobuf.StringValue id = 3;
+    google.protobuf.StringValue subject = 4;
+  }
+
+  map<string, CommentData> recent_comments = 1;
+  MuteStatus mute_status = 2;
+  google.protobuf.StringValue name = 3;
+  google.protobuf.StringValue created = 4;
+  BanStatus ban_status = 5;
+  google.protobuf.BoolValue is_suspended = 6;
+  ApproveStatus approve_status = 7;
+  google.protobuf.BoolValue is_shadow_banned = 8;
+  map<string, PostData> recent_posts = 9;
+  map<string, ConvoData> recent_convos = 10;
+  google.protobuf.StringValue id = 11;
+}
+
+message Participant {
+  google.protobuf.BoolValue is_mod = 1;
+  google.protobuf.BoolValue is_admin = 2;
+  google.protobuf.StringValue name = 3;
+  google.protobuf.BoolValue is_op = 4;
+  google.protobuf.BoolValue is_participant = 5;
+  google.protobuf.BoolValue is_approved = 6;
+  google.protobuf.BoolValue is_hidden = 7;
+  google.protobuf.Int64Value id = 8;
+  google.protobuf.BoolValue is_deleted = 9;
+}
+
+message ModActionData {
+  message ModActionAuthor {
+    google.protobuf.BoolValue is_mod = 1;
+    google.protobuf.BoolValue is_admin = 2;
+    google.protobuf.StringValue name = 3;
+    google.protobuf.BoolValue is_hidden = 4;
+    google.protobuf.Int64Value id = 5;
+    google.protobuf.BoolValue is_deleted = 6;
+  }
+
+  google.protobuf.StringValue date = 1;
+  google.protobuf.Int32Value action_type_id = 2;
+  google.protobuf.StringValue id = 3;
+  ModActionAuthor author = 4;
+}
+
+// Requests
+message BulkReadConversationsRequest {
+  string entity = 1;
+  string state = 2;
+}
+
+message GetConversationsRequest {
+  string after = 1;
+  string entity = 2;
+  int32 limit = 3;
+  string sort = 4;
+  string state = 5;
+}
+
+message CreateConversationRequest {
+  string body = 1;
+  bool is_author_hidden = 2;
+  string sr_name = 3;
+  string subject = 4;
+  string to = 5;
+}
+
+message GetConversationRequest {
+  string conversation_id = 1;
+  bool mark_read = 2;
+}
+
+message CreateConversationMessageRequest {
+  string body = 1;
+  bool is_author_hidden = 2;
+  bool is_internal = 3;
+}
+
+message BasicConversationRequest {
+  string conversation_id = 1;
+}
+
+message BasicConversationsRequest {
+  string conversation_ids = 1;
+}
+
+message MuteConversationRequest {
+  string conversation_id = 1;
+  int32 num_hours = 2;
+}
+
+message TempBanRequest {
+  string conversation_id = 1;
+  int32 duration = 2;
+}
+
+// Responses
+message BulkReadConversationsResponse {
+  repeated google.protobuf.StringValue conversation_ids = 1;
+}
+
+message GetConversationsResponse {
+  map<string, ConversationData> conversations = 1;
+  map<string, MessageData> messages = 2;
+  google.protobuf.StringValue viewer_id = 3;
+  repeated google.protobuf.StringValue conversation_ids = 4;
+}
+
+message CreateConversationResponse {
+  ConversationData conversation = 1;
+  map<string, MessageData> messages = 2;
+  map<string, ModActionData> mod_actions = 3;
+
+  // error case
+  repeated google.protobuf.StringValue fields = 4;
+  google.protobuf.StringValue reason = 5;
+  google.protobuf.StringValue message = 6;
+  google.protobuf.StringValue explanation = 7;
+}
+
+message GetConversationResponse {
+  ConversationData conversation = 1;
+  map<string, MessageData> messages = 2;
+  map<string, ModActionData> mod_actions = 3;
+  google.protobuf.Any participant_subreddit = 4;
+  ConversationUserData user = 5;
+}
+
+message CreateConversationMessageResponse {
+  ConversationData conversation = 1;
+  map<string, MessageData> messages = 2;
+}
+
+message ApproveConversationResponse {
+  ConversationData conversations = 1;
+  map<string, MessageData> messages = 2;
+  ConversationUserData user = 3;
+  map<string, ModActionData> mod_actions = 4;
+
+  // error case
+  repeated google.protobuf.StringValue fields = 5;
+  google.protobuf.StringValue reason = 6;
+  google.protobuf.StringValue message = 7;
+  google.protobuf.StringValue explanation = 8;
+}
+
+message ArchiveConversationResponse {
+  ConversationData conversations = 1;
+  map<string, MessageData> messages = 2;
+  map<string, ModActionData> mod_actions = 3;
+}
+
+message HighlightConversationResponse {
+  ConversationData conversations = 1;
+  map<string, MessageData> messages = 2;
+  map<string, ModActionData> mod_actions = 3;
+}
+
+message MuteConversationResponse {
+  ConversationData conversations = 1;
+  map<string, MessageData> messages = 2;
+  ConversationUserData user = 3;
+  map<string, ModActionData> mod_actions = 4;
+}
+
+message TempBanResponse {
+  ConversationData conversations = 1;
+  map<string, MessageData> messages = 2;
+  ConversationUserData user = 3;
+  map<string, ModActionData> mod_actions = 4;
+  
+  // error case
+  repeated google.protobuf.StringValue fields = 5;
+  google.protobuf.StringValue reason = 6;
+  google.protobuf.StringValue message = 7;
+}
+
+message SubredditsResponse {
+  message SubredditData {
+    google.protobuf.StringValue community_icon = 1;
+    google.protobuf.StringValue key_color = 2;
+    google.protobuf.StringValue display_name = 3;
+    google.protobuf.StringValue name = 4;
+    google.protobuf.Int32Value subscribers = 5;
+    google.protobuf.StringValue primary_color = 6;
+    google.protobuf.StringValue id = 7;
+    google.protobuf.StringValue last_updated = 8;
+    google.protobuf.StringValue icon = 9;
+  }
+
+  map<string, SubredditData> subreddits = 1;
+}
+
+message UnreadCountResponse {
+  google.protobuf.Int32Value archived = 1;
+  google.protobuf.Int32Value appeals = 2;
+  google.protobuf.Int32Value highlighted = 3;
+  google.protobuf.Int32Value notifications = 4;
+  google.protobuf.Int32Value join_requests = 5;
+  google.protobuf.Int32Value filtered = 6;
+  google.protobuf.Int32Value new = 7;
+  google.protobuf.Int32Value inprogress = 8;
+  google.protobuf.Int32Value mod = 9;
+}

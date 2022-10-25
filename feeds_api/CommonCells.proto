@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "feeds_api/Common.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+enum CommonCellID {
+  unknownCommonCell = 0;
+  margin = 1;
+  youtube = 2;
+  video = 3;
+  image = 4;
+  web = 5;
+  text = 6;
+  videoEmbed = 7;
+}
+
+message MarginCellData {
+  float height = 1;
+  Color color = 2;
+}
+
+message YoutubeCellData {
+  CellMediaSource video = 1;
+  CellMediaSource preview = 2;
+}
+
+message VideoCellData { CellMediaSource media = 1; }
+
+message ImageCellData { CellMediaSource media = 1; }
+
+message WebCellData {
+  string path = 1;
+  Size size = 2;
+  CellMediaSource preview = 3;
+}
+
+message TextCellData {
+  string title = 1;
+  int32 numberOfLines = 2;
+}
+
+message VideoEmbedCellData {
+  string embedHTML = 1;
+  Size size = 2;
+  CellMediaSource preview = 3;
+}

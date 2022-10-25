@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+import "feeds_api/Action.proto";
+import "feeds_api/Common.proto";
+
+option java_package = "com.reddit.feedsapi";
+option java_outer_classname = "ViewComponentTypes";
+
+message ViewComponentCore {
+  message Insets {
+    float top = 1;
+    float bottom = 2;
+    float left = 3;
+    float right = 4;
+  }
+  Insets padding = 1;
+  Insets margin = 2;
+  Size size = 3;
+  Color backgroundColor = 4;
+  string accessibilityIdentifier = 5;
+  string accessibilityHint = 6;
+}
+
+message ViewComponent {
+  string id = 1;
+  ViewComponentCore core = 2;
+  oneof content {
+    ButtonComponentContent button = 3;
+    ImageComponentContent image = 4;
+    LabelComponentContent label = 5;
+    StackComponentContent stack = 6;
+    VideoComponentContent video = 7;
+  }
+}
+
+message ButtonComponentContent {
+  string text = 1;
+  string textColor = 2;
+  Action action = 3;
+}
+
+message StackComponentContent {
+  enum Layout {
+    vertical = 0;
+    horizontal = 1;
+  }
+  Layout layout = 1;
+  repeated ViewComponent children = 2;
+}
+
+message ImageComponentContent {
+  string imagePath = 1;
+  Size size = 2;
+  string obfuscatedImagePath = 3;
+}
+
+message LabelComponentContent {
+  string text = 1;
+  int32 numberOfLines = 2;
+}
+
+message VideoComponentContent {
+  string thumbnailPath = 1;
+  string videoPath = 2;
+  Size size = 3;
+  string obfuscatedThumbnailPath = 4;
+}

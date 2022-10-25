@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+import "feeds_api/FeedCells.proto";
+import "feeds_api/Common.proto";
+import "feeds_api/AdPayload.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+enum AdCellID {
+  unknownAdCell = 0;
+  callToActionCell = 1;
+  adGalleryCell = 2;
+}
+
+message CallToActionCellData {
+  // Call to action button title
+  string callToAction = 1;
+
+  // An actual url we go to when tapping on something
+  string outboundURL = 2;
+
+  // Caption string displayed to the user
+  string caption = 3;
+
+  // A shortened url version displayed to the user
+  string displayURL = 4;
+}
+
+// This structure ensures we have a strict mapping between a gallery page and its call to action.
+// Note the titleCellData inside. 
+// We need it to know what url to open when the gallery is swiped. 
+// iOS draws three slices for this proto: title, gallery and call to action
+// This means you shouldn't send title or call to actions separately.
+message AdGalleryCellData {
+  TitleCellData titleCellData = 1;
+ 
+  float height = 2;
+  repeated AdGalleryPage pages = 3;
+
+  message AdGalleryPage {
+    GalleryPage page = 1;
+
+    // ad events specific to each gallery page
+    repeated ProtoAdEvent galleryPageAdEvents = 2;
+
+    // each gallery page has it's own call to action
+    CallToActionCellData callToAction = 3;
+  }
+} 

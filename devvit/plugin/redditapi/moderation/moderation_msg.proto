@@ -1,0 +1,100 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.moderation;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.moderation";
+
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/wrappers.proto";
+
+// Requests
+message AboutLogRequest {
+  string after = 1;
+  string before = 2;
+  int64 count = 3;
+  int64 limit = 4;
+  string show = 5;
+  string mod = 6;
+  bool sr_detail = 7;
+  string type = 8;
+}
+
+message AboutLocationRequest {
+  string after = 1;
+  string before = 2;
+  int64 count = 3;
+  int64 limit = 4;
+  string location = 5;
+  string only = 6;
+  string show = 7;
+  bool sr_detail = 8;
+}
+
+message AcceptModeratorInviteRequest {
+  string subreddit = 1;
+}
+
+message BasicModerationIdRequest {
+  string id = 1;
+}
+
+message DistinguishRequest {
+  string how = 1;
+  string id = 2;
+  bool sticky = 3;
+}
+
+message RemoveRequest {
+  string id = 1;
+  bool spam = 2;
+}
+
+message SnoozeReportsRequest {
+  string id = 1;
+  string reason = 2;
+}
+
+message UpdateCrowdControlLevelRequest {
+  string id = 1;
+  int32 level = 2;
+}
+
+message StylesheetRequest {
+  string subreddit = 1;
+}
+
+// Responses
+message AboutLogResponse {
+  message LogObject {
+    google.protobuf.StringValue description = 1;
+    google.protobuf.StringValue target_body = 2;
+    google.protobuf.StringValue mod_id36 = 3;
+    google.protobuf.Int64Value created_utc = 4;
+    google.protobuf.StringValue subreddit = 5;
+    google.protobuf.StringValue target_title = 6;
+    google.protobuf.StringValue target_permalink = 7;
+    google.protobuf.StringValue subreddit_name_prefixed = 8;
+    google.protobuf.StringValue details = 9;
+    google.protobuf.StringValue action = 10;
+    google.protobuf.StringValue target_author = 11;
+    google.protobuf.StringValue target_fullname = 12;
+    google.protobuf.StringValue sr_id36 = 13;
+    google.protobuf.StringValue id = 14;
+    google.protobuf.StringValue mod = 15;
+  }
+
+  message AboutLogListing {
+    message WrappedLogObject {
+      string kind = 1;
+      LogObject data = 2;
+    }
+    google.protobuf.StringValue after = 1;
+    google.protobuf.StringValue before = 2;
+    repeated WrappedLogObject children = 3;
+    google.protobuf.Int32Value dist = 4;
+  }
+
+  string kind = 1;
+  AboutLogListing data = 2;
+}

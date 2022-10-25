@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option java_package = "com.reddit.feedsapi";
+
+message CellMediaSource {
+  string path = 1;
+  Size size = 2;
+  bool isNsfw = 3;
+  bool isSpoiler = 4;
+  string obfuscatedPath = 5;
+}
+
+// This is used in GalleryCellData, GalleryWithLinkFooterCellData and AdGalleryCellData
+message GalleryPage {
+  CellMediaSource image = 1;
+}
+
+message Size {
+  float height = 1;
+  float width = 2;
+}
+
+// valid values are on a range of 0->1
+message CustomColor {
+  float red = 1;
+  float green = 2;
+  float blue = 3;
+  float alpha = 4;
+}
+
+message NativeColor { string name = 1; }
+
+message Color {
+  oneof content {
+    NativeColor native = 1;
+    CustomColor custom = 2;
+  }
+}
+
+enum VoteState {
+  none = 0;
+  up = 1;
+  down = 2;
+}

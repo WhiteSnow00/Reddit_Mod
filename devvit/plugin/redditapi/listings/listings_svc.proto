@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.listings;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.listings";
+
+import "devvit/plugin/redditapi/common/common_msg.proto";
+import "devvit/plugin/redditapi/listings/listings_msg.proto";
+
+// LISTINGS - https://www.reddit.com/dev/api#section_listings
+service Listings {
+  // https://www.reddit.com/dev/api#GET_best
+  rpc Best(GetBestRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_by_id_{names}
+  rpc ById(GetByIdRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_comments_{article}
+  rpc Comments(GetCommentsRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_comments_{article}
+  rpc CommentsArticle(GetCommentsArticleRequest) returns (ListingResponse); 
+
+  // https://www.reddit.com/dev/api#GET_duplicates_{article}
+  rpc Duplicates(GetDuplicatesRequest) returns (ListingResponse); 
+
+  // https://www.reddit.com/dev/api#GET_hot
+  rpc Hot(GetHotRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_new
+  rpc New(GetNewRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_random
+  rpc Random(GetRandomRequest) returns (ListingResponse); 
+
+  // https://www.reddit.com/dev/api#GET_rising
+  rpc Rising(GetRisingRequest) returns (devvit.plugin.redditapi.common.Listing); 
+
+  // https://www.reddit.com/dev/api#GET_{sort}
+  rpc Sort(GetSortRequest) returns (devvit.plugin.redditapi.common.Listing); 
+} 

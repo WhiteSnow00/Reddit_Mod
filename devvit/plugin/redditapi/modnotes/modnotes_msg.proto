@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.modnotes;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.modnotes";
+
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/wrappers.proto";
+
+//Requests
+message DeleteNotesRequest {
+    string subreddit = 1;
+    string note_id = 2;
+    string user = 3;
+}
+
+message GetNotesRequest{
+    string subreddit = 1;
+    string before = 2;
+    string filter = 3;
+    int64 limit = 4;
+    string user = 5;
+}
+
+message PostNotesRequest {
+    string subreddit = 1;
+    string label = 2;
+    string note = 3;
+    string reddit_id = 4;
+    string user = 5;
+}
+
+message RecentNotesRequest{
+    string subreddits = 1;
+    string users = 2;
+}
+
+//Responses
+message ModNotesResponse{
+    repeated ModNoteObject mod_notes = 1;
+    google.protobuf.StringValue start_cursor = 2;
+    google.protobuf.StringValue end_cursor = 3;
+    google.protobuf.BoolValue has_next_page = 4;
+}
+
+message DeleteNotesResponse{
+    google.protobuf.BoolValue deleted = 1;
+}
+
+message ModNoteObject{
+    message ModActionData{
+        google.protobuf.StringValue action = 1;
+        google.protobuf.StringValue reddit_id = 2;
+        google.protobuf.StringValue details = 3;
+        google.protobuf.StringValue description = 4;
+    }
+
+    message UserNoteData{
+        google.protobuf.StringValue note = 1;
+        google.protobuf.StringValue reddit_id = 2;
+        google.protobuf.StringValue label = 3;
+    }
+
+    google.protobuf.StringValue subreddit_id = 1;
+    google.protobuf.StringValue operator_id = 2;
+    ModActionData mod_action_data = 3;     
+    UserNoteData user_note_data = 4;
+    google.protobuf.StringValue subreddit = 5;
+    google.protobuf.StringValue user = 6;
+    google.protobuf.StringValue operator = 7;
+    google.protobuf.StringValue id = 8;
+    google.protobuf.StringValue user_id = 9;
+    google.protobuf.Int64Value created_at = 10;
+    google.protobuf.StringValue cursor = 11;
+    google.protobuf.StringValue type = 12;
+
+}
+
+message PostModNotesResponse{
+    ModNoteObject created = 1;
+}

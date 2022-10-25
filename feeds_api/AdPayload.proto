@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+message ProtoAdEvent {
+  string path = 1;
+  int32 type = 2;
+}      
+
+message AdPayload {
+  string impressionId = 1;
+  bool isBlankAd = 2;
+  bool isSurveyAd = 3;
+  string adLinkURL = 4;
+  // ad events common to the whole post
+  repeated ProtoAdEvent adEvents = 5;
+  AdNetworkData adNetworkData = 6;
+  string ctaMediaColor = 7;
+  AdAppStoreData appStoreData = 8;
+  AdPromoLayout promoLayout = 9;
+  string adInstanceId = 10;
+  bool isVideo = 11;
+  repeated AdPayloadGalleryItem gallery = 12;
+   // A shortened url version displayed to the user
+  string domain = 13;
+
+  bool isCreatedFromAdsUi = 14;
+
+  string callToAction = 15;
+}
+
+enum AdPromoLayout {
+  unknownAdPromoLayout = 0;
+  spotlightVideo = 1;
+}
+
+message AdAppStoreData {
+  string appName = 1;
+  string appIcon = 2;
+  string appRating = 3;
+  string category = 4;
+}
+
+message AdNetworkSignature {
+  int32 fidelityType = 1;
+  string nonce = 2;
+  string attributionSignature = 3;
+}
+
+message AdNetworkData {
+  string adNetworkId = 1;
+  string adNetworkVersion = 2;
+  string appStoreId = 3;
+  string attributionSignature = 4;
+  string nonce = 5;
+  int32 skanCampaignId = 6;
+  string sourceAppId = 7;
+  google.protobuf.Timestamp timestamp = 8;
+  AdNetworkSignature clickThroughSignature = 9;
+  AdNetworkSignature viewThroughSignature = 10;
+}
+
+// this proto is used exclusively inside AdPayload
+message AdPayloadGalleryItem {
+  string caption = 1;
+  string outboundURL = 2;
+  string displayAddress = 3;
+  string callToAction = 4;
+  repeated ProtoAdEvent adEvents = 5;
+}

@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+enum NewsCellID {
+  unknownNewsCell = 0;
+  newsTopics = 1;
+  newsMetadata = 2;
+  newsProfileMetadata = 3;
+}
+
+message NewsFeedTopic {
+  string id = 1;
+  string displayName = 2;
+  string iconURL = 3;
+  repeated string subtopicIds = 4;
+}
+
+message NewsFeedSubTopic {
+  string id = 1;
+  string displayName = 2;
+  repeated string subredditIds = 3;
+}
+
+message NewsTopicsCellData {
+  string id = 1;
+  repeated NewsFeedTopic topics = 2;
+  repeated NewsFeedSubTopic subtopics = 3;
+}
+
+message NewsMetadataCellData {
+  google.protobuf.Timestamp createdAt = 1;
+  string topic = 2;
+  string subredditName = 3;
+}
+
+message NewsProfileMetadataCellData {
+  google.protobuf.Timestamp createdAt = 1;
+  string username = 2;
+  string link = 3;
+  string dateTextOverride = 4;
+}

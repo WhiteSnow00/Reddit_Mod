@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+import "feeds_api/Action.proto";
+import "feeds_api/AdCells.proto";
+import "feeds_api/AdPayload.proto";
+import "feeds_api/CommonCells.proto";
+import "feeds_api/FeedCells.proto";
+import "feeds_api/NewsFeed.proto";
+import "feeds_api/ViewComponent.proto";
+import "google/protobuf/any.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+message CustomCell {
+  ViewComponent root = 1;
+  string reuseIdentifier = 2;
+  Action selectionAction = 3;
+}
+
+message NativeCell {
+  google.protobuf.Any payload = 1;
+  oneof content {
+    CommonCellID commonID = 2;
+    FeedCellID feedID = 3;
+    AdCellID adID = 4;
+    NewsCellID newsID = 5;
+  }
+}
+
+message Cell {
+  // This uniquely identifies the cell in a Group
+  string id = 1;
+  oneof content {
+    CustomCell custom = 2;
+    NativeCell native = 3;
+  }
+}
+
+message Group {
+  // The ID of the post
+  string id = 1;
+  repeated Cell cells = 2;
+  // This will only be set if the post is an Ad
+  AdPayload payload = 3;
+}
+
+message Feed {
+  string id = 1;
+  string endCursor = 2;
+  int32 distance = 3;
+  repeated Group groups = 4;
+}

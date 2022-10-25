@@ -1,0 +1,113 @@
+syntax = "proto3";
+
+import "feeds_api/Common.proto";
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.reddit.feedsapi";
+
+enum FeedCellID {
+  unknownFeedCell = 0;
+  action = 1;
+  awards = 2;
+  metadata = 4;
+  link = 5;
+  legacyVideo = 6;
+  gallery = 7;
+  title = 9;
+  titleWithThumbnail = 10;
+  galleryWithLinkFooter = 11;
+}
+
+message ActionCellData {
+  VoteState voteState = 2;
+  int32 score = 3;
+  bool isScoreHidden = 4;
+  int32 commentCount = 5;
+  string shareImagePath = 6;
+}
+
+message AwardsCellData {
+  int32 total = 2;
+  repeated CellMediaSource iconSources = 3;
+}
+
+message MetadataCellData {
+  enum IconShape {
+    round = 0;
+    square = 1;
+  }
+  google.protobuf.Timestamp createdAt = 1;
+  string authorName = 2;
+  Color color = 3;
+  string details = 4;
+  string detailsLink = 5;
+  string iconPath = 6;
+  IconShape iconShape = 7;
+  string topic = 8;
+}
+
+message LinkCellData {
+  string path = 1;
+  CellMediaSource media = 2;
+}
+
+message LegacyVideoCellData {
+  enum VideoType {
+    streamable = 0;
+    hls = 1;
+    mp4 = 2;
+  }
+  CellMediaSource media = 1;
+  CellMediaSource preview = 2;
+  bool isGif = 3;
+  bool shouldBlur = 4;
+  bool isLiveVideoPostOrCrosspost = 5;
+  bool isAdPost = 6;
+  bool shouldAutoplay = 7;
+  bool shouldShowExpandVideoButton = 8;
+  bool shouldHideOverlayControls = 9;
+  string subredditVisualName = 10;
+  string videoIdentifier = 12;
+  VideoType type = 13;
+  string callToAction = 14;
+}
+
+message GalleryCellData {
+  float height = 1;
+
+  repeated GalleryPage pages = 2;
+}
+
+message GalleryWithLinkFooterCellData {
+  float height = 1;
+
+  repeated GalleryLinkFooterPage pages = 2;
+
+  message GalleryLinkFooterPage {
+    GalleryPage page = 1;
+    GalleryLinkFooter footer = 2;
+  }
+
+  message GalleryLinkFooter {
+    string outboundUrl = 4;
+    string caption = 5;
+    string displayUrl = 6;
+  }
+}
+
+message TitleCellData {
+  string title = 1;
+  int32 numberOfLines = 2;
+  bool isVisited = 3;
+  bool isNsfw = 4;
+  bool isSpoiler = 5;
+}
+
+message TitleWithThumbnailCellData {
+  TitleCellData titleCellData = 1;
+  oneof thumbnail {
+    CellMediaSource image = 2;
+    LinkCellData linkCellData = 3;
+    CellMediaSource videoThumbnail = 4;
+  }
+}

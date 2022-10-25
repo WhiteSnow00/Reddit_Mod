@@ -1,0 +1,443 @@
+0:47 firebase-analytics
+0:47 play-services-safetynet
+48:1732 Protobuf Nano
+1781:2500 zlib
+4282:1481 darts_clone
+5764:11342 flatbuffers
+17107:731 UTF
+17839:3182 PCRE
+21022:680 STL
+21703:1558 RE2
+23262:19442 ICU4C
+42705:11358 safeparcel
+54064:1602 JSR 305
+55667:46 exoplayer-smoothstreaming
+55714:75 Apollo GraphQL API
+55667:46 Android Support ExifInterface
+55790:45 anko
+55667:46 androidx.databinding:viewbinding
+55667:46 exoplayer-extractor
+55667:46 firebase-database-collection
+55667:46 RxRelay
+55667:46 firebase-crashlytics
+55836:11361 Tape
+67198:42 io.grpc:grpc-core
+55667:46 OmRecorder
+67241:26 Instabug APM Library
+55667:46 javax.inject
+55667:46 EventBus
+67268:47 Dagger
+55667:46 Accompanist Pager layouts
+55667:46 slf4j-timber
+55667:46 Android ConstraintLayout Solver
+55667:46 firebase-common-ktx
+0:47 play-services-auth
+67316:10694 AndroidX lifecycle common library
+67316:10694 AndroidX lifecycle livedatacore library
+67316:10694 AndroidX lifecycle runtime library
+78011:1096 Animal Sniffer
+79108:1846 Checker Framework Annotations
+80955:11357 Error Prone
+42705:11358 Google Auto
+42705:11358 Guava JDK5
+92313:11362 Guava JDK7
+42705:11358 J2ObjC
+42705:11358 JSR 250
+103676:11365 JSR 330
+115042:11307 JsInterop Annotations
+42705:11358 SafeParcelable library
+126350:46 Glide Disk LRU Cache Library
+55667:46 Glide Disk LRU Cache Library
+67241:26 Instabug Bug Reporting Library
+126397:43 Lottie
+55667:46 Saved State
+126441:34 dbflow-kotlinextensions
+55667:46 Compose Material Components
+126397:43 org.conscrypt:conscrypt-android
+55667:46 exoplayer-database
+0:47 play-services-measurement-sdk-api
+55667:46 Android ConstraintLayout Core
+67268:47 Compose Runtime
+55667:46 Android Support Library Custom View
+55667:46 exoplayer-decoder
+55667:46 firebase-encoders-json
+126441:34 dbflow-rx2-kotlinextensions
+55667:46 Android Support Preference v7
+126441:34 dbflow
+55667:46 firebase-encoders-proto
+67268:47 Compose Animation
+55714:75 Apollo GraphQL Normalized Cache Common APIs
+126476:54 Twitter Core Android SDK
+55667:46 Android Support DynamicAnimation
+55667:46 extension-workmanager
+55667:46 firebase-appcheck-interop
+55667:46 Android Paging-Runtime
+55667:46 napier
+126350:46 Glide
+55667:46 Glide
+55667:46 Compose UI Text
+126531:61 Android State
+55667:46 Android Support Library loader
+55667:46 SavedState Kotlin Extensions
+55667:46 Android Paging-Common Kotlin Extensions
+55667:46 Android Resources Library
+55667:46 Android Support Library Cursor Adapter
+55667:46 androidx.customview:poolingcontainer
+126593:92 Cronet
+67241:26 Instabug Surveys Library
+55667:46 Compose Geometry
+126686:35 komputing/KHex
+55667:46 flexbox-layout
+55667:46 androidx.profileinstaller:profileinstaller
+55667:46 firebase-encoders
+126722:32 video-android
+55667:46 Byte Units
+67268:47 kotlinx-coroutines-core
+55667:46 Android Support VectorDrawable
+126686:35 komputing/KEthereum
+126755:0 DeepLinkDispatch library
+126756:31 com.nytimes.android
+0:47 play-services-tasks
+42705:11358 JSpecify
+126788:102807 Kotlin
+229596:10695 apksig
+0:47 firebase-auth-interop
+240292:11357 Firebase
+55790:45 anko
+126755:0 DeepLinkDispatch library
+55667:46 Android Lifecycle-Common
+55790:45 anko
+55667:46 VersionedParcelable
+55714:75 Apollo GraphQL Normalized Cache APIs
+55667:46 Android Room-Common
+55667:46 Android Support Library collections
+67198:42 io.grpc:grpc-api
+67268:47 Dagger Android Support
+55667:46 Android Emoji2 Compat
+67268:47 Moshi
+55667:46 LiveData Core Kotlin Extensions
+55667:46 firebase-abt
+251650:71 Sendbird Android SDK
+55667:46 AndroidX Widget ViewPager2
+55667:46 Collections Kotlin Extensions
+126686:35 komputing/KEthereum
+0:47 play-services-places-placereport
+0:47 play-services-location
+55667:46 Android Support Library core utils
+67268:47 kotlinx-coroutines-android
+251722:52 core
+55667:46 Android Lifecycle LiveData
+0:47 play-services-auth-base
+55667:46 Experimental annotation
+126397:43 Lottie Compose
+67268:47 kotlinx-serialization-json
+55667:46 Accompanist Insets library
+55667:46 Compose Material Ripple
+55667:46 exoplayer-datasource
+55667:46 SplashScreen
+55667:46 okio
+55667:46 Android Support Library fragment
+55667:46 exoplayer-dash
+55667:46 Activity Kotlin Extensions
+55667:46 exoplayer-core
+55667:46 Timber
+55667:46 Android Lifecycle Service
+55714:75 Apollo GraphQL Kotlin coroutines Support
+67241:26 Instabug Features requests Library
+67268:47 Moshi Kotlin
+55667:46 firebase-annotations
+0:47 play-services-ads-identifier
+251775:1125 Checker Framework Utilities
+55667:46 Parcelize Runtime
+55667:46 ISO Parser
+126441:34 dbflow-rx2
+55667:46 Dynamic animation Kotlin Extensions
+55667:46 firebase-common
+55667:46 Compose UI primitives
+0:47 firebase-iid
+252901:16013 Android SDK
+268915:10695 AndroidX activity library
+268915:10695 AndroidX annotation library
+67316:10694 AndroidX architecture core library
+67316:10694 AndroidX architecture library
+268915:10695 AndroidX asynclayoutinflater library
+268915:10695 AndroidX collection library
+268915:10695 AndroidX concurrent futures library
+268915:10695 AndroidX coordinatorlayout library
+279611:10175 AndroidX core library
+268915:10695 AndroidX cursoradapter library
+268915:10695 AndroidX customview library
+268915:10695 AndroidX documentfile library
+268915:10695 AndroidX drawerlayout library
+268915:10695 AndroidX fragment library
+289787:10693 AndroidX interpolator library
+268915:10695 AndroidX legacy coreui library
+268915:10695 AndroidX legacy coreutils library
+268915:10695 AndroidX legacy v4 library
+67316:10694 AndroidX lifecycle viewmodel library
+289787:10693 AndroidX lifecycle viewmodel savedstate library
+279611:10175 AndroidX loader library
+289787:10693 AndroidX localbroadcastmanager library
+300481:10691 AndroidX media base library
+268915:10695 AndroidX print library
+311173:10689 AndroidX savedstate library
+268915:10695 AndroidX slidingpanelayout library
+268915:10695 AndroidX swiperefreshlayout library
+321863:10695 AndroidX versionedparcelable library
+268915:10695 AndroidX viewpager library
+0:47 firebase-auth-ktx
+0:47 play-services-measurement-sdk
+55667:46 Android Dual Cache
+0:47 billing
+55667:46 RxAndroid
+126350:46 Glide RecyclerView Integration
+55667:46 Glide RecyclerView Integration
+55667:46 okio
+55667:46 Compose Animation
+55667:46 firebase-components
+67268:47 JetBrains Java Annotations
+55667:46 Disk LRU Cache
+55667:46 WebView Support Library
+55667:46 ConstraintLayout for Jetpack Compose
+55667:46 Android Support Library Async Layout Inflater
+55790:45 anko
+332559:80 Glide WebpDecoder Integration
+67268:47 Dagger Lint Rules AAR Distribution
+55667:46 Activity Compose
+55667:46 Android Emoji2 Compat view helpers
+126441:34 Checker Qual
+55667:46 Material Components for Android
+55667:46 RxBinding
+55667:46 firebase-messaging
+55667:46 RxKotlin
+55667:46 Android Lifecycle Reactivestreams
+55667:46 Android Support CardView v7
+126756:31 com.nytimes.android
+0:47 play-services-measurement-impl
+126441:34 dbflow-core
+55667:46 Compose Foundation
+55667:46 Compose Runtime
+126756:31 com.nytimes.android
+55667:46 Kotlin Stdlib
+55667:46 Compose Unit
+332640:67 Bolts-Tasks
+55667:46 Compose Material Icons Core
+55667:46 exoplayer-rtsp
+55667:46 Android Lifecycle ViewModel Kotlin Extensions
+126686:35 komputing/KEthereum
+55667:46 Android Support Library Sliding Pane Layout
+55667:46 firebase-datatransport
+55667:46 Android Lifecycle Process
+55667:46 Simple XML
+55667:46 com.google.firebase:firebase-bom
+332708:53 Flipper NoOp
+55667:46 Conductor ViewPager2 Adapter
+0:47 com.android.installreferrer:installreferrer
+67268:47 Dagger Android
+67268:47 kotlinx-serialization-json
+55667:46 RxJava
+55667:46 Compose Layouts
+55667:46 Android Lifecycle Runtime
+55667:46 Android Support Library Print
+55667:46 firebase-perf-ktx
+67268:47 kotlinx-coroutines-core
+332762:43 UUID
+67268:47 Compose Foundation
+332806:40 Bouncy Castle Provider
+55667:46 Android Support Library compat
+126686:35 komputing/KEthereum
+55667:46 Android Lifecycle ViewModel with SavedState
+55667:46 Okio
+55667:46 firebase-perf
+67198:42 io.grpc:grpc-android
+55667:46 Kotlin Android Extensions Runtime
+332762:43 UUID
+55667:46 AndroidX Autofill
+67198:42 perfmark:perfmark-api
+67268:47 kotlinx-serialization-core
+55667:46 ShortcutBadger
+0:47 play-services-measurement-base
+55667:46 Android Support Library media compat
+55667:46 Accompanist Pager Indicators
+55667:46 Activity
+55667:46 Android Support AnimatedVectorDrawable
+55667:46 Conductor Architecture Components Lifecycle Extensions
+55667:46 Android App Startup Runtime
+55790:45 anko
+55667:46 extension-cronet
+55667:46 Android Lifecycle LiveData Core
+332847:54 Stetho
+126686:35 komputing/KHash
+55667:46 Android Emoji AppCompat
+55667:46 exoplayer
+55667:46 Android Lifecycle ViewModel
+332847:54 Stetho OkHttp 3 module
+55790:45 anko
+0:47 play-services-base
+55667:46 firebase-database
+55667:46 Android ConstraintLayout
+55667:46 Kotlin Reflect
+0:47 firebase-measurement-connector
+300481:10691 AndroidX annotation experimental library
+67316:10694 AndroidX tracing library
+5764:11342 FlatBuffers
+55667:46 RxBinding
+126686:35 komputing/KEthereum
+55667:46 Android Arch-Runtime
+332902:62 ${extension.name} API
+0:47 play-services-measurement
+55667:46 RxPreferences
+332965:26 JCodec
+55667:46 Kotlin Stdlib Jdk8
+55667:46 Kotlin Stdlib Jdk7
+55667:46 Accompanist FlowLayout library
+0:47 firebase-auth
+67316:10694 AndroidX architecture core common library
+67316:10694 AndroidX architecture core runtime library
+42705:11358 Conscrypt
+42705:11358 Gson
+332992:1732 Protocol Buffers for Java
+42705:11358 Tink
+42705:11358 android_build
+42705:11358 conscrypt
+55667:46 RxPermission
+55667:46 Accompanist SwipeRefresh library
+55667:46 Conductor
+55667:46 Conductor PagerAdapter
+55667:46 exoplayer-common
+55667:46 Conductor AndroidX Transition Extensions
+55667:46 Compose Graphics
+55714:75 Apollo GraphQL http cache api
+55667:46 AndroidX Futures
+55667:46 LiveData Kotlin Extensions
+0:47 play-services-cronet
+334725:785183 Cronet
+1119909:44 LiTr
+55667:46 Snapper for Jetpack Compose
+55667:46 SubsamplingScaleImageView
+55667:46 Android Support Library Drawer Layout
+55667:46 exoplayer-ui
+55667:46 firebase-installations-interop
+55667:46 transport-runtime
+55667:46 Compose Animation Core
+126755:0 tobiasrohloff/NestedScrollWebView
+55667:46 Android Paging-Common
+67268:47 kotlinx-coroutines-rx2
+1119954:42 Google Android Annotations Library
+55667:46 exoplayer-hls
+67268:47 Compose Material Components
+55667:46 rxjava2-extensions
+67268:47 kotlinx-serialization-core
+0:47 play-services-cloud-messaging
+0:47 firebase-iid-interop
+67198:42 io.grpc:grpc-context
+126686:35 komputing/KEthereum
+332965:26 JCodec for Android
+67241:26 Instabug Chat Library
+1119997:70 MaterialDateTimePicker
+55667:46 Android Lifecycle-Common for Java 8 Language
+0:47 billing-ktx
+55667:46 Android Room-Runtime
+55667:46 Android Resource Inspection - Annotations
+55667:46 TagSoup
+67241:26 Instabug Crash Reporting Library
+55714:75 Apollo GraphQL Normalized Cache APIs
+55667:46 Android Support RecyclerView
+55667:46 Android Support Custom Tabs
+55667:46 firebase-config
+55667:46 Android AppCompat Library
+55667:46 SnakeYAML
+126686:35 komputing/KHex
+0:47 play-services-auth-api-phone
+268915:10695 AndroidX document file library.
+268915:10695 AndroidX print library.
+321863:10695 AndroidX versioned parcelable library.
+55667:46 Kotlin Stdlib Common
+67198:42 gRPC Kotlin Stub
+126686:35 komputing/KEthereum
+55667:46 Biometric
+67198:42 io.grpc:grpc-protobuf-lite
+67268:47 logging-interceptor
+67268:47 Gson
+55667:46 Android WorkManager RxJava2 Support
+55667:46 Compose Util
+55667:46 firebase-database-ktx
+55667:46 Android DB
+55667:46 Android Support SQLite - Framework Implementation
+55714:75 Apollo GraphQL API
+55790:45 anko
+67241:26 Instabug Core Library
+0:47 play-services-oss-licenses
+1120068:11365 absl
+55667:46 Android Support Library core UI
+67198:42 io.grpc:grpc-stub
+67268:47 kotlinx-coroutines-bom
+55667:46 thrifty-runtime
+55667:46 Compose Saveable
+1119954:42 uCrop
+0:47 play-services-basement
+55667:46 Android Support Library Document File
+126350:46 Glide GIF Decoder Library
+55667:46 Glide GIF Decoder Library
+55667:46 Android Support Library Interpolators
+55667:46 firebase-installations
+55667:46 Core Kotlin Extensions
+55667:46 transport-api
+55667:46 Android Transition Support Library
+0:47 play-services-measurement-api
+67268:47 okhttp
+67268:47 okhttp-urlconnection
+55667:46 Android Dual Cache
+55667:46 Compose Tooling API
+126476:54 Tweet Ui Android SDK
+126686:35 komputing/KEthereum
+67241:26 Instabug Full Library
+55714:75 Apollo GraphQL Runtime
+55667:46 Android Percent Support Library
+55714:75 Apollo GraphQL Normalized Cache Common APIs
+126350:46 Glide Annotations
+55667:46 Glide Annotations
+0:47 play-services-stats
+126756:31 com.nytimes.android
+55667:46 Android Tracing
+1131434:41 ivs-player
+55667:46 protolite-well-known-types
+1131476:49 reactive-streams
+55667:46 Android Support Library Coordinator Layout
+55667:46 Android Support Library v4
+55667:46 Android Emoji Compat
+1131526:59 Android Emoji Compat
+1131586:45 Android Emoji Compat
+55667:46 FindBugs-jsr305
+55667:46 Android Room RXJava2
+126722:32 video-android-ktx
+67198:42 io.grpc:grpc-okhttp
+67268:47 kotlinx-coroutines-reactive
+55667:46 Android Multi-Dex Library
+55667:46 ReLinker
+67268:47 okhttp
+1131632:61 Audioswitch
+55667:46 Android WorkManager Kotlin Extensions
+55667:46 napier
+55667:46 Android Support Library Annotations
+55667:46 Android Lifecycle Kotlin Extensions
+55667:46 Android Support Library Custom View
+55667:46 Android Arch-Common
+55667:46 transport-backend-cct
+67268:47 Anvil Annotations
+55667:46 J2ObjC Annotations
+55667:46 Android WorkManager Runtime
+55667:46 Android Support Library View Pager
+55667:46 error-prone annotations
+55667:46 AndroidSVG
+55667:46 Android Support Palette v7
+126722:32 live-player-android
+55667:46 Android Support Library Local Broadcast Manager
+55667:46 Android Paging-Compose
+55667:46 Android Room Kotlin Extensions
+126686:35 komputing/KEthereum
+55790:45 anko
+67268:47 Moshi Adapters
+126350:46 Glide OkHttp 3.x Integration
+55667:46 Glide OkHttp 3.x Integration
+55667:46 Branch Android SDK

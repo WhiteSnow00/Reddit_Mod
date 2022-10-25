@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.privatemessages;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.privatemessages";
+
+message GenericPrivateMessagesRequest {
+  string id = 1;
+}
+
+message ComposeRequest {
+  string to = 1;
+  string subject = 2;
+  string text = 3;
+  string from_sr = 4;
+}
+
+message ReadAllMessagesRequest {
+  string filter_types = 1;
+}
+
+message MessageWhereRequest {
+  string where = 1;
+  bool mark = 2;
+  string mid = 3;
+  string after = 4;
+  string before = 5;
+  int64 count = 6;
+  int64 limit = 7;
+  string show = 8;
+  bool sr_detail = 9;
+}

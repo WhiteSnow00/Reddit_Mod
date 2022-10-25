@@ -1,0 +1,256 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.users;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.users";
+
+import "google/protobuf/wrappers.proto";
+import "devvit/plugin/redditapi/common/common_msg.proto";
+
+
+//Requests
+message GenericUsersRequest {
+    string id = 1;
+    string username = 2;
+}
+
+message BlockUserRequest {
+  string account_id = 1;
+  string name = 2;
+}
+
+message FriendRequest {
+    string ban_context = 1;
+    string ban_message = 2;
+    string ban_reason = 3;
+    int32 duration = 4;
+    string name = 5;
+    string note = 6;
+    string permissions = 7;
+    string type = 8;
+    string subreddit = 9;
+}
+
+message ReportUserRequest {
+    string details = 1;
+    string reason = 2;
+    string user = 3;
+}
+
+message SetPermissionsRequest {
+    string name = 1;
+    string subreddit = 2;
+    string permissions = 3;
+    string type = 4;
+}
+
+message UnfriendRequest {
+    string id = 1;
+    string name = 2;
+    string type = 3;
+    string subreddit = 4;
+}
+
+message UserDataByAccountIdsRequest {
+    string ids = 1;
+}
+
+message UsernameAvailableRequest {
+    string user = 1;
+}
+
+message UpdateFriendRelationshipRequest {
+    string name = 1;
+    string note = 2;
+}
+
+message UserAboutRequest {
+    string username = 1;
+}
+
+message UserWhereRequest {
+    int32 context = 1;
+    string show = 2;
+    string sort = 3;
+    string t = 4;
+    string type = 5;
+    string after = 6;
+    string before = 7;
+    int64 count = 8;
+    int32 limit = 9;
+    bool sr_detail = 10;
+    string username = 11;
+    string where = 12;
+}
+
+//Responses
+message GeneralFriendResponse {
+    google.protobuf.Int64Value date = 1;
+    google.protobuf.StringValue rel_id = 2;
+    google.protobuf.StringValue name = 3;
+    google.protobuf.StringValue id = 4;
+
+        // error case
+    repeated google.protobuf.StringValue fields = 5;
+    google.protobuf.StringValue explanation = 6;
+    google.protobuf.StringValue message = 7;
+    google.protobuf.StringValue reason = 8;
+}
+
+message BlockUserResponse {
+    google.protobuf.Int64Value date = 1;
+    google.protobuf.StringValue icon_img = 2;
+    google.protobuf.StringValue id = 3;
+    google.protobuf.StringValue name = 4;
+}
+
+message UserDataByAccountIdsResponse {
+    message UserAccountData {
+        google.protobuf.StringValue name = 1;
+        google.protobuf.Int64Value created_utc = 2;
+        google.protobuf.Int64Value link_karma = 3;
+        google.protobuf.Int64Value comment_karma = 4;
+        google.protobuf.StringValue profile_img = 5;
+        google.protobuf.StringValue profile_color = 6;
+        google.protobuf.BoolValue profile_over_18 = 7;
+    }
+
+    map<string, UserAccountData> users = 1;
+}
+
+message UserTrophiesResponse { 
+    message TrophiesData {
+        google.protobuf.StringValue icon_70 = 1;
+        google.protobuf.Int64Value granted_at = 2;
+        google.protobuf.StringValue url = 3;
+        google.protobuf.StringValue icon_40 = 4;
+        google.protobuf.StringValue name = 5;
+        google.protobuf.StringValue award_id = 6;
+        google.protobuf.StringValue id = 7;
+        google.protobuf.StringValue description = 8;
+    }
+
+    message TrophiesType {
+        google.protobuf.StringValue kind = 1;
+        TrophiesData data = 2;
+    }
+
+    message UserTrophiesData {
+        repeated TrophiesType trophies = 1;
+    }
+
+    google.protobuf.StringValue kind = 1;
+    UserTrophiesData data = 2;
+}
+
+message UserAboutResponse { 
+    message MwebType {
+        google.protobuf.StringValue owner = 1;
+        google.protobuf.StringValue variant = 2;
+        google.protobuf.Int64Value experiment_id = 3;
+    }
+
+    message FeaturesType {
+        google.protobuf.BoolValue mod_service_mute_writes = 1;
+        google.protobuf.BoolValue promoted_trend_blanks = 2;
+        google.protobuf.BoolValue show_amp_link = 3;
+        google.protobuf.BoolValue chat = 4;
+        google.protobuf.BoolValue is_email_permission_required = 5;
+        google.protobuf.BoolValue mod_awards = 6;
+        google.protobuf.BoolValue awards_on_streams = 7;
+        google.protobuf.BoolValue webhook_config = 8;
+        google.protobuf.BoolValue mweb_xpromo_modal_listing_click_daily_dismissible_ios = 9;
+        google.protobuf.BoolValue live_orangereds = 10;
+        google.protobuf.BoolValue cookie_consent_banner = 11;
+        google.protobuf.BoolValue modlog_copyright_removal = 12;
+        google.protobuf.BoolValue do_not_track = 13;
+        google.protobuf.BoolValue mod_service_mute_reads = 14;
+        google.protobuf.BoolValue chat_user_settings = 15;
+        google.protobuf.BoolValue use_pref_account_deployment = 16;
+        google.protobuf.BoolValue mweb_xpromo_interstitial_comments_ios = 17;
+        google.protobuf.BoolValue chat_subreddit = 18;
+        google.protobuf.BoolValue premium_subscriptions_table = 19;
+        google.protobuf.BoolValue mweb_xpromo_interstitial_comments_android = 20;
+        google.protobuf.BoolValue crowd_control_for_post = 21;
+        google.protobuf.BoolValue noreferrer_to_noopener = 22;
+        google.protobuf.BoolValue chat_group_rollout = 23;
+        google.protobuf.BoolValue resized_styles_images = 24;
+        google.protobuf.BoolValue spez_modal = 25;
+        google.protobuf.BoolValue mweb_xpromo_modal_listing_click_daily_dismissible_android = 26;
+        google.protobuf.BoolValue expensive_coins_package = 27;
+        MwebType mweb_xpromo_revamp_v3 = 28;
+        MwebType mweb_xpromo_revamp_v2 = 29;
+        MwebType mweb_sharing_clipboard = 30;
+        MwebType mweb_nsfw_xpromo = 31;
+    }
+
+    message UserAboutData {
+        google.protobuf.BoolValue is_employee = 1;
+        google.protobuf.BoolValue has_visited_new_profile = 2;
+        google.protobuf.BoolValue is_friend = 3;
+        google.protobuf.BoolValue pref_no_profanity = 4;
+        google.protobuf.BoolValue has_external_account = 5;
+        google.protobuf.StringValue pref_geopopular = 6;
+        google.protobuf.BoolValue pref_show_trending = 7;
+        google.protobuf.BoolValue pref_show_presence = 8;
+        google.protobuf.StringValue snoovatar_img = 9;
+        repeated google.protobuf.Int32Value snoovatar_size = 10;
+        google.protobuf.StringValue gold_expiration = 11;
+        google.protobuf.BoolValue has_gold_subscription = 12;
+        google.protobuf.BoolValue is_sponsor = 13;
+        google.protobuf.Int64Value num_friends = 14;
+        google.protobuf.BoolValue can_edit_name = 15;
+        google.protobuf.BoolValue is_blocked = 16;
+        google.protobuf.BoolValue verified = 17;
+        google.protobuf.StringValue new_modmail_exists = 18;
+        google.protobuf.BoolValue pref_autoplay = 19;
+        google.protobuf.Int64Value coins = 20;
+        google.protobuf.BoolValue has_paypal_subscription = 21;
+        google.protobuf.BoolValue has_subscribed_to_premium = 22;
+        google.protobuf.StringValue id = 23;
+        google.protobuf.BoolValue can_create_subreddit = 24;
+        google.protobuf.BoolValue over_18 = 25;
+        google.protobuf.BoolValue is_gold = 26;
+        google.protobuf.BoolValue is_mod = 27;
+        google.protobuf.Int64Value awarder_karma = 28;
+        google.protobuf.StringValue suspension_expiration_utc = 29;
+        google.protobuf.BoolValue has_stripe_subscription = 30;
+        google.protobuf.BoolValue is_suspended = 31;
+        google.protobuf.BoolValue pref_video_autoplay = 32;
+        google.protobuf.BoolValue in_chat = 33;
+        google.protobuf.BoolValue has_android_subscription = 34;
+        google.protobuf.BoolValue in_redesign_beta = 35;
+        google.protobuf.StringValue icon_img = 36;
+        google.protobuf.BoolValue has_mod_mail = 37;
+        google.protobuf.BoolValue pref_nightmode = 38;
+        google.protobuf.Int64Value awardee_karma = 39;
+        google.protobuf.BoolValue hide_from_robots = 40;
+        google.protobuf.BoolValue password_set = 41;
+        google.protobuf.StringValue modhash = 42;
+        google.protobuf.Int64Value link_karma = 43;
+        google.protobuf.BoolValue force_password_reset = 44;
+        google.protobuf.Int64Value total_karma = 45;
+        google.protobuf.Int32Value inbox_count = 46;
+        google.protobuf.BoolValue pref_top_karma_subreddits = 47;
+        google.protobuf.BoolValue has_mail = 48;
+        google.protobuf.BoolValue pref_show_snoovatar = 49;
+        google.protobuf.StringValue name = 50;
+        google.protobuf.Int64Value pref_clickgadget = 51;
+        google.protobuf.Int64Value created = 52;
+        google.protobuf.BoolValue has_verified_email = 53;
+        google.protobuf.Int64Value gold_creddits = 54;
+        google.protobuf.Int64Value created_utc = 55;
+        google.protobuf.BoolValue has_ios_subscription = 56;
+        google.protobuf.BoolValue pref_show_twitter = 57;
+        google.protobuf.BoolValue in_beta = 58;
+        google.protobuf.Int64Value comment_karma = 59;
+        google.protobuf.BoolValue accept_followers = 60;
+        google.protobuf.BoolValue has_subscribed = 61;
+        devvit.plugin.redditapi.common.SubredditObject subreddit = 62;
+        FeaturesType features = 63;
+    }
+
+    google.protobuf.StringValue kind = 1;
+    UserAboutData data = 2;
+}

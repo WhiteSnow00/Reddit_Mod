@@ -1,0 +1,122 @@
+syntax = "proto3";
+
+package devvit.plugin.redditapi.listings;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/redditapi";
+option java_package = "com.reddit.devvit.plugin.redditapi.listings";
+
+import "google/protobuf/descriptor.proto";
+import "devvit/plugin/redditapi/common/common_msg.proto";
+
+// Requests
+message GetBestRequest {
+  string after = 1;
+  string before = 2;
+  int64 count = 3;
+  int64 limit = 4;
+  string show = 5;
+  bool sr_detail = 6;
+}
+
+message GetSortRequest {
+  string subreddit = 1;
+  string sort = 2;
+  string after = 3;
+  string before = 4;
+  int64 limit = 5;
+  int64 count = 6;
+  string show = 7;
+  bool sr_detail = 8;
+  string t = 9; 
+}
+
+message GetCommentsRequest {
+  string subreddit = 1;
+  string comment = 2;
+  int64 context = 3;
+  int64 depth = 4;
+  int64 limit = 5;
+  bool showedits = 6;
+  bool showmedia = 7;
+  bool showmore = 8;
+  bool showtitle = 9;
+  string sort = 10;
+  bool sr_detail = 11;
+  string theme = 12;
+  bool threaded = 13;
+  int64 truncate = 14;
+}
+
+message GetCommentsArticleRequest {
+  string article = 1;
+  string comment = 2;
+  int64 context = 3;
+  int64 depth = 4;
+  int64 limit = 5;
+  bool showedits = 6;
+  bool showmedia = 7;
+  bool showmore = 8;
+  bool showtitle = 9;
+  string sort = 10;
+  bool sr_detail = 11;
+  string theme = 12;
+  bool threaded = 13;
+  int64 truncate = 14;
+}
+
+message GetByIdRequest {
+  string post_ids = 1;
+}
+
+message GetDuplicatesRequest {
+  string article = 1;
+  string before = 2;
+  string after = 3;
+  int64 limit = 4;
+  string sort = 5;
+  string sr = 6;
+  int64 count = 7;
+  bool crossposts_only = 8;
+  string show = 9;
+  bool sr_detail = 10;
+}
+
+message GetHotRequest {
+  string subreddit = 1;
+  string before = 2;
+  string after = 3;
+  int64 limit = 4;
+  int64 count = 5;
+  string show = 6;
+  bool sr_detail = 7;
+  string g = 8;
+}
+
+message GetNewRequest {
+  string subreddit = 1;
+  string before = 2;
+  string after = 3;
+  int64 limit = 4;
+  int64 count = 5;
+  string show = 6;
+  bool sr_detail = 7;
+}
+
+message GetRisingRequest {
+  string subreddit = 1;
+  string after = 2;
+  string before = 3;
+  int64 count = 4;
+  int64 limit = 5;
+  string show = 6;
+  bool sr_detail = 7;
+}
+
+message GetRandomRequest {
+  string subreddit = 1;
+}
+
+// Responses
+message ListingResponse {
+  repeated devvit.plugin.redditapi.common.Listing listings = 1;
+}

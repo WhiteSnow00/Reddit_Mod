@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package devvit.runtime.actor;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/runtime/actor";
+option java_package = "com.reddit.devvit.runtime.actor";
+
+import "google/protobuf/empty.proto";
+import "devvit/runtime/bundle.proto";
+
+// Native implementation, spawns/terminates Workers.
+service RuntimeActor {
+  rpc NewWorker(LinkedBundle) returns (google.protobuf.Empty);
+
+  rpc TerminateWorker(WorkerQuery) returns (google.protobuf.Empty);
+}
+
+message WorkerQuery { string hostname = 1; }

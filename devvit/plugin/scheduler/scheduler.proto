@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package devvit.plugin.scheduler;
+
+option go_package = "github.snooguts.net/reddit/reddit-devplatform-monorepo/go-common/generated/protos/types/devvit/plugin/scheduler";
+option java_package = "com.reddit.devvit.plugin.scheduler";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "devvit/actor/scheduler/action.proto";
+
+message ScheduledActionRequest {
+  oneof schedule {
+    /** A time in the future to execute the action */
+    google.protobuf.Timestamp when = 1;
+
+    /** A crontab parseable string */
+    string cron = 2;
+  }
+
+  /** Action data to send back to the Actor */
+  devvit.actor.scheduler.ScheduledAction action = 3;
+}
+
+message ScheduledActionResponse {
+  /** Opaque ID for the scheduled action  */
+  string id = 1;
+}
+
+message CancelActionRequest {
+  /** Opaque ID returned from a previous call to Schedule() */
+  string id = 1;
+}
+
+/**
+ * Provides an API for Actors to execute an action sometime in the future.
+ *
+ * Actors will need to implement the SchedulerHandler interface which the Scheduler will call with
+ * the provided ScheduledAction as an argument.
+ *
+ * The Scheduler will fail with an error if the time provided is in the past.
+ */
+service Scheduler {
+  /** This schedules an action **/
+  rpc Schedule(ScheduledActionRequest) returns (ScheduledActionResponse);
+
+  /** This cancels any scheduled action **/
+  rpc Cancel(CancelActionRequest) returns (google.protobuf.Empty);
+}
