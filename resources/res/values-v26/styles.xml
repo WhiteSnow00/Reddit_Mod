@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.RedditTheme" parent="@style/Base.V26.RedditTheme">
+    </style>
+    <style name="Base.RedditTheme.Splash" parent="@style/Base.V26.RedditTheme.Splash">
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V26.RedditTheme" parent="@style/Base.V23.RedditTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="?0x101056d">@android:color/transparent</item>
+    </style>
+    <style name="Base.V26.RedditTheme.Splash" parent="@style/Base.V23.RedditTheme.Splash">
+        <item name="android:windowBackground">@color/alienblue_tone1</item>
+        <item name="android:statusBarColor">?android:attr/windowBackground</item>
+        <item name="android:navigationBarColor">?android:attr/windowBackground</item>
+        <item name="?0x1010564">@drawable/window_splash</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?unknown_attr_ref: 1010543</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?unknown_attr_ref: 1010543</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="?0x1010540">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar">
+    </style>
+    <style name="RtlOverlay.DialogWindowTitle.RedditBase" parent="@style/RtlOverlay.DialogWindowTitle.AppCompat">
+        <item name="android:textAppearance">?attr/textAppearanceRedditDisplayH2</item>
+    </style>
+    <style name="ThemeOverlay.RedditBase.OneplusAmoledHack">
+        <item name="android:navigationBarColor">#010101</item>
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="?0x1010540">true</item>
+    </style>
+    <style name="Widget.RedditBase.CoinsButton" parent="@style/Widget.RedditBase">
+        <item name="android:textAppearance">@style/TextAppearance.RedditBase.DisplayH4</item>
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:background">@drawable/coins_rounded_background</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:drawablePadding">@dimen/three_quarter_pad</item>
+        <item name="android:drawableStart">@drawable/ic_coin_rotated</item>
+        <item name="android:fontFamily">?attr/rdt_font_regular_ui</item>
+        <item name="?0x101053d">@dimen/single_half_pad</item>
+        <item name="?0x101053e">@dimen/single_pad</item>
+        <item name="drawableStartSize">20dp</item>
+    </style>
+    <style name="Widget.RedditBase.TextView.NewPill" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceRedditDisplayH6</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/alienblue_tone8</item>
+        <item name="android:background">@drawable/rounded_checkbox_background</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:backgroundTint">@color/ds_primitive_orangered_500</item>
+        <item name="?0x101053d">@dimen/half_pad</item>
+        <item name="?0x101053e">1dp</item>
+    </style>
+</resources>

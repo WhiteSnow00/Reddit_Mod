@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 天前來自相機膠卷</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">%1$d 天前來自聊天</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 天前來自 Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 天前來自 %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">%1$d 天前來自回憶</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 天前來自 Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">%d 小時</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">%d 小時前</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 小時前來自相機膠卷</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">%1$d 小時前來自聊天</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 小時前來自 Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 小時前來自 %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">%1$d 小時前來自回憶</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 小時前來自 Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">%d 分鐘</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">%d 分鐘前</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 分鐘前來自相機膠卷</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">%1$d 分鐘前來自聊天</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 分鐘前來自 Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 分鐘前來自 %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">%1$d 分鐘前來自回憶</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 分鐘前來自 Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">%d 月</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">%d 個月前</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 個月前來自相機膠卷</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">%1$d 月前來自聊天</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 個月前來自 Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 個月前來自 %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">%1$d 個月前來自回憶</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 個月前來自 Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">%d 秒前</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 秒鐘前來自相機膠卷</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">%1$d 秒鐘前來自聊天</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 秒前來自 Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 秒前來自 %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">%1$d 秒鐘前來自回憶</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 秒鐘前來自 Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">%d 週</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">%d 週前</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 週前來自相機膠卷</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">%1$d 週前來自聊天</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 週前來自 Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 週前來自 %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">%1$d 週前來自回憶</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 週前來自 Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">%d 年前</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d 年前來自相機膠卷</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">%1$d 年前來自聊天</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d 年前來自 Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d 年前來自 %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">%1$d 年前來自回憶</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d 年前來自 Spectacles</item>
+    </plurals>
+</resources>

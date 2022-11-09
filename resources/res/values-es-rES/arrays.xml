@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="auto_dark_option_values">
+        <item>@string/option_value_off</item>
+        <item>@string/option_value_os_setting</item>
+        <item>@string/option_value_sunrise_sunset</item>
+    </array>
+    <array name="auto_dark_options">
+        <item>@string/option_off</item>
+        <item>@string/option_os_setting</item>
+        <item>@string/option_sunrise_sunset</item>
+    </array>
+    <array name="autoplay_option_values">
+        <item>@string/option_value_always</item>
+        <item>@string/option_value_unmetered</item>
+        <item>@string/option_value_never</item>
+    </array>
+    <array name="autoplay_options">
+        <item>@string/option_always</item>
+        <item>@string/option_unmetered</item>
+        <item>@string/option_never</item>
+    </array>
+    <array name="badge_management_tab_titles">
+        <item>@string/badge_management_tab_titles_item_1</item>
+        <item>@string/badge_management_tab_titles_item_2</item>
+        <item>@string/badge_management_tab_titles_item_3</item>
+    </array>
+    <array name="cakeday_subtitle_ordinal">
+        <item>@string/cakeday_subtitle_ordinal_item_1</item>
+        <item>@string/cakeday_subtitle_ordinal_item_2</item>
+        <item>@string/cakeday_subtitle_ordinal_item_3</item>
+        <item>@string/cakeday_subtitle_ordinal_item_4</item>
+        <item>@string/cakeday_subtitle_ordinal_item_5</item>
+        <item>@string/cakeday_subtitle_ordinal_item_6</item>
+        <item>@string/cakeday_subtitle_ordinal_item_7</item>
+        <item>@string/cakeday_subtitle_ordinal_item_8</item>
+        <item>@string/cakeday_subtitle_ordinal_item_9</item>
+        <item>@string/cakeday_subtitle_ordinal_item_10</item>
+        <item>@string/cakeday_subtitle_ordinal_item_11</item>
+        <item>@string/cakeday_subtitle_ordinal_item_12</item>
+        <item>@string/cakeday_subtitle_ordinal_item_13</item>
+        <item>@string/cakeday_subtitle_ordinal_item_14</item>
+        <item>@string/cakeday_subtitle_ordinal_item_15</item>
+        <item>@string/cakeday_subtitle_ordinal_item_16</item>
+        <item>@string/cakeday_subtitle_ordinal_item_17</item>
+        <item>@string/cakeday_subtitle_ordinal_item_18</item>
+        <item>@string/cakeday_subtitle_ordinal_item_19</item>
+        <item>@string/cakeday_subtitle_ordinal_item_20</item>
+        <item>@string/cakeday_subtitle_ordinal_item_21</item>
+    </array>
+    <array name="cakeday_title_ordinal">
+        <item>@string/cakeday_title_ordinal_item_1</item>
+        <item>@string/cakeday_title_ordinal_item_2</item>
+        <item>@string/cakeday_title_ordinal_item_3</item>
+        <item>@string/cakeday_title_ordinal_item_4</item>
+    </array>
+    <array name="comment_sort_entries">
+        <item>@string/label_sort_best</item>
+        <item>@string/label_sort_top</item>
+        <item>@string/label_sort_new</item>
+        <item>@string/label_sort_controversial</item>
+        <item>@string/label_sort_old</item>
+        <item>@string/label_sort_qa</item>
+    </array>
+    <array name="comment_sort_values">
+        <item>@string/option_value_best</item>
+        <item>@string/option_value_top</item>
+        <item>@string/option_value_new</item>
+        <item>@string/option_value_controversial</item>
+        <item>@string/option_value_old</item>
+        <item>@string/option_value_qa</item>
+        <item>@string/option_value_live</item>
+    </array>
+    <array name="country_code_entries">
+        <item>US</item>
+        <item>GB</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>AU</item>
+        <item>IN</item>
+        <item>BR</item>
+        <item>NL</item>
+        <item>PH</item>
+        <item>RU</item>
+        <item>FR</item>
+        <item>MX</item>
+        <item>SE</item>
+        <item>IT</item>
+        <item>PL</item>
+        <item>SG</item>
+        <item>ES</item>
+        <item>NZ</item>
+        <item>TR</item>
+        <item>FI</item>
+        <item>MY</item>
+        <item>NO</item>
+        <item>DK</item>
+        <item>IE</item>
+        <item>BE</item>
+        <item>AR</item>
+        <item>AT</item>
+        <item>RO</item>
+        <item>PT</item>
+        <item>CH</item>
+        <item>JP</item>
+        <item>CL</item>
+        <item>CZ</item>
+        <item>ZA</item>
+        <item>VN</item>
+        <item>TH</item>
+        <item>KR</item>
+        <item>HU</item>
+        <item>GR</item>
+        <item>ID</item>
+        <item>NG</item>
+        <item>EG</item>
+        <item>CO</item>
+        <item>SA</item>
+        <item>AE</item>
+        <item>PE</item>
+        <item>XX</item>
+    </array>
+    <array name="country_name_entries">
+        <item>@string/united_states</item>
+        <item>@string/united_kingdom</item>
+        <item>@string/canada</item>
+        <item>@string/germany</item>
+        <item>@string/australia</item>
+        <item>@string/india</item>
+        <item>@string/brazil</item>
+        <item>@string/netherlands</item>
+        <item>@string/philippines</item>
+        <item>@string/russia</item>
+        <item>@string/france</item>
+        <item>@string/mexico</item>
+        <item>@string/sweden</item>
+        <item>@string/italy</item>
+        <item>@string/poland</item>
+        <item>@string/singapore</item>
+        <item>@string/spain</item>
+        <item>@string/new_zealand</item>
+        <item>@string/turkey</item>
+        <item>@string/finland</item>
+        <item>@string/malaysia</item>
+        <item>@string/norway</item>
+        <item>@string/denmark</item>
+        <item>@string/ireland</item>
+        <item>@string/belgium</item>
+        <item>@string/argentina</item>
+        <item>@string/austria</item>
+        <item>@string/romania</item>
+        <item>@string/portugal</item>
+        <item>@string/switzerland</item>
+        <item>@string/japan</item>
+        <item>@string/chile</item>
+        <item>@string/czech_republic</item>
+        <item>@string/south_africa</item>
+        <item>@string/vietnam</item>
+        <item>@string/thailand</item>
+        <item>@string/korea_republic_of</item>
+        <item>@string/hungary</item>
+        <item>@string/greece</item>
+        <item>@string/indonesia</item>
+        <item>@string/nigeria</item>
+        <item>@string/egypt</item>
+        <item>@string/colombia</item>
+        <item>@string/saudi_arabia</item>
+        <item>@string/united_arab_emirates</item>
+        <item>@string/peru</item>
+        <item>@string/global</item>
+    </array>
+    <array name="dark_theme_entries">
+        <item>@string/option_theme_night</item>
+        <item>@string/option_theme_midnight</item>
+    </array>
+    <array name="dark_theme_values">
+        <item>@string/option_value_night</item>
+        <item>@string/option_value_midnight</item>
+    </array>
+    <array name="day_ordinal">
+        <item>@string/day_ordinal_item_1</item>
+        <item>@string/day_ordinal_item_2</item>
+        <item>@string/day_ordinal_item_3</item>
+        <item>@string/day_ordinal_item_4</item>
+    </array>
+    <array name="default_community_rules">
+        <item>@string/community_rule_remember_the_human</item>
+        <item>@string/community_rule_abide_by_community_rules</item>
+        <item>@string/community_rule_respect_the_privacy_of_others</item>
+        <item>@string/community_rule_dont_impersonate_people_or_entities</item>
+        <item>@string/community_rule_properly_label_nsfw_content</item>
+        <item>@string/community_rule_keep_it_legal</item>
+        <item>@string/community_rule_dont_break_reddit</item>
+    </array>
+    <array name="experiment_comments_in_feed_DU">
+        <item>@string/experiment_comments_in_feed_DU_off</item>
+        <item>@string/experiment_comments_in_feed_DU_control_1</item>
+        <item>@string/experiment_comments_in_feed_DU_control_2</item>
+        <item>@string/experiment_comments_in_feed_DU_comments_DU</item>
+        <item>@string/experiment_comments_in_feed_DU_comments_DU_avatar</item>
+    </array>
+    <array name="experiment_for_you_feed">
+        <item>@string/experiment_for_you_feed_off</item>
+        <item>@string/experiment_for_you_feed_control_1</item>
+        <item>@string/experiment_for_you_feed_control_2</item>
+        <item>@string/experiment_for_you_feed_enabled</item>
+        <item>@string/experiment_for_you_feed_enabled_geo</item>
+    </array>
+    <array name="feed_option_values">
+        <item>@string/label_sort_best</item>
+        <item>@string/label_sort_hot</item>
+        <item>@string/label_sort_new</item>
+        <item>@string/label_sort_top</item>
+        <item>@string/label_sort_controversial</item>
+        <item>@string/label_sort_rising</item>
+    </array>
+    <array name="feed_sort_entries">
+        <item>@string/sort_best</item>
+        <item>@string/sort_hot</item>
+        <item>@string/sort_new</item>
+        <item>@string/sort_top</item>
+        <item>@string/sort_controversial</item>
+        <item>@string/sort_rising</item>
+    </array>
+    <array name="kick_durations">
+        <item>@string/kick_durations_item_1</item>
+        <item>@string/kick_durations_item_2</item>
+        <item>@string/kick_durations_item_3</item>
+        <item>@string/kick_durations_item_4</item>
+        <item>@string/kick_durations_item_5</item>
+    </array>
+    <array name="kick_durations_values">
+        <item>600</item>
+        <item>3600</item>
+        <item>86400</item>
+        <item>259200</item>
+        <item>-1</item>
+    </array>
+    <array name="light_theme_entries">
+        <item>@string/option_theme_alienblue</item>
+        <item>@string/option_theme_mint</item>
+        <item>@string/option_theme_pony</item>
+        <item>@string/option_theme_trees</item>
+    </array>
+    <array name="light_theme_values">
+        <item>@string/option_value_alienblue</item>
+        <item>@string/option_value_mint</item>
+        <item>@string/option_value_pony</item>
+        <item>@string/option_value_trees</item>
+    </array>
+    <array name="livestream_generic_errors">
+        <item>@string/livestream_generic_errors_item_1</item>
+        <item>@string/livestream_generic_errors_item_2</item>
+        <item>@string/livestream_generic_errors_item_3</item>
+        <item>@string/livestream_generic_errors_item_4</item>
+        <item>@string/livestream_generic_errors_item_5</item>
+        <item>@string/livestream_generic_errors_item_6</item>
+        <item>@string/livestream_generic_errors_item_7</item>
+        <item>@string/livestream_generic_errors_item_8</item>
+    </array>
+    <array name="membership_ad_tab_titles">
+        <item>@string/membership_ad_tab_titles_item_1</item>
+        <item>@string/membership_ad_tab_titles_item_2</item>
+        <item>@string/membership_ad_tab_titles_item_3</item>
+    </array>
+    <array name="poll_duration_options">
+        <item>@string/poll_duration_options_item_1</item>
+        <item>@string/poll_duration_options_item_2</item>
+        <item>@string/poll_duration_options_item_3</item>
+        <item>@string/poll_duration_options_item_4</item>
+        <item>@string/poll_duration_options_item_5</item>
+        <item>@string/poll_duration_options_item_6</item>
+        <item>@string/poll_duration_options_item_7</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_1">
+        <item>@string/prediction_commentary_titles_amount_1_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_4</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_5</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_2">
+        <item>@string/prediction_commentary_titles_amount_2_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_2_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_2_item_3</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_3">
+        <item>@string/prediction_commentary_titles_amount_3_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_4</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_free">
+        <item>@string/prediction_commentary_titles_amount_free_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_4</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_5</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_6</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_7</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_8</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_9</item>
+    </array>
+    <array name="prediction_made_animation_titles">
+        <item>@string/prediction_made_animation_titles_item_1</item>
+        <item>@string/prediction_made_animation_titles_item_2</item>
+        <item>@string/prediction_made_animation_titles_item_3</item>
+        <item>@string/prediction_made_animation_titles_item_4</item>
+        <item>@string/prediction_made_animation_titles_item_5</item>
+        <item>@string/prediction_made_animation_titles_item_6</item>
+        <item>@string/prediction_made_animation_titles_item_7</item>
+        <item>@string/prediction_made_animation_titles_item_8</item>
+    </array>
+    <array name="quick_replies">
+        <item>@string/quick_replies_item_1</item>
+    </array>
+    <array name="require_email_permission_override">
+        <item>@string/require_email_permission_off</item>
+        <item>@string/require_email_permission_enabled</item>
+        <item>@string/require_email_permission_disabled</item>
+    </array>
+    <array name="safe_harbor_domains">
+        <item>imgur.com</item>
+        <item>gfycat.com</item>
+    </array>
+    <array name="safe_harbor_extensions">
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>gif</item>
+        <item>png</item>
+        <item>tiff</item>
+        <item>gifv</item>
+    </array>
+    <array name="stream_generic_errors">
+        <item>@string/stream_generic_errors_item_1</item>
+        <item>@string/stream_generic_errors_item_2</item>
+        <item>@string/stream_generic_errors_item_3</item>
+        <item>@string/stream_generic_errors_item_4</item>
+        <item>@string/stream_generic_errors_item_5</item>
+        <item>@string/stream_generic_errors_item_6</item>
+        <item>@string/stream_generic_errors_item_7</item>
+        <item>@string/stream_generic_errors_item_8</item>
+    </array>
+    <array name="thumbnail_options">
+        <item>@string/option_thumbnail_always</item>
+        <item>@string/option_thumbnail_never</item>
+        <item>@string/option_thumbnail_community_default</item>
+    </array>
+    <array name="thumbnail_values">
+        <item>@string/value_thumbnail_always</item>
+        <item>@string/value_thumbnail_never</item>
+        <item>@string/value_thumbnail_community_default</item>
+    </array>
+    <array name="view_option_values">
+        <item>@string/option_value_card</item>
+        <item>@string/option_value_classic</item>
+    </array>
+    <array name="view_options">
+        <item>@string/option_card</item>
+        <item>@string/option_classic</item>
+    </array>
+</resources>

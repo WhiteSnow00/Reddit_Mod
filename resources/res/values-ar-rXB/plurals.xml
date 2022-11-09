@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">‏‮%dd‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">‏‮%dd‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dd‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">‏‮%dh‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">‏‮%dh‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dh‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">‏‮%dm‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">‏‮%dm‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dm‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">‏‮%dmo‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">‏‮%dmo‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dmo‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">‏‮%ds‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">‏‮%ds‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$ds‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">‏‮%dw‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">‏‮%dw‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dw‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">‏‮%dy‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">‏‮%dy‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Camera‬‏ ‏‮Roll‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Chat‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Cheerios‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮%2$s‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Memories‬‏</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">‏‮%1$dy‬‏ ‏‮ago‬‏ ‏‮from‬‏ ‏‮Spectacles‬‏</item>
+    </plurals>
+</resources>

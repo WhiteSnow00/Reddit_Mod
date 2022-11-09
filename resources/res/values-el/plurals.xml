@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d ημ.</item>
+        <item quantity="other">%d ημ.</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d ημ. πριν</item>
+        <item quantity="other">%d ημ. πριν</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d η. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d η. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d η. πριν από Chat</item>
+        <item quantity="other">%1$d η. πριν από Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dημ. πριν από Cheerios</item>
+        <item quantity="other">%1$dημ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d ημ. πριν από %2$s</item>
+        <item quantity="other">%1$d ημ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d ημ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d ημ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d ημ. πριν από τα Spectacles</item>
+        <item quantity="other">%1$d ημ. πριν από τα Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d ώ.</item>
+        <item quantity="other">%d ώ.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d ώ. πριν</item>
+        <item quantity="other">%d ώ. πριν</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d ώ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d ώ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d ώ. πριν από Chat</item>
+        <item quantity="other">%1$d ώ. πριν από Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dώ. πριν από Cheerios</item>
+        <item quantity="other">%1$dώ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d ώ. πριν από %2$s</item>
+        <item quantity="other">%1$d ώ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d ώ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d ώ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d ώ. πριν από Spectacles</item>
+        <item quantity="other">%1$d ώ. πριν από Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d λ.</item>
+        <item quantity="other">%d λ.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d λ. πριν</item>
+        <item quantity="other">%d λ. πριν</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d λ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d λ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d λ. πριν από Chat</item>
+        <item quantity="other">%1$d λ. πριν από Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dλ. πριν από Cheerios</item>
+        <item quantity="other">%1$dλ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d λ. πριν από %2$s</item>
+        <item quantity="other">%1$d λ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d λ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d λ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d λ. πριν από Spectacles</item>
+        <item quantity="other">%1$d λ. πριν από Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d μ.</item>
+        <item quantity="other">%d μ.</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d μ. πριν</item>
+        <item quantity="other">%d μ. πριν</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d μ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d μ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d μ. πριν από Chat</item>
+        <item quantity="other">%1$d μ. πριν από Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dμ. πριν από Cheerios</item>
+        <item quantity="other">%1$dμ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d μ. πριν από %2$s</item>
+        <item quantity="other">%1$d μ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d μ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d μ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d μ. πριν από Spectacles</item>
+        <item quantity="other">%1$d μ. πριν από Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d δ.</item>
+        <item quantity="other">%d δ.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d δ. πριν</item>
+        <item quantity="other">%d δ. πριν</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d δ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d δ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d δ. πριν από Chat</item>
+        <item quantity="other">%1$d δ. πριν από Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dδ. πριν από Cheerios</item>
+        <item quantity="other">%1$dδ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d δ. πριν από %2$s</item>
+        <item quantity="other">%1$d δ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d δ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d δ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d δ. πριν από Spectacles</item>
+        <item quantity="other">%1$d δ. πριν από Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d εβδ.</item>
+        <item quantity="other">%d εβδ.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d εβδ. πριν</item>
+        <item quantity="other">%d εβδ. πριν</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d εβδ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d εβδ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d ε. πριν από Chat</item>
+        <item quantity="other">%1$d ε. πριν από Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dεβδ. πριν από Cheerios</item>
+        <item quantity="other">%1$dεβδ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d εβδ. πριν από %2$s</item>
+        <item quantity="other">%1$d εβδ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d εβδ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d εβδ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d εβδ. πριν από Spectacles</item>
+        <item quantity="other">%1$d εβδ. πριν από Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d χ.</item>
+        <item quantity="other">%d χ.</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d χ. πριν</item>
+        <item quantity="other">%d χ. πριν</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d έ. πριν από το Άλμπουμ Κάμερας</item>
+        <item quantity="other">%1$d έ. πριν από το Άλμπουμ Κάμερας</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d χ. πριν από Chat</item>
+        <item quantity="other">%1$d χ. πριν από Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dχρ. πριν από Cheerios</item>
+        <item quantity="other">%1$dχρ. πριν από Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d χ. πριν από %2$s</item>
+        <item quantity="other">%1$d χ. πριν από %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d έ. πριν από Αναμνήσεις</item>
+        <item quantity="other">%1$d έ. πριν από Αναμνήσεις</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d έ. πριν από Spectacles</item>
+        <item quantity="other">%1$d έ. πριν από Spectacles</item>
+    </plurals>
+</resources>

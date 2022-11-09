@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d д.</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+        <item quantity="other">%d д. назад</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d день назад из Фотоплёнки</item>
+        <item quantity="few">%1$d дня назад из Фотоплёнки</item>
+        <item quantity="many">%1$d дней назад из Фотоплёнки</item>
+        <item quantity="other">%1$d д. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d день назад из чата</item>
+        <item quantity="few">%1$d дня назад из чата</item>
+        <item quantity="many">%1$d дней назад из чата</item>
+        <item quantity="other">%1$d д. назад из чата</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d д. назад из Cheerios</item>
+        <item quantity="few">%1$d д. назад из Cheerios</item>
+        <item quantity="many">%1$d д. назад из Cheerios</item>
+        <item quantity="other">%1$d д. назад из Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d день назад от %2$s</item>
+        <item quantity="few">%1$d дня назад от %2$s</item>
+        <item quantity="many">%1$d дней назад от %2$s</item>
+        <item quantity="other">%1$d д. назад от %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d день назад из Воспоминаний</item>
+        <item quantity="few">%1$d дня назад из Воспоминаний</item>
+        <item quantity="many">%1$d дней назад из Воспоминаний</item>
+        <item quantity="other">%1$d д. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d день назад из Spectacles</item>
+        <item quantity="few">%1$d дня назад из Spectacles</item>
+        <item quantity="many">%1$d дней назад из Spectacles</item>
+        <item quantity="other">%1$d д. назад из Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+        <item quantity="other">%d ч.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d час назад</item>
+        <item quantity="few">%d часа назад</item>
+        <item quantity="many">%d часов назад</item>
+        <item quantity="other">%d часа назад</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d час назад из Фотоплёнки</item>
+        <item quantity="few">%1$d часа назад из Фотоплёнки</item>
+        <item quantity="many">%1$d часов назад из Фотоплёнки</item>
+        <item quantity="other">%1$d ч. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d часа назад из чата</item>
+        <item quantity="few">%1$d часа назад из чата</item>
+        <item quantity="many">%1$d часов назад из чата</item>
+        <item quantity="other">%1$d ч. назад из чата</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ч. назад из Cheerios</item>
+        <item quantity="few">%1$d ч. назад из Cheerios</item>
+        <item quantity="many">%1$d ч. назад из Cheerios</item>
+        <item quantity="other">%1$d ч. назад из Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d час назад от %2$s</item>
+        <item quantity="few">%1$d часа назад от %2$s</item>
+        <item quantity="many">%1$d часов назад от %2$s</item>
+        <item quantity="other">%1$d ч. назад от %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d часа назад из Воспоминаний</item>
+        <item quantity="few">%1$d часа назад из Воспоминаний</item>
+        <item quantity="many">%1$d часов назад из Воспоминаний</item>
+        <item quantity="other">%1$d ч. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d час назад из Spectacles</item>
+        <item quantity="few">%1$d часа назад из Spectacles</item>
+        <item quantity="many">%1$d часов назад из Spectacles</item>
+        <item quantity="other">%1$d ч. назад из Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+        <item quantity="other">%d мин.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d минуту назад</item>
+        <item quantity="few">%d минуты назад</item>
+        <item quantity="many">%d минут назад</item>
+        <item quantity="other">%d минуты назад</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d минуту назад из Фотоплёнки</item>
+        <item quantity="few">%1$d минуты назад из Фотоплёнки</item>
+        <item quantity="many">%1$d минут назад из Фотоплёнки</item>
+        <item quantity="other">%1$d мин. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d минуту назад из чата</item>
+        <item quantity="few">%1$d минуты назад из чата</item>
+        <item quantity="many">%1$d минут назад из чата</item>
+        <item quantity="other">%1$d мин. назад из чата</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d мин. назад из Cheerios</item>
+        <item quantity="few">%1$d мин. назад из Cheerios</item>
+        <item quantity="many">%1$d мин. назад из Cheerios</item>
+        <item quantity="other">%1$d мин. назад из Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d минуту назад от %2$s</item>
+        <item quantity="few">%1$d минуты назад от %2$s</item>
+        <item quantity="many">%1$d минут назад от %2$s</item>
+        <item quantity="other">%1$d мин. назад от %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d минуту назад из Воспоминаний</item>
+        <item quantity="few">%1$d минуты назад из Воспоминаний</item>
+        <item quantity="many">%1$d минут назад из Воспоминаний</item>
+        <item quantity="other">%1$d мин. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d минуту назад из Spectacles</item>
+        <item quantity="few">%1$d минуты назад из Spectacles</item>
+        <item quantity="many">%1$d минут назад из Spectacles</item>
+        <item quantity="other">%1$d мин. назад из Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+        <item quantity="other">%d мес.</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d месяц назад</item>
+        <item quantity="few">%d месяца назад</item>
+        <item quantity="many">%d месяцев назад</item>
+        <item quantity="other">%d мес. назад</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d месяц назад из Фотоплёнки</item>
+        <item quantity="few">%1$d месяца назад из Фотоплёнки</item>
+        <item quantity="many">%1$d месяцев назад из Фотоплёнки</item>
+        <item quantity="other">%1$d мес. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d месяц назад из чата</item>
+        <item quantity="few">%1$d месяца назад из чата</item>
+        <item quantity="many">%1$d месяцев назад из чата</item>
+        <item quantity="other">%1$d мес. назад из чата</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d мес. назад из Cheerios</item>
+        <item quantity="few">%1$d мес. назад из Cheerios</item>
+        <item quantity="many">%1$d мес. назад из Cheerios</item>
+        <item quantity="other">%1$d мес. назад из Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d месяц назад от %2$s</item>
+        <item quantity="few">%1$d месяца назад от %2$s</item>
+        <item quantity="many">%1$d месяцев назад от %2$s</item>
+        <item quantity="other">%1$d мес. назад от %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d месяц назад из Воспоминаний</item>
+        <item quantity="few">%1$d месяца назад из Воспоминаний</item>
+        <item quantity="many">%1$d месяцев назад из Воспоминаний</item>
+        <item quantity="other">%1$d мес. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d мес. назад из Spectacles</item>
+        <item quantity="few">%1$d мес. назад из Spectacles</item>
+        <item quantity="many">%1$d мес. назад из Spectacles</item>
+        <item quantity="other">%1$d мес. назад из Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d с.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d секунду назад</item>
+        <item quantity="few">%d секунды назад</item>
+        <item quantity="many">%d секунд назад</item>
+        <item quantity="other">%d секунды назад</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d cекунду назад из Фотоплёнки</item>
+        <item quantity="few">%1$d cекунды назад из Фотоплёнки</item>
+        <item quantity="many">%1$d cекунд назад из Фотоплёнки</item>
+        <item quantity="other">%1$d c. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d секунду назад из чата</item>
+        <item quantity="few">%1$d секунды назад из чата</item>
+        <item quantity="many">%1$d секунд назад из чата</item>
+        <item quantity="other">%1$d с. назад из чата</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d сек. назад из Cheerios</item>
+        <item quantity="few">%1$d сек. назад из Cheerios</item>
+        <item quantity="many">%1$d сек. назад из Cheerios</item>
+        <item quantity="other">%1$d сек. назад из Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d секунду назад от %2$s</item>
+        <item quantity="few">%1$d секунды назад от %2$s</item>
+        <item quantity="many">%1$d секунд назад от %2$s</item>
+        <item quantity="other">%1$d с. назад от %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d секунду назад из Воспоминаний</item>
+        <item quantity="few">%1$d секунды назад из Воспоминаний</item>
+        <item quantity="many">%1$d секунд назад из Воспоминаний</item>
+        <item quantity="other">%1$d с. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d секунду назад из Spectacles</item>
+        <item quantity="few">%1$d секунды назад из Spectacles</item>
+        <item quantity="many">%1$d секунд назад из Spectacles</item>
+        <item quantity="other">%1$d с. назад из Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d неделя</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+        <item quantity="other">%d нед.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d неделю назад</item>
+        <item quantity="few">%d недели назад</item>
+        <item quantity="many">%d недель назад</item>
+        <item quantity="other">%d нед. назад</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d неделю назад из Фотоплёнки</item>
+        <item quantity="few">%1$d недели назад из Фотоплёнки</item>
+        <item quantity="many">%1$d недель назад из Фотоплёнки</item>
+        <item quantity="other">%1$d нед. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d неделю назад из чата</item>
+        <item quantity="few">%1$d недели назад из чата</item>
+        <item quantity="many">%1$d недель назад из чата</item>
+        <item quantity="other">%1$d нед. назад из чата</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d нед. назад из Cheerios</item>
+        <item quantity="few">%1$d нед. назад из Cheerios</item>
+        <item quantity="many">%1$d нед. назад из Cheerios</item>
+        <item quantity="other">%1$d нед. назад из Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d неделю назад от %2$s</item>
+        <item quantity="few">%1$d недели назад от %2$s</item>
+        <item quantity="many">%1$d недель назад от %2$s</item>
+        <item quantity="other">%1$d нед. назад от %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d неделю назад из Воспоминаний</item>
+        <item quantity="few">%1$d недели назад из Воспоминаний</item>
+        <item quantity="many">%1$d недель назад из Воспоминаний</item>
+        <item quantity="other">%1$d нед. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d неделю назад из Spectacles</item>
+        <item quantity="few">%1$d недели назад из Spectacles</item>
+        <item quantity="many">%1$d недель назад из Spectacles</item>
+        <item quantity="other">%1$d нед. назад из Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+        <item quantity="other">%d г.</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d год назад</item>
+        <item quantity="few">%d года назад</item>
+        <item quantity="many">%d лет назад</item>
+        <item quantity="other">%d г. назад</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d год назад из Фотоплёнки</item>
+        <item quantity="few">%1$d года назад из Фотоплёнки</item>
+        <item quantity="many">%1$d лет назад из Фотоплёнки</item>
+        <item quantity="other">%1$d г. назад из Фотоплёнки</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d год назад из чата</item>
+        <item quantity="few">%1$d года назад из чата</item>
+        <item quantity="many">%1$d лет назад из чата</item>
+        <item quantity="other">%1$d г. назад из чата</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d г. назад из Cheerios</item>
+        <item quantity="few">%1$d г. назад из Cheerios</item>
+        <item quantity="many">%1$d лет назад из Cheerios</item>
+        <item quantity="other">%1$d лет назад из Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d год назад от %2$s</item>
+        <item quantity="few">%1$d года назад от %2$s</item>
+        <item quantity="many">%1$d лет назад от %2$s</item>
+        <item quantity="other">%1$d г. назад от %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d год назад из Воспоминаний</item>
+        <item quantity="few">%1$d года назад из Воспоминаний</item>
+        <item quantity="many">%1$d лет назад из Воспоминаний</item>
+        <item quantity="other">%1$d г. назад из Воспоминаний</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d год назад из Spectacles</item>
+        <item quantity="few">%1$d года назад из Spectacles</item>
+        <item quantity="many">%1$d лет назад из Spectacles</item>
+        <item quantity="other">%1$d г. назад из Spectacles</item>
+    </plurals>
+</resources>

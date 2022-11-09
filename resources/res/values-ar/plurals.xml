@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">%d يوم</item>
+        <item quantity="two">%d يومان</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يومًا</item>
+        <item quantity="other">%d يوم</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="zero">منذ %d يوم</item>
+        <item quantity="one">منذ %d يوم</item>
+        <item quantity="two">منذ %d يومين</item>
+        <item quantity="few">منذ %d أيام</item>
+        <item quantity="many">منذ %d يومًا</item>
+        <item quantity="other">منذ %d يوم</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من الدردشة</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم واحد من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من الذكريات</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ يوم من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ يوم من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ يومان من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أيام من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ يومًا من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ يوم من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">%d ساعة</item>
+        <item quantity="two">%d ساعتين</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+        <item quantity="other">%d ساعة</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="zero">منذ %d ساعة</item>
+        <item quantity="one">منذ %d ساعة</item>
+        <item quantity="two">منذ %d ساعتين</item>
+        <item quantity="few">منذ %d ساعات</item>
+        <item quantity="many">منذ %d ساعة</item>
+        <item quantity="other">منذ %d ساعة</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من الدردشة</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة واحدة من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من الذكريات</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ ساعة من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ساعة من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ساعتين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ساعات من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ساعة من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ساعة من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقتين</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="other">%d دقيقة</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="zero">منذ %d دقيقة</item>
+        <item quantity="one">منذ %d دقيقة</item>
+        <item quantity="two">منذ %d دقيقتين</item>
+        <item quantity="few">منذ %d دقائق</item>
+        <item quantity="many">منذ %d دقيقة</item>
+        <item quantity="other">منذ %d دقيقة</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من الدردشة</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة واحدة من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من الذكريات</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ دقيقة من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ دقيقة من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ دقيقتين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ دقائق من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ دقيقة من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ دقيقة من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="zero">%d شهر</item>
+        <item quantity="one">%d شهر</item>
+        <item quantity="two">%d شهران</item>
+        <item quantity="few">%d أشهر</item>
+        <item quantity="many">%d شهرًا</item>
+        <item quantity="other">%d شهر</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="zero">منذ %d شهر</item>
+        <item quantity="one">منذ %d شهر</item>
+        <item quantity="two">منذ %d شهرين</item>
+        <item quantity="few">منذ %d أشهر</item>
+        <item quantity="many">منذ %d شهرًا</item>
+        <item quantity="other">منذ %d شهر</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من الدردشة</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر واحد من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من الذكريات</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ شهر من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ شهر واحد من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ شهرين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أشهر من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ شهرًا من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ شهر من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="zero">%d ثانية</item>
+        <item quantity="one">%d ثانية</item>
+        <item quantity="two">%d ثانيتين</item>
+        <item quantity="few">%d ثوانٍ</item>
+        <item quantity="many">%d ثانية</item>
+        <item quantity="other">%d ثانية</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="zero">منذ %d ثانية</item>
+        <item quantity="one">منذ %d ثانية</item>
+        <item quantity="two">منذ %d ثانيتين</item>
+        <item quantity="few">منذ %d ثوانٍ</item>
+        <item quantity="many">منذ %d ثانية</item>
+        <item quantity="other">منذ %d ثانية</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من الدردشة</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية واحدة من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من الذكريات</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ ثانية من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ ثانية من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ ثانيتين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ ثوانٍ من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ ثانية من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ ثانية من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="zero">%d أسبوع</item>
+        <item quantity="one">%d أسبوع</item>
+        <item quantity="two">%d أسبوعان</item>
+        <item quantity="few">%d أسابيع</item>
+        <item quantity="many">%d أسبوعًا</item>
+        <item quantity="other">%d أسبوع</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="zero">منذ %d أسبوع</item>
+        <item quantity="one">منذ %d أسبوع</item>
+        <item quantity="two">منذ %d أسبوعين</item>
+        <item quantity="few">منذ %d أسابيع</item>
+        <item quantity="many">منذ %d أسبوعًا</item>
+        <item quantity="other">منذ %d أسبوع</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من الدردشة</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع واحد من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من الذكريات</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ أسبوع من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ أسبوع من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ أسبوعين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أسابيع من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ أسبوعًا من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ أسبوع من نظارة Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="zero">%dسنة</item>
+        <item quantity="one">%d سنة</item>
+        <item quantity="two">%d سنتان</item>
+        <item quantity="few">%d سنوات</item>
+        <item quantity="many">%d سنة</item>
+        <item quantity="other">%d سنة</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="zero">منذ %d سنة</item>
+        <item quantity="one">منذ %d سنة</item>
+        <item quantity="two">منذ %d سنتين</item>
+        <item quantity="few">منذ %d سنوات</item>
+        <item quantity="many">منذ %d سنة</item>
+        <item quantity="other">منذ %d سنة</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="zero">منذ ⁦%1$d⁩ سنة من ألبوم الكاميرا</item>
+        <item quantity="one">منذ ⁦%1$d⁩ سنة من ألبوم الكاميرا</item>
+        <item quantity="two">منذ ⁦%1$d⁩ سنتين من ألبوم الكاميرا</item>
+        <item quantity="few">منذ ⁦%1$d⁩ سنوات من ألبوم الكاميرا</item>
+        <item quantity="many">منذ ⁦%1$d⁩ سنة من ألبوم الكاميرا</item>
+        <item quantity="other">منذ ⁦%1$d⁩ سنة من ألبوم الكاميرا</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="zero">منذ ⁦%1$d⁩ سنة من الدردشة</item>
+        <item quantity="one">منذ ⁦%1$d⁩ سنة من الدردشة</item>
+        <item quantity="two">منذ ⁦%1$d⁩ سنتين من الدردشة</item>
+        <item quantity="few">منذ ⁦%1$d⁩ سنوات من الدردشة</item>
+        <item quantity="many">منذ ⁦%1$d⁩ سنة من الدردشة</item>
+        <item quantity="other">منذ ⁦%1$d⁩ سنة من الدردشة</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="zero">منذ ⁦%1$d⁩ عام من Cheerios</item>
+        <item quantity="one">منذ ⁦%1$d⁩ عام واحد من Cheerios</item>
+        <item quantity="two">منذ ⁦%1$d⁩ عامين من Cheerios</item>
+        <item quantity="few">منذ ⁦%1$d⁩ أعوام من Cheerios</item>
+        <item quantity="many">منذ ⁦%1$d⁩ عامًا من Cheerios</item>
+        <item quantity="other">منذ ⁦%1$d⁩ عام من Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="zero">منذ ⁦%1$d⁩ سنة من ⁦%2$s⁩</item>
+        <item quantity="one">منذ ⁦%1$d⁩ سنة من ⁦%2$s⁩</item>
+        <item quantity="two">منذ ⁦%1$d⁩ سنتين من ⁦%2$s⁩</item>
+        <item quantity="few">منذ ⁦%1$d⁩ سنوات من ⁦%2$s⁩</item>
+        <item quantity="many">منذ ⁦%1$d⁩ سنة من ⁦%2$s⁩</item>
+        <item quantity="other">منذ ⁦%1$d⁩ سنة من ⁦%2$s⁩</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="zero">منذ ⁦%1$d⁩ سنة من الذكريات</item>
+        <item quantity="one">منذ ⁦%1$d⁩ سنة من الذكريات</item>
+        <item quantity="two">منذ ⁦%1$d⁩ سنتين من الذكريات</item>
+        <item quantity="few">منذ ⁦%1$d⁩ سنوات من الذكريات</item>
+        <item quantity="many">منذ ⁦%1$d⁩ سنة من الذكريات</item>
+        <item quantity="other">منذ ⁦%1$d⁩ سنة من الذكريات</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="zero">منذ ⁦%1$d⁩ سنة من نظارة Spectacles</item>
+        <item quantity="one">منذ ⁦%1$d⁩ سنة من نظارة Spectacles</item>
+        <item quantity="two">منذ ⁦%1$d⁩ سنتين من نظارة Spectacles</item>
+        <item quantity="few">منذ ⁦%1$d⁩ سنوات من نظارة Spectacles</item>
+        <item quantity="many">منذ ⁦%1$d⁩ سنة من نظارة Spectacles</item>
+        <item quantity="other">منذ ⁦%1$d⁩ سنة من نظارة Spectacles</item>
+    </plurals>
+</resources>

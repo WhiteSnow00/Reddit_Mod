@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d dia</item>
+        <item quantity="other">%d dias</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">Há %d dia</item>
+        <item quantity="other">Há %d dias</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d dia do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d dias do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d dia do Chat</item>
+        <item quantity="other">Há %1$d dias do Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$ddia atrás nos Cheerios</item>
+        <item quantity="other">%1$ddias atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d dia de %2$s</item>
+        <item quantity="other">Há %1$d dias de %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d dia das Memórias</item>
+        <item quantity="other">Há %1$d dias das Memórias</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d dia dos Spectacles</item>
+        <item quantity="other">Há %1$d dias dos Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">Há %d h</item>
+        <item quantity="other">Há %d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d h do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d h do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d h do Chat</item>
+        <item quantity="other">Há %1$d h do Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dhora atrás nos Cheerios</item>
+        <item quantity="other">%1$dhoras atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d h de %2$s</item>
+        <item quantity="other">Há %1$d h de %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d h das Memórias</item>
+        <item quantity="other">Há %1$d h das Memórias</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d h dos Spectacles</item>
+        <item quantity="other">Há %1$d h dos Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d min.</item>
+        <item quantity="other">%d min.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">Há %d min.</item>
+        <item quantity="other">Há %d min.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d min. do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d min. do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d min. do Chat</item>
+        <item quantity="other">Há %1$d min. do Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dminuto atrás nos Cheerios</item>
+        <item quantity="other">%1$dminutos atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d min. de %2$s</item>
+        <item quantity="other">Há %1$d min. de %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d min. das Memórias</item>
+        <item quantity="other">Há %1$d min. das Memórias</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d min. dos Spectacles</item>
+        <item quantity="other">Há %1$d min. dos Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mês</item>
+        <item quantity="other">%d meses</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">Há %d mês</item>
+        <item quantity="other">Há %d meses</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d mês do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d meses do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d mês do Chat</item>
+        <item quantity="other">Há %1$d meses do Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dmês atrás nos Cheerios</item>
+        <item quantity="other">%1$dmeses atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d mês de %2$s</item>
+        <item quantity="other">Há %1$d meses de %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d mês das Memórias</item>
+        <item quantity="other">Há %1$d meses das Memórias</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dmês atrás nos Spectacles</item>
+        <item quantity="other">%1$dmeses atrás nos Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d seg.</item>
+        <item quantity="other">%d seg.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">Há %d seg.</item>
+        <item quantity="other">Há %d seg.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d seg. do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d seg. do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d seg. do Chat</item>
+        <item quantity="other">Há %1$d seg. do Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dsegundo atrás nos Cheerios</item>
+        <item quantity="other">%1$dsegundos atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d seg. de %2$s</item>
+        <item quantity="other">Há %1$d seg. de %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d seg. das Memórias</item>
+        <item quantity="other">Há %1$d seg. das Memórias</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d seg. dos Spectacles</item>
+        <item quantity="other">Há %1$d seg. dos Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d semana</item>
+        <item quantity="other">%d semanas</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">Há %d semana</item>
+        <item quantity="other">Há %d semanas</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d semana do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d semanas do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d semana do Chat</item>
+        <item quantity="other">Há %1$d semanas do Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dsemana atrás nos Cheerios</item>
+        <item quantity="other">%1$dsemanas atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d semana de %2$s</item>
+        <item quantity="other">Há %1$d semanas de %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d semana das Memórias</item>
+        <item quantity="other">Há %1$d semanas das Memórias</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d semana dos Spectacles</item>
+        <item quantity="other">Há %1$d semanas dos Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d ano</item>
+        <item quantity="other">%d anos</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">Há %d ano</item>
+        <item quantity="other">Há %d anos</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">Há %1$d ano do Rolo da Câmera</item>
+        <item quantity="other">Há %1$d anos do Rolo da Câmera</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">Há %1$d ano do Chat</item>
+        <item quantity="other">Há %1$d anos do Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dano atrás nos Cheerios</item>
+        <item quantity="other">%1$danos atrás nos Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">Há %1$d ano de %2$s</item>
+        <item quantity="other">Há %1$d anos de %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">Há %1$d ano das Memórias</item>
+        <item quantity="other">Há %1$d anos das Memórias</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Há %1$d ano dos Spectacles</item>
+        <item quantity="other">Há %1$d anos dos Spectacles</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avançar %d segundo</item>
+        <item quantity="other">Avançar %d segundos</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Voltar %d segundo</item>
+        <item quantity="other">Voltar %d segundos</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+</resources>

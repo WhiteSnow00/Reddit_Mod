@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rdt_comment_indent">
+        <item>#353535</item>
+        <item>#414141</item>
+        <item>#4d4d4d</item>
+        <item>#5a5a5a</item>
+        <item>#666666</item>
+        <item>#737272</item>
+        <item>#7f7f7f</item>
+        <item>#8c8b8b</item>
+        <item>#989797</item>
+        <item>#a5a4a4</item>
+    </array>
+</resources>

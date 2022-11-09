@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d d</item>
+        <item quantity="other">%dd</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dd geleden</item>
+        <item quantity="other">%dd geleden</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d d geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d d geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d d geleden uit chat</item>
+        <item quantity="other">%1$d d geleden uit chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d d geleden van Cheerios</item>
+        <item quantity="other">%1$d d geleden van Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d d geleden uit %2$s</item>
+        <item quantity="other">%1$d d geleden uit %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d d geleden uit Herinneringen</item>
+        <item quantity="other">%1$d d geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d d geleden van Spectacles</item>
+        <item quantity="other">%1$d d geleden van Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%du</item>
+        <item quantity="other">%du</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%du geleden</item>
+        <item quantity="other">%du geleden</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d u geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d u geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d u geleden uit chat</item>
+        <item quantity="other">%1$d u geleden uit chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d u geleden van Cheerios</item>
+        <item quantity="other">%1$d u geleden van Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d u geleden uit %2$s</item>
+        <item quantity="other">%1$d u geleden uit %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d u geleden uit Herinneringen</item>
+        <item quantity="other">%1$d u geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d u geleden van Spectacles</item>
+        <item quantity="other">%1$d u geleden van Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%dm</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%dm geleden</item>
+        <item quantity="other">%dm geleden</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d m geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d m geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d m geleden uit chat</item>
+        <item quantity="other">%1$d m geleden uit chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d m geleden van Cheerios</item>
+        <item quantity="other">%1$d m geleden van Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d m geleden uit %2$s</item>
+        <item quantity="other">%1$d m geleden uit %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d m geleden uit Herinneringen</item>
+        <item quantity="other">%1$d m geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d m geleden van Spectacles</item>
+        <item quantity="other">%1$d m geleden van Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mnd</item>
+        <item quantity="other">%d mnd</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d mnd geleden</item>
+        <item quantity="other">%d mnd geleden</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d mnd geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d mnd geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d mnd geleden uit chat</item>
+        <item quantity="other">%1$d mnd geleden uit chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d mnd geleden van Cheerios</item>
+        <item quantity="other">%1$d mnd geleden van Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d mnd geleden uit %2$s</item>
+        <item quantity="other">%1$d mnd geleden uit %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d mnd geleden uit Herinneringen</item>
+        <item quantity="other">%1$d mnd geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d mnd geleden van Spectacles</item>
+        <item quantity="other">%1$d mnd geleden van Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%ds</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%ds geleden</item>
+        <item quantity="other">%ds geleden</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d s geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d s geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d s geleden uit chat</item>
+        <item quantity="other">%1$d s geleden uit chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d s geleden van Cheerios</item>
+        <item quantity="other">%1$d s geleden van Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d s geleden uit %2$s</item>
+        <item quantity="other">%1$d s geleden uit %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d s geleden uit Herinneringen</item>
+        <item quantity="other">%1$d s geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d s geleden van Spectacles</item>
+        <item quantity="other">%1$d s geleden van Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%dw</item>
+        <item quantity="other">%dw</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%dw geleden</item>
+        <item quantity="other">%dw geleden</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d w geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d w geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d w geleden uit chat</item>
+        <item quantity="other">%1$d w geleden uit chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d w geleden van Cheerios</item>
+        <item quantity="other">%1$d w geleden van Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d w geleden uit %2$s</item>
+        <item quantity="other">%1$d w geleden uit %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d w geleden uit Herinneringen</item>
+        <item quantity="other">%1$d w geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d w geleden van Spectacles</item>
+        <item quantity="other">%1$d w geleden van Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d j</item>
+        <item quantity="other">%d j</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d j geleden</item>
+        <item quantity="other">%d j geleden</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d j geleden uit Foto&apos;s</item>
+        <item quantity="other">%1$d j geleden uit Foto&apos;s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d j geleden uit chat</item>
+        <item quantity="other">%1$d j geleden uit chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d j geleden van Cheerios</item>
+        <item quantity="other">%1$d j geleden van Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d j geleden uit %2$s</item>
+        <item quantity="other">%1$d j geleden uit %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d j geleden uit Herinneringen</item>
+        <item quantity="other">%1$d j geleden uit Herinneringen</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d j geleden van Spectacles</item>
+        <item quantity="other">%1$d j geleden van Spectacles</item>
+    </plurals>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">%d h yang lalu</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d h yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">%1$d h yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d h yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d h yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">%1$d h yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d h yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">%d j</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">%d j yang lalu</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d j yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">%1$d j lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d j yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d j yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">%1$d j yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d j yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">%d m yang lalu</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d m yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">%1$d m yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d m yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d m yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">%1$d m yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d m yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">%d b</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">%d b yang lalu</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d b yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">%1$d b yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d bulan yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d b yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">%1$d b yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d bulan yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">%d s yang lalu</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d s yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">%1$d s yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d s yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d s yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">%1$d s yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d s yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">%d mgg</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">%d mgg yang lalu</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d mgg yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">%1$d mgg yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d mgg yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d mgg yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">%1$d mgg yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d mgg yang lalu daripada Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">%d t</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">%dt yang lalu</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d t yang lalu daripada Foto</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">%1$d t yang lalu daripada Sembang</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d t yang lalu daripada Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d t yang lalu daripada %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">%1$d t yang lalu daripada Memori</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d t yang lalu daripada Spectacles</item>
+    </plurals>
+</resources>

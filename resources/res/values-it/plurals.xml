@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d g</item>
+        <item quantity="other">%d g</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d g fa</item>
+        <item quantity="other">%d g fa</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d g fa dal Rullino</item>
+        <item quantity="other">%1$d g fa dal Rullino</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d g fa da Chat</item>
+        <item quantity="other">%1$d g fa da Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d g fa dai Cheerios</item>
+        <item quantity="other">%1$d g fa dai Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d g fa da %2$s</item>
+        <item quantity="other">%1$d g fa da %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d g fa da Ricordi</item>
+        <item quantity="other">%1$d g fa da Ricordi</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d g fa da Spectacles</item>
+        <item quantity="other">%1$d g fa da Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d h fa</item>
+        <item quantity="other">%d h fa</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d h fa dal Rullino</item>
+        <item quantity="other">%1$d h fa dal Rullino</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d h fa da Chat</item>
+        <item quantity="other">%1$d h fa da Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d h fa dai Cheerios</item>
+        <item quantity="other">%1$d h fa dai Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d h fa da %2$s</item>
+        <item quantity="other">%1$d h fa da %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d h fa da Ricordi</item>
+        <item quantity="other">%1$d h fa da Ricordi</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d h fa da Spectacles</item>
+        <item quantity="other">%1$d h fa da Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d m fa</item>
+        <item quantity="other">%d m fa</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d m fa dal Rullino</item>
+        <item quantity="other">%1$d m fa dal Rullino</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d m fa da Chat</item>
+        <item quantity="other">%1$d m fa da Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d min fa dai Cheerios</item>
+        <item quantity="other">%1$d min fa dai Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d m fa da %2$s</item>
+        <item quantity="other">%1$d m fa da %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d m fa da Ricordi</item>
+        <item quantity="other">%1$d m fa da Ricordi</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d m fa da Spectacles</item>
+        <item quantity="other">%1$d m fa da Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mese</item>
+        <item quantity="other">%d mesi</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d mese fa</item>
+        <item quantity="other">%d mesi fa</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d mese fa dal Rullino</item>
+        <item quantity="other">%1$d mesi fa dal Rullino</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d mese fa da Chat</item>
+        <item quantity="other">%1$d mesi fa da Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d m fa dai Cheerios</item>
+        <item quantity="other">%1$d m fa dai Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d mese fa da %2$s</item>
+        <item quantity="other">%1$d mesi fa da %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d mese fa da Ricordi</item>
+        <item quantity="other">%1$d mesi fa da Ricordi</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d m fa dagli Spectacles</item>
+        <item quantity="other">%1$d m fa dagli Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d s fa</item>
+        <item quantity="other">%d s fa</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d s fa dal Rullino</item>
+        <item quantity="other">%1$d s fa dal Rullino</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d s fa da Chat</item>
+        <item quantity="other">%1$d s fa da Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d s fa dai Cheerios</item>
+        <item quantity="other">%1$d s fa dai Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d s fa da %2$s</item>
+        <item quantity="other">%1$d s fa da %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d s fa da Ricordi</item>
+        <item quantity="other">%1$d s fa da Ricordi</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d s fa da Spectacles</item>
+        <item quantity="other">%1$d s fa da Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d sett</item>
+        <item quantity="other">%d sett</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d sett fa</item>
+        <item quantity="other">%d sett fa</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d sett fa dal Rullino</item>
+        <item quantity="other">%1$d sett fa dal Rullino</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d sett fa da Chat</item>
+        <item quantity="other">%1$d sett fa da Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d set fa dai Cheerios</item>
+        <item quantity="other">%1$d set fa dai Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d sett fa da %2$s</item>
+        <item quantity="other">%1$d sett fa da %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d sett fa da Ricordi</item>
+        <item quantity="other">%1$d sett fa da Ricordi</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d sett fa da Spectacles</item>
+        <item quantity="other">%1$d sett fa da Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d a</item>
+        <item quantity="other">%d a</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d a fa</item>
+        <item quantity="other">%d a fa</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d a fa dal Rullino</item>
+        <item quantity="other">%1$d a fa dal Rullino</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d a fa da Chat</item>
+        <item quantity="other">%1$d a fa da Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d a fa dai Cheerios</item>
+        <item quantity="other">%1$d a fa dai Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d a fa da %2$s</item>
+        <item quantity="other">%1$d a fa da %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d a fa da Ricordi</item>
+        <item quantity="other">%1$d a fa da Ricordi</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d a fa da Spectacles</item>
+        <item quantity="other">%1$d a fa da Spectacles</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avanti di %d secondi</item>
+        <item quantity="other">Avanti di %d secondi</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Indietro di %d secondi</item>
+        <item quantity="other">Indietro di %d secondi</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">%d giorno fa</item>
+        <item quantity="other">%d giorni fa</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">%d ora fa</item>
+        <item quantity="other">%d ore fa</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">%d minuto fa</item>
+        <item quantity="other">%d minuti fa</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+</resources>

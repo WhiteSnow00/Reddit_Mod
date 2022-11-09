@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%dd</item>
+        <item quantity="other">%dd</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dd ago</item>
+        <item quantity="other">%dd ago</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dd ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dd ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$dd ago mula sa Chat</item>
+        <item quantity="other">%1$dd ago mula sa Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dd ago mula sa Cheerios</item>
+        <item quantity="other">%1$dd ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dd ago mula kay %2$s</item>
+        <item quantity="other">%1$dd ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$dd ago mula sa Memories</item>
+        <item quantity="other">%1$dd ago mula sa Memories</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dd ago mula sa Spectacles</item>
+        <item quantity="other">%1$dd ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%dh</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%dh ago</item>
+        <item quantity="other">%dh ago</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dh ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dh ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$dh ago mula sa Chat</item>
+        <item quantity="other">%1$dh ago mula sa Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dh ago mula sa Cheerios</item>
+        <item quantity="other">%1$dh ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dh ago mula kay %2$s</item>
+        <item quantity="other">%1$dh ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$dh ago mula sa Memories</item>
+        <item quantity="other">%1$dh ago mula sa Memories</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dh ago mula sa Spectacles</item>
+        <item quantity="other">%1$dh ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%dm</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%dm ago</item>
+        <item quantity="other">%dm ago</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dm ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dm ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$dm ago mula sa Chat</item>
+        <item quantity="other">%1$dm ago mula sa Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dm ago mula sa Cheerios</item>
+        <item quantity="other">%1$dm ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dm ago mula kay %2$s</item>
+        <item quantity="other">%1$dm ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$dm ago mula sa Memories</item>
+        <item quantity="other">%1$dm ago mula sa Memories</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dm ago mula sa Spectacles</item>
+        <item quantity="other">%1$dm ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%dmo</item>
+        <item quantity="other">%dmo</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%dmo ago</item>
+        <item quantity="other">%dmo ago</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dmo ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dmo ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$dmo ago mula sa Chat</item>
+        <item quantity="other">%1$dmo ago mula sa Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dmo ago mula sa Cheerios</item>
+        <item quantity="other">%1$dmo ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dmo ago mula kay %2$s</item>
+        <item quantity="other">%1$dmo ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$dmo ago mula sa Memories</item>
+        <item quantity="other">%1$dmo ago mula sa Memories</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dmo ago mula sa Spectacles</item>
+        <item quantity="other">%1$dmo ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%ds</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%ds ago</item>
+        <item quantity="other">%ds ago</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$ds ago mula sa Camera Roll</item>
+        <item quantity="other">%1$ds ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$ds ago mula sa Chat</item>
+        <item quantity="other">%1$ds ago mula sa Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$ds ago mula sa Cheerios</item>
+        <item quantity="other">%1$ds ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$ds ago mula kay %2$s</item>
+        <item quantity="other">%1$ds ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$ds ago mula sa Memories</item>
+        <item quantity="other">%1$ds ago mula sa Memories</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$ds ago mula sa Spectacles</item>
+        <item quantity="other">%1$ds ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%dw</item>
+        <item quantity="other">%dw</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%dw ago</item>
+        <item quantity="other">%dw ago</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dw ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dw ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$dw ago mula sa Chat</item>
+        <item quantity="other">%1$dw ago mula sa Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dw ago mula sa Cheerios</item>
+        <item quantity="other">%1$dw ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dw ago mula kay %2$s</item>
+        <item quantity="other">%1$dw ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$dw ago mula sa Memories</item>
+        <item quantity="other">%1$dw ago mula sa Memories</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dw ago mula sa Spectacles</item>
+        <item quantity="other">%1$dw ago mula sa Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%dy</item>
+        <item quantity="other">%dy</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%dy ago</item>
+        <item quantity="other">%dy ago</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$dy ago mula sa Camera Roll</item>
+        <item quantity="other">%1$dy ago mula sa Camera Roll</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$dy ago mula sa Chat</item>
+        <item quantity="other">%1$dy ago mula sa Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$dy ago mula sa Cheerios</item>
+        <item quantity="other">%1$dy ago mula sa Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dy ago mula kay %2$s</item>
+        <item quantity="other">%1$dy ago mula kay %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$dy ago mula sa Memories</item>
+        <item quantity="other">%1$dy ago mula sa Memories</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dy ago mula sa Spectacles</item>
+        <item quantity="other">%1$dy ago mula sa Spectacles</item>
+    </plurals>
+</resources>

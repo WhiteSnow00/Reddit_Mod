@@ -1,0 +1,109 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package com.reddit.domain.model;
+
+import com.squareup.moshi.x;
+import qd2.a;
+import com.squareup.moshi.JsonReader;
+import java.util.Set;
+import java.lang.reflect.Type;
+import kotlin.collections.EmptySet;
+import ah2.f;
+import com.squareup.moshi.y;
+import com.squareup.moshi.JsonReader$b;
+import java.lang.reflect.Constructor;
+import kotlin.Metadata;
+import com.squareup.moshi.JsonAdapter;
+
+@Metadata(bv = {}, d1 = { "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0017\u001a\u00020\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u001e\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u00138\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0014\u0010\u0015¨\u0006\u001a" }, d2 = { "Lcom/reddit/domain/model/BadgeCountJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/BadgeCount;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lpg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "", "intAdapter", "Lcom/squareup/moshi/JsonAdapter;", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+public final class BadgeCountJsonAdapter extends JsonAdapter<BadgeCount>
+{
+    private volatile Constructor<BadgeCount> constructorRef;
+    private final JsonAdapter<Integer> intAdapter;
+    private final JsonReader$b options;
+    
+    public BadgeCountJsonAdapter(final y y) {
+        f.f((Object)y, "moshi");
+        this.options = JsonReader$b.a(new String[] { "comments", "messages", "trending" });
+        this.intAdapter = (JsonAdapter<Integer>)y.c((Type)Integer.TYPE, (Set)EmptySet.INSTANCE, "comments");
+    }
+    
+    public BadgeCount fromJson(final JsonReader jsonReader) {
+        f.f((Object)jsonReader, "reader");
+        Integer value = 0;
+        jsonReader.h();
+        Integer n2;
+        Integer n = n2 = value;
+        int n3 = -1;
+        while (jsonReader.hasNext()) {
+            final int f = jsonReader.F(this.options);
+            if (f != -1) {
+                if (f != 0) {
+                    if (f != 1) {
+                        if (f != 2) {
+                            continue;
+                        }
+                        n2 = (Integer)this.intAdapter.fromJson(jsonReader);
+                        if (n2 == null) {
+                            throw a.n("trending", "trending", jsonReader);
+                        }
+                        n3 &= 0xFFFFFFFB;
+                    }
+                    else {
+                        n = (Integer)this.intAdapter.fromJson(jsonReader);
+                        if (n == null) {
+                            throw a.n("messages", "messages", jsonReader);
+                        }
+                        n3 &= 0xFFFFFFFD;
+                    }
+                }
+                else {
+                    value = (Integer)this.intAdapter.fromJson(jsonReader);
+                    if (value == null) {
+                        throw a.n("comments", "comments", jsonReader);
+                    }
+                    n3 &= 0xFFFFFFFE;
+                }
+            }
+            else {
+                jsonReader.J();
+                jsonReader.z1();
+            }
+        }
+        jsonReader.r();
+        if (n3 == -8) {
+            return new BadgeCount((int)value, (int)n, (int)n2);
+        }
+        Constructor<BadgeCount> constructorRef;
+        if ((constructorRef = this.constructorRef) == null) {
+            final Class<Integer> type = Integer.TYPE;
+            constructorRef = BadgeCount.class.getDeclaredConstructor(type, type, type, type, a.c);
+            f.e((Object)(this.constructorRef = constructorRef), "BadgeCount::class.java.g\u2026his.constructorRef = it }");
+        }
+        final BadgeCount instance = constructorRef.newInstance(value, n, n2, n3, null);
+        f.e((Object)instance, "localConstructor.newInst\u2026torMarker */ null\n      )");
+        return instance;
+    }
+    
+    public void toJson(final x x, final BadgeCount badgeCount) {
+        f.f((Object)x, "writer");
+        if (badgeCount != null) {
+            x.h();
+            x.w("comments");
+            this.intAdapter.toJson(x, (Object)badgeCount.getComments());
+            x.w("messages");
+            this.intAdapter.toJson(x, (Object)badgeCount.getMessages());
+            x.w("trending");
+            this.intAdapter.toJson(x, (Object)badgeCount.getTrending());
+            x.s();
+            return;
+        }
+        throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+    
+    public String toString() {
+        return "GeneratedJsonAdapter(BadgeCount)";
+    }
+}

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d pv</item>
+        <item quantity="other">%d pv</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d pv sitten</item>
+        <item quantity="other">%d pv sitten</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d pv sitten kameran rullasta</item>
+        <item quantity="other">%1$d pv sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d pv sitten chatista</item>
+        <item quantity="other">%1$d pv sitten chatista</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d pv sitten Cheerioseista</item>
+        <item quantity="other">%1$d pv sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d pv sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d pv sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d pv sitten Muistoista</item>
+        <item quantity="other">%1$d pv sitten Muistoista</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d pv sitten Spectacleseista</item>
+        <item quantity="other">%1$d pv sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d h sitten</item>
+        <item quantity="other">%d h sitten</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d h sitten kameran rullasta</item>
+        <item quantity="other">%1$d h sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d h sitten chatista</item>
+        <item quantity="other">%1$d h sitten chatista</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d h sitten Cheerioseista</item>
+        <item quantity="other">%1$d h sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d h sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d h sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d h sitten Muistoista</item>
+        <item quantity="other">%1$d h sitten Muistoista</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d h sitten Spectacleseista</item>
+        <item quantity="other">%1$d h sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d min sitten</item>
+        <item quantity="other">%d min sitten</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d min sitten kameran rullasta</item>
+        <item quantity="other">%1$d min sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d min sitten chatista</item>
+        <item quantity="other">%1$d min sitten chatista</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d min sitten Cheerioseista</item>
+        <item quantity="other">%1$d min sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d min sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d min sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d min sitten Muistoista</item>
+        <item quantity="other">%1$d min sitten Muistoista</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d min sitten Spectacleseista</item>
+        <item quantity="other">%1$d min sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d kk</item>
+        <item quantity="other">%d kk</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d kk sitten</item>
+        <item quantity="other">%d kk sitten</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d kk sitten kameran rullasta</item>
+        <item quantity="other">%1$d kk sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d kk sitten chatista</item>
+        <item quantity="other">%1$d kk sitten chatista</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d kk sitten Cheerioseista</item>
+        <item quantity="other">%1$d kk sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d kk sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d kk sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d kk sitten Muistoista</item>
+        <item quantity="other">%1$d kk sitten Muistoista</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d kk sitten Spectacleseista</item>
+        <item quantity="other">%1$d kk sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d s sitten</item>
+        <item quantity="other">%d s sitten</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d s sitten kameran rullasta</item>
+        <item quantity="other">%1$d s sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d s sitten chatista</item>
+        <item quantity="other">%1$d s sitten chatista</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d s sitten Cheerioseista</item>
+        <item quantity="other">%1$d s sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d s sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d s sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d s sitten Muistoista</item>
+        <item quantity="other">%1$d s sitten Muistoista</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d s sitten Spectacleseista</item>
+        <item quantity="other">%1$d s sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d vk</item>
+        <item quantity="other">%d vk</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d vk sitten</item>
+        <item quantity="other">%d vk sitten</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d vk sitten kameran rullasta</item>
+        <item quantity="other">%1$d vk sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d vk sitten chatista</item>
+        <item quantity="other">%1$d vk sitten chatista</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d vk sitten Cheerioseista</item>
+        <item quantity="other">%1$d vk sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d vk sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d vk sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d vk sitten Muistoista</item>
+        <item quantity="other">%1$d vk sitten Muistoista</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d vk sitten Spectacleseista</item>
+        <item quantity="other">%1$d vk sitten Spectacleseista</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d v</item>
+        <item quantity="other">%d v</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d v sitten</item>
+        <item quantity="other">%d v sitten</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d v sitten kameran rullasta</item>
+        <item quantity="other">%1$d v sitten kameran rullasta</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d v sitten chatista</item>
+        <item quantity="other">%1$d v sitten chatista</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d v sitten Cheerioseista</item>
+        <item quantity="other">%1$d v sitten Cheerioseista</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d v sitten kohteesta %2$s</item>
+        <item quantity="other">%1$d v sitten kohteesta %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d v sitten Muistoista</item>
+        <item quantity="other">%1$d v sitten Muistoista</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d v sitten Spectacleseista</item>
+        <item quantity="other">%1$d v sitten Spectacleseista</item>
+    </plurals>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%dநா</item>
+        <item quantity="other">%dநா</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dநா முந்தையது</item>
+        <item quantity="other">%dநா முந்தையது</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dநா முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dநா முந்தையது</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dநா முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dநா முந்தையது</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d நாள் முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d நாள் முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dநா முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dநா முந்தையது</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dநா முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dநா முந்தையது</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d நாள் முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d நாள் முந்தையது</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%dம</item>
+        <item quantity="other">%dம</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%dம முந்தையது</item>
+        <item quantity="other">%dம முந்தையது</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dம முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dம முந்தையது</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dம முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dம முந்தையது</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ம முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d ம முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dம முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dம முந்தையது</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dம முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dம முந்தையது</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d மணிநேரம் முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d மணிநேரம் முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%dநி</item>
+        <item quantity="other">%dநி</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%dநி முந்தையது</item>
+        <item quantity="other">%dநி முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dநி முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dநி முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dநி முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dநி முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d நிமிடம் முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d நிமிடம் முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dநி முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dநி முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dநி முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dநி முந்தையது</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d நிமிடம் முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d நிமிடம் முந்தையது</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%dமா</item>
+        <item quantity="other">%dமா</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%dமா முந்தையது</item>
+        <item quantity="other">%dமா முந்தையது</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dமா முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dமா முந்தையது</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dமா முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dமா முந்தையது</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d மாதம் முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d மாதம் முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dமா முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dமா முந்தையது</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dமா முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dமா முந்தையது</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d மாதத்திற்கு முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d மாதத்திற்கு முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%dவி</item>
+        <item quantity="other">%dவி</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%dவி முந்தையது</item>
+        <item quantity="other">%dவி முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dவி முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dவி முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dவி முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dவி முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d வினாடி முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d வினாடி முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dவி முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dவி முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dவி முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dவி முந்தையது</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d வினாடி முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d வினாடி முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%dவா</item>
+        <item quantity="other">%dவா</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%dவா முந்தையது</item>
+        <item quantity="other">%dவா முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dவா முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dவா முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dவா முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dவா முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d வாரம் முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d வாரம் முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dவா முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dவா முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dவா முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dவா முந்தையது</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d வாரம் முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d வாரம் முந்தையது</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%dஆ</item>
+        <item quantity="other">%dஆ</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%dஆ முந்தையது</item>
+        <item quantity="other">%dஆ முந்தையது</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">கேமராச் சுருளில் இருந்து %1$dஆ முந்தையது</item>
+        <item quantity="other">கேமராச் சுருளில் இருந்து %1$dஆ முந்தையது</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">அரட்டையிலிருந்து %1$dஆ முந்தையது</item>
+        <item quantity="other">அரட்டையிலிருந்து %1$dஆ முந்தையது</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ஆண்டு முன்பு Cheerios இலிருந்து</item>
+        <item quantity="other">%1$d ஆண்டு முன்பு Cheerios இலிருந்து</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sஇலிருந்து %1$dஆ முந்தையது</item>
+        <item quantity="other">%2$sஇலிருந்து %1$dஆ முந்தையது</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">நினைவுகளிலிருந்து %1$dஆ முந்தையது</item>
+        <item quantity="other">நினைவுகளிலிருந்து %1$dஆ முந்தையது</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles இலிருந்து %1$d ஆண்டு முந்தையது</item>
+        <item quantity="other">Spectacles இலிருந்து %1$d ஆண்டு முந்தையது</item>
+    </plurals>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%dദി.</item>
+        <item quantity="other">%dദി.</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dദി. മുമ്പ്</item>
+        <item quantity="other">%dദി. മുമ്പ്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$dദിവസം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dദിവസം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ദിവസം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d ദിവസം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dദിവസം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dദിവസം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dദിവസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%dമ.</item>
+        <item quantity="other">%dമ.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%dമ. മുമ്പ്</item>
+        <item quantity="other">%dമ. മുമ്പ്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$dമണിക്കൂർ മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dമണിക്കൂർ മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d മണിക്കൂർ മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d മണിക്കൂർ മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dമണിക്കൂർ മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dമണിക്കൂർ മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dമണിക്കൂർ മുമ്പ്</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%dമി.</item>
+        <item quantity="other">%dമി</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%dമി. മുമ്പ്</item>
+        <item quantity="other">%dമി. മുമ്പ്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$dമിനിറ്റ് മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dമിനിറ്റ് മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d മിനിറ്റ് മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d മിനിറ്റ് മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dമിനിറ്റ് മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dമിനിറ്റ് മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dമിനിറ്റ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%dമാസം</item>
+        <item quantity="other">%dമാസം</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%dമാസം മുമ്പ്</item>
+        <item quantity="other">%dമാസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$dമാസം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dമാസം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d മാസം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d മാസം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dമാസം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dമാസം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dമാസം മുമ്പ്</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%dസെ.</item>
+        <item quantity="other">%dസെ.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%dസെ. മുമ്പ്</item>
+        <item quantity="other">%dസെ. മുമ്പ്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$dസെക്കൻഡ് മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dസെക്കൻഡ് മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d സെക്കൻഡ് മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d സെക്കൻഡ് മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dസെക്കൻഡ് മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dസെക്കൻഡ് മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dസെക്കൻഡ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%dആഴ്.</item>
+        <item quantity="other">%dആഴ്.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%dആഴ്. മുമ്പ്</item>
+        <item quantity="other">%dആഴ്. മുമ്പ്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$dആഴ്ച മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dആഴ്ച മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ആഴ്ച മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d ആഴ്ച മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dആഴ്ച മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dആഴ്ച മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dആഴ്ച മുമ്പ്</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%dവ.</item>
+        <item quantity="other">%dവ.</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%dവ. മുമ്പ്</item>
+        <item quantity="other">%dവ. മുമ്പ്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">ക്യാമറാ റോളിൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+        <item quantity="other">ക്യാമറാ റോളിൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$dവർഷം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+        <item quantity="other">%1$dവർഷം മുമ്പ് ചാറ്റിൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d വർഷം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+        <item quantity="other">%1$d വർഷം മുമ്പ് Cheerios-ൽ നിന്നുള്ളത്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$dവർഷം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+        <item quantity="other">%1$dവർഷം മുമ്പ് %2$s-ൽ നിന്ന്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">മെമ്മറീസിൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+        <item quantity="other">മെമ്മറീസിൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles-ൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+        <item quantity="other">Spectacles-ൽ നിന്ന് %1$dവർഷം മുമ്പ്</item>
+    </plurals>
+</resources>

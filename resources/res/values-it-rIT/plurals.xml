@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_suspended_temporary">
+        <item quantity="one">Il tuo account è stato sospeso da Reddit per %1$d giorno.</item>
+        <item quantity="other">Il tuo account è stato sospeso da Reddit per %1$d giorni.</item>
+    </plurals>
+    <plurals name="action_subtitle_days_ban">
+        <item quantity="one">Bannato per %1$d giorno</item>
+        <item quantity="other">Bannato per %1$d giorni</item>
+    </plurals>
+    <plurals name="button_join_label">
+        <item quantity="one">Unisciti a %1$d comunità</item>
+        <item quantity="other">Unisciti a %1$d comunità</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_all">
+        <item quantity="one">Hai %1$d elemento non letto</item>
+        <item quantity="other">Hai %1$d elementi non letti</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_live">
+        <item quantity="one">Hai %1$d chat non letta</item>
+        <item quantity="other">Hai %1$d chat non lette</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_messages">
+        <item quantity="one">Hai %1$d messaggio non letto</item>
+        <item quantity="other">Hai %1$s messaggi non letti</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_requests">
+        <item quantity="one">Hai %1$d richiesta non letta</item>
+        <item quantity="other">Hai %1$d richieste non lette</item>
+    </plurals>
+    <plurals name="chat_error_failed_to_send_images">
+        <item quantity="one">Errore nell&apos;inviare %1$d immagine</item>
+        <item quantity="other">Errore nell&apos;inviare %%%1$d immagini</item>
+    </plurals>
+    <plurals name="coins_purchase_title">
+        <item quantity="one">%1$s moneta</item>
+        <item quantity="other">%1$s monete</item>
+    </plurals>
+    <plurals name="comment_awards_count">
+        <item quantity="one">Premio %1$d</item>
+        <item quantity="other">Premi %1$d</item>
+    </plurals>
+    <plurals name="comment_composer_presence_users_reading_message">
+        <item quantity="one">%1$d persona è qui</item>
+        <item quantity="other">%1$d persone sono qui</item>
+    </plurals>
+    <plurals name="comment_composer_presence_users_typing_message">
+        <item quantity="one">%1$d persona sta scrivendo…</item>
+        <item quantity="other">%1$d persone stanno scrivendo…</item>
+    </plurals>
+    <plurals name="comment_pill_count">
+        <item quantity="one">%1$,d nuovo commento</item>
+        <item quantity="other">%1$,d nuovi commenti</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="one">%1$d commento</item>
+        <item quantity="other">%1$d commenti</item>
+    </plurals>
+    <plurals name="counting_label_num_upvotes">
+        <item quantity="one">%1$s upvoto</item>
+        <item quantity="other">%1$s upvoti</item>
+    </plurals>
+    <plurals name="creator_stats_crosspost_card_crossposts_label_plural">
+        <item quantity="one">Crosspost</item>
+        <item quantity="other">Crosspost</item>
+    </plurals>
+    <plurals name="creator_stats_link_shares_label_plural">
+        <item quantity="one">Condivisione link</item>
+        <item quantity="other">Condivisioni link</item>
+    </plurals>
+    <plurals name="creatorkit_creation_plurals_seconds">
+        <item quantity="one">%1$d secondo</item>
+        <item quantity="other">%1$d secondi</item>
+    </plurals>
+    <plurals name="du_comment_count">
+        <item quantity="one">%1$s commento</item>
+        <item quantity="other">%1$s commenti</item>
+    </plurals>
+    <plurals name="du_watcher_count">
+        <item quantity="one">%1$s spettatore</item>
+        <item quantity="other">%1$s spettatori</item>
+    </plurals>
+    <plurals name="emoji_image_picker_title">
+        <item quantity="one">Aggiungi fino a 1 emoji</item>
+        <item quantity="other">Aggiungi fino a %1$d emoji</item>
+    </plurals>
+    <plurals name="error_too_many_images_selected">
+        <item quantity="one">Puoi selezionare al massimo 1 immagine.</item>
+        <item quantity="other">Puoi selezionare al massimo %1$d immagini.</item>
+    </plurals>
+    <plurals name="flair_restriction_all">
+        <item quantity="one">Consente testo e fino a %1$,d emoji</item>
+        <item quantity="other">Consente testo e fino a %1$,d emoji</item>
+    </plurals>
+    <plurals name="flair_restriction_emoji">
+        <item quantity="one">Consente fino a %1$,d emoji</item>
+        <item quantity="other">Consente fino a %1$,d emoji</item>
+    </plurals>
+    <plurals name="fmt_award_count">
+        <item quantity="one">Premio %1$d</item>
+        <item quantity="other">Premi %1$,d</item>
+    </plurals>
+    <plurals name="fmt_downvotes">
+        <item quantity="one">%1$d downvoto</item>
+        <item quantity="other">%1$d downvoti</item>
+    </plurals>
+    <plurals name="fmt_ftm_time">
+        <item quantity="one">%1$d minuto di trasmissione restante</item>
+        <item quantity="other">%1$d minuti di trasmissione restanti</item>
+    </plurals>
+    <plurals name="fmt_ftm_time_added_minutes">
+        <item quantity="one">+%1$d minuto di trasmissione aggiunto</item>
+        <item quantity="other">+%1$d minuti di trasmissione aggiunti</item>
+    </plurals>
+    <plurals name="fmt_ftm_time_added_seconds">
+        <item quantity="one">+%1$d secondo di trasmissione aggiunto</item>
+        <item quantity="other">+%1$d secondi di trasmissione aggiunti</item>
+    </plurals>
+    <plurals name="fmt_live_updates">
+        <item quantity="one">%1$d NUOVO AGGIORNAMENTO</item>
+        <item quantity="other">%1$d NUOVI AGGIORNAMENTI</item>
+    </plurals>
+    <plurals name="fmt_live_viewers">
+        <item quantity="one">%1$,d spettatore</item>
+        <item quantity="other">%1$,d spettatori</item>
+    </plurals>
+    <plurals name="fmt_members">
+        <item quantity="one">%1$d membro</item>
+        <item quantity="other">%1$d membri</item>
+    </plurals>
+    <plurals name="fmt_num_characters">
+        <item quantity="one">%1$s carattere</item>
+        <item quantity="other">%1$s caratteri</item>
+    </plurals>
+    <plurals name="fmt_num_collapsed_messages">
+        <item quantity="one">%1$s messaggio (utente bloccato)</item>
+        <item quantity="other">%1$s messaggi (utente bloccato)</item>
+    </plurals>
+    <plurals name="fmt_num_comment_threads">
+        <item quantity="one">%1$d altro thread</item>
+        <item quantity="other">%1$d altri thread</item>
+    </plurals>
+    <plurals name="fmt_num_comments">
+        <item quantity="one">%1$s commento</item>
+        <item quantity="other">%1$s commenti</item>
+    </plurals>
+    <plurals name="fmt_num_communities">
+        <item quantity="one">%1$,d comunità</item>
+        <item quantity="other">%1$,d comunità</item>
+    </plurals>
+    <plurals name="fmt_num_followers">
+        <item quantity="one">%1$s follower</item>
+        <item quantity="other">%1$s follower</item>
+    </plurals>
+    <plurals name="fmt_num_items_selected">
+        <item quantity="one">%1$,d elemento selezionato</item>
+        <item quantity="other">%1$,d elementi selezionati</item>
+    </plurals>
+    <plurals name="fmt_num_members">
+        <item quantity="one">%1$s membro</item>
+        <item quantity="other">%1$s membri</item>
+    </plurals>
+    <plurals name="fmt_num_points">
+        <item quantity="one">%1$s punto</item>
+        <item quantity="other">%1$s punti</item>
+    </plurals>
+    <plurals name="fmt_num_posts">
+        <item quantity="one">%1$,d post</item>
+        <item quantity="other">%1$,d post</item>
+    </plurals>
+    <plurals name="fmt_num_replies">
+        <item quantity="one">%1$d altra risposta</item>
+        <item quantity="other">%1$d altre risposte</item>
+    </plurals>
+    <plurals name="fmt_num_replies_button">
+        <item quantity="one">Vedi %1$d altra risposta</item>
+        <item quantity="other">Vedi altre %1$d risposte</item>
+    </plurals>
+    <plurals name="fmt_num_upvotes">
+        <item quantity="one">%1$s upvoto</item>
+        <item quantity="other">%1$s upvoti</item>
+    </plurals>
+    <plurals name="fmt_num_users_in_group_chat">
+        <item quantity="one">%1$d membro in %2$s</item>
+        <item quantity="other">%1$d membri in %2$s</item>
+    </plurals>
+    <plurals name="fmt_number">
+        <item quantity="one">%1$,d</item>
+        <item quantity="other">%1$,d</item>
+    </plurals>
+    <plurals name="fmt_people_in_group">
+        <item quantity="one">%1$d persona nel gruppo</item>
+        <item quantity="other">%1$d persone nel gruppo</item>
+    </plurals>
+    <plurals name="fmt_predictions_made_count">
+        <item quantity="one">%1$s previsione fatta</item>
+        <item quantity="other">%1$s previsioni fatte</item>
+    </plurals>
+    <plurals name="fmt_tournament_players_msg">
+        <item quantity="one">%1$s giocatore nel torneo</item>
+        <item quantity="other">%1$s giocatori nel torneo</item>
+    </plurals>
+    <plurals name="fmt_unique_watchers">
+        <item quantity="one">%1$d spettatore unico</item>
+        <item quantity="other">%1$d spettatori unici</item>
+    </plurals>
+    <plurals name="fmt_upvotes">
+        <item quantity="one">%1$d upvoto</item>
+        <item quantity="other">%1$d upvoti</item>
+    </plurals>
+    <plurals name="fmt_views">
+        <item quantity="one">%1$s visualizzazione</item>
+        <item quantity="other">%1$s visualizzazioni</item>
+    </plurals>
+    <plurals name="fmt_x_questions">
+        <item quantity="one">%1$,d domanda</item>
+        <item quantity="other">%1$,d domande</item>
+    </plurals>
+    <plurals name="fmt_you_can_add_more_people">
+        <item quantity="one">Puoi aggiungere %1$d altra persona</item>
+        <item quantity="other">Puoi aggiungere %1$d altre persone</item>
+    </plurals>
+    <plurals name="format_upvotes">
+        <item quantity="one">%1$s upvoto</item>
+        <item quantity="other">%1$s upvoti</item>
+    </plurals>
+    <plurals name="inbox_refresh_pill">
+        <item quantity="one">%1$d nuova notifica</item>
+        <item quantity="other">%1$d nuove notifiche</item>
+    </plurals>
+    <plurals name="incognito_mode_timeout_plural">
+        <item quantity="one">%1$d minuto</item>
+        <item quantity="other">%1$d minuti</item>
+    </plurals>
+    <plurals name="join_heroes_subtitle">
+        <item quantity="one">%1$s ha bisogno di %2$d altro potenziamento per sbloccare vantaggi per l&apos;intera comunità</item>
+        <item quantity="other">%1$s ha bisogno di altri %2$d potenziamenti per sbloccare vantaggi per l&apos;intera comunità</item>
+    </plurals>
+    <plurals name="join_heroes_subtitle_community_gear">
+        <item quantity="one">Ancora %1$d potenziamento per sbloccare vantaggi per la comunità</item>
+        <item quantity="other">Ancora %1$d potenziamenti per sbloccare vantaggi per la comunità</item>
+    </plurals>
+    <plurals name="join_heroes_title">
+        <item quantity="one">Unisciti a %1$d eroe</item>
+        <item quantity="other">Unisciti a %1$d eroi</item>
+    </plurals>
+    <plurals name="label_cakeday_subtitle">
+        <item quantity="one">Wow! Un anno intero! Fai sapere a tutti di avercela fatta fino a oggi.</item>
+        <item quantity="other">Wow! Altri %1$s anni! Fai sapere a tutti di avercela fatta fino a oggi.</item>
+    </plurals>
+    <plurals name="label_confirm_replace_vault_body_pending">
+        <item quantity="one">%1$d richiesta in sospeso</item>
+        <item quantity="other">%1$d richieste in sospeso</item>
+    </plurals>
+    <plurals name="label_confirm_replace_vault_body_pending_and_points">
+        <item quantity="one">%1$d richiesta in sospeso e %2$s punti comunità</item>
+        <item quantity="other">%1$d richieste in sospeso e %2$s punti comunità</item>
+    </plurals>
+    <plurals name="label_hiring_easteregg_steps_away">
+        <item quantity="one">Sei ora a %1$d passo dalla tua candidatura a dipendente di Reddit.</item>
+        <item quantity="other">Sei ora a %1$d passi dalla tua candidatura a dipendente di Reddit.</item>
+    </plurals>
+    <plurals name="label_num_eligible_claims">
+        <item quantity="one">%1$d rivendicabile</item>
+        <item quantity="other">%1$d rivendicabili</item>
+    </plurals>
+    <plurals name="label_views">
+        <item quantity="one">%1$s visualizzazione</item>
+        <item quantity="other">%1$s visualizzazioni</item>
+    </plurals>
+    <plurals name="label_watching">
+        <item quantity="one">%1$s connesso</item>
+        <item quantity="other">%1$s connessi</item>
+    </plurals>
+    <plurals name="lang_selection_limit_error">
+        <item quantity="one">Hai già selezionato %1$d lingua</item>
+        <item quantity="other">Hai già selezionato %1$d lingue</item>
+    </plurals>
+    <plurals name="liveaudio_listener_count">
+        <item quantity="one">%1$,d presente</item>
+        <item quantity="other">%1$,d presenti</item>
+    </plurals>
+    <plurals name="logged_out_users_only_count_format">
+        <item quantity="one">C&apos;è %1$d persona non connessa che sta ascoltando questa Talk.</item>
+        <item quantity="other">Ci sono %1$d persone non connesse che stanno ascoltando questa Talk.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_added">
+        <item quantity="one">%1$s ha aggiunto %2$s come indirizzo di questa chat.</item>
+        <item quantity="other">%1$s ha aggiunto %2$s come indirizzi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_added_by_you">
+        <item quantity="one">Hai aggiunto %1$s come indirizzo di questa chat.</item>
+        <item quantity="other">Hai aggiunto %1$s come indirizzi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_removed">
+        <item quantity="one">%1$s ha rimosso %2$s come indirizzo di questa chat.</item>
+        <item quantity="other">%1$s ha rimosso %2$s come indirizzi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_removed_by_you">
+        <item quantity="one">Hai rimosso %1$s come indirizzo di questa chat.</item>
+        <item quantity="other">Hai rimosso %1$s come indirizzi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_added">
+        <item quantity="one">%1$s ha aggiunto %2$s come indirizzo alternativo di questa chat.</item>
+        <item quantity="other">%1$s ha aggiunto %2$s come indirizzi alternativi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_added_by_you">
+        <item quantity="one">Hai aggiunto %1$s come indirizzo alternativo di questa chat.</item>
+        <item quantity="other">Hai aggiunto %1$s come indirizzi alternativi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_removed">
+        <item quantity="one">%1$s ha rimosso %2$s come indirizzo alternativo di questa chat.</item>
+        <item quantity="other">%1$s ha rimosso %2$s come indirizzi alternativi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_removed_by_you">
+        <item quantity="one">Hai rimosso %1$s come indirizzo alternativo di questa chat.</item>
+        <item quantity="other">Hai rimosso %1$s come indirizzi alternativi di questa chat.</item>
+    </plurals>
+    <plurals name="matrix_profile_member_count">
+        <item quantity="one">%1$,d membro</item>
+        <item quantity="other">%1$,d membri</item>
+    </plurals>
+    <plurals name="mod_reasons_mod_reports">
+        <item quantity="one">segnalazione ai mod</item>
+        <item quantity="other">%1$d segnalazioni ai mod</item>
+    </plurals>
+    <plurals name="mod_reasons_user_reports">
+        <item quantity="one">Segnalazione inviata per</item>
+        <item quantity="other">%1$d segnalazioni</item>
+    </plurals>
+    <plurals name="overflow_user_count_format">
+        <item quantity="one">C&apos;è %1$d altra persona che sta ascoltando questa Talk e circa %2$d di loro non è connessa.</item>
+        <item quantity="other">Ci sono altre %1$d persone che stanno ascoltando questa Talk e circa %2$d di loro non sono connesse.</item>
+    </plurals>
+    <plurals name="overflow_user_only_count_format">
+        <item quantity="one">%1$d altra persona sta ascoltando questa Talk.</item>
+        <item quantity="other">Altre %1$d persone stanno ascoltando questa Talk.</item>
+    </plurals>
+    <plurals name="plurals_days">
+        <item quantity="one">giorno</item>
+        <item quantity="other">giorni</item>
+    </plurals>
+    <plurals name="plurals_hours">
+        <item quantity="one">ora</item>
+        <item quantity="other">ore</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="one">minuto</item>
+        <item quantity="other">minuti</item>
+    </plurals>
+    <plurals name="plurals_months">
+        <item quantity="one">mese</item>
+        <item quantity="other">mesi</item>
+    </plurals>
+    <plurals name="plurals_seconds">
+        <item quantity="one">secondo</item>
+        <item quantity="other">secondi</item>
+    </plurals>
+    <plurals name="plurals_weeks">
+        <item quantity="one">settimana</item>
+        <item quantity="other">settimane</item>
+    </plurals>
+    <plurals name="plurals_years">
+        <item quantity="one">anno</item>
+        <item quantity="other">anni</item>
+    </plurals>
+    <plurals name="points">
+        <item quantity="one">%1$d punto</item>
+        <item quantity="other">%1$d punti</item>
+    </plurals>
+    <plurals name="post_num_comments">
+        <item quantity="one">commento</item>
+        <item quantity="other">commenti</item>
+    </plurals>
+    <plurals name="post_num_upvotes_label">
+        <item quantity="one">upvoto</item>
+        <item quantity="other">upvoti</item>
+    </plurals>
+    <plurals name="post_set_shared_in_communities">
+        <item quantity="one">Condiviso in %1$s comunità</item>
+        <item quantity="other">Condiviso in %1$s comunità</item>
+    </plurals>
+    <plurals name="powerups">
+        <item quantity="one">%1$d potenziamento</item>
+        <item quantity="other">%1$d potenziamenti</item>
+    </plurals>
+    <plurals name="powerups_upload_emoji_non_recoverable_error">
+        <item quantity="one">%1$d immagine è un file invalido che non è accettato</item>
+        <item quantity="other">%1$d immagini sono file invalidi che non sono accettati</item>
+    </plurals>
+    <plurals name="powerups_upload_emoji_recoverable_error">
+        <item quantity="one">Caricamento di %1$d file fallito</item>
+        <item quantity="other">Caricamento di %1$d file fallito</item>
+    </plurals>
+    <plurals name="predictions_cancel_post_content_with_users">
+        <item quantity="one">L&apos;annullamento di questa previsione terminerà 1 previsione già fatta e manderà una notifica al giocatore.</item>
+        <item quantity="other">L&apos;annullamento di questa previsione terminerà le %1$d previsioni già fatte e manderà una notifica ai giocatori.</item>
+    </plurals>
+    <plurals name="predictions_count_label">
+        <item quantity="one">Previsione</item>
+        <item quantity="other">Previsioni</item>
+    </plurals>
+    <plurals name="predictions_delete_post_content_with_users">
+        <item quantity="one">L&apos;eliminazione di questo post terminerà 1 previsione già fatta e manderà una notifica al giocatore.</item>
+        <item quantity="other">L&apos;eliminazione di questo post terminerà le %1$d previsioni già fatte e manderà una notifica ai giocatori.</item>
+    </plurals>
+    <plurals name="predictions_remove_post_content_with_users">
+        <item quantity="one">La rimozione di questo post annullerà 1 previsione già fatta.</item>
+        <item quantity="other">La rimozione di questo post annullerà le %1$d previsioni già fatte.</item>
+    </plurals>
+    <plurals name="premium_powerups">
+        <item quantity="one">%1$d potenziamento al mese da Reddit Premium</item>
+        <item quantity="other">%1$d potenziamenti al mese da Reddit Premium</item>
+    </plurals>
+    <plurals name="premium_settings_offer_accept_toast_text">
+        <item quantity="one">Grazie! %1$s moneta sarà accreditata al tuo account alla tua prossima data di rinnovo.</item>
+        <item quantity="other">Grazie! %1$s monete saranno accreditate al tuo account alla tua prossima data di rinnovo.</item>
+    </plurals>
+    <plurals name="premium_settings_offer_confirm_text">
+        <item quantity="one">%1$s moneta sarà accreditata al tuo account su %2$s</item>
+        <item quantity="other">%1$s monete saranno accreditate al tuo account su %2$s</item>
+    </plurals>
+    <plurals name="replies">
+        <item quantity="one">%1$d risposta</item>
+        <item quantity="other">%1$d risposte</item>
+    </plurals>
+    <plurals name="resurrected_status_time_interval_plural">
+        <item quantity="one">%1$d secondo</item>
+        <item quantity="other">%1$d secondi</item>
+    </plurals>
+    <plurals name="settings_lang_selection_limit_error">
+        <item quantity="one">Hai già selezionato %1$d lingua</item>
+        <item quantity="other">Hai già selezionato %1$d lingue</item>
+    </plurals>
+    <plurals name="subreddit_subscribe_success">
+        <item quantity="one">Ti sei unito a %1$d comunità</item>
+        <item quantity="other">Ti sei unito a %1$d comunità</item>
+    </plurals>
+    <plurals name="talk_listener_count">
+        <item quantity="one">%1$,d presente</item>
+        <item quantity="other">%1$,d presenti</item>
+    </plurals>
+    <plurals name="talk_listener_count_in_room_title">
+        <item quantity="one">%1$,d in %2$s</item>
+        <item quantity="other">%1$,d in %2$s</item>
+    </plurals>
+    <plurals name="talk_topics_format">
+        <item quantity="one">%1$d argomento</item>
+        <item quantity="other">%1$d argomenti</item>
+    </plurals>
+    <plurals name="threshold_ending">
+        <item quantity="one">s</item>
+        <item quantity="other">s</item>
+    </plurals>
+    <plurals name="title_modal_invite_blocked_users_more">
+        <item quantity="one">Attenzione: hai bloccato %1$s, %2$s, %3$s e %4$d altro in questa chat.</item>
+        <item quantity="other">Attenzione: hai bloccato %1$s, %2$s, %3$s e altri %4$d in questa chat.</item>
+    </plurals>
+    <plurals name="tournament_players">
+        <item quantity="one">Giocatore</item>
+        <item quantity="other">Giocatori</item>
+    </plurals>
+</resources>

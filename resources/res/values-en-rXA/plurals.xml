@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">[»%d«ð one]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">[»%d«ð åĝö one]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ð åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">[»%d«ĥ one]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">[»%d«ĥ åĝö one]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ĥ åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">[»%d«ḿ one]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">[»%d«ḿ åĝö one]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ḿ åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">[»%d«ḿö one]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">[»%d«ḿö åĝö one two]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ḿö åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">[»%d«š one]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">[»%d«š åĝö one]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«š åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">[»%d«ŵ one]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">[»%d«ŵ åĝö one]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ŵ åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">[»%d«ý one]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">[»%d«ý åĝö one]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ Çåḿéŕå Ŕöļļ one two three]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ Çĥåţ one two three]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ Çĥééŕîöš one two three]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ Ḿéḿöŕîéš one two three]</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">[»%1$d«ý åĝö ƒŕöḿ Šþéçţåçļéš one two three]</item>
+    </plurals>
+    <plurals name="account_suspended_temporary">
+        <item quantity="one">[Ýöûŕ åççöûñţ ĥåš ɓééñ šûšþéñðéð ƒŕöḿ Ŕéððîţ ƒöŕ »%d« ðåý. one two three four five six]</item>
+        <item quantity="other">[Ýöûŕ åççöûñţ ĥåš ɓééñ šûšþéñðéð ƒŕöḿ Ŕéððîţ ƒöŕ »%d« ðåýš. one two three four five six seven]</item>
+    </plurals>
+    <plurals name="action_subtitle_days_ban">
+        <item quantity="one">[βåññéð ƒöŕ »%1$d« ðåý one two three]</item>
+        <item quantity="other">[βåññéð ƒöŕ »%1$d« ðåýš one two three]</item>
+    </plurals>
+    <plurals name="button_join_label">
+        <item quantity="one">[Ĵöîñ »%1$d« çöḿḿûñîţý one two three]</item>
+        <item quantity="other">[Ĵöîñ »%1$d« çöḿḿûñîţîéš one two three]</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_all">
+        <item quantity="one">[Ýöû ĥåVé »%d« ûñŕéåð îţéḿ one two three]</item>
+        <item quantity="other">[Ýöû ĥåVé »%d« ûñŕéåð îţéḿš one two three]</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_live">
+        <item quantity="one">[Ýöû ĥåVé »%d« ûñŕéåð çĥåţ one two three]</item>
+        <item quantity="other">[Ýöû ĥåVé »%d« ûñŕéåð çĥåţš one two three]</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_messages">
+        <item quantity="one">[Ýöû ĥåVé »%d« ûñŕéåð ḿéššåĝé one two three]</item>
+        <item quantity="other">[Ýöû ĥåVé »%1$s« ûñŕéåð ḿéššåĝéš one two three]</item>
+    </plurals>
+    <plurals name="cd_chat_tab_filter_requests">
+        <item quantity="one">[Ýöû ĥåVé »%d« ûñŕéåð ŕéQûéšţ one two three]</item>
+        <item quantity="other">[Ýöû ĥåVé »%d« ûñŕéåð ŕéQûéšţš one two three]</item>
+    </plurals>
+    <plurals name="chat_error_failed_to_send_images">
+        <item quantity="one">[Fåîļéð ţö šéñð »%1$d« îḿåĝé one two three]</item>
+        <item quantity="other">[Fåîļéð ţö šéñð »%1$d« îḿåĝéš one two three]</item>
+    </plurals>
+    <plurals name="coins_purchase_title">
+        <item quantity="one">[»%1$s« Çöîñ one]</item>
+        <item quantity="other">[»%1$s« Çöîñš one two]</item>
+    </plurals>
+    <plurals name="comment_awards_count">
+        <item quantity="one">[»%1$d« Åŵåŕð one two]</item>
+        <item quantity="other">[»%1$d« Åŵåŕðš one two]</item>
+    </plurals>
+    <plurals name="comment_composer_presence_users_reading_message">
+        <item quantity="one">[»%d« þéŕšöñ îš ĥéŕé one two three]</item>
+        <item quantity="other">[»%d« þéöþļé åŕé ĥéŕé one two three]</item>
+    </plurals>
+    <plurals name="comment_composer_presence_users_typing_message">
+        <item quantity="one">[»%d« þéŕšöñ ţýþîñĝ… one two three]</item>
+        <item quantity="other">[»%d« þéöþļé ţýþîñĝ… one two three]</item>
+    </plurals>
+    <plurals name="comment_pill_count">
+        <item quantity="one">[»%1$,d« Ñéŵ Çöḿḿéñţ one two]</item>
+        <item quantity="other">[»%1$,d« Ñéŵ Çöḿḿéñţš one two]</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="one">[»%1$d« çöḿḿéñţ one two]</item>
+        <item quantity="other">[»%1$d« çöḿḿéñţš one two]</item>
+    </plurals>
+    <plurals name="counting_label_num_upvotes">
+        <item quantity="one">[»%1$s« ûþVöţé one two]</item>
+        <item quantity="other">[»%1$s« ûþVöţéš one two]</item>
+    </plurals>
+    <plurals name="creator_stats_crosspost_card_crossposts_label_plural">
+        <item quantity="one">[Çŕöššþöšţ one two]</item>
+        <item quantity="other">[Çŕöššþöšţš one two]</item>
+    </plurals>
+    <plurals name="creator_stats_link_shares_label_plural">
+        <item quantity="one">[Ļîñķ Šĥåŕé one two]</item>
+        <item quantity="other">[Ļîñķ Šĥåŕéš one two]</item>
+    </plurals>
+    <plurals name="creatorkit_creation_plurals_seconds">
+        <item quantity="one">[»%d« šéçöñð one two]</item>
+        <item quantity="other">[»%d« šéçöñðš one two]</item>
+    </plurals>
+    <plurals name="du_comment_count">
+        <item quantity="one">[»%s« çöḿḿéñţ one two]</item>
+        <item quantity="other">[»%s« çöḿḿéñţš one two]</item>
+    </plurals>
+    <plurals name="du_watcher_count">
+        <item quantity="one">[»%s« ŵåţçĥéŕ one two]</item>
+        <item quantity="other">[»%s« ŵåţçĥéŕš one two]</item>
+    </plurals>
+    <plurals name="emoji_image_picker_title">
+        <item quantity="one">[Åðð ûþ ţö 1 éḿöĵî one two three]</item>
+        <item quantity="other">[Åðð ûþ ţö »%1$d« éḿöĵîš one two three]</item>
+    </plurals>
+    <plurals name="error_too_many_images_selected">
+        <item quantity="one">[Ýöû çåñ šéļéçţ öñļý ûþ ţö 1 îḿåĝé. one two three four]</item>
+        <item quantity="other">[Ýöû çåñ šéļéçţ öñļý ûþ ţö »%1$d« îḿåĝéš. one two three four]</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">[Fåšţ ƒöŕŵåŕð %d šéçöñð one two three]</item>
+        <item quantity="other">[Fåšţ ƒöŕŵåŕð %d šéçöñðš one two three]</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">[Ŕéŵîñð %d šéçöñð one two three]</item>
+        <item quantity="other">[Ŕéŵîñð %d šéçöñðš one two three]</item>
+    </plurals>
+    <plurals name="flair_restriction_all">
+        <item quantity="one">[Åļļöŵš ţéхţ åñð ûþ ţö »%1$,d« éḿöĵî one two three four]</item>
+        <item quantity="other">[Åļļöŵš ţéхţ åñð ûþ ţö »%1$,d« éḿöĵîš one two three four]</item>
+    </plurals>
+    <plurals name="flair_restriction_emoji">
+        <item quantity="one">[Åļļöŵš ûþ ţö »%1$,d« éḿöĵî one two three]</item>
+        <item quantity="other">[Åļļöŵš ûþ ţö »%1$,d« éḿöĵîš one two three]</item>
+    </plurals>
+    <plurals name="fmt_award_count">
+        <item quantity="one">[»%1$d« Åŵåŕð one two]</item>
+        <item quantity="other">[»%1$,d« Åŵåŕðš one two]</item>
+    </plurals>
+    <plurals name="fmt_downvotes">
+        <item quantity="one">[»%1$d« ðöŵñVöţé one two]</item>
+        <item quantity="other">[»%1$d« ðöŵñVöţéš one two]</item>
+    </plurals>
+    <plurals name="fmt_ftm_time">
+        <item quantity="one">[»%1$d« ḿîñûţé åîŕţîḿé ļéƒţ one two three]</item>
+        <item quantity="other">[»%1$d« ḿîñûţéš åîŕţîḿé ļéƒţ one two three]</item>
+    </plurals>
+    <plurals name="fmt_ftm_time_added_minutes">
+        <item quantity="one">[+»%1$d« ḿîñûţé åîŕţîḿé ĝîVéñ one two three]</item>
+        <item quantity="other">[+»%1$d« ḿîñûţéš åîŕţîḿé ĝîVéñ one two three]</item>
+    </plurals>
+    <plurals name="fmt_ftm_time_added_seconds">
+        <item quantity="one">[+»%1$d« šéçöñð åîŕţîḿé ĝîVéñ one two three]</item>
+        <item quantity="other">[+»%1$d« šéçöñðš åîŕţîḿé ĝîVéñ one two three]</item>
+    </plurals>
+    <plurals name="fmt_live_updates">
+        <item quantity="one">[»%1$d« ÑÉŴ ÛÞÐÅŢÉ one two]</item>
+        <item quantity="other">[»%1$d« ÑÉŴ ÛÞÐÅŢÉŠ one two]</item>
+    </plurals>
+    <plurals name="fmt_live_viewers">
+        <item quantity="one">[»%1$,d« Vîéŵéŕ one two]</item>
+        <item quantity="other">[»%1$,d« Vîéŵéŕš one two]</item>
+    </plurals>
+    <plurals name="fmt_members">
+        <item quantity="one">[»%1$d« ḿéḿɓéŕ one two]</item>
+        <item quantity="other">[»%1$d« ḿéḿɓéŕš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_characters">
+        <item quantity="one">[»%s« çĥåŕåçţéŕ one two]</item>
+        <item quantity="other">[»%s« çĥåŕåçţéŕš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_collapsed_messages">
+        <item quantity="one">[»%1$s« ḿéššåĝé (ɓļöçķéð ûšéŕ) one two three]</item>
+        <item quantity="other">[»%1$s« ḿéššåĝéš (ɓļöçķéð ûšéŕ) one two three]</item>
+    </plurals>
+    <plurals name="fmt_num_comment_threads">
+        <item quantity="one">[»%1$d« ḿöŕé ţĥŕéåð one two]</item>
+        <item quantity="other">[»%1$d« ḿöŕé ţĥŕéåðš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_comments">
+        <item quantity="one">[»%1$s« çöḿḿéñţ one two]</item>
+        <item quantity="other">[»%1$s« çöḿḿéñţš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_communities">
+        <item quantity="one">[»%1$,d« çöḿḿûñîţý one two]</item>
+        <item quantity="other">[»%1$,d« çöḿḿûñîţîéš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_followers">
+        <item quantity="one">[»%1$s« ƒöļļöŵéŕ one two]</item>
+        <item quantity="other">[»%1$s« ƒöļļöŵéŕš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_items_selected">
+        <item quantity="one">[»%1$,d« îţéḿ šéļéçţéð one two three]</item>
+        <item quantity="other">[»%1$,d« îţéḿš šéļéçţéð one two three]</item>
+    </plurals>
+    <plurals name="fmt_num_members">
+        <item quantity="one">[»%1$s« ḿéḿɓéŕ one two]</item>
+        <item quantity="other">[»%1$s« ḿéḿɓéŕš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_points">
+        <item quantity="one">[»%1$s« þöîñţ one two]</item>
+        <item quantity="other">[»%1$s« þöîñţš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_posts">
+        <item quantity="one">[»%1$,d« þöšţ one]</item>
+        <item quantity="other">[»%1$,d« þöšţš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_replies">
+        <item quantity="one">[»%1$d« ḿöŕé ŕéþļý one two]</item>
+        <item quantity="other">[»%1$d« ḿöŕé ŕéþļîéš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_replies_button">
+        <item quantity="one">[Šéé »%1$d« Ḿöŕé Ŕéþļý one two three]</item>
+        <item quantity="other">[Šéé »%1$d« Ḿöŕé Ŕéþļîéš one two three]</item>
+    </plurals>
+    <plurals name="fmt_num_upvotes">
+        <item quantity="one">[»%1$s« ûþVöţé one two]</item>
+        <item quantity="other">[»%1$s« ûþVöţéš one two]</item>
+    </plurals>
+    <plurals name="fmt_num_users_in_group_chat">
+        <item quantity="one">[»%1$d« ḿéḿɓéŕ îñ »%2$s« one two]</item>
+        <item quantity="other">[»%1$d« ḿéḿɓéŕš îñ »%2$s« one two]</item>
+    </plurals>
+    <plurals name="fmt_number">
+        <item quantity="one">[»%1$,d«]</item>
+        <item quantity="other">[»%1$,d«]</item>
+    </plurals>
+    <plurals name="fmt_people_in_group">
+        <item quantity="one">[»%1$d« þéŕšöñ îñ ĝŕöûþ one two three]</item>
+        <item quantity="other">[»%1$d« þéöþļé îñ ĝŕöûþ one two three]</item>
+    </plurals>
+    <plurals name="fmt_predictions_made_count">
+        <item quantity="one">[»%1$s« þŕéðîçţîöñ ḿåðé one two three]</item>
+        <item quantity="other">[»%1$s« þŕéðîçţîöñš ḿåðé one two three]</item>
+    </plurals>
+    <plurals name="fmt_tournament_players_msg">
+        <item quantity="one">[»%1$s« ţöûŕñåḿéñţ þļåýéŕ one two three]</item>
+        <item quantity="other">[»%1$s« ţöûŕñåḿéñţ þļåýéŕš one two three]</item>
+    </plurals>
+    <plurals name="fmt_unique_watchers">
+        <item quantity="one">[»%1$d« ûñîQûé ŵåţçĥéŕ one two three]</item>
+        <item quantity="other">[»%1$d« ûñîQûé ŵåţçĥéŕš one two three]</item>
+    </plurals>
+    <plurals name="fmt_upvotes">
+        <item quantity="one">[»%1$d« ûþVöţé one two]</item>
+        <item quantity="other">[»%1$d« ûþVöţéš one two]</item>
+    </plurals>
+    <plurals name="fmt_views">
+        <item quantity="one">[»%1$s« Vîéŵ one]</item>
+        <item quantity="other">[»%1$s« Vîéŵš one two]</item>
+    </plurals>
+    <plurals name="fmt_x_questions">
+        <item quantity="one">[»%,d« Qûéšţîöñ one two]</item>
+        <item quantity="other">[»%,d« Qûéšţîöñš one two]</item>
+    </plurals>
+    <plurals name="fmt_you_can_add_more_people">
+        <item quantity="one">[Ýöû çåñ åðð »%1$d« ḿöŕé þéŕšöñ one two three]</item>
+        <item quantity="other">[Ýöû çåñ åðð »%1$d« ḿöŕé þéöþļé one two three]</item>
+    </plurals>
+    <plurals name="format_upvotes">
+        <item quantity="one">[»%1$s« ûþVöţé one two]</item>
+        <item quantity="other">[»%1$s« ûþVöţéš one two]</item>
+    </plurals>
+    <plurals name="inbox_refresh_pill">
+        <item quantity="one">[»%1$d« ñéŵ ñöţîƒîçåţîöñ one two three]</item>
+        <item quantity="other">[»%1$d« ñéŵ ñöţîƒîçåţîöñš one two three]</item>
+    </plurals>
+    <plurals name="incognito_mode_timeout_plural">
+        <item quantity="one">[»%d« ḿîñ one]</item>
+        <item quantity="other">[»%d« ḿîñš one]</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">[»%d« ðåý åĝö one two]</item>
+        <item quantity="other">[»%d« ðåýš åĝö one two]</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">[»%d« ĥŕ åĝö one two]</item>
+        <item quantity="other">[»%d« ĥŕš åĝö one two]</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">[»%d« ḿîñ åĝö one two]</item>
+        <item quantity="other">[»%d« ḿîñš åĝö one two]</item>
+    </plurals>
+    <plurals name="join_heroes_subtitle">
+        <item quantity="one">[»%1$s« ñééðš »%2$d« ḿöŕé Þöŵéŕûþ ţö ûñļöçķ þéŕķš ƒöŕ ţĥé éñţîŕé çöḿḿûñîţý one two three four five six seven]</item>
+        <item quantity="other">[»%1$s« ñééðš »%2$d« ḿöŕé Þöŵéŕûþš ţö ûñļöçķ þéŕķš ƒöŕ ţĥé éñţîŕé çöḿḿûñîţý one two three four five six seven]</item>
+    </plurals>
+    <plurals name="join_heroes_subtitle_community_gear">
+        <item quantity="one">[»%1$d« ḿöŕé Þöŵéŕûþ ŵîļļ ûñļöçķ þéŕķš ƒöŕ ţĥé çöḿḿûñîţý one two three four five six]</item>
+        <item quantity="other">[»%1$d« ḿöŕé Þöŵéŕûþš ŵîļļ ûñļöçķ þéŕķš ƒöŕ ţĥé çöḿḿûñîţý one two three four five six]</item>
+    </plurals>
+    <plurals name="join_heroes_title">
+        <item quantity="one">[Ĵöîñ »%1$d« ĥéŕö one two]</item>
+        <item quantity="other">[Ĵöîñ »%1$d« ĥéŕöéš one two]</item>
+    </plurals>
+    <plurals name="label_cakeday_subtitle">
+        <item quantity="one">[Þĥéŵ¡ Öñé ŵĥöļé ýéåŕ¡ Ļéţ éVéŕýöñé ķñöŵ ýöû&apos;Vé ḿåðé îţ ţĥîš ƒåŕ. one two three four five six seven]</item>
+        <item quantity="other">[Þĥéŵ¡ »%s« ḿöŕé ýéåŕš¡ Ļéţ éVéŕýöñé ķñöŵ ýöû&apos;Vé ḿåðé îţ ţĥîš ƒåŕ. one two three four five six seven]</item>
+    </plurals>
+    <plurals name="label_confirm_replace_vault_body_pending">
+        <item quantity="one">[»%1$d« þéñðîñĝ çļåîḿ one two three]</item>
+        <item quantity="other">[»%1$d« þéñðîñĝ çļåîḿš one two three]</item>
+    </plurals>
+    <plurals name="label_confirm_replace_vault_body_pending_and_points">
+        <item quantity="one">[»%1$d« þéñðîñĝ çļåîḿ åñð »%2$s« Çöḿḿûñîţý Þöîñţš one two three four five]</item>
+        <item quantity="other">[»%1$d« þéñðîñĝ çļåîḿš åñð »%2$s« Çöḿḿûñîţý Þöîñţš one two three four five]</item>
+    </plurals>
+    <plurals name="label_hiring_easteregg_steps_away">
+        <item quantity="one">[Ýöû åŕé ñöŵ »%1$d« šţéþ åŵåý ƒŕöḿ åþþļýîñĝ ţö ɓé å Ŕéððîţ éḿþļöýéé. one two three four five six seven]</item>
+        <item quantity="other">[Ýöû åŕé ñöŵ »%1$d« šţéþš åŵåý ƒŕöḿ åþþļýîñĝ ţö ɓé å Ŕéððîţ éḿþļöýéé. one two three four five six seven]</item>
+    </plurals>
+    <plurals name="label_num_eligible_claims">
+        <item quantity="one">[»%d« éļîĝîɓļé çļåîḿ one two three]</item>
+        <item quantity="other">[»%d« éļîĝîɓļé çļåîḿš one two three]</item>
+    </plurals>
+    <plurals name="label_views">
+        <item quantity="one">[»%1$s« Vîéŵ one]</item>
+        <item quantity="other">[»%1$s« Vîéŵš one two]</item>
+    </plurals>
+    <plurals name="label_watching">
+        <item quantity="one">[»%1$s« ŵåţçĥîñĝ one two]</item>
+        <item quantity="other">[»%1$s« ŵåţçĥîñĝ one two]</item>
+    </plurals>
+    <plurals name="lang_selection_limit_error">
+        <item quantity="one">[Ýöû&apos;Vé åļŕéåðý šéļéçţéð »%d« ļåñĝûåĝé one two three four]</item>
+        <item quantity="other">[Ýöû&apos;Vé åļŕéåðý šéļéçţéð »%d« ļåñĝûåĝéš one two three four]</item>
+    </plurals>
+    <plurals name="languages_selection_add_action">
+        <item quantity="one">[Åðð »%1$d« ļåñĝûåĝé one two]</item>
+        <item quantity="other">[Åðð »%1$d« ļåñĝûåĝéš one two three]</item>
+    </plurals>
+    <plurals name="liveaudio_listener_count">
+        <item quantity="one">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+        <item quantity="many">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+        <item quantity="other">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+    </plurals>
+    <plurals name="logged_out_users_only_count_format">
+        <item quantity="one">[»%1$d« ļöĝĝéð öûţ þéŕšöñ ļîšţéñîñĝ ţö ţĥîš ţåļķ. one two three four five]</item>
+        <item quantity="other">[»%1$d« ļöĝĝéð öûţ þéöþļé ļîšţéñîñĝ ţö ţĥîš ţåļķ. one two three four five]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_added">
+        <item quantity="one">[»%1$s« åððéð »%2$s« åš åñ åððŕéšš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+        <item quantity="other">[»%1$s« åððéð »%2$s« åš åððŕéššéš ƒöŕ ţĥîš çĥåţ. one two three four]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_added_by_you">
+        <item quantity="one">[Ýöû åððéð »%1$s« åš åñ åððŕéšš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+        <item quantity="other">[Ýöû åððéð »%1$s« åš åððŕéššéš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_removed">
+        <item quantity="one">[»%1$s« ŕéḿöVéð »%2$s« åš åñ åððŕéšš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+        <item quantity="other">[»%1$s« ŕéḿöVéð »%2$s« åš åððŕéššéš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_aliases_removed_by_you">
+        <item quantity="one">[Ýöû ŕéḿöVéð »%1$s« åš åñ åððŕéšš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+        <item quantity="other">[Ýöû ŕéḿöVéð »%1$s« åš åððŕéššéš ƒöŕ ţĥîš çĥåţ. one two three four five]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_added">
+        <item quantity="one">[»%1$s« åððéð ţĥé åļţéŕñåţîVé åððŕéšš »%2$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+        <item quantity="other">[»%1$s« åððéð ţĥé åļţéŕñåţîVé åððŕéššéš »%2$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_added_by_you">
+        <item quantity="one">[Ýöû åððéð ţĥé åļţéŕñåţîVé åððŕéšš »%1$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+        <item quantity="other">[Ýöû åððéð ţĥé åļţéŕñåţîVé åððŕéššéš »%1$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_removed">
+        <item quantity="one">[»%1$s« ŕéḿöVéð ţĥé åļţéŕñåţîVé åððŕéšš »%2$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+        <item quantity="other">[»%1$s« ŕéḿöVéð ţĥé åļţéŕñåţîVé åððŕéššéš »%2$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+    </plurals>
+    <plurals name="matrix_notice_room_canonical_alias_alternative_removed_by_you">
+        <item quantity="one">[Ýöû ŕéḿöVéð ţĥé åļţéŕñåţîVé åððŕéšš »%1$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+        <item quantity="other">[Ýöû ŕéḿöVéð ţĥé åļţéŕñåţîVé åððŕéššéš »%1$s« ƒöŕ ţĥîš çĥåţ. one two three four five six]</item>
+    </plurals>
+    <plurals name="matrix_profile_member_count">
+        <item quantity="one">[»%1$,d« ḿéḿɓéŕ one two]</item>
+        <item quantity="other">[»%1$,d« ḿéḿɓéŕš one two]</item>
+    </plurals>
+    <plurals name="mod_reasons_mod_reports">
+        <item quantity="one">[Ḿöð Ŕéþöŕţ one two]</item>
+        <item quantity="other">[»%1$d« Ḿöð Ŕéþöŕţš one two]</item>
+    </plurals>
+    <plurals name="mod_reasons_user_reports">
+        <item quantity="one">[Ŕéþöŕţéð ƒöŕ one two]</item>
+        <item quantity="other">[»%1$d« Ŕéþöŕţš one two]</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">[%d ñéŵ ñöţîƒîçåţîöñ one two three]</item>
+        <item quantity="other">[%d ñéŵ ñöţîƒîçåţîöñš one two three]</item>
+    </plurals>
+    <plurals name="overflow_user_count_format">
+        <item quantity="one">[Ţĥéŕé îš »%1$d« ḿöŕé þéŕšöñ ļîšţéñîñĝ ţö ţĥîš ţåļķ, åñð åŕöûñð »%2$d« öƒ ţĥéḿ åŕé ļöĝĝéð öûţ. one two three four five six seven eight nine]</item>
+        <item quantity="other">[Ţĥéŕé åŕé »%1$d« ḿöŕé þéöþļé ļîšţéñîñĝ ţö ţĥîš ţåļķ, åñð åŕöûñð »%2$d« öƒ ţĥéḿ åŕé ļöĝĝéð öûţ. one two three four five six seven eight nine]</item>
+    </plurals>
+    <plurals name="overflow_user_only_count_format">
+        <item quantity="one">[Ţĥéŕé îš »%1$d« ḿöŕé þéŕšöñ ļîšţéñîñĝ ţö ţĥîš ţåļķ. one two three four five]</item>
+        <item quantity="other">[Ţĥéŕé åŕé »%1$d« ḿöŕé þéöþļé ļîšţéñîñĝ ţö ţĥîš ţåļķ. one two three four five six]</item>
+    </plurals>
+    <plurals name="plurals_days">
+        <item quantity="one">[ðåý one]</item>
+        <item quantity="other">[ðåýš one]</item>
+    </plurals>
+    <plurals name="plurals_hours">
+        <item quantity="one">[ĥöûŕ one]</item>
+        <item quantity="other">[ĥöûŕš one]</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="one">[ḿîñûţé one two]</item>
+        <item quantity="other">[ḿîñûţéš one two]</item>
+    </plurals>
+    <plurals name="plurals_months">
+        <item quantity="one">[ḿöñţĥ one]</item>
+        <item quantity="other">[ḿöñţĥš one two]</item>
+    </plurals>
+    <plurals name="plurals_seconds">
+        <item quantity="one">[šéçöñð one two]</item>
+        <item quantity="other">[šéçöñðš one two]</item>
+    </plurals>
+    <plurals name="plurals_weeks">
+        <item quantity="one">[ŵééķ one]</item>
+        <item quantity="other">[ŵééķš one]</item>
+    </plurals>
+    <plurals name="plurals_years">
+        <item quantity="one">[ýéåŕ one]</item>
+        <item quantity="other">[ýéåŕš one]</item>
+    </plurals>
+    <plurals name="points">
+        <item quantity="one">[»%1$d« þöîñţ one two]</item>
+        <item quantity="other">[»%1$d« þöîñţš one two]</item>
+    </plurals>
+    <plurals name="post_num_comments">
+        <item quantity="one">[çöḿḿéñţ one two]</item>
+        <item quantity="other">[çöḿḿéñţš one two]</item>
+    </plurals>
+    <plurals name="post_num_upvotes_label">
+        <item quantity="one">[ûþVöţé one two]</item>
+        <item quantity="other">[ûþVöţéš one two]</item>
+    </plurals>
+    <plurals name="post_set_shared_in_communities">
+        <item quantity="one">[Šĥåŕéð îñ »%1$s« çöḿḿûñîţý one two three]</item>
+        <item quantity="other">[Šĥåŕéð îñ »%1$s« çöḿḿûñîţîéš one two three]</item>
+    </plurals>
+    <plurals name="powerups">
+        <item quantity="one">[»%1$d« Þöŵéŕûþ one two]</item>
+        <item quantity="other">[»%1$d« Þöŵéŕûþš one two]</item>
+    </plurals>
+    <plurals name="powerups_upload_emoji_non_recoverable_error">
+        <item quantity="one">[»%1$d« îḿåĝé îš åñ îñVåļîð ƒîļé ţĥåţ îšñ&apos;ţ åççéþţéð one two three four five]</item>
+        <item quantity="other">[»%1$d« îḿåĝéš åŕé îñVåļîð ƒîļéš ţĥåţ åŕéñ&apos;ţ åççéþţéð one two three four five six]</item>
+    </plurals>
+    <plurals name="powerups_upload_emoji_recoverable_error">
+        <item quantity="one">[»%1$d« ƒîļé ƒåîļéð ţö ûþļöåð one two three]</item>
+        <item quantity="other">[»%1$d« ƒîļéš ƒåîļéð ţö ûþļöåð one two three]</item>
+    </plurals>
+    <plurals name="predictions_cancel_post_content_with_users">
+        <item quantity="one">[Çåñçéļļîñĝ ţĥîš þŕéðîçţîöñ ŵîļļ éñð ţĥé 1 þŕéðîçţîöñ ţĥåţ ĥåš åļŕéåðý ɓééñ ḿåðé åñð ñöţîƒý ţĥé þļåýéŕ. one two three four five six seven eight nine ten eleven]</item>
+        <item quantity="other">[Çåñçéļļîñĝ ţĥîš þŕéðîçţîöñ ŵîļļ éñð ţĥé »%d« þŕéðîçţîöñš ţĥåţ ĥåVé åļŕéåðý ɓééñ ḿåðé åñð ñöţîƒý ţĥé þļåýéŕš. one two three four five six seven eight nine ten eleven]</item>
+    </plurals>
+    <plurals name="predictions_count_label">
+        <item quantity="one">[Þŕéðîçţîöñ one two]</item>
+        <item quantity="other">[Þŕéðîçţîöñš one two]</item>
+    </plurals>
+    <plurals name="predictions_delete_post_content_with_users">
+        <item quantity="one">[Ðéļéţîñĝ ţĥîš þöšţ ŵîļļ éñð ţĥé 1 þŕéðîçţîöñ ţĥåţ ĥåš åļŕéåðý ɓééñ ḿåðé. one two three four five six seven eight]</item>
+        <item quantity="other">[Ðéļéţîñĝ ţĥîš þŕéðîçţîöñ ŵîļļ éñð ţĥé »%d« þŕéðîçţîöñš ţĥåţ ĥåVé åļŕéåðý ɓééñ ḿåðé åñð ñöţîƒý ţĥé þļåýéŕš. one two three four five six seven eight nine ten eleven]</item>
+    </plurals>
+    <plurals name="predictions_remove_post_content_with_users">
+        <item quantity="one">[ŔéḿöVîñĝ ţĥîš þöšţ ŵîļļ çåñçéļ ţĥé 1 þŕéðîçţîöñ ţĥåţ ĥåš åļŕéåðý ɓééñ ḿåðé. one two three four five six seven eight]</item>
+        <item quantity="other">[ŔéḿöVîñĝ ţĥîš þöšţ ŵîļļ çåñçéļ ţĥé »%d« þŕéðîçţîöñš ţĥåţ ĥåVé åļŕéåðý ɓééñ ḿåðé. one two three four five six seven eight]</item>
+    </plurals>
+    <plurals name="premium_powerups">
+        <item quantity="one">[»%1$d« Ŕéððîţ Þŕéḿîûḿ þöŵéŕûþ/ḿöñţĥ one two three four]</item>
+        <item quantity="other">[»%1$d« Ŕéððîţ Þŕéḿîûḿ þöŵéŕûþš/ḿöñţĥ one two three four]</item>
+    </plurals>
+    <plurals name="premium_settings_offer_accept_toast_text">
+        <item quantity="one">[Ţĥåñķ ýöû¡ »%1$s« çöîñš ŵîļļ ɓé çŕéðîţéð ţö ýöûŕ åççöûñţ öñ ýöûŕ ñéхţ ŕéñéŵåļ ðåţé. one two three four five six seven eight]</item>
+        <item quantity="other">[Ţĥåñķ ýöû¡ »%1$s« çöîñš ŵîļļ ɓé çŕéðîţéð ţö ýöûŕ åççöûñţ öñ ýöûŕ ñéхţ ŕéñéŵåļ ðåţé. one two three four five six seven eight]</item>
+    </plurals>
+    <plurals name="premium_settings_offer_confirm_text">
+        <item quantity="one">[»%1$s« çöîñ ŵîļļ ɓé çŕéðîţéð ţö ýöûŕ åççöûñţ öñ »%2$s« one two three four five]</item>
+        <item quantity="other">[»%1$s« çöîñš ŵîļļ ɓé çŕéðîţéð ţö ýöûŕ åççöûñţ öñ »%2$s« one two three four five]</item>
+    </plurals>
+    <plurals name="replies">
+        <item quantity="one">[»%1$d« ŕéþļý one two]</item>
+        <item quantity="other">[»%1$d« ŕéþļîéš one two]</item>
+    </plurals>
+    <plurals name="resurrected_status_time_interval_plural">
+        <item quantity="one">[»%d« šéçöñð one two]</item>
+        <item quantity="other">[»%d« šéçöñðš one two]</item>
+    </plurals>
+    <plurals name="settings_lang_selection_limit_error">
+        <item quantity="one">[Ýöû&apos;Vé åļŕéåðý šéļéçţéð »%d« ļåñĝûåĝé one two three four]</item>
+        <item quantity="other">[Ýöû&apos;Vé åļŕéåðý šéļéçţéð »%d« ļåñĝûåĝéš one two three four]</item>
+    </plurals>
+    <plurals name="subreddit_subscribe_success">
+        <item quantity="one">[Ĵöîñéð »%1$d« çöḿḿûñîţý one two three]</item>
+        <item quantity="other">[Ĵöîñéð »%1$d« çöḿḿûñîţîéš one two three]</item>
+    </plurals>
+    <plurals name="talk_listener_count">
+        <item quantity="one">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+        <item quantity="many">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+        <item quantity="other">[»%1$,d« ĥéŕé ñöŵ one two]</item>
+    </plurals>
+    <plurals name="talk_listener_count_in_room_title">
+        <item quantity="other">[»%1$,d« îñ »%2$s« one]</item>
+    </plurals>
+    <plurals name="talk_topics_format">
+        <item quantity="one">[»%1$d« ţöþîç one two]</item>
+        <item quantity="other">[»%1$d« ţöþîçš one two]</item>
+    </plurals>
+    <plurals name="threshold_ending">
+        <item quantity="one">[]</item>
+        <item quantity="other">[š one]</item>
+    </plurals>
+    <plurals name="title_modal_invite_blocked_users_more">
+        <item quantity="one">[Ĥéåðš ûþ: ýöû&apos;Vé ɓļöçķéð »%1$s«, »%2$s«, »%3$s« åñð »%4$d« öţĥéŕ îñ ţĥîš çĥåţ. one two three four five six seven eight nine ten eleven]</item>
+        <item quantity="other">[Ĥéåðš ûþ: ýöû&apos;Vé ɓļöçķéð »%1$s«, »%2$s«, »%3$s« åñð »%4$d« öţĥéŕš îñ ţĥîš çĥåţ. one two three four five six seven eight nine ten eleven twelve]</item>
+    </plurals>
+    <plurals name="tournament_players">
+        <item quantity="one">[Þļåýéŕ one two]</item>
+        <item quantity="other">[Þļåýéŕš one two]</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">[1ĥ one]</item>
+        <item quantity="other">[»%d«ĥ one]</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">[1ḿ one]</item>
+        <item quantity="other">[»%d«ḿ one]</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">[1š one]</item>
+        <item quantity="other">[»%d«š one]</item>
+    </plurals>
+</resources>

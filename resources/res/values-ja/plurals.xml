@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">%d日</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">%d日前</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d日前 - カメラロールから</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">%1$d日前 - チャットから</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d日前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d日前 - %2$sから</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">%1$d日前 - メモリーズから</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d日前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">%d時間前</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d時間前 - カメラロールから</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">%1$d時間前 - チャットから</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d時間前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d時間前 - %2$sから</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">%1$d時間前 - メモリーズから</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d時間前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">%d分前</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d分前 - カメラロールから</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">%1$d分前 - チャットから</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d分前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d分前 - %2$sから</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">%1$d分前 - メモリーズから</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d分前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">%dヶ月</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">%dヶ月前</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$dヶ月前 - カメラロールから</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">%1$dヶ月前 - チャットから</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">%1$dヶ月前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$dヶ月前 - %2$sから</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">%1$dヶ月前 - メモリーズから</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">%1$dヶ月前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">%d秒</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">%d秒前</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d秒前 - カメラロールから</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">%1$d秒前 - チャットから</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d秒前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d秒前 - %2$sから</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">%1$d秒前 - メモリーズから</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d秒前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">%d週間</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">%d週間前</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d週間前 - カメラロールから</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">%1$d週間前 - チャットから</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d週間前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d週間前 - %2$sから</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">%1$d週間前 - メモリーズから</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d週間前 - Spectaclesから</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">%d年</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">%d年前</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d年前 - カメラロールから</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">%1$d年前- チャットから</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d年前 - Cheeriosから</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d年前 - %2$sから</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">%1$d年前 - メモリーズから</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d年前 - Spectaclesから</item>
+    </plurals>
+</resources>

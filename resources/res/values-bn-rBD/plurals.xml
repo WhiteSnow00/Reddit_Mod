@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d দি</item>
+        <item quantity="other">%d দি</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d দি আগে</item>
+        <item quantity="other">%d দি আগে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d দি আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d দি আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d দিন আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d দি্ন আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dদিন আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dদিন আগে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d দি আগে %2$s থেকে</item>
+        <item quantity="other">%1$d দি আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d দি আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d দি আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d দি আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d দি আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d ঘ</item>
+        <item quantity="other">%d ঘ</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d ঘ আগে</item>
+        <item quantity="other">%d ঘন্টা আগে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d ঘ আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d ঘ আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$dঘণ্টা আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d ঘণ্টা আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dঘন্টা আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dঘন্টা আগে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d ঘ আগে %2$s থেকে</item>
+        <item quantity="other">%1$d ঘ আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d ঘ আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d ঘ আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d ঘ আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d ঘ আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d মি</item>
+        <item quantity="other">%d মি</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d মি আগে</item>
+        <item quantity="other">%d মি আগে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d মি আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d মি আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">চ্যাট থেকে %1$d মিনিট আগে</item>
+        <item quantity="other">%1$d মি আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dমিনিট আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dমিনিট আগে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d মি আগে %2$s থেকে</item>
+        <item quantity="other">%1$d মি আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d মি আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d মি আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d মি আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d মি আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d মা</item>
+        <item quantity="other">%d মা</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d মা আগে</item>
+        <item quantity="other">%d মা আগে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d মা আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d মা আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d মাস আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d মাস আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dমাস আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dমাস আগে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d মা আগে %2$s থেকে</item>
+        <item quantity="other">%1$d মা আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d মা আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d মা আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$dমাস আগে Spectacles থেকে</item>
+        <item quantity="other">%1$dমাস আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d সে</item>
+        <item quantity="other">%d সে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d সে আগে</item>
+        <item quantity="other">%d সে আগে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d সে আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d সে আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d সেকেন্ড আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d সেকেন্ড আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dসেকেন্ড আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dসেকেন্ড আগে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d সে আগে %2$s থেকে</item>
+        <item quantity="other">%1$d সে আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d সে আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d সে আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d সে আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d সে আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d স</item>
+        <item quantity="other">%d স</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d স আগে</item>
+        <item quantity="other">%d স আগে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d স আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d স আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$dসপ্তাহ আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d সপ্তাহ আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dসপ্তাহ আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dসপ্তাহ আগে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d স আগে %2$s থেকে</item>
+        <item quantity="other">%1$d স আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d স আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d স আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d স আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d স আগে Spectacles থেকে</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d ব</item>
+        <item quantity="other">%d ব</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d ব আগে</item>
+        <item quantity="other">%d ব আগে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d ব আগে ক্যামেরা রোল থেকে</item>
+        <item quantity="other">%1$d ব আগে ক্যামেরা রোল থেকে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d বছর আগে চ্যাট থেকে</item>
+        <item quantity="other">%1$d বছর আগে চ্যাট থেকে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios থেকে %1$dবছর আগে</item>
+        <item quantity="other">Cheerios থেকে %1$dবছর আগে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d ব আগে %2$s থেকে</item>
+        <item quantity="other">%1$d ব আগে %2$s থেকে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d ব আগে স্মৃতিসমূহ থেকে</item>
+        <item quantity="other">%1$d ব আগে স্মৃতিসমূহ থেকে</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d ব আগে Spectacles থেকে</item>
+        <item quantity="other">%1$d ব আগে Spectacles থেকে</item>
+    </plurals>
+</resources>

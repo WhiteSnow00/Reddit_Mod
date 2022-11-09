@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d દિવસ</item>
+        <item quantity="other">%d દિવસ</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d દિવસ પહેલાં</item>
+        <item quantity="other">%d દિવસ પહેલાં</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d દિવસ પહેલાં કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d દિવસ પહેલાં કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d દિવસ પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d દિવસ પહેલાં</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d દિવસ પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d દિવસ પહેલાં</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d દિવસ પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d દિવસ પહેલાં</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d દિવસ પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d દિવસ પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d દિવસ પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d દિવસ પહેલાં Spectacles માંથી</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d કલાક</item>
+        <item quantity="other">%d કલાક</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d કલાક પહેલાં</item>
+        <item quantity="other">%d કલાક પહેલાં</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d કલાક પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d કલાક પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d કલાક પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d કલાક પહેલાં</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d કલાક પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d કલાક પહેલાં</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d કલાક પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d કલાક પહેલાં</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d કલાક પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d કલાક પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d કલાક પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d કલાક પહેલાં Spectacles માંથી</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d મિનિટ</item>
+        <item quantity="other">%d મિનિટ</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d મિનિટ પહેલાં</item>
+        <item quantity="other">%d મિનિટ પહેલાં</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d મિનિટ પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d મિનિટ પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d મિનિટ પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d મિનિટ પહેલાં</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d મિનિટ પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d મિનિટ પહેલાં</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d મિનિટ પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d મિનિટ પહેલાં</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d મિનિટ પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d મિનિટ પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d મિનિટ પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d મિનિટ પહેલાં Spectacles માંથી</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d મહિના</item>
+        <item quantity="other">%d મહિના</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d મહિના પહેલાં</item>
+        <item quantity="other">%d મહિના પહેલાં</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d મહિના પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d મહિના પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d મહિના પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d મહિના પહેલાં</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d મહિના પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d મહિના પહેલાં</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d મહિના પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d મહિના પહેલાં</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d મહિના પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d મહિના પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d મહિના પહેલાં Spectaclesમાંથી</item>
+        <item quantity="other">%1$d મહિના પહેલાં Spectaclesમાંથી</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d સેકન્ડ</item>
+        <item quantity="other">%d સેકન્ડ</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d સેકન્ડ પહેલાં</item>
+        <item quantity="other">%d સેકન્ડ પહેલાં</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d સેકન્ડ પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d સેકન્ડ પહેલાં તમારા કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d સેકન્ડ પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d સેકન્ડ પહેલાં</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d સેકન્ડ પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d સેકન્ડ પહેલાં</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d સેકન્ડ પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d સેકન્ડ પહેલાં</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d સેકન્ડ પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d સેકન્ડ પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d સેકન્ડ પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d સેકન્ડ પહેલાં Spectacles માંથી</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d અઠવાડિયા</item>
+        <item quantity="other">%d અઠવાડિયા</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d અઠવાડિયા પહેલાં</item>
+        <item quantity="other">%d અઠવાડિયા પહેલાં</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d અઠવાડિયા પહેલાં કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d અઠવાડિયા પહેલાં કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d અઠવાડિયા પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d અઠવાડિયા પહેલાં</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d અઠવાડિયા પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d અઠવાડિયા પહેલાં</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d અઠવાડિયા પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d અઠવાડિયા પહેલાં</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d અઠવાડિયા પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d અઠવાડિયા પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d અઠવાડિયા પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d અઠવાડિયા પહેલાં Spectacles માંથી</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d વર્ષ</item>
+        <item quantity="other">%d વર્ષ</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d વર્ષ પહેલાં</item>
+        <item quantity="other">%d વર્ષ પહેલાં</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d વર્ષ પહેલાં કૅમેરા રોલમાંથી</item>
+        <item quantity="other">%1$d વર્ષ પહેલાં કૅમેરા રોલમાંથી</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">ચેટમાંથી %1$d વર્ષ પહેલાં</item>
+        <item quantity="other">ચેટમાંથી %1$d વર્ષ પહેલાં</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Cheeriosમાંથી %1$d વર્ષ પહેલાં</item>
+        <item quantity="other">Cheeriosમાંથી %1$d વર્ષ પહેલાં</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$sમાંથી %1$d વર્ષ પહેલાં</item>
+        <item quantity="other">%2$sમાંથી %1$d વર્ષ પહેલાં</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d વર્ષ પહેલાં યાદોમાંથી</item>
+        <item quantity="other">%1$d વર્ષ પહેલાં યાદોમાંથી</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d વર્ષ પહેલાં Spectacles માંથી</item>
+        <item quantity="other">%1$d વર્ષ પહેલાં Spectacles માંથી</item>
+    </plurals>
+</resources>

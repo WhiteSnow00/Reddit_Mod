@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d d</item>
+        <item quantity="other">%d d</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d d sedan</item>
+        <item quantity="other">%d d sedan</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d d sedan från kamerarullen</item>
+        <item quantity="other">%1$d d sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d dag sedan från chatten</item>
+        <item quantity="other">%1$d dag sedan från chatten</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d dag sedan från Cheerios</item>
+        <item quantity="other">%1$d dagar sedan från Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d d sedan från %2$s</item>
+        <item quantity="other">%1$d d sedan från %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d d sedan från Memories</item>
+        <item quantity="other">%1$d d sedan från Memories</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d d sedan från Spectacles</item>
+        <item quantity="other">%1$d d sedan från Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d tim</item>
+        <item quantity="other">%d tim</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d tim sedan</item>
+        <item quantity="other">%d tim sedan</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d tim sedan från kamerarullen</item>
+        <item quantity="other">%1$d tim sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d tim sedan från chatten</item>
+        <item quantity="other">%1$d tim sedan från chatten</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d tim sedan från Cheerios</item>
+        <item quantity="other">%1$d tim sedan från Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d tim sedan från %2$s</item>
+        <item quantity="other">%1$d tim sedan från %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d tim sedan från Memories</item>
+        <item quantity="other">%1$d tim sedan från Memories</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d tim sedan från Spectacles</item>
+        <item quantity="other">%1$d tim sedan från Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d min sedan</item>
+        <item quantity="other">%d min sedan</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d min sedan från kamerarullen</item>
+        <item quantity="other">%1$d min sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d min sedan från chatten</item>
+        <item quantity="other">%1$d min sedan från chatten</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d min sedan från Cheerios</item>
+        <item quantity="other">%1$d min sedan från Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d min sedan från %2$s</item>
+        <item quantity="other">%1$d min sedan från %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d min sedan från Memories</item>
+        <item quantity="other">%1$d min sedan från Memories</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d min sedan från Spectacles</item>
+        <item quantity="other">%1$d min sedan från Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mån</item>
+        <item quantity="other">%d mån</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d mån sedan</item>
+        <item quantity="other">%d mån sedan</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d mån sedan från kamerarullen</item>
+        <item quantity="other">%1$d mån sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d mån sedan från chatten</item>
+        <item quantity="other">%1$d mån sedan från chatten</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d mån sedan från Cheerios</item>
+        <item quantity="other">%1$d mån sedan från Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d mån sedan från %2$s</item>
+        <item quantity="other">%1$d mån sedan från %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d mån sedan från Memories</item>
+        <item quantity="other">%1$d mån sedan från Memories</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d mån sedan från Spectacles</item>
+        <item quantity="other">%1$d mån sedan från Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d sek</item>
+        <item quantity="other">%d sek</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d sek sedan</item>
+        <item quantity="other">%d sek sedan</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d sek sedan från kamerarullen</item>
+        <item quantity="other">%1$d sek sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d sek sedan från chatten</item>
+        <item quantity="other">%1$d sek sedan från chatten</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d sek sedan från Cheerios</item>
+        <item quantity="other">%1$d sek sedan från Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d sek sedan från %2$s</item>
+        <item quantity="other">%1$d sek sedan från %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d sek sedan från Memories</item>
+        <item quantity="other">%1$d sek sedan från Memories</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d sek sedan från Spectacles</item>
+        <item quantity="other">%1$d sek sedan från Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d v</item>
+        <item quantity="other">%d v</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d v sedan</item>
+        <item quantity="other">%d v sedan</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d v sedan från kamerarullen</item>
+        <item quantity="other">%1$d v sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d vecka sedan från chatten</item>
+        <item quantity="other">%1$d vecka sedan från chatten</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d v sedan från Cheerios</item>
+        <item quantity="other">%1$d v sedan från Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d v sedan från %2$s</item>
+        <item quantity="other">%1$d v sedan från %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d v sedan från Memories</item>
+        <item quantity="other">%1$d v sedan från Memories</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d v sedan från Spectacles</item>
+        <item quantity="other">%1$d v sedan från Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d år</item>
+        <item quantity="other">%d år</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d år sedan</item>
+        <item quantity="other">%d år sedan</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d år sedan från kamerarullen</item>
+        <item quantity="other">%1$d år sedan från kamerarullen</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d år sedan från chatten</item>
+        <item quantity="other">%1$d år sedan från chatten</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d år sedan från Cheerios</item>
+        <item quantity="other">%1$d år sedan från Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d år sedan från %2$s</item>
+        <item quantity="other">%1$d år sedan från %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d år sedan från Memories</item>
+        <item quantity="other">%1$d år sedan från Memories</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d år sedan från Spectacles</item>
+        <item quantity="other">%1$d år sedan från Spectacles</item>
+    </plurals>
+</resources>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+        <item quantity="other">%d dnia</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d dzień temu</item>
+        <item quantity="few">%d dni temu</item>
+        <item quantity="many">%d dni temu</item>
+        <item quantity="other">%d dnia temu</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d dzień temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d dni temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d dni temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d dnia temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d dzień temu z czatu:</item>
+        <item quantity="few">%1$d dni temu z czatu:</item>
+        <item quantity="many">%1$d dni temu z czatu:</item>
+        <item quantity="other">%1$d dnia temu z czatu:</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d dzień temu z Cheerios</item>
+        <item quantity="few">%1$d dni temu z Cheerios</item>
+        <item quantity="many">%1$d dni temu z Cheerios</item>
+        <item quantity="other">%1$d dnia temu z Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d dzień temu z: %2$s</item>
+        <item quantity="few">%1$d dni temu z: %2$s</item>
+        <item quantity="many">%1$d dni temu z: %2$s</item>
+        <item quantity="other">%1$d dnia temu z: %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d dzień temu z Memories</item>
+        <item quantity="few">%1$d dni temu z Memories</item>
+        <item quantity="many">%1$d dni temu z Memories</item>
+        <item quantity="other">%1$d dnia temu z Memories</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d dzień temu ze Spectacles</item>
+        <item quantity="few">%1$d dni temu ze Spectacles</item>
+        <item quantity="many">%1$d dni temu ze Spectacles</item>
+        <item quantity="other">%1$d dnia temu ze Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d godz.</item>
+        <item quantity="few">%d godz.</item>
+        <item quantity="many">%d godz.</item>
+        <item quantity="other">%d godz.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d godz. temu</item>
+        <item quantity="few">%d godz. temu</item>
+        <item quantity="many">%d godz. temu</item>
+        <item quantity="other">%d godz. temu</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d godz. temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d godz. temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d godz. temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d godz. temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d godz. temu z czatu:</item>
+        <item quantity="few">%1$d godz. temu z czatu:</item>
+        <item quantity="many">%1$d godz. temu z czatu:</item>
+        <item quantity="other">%1$d godz. temu z czatu:</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d godz. temu z Cheerios</item>
+        <item quantity="few">%1$d godz. temu z Cheerios</item>
+        <item quantity="many">%1$d godz. temu z Cheerios</item>
+        <item quantity="other">%1$d godz. temu z Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d godz. temu z: %2$s</item>
+        <item quantity="few">%1$d godz. temu z: %2$s</item>
+        <item quantity="many">%1$d godz. temu z: %2$s</item>
+        <item quantity="other">%1$d godz. temu z: %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d godz. temu z Memories</item>
+        <item quantity="few">%1$d godz. temu z Memories</item>
+        <item quantity="many">%1$d godz. temu z Memories</item>
+        <item quantity="other">%1$d godz. temu z Memories</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d godz. temu ze Spectacles</item>
+        <item quantity="few">%1$d godz. temu ze Spectacles</item>
+        <item quantity="many">%1$d godz. temu ze Spectacles</item>
+        <item quantity="other">%1$d godz. temu ze Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d min temu</item>
+        <item quantity="few">%d min temu</item>
+        <item quantity="many">%d min temu</item>
+        <item quantity="other">%d min temu</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d min temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d min temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d min temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d min temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d min temu z czatu:</item>
+        <item quantity="few">%1$d min temu z czatu:</item>
+        <item quantity="many">%1$d min temu z czatu:</item>
+        <item quantity="other">%1$d min temu z czatu:</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d min temu z Cheerios</item>
+        <item quantity="few">%1$d min temu z Cheerios</item>
+        <item quantity="many">%1$d min temu z Cheerios</item>
+        <item quantity="other">%1$d min temu z Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d min temu z: %2$s</item>
+        <item quantity="few">%1$d min temu z: %2$s</item>
+        <item quantity="many">%1$d min temu z: %2$s</item>
+        <item quantity="other">%1$d min temu z: %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d min temu z Memories</item>
+        <item quantity="few">%1$d min temu z Memories</item>
+        <item quantity="many">%1$d min temu z Memories</item>
+        <item quantity="other">%1$d min temu z Memories</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d min temu ze Spectacles</item>
+        <item quantity="few">%1$d min temu ze Spectacles</item>
+        <item quantity="many">%1$d min temu ze Spectacles</item>
+        <item quantity="other">%1$d min temu ze Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mies.</item>
+        <item quantity="few">%d mies.</item>
+        <item quantity="many">%d mies.</item>
+        <item quantity="other">%d mies.</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d mies. temu</item>
+        <item quantity="few">%d mies. temu</item>
+        <item quantity="many">%d mies. temu</item>
+        <item quantity="other">%d mies. temu</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d mies. temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d mies. temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d mies. temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d mies. temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d mies. temu z czatu:</item>
+        <item quantity="few">%1$d mies. temu z czatu:</item>
+        <item quantity="many">%1$d mies. temu z czatu:</item>
+        <item quantity="other">%1$d mies. temu z czatu:</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d miesiąc temu z Cheerios</item>
+        <item quantity="few">%1$d miesiące temu z Cheerios</item>
+        <item quantity="many">%1$d miesięcy temu z Cheerios</item>
+        <item quantity="other">%1$d miesiąca temu z Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d mies. temu z: %2$s</item>
+        <item quantity="few">%1$d mies. temu z: %2$s</item>
+        <item quantity="many">%1$d mies. temu z: %2$s</item>
+        <item quantity="other">%1$d mies. temu z: %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d mies. temu z Memories</item>
+        <item quantity="few">%1$d mies. temu z Memories</item>
+        <item quantity="many">%1$d mies. temu z Memories</item>
+        <item quantity="other">%1$d mies. temu z Memories</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d miesiąc temu ze Spectacles</item>
+        <item quantity="few">%1$d miesiące temu ze Spectacles</item>
+        <item quantity="many">%1$d miesięcy temu ze Spectacles</item>
+        <item quantity="other">%1$d miesiąca temu ze Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d sek.</item>
+        <item quantity="few">%d sek.</item>
+        <item quantity="many">%d sek.</item>
+        <item quantity="other">%d sek.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d sek. temu</item>
+        <item quantity="few">%d sek. temu</item>
+        <item quantity="many">%d sek. temu</item>
+        <item quantity="other">%d sek. temu</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d sek. temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d sek. temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d sek. temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d sek. temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d sek. temu z czatu:</item>
+        <item quantity="few">%1$d sek. temu z czatu:</item>
+        <item quantity="many">%1$d sek. temu z czatu:</item>
+        <item quantity="other">%1$d sek. temu z czatu:</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d s temu z Cheerios</item>
+        <item quantity="few">%1$d s temu z Cheerios</item>
+        <item quantity="many">%1$d s temu z Cheerios</item>
+        <item quantity="other">%1$d s temu z Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d sek. temu z: %2$s</item>
+        <item quantity="few">%1$d sek. temu z: %2$s</item>
+        <item quantity="many">%1$d sek. temu z: %2$s</item>
+        <item quantity="other">%1$d sek. temu z: %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d sek. temu z Memories</item>
+        <item quantity="few">%1$d sek. temu z Memories</item>
+        <item quantity="many">%1$d sek. temu z Memories</item>
+        <item quantity="other">%1$d sek. temu z Memories</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d sek. temu ze Spectacles</item>
+        <item quantity="few">%1$d sek. temu ze Spectacles</item>
+        <item quantity="many">%1$d sek. temu ze Spectacles</item>
+        <item quantity="other">%1$d sek. temu ze Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d tydz.</item>
+        <item quantity="few">%d tyg.</item>
+        <item quantity="many">%d tyg.</item>
+        <item quantity="other">%d tyg.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d tydz. temu</item>
+        <item quantity="few">%d tyg. temu</item>
+        <item quantity="many">%d tyg. temu</item>
+        <item quantity="other">%d tyg. temu</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d tydz. temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d tyg. temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d tyg. temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d tyg. temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d tydz. temu z czatu:</item>
+        <item quantity="few">%1$d tyg. temu z czatu:</item>
+        <item quantity="many">%1$d tyg. temu z czatu:</item>
+        <item quantity="other">%1$d tyg. temu z czatu:</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d tydzień temu z Cheerios</item>
+        <item quantity="few">%1$d tygodnie temu z Cheerios</item>
+        <item quantity="many">%1$d tygodni temu z Cheerios</item>
+        <item quantity="other">%1$d tygodnia temu z Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d tydz. temu z: %2$s</item>
+        <item quantity="few">%1$d tyg. temu z: %2$s</item>
+        <item quantity="many">%1$d tyg. temu z: %2$s</item>
+        <item quantity="other">%1$d tyg. temu z: %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d tydz. temu z Memories</item>
+        <item quantity="few">%1$d tyg. temu z Memories</item>
+        <item quantity="many">%1$d tyg. temu z Memories</item>
+        <item quantity="other">%1$d tyg. temu z Memories</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d tydz. temu ze Spectacles</item>
+        <item quantity="few">%1$d tyg. temu ze Spectacles</item>
+        <item quantity="many">%1$d tyg. temu ze Spectacles</item>
+        <item quantity="other">%1$d tyg. temu ze Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d rok</item>
+        <item quantity="few">%d lata</item>
+        <item quantity="many">%d lat</item>
+        <item quantity="other">%d roku</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d rok temu</item>
+        <item quantity="few">%d lata temu</item>
+        <item quantity="many">%d lat temu</item>
+        <item quantity="other">%d roku temu</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d rok temu z Rolki z aparatu</item>
+        <item quantity="few">%1$d lata temu z Rolki z aparatu</item>
+        <item quantity="many">%1$d lat temu z Rolki z aparatu</item>
+        <item quantity="other">%1$d roku temu z Rolki z aparatu</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d rok temu z czatu:</item>
+        <item quantity="few">%1$d lata temu z czatu:</item>
+        <item quantity="many">%1$d lat temu z czatu:</item>
+        <item quantity="other">%1$d roku temu z czatu:</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d rok temu z Cheerios</item>
+        <item quantity="few">%1$d lata temu z Cheerios</item>
+        <item quantity="many">%1$d lat temu z Cheerios</item>
+        <item quantity="other">%1$d roku temu z Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d rok temu z: %2$s</item>
+        <item quantity="few">%1$d lata temu z: %2$s</item>
+        <item quantity="many">%1$d lat temu z: %2$s</item>
+        <item quantity="other">%1$d roku temu z: %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d rok temu z Memories</item>
+        <item quantity="few">%1$d lata temu z Memories</item>
+        <item quantity="many">%1$d lat temu z Memories</item>
+        <item quantity="other">%1$d roku temu z Memories</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d rok temu ze Spectacles</item>
+        <item quantity="few">%1$d lata temu ze Spectacles</item>
+        <item quantity="many">%1$d lat temu ze Spectacles</item>
+        <item quantity="other">%1$d roku temu ze Spectacles</item>
+    </plurals>
+</resources>

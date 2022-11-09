@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d Tag</item>
+        <item quantity="other">%d Tage</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">vor %d Tag</item>
+        <item quantity="other">vor %d Tagen</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Tag aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Tagen aus Aufnahmen</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Tag aus Chat</item>
+        <item quantity="other">vor %1$d Tagen aus Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Tag mit Cheerios</item>
+        <item quantity="other">Vor %1$d Tagen mit Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Tag aus %2$s</item>
+        <item quantity="other">Vor %1$d Tagen aus %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Tag aus Memorys</item>
+        <item quantity="other">vor %1$d Tagen aus Memorys</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Tag mit Spectacles</item>
+        <item quantity="other">vor %1$d Tagen mit Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d Std.</item>
+        <item quantity="other">%d Std.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">vor %d Std.</item>
+        <item quantity="other">vor %d Std.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Std. aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Std. aus Aufnahmen</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Std. aus Chat</item>
+        <item quantity="other">vor %1$d Std. aus Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Std. mit Cheerios</item>
+        <item quantity="other">Vor %1$d Std. mit Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Std. aus %2$s</item>
+        <item quantity="other">Vor %1$d Std. aus %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Std. aus Memorys</item>
+        <item quantity="other">vor %1$d Std. aus Memorys</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Std. mit Spectacles</item>
+        <item quantity="other">vor %1$d Std. mit Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d Min.</item>
+        <item quantity="other">%d Min.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">vor %d Min.</item>
+        <item quantity="other">vor %d Min.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Min. aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Min. aus Aufnahmen</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Min. aus Chat</item>
+        <item quantity="other">vor %1$d Min. aus Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Min. mit Cheerios</item>
+        <item quantity="other">Vor %1$d Min. mit Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Min. aus %2$s</item>
+        <item quantity="other">Vor %1$d Min. aus %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Min. aus Memorys</item>
+        <item quantity="other">vor %1$d Min. aus Memorys</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Min. mit Spectacles</item>
+        <item quantity="other">vor %1$d Min. mit Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d Monat</item>
+        <item quantity="other">%d Monate</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">vor %d Monat</item>
+        <item quantity="other">vor %d Monaten</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Monat aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Monaten aus Aufnahmen</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Monat aus Chat</item>
+        <item quantity="other">vor %1$d Monaten aus Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Monat mit Cheerios</item>
+        <item quantity="other">Vor %1$d Monaten mit Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Monat aus %2$s</item>
+        <item quantity="other">Vor %1$d Monaten aus %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Monat aus Memorys</item>
+        <item quantity="other">vor %1$d Monaten aus Memorys</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Monaten mit Spectacles</item>
+        <item quantity="other">vor %1$d Monaten mit Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d Sek.</item>
+        <item quantity="other">%d Sek.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">vor %d Sek.</item>
+        <item quantity="other">vor %d Sek.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Sek. aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Sek. aus Aufnahmen</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Sek. aus Chat</item>
+        <item quantity="other">vor %1$d Sek. aus Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Sek. mit Cheerios</item>
+        <item quantity="other">Vor %1$d Sek. mit Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Sek. aus %2$s</item>
+        <item quantity="other">Vor %1$d Sek. aus %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Sek. aus Memorys</item>
+        <item quantity="other">vor %1$d Sek. aus Memorys</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Sek. mit Spectacles</item>
+        <item quantity="other">vor %1$d Sek. mit Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d Woche</item>
+        <item quantity="other">%d Wochen</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">vor %d Woche</item>
+        <item quantity="other">vor %d Wochen</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Woche aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Wochen aus Aufnahmen</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Woche aus Chat</item>
+        <item quantity="other">vor %1$d Wochen aus Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Woche mit Cheerios</item>
+        <item quantity="other">Vor %1$d Wochen mit Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Woche aus %2$s</item>
+        <item quantity="other">Vor %1$d Wochen aus %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Woche aus Memorys</item>
+        <item quantity="other">vor %1$d Wochen aus Memorys</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Woche mit Spectacles</item>
+        <item quantity="other">vor %1$d Wochen mit Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d Jahr</item>
+        <item quantity="other">%d Jahre</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">vor %d Jahr</item>
+        <item quantity="other">vor %d Jahren</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">vor %1$d Jahr aus Aufnahmen</item>
+        <item quantity="other">vor %1$d Jahren aus Aufnahmen</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">vor %1$d Jahr aus Chat</item>
+        <item quantity="other">vor %1$d Jahren aus Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Vor %1$d Jahr mit Cheerios</item>
+        <item quantity="other">Vor %1$d Jahren mit Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">Vor %1$d Jahr aus %2$s</item>
+        <item quantity="other">Vor %1$d Jahren aus %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">vor %1$d Jahr aus Memorys</item>
+        <item quantity="other">vor %1$d Jahren aus Memorys</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">vor %1$d Jahr mit Spectacles</item>
+        <item quantity="other">vor %1$d Jahren mit Spectacles</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d Sekunde vorspulen</item>
+        <item quantity="other">%d Sekunden vorspulen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d Sekunde zurückspulen</item>
+        <item quantity="other">%d Sekunden zurückspulen</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">Vor %d Tag</item>
+        <item quantity="other">Vor %d Tagen</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">Vor %d Stunde</item>
+        <item quantity="other">Vor %d Stunden</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">Vor %d Minute</item>
+        <item quantity="other">Vor %d Minuten</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 Std.</item>
+        <item quantity="other">%d Std.</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 Min.</item>
+        <item quantity="other">%d Min.</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 Sek.</item>
+        <item quantity="other">%d Sek.</item>
+    </plurals>
+</resources>

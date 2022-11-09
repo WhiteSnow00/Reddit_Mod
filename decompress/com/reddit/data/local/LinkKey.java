@@ -1,0 +1,129 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package com.reddit.data.local;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import ah2.f;
+import com.reddit.listing.model.sort.SortTimeFrame;
+import com.reddit.listing.model.sort.SortType;
+import kotlin.Metadata;
+import com.squareup.moshi.o;
+
+@o(generateAdapter = true)
+@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/local/LinkKey;", "", "temp_release" }, k = 1, mv = { 1, 7, 1 })
+public final class LinkKey
+{
+    public final LinkKeyType a;
+    public final SortType b;
+    public final SortTimeFrame c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final String h;
+    
+    public LinkKey(final LinkKeyType a, final SortType b, final SortTimeFrame c, final String d, final String e, final String f, final String g, final String h) {
+        ah2.f.f((Object)a, "type");
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+        this.g = g;
+        this.h = h;
+    }
+    
+    @Override
+    public final boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof LinkKey)) {
+            return false;
+        }
+        final LinkKey linkKey = (LinkKey)o;
+        return this.a == linkKey.a && this.b == linkKey.b && this.c == linkKey.c && ah2.f.a((Object)this.d, (Object)linkKey.d) && ah2.f.a((Object)this.e, (Object)linkKey.e) && ah2.f.a((Object)this.f, (Object)linkKey.f) && ah2.f.a((Object)this.g, (Object)linkKey.g) && ah2.f.a((Object)this.h, (Object)linkKey.h);
+    }
+    
+    @Override
+    public final int hashCode() {
+        final int hashCode = this.a.hashCode();
+        final SortType b = this.b;
+        int hashCode2 = 0;
+        int hashCode3;
+        if (b == null) {
+            hashCode3 = 0;
+        }
+        else {
+            hashCode3 = b.hashCode();
+        }
+        final SortTimeFrame c = this.c;
+        int hashCode4;
+        if (c == null) {
+            hashCode4 = 0;
+        }
+        else {
+            hashCode4 = c.hashCode();
+        }
+        final String d = this.d;
+        int hashCode5;
+        if (d == null) {
+            hashCode5 = 0;
+        }
+        else {
+            hashCode5 = d.hashCode();
+        }
+        final String e = this.e;
+        int hashCode6;
+        if (e == null) {
+            hashCode6 = 0;
+        }
+        else {
+            hashCode6 = e.hashCode();
+        }
+        final String f = this.f;
+        int hashCode7;
+        if (f == null) {
+            hashCode7 = 0;
+        }
+        else {
+            hashCode7 = f.hashCode();
+        }
+        final String g = this.g;
+        int hashCode8;
+        if (g == null) {
+            hashCode8 = 0;
+        }
+        else {
+            hashCode8 = g.hashCode();
+        }
+        final String h = this.h;
+        if (h != null) {
+            hashCode2 = h.hashCode();
+        }
+        return ((((((hashCode * 31 + hashCode3) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode6) * 31 + hashCode7) * 31 + hashCode8) * 31 + hashCode2;
+    }
+    
+    @Override
+    public final String toString() {
+        final StringBuilder k = a.k("LinkKey(type=");
+        k.append(this.a);
+        k.append(", sort=");
+        k.append(this.b);
+        k.append(", sortTimeFrame=");
+        k.append(this.c);
+        k.append(", after=");
+        k.append(this.d);
+        k.append(", subredditName=");
+        k.append(this.e);
+        k.append(", multiredditPath=");
+        k.append(this.f);
+        k.append(", geoFilter=");
+        k.append(this.g);
+        k.append(", categoryId=");
+        return b.k(k, this.h, ')');
+    }
+}

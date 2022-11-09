@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d z</item>
+        <item quantity="few">%d z</item>
+        <item quantity="other">%d z</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">acum %d z</item>
+        <item quantity="few">acum %d z</item>
+        <item quantity="other">acum %d z</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">Acum %1$d z din Galerie</item>
+        <item quantity="few">Acum %1$d z din Galerie</item>
+        <item quantity="other">Acum %1$d z din Galerie</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d z</item>
+        <item quantity="few">Acum %1$d z</item>
+        <item quantity="other">Acum %1$d z</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d zi din Cheerios</item>
+        <item quantity="few">Acum %1$d zile din Cheerios</item>
+        <item quantity="other">Acum %1$d de zile din Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d z de la %2$s</item>
+        <item quantity="few">Acum %1$d z de la %2$s</item>
+        <item quantity="other">Acum %1$d z de la %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d z din Amintiri</item>
+        <item quantity="few">Acum %1$d z din Amintiri</item>
+        <item quantity="other">Acum %1$d z din Amintiri</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d z din Spectacles</item>
+        <item quantity="few">Acum %1$d z din Spectacles</item>
+        <item quantity="other">Acum %1$d z din Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d h</item>
+        <item quantity="few">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">acum %d h</item>
+        <item quantity="few">acum %d h</item>
+        <item quantity="other">acum %d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">Acum %1$d h din Galerie</item>
+        <item quantity="few">Acum %1$d h din Galerie</item>
+        <item quantity="other">Acum %1$d h din Galerie</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d h din Conversație</item>
+        <item quantity="few">Acum %1$d h din Conversație</item>
+        <item quantity="other">Acum %1$d h din Conversație</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d oră din Cheerios</item>
+        <item quantity="few">Acum %1$d ore din Cheerios</item>
+        <item quantity="other">Acum %1$d de ore din Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d oră de la %2$s</item>
+        <item quantity="few">Acum %1$d ore de la %2$s</item>
+        <item quantity="other">Acum %1$d de ore de la %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d h din Amintiri</item>
+        <item quantity="few">Acum %1$d h din Amintiri</item>
+        <item quantity="other">Acum %1$d h din Amintiri</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d h din Spectacles</item>
+        <item quantity="few">Acum %1$d h din Spectacles</item>
+        <item quantity="other">Acum %1$d h din Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d m</item>
+        <item quantity="few">%d m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">acum %d m</item>
+        <item quantity="few">acum %d m</item>
+        <item quantity="other">acum %d m</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">acum %1$d m din Galerie</item>
+        <item quantity="few">acum %1$d m din Galerie</item>
+        <item quantity="other">acum %1$d m din Galerie</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d m din Conversație</item>
+        <item quantity="few">Acum %1$d m din Conversație</item>
+        <item quantity="other">Acum %1$d m din Conversație</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d minut din Cheerios</item>
+        <item quantity="few">Acum %1$d minute din Cheerios</item>
+        <item quantity="other">Acum %1$d de minute din Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d min de la %2$s</item>
+        <item quantity="few">Acum %1$d min de la %2$s</item>
+        <item quantity="other">Acum %1$d min de la %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d m din Amintiri</item>
+        <item quantity="few">Acum %1$d m din Amintiri</item>
+        <item quantity="other">Acum %1$d m din Amintiri</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d m din Spectacles</item>
+        <item quantity="few">Acum %1$d m din Spectacles</item>
+        <item quantity="other">Acum %1$d m din Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d lună</item>
+        <item quantity="few">%d luni</item>
+        <item quantity="other">%d de luni</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">acum %d lună</item>
+        <item quantity="few">acum %d luni</item>
+        <item quantity="other">acum %d de luni</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">Acum %1$d lună din Galerie</item>
+        <item quantity="few">Acum %1$d luni din Galerie</item>
+        <item quantity="other">Acum %1$d de luni din Galerie</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d lună din Conversație</item>
+        <item quantity="few">Acum %1$d luni din Conversație</item>
+        <item quantity="other">Acum %1$d de luni din Conversație</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d lună din Cheerios</item>
+        <item quantity="few">Acum %1$d luni din Cheerios</item>
+        <item quantity="other">Acum %1$d de luni din Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d lună de la %2$s</item>
+        <item quantity="few">Acum %1$d luni de la %2$s</item>
+        <item quantity="other">Acum %1$d de luni de la %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d lună din Amintiri</item>
+        <item quantity="few">Acum %1$d luni din Amintiri</item>
+        <item quantity="other">Acum %1$d de luni din Amintiri</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d lună din Spectacles</item>
+        <item quantity="few">Acum %1$d luni din Spectacles</item>
+        <item quantity="other">Acum %1$d de luni din Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d s</item>
+        <item quantity="few">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">acum %d s</item>
+        <item quantity="few">acum %d s</item>
+        <item quantity="other">acum %d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">acum %1$d s din Galerie</item>
+        <item quantity="few">acum %1$d s din Galerie</item>
+        <item quantity="other">acum %1$d s din Galerie</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d s din Conversație</item>
+        <item quantity="few">Acum %1$d s din Conversație</item>
+        <item quantity="other">Acum %1$d s din Conversație</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d secundă din Cheerios</item>
+        <item quantity="few">Acum %1$d secunde din Cheerios</item>
+        <item quantity="other">Acum %1$d de secunde din Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d s de la %2$s</item>
+        <item quantity="few">Acum %1$d s de la %2$s</item>
+        <item quantity="other">Acum %1$d s de la %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d s din Amintiri</item>
+        <item quantity="few">Acum %1$d s din Amintiri</item>
+        <item quantity="other">Acum %1$d s din Amintiri</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d s din Spectacles</item>
+        <item quantity="few">Acum %1$d s din Spectacles</item>
+        <item quantity="other">Acum %1$d s din Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d săpt.</item>
+        <item quantity="few">%d săpt.</item>
+        <item quantity="other">%d săpt.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">acum %d săpt.</item>
+        <item quantity="few">acum %d săpt.</item>
+        <item quantity="other">acum %d săpt.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">Acum %1$d săpt. din Galerie</item>
+        <item quantity="few">Acum %1$d săpt. din Galerie</item>
+        <item quantity="other">Acum %1$d săpt. din Galerie</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d săpt. din Conversație</item>
+        <item quantity="few">Acum %1$d săpt. din Conversație</item>
+        <item quantity="other">Acum %1$d săpt. din Conversație</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d săptămână din Cheerios</item>
+        <item quantity="few">Acum %1$d săptămâni din Cheerios</item>
+        <item quantity="other">Acum %1$d de săptămâni din Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d săpt. de la %2$s</item>
+        <item quantity="few">Acum %1$d săpt. de la %2$s</item>
+        <item quantity="other">Acum %1$d săpt. de la %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d săpt. din Amintiri</item>
+        <item quantity="few">Acum %1$d săpt. din Amintiri</item>
+        <item quantity="other">Acum %1$d săpt. din Amintiri</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d săpt. din Spectacles</item>
+        <item quantity="few">Acum %1$d săpt. din Spectacles</item>
+        <item quantity="other">Acum %1$d săpt. din Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d an</item>
+        <item quantity="few">%d ani</item>
+        <item quantity="other">%d de ani</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">acum %d an</item>
+        <item quantity="few">acum %d ani</item>
+        <item quantity="other">acum %d de ani</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">Acum %1$d an din Galerie</item>
+        <item quantity="few">Acum %1$d ani din Galerie</item>
+        <item quantity="other">Acum %1$d de ani din Galerie</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">Acum %1$d an din Conversație</item>
+        <item quantity="few">Acum %1$d ani din Conversație</item>
+        <item quantity="other">Acum %1$d de ani din Conversație</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Acum %1$d an din Cheerios</item>
+        <item quantity="few">Acum %1$d ani din Cheerios</item>
+        <item quantity="other">Acum %1$d de ani din Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">Acum %1$d an de la %2$s</item>
+        <item quantity="few">Acum %1$d ani de la %2$s</item>
+        <item quantity="other">Acum %1$d de ani de la %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">Acum %1$d an din Amintiri</item>
+        <item quantity="few">Acum %1$d ani din Amintiri</item>
+        <item quantity="other">Acum %1$d de ani din Amintiri</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Acum %1$d an din Spectacles</item>
+        <item quantity="few">Acum %1$d ani din Spectacles</item>
+        <item quantity="other">Acum %1$d de ani din Spectacles</item>
+    </plurals>
+</resources>

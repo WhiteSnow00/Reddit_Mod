@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="auto_dark_option_values">
+        <item>@string/option_value_off</item>
+        <item>@string/option_value_os_setting</item>
+        <item>@string/option_value_sunrise_sunset</item>
+    </array>
+    <array name="auto_dark_options">
+        <item>@string/option_off</item>
+        <item>@string/option_os_setting</item>
+        <item>@string/option_sunrise_sunset</item>
+    </array>
+    <array name="autoplay_option_values">
+        <item>@string/option_value_always</item>
+        <item>@string/option_value_unmetered</item>
+        <item>@string/option_value_never</item>
+    </array>
+    <array name="autoplay_options">
+        <item>@string/option_always</item>
+        <item>@string/option_unmetered</item>
+        <item>@string/option_never</item>
+    </array>
+    <array name="avatar_backgrounds">
+        <item>#ff4500</item>
+        <item>#ff9999</item>
+        <item>#feb331</item>
+        <item>#fff1b6</item>
+        <item>#14d8c3</item>
+        <item>#f2f4f4</item>
+        <item>#d0dddf</item>
+        <item>#9fb8bd</item>
+        <item>#779fa0</item>
+        <item>#eaebe1</item>
+        <item>#d9dbcd</item>
+        <item>#c4a789</item>
+    </array>
+    <array name="badge_management_tab_titles">
+        <item>@string/badge_management_tab_titles_item_1</item>
+        <item>@string/badge_management_tab_titles_item_2</item>
+        <item>@string/badge_management_tab_titles_item_3</item>
+    </array>
+    <array name="cakeday_subtitle_ordinal">
+        <item>@string/cakeday_subtitle_ordinal_item_1</item>
+        <item>@string/cakeday_subtitle_ordinal_item_2</item>
+        <item>@string/cakeday_subtitle_ordinal_item_3</item>
+        <item>@string/cakeday_subtitle_ordinal_item_4</item>
+        <item>@string/cakeday_subtitle_ordinal_item_5</item>
+        <item>@string/cakeday_subtitle_ordinal_item_6</item>
+        <item>@string/cakeday_subtitle_ordinal_item_7</item>
+        <item>@string/cakeday_subtitle_ordinal_item_8</item>
+        <item>@string/cakeday_subtitle_ordinal_item_9</item>
+        <item>@string/cakeday_subtitle_ordinal_item_10</item>
+        <item>@string/cakeday_subtitle_ordinal_item_11</item>
+        <item>@string/cakeday_subtitle_ordinal_item_12</item>
+        <item>@string/cakeday_subtitle_ordinal_item_13</item>
+        <item>@string/cakeday_subtitle_ordinal_item_14</item>
+        <item>@string/cakeday_subtitle_ordinal_item_15</item>
+        <item>@string/cakeday_subtitle_ordinal_item_16</item>
+        <item>@string/cakeday_subtitle_ordinal_item_17</item>
+        <item>@string/cakeday_subtitle_ordinal_item_18</item>
+        <item>@string/cakeday_subtitle_ordinal_item_19</item>
+        <item>@string/cakeday_subtitle_ordinal_item_20</item>
+        <item>@string/cakeday_subtitle_ordinal_item_21</item>
+    </array>
+    <array name="cakeday_title_ordinal">
+        <item>@string/cakeday_title_ordinal_item_1</item>
+        <item>@string/cakeday_title_ordinal_item_2</item>
+        <item>@string/cakeday_title_ordinal_item_3</item>
+        <item>@string/cakeday_title_ordinal_item_4</item>
+    </array>
+    <array name="carousel_colors">
+        <item>@color/rdt_orangered</item>
+        <item>@color/rdt_orange</item>
+        <item>@color/rdt_mango</item>
+        <item>@color/rdt_lime</item>
+        <item>@color/rdt_green</item>
+        <item>@color/mint_primary</item>
+        <item>@color/alienblue_primary</item>
+        <item>@color/alienblue_secondary</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_dev">
+        <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_prod">
+        <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </array>
+    <array name="comment_sort_entries">
+        <item>@string/label_sort_best</item>
+        <item>@string/label_sort_top</item>
+        <item>@string/label_sort_new</item>
+        <item>@string/label_sort_controversial</item>
+        <item>@string/label_sort_old</item>
+        <item>@string/label_sort_qa</item>
+    </array>
+    <array name="comment_sort_values">
+        <item>@string/option_value_best</item>
+        <item>@string/option_value_top</item>
+        <item>@string/option_value_new</item>
+        <item>@string/option_value_controversial</item>
+        <item>@string/option_value_old</item>
+        <item>@string/option_value_qa</item>
+        <item>@string/option_value_live</item>
+    </array>
+    <array name="country_code_entries">
+        <item>US</item>
+        <item>GB</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>AU</item>
+        <item>IN</item>
+        <item>BR</item>
+        <item>NL</item>
+        <item>PH</item>
+        <item>RU</item>
+        <item>FR</item>
+        <item>MX</item>
+        <item>SE</item>
+        <item>IT</item>
+        <item>PL</item>
+        <item>SG</item>
+        <item>ES</item>
+        <item>NZ</item>
+        <item>TR</item>
+        <item>FI</item>
+        <item>MY</item>
+        <item>NO</item>
+        <item>DK</item>
+        <item>IE</item>
+        <item>BE</item>
+        <item>AR</item>
+        <item>AT</item>
+        <item>RO</item>
+        <item>PT</item>
+        <item>CH</item>
+        <item>JP</item>
+        <item>CL</item>
+        <item>CZ</item>
+        <item>ZA</item>
+        <item>VN</item>
+        <item>TH</item>
+        <item>KR</item>
+        <item>HU</item>
+        <item>GR</item>
+        <item>ID</item>
+        <item>NG</item>
+        <item>EG</item>
+        <item>CO</item>
+        <item>SA</item>
+        <item>AE</item>
+        <item>PE</item>
+        <item>XX</item>
+    </array>
+    <array name="country_name_entries">
+        <item>@string/united_states</item>
+        <item>@string/united_kingdom</item>
+        <item>@string/canada</item>
+        <item>@string/germany</item>
+        <item>@string/australia</item>
+        <item>@string/india</item>
+        <item>@string/brazil</item>
+        <item>@string/netherlands</item>
+        <item>@string/philippines</item>
+        <item>@string/russia</item>
+        <item>@string/france</item>
+        <item>@string/mexico</item>
+        <item>@string/sweden</item>
+        <item>@string/italy</item>
+        <item>@string/poland</item>
+        <item>@string/singapore</item>
+        <item>@string/spain</item>
+        <item>@string/new_zealand</item>
+        <item>@string/turkey</item>
+        <item>@string/finland</item>
+        <item>@string/malaysia</item>
+        <item>@string/norway</item>
+        <item>@string/denmark</item>
+        <item>@string/ireland</item>
+        <item>@string/belgium</item>
+        <item>@string/argentina</item>
+        <item>@string/austria</item>
+        <item>@string/romania</item>
+        <item>@string/portugal</item>
+        <item>@string/switzerland</item>
+        <item>@string/japan</item>
+        <item>@string/chile</item>
+        <item>@string/czech_republic</item>
+        <item>@string/south_africa</item>
+        <item>@string/vietnam</item>
+        <item>@string/thailand</item>
+        <item>@string/korea_republic_of</item>
+        <item>@string/hungary</item>
+        <item>@string/greece</item>
+        <item>@string/indonesia</item>
+        <item>@string/nigeria</item>
+        <item>@string/egypt</item>
+        <item>@string/colombia</item>
+        <item>@string/saudi_arabia</item>
+        <item>@string/united_arab_emirates</item>
+        <item>@string/peru</item>
+        <item>@string/global</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="dark_theme_entries">
+        <item>@string/option_theme_night</item>
+        <item>@string/option_theme_midnight</item>
+    </array>
+    <array name="dark_theme_values">
+        <item>@string/option_value_night</item>
+        <item>@string/option_value_midnight</item>
+    </array>
+    <array name="day_ordinal">
+        <item>@string/day_ordinal_item_1</item>
+        <item>@string/day_ordinal_item_2</item>
+        <item>@string/day_ordinal_item_3</item>
+        <item>@string/day_ordinal_item_4</item>
+    </array>
+    <array name="default_community_rules">
+        <item>@string/community_rule_remember_the_human</item>
+        <item>@string/community_rule_abide_by_community_rules</item>
+        <item>@string/community_rule_respect_the_privacy_of_others</item>
+        <item>@string/community_rule_dont_impersonate_people_or_entities</item>
+        <item>@string/community_rule_properly_label_nsfw_content</item>
+        <item>@string/community_rule_keep_it_legal</item>
+        <item>@string/community_rule_dont_break_reddit</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="experiment_comments_in_feed_DU">
+        <item>@string/experiment_comments_in_feed_DU_off</item>
+        <item>@string/experiment_comments_in_feed_DU_control_1</item>
+        <item>@string/experiment_comments_in_feed_DU_control_2</item>
+        <item>@string/experiment_comments_in_feed_DU_comments_DU</item>
+        <item>@string/experiment_comments_in_feed_DU_comments_DU_avatar</item>
+    </array>
+    <array name="experiment_for_you_feed">
+        <item>@string/experiment_for_you_feed_off</item>
+        <item>@string/experiment_for_you_feed_control_1</item>
+        <item>@string/experiment_for_you_feed_control_2</item>
+        <item>@string/experiment_for_you_feed_enabled</item>
+        <item>@string/experiment_for_you_feed_enabled_geo</item>
+    </array>
+    <array name="feed_option_icons">
+        <item>@drawable/icon_best</item>
+        <item>@drawable/icon_hot</item>
+        <item>@drawable/icon_new</item>
+        <item>@drawable/icon_top</item>
+        <item>@drawable/icon_controversial</item>
+        <item>@drawable/icon_rising</item>
+    </array>
+    <array name="feed_option_values">
+        <item>@string/label_sort_best</item>
+        <item>@string/label_sort_hot</item>
+        <item>@string/label_sort_new</item>
+        <item>@string/label_sort_top</item>
+        <item>@string/label_sort_controversial</item>
+        <item>@string/label_sort_rising</item>
+    </array>
+    <array name="feed_sort_entries">
+        <item>@string/sort_best</item>
+        <item>@string/sort_hot</item>
+        <item>@string/sort_new</item>
+        <item>@string/sort_top</item>
+        <item>@string/sort_controversial</item>
+        <item>@string/sort_rising</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="ibg_bug_annotation_colors_names_content_description">
+        <item>Red color</item>
+        <item>Green color</item>
+        <item>Purple color</item>
+        <item>Blue color</item>
+        <item>Orange color</item>
+        <item>Yellow color</item>
+        <item>Grey color</item>
+    </array>
+    <array name="kick_durations">
+        <item>@string/kick_durations_item_1</item>
+        <item>@string/kick_durations_item_2</item>
+        <item>@string/kick_durations_item_3</item>
+        <item>@string/kick_durations_item_4</item>
+        <item>@string/kick_durations_item_5</item>
+    </array>
+    <array name="kick_durations_values">
+        <item>600</item>
+        <item>3600</item>
+        <item>86400</item>
+        <item>259200</item>
+        <item>-1</item>
+    </array>
+    <array name="light_theme_entries">
+        <item>@string/option_theme_alienblue</item>
+        <item>@string/option_theme_mint</item>
+        <item>@string/option_theme_pony</item>
+        <item>@string/option_theme_trees</item>
+    </array>
+    <array name="light_theme_values">
+        <item>@string/option_value_alienblue</item>
+        <item>@string/option_value_mint</item>
+        <item>@string/option_value_pony</item>
+        <item>@string/option_value_trees</item>
+    </array>
+    <array name="livestream_generic_errors">
+        <item>@string/livestream_generic_errors_item_1</item>
+        <item>@string/livestream_generic_errors_item_2</item>
+        <item>@string/livestream_generic_errors_item_3</item>
+        <item>@string/livestream_generic_errors_item_4</item>
+        <item>@string/livestream_generic_errors_item_5</item>
+        <item>@string/livestream_generic_errors_item_6</item>
+        <item>@string/livestream_generic_errors_item_7</item>
+        <item>@string/livestream_generic_errors_item_8</item>
+    </array>
+    <array name="membership_ad_tab_colors">
+        <item>#9f67d4</item>
+        <item>#f6a614</item>
+        <item>#ec777e</item>
+    </array>
+    <array name="membership_ad_tab_titles">
+        <item>@string/membership_ad_tab_titles_item_1</item>
+        <item>@string/membership_ad_tab_titles_item_2</item>
+        <item>@string/membership_ad_tab_titles_item_3</item>
+    </array>
+    <array name="night_mode_carousel_colors">
+        <item>@android:color/black</item>
+    </array>
+    <array name="orientations">
+        <item>@string/portrait</item>
+        <item>@string/landscape</item>
+    </array>
+    <array name="podium_avatar_backgrounds">
+        <item>@drawable/podium_avatar_background_1</item>
+        <item>@drawable/podium_avatar_background_2</item>
+        <item>@drawable/podium_avatar_background_3</item>
+    </array>
+    <array name="podium_colors">
+        <item>@color/podium_badge_place_1</item>
+        <item>@color/podium_badge_place_2</item>
+        <item>@color/podium_badge_place_3</item>
+    </array>
+    <array name="poll_duration_options">
+        <item>@string/poll_duration_options_item_1</item>
+        <item>@string/poll_duration_options_item_2</item>
+        <item>@string/poll_duration_options_item_3</item>
+        <item>@string/poll_duration_options_item_4</item>
+        <item>@string/poll_duration_options_item_5</item>
+        <item>@string/poll_duration_options_item_6</item>
+        <item>@string/poll_duration_options_item_7</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_1">
+        <item>@string/prediction_commentary_titles_amount_1_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_4</item>
+        <item>@string/prediction_commentary_titles_amount_1_item_5</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_2">
+        <item>@string/prediction_commentary_titles_amount_2_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_2_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_2_item_3</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_3">
+        <item>@string/prediction_commentary_titles_amount_3_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_3_item_4</item>
+    </array>
+    <array name="prediction_commentary_titles_amount_free">
+        <item>@string/prediction_commentary_titles_amount_free_item_1</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_2</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_3</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_4</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_5</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_6</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_7</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_8</item>
+        <item>@string/prediction_commentary_titles_amount_free_item_9</item>
+    </array>
+    <array name="prediction_made_animation_titles">
+        <item>@string/prediction_made_animation_titles_item_1</item>
+        <item>@string/prediction_made_animation_titles_item_2</item>
+        <item>@string/prediction_made_animation_titles_item_3</item>
+        <item>@string/prediction_made_animation_titles_item_4</item>
+        <item>@string/prediction_made_animation_titles_item_5</item>
+        <item>@string/prediction_made_animation_titles_item_6</item>
+        <item>@string/prediction_made_animation_titles_item_7</item>
+        <item>@string/prediction_made_animation_titles_item_8</item>
+    </array>
+    <array name="preloaded_fonts">
+    </array>
+    <array name="quick_replies">
+        <item>@string/quick_replies_item_1</item>
+    </array>
+    <array name="rdt_comment_indent">
+        <item>#efefed</item>
+        <item>#e6e6e4</item>
+        <item>#dededc</item>
+        <item>#d6d6d4</item>
+        <item>#cecdcc</item>
+        <item>#c5c5c4</item>
+        <item>#bdbdbc</item>
+        <item>#b5b4b4</item>
+        <item>#adacac</item>
+        <item>#a5a4a4</item>
+    </array>
+    <array name="require_email_permission_override">
+        <item>@string/require_email_permission_off</item>
+        <item>@string/require_email_permission_enabled</item>
+        <item>@string/require_email_permission_disabled</item>
+    </array>
+    <array name="safe_harbor_domains">
+        <item>imgur.com</item>
+        <item>gfycat.com</item>
+    </array>
+    <array name="safe_harbor_extensions">
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>gif</item>
+        <item>png</item>
+        <item>tiff</item>
+        <item>gifv</item>
+    </array>
+    <array name="segment_colors">
+        <item>#00a268</item>
+        <item>#ffa800</item>
+        <item>#fb133a</item>
+    </array>
+    <array name="segment_names">
+        <item>@string/crowd_control_level_off</item>
+        <item>@string/crowd_control_level_lenient</item>
+        <item>@string/crowd_control_level_moderate</item>
+        <item>@string/crowd_control_level_strict</item>
+    </array>
+    <array name="snoovatar_marketing_item_translation_x_values">
+        <item>@dimen/snoovatar_marketing_item_1_translation_x</item>
+        <item>@dimen/snoovatar_marketing_item_2_translation_x</item>
+        <item>@dimen/snoovatar_marketing_item_3_translation_x</item>
+        <item>@dimen/snoovatar_marketing_item_4_translation_x</item>
+    </array>
+    <array name="stream_generic_errors">
+        <item>@string/stream_generic_errors_item_1</item>
+        <item>@string/stream_generic_errors_item_2</item>
+        <item>@string/stream_generic_errors_item_3</item>
+        <item>@string/stream_generic_errors_item_4</item>
+        <item>@string/stream_generic_errors_item_5</item>
+        <item>@string/stream_generic_errors_item_6</item>
+        <item>@string/stream_generic_errors_item_7</item>
+        <item>@string/stream_generic_errors_item_8</item>
+    </array>
+    <array name="subscription_paywall_badges_showcase_scroll_speeds">
+        <item>@dimen/membership_badges_demo_scroll_speed_1st_row</item>
+        <item>@dimen/membership_badges_demo_scroll_speed_2nd_row</item>
+        <item>@dimen/membership_badges_demo_scroll_speed_3rd_row</item>
+    </array>
+    <array name="thumbnail_options">
+        <item>@string/option_thumbnail_always</item>
+        <item>@string/option_thumbnail_never</item>
+        <item>@string/option_thumbnail_community_default</item>
+    </array>
+    <array name="thumbnail_values">
+        <item>@string/value_thumbnail_always</item>
+        <item>@string/value_thumbnail_never</item>
+        <item>@string/value_thumbnail_community_default</item>
+    </array>
+    <array name="view_option_icons">
+        <item>@drawable/icon_view_card</item>
+        <item>@drawable/icon_view_card</item>
+    </array>
+    <array name="view_option_values">
+        <item>@string/option_value_card</item>
+        <item>@string/option_value_classic</item>
+    </array>
+    <array name="view_options">
+        <item>@string/option_card</item>
+        <item>@string/option_classic</item>
+    </array>
+</resources>

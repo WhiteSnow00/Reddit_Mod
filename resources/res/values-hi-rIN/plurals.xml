@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%dदि.</item>
+        <item quantity="other">%dदि.</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dदि. पहले</item>
+        <item quantity="other">%dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dदि. पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dदि. पहले</item>
+        <item quantity="other">चैट से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dदि. पहले</item>
+        <item quantity="other">Cheerios से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dदि. पहले</item>
+        <item quantity="other">%2$s से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dदि. पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dदि. पहले</item>
+        <item quantity="other">Spectacles से %1$dदि. पहले</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%dघं.</item>
+        <item quantity="other">%dघं.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%dघं. पहले</item>
+        <item quantity="other">%dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dघं. पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dघं. पहले</item>
+        <item quantity="other">चैट से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dघं. पहले</item>
+        <item quantity="other">Cheerios से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dघं. पहले</item>
+        <item quantity="other">%2$s से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dघं. पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dघं. पहले</item>
+        <item quantity="other">Spectacles से %1$dघं. पहले</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%dमि.</item>
+        <item quantity="other">%dमि.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%dमि. पहले</item>
+        <item quantity="other">%dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dमि. पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dमि. पहले</item>
+        <item quantity="other">चैट से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dमि. पहले</item>
+        <item quantity="other">Cheerios से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dमि. पहले</item>
+        <item quantity="other">%2$s से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dमि. पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dमि. पहले</item>
+        <item quantity="other">Spectacles से %1$dमि. पहले</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%dमाह</item>
+        <item quantity="other">%dमाह</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%dमाह पहले</item>
+        <item quantity="other">%dमाह पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dमाह पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dमाह पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dमाह पहले</item>
+        <item quantity="other">चैट से %1$dमाह पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dमा. पहले</item>
+        <item quantity="other">Cheerios से %1$dमा. पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dमाह पहले</item>
+        <item quantity="other">%2$s से %1$dमाह पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dमाह पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dमाह पहले</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dमा. पहले</item>
+        <item quantity="other">Spectacles से %1$dमा. पहले</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%dसे.</item>
+        <item quantity="other">%dसे.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%dसे. पहले</item>
+        <item quantity="other">%dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dसे. पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dसे. पहले</item>
+        <item quantity="other">चैट से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dसे. पहले</item>
+        <item quantity="other">Cheerios से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dसे. पहले</item>
+        <item quantity="other">%2$s से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dसे. पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dसे. पहले</item>
+        <item quantity="other">Spectacles से %1$dसे. पहले</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%dस.</item>
+        <item quantity="other">%dस.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%dस. पहले</item>
+        <item quantity="other">%dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dस. पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dस. पहले</item>
+        <item quantity="other">चैट से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dस. पहले</item>
+        <item quantity="other">Cheerios से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dस. पहले</item>
+        <item quantity="other">%2$s से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dस. पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dस. पहले</item>
+        <item quantity="other">Spectacles से %1$dस. पहले</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%dवर्ष</item>
+        <item quantity="other">%dवर्ष</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%dवर्ष पहले</item>
+        <item quantity="other">%dवर्ष पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">कैमरा रोल से %1$dवर्ष पहले</item>
+        <item quantity="other">कैमरा रोल से %1$dवर्ष पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">चैट से %1$dवर्ष पहले</item>
+        <item quantity="other">चैट से %1$dवर्ष पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios से %1$dव. पहले</item>
+        <item quantity="other">Cheerios से %1$dव. पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s से %1$dवर्ष पहले</item>
+        <item quantity="other">%2$s से %1$dवर्ष पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">मेमोरीज़ से %1$dवर्ष पहले</item>
+        <item quantity="other">मेमोरीज़ से %1$dवर्ष पहले</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles से %1$dवर्ष पहले</item>
+        <item quantity="other">Spectacles से %1$dवर्ष पहले</item>
+    </plurals>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d دن</item>
+        <item quantity="other">%d دن</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%dدن پہلے</item>
+        <item quantity="other">%dدن پہلے</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے⁦%1$d⁩ دن پہلے</item>
+        <item quantity="other">کیمرہ رول سے⁦%1$d⁩ دن پہلے</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ دن پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ دن پہلے</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩دن قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩دن قبل</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ دن پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ دن پہلے</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ دن پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ دن پہلے</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ دن پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ دن پہلے</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d گھنٹہ</item>
+        <item quantity="other">%d گھنٹہ</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d گھنٹے پہلے</item>
+        <item quantity="other">%d گھنٹے پہلے</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ گھنٹے پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ گھنٹے پہلے</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ گھنٹہ پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ گھنٹہ پہلے</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩گھنٹہ قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩گھنٹہ قبل</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ گھنٹے پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ گھنٹے پہلے</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ گھنٹے پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ گھنٹے پہلے</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ گھنٹے پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ گھنٹے پہلے</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d منٹ</item>
+        <item quantity="other">%d منٹ</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d منٹ پہلے</item>
+        <item quantity="other">%d منٹ پہلے</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ منٹ پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ منٹ پہلے</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ منٹ پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ منٹ پہلے</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩منٹ قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩منٹ قبل</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ منٹ پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ منٹ پہلے</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ ماہ پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ ماہ پہلے</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ منٹ پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ منٹ پہلے</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d ماہ</item>
+        <item quantity="other">%d ماہ</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d ماہ پہلے</item>
+        <item quantity="other">%d ماہ پہلے</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ ماہ پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ ماہ پہلے</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ ماہ پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ ماہ پہلے</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩ماہ قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩ماہ قبل</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ ماہ پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ ماہ پہلے</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ ماہ پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ ماہ پہلے</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ماہ قبل</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ماہ قبل</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d سیکنڈ</item>
+        <item quantity="other">%d سیکنڈ</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d سیکنڈ پہلے</item>
+        <item quantity="other">%d سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩سیکنڈ قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩سیکنڈ قبل</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ سیکنڈ پہلے</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d ہفتہ</item>
+        <item quantity="other">%d ہفتہ</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d ہفتے پہلے</item>
+        <item quantity="other">%d ہفتے پہلے</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ ہفتے پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ ہفتے پہلے</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ ہفتے پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ ہفتے پہلے</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩ہفتے قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩ہفتے قبل</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ ہفتے پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ ہفتے پہلے</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ ہفتہ پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ ہفتہ پہلے</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ ہفتہ پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ ہفتہ پہلے</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d سال</item>
+        <item quantity="other">%d سال</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d سال پہلے</item>
+        <item quantity="other">%d سال پہلے</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">کیمرہ رول سے ⁦%1$d⁩ سال پہلے</item>
+        <item quantity="other">کیمرہ رول سے ⁦%1$d⁩ سال پہلے</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">چیٹ سے ⁦%1$d⁩ سال پہلے</item>
+        <item quantity="other">چیٹ سے ⁦%1$d⁩ سال پہلے</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios سے ⁦%1$d⁩سال قبل</item>
+        <item quantity="other">Cheerios سے ⁦%1$d⁩سال قبل</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">⁦%2$s⁩ سے ⁦%1$d⁩ سال پہلے</item>
+        <item quantity="other">⁦%2$s⁩ سے ⁦%1$d⁩ سال پہلے</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">یادوں سے ⁦%1$d⁩ سال پہلے</item>
+        <item quantity="other">یادوں سے ⁦%1$d⁩ سال پہلے</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles سے ⁦%1$d⁩ سال پہلے</item>
+        <item quantity="other">Spectacles سے ⁦%1$d⁩ سال پہلے</item>
+    </plurals>
+</resources>

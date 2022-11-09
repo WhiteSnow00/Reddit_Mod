@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="other">%d ngày</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d ngày trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="other">%1$d ngày trước từ Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d ngày trước từ Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d ngày trước từ %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="other">%1$d ngày trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d ngày trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="other">%d giờ trước</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d giờ trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="other">%1$d giờ trước từ Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d giờ trước từ Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d giờ trước từ %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="other">%1$d giờ trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d giờ trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="other">%d phút trước</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d phút trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="other">%1$d phút trước từ Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d phút trước từ Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d phút trước từ %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="other">%1$d phút trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d phút trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="other">%d tháng</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="other">%d tháng trước</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d tháng trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="other">%1$d tháng trước từ Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d tháng trước từ Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d tháng trước từ %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="other">%1$d tháng trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d tháng trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="other">%d giây</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="other">%d giây trước</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d giây trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="other">%1$d giây trước từ Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d giây trước từ Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d giây trước từ %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="other">%1$d giây trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d giây trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="other">%d tuần</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="other">%d tuần trước</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d tuần trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="other">%1$d tuần trước từ Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d tuần trước từ Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d tuần trước từ %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="other">%1$d tuần trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d tuần trước từ kính Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="other">%d năm</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="other">%d năm trước</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="other">%1$d năm trước từ Cuộn Camera</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="other">%1$d năm trước từ Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="other">%1$d năm trước từ Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="other">%1$d năm trước từ %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="other">%1$d năm trước từ Kỉ Niệm</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="other">%1$d năm trước từ kính Spectacles</item>
+    </plurals>
+</resources>

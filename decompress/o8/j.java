@@ -1,0 +1,487 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package o8;
+
+import androidx.appcompat.widget.s0;
+import android.os.Build$VERSION;
+import android.graphics.Bitmap$Config;
+import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy$SampleSizeRounding;
+import androidx.viewpager.widget.c;
+import android.os.SystemClock;
+import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
+import com.bumptech.glide.load.DecodeFormat;
+import p8.g;
+import ak0.m;
+import java.util.concurrent.locks.Lock;
+import java.io.Serializable;
+import java.io.IOException;
+import android.util.Log;
+import android.graphics.Rect;
+import com.bumptech.glide.integration.webp.WebpBitmapFactory;
+import y8.v;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory$Options;
+import java.io.InputStream;
+import ng.f0;
+import com.bumptech.glide.load.ImageHeaderParser;
+import java.util.List;
+import s8.b;
+import android.util.DisplayMetrics;
+import s8.d;
+import java.util.ArrayDeque;
+import p8.f;
+
+public final class j
+{
+    public static final f<Boolean> e;
+    public static final j$a f;
+    public static final ArrayDeque g;
+    public final d a;
+    public final DisplayMetrics b;
+    public final b c;
+    public final List<ImageHeaderParser> d;
+    
+    static {
+        e = p8.f.a(Boolean.FALSE, "com.bumptech.glide.integration.webp.decoder.WebpDownsampler.DisableDecoder");
+        f = new j$a();
+        final char[] a = l9.j.a;
+        g = new ArrayDeque(0);
+    }
+    
+    public j(final List<ImageHeaderParser> d, final DisplayMetrics b, final d a, final b c) {
+        this.d = d;
+        f0.a2(b);
+        this.b = b;
+        f0.a2(a);
+        this.a = a;
+        f0.a2(c);
+        this.c = c;
+    }
+    
+    public static Bitmap c(final InputStream inputStream, final BitmapFactory$Options bitmapFactory$Options, final j$a j$a, final d d) throws IOException {
+        if (bitmapFactory$Options.inJustDecodeBounds) {
+            inputStream.mark(10485760);
+        }
+        else {
+            j$a.getClass();
+        }
+        final int outWidth = bitmapFactory$Options.outWidth;
+        final int outHeight = bitmapFactory$Options.outHeight;
+        Serializable s = bitmapFactory$Options.outMimeType;
+        final Lock d2 = v.d;
+        d2.lock();
+        try {
+            final Bitmap decodeStream = WebpBitmapFactory.decodeStream(inputStream, (Rect)null, bitmapFactory$Options);
+            d2.unlock();
+            if (bitmapFactory$Options.inJustDecodeBounds) {
+                inputStream.reset();
+            }
+            return decodeStream;
+        }
+        catch (final IllegalArgumentException ex) {
+            s = e(ex, outWidth, outHeight, (String)s, bitmapFactory$Options);
+            if (Log.isLoggable("WebpDownsampler", 3)) {
+                Log.d("WebpDownsampler", "Failed to decode with inBitmap, trying again without Bitmap re-use", (Throwable)s);
+            }
+            if (bitmapFactory$Options.inBitmap != null) {
+                final InputStream inputStream2 = inputStream;
+                inputStream2.reset();
+                final d d3 = d;
+                final BitmapFactory$Options bitmapFactory$Options2 = bitmapFactory$Options;
+                final Bitmap bitmap = bitmapFactory$Options2.inBitmap;
+                d3.put(bitmap);
+                final BitmapFactory$Options bitmapFactory$Options3 = bitmapFactory$Options;
+                final Bitmap bitmap2 = null;
+                bitmapFactory$Options3.inBitmap = bitmap2;
+                final InputStream inputStream3 = inputStream;
+                final BitmapFactory$Options bitmapFactory$Options4 = bitmapFactory$Options;
+                final j$a j$a2 = j$a;
+                final d d4 = d;
+                final Bitmap bitmap3 = c(inputStream3, bitmapFactory$Options4, j$a2, d4);
+                final Lock lock = v.d;
+                lock.unlock();
+                return bitmap3;
+            }
+            throw s;
+        }
+        try {
+            final InputStream inputStream2 = inputStream;
+            inputStream2.reset();
+            final d d3 = d;
+            final BitmapFactory$Options bitmapFactory$Options2 = bitmapFactory$Options;
+            final Bitmap bitmap = bitmapFactory$Options2.inBitmap;
+            d3.put(bitmap);
+            final BitmapFactory$Options bitmapFactory$Options3 = bitmapFactory$Options;
+            final Bitmap bitmap2 = null;
+            bitmapFactory$Options3.inBitmap = bitmap2;
+            final InputStream inputStream3 = inputStream;
+            final BitmapFactory$Options bitmapFactory$Options4 = bitmapFactory$Options;
+            final j$a j$a2 = j$a;
+            final d d4 = d;
+            final Bitmap bitmap3 = c(inputStream3, bitmapFactory$Options4, j$a2, d4);
+            final Lock lock = v.d;
+            lock.unlock();
+            return bitmap3;
+        }
+        catch (final IOException ex2) {}
+        v.d.unlock();
+    }
+    
+    public static String d(final Bitmap bitmap) {
+        if (bitmap == null) {
+            return null;
+        }
+        final StringBuilder k = a.k(" (");
+        k.append(bitmap.getAllocationByteCount());
+        k.append(")");
+        final String string = k.toString();
+        final StringBuilder i = a.k("[");
+        i.append(bitmap.getWidth());
+        i.append("x");
+        i.append(bitmap.getHeight());
+        i.append("] ");
+        i.append(bitmap.getConfig());
+        i.append(string);
+        return i.toString();
+    }
+    
+    public static IOException e(final IllegalArgumentException ex, final int n, final int n2, final String s, final BitmapFactory$Options bitmapFactory$Options) {
+        final StringBuilder r = m.r("Exception decoding bitmap, outWidth: ", n, ", outHeight: ", n2, ", outMimeType: ");
+        r.append(s);
+        r.append(", inBitmap: ");
+        r.append(d(bitmapFactory$Options.inBitmap));
+        return new IOException(r.toString(), ex);
+    }
+    
+    public static void f(final BitmapFactory$Options bitmapFactory$Options) {
+        bitmapFactory$Options.inTempStorage = null;
+        bitmapFactory$Options.inDither = false;
+        bitmapFactory$Options.inScaled = false;
+        bitmapFactory$Options.inSampleSize = 1;
+        bitmapFactory$Options.inPreferredConfig = null;
+        bitmapFactory$Options.inJustDecodeBounds = false;
+        bitmapFactory$Options.inDensity = 0;
+        bitmapFactory$Options.inTargetDensity = 0;
+        bitmapFactory$Options.outWidth = 0;
+        bitmapFactory$Options.outHeight = 0;
+        bitmapFactory$Options.outMimeType = null;
+        bitmapFactory$Options.inBitmap = null;
+        bitmapFactory$Options.inMutable = true;
+    }
+    
+    public final y8.d a(InputStream g, final int n, final int n2, final g g2) throws IOException {
+        final j$a f = j.f;
+        f0.Y1(g.markSupported(), "You must provide an InputStream that supports mark()");
+        final byte[] inTempStorage = (byte[])this.c.b(byte[].class, 65536);
+        synchronized (j.class) {
+            final ArrayDeque g3 = j.g;
+            synchronized (g3) {
+                final BitmapFactory$Options bitmapFactory$Options = g3.poll();
+                monitorexit(g3);
+                BitmapFactory$Options bitmapFactory$Options2 = bitmapFactory$Options;
+                if (bitmapFactory$Options == null) {
+                    bitmapFactory$Options2 = new BitmapFactory$Options();
+                    f(bitmapFactory$Options2);
+                }
+                monitorexit(j.class);
+                bitmapFactory$Options2.inTempStorage = inTempStorage;
+                final DecodeFormat decodeFormat = (DecodeFormat)g2.a(com.bumptech.glide.load.resource.bitmap.a.f);
+                final DownsampleStrategy downsampleStrategy = (DownsampleStrategy)g2.a(com.bumptech.glide.load.resource.bitmap.a.h);
+                final boolean booleanValue = (boolean)g2.a(com.bumptech.glide.load.resource.bitmap.a.i);
+                final f j = com.bumptech.glide.load.resource.bitmap.a.j;
+                if (g2.a(j) != null) {
+                    ((Boolean)g2.a(j)).booleanValue();
+                }
+                try {
+                    final y8.d b = y8.d.b(this.a, this.b(g, bitmapFactory$Options2, downsampleStrategy, decodeFormat, n, n2, booleanValue, f));
+                    f(bitmapFactory$Options2);
+                    synchronized (g3) {
+                        g3.offer(bitmapFactory$Options2);
+                        monitorexit(g3);
+                        this.c.put(inTempStorage);
+                        return b;
+                    }
+                }
+                finally {
+                    f(bitmapFactory$Options2);
+                    g = (InputStream)o8.j.g;
+                    synchronized (g) {
+                        ((ArrayDeque<BitmapFactory$Options>)g).offer(bitmapFactory$Options2);
+                        monitorexit(g);
+                        this.c.put(inTempStorage);
+                    }
+                }
+            }
+        }
+    }
+    
+    public final Bitmap b(final InputStream inputStream, final BitmapFactory$Options bitmapFactory$Options, final DownsampleStrategy downsampleStrategy, final DecodeFormat decodeFormat, final int n, final int n2, final boolean b, final j$a j$a) throws IOException {
+        final int b2 = l9.f.b;
+        final long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
+        final d a = this.a;
+        bitmapFactory$Options.inJustDecodeBounds = true;
+        c(inputStream, bitmapFactory$Options, j$a, a);
+        bitmapFactory$Options.inJustDecodeBounds = false;
+        final int outWidth = bitmapFactory$Options.outWidth;
+        final int outHeight = bitmapFactory$Options.outHeight;
+        final String outMimeType = bitmapFactory$Options.outMimeType;
+        final int a2 = com.bumptech.glide.load.d.a(this.c, inputStream, (List)this.d);
+        final int f = v.f(a2);
+        int n3;
+        if (n == Integer.MIN_VALUE) {
+            n3 = outWidth;
+        }
+        else {
+            n3 = n;
+        }
+        int round;
+        if (n2 == Integer.MIN_VALUE) {
+            round = outHeight;
+        }
+        else {
+            round = n2;
+        }
+        final ImageHeaderParser$ImageType b3 = com.bumptech.glide.load.d.b(this.c, inputStream, (List)this.d);
+        final d a3 = this.a;
+        final float n4 = 1.0f;
+        if (outWidth > 0) {
+            if (outHeight > 0) {
+                float n5;
+                if (f != 90 && f != 270) {
+                    n5 = downsampleStrategy.b(outWidth, outHeight, n3, round);
+                }
+                else {
+                    n5 = downsampleStrategy.b(outHeight, outWidth, n3, round);
+                }
+                if (n5 <= 0.0f) {
+                    final StringBuilder sb = new StringBuilder();
+                    sb.append("Cannot scale with factor: ");
+                    sb.append(n5);
+                    sb.append(" from: ");
+                    sb.append(downsampleStrategy);
+                    sb.append(", source: [");
+                    androidx.viewpager.widget.c.s(sb, outWidth, "x", outHeight, "], target: [");
+                    sb.append(n3);
+                    sb.append("x");
+                    sb.append(round);
+                    sb.append("]");
+                    throw new IllegalArgumentException(sb.toString());
+                }
+                final DownsampleStrategy$SampleSizeRounding a4 = downsampleStrategy.a(outWidth, outHeight, n3, round);
+                if (a4 == null) {
+                    throw new IllegalArgumentException("Cannot round with null rounding");
+                }
+                final float n6 = (float)outWidth;
+                final int n7 = (int)(n5 * n6 + 0.5);
+                final float n8 = (float)outHeight;
+                final int n9 = (int)(n5 * n8 + 0.5);
+                final int n10 = outWidth / n7;
+                final int n11 = outHeight / n9;
+                final DownsampleStrategy$SampleSizeRounding memory = DownsampleStrategy$SampleSizeRounding.MEMORY;
+                int n12;
+                if (a4 == memory) {
+                    n12 = Math.max(n10, n11);
+                }
+                else {
+                    n12 = Math.min(n10, n11);
+                }
+                int max;
+                final int n13 = max = Math.max(1, Integer.highestOneBit(n12));
+                if (a4 == memory) {
+                    max = n13;
+                    if (n13 < 1.0f / n5) {
+                        max = n13 << 1;
+                    }
+                }
+                bitmapFactory$Options.inSampleSize = max;
+                int n18;
+                int n19;
+                if (b3 == ImageHeaderParser$ImageType.JPEG) {
+                    final float n14 = (float)Math.min(max, 8);
+                    final int n15 = (int)Math.ceil(n6 / n14);
+                    final int n16 = (int)Math.ceil(n8 / n14);
+                    final int n17 = max / 8;
+                    n18 = n16;
+                    n19 = n15;
+                    if (n17 > 0) {
+                        n19 = n15 / n17;
+                        n18 = n16 / n17;
+                    }
+                }
+                else if (b3 != ImageHeaderParser$ImageType.PNG && b3 != ImageHeaderParser$ImageType.PNG_A) {
+                    if (b3 != ImageHeaderParser$ImageType.WEBP && b3 != ImageHeaderParser$ImageType.WEBP_A) {
+                        if (outWidth % max == 0 && outHeight % max == 0) {
+                            n19 = outWidth / max;
+                            n18 = outHeight / max;
+                        }
+                        else {
+                            bitmapFactory$Options.inJustDecodeBounds = true;
+                            c(inputStream, bitmapFactory$Options, j$a, a3);
+                            bitmapFactory$Options.inJustDecodeBounds = false;
+                            n19 = bitmapFactory$Options.outWidth;
+                            n18 = bitmapFactory$Options.outHeight;
+                        }
+                    }
+                    else {
+                        final float n20 = (float)max;
+                        n19 = Math.round(n6 / n20);
+                        n18 = Math.round(n8 / n20);
+                    }
+                }
+                else {
+                    final float n21 = (float)max;
+                    n19 = (int)Math.floor(n6 / n21);
+                    n18 = (int)Math.floor(n8 / n21);
+                }
+                final int n22 = n3;
+                final double n23 = downsampleStrategy.b(n19, n18, n22, round);
+                final int n24 = (int)(1.0E9 * n23 + 0.5);
+                final int inTargetDensity = (int)(n23 / (n24 / 1.0E9f) * n24 + 0.5);
+                bitmapFactory$Options.inTargetDensity = inTargetDensity;
+                bitmapFactory$Options.inDensity = 1000000000;
+                if (inTargetDensity > 0 && inTargetDensity != 1000000000) {
+                    bitmapFactory$Options.inScaled = true;
+                }
+                else {
+                    bitmapFactory$Options.inTargetDensity = 0;
+                    bitmapFactory$Options.inDensity = 0;
+                }
+                final String s = "WebpDownsampler";
+                if (Log.isLoggable(s, 2)) {
+                    final String s2 = "x";
+                    final StringBuilder r = m.r("Calculate scaling, source: [", outWidth, s2, outHeight, "], target: [");
+                    androidx.viewpager.widget.c.s(r, n22, s2, round, "], power of two scaled: [");
+                    androidx.viewpager.widget.c.s(r, n19, s2, n18, "], exact scale factor: ");
+                    r.append(n5);
+                    r.append(", power of 2 sample size: ");
+                    r.append(max);
+                    r.append(", adjusted scale factor: ");
+                    r.append(n23);
+                    r.append(", target density: ");
+                    r.append(bitmapFactory$Options.inTargetDensity);
+                    r.append(", density: ");
+                    r.append(bitmapFactory$Options.inDensity);
+                    Log.v(s, r.toString());
+                }
+            }
+        }
+        if (decodeFormat != DecodeFormat.PREFER_ARGB_8888) {
+            final String s3 = "WebpDownsampler";
+            boolean hasAlpha;
+            try {
+                hasAlpha = com.bumptech.glide.load.d.b(this.c, inputStream, (List)this.d).hasAlpha();
+            }
+            catch (final IOException ex) {
+                if (Log.isLoggable(s3, 3)) {
+                    final StringBuilder sb2 = new StringBuilder();
+                    sb2.append("Cannot determine whether the image has alpha or not from header, format ");
+                    sb2.append(decodeFormat);
+                    Log.d(s3, sb2.toString(), (Throwable)ex);
+                }
+                hasAlpha = false;
+            }
+            Bitmap$Config inPreferredConfig;
+            if (hasAlpha) {
+                inPreferredConfig = Bitmap$Config.ARGB_8888;
+            }
+            else {
+                inPreferredConfig = Bitmap$Config.RGB_565;
+            }
+            bitmapFactory$Options.inPreferredConfig = inPreferredConfig;
+            if (inPreferredConfig == Bitmap$Config.RGB_565 || inPreferredConfig == Bitmap$Config.ARGB_4444 || inPreferredConfig == Bitmap$Config.ALPHA_8) {
+                bitmapFactory$Options.inDither = true;
+            }
+        }
+        else {
+            bitmapFactory$Options.inPreferredConfig = Bitmap$Config.ARGB_8888;
+        }
+        final String s4 = "WebpDownsampler";
+        boolean b4 = true;
+        final int sdk_INT = Build$VERSION.SDK_INT;
+        final int inSampleSize = bitmapFactory$Options.inSampleSize;
+        int round2;
+        if (b) {
+            round2 = n3;
+        }
+        else {
+            final int inTargetDensity2 = bitmapFactory$Options.inTargetDensity;
+            Label_1206: {
+                if (inTargetDensity2 > 0) {
+                    final int inDensity = bitmapFactory$Options.inDensity;
+                    if (inDensity > 0 && inTargetDensity2 != inDensity) {
+                        break Label_1206;
+                    }
+                }
+                b4 = false;
+            }
+            float n25 = n4;
+            if (b4) {
+                n25 = inTargetDensity2 / (float)bitmapFactory$Options.inDensity;
+            }
+            final float n26 = (float)outWidth;
+            final float n27 = (float)inSampleSize;
+            final int n28 = (int)Math.ceil(n26 / n27);
+            final int n29 = (int)Math.ceil(outHeight / n27);
+            round2 = Math.round(n28 * n25);
+            round = Math.round(n29 * n25);
+            if (Log.isLoggable(s4, 2)) {
+                final StringBuilder r2 = m.r("Calculated target [", round2, "x", round, "] for source [");
+                androidx.viewpager.widget.c.s(r2, outWidth, "x", outHeight, "], sampleSize: ");
+                r2.append(inSampleSize);
+                r2.append(", targetDensity: ");
+                r2.append(bitmapFactory$Options.inTargetDensity);
+                r2.append(", density: ");
+                r2.append(bitmapFactory$Options.inDensity);
+                r2.append(", density multiplier: ");
+                r2.append(n25);
+                Log.v(s4, r2.toString());
+            }
+        }
+        if (round2 > 0 && round > 0) {
+            final d a5 = this.a;
+            if (sdk_INT < 26 || bitmapFactory$Options.inPreferredConfig != Bitmap$Config.HARDWARE) {
+                bitmapFactory$Options.inBitmap = a5.getDirty(round2, round, bitmapFactory$Options.inPreferredConfig);
+            }
+        }
+        final Bitmap c = c(inputStream, bitmapFactory$Options, j$a, this.a);
+        j$a.getClass();
+        if (Log.isLoggable(s4, 2)) {
+            final StringBuilder k = a.k("Decoded ");
+            k.append(d(c));
+            k.append(" from [");
+            k.append(outWidth);
+            k.append("x");
+            k.append(outHeight);
+            s0.v(k, "] ", outMimeType, " with inBitmap ");
+            k.append(d(bitmapFactory$Options.inBitmap));
+            k.append(" for [");
+            k.append(n);
+            k.append("x");
+            k.append(n2);
+            k.append("], sample size: ");
+            k.append(bitmapFactory$Options.inSampleSize);
+            k.append(", density: ");
+            k.append(bitmapFactory$Options.inDensity);
+            k.append(", target density: ");
+            k.append(bitmapFactory$Options.inTargetDensity);
+            k.append(", thread: ");
+            k.append(Thread.currentThread().getName());
+            k.append(", duration: ");
+            k.append(l9.f.a(elapsedRealtimeNanos));
+            Log.v(s4, k.toString());
+        }
+        Bitmap h = null;
+        if (c != null) {
+            c.setDensity(this.b.densityDpi);
+            final Bitmap bitmap = h = v.h(this.a, c, a2);
+            if (!c.equals(bitmap)) {
+                this.a.put(c);
+                h = bitmap;
+            }
+        }
+        return h;
+    }
+}

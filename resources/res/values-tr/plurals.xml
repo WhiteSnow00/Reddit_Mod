@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d g</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d gün önce</item>
+        <item quantity="other">%d gün önce</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d gün önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d gün önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d gün önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d gün önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d gün önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d gün önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d gün önce %2$s kaynağından</item>
+        <item quantity="other">%1$d gün önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d gün önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d gün önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d gün önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d gün önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d sa</item>
+        <item quantity="other">%d sa</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d sa önce</item>
+        <item quantity="other">%d sa önce</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d sa önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d sa önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d sa önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d sa önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d sa önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d sa önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d sa önce %2$s kaynağından</item>
+        <item quantity="other">%1$d sa önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d sa önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d sa önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d sa önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d sa önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d dk</item>
+        <item quantity="other">%d dk</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d dk önce</item>
+        <item quantity="other">%d dk önce</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d dk önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d dk önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d dk önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d dk önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d dk önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d dk önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d dk önce %2$s kaynağından</item>
+        <item quantity="other">%1$d dk önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d dk önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d dk önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d dk önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d dk önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d ay önce</item>
+        <item quantity="other">%d ay önce</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d ay önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d ay önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d ay önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d ay önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d ay önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d ay önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d ay önce %2$s kaynağından</item>
+        <item quantity="other">%1$d ay önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d ay önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d ay önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d ay önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d ay önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d sn</item>
+        <item quantity="other">%d sn</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d sn önce</item>
+        <item quantity="other">%d sn önce</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d sn önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d sn önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d sn önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d sn önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d sn önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d sn önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d sn önce %2$s kaynağından</item>
+        <item quantity="other">%1$d sn önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d sn önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d sn önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d sn önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d sn önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d hf</item>
+        <item quantity="other">%d hf</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d hf önce</item>
+        <item quantity="other">%d hf önce</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d hf önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d hf önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d hf önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d hf önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d hf önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d hf önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d hf önce %2$s kaynağından</item>
+        <item quantity="other">%1$d hf önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d hf önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d hf önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d hf önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d hf önce Spectacles&apos;tan</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d yıl</item>
+        <item quantity="other">%d yıl</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d yıl önce</item>
+        <item quantity="other">%d yıl önce</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d yıl önce Film Rulosu&apos;ndan</item>
+        <item quantity="other">%1$d yıl önce Film Rulosu&apos;ndan</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d yıl önce Sohbet&apos;ten</item>
+        <item quantity="other">%1$d yıl önce Sohbet&apos;ten</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d yıl önce Cheerios&apos;tan</item>
+        <item quantity="other">%1$d yıl önce Cheerios&apos;tan</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d yıl önce %2$s kaynağından</item>
+        <item quantity="other">%1$d yıl önce %2$s kaynağından</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d yıl önce Anılar&apos;dan</item>
+        <item quantity="other">%1$d yıl önce Anılar&apos;dan</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d yıl önce Spectacles&apos;tan</item>
+        <item quantity="other">%1$d yıl önce Spectacles&apos;tan</item>
+    </plurals>
+</resources>

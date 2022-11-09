@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d j</item>
+        <item quantity="other">%d j</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">Il y a %d j</item>
+        <item quantity="other">Il y a %d j</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d j depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d j depuis la Galerie</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d j depuis le Chat</item>
+        <item quantity="other">Il y a %1$d j depuis le Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d j depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d j depuis les Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d j depuis %2$s</item>
+        <item quantity="other">Il y a %1$d j depuis %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d j depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d j depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d j depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d j depuis les Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">il y a %d h</item>
+        <item quantity="other">il y a %d h</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d h depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d h depuis la Galerie</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d h depuis le Chat</item>
+        <item quantity="other">Il y a %1$d h depuis le Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d h depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d h depuis les Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d h depuis %2$s</item>
+        <item quantity="other">Il y a %1$d h depuis %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d h depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d h depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d h depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d h depuis les Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">il y a %d min</item>
+        <item quantity="other">il y a %d min</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d min depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d min depuis la Galerie</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d min depuis le Chat</item>
+        <item quantity="other">Il y a %1$d min depuis le Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d min depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d min depuis les Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d min depuis %2$s</item>
+        <item quantity="other">Il y a %1$d min depuis %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d min depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d min depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d min depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d min depuis les Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mois</item>
+        <item quantity="other">%d mois</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">il y a %d mois</item>
+        <item quantity="other">il y a %d mois</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d mois depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d mois depuis la Galerie</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d mois depuis le Chat</item>
+        <item quantity="other">Il y a %1$d mois depuis le Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d mois depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d mois depuis les Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d mois depuis %2$s</item>
+        <item quantity="other">Il y a %1$d mois depuis %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d mois depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d mois depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d mois depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d mois depuis les Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">il y a %d s</item>
+        <item quantity="other">il y a %d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d s depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d s depuis la Galerie</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d s depuis le Chat</item>
+        <item quantity="other">Il y a %1$d s depuis le Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d s depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d s depuis les Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d s depuis %2$s</item>
+        <item quantity="other">Il y a %1$d s depuis %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d s depuis vos Souvenirs</item>
+        <item quantity="other">Il y a %1$d s depuis vos Souvenirs</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d s depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d s depuis les Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d sem.</item>
+        <item quantity="other">%d sem.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">Il y a %d sem.</item>
+        <item quantity="other">Il y a %d sem.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d sem. depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d sem. depuis la Galerie</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d sem. depuis le Chat</item>
+        <item quantity="other">Il y a %1$d sem. depuis le Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d sem. depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d sem. depuis les Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d sem. depuis %2$s</item>
+        <item quantity="other">Il y a %1$d sem. depuis %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d sem. depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d sem. depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d sem. depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d sem. depuis les Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d an</item>
+        <item quantity="other">%d ans</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">il y a %d an</item>
+        <item quantity="other">il y a %d ans</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">Il y a %1$d an depuis la Galerie</item>
+        <item quantity="other">Il y a %1$d ans depuis la Galerie</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">Il y a %1$d an depuis le Chat</item>
+        <item quantity="other">Il y a %1$d ans depuis le Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Il y a %1$d an depuis les Cheerios</item>
+        <item quantity="other">Il y a %1$d ans depuis les Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">Il y a %1$d an depuis %2$s</item>
+        <item quantity="other">Il y a %1$d ans depuis %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">Il y a %1$d an depuis les Souvenirs</item>
+        <item quantity="other">Il y a %1$d ans depuis les Souvenirs</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Il y a %1$d an depuis les Spectacles</item>
+        <item quantity="other">Il y a %1$d ans depuis les Spectacles</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avancer de %d seconde</item>
+        <item quantity="other">Avancer de %d secondes</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">Il y a %d jour</item>
+        <item quantity="other">Il y a %d jours</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">Il y a %d heure</item>
+        <item quantity="other">Il y a %d heures</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">Il y a %d minute</item>
+        <item quantity="other">Il y a %d minutes</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+</resources>

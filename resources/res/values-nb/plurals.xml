@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d d</item>
+        <item quantity="other">%d d</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d d siden</item>
+        <item quantity="other">%d d siden</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d d siden fra kamerarull</item>
+        <item quantity="other">%1$d d siden fra kamerarull</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d d siden fra Chat</item>
+        <item quantity="other">%1$d d siden fra Chat</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d d siden fra Cheerios</item>
+        <item quantity="other">%1$d d siden fra Cheerios</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d d siden fra %2$s</item>
+        <item quantity="other">%1$d d siden fra %2$s</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">%1$d d siden fra Minner</item>
+        <item quantity="other">%1$d d siden fra Minner</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d d siden fra Spectacles</item>
+        <item quantity="other">%1$d d siden fra Spectacles</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d t</item>
+        <item quantity="other">%d t</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d t siden</item>
+        <item quantity="other">%d t siden</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d t siden fra kamerarull</item>
+        <item quantity="other">%1$d t siden fra kamerarull</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d t siden fra Chat</item>
+        <item quantity="other">%1$d t siden fra Chat</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d t siden fra Cheerios</item>
+        <item quantity="other">%1$d t siden fra Cheerios</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d t siden fra %2$s</item>
+        <item quantity="other">%1$d t siden fra %2$s</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">%1$d t siden fra Minner</item>
+        <item quantity="other">%1$d t siden fra Minner</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d t siden fra Spectacles</item>
+        <item quantity="other">%1$d t siden fra Spectacles</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d m siden</item>
+        <item quantity="other">%d m siden</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d m siden fra kamerarull</item>
+        <item quantity="other">%1$d m siden fra kamerarull</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d m siden fra Chat</item>
+        <item quantity="other">%1$d m siden fra Chat</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d m siden fra Cheerios</item>
+        <item quantity="other">%1$d m siden fra Cheerios</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d m siden fra %2$s</item>
+        <item quantity="other">%1$d m siden fra %2$s</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">%1$d m siden fra Minner</item>
+        <item quantity="other">%1$d m siden fra Minner</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d m siden fra Spectacles</item>
+        <item quantity="other">%1$d m siden fra Spectacles</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d mnd</item>
+        <item quantity="other">%d mnd</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d mnd siden</item>
+        <item quantity="other">%d mnd siden</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d mnd siden fra kamerarull</item>
+        <item quantity="other">%1$d mnd siden fra kamerarull</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d mnd siden fra Chat</item>
+        <item quantity="other">%1$d mnd siden fra Chat</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d mnd siden fra Cheerios</item>
+        <item quantity="other">%1$d mnd siden fra Cheerios</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d mnd siden fra %2$s</item>
+        <item quantity="other">%1$d mnd siden fra %2$s</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">%1$d mnd siden fra Minner</item>
+        <item quantity="other">%1$d mnd siden fra Minner</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d mnd siden fra Spectacles</item>
+        <item quantity="other">%1$d mnd siden fra Spectacles</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d s siden</item>
+        <item quantity="other">%d s siden</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d s siden fra kamerarull</item>
+        <item quantity="other">%1$d s siden fra kamerarull</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d s siden fra Chat</item>
+        <item quantity="other">%1$d s siden fra Chat</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d s siden fra Cheerios</item>
+        <item quantity="other">%1$d s siden fra Cheerios</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d s siden fra %2$s</item>
+        <item quantity="other">%1$d s siden fra %2$s</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">%1$d s siden fra Minner</item>
+        <item quantity="other">%1$d s siden fra Minner</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d s siden fra Spectacles</item>
+        <item quantity="other">%1$d s siden fra Spectacles</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d u</item>
+        <item quantity="other">%d u</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d u siden</item>
+        <item quantity="other">%d u siden</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d u siden fra kamerarull</item>
+        <item quantity="other">%1$d u siden fra kamerarull</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d u siden fra Chat</item>
+        <item quantity="other">%1$d u siden fra Chat</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d u siden fra Cheerios</item>
+        <item quantity="other">%1$d u siden fra Cheerios</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d u siden fra %2$s</item>
+        <item quantity="other">%1$d u siden fra %2$s</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">%1$d u siden fra Minner</item>
+        <item quantity="other">%1$d u siden fra Minner</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d u siden fra Spectacles</item>
+        <item quantity="other">%1$d u siden fra Spectacles</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d år</item>
+        <item quantity="other">%d år</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d år siden</item>
+        <item quantity="other">%d år siden</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">%1$d år siden fra kamerarull</item>
+        <item quantity="other">%1$d år siden fra kamerarull</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d år siden fra Chat</item>
+        <item quantity="other">%1$d år siden fra Chat</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">%1$d år siden fra Cheerios</item>
+        <item quantity="other">%1$d år siden fra Cheerios</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%1$d år siden fra %2$s</item>
+        <item quantity="other">%1$d år siden fra %2$s</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">%1$d år siden fra Minner</item>
+        <item quantity="other">%1$d år siden fra Minner</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">%1$d år siden fra Spectacles</item>
+        <item quantity="other">%1$d år siden fra Spectacles</item>
+    </plurals>
+</resources>

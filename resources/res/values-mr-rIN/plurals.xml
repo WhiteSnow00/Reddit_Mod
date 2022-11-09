@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_abbreviated">
+        <item quantity="one">%d दि.</item>
+        <item quantity="other">%d दि.</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated">
+        <item quantity="one">%d दि. पूर्वी</item>
+        <item quantity="other">%d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d दि. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_chat">
+        <item quantity="one">%1$d दि. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d दि. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d दि. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d दि. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d दि. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="days_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$d दि. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$d दि. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_abbreviated">
+        <item quantity="one">%d ता.</item>
+        <item quantity="other">%d ता.</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated">
+        <item quantity="one">%d ता. पूर्वी</item>
+        <item quantity="other">%d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d ता. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_chat">
+        <item quantity="one">%1$d ता. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d ता. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d ता. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d ता. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d ता. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="hours_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$d ता. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$d ता. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_abbreviated">
+        <item quantity="one">%d मि.</item>
+        <item quantity="other">%d मि.</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated">
+        <item quantity="one">%d मि. पूर्वी</item>
+        <item quantity="other">%d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d मि. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_chat">
+        <item quantity="one">%1$d मि. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d मि. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d मि. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d मि. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d मि. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="minutes_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$d मि. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$d मि. पूर्वी</item>
+    </plurals>
+    <plurals name="months_abbreviated">
+        <item quantity="one">%d म.</item>
+        <item quantity="other">%d म.</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated">
+        <item quantity="one">%d म. पूर्वी</item>
+        <item quantity="other">%d म. पूर्वी</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d म. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d म. पूर्वी</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_chat">
+        <item quantity="one">%1$d म. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d म. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d म. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d म. पूर्वी</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d म. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d म. पूर्वी</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d म. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d म. पूर्वी</item>
+    </plurals>
+    <plurals name="months_ago_abbreviated_spectacles">
+        <item quantity="one">स्पेक्टकल्समधून %1$d म. पूर्वी</item>
+        <item quantity="other">स्पेक्टकल्समधून %1$d म. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_abbreviated">
+        <item quantity="one">%d से.</item>
+        <item quantity="other">%d से.</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated">
+        <item quantity="one">%d से. पूर्वी</item>
+        <item quantity="other">%d से. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d से. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d से. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_chat">
+        <item quantity="one">%1$d से. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d से. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d से. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d से. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d से. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d से. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d से. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d से. पूर्वी</item>
+    </plurals>
+    <plurals name="seconds_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$d से. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$d से. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_abbreviated">
+        <item quantity="one">%d आ.</item>
+        <item quantity="other">%d आ.</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated">
+        <item quantity="one">%d आ. पूर्वी</item>
+        <item quantity="other">%d आ. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d आ. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d आ. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_chat">
+        <item quantity="one">%1$d आ. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d आ. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d आ. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d आ. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d आ. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d आ. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d आ. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d आ. पूर्वी</item>
+    </plurals>
+    <plurals name="weeks_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$dआ. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$dआ. पूर्वी</item>
+    </plurals>
+    <plurals name="years_abbreviated">
+        <item quantity="one">%d व.</item>
+        <item quantity="other">%d व.</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated">
+        <item quantity="one">%d व. पूर्वी</item>
+        <item quantity="other">%d व. पूर्वी</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_camera_roll">
+        <item quantity="one">कॅमेरा रोलवरून %1$d व. पूर्वी</item>
+        <item quantity="other">कॅमेरा रोलवरून %1$d व. पूर्वी</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_chat">
+        <item quantity="one">%1$d व. पूर्वी चॅटमधून</item>
+        <item quantity="other">%1$d व. पूर्वी चॅटमधून</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_cheerios">
+        <item quantity="one">Cheerios मधून %1$d व. पूर्वी</item>
+        <item quantity="other">Cheerios मधून %1$d व. पूर्वी</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_creative_kit">
+        <item quantity="one">%2$s मधून %1$d व. पूर्वी</item>
+        <item quantity="other">%2$s मधून %1$d व. पूर्वी</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_memories">
+        <item quantity="one">मेमरीझमधून %1$d व. पूर्वी</item>
+        <item quantity="other">मेमरीझमधून %1$d व. पूर्वी</item>
+    </plurals>
+    <plurals name="years_ago_abbreviated_spectacles">
+        <item quantity="one">Spectacles मधून %1$d व. पूर्वी</item>
+        <item quantity="other">Spectacles मधून %1$d व. पूर्वी</item>
+    </plurals>
+</resources>
