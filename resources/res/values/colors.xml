@@ -765,6 +765,7 @@
     <color name="my_reddit_community_empty_card_background">#ffe88f</color>
     <color name="my_reddit_home_empty_card_background">#b6e9ff</color>
     <color name="my_stuff_item_empty_tint">#000000</color>
+    <color name="neutral_background">#ffffff</color>
     <color name="nft_artist_icon_background">#c4c4c4</color>
     <color name="nft_card_default_background_color">#003584</color>
     <color name="nft_detail_mint_status">#24a0ed</color>
@@ -930,6 +931,7 @@
     <color name="progress_meter_gradient_start">#ffa800</color>
     <color name="progress_meter_inactive">@color/alienblue_tone5</color>
     <color name="promoted_post_cta_background">#f5f6f7</color>
+    <color name="promoted_user_post_border_background">#eaedef</color>
     <color name="purple">#6249d6</color>
     <color name="quarantined_yellow">#ffa800</color>
     <color name="radio_button_selected_color">@color/white</color>

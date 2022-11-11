@@ -500,6 +500,10 @@
         <item quantity="one">Ya has seleccionado %1$d idioma</item>
         <item quantity="other">Ya has seleccionado %1$d idiomas</item>
     </plurals>
+    <plurals name="languages_selection_add_action">
+        <item quantity="one">Añadir %1$d idioma</item>
+        <item quantity="other">Añadir %1$d idiomas</item>
+    </plurals>
     <plurals name="liveaudio_listener_count">
         <item quantity="one">%1$,d aquí ahora</item>
         <item quantity="other">%1$,d aquí ahora</item>

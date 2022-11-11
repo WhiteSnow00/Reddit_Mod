@@ -23,6 +23,7 @@
     <color name="mun_spam_warning">@color/ds_primitive_mango_300</color>
     <color name="mun_spam_watch">@color/ds_primitive_sloth_300</color>
     <color name="my_stuff_item_empty_tint">#ffffff</color>
+    <color name="neutral_background">#0b1416</color>
     <color name="nft_detail_mint_status">@color/night_secondary</color>
     <color name="onboarding_loading_shimmer_end_color">#303030</color>
     <color name="onboarding_loading_shimmer_middle_color">#626465</color>

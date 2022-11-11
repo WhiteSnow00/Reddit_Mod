@@ -1325,14 +1325,6 @@
     </attr>
     <attr name="fastScrollVerticalTrackDrawable" format="reference">
     </attr>
-    <attr name="fastScrollerIconColor" format="color">
-    </attr>
-    <attr name="fastScrollerIconSize" format="dimension">
-    </attr>
-    <attr name="fastScrollerTextPadding" format="dimension">
-    </attr>
-    <attr name="fastScrollerThumbColor" format="color">
-    </attr>
     <attr name="firstAndLastPadding" format="reference">
     </attr>
     <attr name="firstBaselineToTopHeight" format="dimension">
@@ -1624,8 +1616,6 @@
     </attr>
     <attr name="icon" format="reference">
     </attr>
-    <attr name="iconColor" format="color">
-    </attr>
     <attr name="iconEndPadding" format="dimension">
     </attr>
     <attr name="iconGravity">
@@ -1674,10 +1664,6 @@
     <attr name="indentSize" format="dimension">
     </attr>
     <attr name="indeterminateProgressStyle" format="reference">
-    </attr>
-    <attr name="indicatorFastScrollerStyle" format="reference">
-    </attr>
-    <attr name="indicatorFastScrollerThumbStyle" format="reference">
     </attr>
     <attr name="indicatorTextStyle" format="reference">
     </attr>
@@ -1855,7 +1841,7 @@
     </attr>
     <attr name="itemShapeInsetTop" format="dimension">
     </attr>
-    <attr name="itemSpacing_RES_2130969224" format="dimension">
+    <attr name="itemSpacing_RES_2130969217" format="dimension">
     </attr>
     <attr name="itemStrokeColor" format="color">
     </attr>
@@ -2959,8 +2945,6 @@
     </attr>
     <attr name="rdt_topic_chain_option_item_background_color_unselected" format="reference">
     </attr>
-    <attr name="rdt_topic_chain_search_background_color" format="reference">
-    </attr>
     <attr name="rdt_topic_chain_subtitle_text_color" format="reference">
     </attr>
     <attr name="rdt_topic_chain_subtopic_chip_background_color_unselected" format="reference">
@@ -3285,7 +3269,7 @@
     </attr>
     <attr name="strokeColor" format="color">
     </attr>
-    <attr name="strokeWidth_RES_2130969841" format="dimension">
+    <attr name="strokeWidth_RES_2130969833" format="dimension">
     </attr>
     <attr name="subMenuArrow" format="reference">
     </attr>

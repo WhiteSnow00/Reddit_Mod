@@ -431,6 +431,7 @@
     <string name="action_schedule_post">Schedule Post</string>
     <string name="action_scheduled_post">Scheduled</string>
     <string name="action_search">Search</string>
+    <string name="action_search_comments">Search comments</string>
     <string name="action_search_gifs">Search GIFs</string>
     <string name="action_see_less_community">See less of this community</string>
     <string name="action_see_less_notifications">See less from this community</string>
@@ -635,7 +636,8 @@
     <string name="asset_statements">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"web\", \"site\": \"https://www.reddit.com\" } }]</string>
     <string name="attachment_select_all_disabled_tooltip_message">This community doesn\'t allow any attachments</string>
     <string name="attachment_select_image_disabled_tooltip_message">This community doesn\'t allow images</string>
-    <string name="attachment_select_link_disabled_tooltip_message">To insert a link, select a piece of text</string>
+    <string name="attachment_select_link_alt_disabled_tooltip_message">To insert a link, select a piece of text</string>
+    <string name="attachment_select_link_disabled_tooltip_message">This community doesn\'t allow links</string>
     <string name="attachment_select_poll_disabled_tooltip_message">This community doesn\'t allow polls</string>
     <string name="attachment_select_prediction_disabled_tooltip_message">This community doesn\'t allow predictions</string>
     <string name="attachment_select_talk_disabled_tooltip_message">This community doesn\'t allow talks</string>
@@ -959,6 +961,8 @@
     <string name="chat_error_load_chat_settings">Something went wrong and chat settings can\'t be loaded.</string>
     <string name="chat_error_load_contacts">Failed to load contacts</string>
     <string name="chat_error_load_requests">Something went wrong and invites can\'t be loaded.</string>
+    <string name="chat_error_loading_live_chats">Live chats failed to load, pull to refresh</string>
+    <string name="chat_error_loading_messages">Messages failed to load, pull to refresh</string>
     <string name="chat_error_media_rejected">Media exceeds the max 20MB for images and 40MB for GIFs</string>
     <string name="chat_error_message_delete">Something went wrong and the message could not be deleted.</string>
     <string name="chat_error_message_doesnt_exist">The message doesn\'t exist.</string>
@@ -984,6 +988,8 @@
     <string name="chat_input_parent_reply">Replying to %1$s</string>
     <string name="chat_keyboard_hint_1">Message %s</string>
     <string name="chat_legacy_comment_menu_dialog_title">u/%s\'s comment</string>
+    <string name="chat_loading_live_chats">Hold still, Live chats are still loading...</string>
+    <string name="chat_loading_messages">Hold still, messages are still loading...</string>
     <string name="chat_pager_title_directs">Directs</string>
     <string name="chat_post_tab_ftue">Revisit all chat posts \10you’ve recently seen here.</string>
     <string name="chat_posts_quick_nav_ftue">Easily get back to a chat \10post. Swipe to dismiss.</string>
@@ -1077,7 +1083,7 @@
     <string name="collectible_secure_vault_skip_button">I’ll Do This Later</string>
     <string name="collectible_secure_vault_title">Your Avatar needs a Vault!</string>
     <string name="colombia">Colombia</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id">f3000c5846a442cbb9df46a79a1fb2f1</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">77e0eb4758f04a77b1e0562ed9bca2fa</string>
     <string name="comm_settings_list_archive_posts">Archive Posts</string>
     <string name="comm_settings_list_avatar">Avatar</string>
     <string name="comm_settings_list_community_discovery">Discovery</string>
@@ -1158,19 +1164,7 @@
     <string name="communities_geo_crowdsourcing_empty_header_title">Done and done!</string>
     <string name="communities_geo_crowdsourcing_header_subtitle">Thanks for your help. Add a location to the communities below, and we’ll do the rest.</string>
     <string name="communities_geo_crowdsourcing_header_title">Ok, let’s do this!</string>
-    <string name="communities_section_communities_collapse_name">Communities (collapsed)</string>
-    <string name="communities_section_communities_expand_name">Communities</string>
-    <string name="communities_section_favorited_collapse_name">Favorites (collapsed)</string>
-    <string name="communities_section_favorited_expand_name">Favorites</string>
-    <string name="communities_section_following_collapse_name">Following (collapsed)</string>
-    <string name="communities_section_following_expand_name">Following</string>
     <string name="communities_section_header">Your Communities</string>
-    <string name="communities_section_moderating_collapse_name">Moderating (collapsed)</string>
-    <string name="communities_section_moderating_expand_name">Moderating</string>
-    <string name="communities_section_more_stuff_collapse_name">More stuff (collapsed)</string>
-    <string name="communities_section_more_stuff_expand_name">More stuff</string>
-    <string name="communities_section_reddit_picks_collapse_name">Reddit picks (collapsed)</string>
-    <string name="communities_section_reddit_picks_expand_name">Reddit picks</string>
     <string name="communities_selection_community">Communities</string>
     <string name="communities_selection_select_few">Select a few to get started. You can update them later.</string>
     <string name="community_country_selector_title">Select country</string>
@@ -1210,10 +1204,10 @@
     <string name="community_invite_title">Invite %1$s</string>
     <string name="community_is_employee_only">Employee only</string>
     <string name="community_is_nsfw">18+ community</string>
-    <string name="community_item_label">Community We Love</string>
     <string name="community_muted">Community Muted</string>
     <string name="community_name_edit_text_hint">Community_name</string>
     <string name="community_nav_subtitle">Go make some noise in your new communities</string>
+    <string name="community_nav_subtitle_empty">Join communities to jump into the conversation</string>
     <string name="community_nav_title">Let’s talk World Cup!</string>
     <string name="community_pick_warn_back">Go Back</string>
     <string name="community_pick_warn_continue">Yes, Continue</string>
@@ -1344,7 +1338,6 @@
     <string name="content_description_coins_decrement">Decrement</string>
     <string name="content_description_coins_increment">Increment</string>
     <string name="content_description_collage_category_image">Category image</string>
-    <string name="content_description_comment_navigation">Comment navigation</string>
     <string name="content_description_community_avatar">Community avatar</string>
     <string name="content_description_community_icon">Community icon</string>
     <string name="content_description_crop_button">Crop</string>
@@ -1649,6 +1642,7 @@
     <string name="discover_section_header">Discover</string>
     <string name="discover_tab_ftue_tooltip">NEW! Use Discover to find new communities</string>
     <string name="dismiss_dropdown">Dismiss</string>
+    <string name="dismiss_dropdown_surfaces">Dismiss</string>
     <string name="dismiss_toast_button_content_description">Dismiss</string>
     <string name="display_name_helper">This will be displayed to viewers of your profile page and does not change your username.</string>
     <string name="display_name_optional">Display name – optional</string>
@@ -2199,6 +2193,7 @@
     <string name="fmt_u_name_no_split">u⁠/⁠%1$s</string>
     <string name="fmt_unmute_description">Unmuting %1$s will turn on their notifications and you’ll see their posts in your feeds and recommendations again.</string>
     <string name="fmt_unmute_title">Unmute %1$s</string>
+    <string name="fmt_unmuted_from_notification_success">Followed, now you’ll get updates on new activity</string>
     <string name="fmt_unmuted_success">Unmuted %1$s</string>
     <string name="fmt_user_agent">Reddit/Version %1$s/Build %2$s/Android %3$s</string>
     <string name="fmt_user_is_typing">%1$s is typing…</string>
@@ -2309,6 +2304,7 @@
     <string name="get_special_membership">Get %1$s</string>
     <string name="get_special_membership_agreement_iap">%1$s auto-renews for %2$s a month. Cancel anytime in the Subscriptions section of Google Play. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds. By continuing, you agree to &lt;a href=https://www.redditinc.com/policies/user-agreement&gt;Reddit’s User Agreement&lt;/a&gt;, &lt;a href=https://www.redditinc.com/policies/privacy-policy&gt;Privacy Policy&lt;/a&gt;, and &lt;a href=https://www.redditinc.com/policies/community-points-terms-of-service&gt;Community Points Terms of Service&lt;/a&gt;.</string>
     <string name="get_special_membership_agreement_points">Subscription auto-renews monthly. Cancel anytime in the Membership section of the subreddit. By continuing, you agree to Reddit’s &lt;a href=https://www.redditinc.com/policies/community-points-terms-of-service&gt;Community Points Terms of Service&lt;/a&gt;.</string>
+    <string name="get_started">Get started</string>
     <string name="get_the_coins">GET THE COINS</string>
     <string name="gif_button_content_description">Gif button</string>
     <string name="gif_content_description">Gif</string>
@@ -2720,6 +2716,7 @@
     <string name="join_discussion">Join the discussion</string>
     <string name="join_heroes_subtitle_empty">%1$s needs %2$d Powerups to unlock perks for the entire community</string>
     <string name="join_heroes_title_empty">Be the first hero!</string>
+    <string name="join_more_communities">Join more communities</string>
     <string name="join_supporters_cta">Become a Hero</string>
     <string name="joined_community">You have joined the r/%1$s community!</string>
     <string name="karma">Karma</string>
@@ -3139,12 +3136,13 @@
     <string name="label_experiment_comments_in_feed_DU">Comments In Feed DU</string>
     <string name="label_experiment_global">Override for all users</string>
     <string name="label_experiment_invite_friends">Invite Friends Painted Door</string>
+    <string name="label_experiment_toast">Show exposure toast</string>
     <string name="label_experiments">Experiments</string>
     <string name="label_explore_popular">Explore popular communities</string>
     <string name="label_export_video_logs">Export video log</string>
     <string name="label_exposed_experiments">Exposed experiments</string>
-    <string name="label_exposure_logging">Enable exposure logging</string>
-    <string name="label_exposure_toast">Enable exposure toast</string>
+    <string name="label_exposure_logging">Enable all experiments exposure logging</string>
+    <string name="label_exposure_toast">Enable all experiments exposure toast</string>
     <string name="label_facebook">Facebook</string>
     <string name="label_facebook_lite">Facebook Lite</string>
     <string name="label_feed_notice_action_sounds_good">Sounds Good</string>
@@ -3387,6 +3385,7 @@
     <string name="label_nft_marketplace_stubbed_data">Use stubbed claim choice data</string>
     <string name="label_nft_marketplace_stubbed_data_limit">Limit number of claim drops to 1</string>
     <string name="label_night_mode">Night mode</string>
+    <string name="label_no_audio">No audio</string>
     <string name="label_no_custom_feeds_available">No Custom Feeds available</string>
     <string name="label_no_post_flair">No post flair</string>
     <string name="label_no_post_flair_in_community">There is no post flair in this community</string>
@@ -3439,8 +3438,6 @@
     <string name="label_nsfw_results">NSFW results</string>
     <string name="label_num_coins">%1$s Coins</string>
     <string name="label_num_coins_default">– Coins</string>
-    <string name="label_onboarding_search_results">Results</string>
-    <string name="label_onboarding_trending_communities">Trending communities</string>
     <string name="label_online">%1$s online</string>
     <string name="label_open_fbp">Open full bleed player</string>
     <string name="label_open_web_links_in_app">Open web links in-app</string>
@@ -3669,7 +3666,6 @@
     <string name="label_stream_post_report_message">This broadcast has been…</string>
     <string name="label_stream_reported_to_admins">Reported to Reddit administrators</string>
     <string name="label_subreddit_leaderboard_title">Today\'s Top Growing Communities</string>
-    <string name="label_subscriptions">Subscriptions</string>
     <string name="label_suggested_post">Suggested post</string>
     <string name="label_support">Support</string>
     <string name="label_sure">Sure</string>
@@ -4518,7 +4514,6 @@
     <string name="more_from_this_community">More from this community</string>
     <string name="more_in_topic">More in %1$s</string>
     <string name="more_like_this">More like this</string>
-    <string name="more_posts_you_may_like">More posts you may like</string>
     <string name="more_premium_features">What else you get with Reddit Premium</string>
     <string name="more_than_nine">9+</string>
     <string name="moved_to_audience">You\'ve been removed as a speaker. Raise your hand to speak again.</string>
@@ -4568,7 +4563,6 @@
     <string name="mute_title">Mute</string>
     <string name="muted_communities_description">Posts from muted communities won’t show up in your feeds or recommendations.</string>
     <string name="muted_communities_screen_title">Muted communities</string>
-    <string name="my_communities">My communities</string>
     <string name="my_reddit_ask_anything_empty_state_card_button_label">Post now</string>
     <string name="my_reddit_ask_me_anything_empty_state_card_title">Got Questions? Ask and answer here.</string>
     <string name="my_reddit_community_empty_state_card_button_label">Post now</string>
@@ -4616,9 +4610,9 @@
     <string name="nft_benefit_collectible">Collectible, part of a series</string>
     <string name="nft_benefit_mix_with_other_avatar_gear">Mix with other avatar gear</string>
     <string name="nft_benefit_ownership">True proof of ownership</string>
-    <string name="nft_benefit_stand_out_in_comments">Stand out in Comments</string>
+    <string name="nft_benefit_stand_out_in_comments">Stand out in comments</string>
     <string name="nft_benefit_transferable_via_blockchain">Transferable via blockchain</string>
-    <string name="nft_benefit_you_own_collectible">You own your Collectible</string>
+    <string name="nft_benefit_you_own_collectible">You own your collectible</string>
     <string name="nft_claim_completely_claimed_dialog_body">Sorry, you have reached the limit of avatars you can claim from this collection</string>
     <string name="nft_claim_completely_claimed_dialog_button">OK</string>
     <string name="nft_claim_cta_button_text">Get Yours</string>
@@ -4854,7 +4848,6 @@
     <string name="onboarding_cta_button">Host a talk</string>
     <string name="onboarding_outro_one_line">Let’s get to the good part</string>
     <string name="onboarding_outro_one_line_personalizing">Personalizing your home feed</string>
-    <string name="onboarding_search_hint">Search</string>
     <string name="onboarding_snoovatar_randomize">Randomize</string>
     <string name="onboarding_snoovatar_subtitle">This is how people will see you on Reddit.\10(You can change it later if you’d like.)</string>
     <string name="onboarding_snoovatar_title">Style your avatar</string>
@@ -5491,6 +5484,7 @@
     <string name="profile_settings_error_upload_image">Unable to upload image.</string>
     <string name="profile_social_links_add_social_link_button_label">Add social link</string>
     <string name="project_id">reddit-android</string>
+    <string name="promoted_user_post_posts_via">Posts via</string>
     <string name="prompt_action_confirmation">Are you sure?</string>
     <string name="prompt_change_chat_theme">�� Change chat theme</string>
     <string name="prompt_confirm_block">They won’t be able to contact you or view your profile, posts, or comments.</string>
@@ -5692,6 +5686,7 @@
     <string name="reenablement_community_title">Don\'t miss a post</string>
     <string name="reenablement_post_subtitle">Turn on notifications to get updates on your post\'s activity.</string>
     <string name="reenablement_post_title">Don\'t miss a reply</string>
+    <string name="refresh">Refresh</string>
     <string name="region_select_title">Choose location</string>
     <string name="region_select_title_search">Search for region</string>
     <string name="related_community_format">r/%1$s</string>
@@ -6040,6 +6035,7 @@
     <string name="speech_bubble_hello_text">�� Hello</string>
     <string name="speech_bubble_hey_text">Hey there</string>
     <string name="speech_bubble_welcome_text">Welcome</string>
+    <string name="splash_delayed_auth_title">Dive into anything on Reddit</string>
     <string name="spoiler_description">Tag posts that may ruin a surprise</string>
     <string name="square">Square</string>
     <string name="sso_connected_to">Connected to %s!</string>
@@ -6073,6 +6069,7 @@
     <string name="sticky_header_layout_manager">com.reddit.frontpage.ui.layout.StickyHeaderLinearLayoutManager</string>
     <string name="stock_up_and_save_with_this_limited_time_offer">Stock up and save with this limited-time offer:</string>
     <string name="storefront_category_card_outfit_content_description">An avatar outfit that\'s in the category</string>
+    <string name="storefront_category_detail_authors_text_suffix">and %d more</string>
     <string name="storefront_category_detail_hero_image_content_description">An image illustrating the outfits in this category</string>
     <string name="storefront_claim_award_subtitle">Give it away in the next %1$s before it disappears.</string>
     <string name="storefront_claim_award_template">It\'s the %1$s!</string>
@@ -6379,13 +6376,11 @@
     <string name="title_profile_description">About you</string>
     <string name="title_raised_hands">Raised Hands</string>
     <string name="title_recent_communities">Recently visited</string>
-    <string name="title_reddit_live">Reddit Live</string>
     <string name="title_reddit_live_branding">Reddit Live</string>
     <string name="title_reply_comment">Reply</string>
     <string name="title_reply_link">Add comment</string>
     <string name="title_reply_to_message">Reply to message</string>
     <string name="title_replying">Replying…</string>
-    <string name="title_rpan">Reddit Public Access Network</string>
     <string name="title_rpan_branding">Reddit Public\10Access Network</string>
     <string name="title_saved">Saved</string>
     <string name="title_search">Jump to…</string>
@@ -6435,6 +6430,7 @@
     <string name="toast_allowed_user">%1$s allowed %2$s back into this talk</string>
     <string name="toast_allowed_user_single">%1$s was allowed back into this talk</string>
     <string name="toast_copied_to_clipboard">Copied to Clipboard!</string>
+    <string name="toast_mute_error_message">Something went wrong, try again.</string>
     <string name="toast_removed_user">%1$s removed %2$s from this talk</string>
     <string name="toast_removed_user_single">%1$s was removed from this talk</string>
     <string name="toast_saved">Saved</string>
@@ -6740,7 +6736,6 @@
     <string name="you_cant_use_incognito_mode">Without an account you can\'t use Anonymous Browsing.</string>
     <string name="you_have_been_muted">You\'ve been muted.</string>
     <string name="you_picked_message">You picked\10\'%1$s\'!</string>
-    <string name="your_communities">Your communities</string>
     <string name="your_friend_joined_description_ad_free">Your friend just got the Reddit app. As a special thanks for spreading the word, enjoy your ad-free month. Keep paying it forward by inviting more friends!</string>
     <string name="your_friend_joined_description_coins">Your friend just got the Reddit app. As a special thanks for spreading the word, enjoy your free coins. Keep paying it forward by inviting more friends!</string>
     <string name="your_friend_joined_description_trophy">Your friend just got the Reddit app. As a special thanks for spreading the word, enjoy your trophy. Keep paying it forward by inviting more friends!</string>

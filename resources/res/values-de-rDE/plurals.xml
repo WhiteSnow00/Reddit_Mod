@@ -276,6 +276,10 @@
         <item quantity="one">Du hast bereits %1$d Sprache ausgewählt</item>
         <item quantity="other">Du hast bereits %1$d Sprachen ausgewählt</item>
     </plurals>
+    <plurals name="languages_selection_add_action">
+        <item quantity="one">%1$d Sprache hinzufügen</item>
+        <item quantity="other">%1$d Sprachen hinzufügen</item>
+    </plurals>
     <plurals name="liveaudio_listener_count">
         <item quantity="one">%1$,d jetzt hier</item>
         <item quantity="other">%1$,d jetzt hier</item>

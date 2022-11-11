@@ -37,8 +37,8 @@
         <item quantity="other">%1$s monete</item>
     </plurals>
     <plurals name="comment_awards_count">
-        <item quantity="one">Premio %1$d</item>
-        <item quantity="other">Premi %1$d</item>
+        <item quantity="one">%1$d premio</item>
+        <item quantity="other">%1$d premi</item>
     </plurals>
     <plurals name="comment_composer_presence_users_reading_message">
         <item quantity="one">%1$d persona è qui</item>
@@ -97,8 +97,8 @@
         <item quantity="other">Consente fino a %1$,d emoji</item>
     </plurals>
     <plurals name="fmt_award_count">
-        <item quantity="one">Premio %1$d</item>
-        <item quantity="other">Premi %1$,d</item>
+        <item quantity="one">%1$d premio</item>
+        <item quantity="other">%1$,d premi</item>
     </plurals>
     <plurals name="fmt_downvotes">
         <item quantity="one">%1$d downvoto</item>
@@ -275,6 +275,10 @@
     <plurals name="lang_selection_limit_error">
         <item quantity="one">Hai già selezionato %1$d lingua</item>
         <item quantity="other">Hai già selezionato %1$d lingue</item>
+    </plurals>
+    <plurals name="languages_selection_add_action">
+        <item quantity="one">Aggiungi %1$d lingua</item>
+        <item quantity="other">Aggiungi %1$d lingue</item>
     </plurals>
     <plurals name="liveaudio_listener_count">
         <item quantity="one">%1$,d presente</item>

@@ -3023,7 +3023,6 @@
         <item name="rdt_topic_chain_community_title_text_color">@color/alienblue_tone1</item>
         <item name="rdt_topic_chain_option_item_background_color_selected">@color/option_item_background_color_selected_light</item>
         <item name="rdt_topic_chain_option_item_background_color_unselected">@color/option_item_background_color_unselected_light</item>
-        <item name="rdt_topic_chain_search_background_color">@color/alienblue_tone6</item>
         <item name="rdt_topic_chain_subtitle_text_color">@color/alienblue_tone3</item>
         <item name="rdt_topic_chain_subtopic_chip_background_color_unselected">@color/subtopic_chip_unselected_light</item>
         <item name="rdt_topic_chain_title_text_color">@android:color/black</item>
@@ -3237,7 +3236,6 @@
         <item name="rdt_topic_chain_community_title_text_color">@color/alienblue_tone8</item>
         <item name="rdt_topic_chain_option_item_background_color_selected">@color/option_item_background_color_selected_dark</item>
         <item name="rdt_topic_chain_option_item_background_color_unselected">@color/option_item_background_color_unselected_dark</item>
-        <item name="rdt_topic_chain_search_background_color">@color/topic_chain_search_background_color</item>
         <item name="rdt_topic_chain_subtitle_text_color">@android:color/white</item>
         <item name="rdt_topic_chain_subtopic_chip_background_color_unselected">@color/subtopic_chip_unselected</item>
         <item name="rdt_topic_chain_title_text_color">@color/alienblue_tone8</item>
@@ -5078,20 +5076,6 @@
         <item name="suffixTextAppearance">@style/TextAppearance.Design.Suffix</item>
         <item name="suffixTextColor">@null</item>
     </style>
-    <style name="Widget.IndicatorFastScroll.FastScroller" parent="@android:style/Widget">
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="fastScrollerIconColor">?android:attr/textColorPrimary</item>
-        <item name="fastScrollerIconSize">20dp</item>
-        <item name="fastScrollerTextPadding">@dimen/fast_scroller_default_text_padding</item>
-    </style>
-    <style name="Widget.IndicatorFastScroll.FastScrollerThumb" parent="@android:style/Widget">
-        <item name="android:textAppearance">?android:attr/textAppearance</item>
-        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
-        <item name="fastScrollerIconColor">?android:attr/textColorPrimaryInverse</item>
-        <item name="fastScrollerIconSize">24dp</item>
-        <item name="fastScrollerThumbColor">?attr/colorPrimary</item>
-    </style>
     <style name="Widget.MaterialComponents.ActionBar.Primary" parent="@style/Widget.AppCompat.ActionBar.Solid">
         <item name="background">?attr/colorPrimary</item>
         <item name="elevation">@dimen/design_appbar_elevation</item>
@@ -5218,7 +5202,7 @@
         <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
         <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
         <item name="strokeColor">@color/mtrl_btn_stroke_color_selector</item>
-        <item name="strokeWidth_RES_2130969841">@dimen/mtrl_btn_stroke_size</item>
+        <item name="strokeWidth_RES_2130969833">@dimen/mtrl_btn_stroke_size</item>
     </style>
     <style name="Widget.MaterialComponents.Button.OutlinedButton.Icon" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:paddingLeft">@dimen/mtrl_btn_icon_btn_padding_left</item>

@@ -633,8 +633,6 @@
     <dimen name="comment_lottie_treatment_height">42dp</dimen>
     <dimen name="comment_lottie_treatment_width">216dp</dimen>
     <dimen name="comment_max_content_height">118dp</dimen>
-    <dimen name="comment_navigation_button_size_large">52dp</dimen>
-    <dimen name="comment_navigation_button_size_normal">44dp</dimen>
     <dimen name="comment_pill_avatar_border_size">20dp</dimen>
     <dimen name="comment_pill_avatar_margin_vertical">6dp</dimen>
     <dimen name="comment_pill_avatar_offset_horizontal">10dp</dimen>
@@ -853,9 +851,6 @@
     <dimen name="facepile_avatar_size_single">28dp</dimen>
     <dimen name="fading_edge_length">30dp</dimen>
     <dimen name="faq_bullet_radius">4dp</dimen>
-    <dimen name="fast_scroller_default_text_padding">4dp</dimen>
-    <dimen name="fast_scroller_thumb_elevation">2dp</dimen>
-    <dimen name="fast_scroller_thumb_size">32dp</dimen>
     <dimen name="fastscroll_default_thickness">8dp</dimen>
     <dimen name="fastscroll_margin">0dp</dimen>
     <dimen name="fastscroll_minimum_range">50dp</dimen>
@@ -1630,6 +1625,9 @@
     <dimen name="promoted_post_cta_button_height">27dp</dimen>
     <dimen name="promoted_post_cta_height">43dp</dimen>
     <dimen name="promoted_post_cta_height_compact">22dp</dimen>
+    <dimen name="promoted_user_post_avatar_width_height">62dp</dimen>
+    <dimen name="promoted_user_post_corner_radius">6dp</dimen>
+    <dimen name="promoted_user_post_thumbnail_width_height">84dp</dimen>
     <dimen name="purchase_success_image_height">133dp</dimen>
     <dimen name="purchase_success_image_width">200dp</dimen>
     <dimen name="quad_half_pad">36dp</dimen>
@@ -1977,8 +1975,6 @@
     <dimen name="tooltip_x_offset">106dp</dimen>
     <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
-    <dimen name="topic_chain_search_background_radius">18dp</dimen>
-    <dimen name="topic_chain_search_icon_size">16dp</dimen>
     <dimen name="topic_chip_stroke_width">@dimen/line_height</dimen>
     <dimen name="topic_corner_radius">48dp</dimen>
     <dimen name="topic_item_height">78dp</dimen>
@@ -2160,6 +2156,4 @@
     <dimen name="welcome_screen_bullet_radius">4dp</dimen>
     <dimen name="widget_icon_size">16dp</dimen>
     <dimen name="widget_modtools_error_icon_size">28dp</dimen>
-    <dimen name="your_communities_icon_size">48dp</dimen>
-    <dimen name="your_communities_item_width">64dp</dimen>
 </resources>

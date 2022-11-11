@@ -286,7 +286,7 @@
     </plurals>
     <plurals name="creator_stats_crosspost_card_crossposts_label_plural">
         <item quantity="one">Republicación</item>
-        <item quantity="other">Republicaciones</item>
+        <item quantity="other">Re-publicaciones</item>
     </plurals>
     <plurals name="creator_stats_link_shares_label_plural">
         <item quantity="one">Difusión</item>
@@ -499,6 +499,10 @@
     <plurals name="lang_selection_limit_error">
         <item quantity="one">Ya has seleccionado %1$d idioma</item>
         <item quantity="other">Ya has seleccionado %1$d idiomas</item>
+    </plurals>
+    <plurals name="languages_selection_add_action">
+        <item quantity="one">Añadir %1$d idioma</item>
+        <item quantity="other">Añadir %1$d idiomas</item>
     </plurals>
     <plurals name="liveaudio_listener_count">
         <item quantity="one">%1$,d oyente</item>
