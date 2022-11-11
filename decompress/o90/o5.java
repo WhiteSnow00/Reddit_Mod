@@ -1,0 +1,138 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package o90;
+
+import b40.k0;
+import mg0.x;
+import zk0.i;
+import com.reddit.data.model.graphql.GqlPostToLinkDomainModelMapper_Factory;
+import ks1.c$a;
+import ym0.v;
+import hh0.b$a;
+import com.reddit.screen.BaseScreen;
+import f42.f;
+import com.reddit.data.repository.posts.PagedPostResultsRepository;
+import com.reddit.domain.model.Link;
+import com.reddit.domain.model.search.DiscoveryUnitSearchResult;
+import z50.h;
+import ym0.j;
+import com.reddit.events.onboardingchaining.OnboardingChainingAnalytics;
+import android.content.Context;
+import android.app.Activity;
+import com.reddit.search.screens.heroposts.HeroPostsSearchResultsPresenter;
+import oi0.r0;
+import u30.g;
+import com.reddit.screens.listing.mapper.a;
+import kn1.c;
+import z50.k1;
+import zk0.d;
+import javax.inject.Provider;
+import r10.e;
+import uv0.b;
+
+public final class o5
+{
+    public b A;
+    public e B;
+    public ix.b C;
+    public Provider<d> D;
+    public k1 E;
+    public c F;
+    public Provider<a> G;
+    public Provider<mh0.a> H;
+    public Provider<vu1.a> I;
+    public Provider<ba0.a> J;
+    public g K;
+    public Provider<r0> L;
+    public Provider<HeroPostsSearchResultsPresenter> M;
+    public final rg2.a<? extends Activity> a;
+    public final String b;
+    public final rg2.a<? extends Context> c;
+    public final z0 d;
+    public Provider<cz0.b> e;
+    public Provider<hh0.a> f;
+    public Provider<fi0.a> g;
+    public Provider<zk0.a> h;
+    public Provider<OnboardingChainingAnalytics> i;
+    public se2.e j;
+    public se2.e k;
+    public se2.e l;
+    public Provider<as1.a> m;
+    public pi.d n;
+    public zz.c o;
+    public Provider<j> p;
+    public Provider<ks1.b> q;
+    public Provider<ks1.a> r;
+    public se2.e s;
+    public x50.b t;
+    public Provider<h70.a> u;
+    public Provider<h<q20.a<DiscoveryUnitSearchResult, Link>, PagedPostResultsRepository.a>> v;
+    public Provider<m20.c> w;
+    public Provider<ba0.c> x;
+    public Provider<f> y;
+    public c z;
+    
+    public o5(final z0 d, final jv1.b b, final BaseScreen baseScreen, final rb1.b b2, final rg2.a c, final rg2.a a) {
+        this.d = d;
+        this.a = a;
+        this.b = "search_results";
+        this.c = c;
+        this.e = (Provider<cz0.b>)se2.c.b((Provider)cz0.c.a((Provider)d.h));
+        final Provider b3 = se2.c.b((Provider)b$a.a);
+        this.f = (Provider<hh0.a>)b3;
+        this.g = (Provider<fi0.a>)se2.c.b((Provider)rx.b.a((Provider)d.h, b3));
+        this.h = (Provider<zk0.a>)se2.h.a((Provider)zk0.g.a((Provider)d.m));
+        this.i = (Provider<OnboardingChainingAnalytics>)se2.c.b((Provider)id0.b.c((Provider)d.h));
+        this.j = se2.e.a((Object)c);
+        this.k = se2.e.a((Object)baseScreen);
+        this.l = se2.e.a((Object)"search_results");
+        this.m = (Provider<as1.a>)se2.c.b((Provider)oy.e.b((Provider)this.j, (Provider)se2.e.a((Object)b2), (Provider)d.w, (Provider)d.T, (Provider)d.U, (Provider)d.V));
+        this.n = pi.d.a((Provider)this.j, com.reddit.metrics.a.a((Provider)d.b0, (Provider)d.y), (Provider)d.m, (Provider)d.A0, (Provider)d.B0);
+        final zz.c b4 = zz.c.b((Provider)d.y0, (Provider)d.z0);
+        this.o = b4;
+        this.p = (Provider<j>)se2.c.b((Provider)ym0.v.a((Provider)this.j, (Provider)this.k, (Provider)this.l, (Provider)d.b0, (Provider)d.E, (Provider)d.j2, (Provider)this.m, (Provider)d.u2, (Provider)d.P1, (Provider)this.n, (Provider)d.p2, (Provider)d.n, (Provider)this.f, (Provider)d.v2, (Provider)d.h, (Provider)d.w2, (Provider)b4, (Provider)d.k2, (Provider)d.D1, (Provider)d.o2, (Provider)d.m1, (Provider)d.L0));
+        final Provider b5 = se2.c.b((Provider)c$a.a);
+        this.q = (Provider<ks1.b>)b5;
+        this.r = (Provider<ks1.a>)se2.c.b((Provider)yw.b.a(b5, (Provider)d.t1, (Provider)d.O1, (Provider)d.P1, (Provider)d.p2));
+        this.s = se2.e.a((Object)b);
+        this.t = x50.b.a((Provider)d.m0, (Provider)d.n0, (Provider)d.e);
+        final Provider b6 = se2.c.b((Provider)w50.g.a((Provider)d.x2, (Provider)this.t, GqlPostToLinkDomainModelMapper_Factory.create((Provider)d.m, (Provider)d.x2, (Provider)d.o1, (Provider)d.v1), (Provider)d.j, (Provider)d.V, (Provider)d.y2, (Provider)d.e2));
+        this.u = (Provider<h70.a>)b6;
+        this.v = (Provider<h<q20.a<DiscoveryUnitSearchResult, Link>, PagedPostResultsRepository.a>>)se2.c.b((Provider)new g((Provider)b50.b$a.a, b6, (Provider)d.z2, (Provider)d.e2, (Provider)d.A2, 3));
+        this.w = (Provider<m20.c>)se2.c.b((Provider)oa1.b.a((Provider)this.j));
+        this.x = (Provider<ba0.c>)se2.c.b((Provider)new nx.b((Provider)d.K, 28));
+        final Provider b7 = se2.c.b((Provider)uv0.b.c((Provider)this.j));
+        this.y = (Provider<f>)b7;
+        this.z = kn1.c.a(b7, (Provider)d.d0);
+        this.A = uv0.b.d((Provider)d.m);
+        this.B = r10.e.b((Provider)d.c0, (Provider)d.m, (Provider)this.j, (Provider)d.n, (Provider)d.i, (Provider)d.D2, (Provider)d.V, (Provider)this.A, (Provider)nx.a.a(), (Provider)d.i0, (Provider)d.E2);
+        this.C = ix.b.a((Provider)id0.b.a());
+        this.D = (Provider<d>)se2.h.a((Provider)zk0.i.a((Provider)d.m));
+        this.E = k1.a((Provider)d.m, (Provider)this.D, (Provider)d.n, (Provider)hg0.f.c((Provider)d.j), (Provider)d.i, (Provider)d.o, (Provider)d.p, (Provider)d.q);
+        this.F = kn1.c.b((Provider)this.w, (Provider)d.A0);
+        this.G = (Provider<a>)se2.c.b((Provider)yw.b.b((Provider)this.h, (Provider)d.j, (Provider)d.G, (Provider)d.c, (Provider)this.o));
+        final Provider b8 = se2.c.b((Provider)mg0.x.d((Provider)d.h));
+        this.H = (Provider<mh0.a>)b8;
+        this.I = (Provider<vu1.a>)se2.c.b((Provider)new x((Provider)kl0.g.a((Provider)d.c, (Provider)d.j, (Provider)d.Y, (Provider)d.B2, (Provider)this.z, (Provider)d.c0, (Provider)d.C2, (Provider)d.d0, (Provider)this.B, (Provider)this.C, (Provider)d.F2, (Provider)this.E, (Provider)d.m, (Provider)d.G2, (Provider)d.q2, (Provider)d.H2, (Provider)d.p2, (Provider)d.V, (Provider)d.I2, (Provider)this.F, (Provider)d.M1, (Provider)this.G, (Provider)jx.c.b((Provider)d.q2, (Provider)d.M1, (Provider)this.w, b8)), 21));
+        final k0 b9 = k0.b((Provider)this.G, (Provider)d.p2, (Provider)d.o2, (Provider)d.D0);
+        final Provider<a> g = this.G;
+        this.J = (Provider<ba0.a>)se2.c.b((Provider)new zz.c((Provider)d.M1, (Provider)new vl0.c((Provider)g, (Provider)d.p2, (Provider)d.V, (Provider)b9, (Provider)new cz0.c((Provider)g, 15), (Provider)d.G, (Provider)d.J, 0), 26));
+        this.K = u30.g.a((Provider)d.j, (Provider)d.e2, (Provider)d.J2, (Provider)d.b0, (Provider)d.K2);
+        this.L = (Provider<r0>)se2.c.b((Provider)new ix.b((Provider)d.h, (Provider)d.e2, 17));
+        final zz.c a2 = zz.c.a((Provider)se2.e.a((Object)a), (Provider)d.w);
+        final z0.z2 p6 = d.P1;
+        final z0.y6 e2 = d.e2;
+        final ly.b b10 = new ly.b((Provider)p6, (Provider)e2, 7);
+        final se2.e j = this.j;
+        final z0.z0$u9 w = d.w;
+        final f60.b b11 = new f60.b((Provider)j, (Provider)w, (Provider)d.D1, (Provider)this.k, (Provider)d.L0, (Provider)b10, (Provider)d.W0, 8);
+        final z0.z0$g0 m2 = d.M2;
+        final jt0.e e3 = new jt0.e((Provider)j, (Provider)m2, 6);
+        final z0.z0$j2 h = d.h;
+        final wb0.a a3 = new wb0.a((Provider)h, 11);
+        final hg0.f f = new hg0.f((Provider)h, 8);
+        this.M = (Provider<HeroPostsSearchResultsPresenter>)se2.c.b((Provider)new jv1.c((Provider)this.s, (Provider)this.v, (Provider)this.w, d.c0, (Provider)this.x, d.G, (Provider)this.I, (Provider)this.J, (Provider)this.K, d.j, (Provider)this.L, d.j0, w, (Provider)j, d.r, d.S0, (Provider)a2, d.z2, d.L2, d.j2, (Provider)this.n, d.k2, (Provider)b11, d.p2, e2, (Provider)e3, (Provider)a3, (Provider)new vl0.f((Provider)w, (Provider)f, (Provider)d.N2, (Provider)m2, (Provider)j, (Provider)d.b0, 8), (Provider)f, d.p0));
+    }
+}

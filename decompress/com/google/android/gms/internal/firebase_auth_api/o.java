@@ -1,0 +1,50 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package com.google.android.gms.internal.firebase_auth_api;
+
+import ge.h1;
+import ge.s7;
+import ge.y0;
+
+public final class o extends e implements y0
+{
+    private static final com.google.android.gms.internal.firebase-auth-api.o zzb;
+    private int zze;
+    
+    static {
+        e.d((Class)com.google.android.gms.internal.firebase-auth-api.o.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.o)new o()));
+    }
+    
+    public static s7 s() {
+        return (s7)((e)o.zzb).i();
+    }
+    
+    public static com.google.android.gms.internal.firebase-auth-api.o u() {
+        return o.zzb;
+    }
+    
+    public final Object g(int n) {
+        if (--n == 0) {
+            return 1;
+        }
+        if (n == 2) {
+            return new h1((com.google.android.gms.internal.firebase-auth-api.e)o.zzb, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u000b", new Object[] { "zze" });
+        }
+        if (n == 3) {
+            return new o();
+        }
+        if (n == 4) {
+            return new s7(0);
+        }
+        if (n != 5) {
+            return null;
+        }
+        return o.zzb;
+    }
+    
+    public final int r() {
+        return this.zze;
+    }
+}
