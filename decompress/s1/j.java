@@ -36,10 +36,10 @@ public final class j
                     ++i;
                 }
                 final String substring = s.substring(n, i);
-                sg2.e.e((Object)substring, "this as java.lang.String\u2026ing(startIndex, endIndex)");
+                ng2.e.e((Object)substring, "this as java.lang.String\u2026ing(startIndex, endIndex)");
                 int n2 = substring.length() - 1;
-                int n3;
-                int j = n3 = 0;
+                int j = 0;
+                int n3 = 0;
                 while (j <= n2) {
                     int n4;
                     if (n3 == 0) {
@@ -48,7 +48,7 @@ public final class j
                     else {
                         n4 = n2;
                     }
-                    final boolean b = sg2.e.h((int)substring.charAt(n4), 32) <= 0;
+                    final boolean b = ng2.e.h((int)substring.charAt(n4), 32) <= 0;
                     if (n3 == 0) {
                         if (!b) {
                             n3 = 1;
@@ -67,7 +67,6 @@ public final class j
                 final String string = substring.subSequence(j, n2 + 1).toString();
                 if (string.length() > 0) {
                     float[] array2;
-                    int n17;
                     if (string.charAt(0) != 'z' && string.charAt(0) != 'Z') {
                         final int length = string.length();
                         final float[] array = new float[length];
@@ -77,98 +76,94 @@ public final class j
                         int n5 = 0;
                         while (k < length2) {
                             a.b = false;
-                            final int n6 = 0;
+                            int n6 = 0;
                             int n8;
-                            final int n7 = n8 = n6;
-                            int l = k;
-                            int n9 = n7;
-                            int n10 = n6;
-                            while (l < string.length()) {
+                            int n7 = n8 = 0;
+                            int l;
+                            int n11 = 0;
+                            for (l = k; l < string.length(); ++l, n7 = n11) {
                                 final char char2 = string.charAt(l);
                                 boolean b2 = false;
-                                Label_0389: {
+                                Label_0370: {
                                     if (char2 != ' ') {
                                         if (char2 != ',') {
                                             b2 = false;
-                                            break Label_0389;
+                                            break Label_0370;
                                         }
                                     }
                                     b2 = true;
                                 }
-                                int n13 = 0;
-                                Label_0534: {
-                                    int n11 = 0;
-                                    int n12 = 0;
-                                    Label_0473: {
+                                Label_0507: {
+                                    int n9 = 0;
+                                    int n10 = 0;
+                                    Label_0450: {
                                         if (!b2) {
                                             if (char2 == '-') {
-                                                n11 = n10;
-                                                n12 = n8;
+                                                n9 = n6;
+                                                n10 = n8;
                                                 if (l == k) {
-                                                    break Label_0473;
+                                                    break Label_0450;
                                                 }
-                                                n11 = n10;
-                                                n12 = n8;
-                                                if (n9 != 0) {
-                                                    break Label_0473;
+                                                n9 = n6;
+                                                n10 = n8;
+                                                if (n7 != 0) {
+                                                    break Label_0450;
                                                 }
                                                 a.b = true;
                                             }
                                             else if (char2 == '.') {
-                                                if (n10 == 0) {
-                                                    n11 = 1;
-                                                    n12 = n8;
-                                                    break Label_0473;
+                                                if (n6 == 0) {
+                                                    n9 = 1;
+                                                    n10 = n8;
+                                                    break Label_0450;
                                                 }
                                                 a.b = true;
                                             }
                                             else {
                                                 boolean b3 = false;
-                                                Label_0502: {
+                                                Label_0479: {
                                                     if (char2 != 'e') {
                                                         if (char2 != 'E') {
                                                             b3 = false;
-                                                            break Label_0502;
+                                                            break Label_0479;
                                                         }
                                                     }
                                                     b3 = true;
                                                 }
-                                                n11 = n10;
-                                                n12 = n8;
+                                                n9 = n6;
+                                                n10 = n8;
                                                 if (b3) {
-                                                    n13 = 1;
-                                                    break Label_0534;
+                                                    n11 = 1;
+                                                    break Label_0507;
                                                 }
-                                                break Label_0473;
+                                                break Label_0450;
                                             }
                                         }
-                                        n12 = 1;
-                                        n11 = n10;
+                                        n10 = 1;
+                                        n9 = n6;
                                     }
-                                    final int n14 = 0;
-                                    n8 = n12;
-                                    n13 = n14;
-                                    n10 = n11;
+                                    final int n12 = 0;
+                                    n8 = n10;
+                                    n11 = n12;
+                                    n6 = n9;
                                 }
                                 if (n8 != 0) {
                                     break;
                                 }
-                                ++l;
-                                n9 = n13;
                             }
                             a.a = l;
-                            int n15 = n5;
+                            int n13 = n5;
                             if (k < l) {
                                 final String substring2 = string.substring(k, l);
-                                sg2.e.e((Object)substring2, "this as java.lang.String\u2026ing(startIndex, endIndex)");
+                                ng2.e.e((Object)substring2, "this as java.lang.String\u2026ing(startIndex, endIndex)");
                                 array[n5] = Float.parseFloat(substring2);
-                                n15 = n5 + 1;
+                                n13 = n5 + 1;
                             }
                             if (!a.b) {
                                 ++l;
                             }
                             k = l;
-                            n5 = n15;
+                            n5 = n13;
                         }
                         if (n5 < 0) {
                             throw new IllegalArgumentException();
@@ -176,17 +171,15 @@ public final class j
                         if (length < 0) {
                             throw new IndexOutOfBoundsException();
                         }
-                        final int n16 = n5 + 0;
-                        final int min = Math.min(n16, length + 0);
-                        array2 = new float[n16];
-                        n17 = 0;
+                        final int n14 = n5 + 0;
+                        final int min = Math.min(n14, length + 0);
+                        array2 = new float[n14];
                         System.arraycopy(array, 0, array2, 0, min + 0 - 0);
                     }
                     else {
-                        n17 = 0;
-                        array2 = new float[n17];
+                        array2 = new float[0];
                     }
-                    e.a(string.charAt(n17), array2);
+                    e.a(string.charAt(0), array2);
                 }
                 n = i;
                 ++i;

@@ -4,9 +4,10 @@
 
 package com.reddit.video.player.player.analytics;
 
-import al0.f0;
+import p1.h;
+import aq2.a;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 
 @Metadata(d1 = { "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0086\b\u0018\u00002\u00020\u0001:\u0001\u0019B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\bJ\t\u0010\u000f\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010\u0011\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J5\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005H\u00c6\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0017\u001a\u00020\u0003H\u00d6\u0001J\t\u0010\u0018\u001a\u00020\u0005H\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\fR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\f¨\u0006\u001a" }, d2 = { "Lcom/reddit/video/player/player/analytics/VideoErrorReport;", "", "errorCode", "", "errorMessage", "", "mimeType", "networkType", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getErrorCode", "()I", "getErrorMessage", "()Ljava/lang/String;", "getMimeType", "getNetworkType", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "Code", "player_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
@@ -23,6 +24,32 @@ public final class VideoErrorReport
         this.errorMessage = errorMessage;
         this.mimeType = mimeType;
         this.networkType = networkType;
+    }
+    
+    public VideoErrorReport(final int n, final String s, String s2, String s3, final int n2, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n2 & 0x4) != 0x0) {
+            s2 = null;
+        }
+        if ((n2 & 0x8) != 0x0) {
+            s3 = null;
+        }
+        this(n, s, s2, s3);
+    }
+    
+    public static VideoErrorReport copy$default(final VideoErrorReport videoErrorReport, int errorCode, String errorMessage, String mimeType, String networkType, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            errorCode = videoErrorReport.errorCode;
+        }
+        if ((n & 0x2) != 0x0) {
+            errorMessage = videoErrorReport.errorMessage;
+        }
+        if ((n & 0x4) != 0x0) {
+            mimeType = videoErrorReport.mimeType;
+        }
+        if ((n & 0x8) != 0x0) {
+            networkType = videoErrorReport.networkType;
+        }
+        return videoErrorReport.copy(errorCode, errorMessage, mimeType, networkType);
     }
     
     public final int component1() {
@@ -76,7 +103,7 @@ public final class VideoErrorReport
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.errorMessage, Integer.hashCode(this.errorCode) * 31, 31);
+        final int e = a.e(this.errorMessage, Integer.hashCode(this.errorCode) * 31, 31);
         final String mimeType = this.mimeType;
         int hashCode = 0;
         int hashCode2;
@@ -90,27 +117,37 @@ public final class VideoErrorReport
         if (networkType != null) {
             hashCode = networkType.hashCode();
         }
-        return (c + hashCode2) * 31 + hashCode;
+        return (e + hashCode2) * 31 + hashCode;
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("VideoErrorReport(errorCode=");
-        r.append(this.errorCode);
-        r.append(", errorMessage=");
-        r.append(this.errorMessage);
-        r.append(", mimeType=");
-        r.append(this.mimeType);
-        r.append(", networkType=");
-        return f0.n(r, this.networkType, ')');
+        final StringBuilder t = a.t("VideoErrorReport(errorCode=");
+        t.append(this.errorCode);
+        t.append(", errorMessage=");
+        t.append(this.errorMessage);
+        t.append(", mimeType=");
+        t.append(this.mimeType);
+        t.append(", networkType=");
+        return h.c(t, this.networkType, ')');
     }
     
     @Metadata(d1 = { "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007¨\u0006\b" }, d2 = { "Lcom/reddit/video/player/player/analytics/VideoErrorReport$Code;", "", "numericValue", "", "(Ljava/lang/String;II)V", "getNumericValue", "()I", "LOAD_ERROR", "player_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public enum Code
     {
+        private static final Code[] $VALUES;
+        
         LOAD_ERROR(-1);
         
         private final int numericValue;
+        
+        private static final Code[] $values() {
+            return new Code[] { Code.LOAD_ERROR };
+        }
+        
+        static {
+            $VALUES = $values();
+        }
         
         private Code(final int numericValue) {
             this.numericValue = numericValue;

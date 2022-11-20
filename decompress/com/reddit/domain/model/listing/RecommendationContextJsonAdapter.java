@@ -5,12 +5,12 @@
 package com.reddit.domain.model.listing;
 
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import com.reddit.domain.model.RichTextResponse;
@@ -18,7 +18,7 @@ import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import com.squareup.moshi.JsonAdapter;
 
-@Metadata(bv = {}, d1 = { "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u001e\u001a\u00020\u001d¢\u0006\u0004\b\u001f\u0010 J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0012R\u001c\u0010\u0015\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0012R\u001a\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00160\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0012R\u001c\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00180\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u0012R\u001e\u0010\u001b\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001a8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001b\u0010\u001c¨\u0006!" }, d2 = { "Lcom/reddit/domain/model/listing/RecommendationContextJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/listing/RecommendationContext;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lhg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "Lcom/reddit/domain/model/RichTextResponse;", "nullableRichTextResponseAdapter", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/listing/RecommendationType;", "recommendationTypeAdapter", "nullableStringAdapter", "", "booleanAdapter", "Lcom/reddit/domain/model/listing/RecommendedDiscoverTopic;", "nullableRecommendedDiscoverTopicAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u001e\u001a\u00020\u001d¢\u0006\u0004\b\u001f\u0010 J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0012R\u001c\u0010\u0015\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0012R\u001a\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00160\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0012R\u001c\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00180\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u0012R\u001e\u0010\u001b\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001a8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001b\u0010\u001c¨\u0006!" }, d2 = { "Lcom/reddit/domain/model/listing/RecommendationContextJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/listing/RecommendationContext;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lcg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "Lcom/reddit/domain/model/RichTextResponse;", "nullableRichTextResponseAdapter", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/listing/RecommendationType;", "recommendationTypeAdapter", "nullableStringAdapter", "", "booleanAdapter", "Lcom/reddit/domain/model/listing/RecommendedDiscoverTopic;", "nullableRecommendedDiscoverTopicAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class RecommendationContextJsonAdapter extends JsonAdapter<RecommendationContext>
 {
     private final JsonAdapter<Boolean> booleanAdapter;
@@ -126,7 +126,7 @@ public final class RecommendationContextJsonAdapter extends JsonAdapter<Recommen
                 }
                 case -1: {
                     jsonReader.H();
-                    jsonReader.F1();
+                    jsonReader.G1();
                     continue;
                 }
             }
@@ -147,36 +147,44 @@ public final class RecommendationContextJsonAdapter extends JsonAdapter<Recommen
         return instance;
     }
     
+    public /* bridge */ Object fromJson(final JsonReader jsonReader) {
+        return this.fromJson(jsonReader);
+    }
+    
     public void toJson(final x x, final RecommendationContext recommendationContext) {
         e.f((Object)x, "writer");
         if (recommendationContext != null) {
             x.h();
-            x.u("richtext");
+            x.v("richtext");
             this.nullableRichTextResponseAdapter.toJson(x, (Object)recommendationContext.getRichtext());
-            x.u("recommendation_type");
+            x.v("recommendation_type");
             this.recommendationTypeAdapter.toJson(x, (Object)recommendationContext.getType());
-            x.u("source");
+            x.v("source");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getSource());
-            x.u("source_subreddit_id");
+            x.v("source_subreddit_id");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getSourceSubredditId());
-            x.u("source_subreddit_name");
+            x.v("source_subreddit_name");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getSourceSubredditName());
-            x.u("topic_id");
+            x.v("topic_id");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getTopicId());
-            x.u("recommendations_enabled");
+            x.v("recommendations_enabled");
             this.booleanAdapter.toJson(x, (Object)recommendationContext.getRecommendationPreferenceEnabled());
-            x.u("source_topic_name");
+            x.v("source_topic_name");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getSourceTopicName());
-            x.u("html");
+            x.v("html");
             this.nullableStringAdapter.toJson(x, (Object)recommendationContext.getHtml());
-            x.u("discover_topic");
+            x.v("discover_topic");
             this.nullableRecommendedDiscoverTopicAdapter.toJson(x, (Object)recommendationContext.getDiscoverTopic());
-            x.u("is_context_hidden");
+            x.v("is_context_hidden");
             this.booleanAdapter.toJson(x, (Object)recommendationContext.isContextHidden());
             x.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+    
+    public /* bridge */ void toJson(final x x, final Object o) {
+        this.toJson(x, (RecommendationContext)o);
     }
     
     public String toString() {

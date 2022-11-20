@@ -5,10 +5,10 @@
 package com.google.android.gms.internal.measurement;
 
 import java.util.Arrays;
-import ie.c5;
+import je.z4;
 import java.io.Serializable;
 
-final class zzik implements Serializable, c5
+final class zzik implements Serializable, z4
 {
     public final Object zza;
     
@@ -34,13 +34,12 @@ final class zzik implements Serializable, c5
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("Suppliers.ofInstance(");
-        r.append(this.zza);
-        r.append(")");
-        return r.toString();
+        final StringBuilder t = a.t("Suppliers.ofInstance(");
+        t.append(this.zza);
+        t.append(")");
+        return t.toString();
     }
     
-    @Override
     public final Object zza() {
         return this.zza;
     }

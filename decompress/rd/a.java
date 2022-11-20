@@ -4,11 +4,9 @@
 
 package rd;
 
-import android.os.IBinder;
-
-public final class a extends de.a
+public abstract class a implements b
 {
-    public a(final IBinder binder) {
-        super(binder, "com.google.android.gms.common.internal.service.IClientTelemetryService");
+    public final int describeContents() {
+        return 0;
     }
 }

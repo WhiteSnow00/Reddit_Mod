@@ -4,18 +4,19 @@
 
 package kotlinx.coroutines.flow;
 
-import rg2.p;
-import hj2.v;
-import lg2.c;
-import hj2.e;
-import hj2.a0;
-import hj2.y;
+import cg2.j;
+import cj2.f;
+import mg2.p;
+import cj2.s;
+import gg2.c;
+import cj2.e;
+import cj2.y;
+import cj2.w;
 
-public final class StartedLazily implements y
+public final class StartedLazily implements w
 {
-    @Override
-    public final e<SharingCommand> a(final a0<Integer> a0) {
-        return (e<SharingCommand>)new v((p)new StartedLazily$command$1((a0)a0, (c)null));
+    public final e<SharingCommand> a(final y<Integer> y) {
+        return (e<SharingCommand>)new s((mg2.p<? super cj2.f<? super Object>, ? super c<? super j>, ?>)new StartedLazily$command$1((y)y, (c)null));
     }
     
     @Override

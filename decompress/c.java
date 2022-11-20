@@ -27,7 +27,7 @@ public final class c
             return false;
         }
         final c c = (c)o;
-        return sg2.e.a((Object)this.a, (Object)c.a) && sg2.e.a((Object)this.b, (Object)c.b) && n1.c.a(this.c, c.c) && sg2.e.a((Object)this.d, (Object)c.d);
+        return ng2.e.a((Object)this.a, (Object)c.a) && ng2.e.a((Object)this.b, (Object)c.b) && n1.c.c(this.c, c.c) && ng2.e.a((Object)this.d, (Object)c.d);
     }
     
     @Override
@@ -41,15 +41,15 @@ public final class c
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("Label(name=");
-        r.append(this.a);
-        r.append(", paint=");
-        r.append(this.b);
-        r.append(", position=");
-        r.append((Object)n1.c.h(this.c));
-        r.append(", bounds=");
-        r.append(this.d);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("Label(name=");
+        t.append(this.a);
+        t.append(", paint=");
+        t.append(this.b);
+        t.append(", position=");
+        t.append((Object)n1.c.j(this.c));
+        t.append(", bounds=");
+        t.append(this.d);
+        t.append(')');
+        return t.toString();
     }
 }

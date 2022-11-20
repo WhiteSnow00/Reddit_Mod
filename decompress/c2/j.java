@@ -4,10 +4,15 @@
 
 package c2;
 
-import androidx.compose.ui.unit.LayoutDirection;
-import u2.b;
-
-public interface j extends b
+public interface j
 {
-    LayoutDirection getLayoutDirection();
+    int L(final int p0);
+    
+    Object b();
+    
+    int l0(final int p0);
+    
+    int r0(final int p0);
+    
+    int t(final int p0);
 }

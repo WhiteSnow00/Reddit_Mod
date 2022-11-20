@@ -4,10 +4,10 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\t\b\u0086\b\u0018\u00002\u00020\u0001B%\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0004\b\u001b\u0010\u001cJ\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u0010\u0006\u001a\u00020\u0004J\u000b\u0010\b\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J\u000b\u0010\t\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J\u000b\u0010\n\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J-\u0010\u000e\u001a\u00020\u00002\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007H\u00c6\u0001J\t\u0010\u0010\u001a\u00020\u000fH\u00d6\u0001J\t\u0010\u0012\u001a\u00020\u0011H\u00d6\u0001J\u0013\u0010\u0015\u001a\u00020\u00142\b\u0010\u0013\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u0016\u001a\u0004\b\u0017\u0010\u0018R\u0019\u0010\f\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\f\u0010\u0016\u001a\u0004\b\u0019\u0010\u0018R\u0019\u0010\r\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\r\u0010\u0016\u001a\u0004\b\u001a\u0010\u0018¨\u0006\u001d" }, d2 = { "Lcom/reddit/domain/model/PostSubmitValidationErrors;", "", "Lcom/reddit/domain/model/ErrorField;", "errorField", "Lhg2/j;", "hideValidationError", "hideAllValidationErrors", "Lcom/reddit/domain/model/ValidationError;", "component1", "component2", "component3", "titleError", "flairError", "contentError", "copy", "", "toString", "", "hashCode", "other", "", "equals", "Lcom/reddit/domain/model/ValidationError;", "getTitleError", "()Lcom/reddit/domain/model/ValidationError;", "getFlairError", "getContentError", "<init>", "(Lcom/reddit/domain/model/ValidationError;Lcom/reddit/domain/model/ValidationError;Lcom/reddit/domain/model/ValidationError;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\t\b\u0086\b\u0018\u00002\u00020\u0001B%\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0004\b\u001b\u0010\u001cJ\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u0010\u0006\u001a\u00020\u0004J\u000b\u0010\b\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J\u000b\u0010\t\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J\u000b\u0010\n\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003J-\u0010\u000e\u001a\u00020\u00002\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007H\u00c6\u0001J\t\u0010\u0010\u001a\u00020\u000fH\u00d6\u0001J\t\u0010\u0012\u001a\u00020\u0011H\u00d6\u0001J\u0013\u0010\u0015\u001a\u00020\u00142\b\u0010\u0013\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u0016\u001a\u0004\b\u0017\u0010\u0018R\u0019\u0010\f\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\f\u0010\u0016\u001a\u0004\b\u0019\u0010\u0018R\u0019\u0010\r\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b\r\u0010\u0016\u001a\u0004\b\u001a\u0010\u0018¨\u0006\u001d" }, d2 = { "Lcom/reddit/domain/model/PostSubmitValidationErrors;", "", "Lcom/reddit/domain/model/ErrorField;", "errorField", "Lcg2/j;", "hideValidationError", "hideAllValidationErrors", "Lcom/reddit/domain/model/ValidationError;", "component1", "component2", "component3", "titleError", "flairError", "contentError", "copy", "", "toString", "", "hashCode", "other", "", "equals", "Lcom/reddit/domain/model/ValidationError;", "getTitleError", "()Lcom/reddit/domain/model/ValidationError;", "getFlairError", "getContentError", "<init>", "(Lcom/reddit/domain/model/ValidationError;Lcom/reddit/domain/model/ValidationError;Lcom/reddit/domain/model/ValidationError;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class PostSubmitValidationErrors
 {
     private final ValidationError contentError;
@@ -18,6 +18,19 @@ public final class PostSubmitValidationErrors
         this.titleError = titleError;
         this.flairError = flairError;
         this.contentError = contentError;
+    }
+    
+    public static PostSubmitValidationErrors copy$default(final PostSubmitValidationErrors postSubmitValidationErrors, ValidationError titleError, ValidationError flairError, ValidationError contentError, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            titleError = postSubmitValidationErrors.titleError;
+        }
+        if ((n & 0x2) != 0x0) {
+            flairError = postSubmitValidationErrors.flairError;
+        }
+        if ((n & 0x4) != 0x0) {
+            contentError = postSubmitValidationErrors.contentError;
+        }
+        return postSubmitValidationErrors.copy(titleError, flairError, contentError);
     }
     
     public final ValidationError component1() {
@@ -94,7 +107,7 @@ public final class PostSubmitValidationErrors
     
     public final void hideValidationError(final ErrorField errorField) {
         e.f((Object)errorField, "errorField");
-        final int n = PostSubmitValidationErrors.PostSubmitValidationErrors$WhenMappings.$EnumSwitchMapping$0[((Enum)errorField).ordinal()];
+        final int n = WhenMappings.$EnumSwitchMapping$0[((Enum)errorField).ordinal()];
         if (n != 1) {
             if (n != 2) {
                 if (n == 3 || n == 4) {
@@ -121,13 +134,28 @@ public final class PostSubmitValidationErrors
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("PostSubmitValidationErrors(titleError=");
-        r.append(this.titleError);
-        r.append(", flairError=");
-        r.append(this.flairError);
-        r.append(", contentError=");
-        r.append(this.contentError);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("PostSubmitValidationErrors(titleError=");
+        t.append(this.titleError);
+        t.append(", flairError=");
+        t.append(this.flairError);
+        t.append(", contentError=");
+        t.append(this.contentError);
+        t.append(')');
+        return t.toString();
+    }
+    
+    @Metadata(k = 3, mv = { 1, 7, 1 }, xi = 48)
+    public final class WhenMappings
+    {
+        public static final int[] $EnumSwitchMapping$0;
+        
+        static {
+            final int[] $EnumSwitchMapping$ = new int[ErrorField.values().length];
+            $EnumSwitchMapping$[((Enum)ErrorField.TITLE).ordinal()] = 1;
+            $EnumSwitchMapping$[((Enum)ErrorField.FLAIR).ordinal()] = 2;
+            $EnumSwitchMapping$[((Enum)ErrorField.BODY).ordinal()] = 3;
+            $EnumSwitchMapping$[((Enum)ErrorField.LINK).ordinal()] = 4;
+            $EnumSwitchMapping$0 = $EnumSwitchMapping$;
+        }
     }
 }

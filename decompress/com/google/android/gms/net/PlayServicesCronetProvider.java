@@ -7,14 +7,14 @@ package com.google.android.gms.net;
 import java.util.Arrays;
 import com.google.android.gms.dynamite.DynamiteModule;
 import java.lang.reflect.InvocationTargetException;
-import org.chromium.net.ExperimentalCronetEngine$Builder;
+import org.chromium.net.ExperimentalCronetEngine;
 import org.chromium.net.ICronetEngineBuilder;
-import lw0.b;
+import mg.d0;
 import org.chromium.net.CronetEngine$Builder;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import android.util.Log;
-import qe.a;
+import re.a;
 import com.google.android.apps.common.proguard.UsedByReflection;
 import android.content.Context;
 import androidx.annotation.Keep;
@@ -57,10 +57,10 @@ public class PlayServicesCronetProvider extends CronetProvider
                 synchronized (o) {
                     final DynamiteModule c = a.c;
                     monitorexit(o);
-                    b.R((Object)c);
+                    d0.y((Object)c);
                     o = c.a.getClassLoader();
-                    b.R(o);
-                    o = new ExperimentalCronetEngine$Builder((ICronetEngineBuilder)((ClassLoader)o).loadClass("org.chromium.net.impl.NativeCronetEngineBuilderImpl").asSubclass(ICronetEngineBuilder.class).getConstructor(Context.class).newInstance(super.mContext));
+                    d0.y(o);
+                    o = new ExperimentalCronetEngine.Builder((ICronetEngineBuilder)((ClassLoader)o).loadClass("org.chromium.net.impl.NativeCronetEngineBuilderImpl").asSubclass(ICronetEngineBuilder.class).getConstructor(Context.class).newInstance(super.mContext));
                 }
             }
             catch (final InvocationTargetException o) {}
@@ -72,7 +72,7 @@ public class PlayServicesCronetProvider extends CronetProvider
             final ClassLoader classLoader2 = (ClassLoader)o;
             o = classLoader;
             if (classLoader2 == null) {
-                b.S(o, "The value of the constructed builder should never be null");
+                d0.z(o, "The value of the constructed builder should never be null");
                 return (CronetEngine$Builder)o;
             }
             throw new RuntimeException("Unable to construct the implementation of the Cronet Engine Builder: org.chromium.net.impl.NativeCronetEngineBuilderImpl", (Throwable)classLoader2);

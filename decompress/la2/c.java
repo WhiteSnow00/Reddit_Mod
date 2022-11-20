@@ -4,15 +4,8 @@
 
 package la2;
 
-import android.view.View;
-import androidx.recyclerview.widget.RecyclerView$f0;
+import o81.d;
 
-public final class c extends RecyclerView$f0
+public interface c extends d
 {
-    public final lg1.c f;
-    
-    public c(final lg1.c f) {
-        super((View)f.a());
-        this.f = f;
-    }
 }

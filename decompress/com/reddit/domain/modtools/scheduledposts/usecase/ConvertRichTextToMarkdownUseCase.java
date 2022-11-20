@@ -6,16 +6,17 @@ package com.reddit.domain.modtools.scheduledposts.usecase;
 
 import java.util.concurrent.CancellationException;
 import kotlin.jvm.internal.DefaultConstructorMarker;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import com.reddit.domain.model.Result;
-import lg2.c;
+import gg2.c;
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.modtools.scheduledposts.ScheduledPostRepository;
-import m20.b;
+import p20.b;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0019\b\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0086@\u00f8\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006R\u0014\u0010\b\u001a\u00020\u00078\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\b\u0010\t\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u000e" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/usecase/ConvertRichTextToMarkdownUseCase;", "", "", "rtJson", "Lcom/reddit/domain/model/Result;", "execute", "(Ljava/lang/String;Llg2/c;)Ljava/lang/Object;", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "scheduledPostRepository", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "Lm20/b;", "resourceProvider", "<init>", "(Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;Lm20/b;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0019\b\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0086@\u00f8\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006R\u0014\u0010\b\u001a\u00020\u00078\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\b\u0010\t\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u000e" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/usecase/ConvertRichTextToMarkdownUseCase;", "", "", "rtJson", "Lcom/reddit/domain/model/Result;", "execute", "(Ljava/lang/String;Lgg2/c;)Ljava/lang/Object;", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "scheduledPostRepository", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "Lp20/b;", "resourceProvider", "<init>", "(Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;Lp20/b;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
 public final class ConvertRichTextToMarkdownUseCase
 {
     private final b resourceProvider;
@@ -31,14 +32,14 @@ public final class ConvertRichTextToMarkdownUseCase
     
     public final Object execute(String ex, final c<? super Result<String>> c) {
         Object o = null;
-        Label_0050: {
+        Label_0051: {
             if (c instanceof ConvertRichTextToMarkdownUseCase$execute$1) {
                 final ConvertRichTextToMarkdownUseCase$execute$1 convertRichTextToMarkdownUseCase$execute$1 = (ConvertRichTextToMarkdownUseCase$execute$1)c;
                 final int label = convertRichTextToMarkdownUseCase$execute$1.label;
                 if ((label & Integer.MIN_VALUE) != 0x0) {
                     convertRichTextToMarkdownUseCase$execute$1.label = label + Integer.MIN_VALUE;
                     o = convertRichTextToMarkdownUseCase$execute$1;
-                    break Label_0050;
+                    break Label_0051;
                 }
             }
             o = new ConvertRichTextToMarkdownUseCase$execute$1(this, (c)c);
@@ -56,10 +57,10 @@ public final class ConvertRichTextToMarkdownUseCase
                 }
                 ex = (CancellationException)((ConvertRichTextToMarkdownUseCase$execute$1)o).L$0;
                 try {
-                    yd.b.k0(o2);
-                    Label_0143: {
-                        break Label_0143;
-                        yd.b.k0(o2);
+                    d.b4(o2);
+                    Label_0148: {
+                        break Label_0148;
+                        d.b4(o2);
                         try {
                             final ScheduledPostRepository scheduledPostRepository = this.scheduledPostRepository;
                             ((ConvertRichTextToMarkdownUseCase$execute$1)o).L$0 = this;
@@ -75,7 +76,7 @@ public final class ConvertRichTextToMarkdownUseCase
                             ex = (CancellationException)this;
                         }
                     }
-                    ex = (CancellationException)new Result.Error(((ConvertRichTextToMarkdownUseCase)ex).resourceProvider.getString(2131953262), false, null, 6, null);
+                    ex = (CancellationException)new Result.Error(((ConvertRichTextToMarkdownUseCase)ex).resourceProvider.getString(2131953281), false, null, 6, null);
                     return ex;
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
@@ -83,7 +84,7 @@ public final class ConvertRichTextToMarkdownUseCase
                     throw ex;
                 }
                 finally {
-                    return new Result.Error(((ConvertRichTextToMarkdownUseCase)ex).resourceProvider.getString(2131953262), false, null, 6, null);
+                    return new Result.Error(((ConvertRichTextToMarkdownUseCase)ex).resourceProvider.getString(2131953281), false, null, 6, null);
                 }
             }
         }

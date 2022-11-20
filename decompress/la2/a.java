@@ -4,24 +4,13 @@
 
 package la2;
 
-import sg2.e;
-import androidx.recyclerview.widget.n;
+import java.math.BigInteger;
 
-public final class a extends f<la2.b>
+public abstract class a
 {
-    public static final a a;
+    public final BigInteger a;
     
-    static {
-        a = new a();
-    }
-    
-    @Override
-    public final boolean a(final Object o, final Object o2) {
-        return sg2.e.a((Object)o, (Object)o2);
-    }
-    
-    @Override
-    public final boolean b(final Object o, final Object o2) {
-        return sg2.e.a((Object)o, (Object)o2);
+    public a(final BigInteger a) {
+        this.a = a;
     }
 }

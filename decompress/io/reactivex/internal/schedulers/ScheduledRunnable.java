@@ -6,7 +6,7 @@ package io.reactivex.internal.schedulers;
 
 import io.reactivex.plugins.RxJavaPlugins;
 import java.util.concurrent.Future;
-import if2.a;
+import df2.a;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 
@@ -29,10 +29,10 @@ public final class ScheduledRunnable extends AtomicReferenceArray<Object> implem
         DONE = new Object();
     }
     
-    public ScheduledRunnable(final Runnable actual, final lf2.a a) {
+    public ScheduledRunnable(final Runnable actual, final gf2.a a) {
         super(3);
         this.actual = actual;
-        ((AtomicReferenceArray<lf2.a>)this).lazySet(0, a);
+        ((AtomicReferenceArray<gf2.a>)this).lazySet(0, a);
     }
     
     @Override
@@ -62,10 +62,10 @@ public final class ScheduledRunnable extends AtomicReferenceArray<Object> implem
                         }
                     }
                 }
-                lf2.a value2;
+                gf2.a value2;
                 Object parent_DISPOSED;
                 do {
-                    value2 = ((AtomicReferenceArray<lf2.a>)this).get(0);
+                    value2 = ((AtomicReferenceArray<gf2.a>)this).get(0);
                     if (value2 != ScheduledRunnable.DONE) {
                         parent_DISPOSED = ScheduledRunnable.PARENT_DISPOSED;
                         if (value2 != parent_DISPOSED) {
@@ -75,7 +75,7 @@ public final class ScheduledRunnable extends AtomicReferenceArray<Object> implem
                         }
                     }
                     return;
-                } while (!((AtomicReferenceArray<lf2.a>)this).compareAndSet(0, value2, parent_DISPOSED));
+                } while (!((AtomicReferenceArray<gf2.a>)this).compareAndSet(0, value2, parent_DISPOSED));
                 value2.delete((a)this);
                 return;
             } while (!((AtomicReferenceArray<Future>)this).compareAndSet(1, value, sync_DISPOSED));
@@ -108,7 +108,7 @@ public final class ScheduledRunnable extends AtomicReferenceArray<Object> implem
                     final Throwable t;
                     RxJavaPlugins.onError(t);
                     this.lazySet(2, null);
-                    final lf2.a value = ((AtomicReferenceArray<lf2.a>)this).get(0);
+                    final gf2.a value = ((AtomicReferenceArray<gf2.a>)this).get(0);
                     if (value != ScheduledRunnable.PARENT_DISPOSED && this.compareAndSet(0, value, ScheduledRunnable.DONE) && value != null) {
                         value.delete((a)this);
                     }
@@ -119,7 +119,7 @@ public final class ScheduledRunnable extends AtomicReferenceArray<Object> implem
                 }
                 finally {
                     this.lazySet(2, null);
-                    final lf2.a value3 = ((AtomicReferenceArray<lf2.a>)this).get(0);
+                    final gf2.a value3 = ((AtomicReferenceArray<gf2.a>)this).get(0);
                     if (value3 != ScheduledRunnable.PARENT_DISPOSED && this.compareAndSet(0, value3, ScheduledRunnable.DONE) && value3 != null) {
                         value3.delete((a)this);
                     }

@@ -5,13 +5,13 @@
 package kotlinx.coroutines.flow.internal;
 
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import vl.a;
+import mg.d0;
 import kotlinx.coroutines.internal.ThreadContextKt;
-import hg2.j;
-import lg2.c;
-import rg2.p;
+import cg2.j;
+import gg2.c;
+import mg2.p;
 import kotlin.coroutines.CoroutineContext;
-import hj2.f;
+import cj2.f;
 
 public final class UndispatchedContextCollector<T> implements f<T>
 {
@@ -25,11 +25,10 @@ public final class UndispatchedContextCollector<T> implements f<T>
         this.h = (p<T, c<? super j>, Object>)new UndispatchedContextCollector$emitRef$1((f)f, (c)null);
     }
     
-    @Override
     public final Object emit(final T t, final c<? super j> c) {
-        final Object k0 = a.K0(this.f, (Object)t, this.g, (p)this.h, (c)c);
-        if (k0 == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return k0;
+        final Object r1 = d0.r1(this.f, (Object)t, this.g, (p)this.h, (c)c);
+        if (r1 == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return r1;
         }
         return j.a;
     }

@@ -4,46 +4,55 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.c9;
-import ge.h1;
-import com.google.android.gms.internal.firebase-auth-api.zzacf;
-import ge.r;
+import he.g1;
+import he.r;
 import com.google.android.gms.internal.firebase-auth-api.zzaau;
-import ge.y0;
+import he.b9;
+import he.x0;
 
-public final class w0 extends e implements y0
+public final class w0 extends e implements x0
 {
     private static final com.google.android.gms.internal.firebase-auth-api.w0 zzb;
-    private String zze;
+    private int zze;
+    private com.google.android.gms.internal.firebase-auth-api.x0 zzf;
     
     static {
         e.d((Class)com.google.android.gms.internal.firebase-auth-api.w0.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.w0)new w0()));
     }
     
-    public w0() {
-        this.zze = "";
+    public static b9 s() {
+        return (b9)((e)w0.zzb).k();
     }
     
-    public static com.google.android.gms.internal.firebase-auth-api.w0 s() {
+    public static com.google.android.gms.internal.firebase-auth-api.w0 t() {
         return w0.zzb;
     }
     
-    public static com.google.android.gms.internal.firebase-auth-api.w0 t(final zzaau zzaau, final r r) throws zzacf {
+    public static com.google.android.gms.internal.firebase-auth-api.w0 u(final zzaau zzaau, final r r) throws zzacf {
         return (com.google.android.gms.internal.firebase-auth-api.w0)e.p((com.google.android.gms.internal.firebase-auth-api.e)w0.zzb, zzaau, r);
     }
     
-    public final Object g(int n) {
+    public static void w(final com.google.android.gms.internal.firebase-auth-api.w0 w0) {
+        ((w0)w0).zze = 0;
+    }
+    
+    public static void x(final com.google.android.gms.internal.firebase-auth-api.w0 w0, final com.google.android.gms.internal.firebase-auth-api.x0 zzf) {
+        zzf.getClass();
+        ((w0)w0).zzf = zzf;
+    }
+    
+    public final Object h(int n) {
         if (--n == 0) {
             return 1;
         }
         if (n == 2) {
-            return new h1((com.google.android.gms.internal.firebase-auth-api.e)w0.zzb, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u0208", new Object[] { "zze" });
+            return new g1((com.google.android.gms.internal.firebase-auth-api.e)w0.zzb, "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u000b\u0002\t", new Object[] { "zze", "zzf" });
         }
         if (n == 3) {
             return new w0();
         }
         if (n == 4) {
-            return new c9();
+            return new b9(0);
         }
         if (n != 5) {
             return null;
@@ -51,7 +60,15 @@ public final class w0 extends e implements y0
         return w0.zzb;
     }
     
-    public final String u() {
+    public final int r() {
         return this.zze;
+    }
+    
+    public final com.google.android.gms.internal.firebase-auth-api.x0 v() {
+        com.google.android.gms.internal.firebase-auth-api.x0 x0;
+        if ((x0 = this.zzf) == null) {
+            x0 = com.google.android.gms.internal.firebase_auth_api.x0.s();
+        }
+        return x0;
     }
 }

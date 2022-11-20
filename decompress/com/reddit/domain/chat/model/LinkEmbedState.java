@@ -12,4 +12,8 @@ public abstract class LinkEmbedState
 {
     private LinkEmbedState() {
     }
+    
+    public LinkEmbedState(final DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
 }

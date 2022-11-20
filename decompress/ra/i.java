@@ -4,15 +4,24 @@
 
 package ra;
 
-import ma.b;
+import com.google.android.datatransport.runtime.c;
+import ta.a$a;
 
-public final class i implements b<e>
+public final class i implements a$a
 {
-    public final Object get() {
-        final a a = e.a;
-        if (a != null) {
-            return a;
-        }
-        throw new NullPointerException("Cannot return null from a non-@Nullable @Provides method");
+    public final j f;
+    public final c g;
+    public final long h;
+    
+    public i(final j f, final c g, final long h) {
+        this.f = f;
+        this.g = g;
+        this.h = h;
+    }
+    
+    public final Object execute() {
+        final j f = this.f;
+        f.c.h2(f.g.a() + this.h, this.g);
+        return null;
     }
 }

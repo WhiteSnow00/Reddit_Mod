@@ -4,47 +4,53 @@
 
 package e8;
 
-import java.util.Iterator;
-import f8.h;
-import java.util.ArrayList;
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
+import android.animation.AnimatorSet;
 import android.view.View;
-import android.view.ViewTreeObserver$OnPreDrawListener;
+import android.view.ViewGroup;
+import com.bluelinelabs.conductor.c;
 
-public final class b implements ViewTreeObserver$OnPreDrawListener
+public final class b extends a
 {
-    public boolean f;
-    public final /* synthetic */ View g;
-    public final /* synthetic */ n.a h;
-    public final /* synthetic */ j i;
-    
-    public b(final j i, final View g, final a h) {
-        this.i = i;
-        this.g = g;
-        this.h = h;
+    public b() {
     }
     
-    public final boolean onPreDraw() {
-        final ArrayList list = new ArrayList();
-        while (true) {
-            for (final String s : this.i.m) {
-                if (f8.h.b(this.g, s) == null) {
-                    final boolean b = false;
-                    if (b && !this.f) {
-                        this.f = true;
-                        final j i = this.i;
-                        final View g = this.g;
-                        final n.a h = this.h;
-                        i.getClass();
-                        for (final View view : list) {
-                            j.a.a(view, new c(i, view, g, (ViewTreeObserver$OnPreDrawListener)this, h));
-                        }
-                    }
-                    return false;
-                }
-                list.add(f8.h.b(this.g, s));
+    public b(final long n) {
+        super(n);
+    }
+    
+    public b(final long n, final boolean b) {
+        super(n, b);
+    }
+    
+    public b(final boolean b) {
+        super(b);
+    }
+    
+    public final c c() {
+        return (c)new b(super.i, super.j);
+    }
+    
+    public final AnimatorSet o(final ViewGroup viewGroup, final View view, final View view2, final boolean b, final boolean b2) {
+        final AnimatorSet set = new AnimatorSet();
+        if (view2 != null) {
+            float alpha;
+            if (b2) {
+                alpha = 0.0f;
             }
-            final boolean b = true;
-            continue;
+            else {
+                alpha = view2.getAlpha();
+            }
+            set.play((Animator)ObjectAnimator.ofFloat((Object)view2, View.ALPHA, new float[] { alpha, 1.0f }));
         }
+        if (view != null && (!b || super.j)) {
+            set.play((Animator)ObjectAnimator.ofFloat((Object)view, View.ALPHA, new float[] { 0.0f }));
+        }
+        return set;
+    }
+    
+    public final void q(final View view) {
+        view.setAlpha(1.0f);
     }
 }

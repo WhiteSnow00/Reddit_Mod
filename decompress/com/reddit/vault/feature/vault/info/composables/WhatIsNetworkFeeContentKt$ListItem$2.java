@@ -4,18 +4,18 @@
 
 package com.reddit.vault.feature.vault.info.composables;
 
-import ia2.a;
+import ca2.a;
 import kotlin.Metadata;
-import hg2.j;
+import cg2.j;
 import z0.d;
-import rg2.p;
+import mg2.p;
 import kotlin.jvm.internal.Lambda;
 
 @Metadata(k = 3, mv = { 1, 7, 1 }, xi = 48)
-final class WhatIsNetworkFeeContentKt$ListItem$2 extends Lambda implements p<z0.d, Integer, j>
+final class WhatIsNetworkFeeContentKt$ListItem$2 extends Lambda implements p<d, Integer, j>
 {
-    public final /* synthetic */ int $$changed;
-    public final /* synthetic */ a $listItem;
+    public final int $$changed;
+    public final a $listItem;
     
     public WhatIsNetworkFeeContentKt$ListItem$2(final a $listItem, final int $$changed) {
         this.$listItem = $listItem;
@@ -23,7 +23,12 @@ final class WhatIsNetworkFeeContentKt$ListItem$2 extends Lambda implements p<z0.
         super(2);
     }
     
-    public final void invoke(final z0.d d, final int n) {
+    public /* bridge */ Object invoke(final Object o, final Object o2) {
+        this.invoke((d)o, ((Number)o2).intValue());
+        return j.a;
+    }
+    
+    public final void invoke(final d d, final int n) {
         WhatIsNetworkFeeContentKt.b(this.$listItem, d, this.$$changed | 0x1);
     }
 }

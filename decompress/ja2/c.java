@@ -4,18 +4,10 @@
 
 package ja2;
 
-import java.util.Date;
-import x82.h;
+import ga2.h;
+import o81.d;
 
-public interface c
+public interface c extends d
 {
-    void C(final CharSequence p0);
-    
-    void I8();
-    
-    void Rr(final h p0, final Date p1, final String p2, final String p3);
-    
-    void hideLoading();
-    
-    void showLoading();
+    void F3(final h p0);
 }

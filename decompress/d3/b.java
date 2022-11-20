@@ -27,7 +27,7 @@ public final class b implements a, c
         if (this.b == null) {
             this.b = new e();
         }
-        return (ConstraintWidget)this.b;
+        return this.b;
     }
     
     public final void apply() {
@@ -35,16 +35,16 @@ public final class b implements a, c
         final int a = this.a;
         if (b.s0 != a) {
             b.s0 = a;
-            ((ConstraintWidget)b).P.clear();
+            b.P.clear();
             if (b.s0 == 1) {
-                b.r0 = ((ConstraintWidget)b).G;
+                b.r0 = b.G;
             }
             else {
-                b.r0 = ((ConstraintWidget)b).H;
+                b.r0 = b.H;
             }
-            ((ConstraintWidget)b).P.add(b.r0);
-            for (int length = ((ConstraintWidget)b).O.length, i = 0; i < length; ++i) {
-                ((ConstraintWidget)b).O[i] = b.r0;
+            b.P.add(b.r0);
+            for (int length = b.O.length, i = 0; i < length; ++i) {
+                b.O[i] = b.r0;
             }
         }
         final int c = this.c;

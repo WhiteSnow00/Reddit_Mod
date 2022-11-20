@@ -5,11 +5,11 @@
 package com.reddit.data.predictions.usecase;
 
 import java.io.IOException;
-import yd.b;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import lg2.c;
+import gg2.c;
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import pd0.a;
 
 public final class RedditCanCreatePredictionInSubredditUseCase implements a
@@ -39,14 +39,14 @@ public final class RedditCanCreatePredictionInSubredditUseCase implements a
     
     public final Object b(final String s, final c<? super Boolean> c) {
         Object o = null;
-        Label_0050: {
+        Label_0051: {
             if (c instanceof RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1) {
                 final RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1 redditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1 = (RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1)c;
                 final int label = redditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1.label;
                 if ((label & Integer.MIN_VALUE) != 0x0) {
                     redditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1.label = label + Integer.MIN_VALUE;
                     o = redditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1;
-                    break Label_0050;
+                    break Label_0051;
                 }
             }
             o = new RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1(this, (c)c);
@@ -56,23 +56,23 @@ public final class RedditCanCreatePredictionInSubredditUseCase implements a
         final int label2 = ((RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1)o).label;
         if (label2 != 0) {
             if (label2 == 1) {
-                Label_0149: {
+                Label_0153: {
                     try {
-                        b.k0(result);
+                        d.b4(result);
                         return result;
                     }
                     catch (final IOException ex) {
-                        break Label_0149;
+                        break Label_0153;
                     }
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 final IOException ex;
-                su2.a.a.j((Throwable)ex, "Failed checking prediction creation eligibility in use case", new Object[0]);
+                pu2.a.a.j((Throwable)ex, "Failed checking prediction creation eligibility in use case", new Object[0]);
                 return Boolean.FALSE;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        b.k0(result);
+        d.b4(result);
         final od0.a a2 = this.a;
         ((RedditCanCreatePredictionInSubredditUseCase$fetchFromRepo$1)o).label = 1;
         Object a;

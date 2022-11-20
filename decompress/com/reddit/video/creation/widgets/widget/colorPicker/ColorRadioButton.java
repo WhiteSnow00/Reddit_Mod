@@ -9,16 +9,16 @@ import android.view.View;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint$Style;
-import aa1.a;
+import zg.a;
 import android.util.AttributeSet;
-import sg2.e;
+import ng2.e;
 import android.content.Context;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import android.graphics.Paint;
 import kotlin.Metadata;
 import androidx.appcompat.widget.q;
 
-@Metadata(bv = {}, d1 = { "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB'\b\u0007\u0012\u0006\u0010\u0016\u001a\u00020\u0015\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0017\u0012\b\b\u0002\u0010\u0019\u001a\u00020\u000e¢\u0006\u0004\b\u001a\u0010\u001bJ\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u0012\u0010\u0006\u001a\u00020\u00022\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004H\u0014J\u0010\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007H\u0016R\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u000b\u0010\fR\u0016\u0010\r\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\r\u0010\fR\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0087\u000e¢\u0006\u0012\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014¨\u0006\u001d" }, d2 = { "Lcom/reddit/video/creation/widgets/widget/colorPicker/ColorRadioButton;", "Landroidx/appcompat/widget/q;", "Lhg2/j;", "init", "Landroid/graphics/Canvas;", "canvas", "onDraw", "", "checked", "setChecked", "Landroid/graphics/Paint;", "mainColorPaint", "Landroid/graphics/Paint;", "selectedStrokePaint", "", "radioColor", "I", "getRadioColor", "()I", "setRadioColor", "(I)V", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Companion", "widgets_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB'\b\u0007\u0012\u0006\u0010\u0016\u001a\u00020\u0015\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0017\u0012\b\b\u0002\u0010\u0019\u001a\u00020\u000e¢\u0006\u0004\b\u001a\u0010\u001bJ\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u0012\u0010\u0006\u001a\u00020\u00022\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004H\u0014J\u0010\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007H\u0016R\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u000b\u0010\fR\u0016\u0010\r\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\r\u0010\fR\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0087\u000e¢\u0006\u0012\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014¨\u0006\u001d" }, d2 = { "Lcom/reddit/video/creation/widgets/widget/colorPicker/ColorRadioButton;", "Landroidx/appcompat/widget/q;", "Lcg2/j;", "init", "Landroid/graphics/Canvas;", "canvas", "onDraw", "", "checked", "setChecked", "Landroid/graphics/Paint;", "mainColorPaint", "Landroid/graphics/Paint;", "selectedStrokePaint", "", "radioColor", "I", "getRadioColor", "()I", "setRadioColor", "(I)V", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Companion", "widgets_release" }, k = 1, mv = { 1, 7, 1 })
 public final class ColorRadioButton extends q
 {
     private static final float CHECKED_STROKE_WIDTH = 3.0f;
@@ -45,10 +45,10 @@ public final class ColorRadioButton extends q
         this(context, set, 0, 4, null);
     }
     
-    public ColorRadioButton(final Context context, AttributeSet obtainStyledAttributes, final int n) {
-        e.f((Object)context, "context");
-        super(context, obtainStyledAttributes, n);
-        obtainStyledAttributes = (AttributeSet)context.obtainStyledAttributes(obtainStyledAttributes, a.n, 0, 0);
+    public ColorRadioButton(Context obtainStyledAttributes, final AttributeSet set, final int n) {
+        e.f((Object)obtainStyledAttributes, "context");
+        super(obtainStyledAttributes, set, n);
+        obtainStyledAttributes = (Context)obtainStyledAttributes.obtainStyledAttributes(set, a.o, 0, 0);
         e.e((Object)obtainStyledAttributes, "context.obtainStyledAttr\u2026e.ColorRadioButton, 0, 0)");
         try {
             this.radioColor = ((TypedArray)obtainStyledAttributes).getColor(0, -1);
@@ -58,6 +58,16 @@ public final class ColorRadioButton extends q
         finally {
             ((TypedArray)obtainStyledAttributes).recycle();
         }
+    }
+    
+    public ColorRadioButton(final Context context, AttributeSet set, int n, final int n2, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n2 & 0x2) != 0x0) {
+            set = null;
+        }
+        if ((n2 & 0x4) != 0x0) {
+            n = 0;
+        }
+        this(context, set, n);
     }
     
     private final void init() {

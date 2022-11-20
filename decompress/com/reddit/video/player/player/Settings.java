@@ -4,7 +4,6 @@
 
 package com.reddit.video.player.player;
 
-import al0.g7;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -23,6 +22,32 @@ public final class Settings
         this.autoplay = autoplay;
         this.loop = loop;
         this.disabled = disabled;
+    }
+    
+    public Settings(boolean b, boolean b2, boolean b3, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            b = false;
+        }
+        if ((n & 0x2) != 0x0) {
+            b2 = false;
+        }
+        if ((n & 0x4) != 0x0) {
+            b3 = false;
+        }
+        this(b, b2, b3);
+    }
+    
+    public static Settings copy$default(final Settings settings, boolean autoplay, boolean loop, boolean disabled, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            autoplay = settings.autoplay;
+        }
+        if ((n & 0x2) != 0x0) {
+            loop = settings.loop;
+        }
+        if ((n & 0x4) != 0x0) {
+            disabled = settings.disabled;
+        }
+        return settings.copy(autoplay, loop, disabled);
     }
     
     public final boolean component1() {
@@ -86,11 +111,11 @@ public final class Settings
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Settings(autoplay=");
-        r.append(this.autoplay);
-        r.append(", loop=");
-        r.append(this.loop);
-        r.append(", disabled=");
-        return g7.m(r, this.disabled, ')');
+        final StringBuilder t = a.t("Settings(autoplay=");
+        t.append(this.autoplay);
+        t.append(", loop=");
+        t.append(this.loop);
+        t.append(", disabled=");
+        return d.n(t, this.disabled, ')');
     }
 }

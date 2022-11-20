@@ -53,6 +53,7 @@
     <color name="snoovatar_style_tile_right_hand">@color/ds_primitive_berry_300_40pct</color>
     <color name="snoovatar_style_tile_tops">@color/ds_primitive_periwinkle_300_40pct</color>
     <color name="snoovatar_style_tile_unknown">@color/ds_primitive_mint_300_40pct</color>
+    <color name="speed_read_button_enhancement_color_grey">#1a282d</color>
     <color name="sso_buttons_color">#ffffff</color>
     <color name="style_item_text_color">#ffffff</color>
 </resources>

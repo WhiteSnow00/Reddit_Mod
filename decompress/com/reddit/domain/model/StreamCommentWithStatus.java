@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.model.streaming.AutoMuteStatus;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -21,6 +21,16 @@ public final class StreamCommentWithStatus
         e.f((Object)comment, "comment");
         this.autoMuteStatus = autoMuteStatus;
         this.comment = comment;
+    }
+    
+    public static StreamCommentWithStatus copy$default(final StreamCommentWithStatus streamCommentWithStatus, AutoMuteStatus autoMuteStatus, LiveComment comment, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            autoMuteStatus = streamCommentWithStatus.autoMuteStatus;
+        }
+        if ((n & 0x2) != 0x0) {
+            comment = streamCommentWithStatus.comment;
+        }
+        return streamCommentWithStatus.copy(autoMuteStatus, comment);
     }
     
     public final AutoMuteStatus component1() {
@@ -64,11 +74,11 @@ public final class StreamCommentWithStatus
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("StreamCommentWithStatus(autoMuteStatus=");
-        r.append(this.autoMuteStatus);
-        r.append(", comment=");
-        r.append(this.comment);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("StreamCommentWithStatus(autoMuteStatus=");
+        t.append(this.autoMuteStatus);
+        t.append(", comment=");
+        t.append(this.comment);
+        t.append(')');
+        return t.toString();
     }
 }

@@ -5,6 +5,7 @@
 package n4;
 
 import android.view.View;
+import m4.a$d;
 import m4.a;
 import android.text.Spannable;
 import android.text.Editable;
@@ -38,7 +39,7 @@ public final class g implements TextWatcher
             b = a.a().b();
             if (b != 0) {
                 if (b == 1) {
-                    a.a().f(n, n + n2, charSequence, this.h, this.i);
+                    a.a().f(n, n + n2, (CharSequence)charSequence, this.h, this.i);
                     return;
                 }
                 if (b != 3) {
@@ -49,7 +50,7 @@ public final class g implements TextWatcher
             if (this.g == null) {
                 this.g = new g.g$a(this.f);
             }
-            a.g((a.d)this.g);
+            a.g((a$d)this.g);
         }
     }
 }

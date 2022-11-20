@@ -38,8 +38,32 @@ public final class UsersMsg$UpdateFriendRelationshipRequest extends GeneratedMes
         this.note_ = "";
     }
     
-    public static /* synthetic */ UsersMsg$UpdateFriendRelationshipRequest access$9300() {
+    public static UsersMsg$UpdateFriendRelationshipRequest access$9300() {
         return UsersMsg$UpdateFriendRelationshipRequest.DEFAULT_INSTANCE;
+    }
+    
+    public static void access$9400(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest, final String name) {
+        usersMsg$UpdateFriendRelationshipRequest.setName(name);
+    }
+    
+    public static void access$9500(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest) {
+        usersMsg$UpdateFriendRelationshipRequest.clearName();
+    }
+    
+    public static void access$9600(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest, final ByteString nameBytes) {
+        usersMsg$UpdateFriendRelationshipRequest.setNameBytes(nameBytes);
+    }
+    
+    public static void access$9700(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest, final String note) {
+        usersMsg$UpdateFriendRelationshipRequest.setNote(note);
+    }
+    
+    public static void access$9800(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest) {
+        usersMsg$UpdateFriendRelationshipRequest.clearNote();
+    }
+    
+    public static void access$9900(final UsersMsg$UpdateFriendRelationshipRequest usersMsg$UpdateFriendRelationshipRequest, final ByteString noteBytes) {
+        usersMsg$UpdateFriendRelationshipRequest.setNoteBytes(noteBytes);
     }
     
     private void clearName() {

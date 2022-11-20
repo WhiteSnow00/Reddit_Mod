@@ -4,6 +4,10 @@
         <item quantity="one">Il tuo account è stato sospeso da Reddit per %1$d giorno.</item>
         <item quantity="other">Il tuo account è stato sospeso da Reddit per %1$d giorni.</item>
     </plurals>
+    <plurals name="accounts_fmt_num_followers">
+        <item quantity="one">%1$s follower</item>
+        <item quantity="other">%1$s follower</item>
+    </plurals>
     <plurals name="action_subtitle_days_ban">
         <item quantity="one">Bannato per %1$d giorno</item>
         <item quantity="other">Bannato per %1$d giorni</item>

@@ -11,7 +11,7 @@ import com.reddit.video.creation.usecases.base.DaggerBottomSheetDialogFragment_M
 import com.reddit.video.creation.eventbus.EventBus;
 import dagger.android.DispatchingAndroidInjector;
 import javax.inject.Provider;
-import pe2.b;
+import ke2.b;
 
 public final class VoiceoverBottomSheetDialogFragment_MembersInjector implements b<VoiceoverBottomSheetDialogFragment>
 {
@@ -26,7 +26,7 @@ public final class VoiceoverBottomSheetDialogFragment_MembersInjector implements
     }
     
     public static b<VoiceoverBottomSheetDialogFragment> create(final Provider<DispatchingAndroidInjector<Object>> provider, final Provider<EventBus> provider2, final Provider<VoiceoverPresenter> provider3) {
-        return (b<VoiceoverBottomSheetDialogFragment>)new VoiceoverBottomSheetDialogFragment_MembersInjector(provider, provider2, provider3);
+        return new VoiceoverBottomSheetDialogFragment_MembersInjector(provider, provider2, provider3);
     }
     
     public static void injectPresenter(final VoiceoverBottomSheetDialogFragment voiceoverBottomSheetDialogFragment, final VoiceoverPresenter presenter) {
@@ -37,5 +37,9 @@ public final class VoiceoverBottomSheetDialogFragment_MembersInjector implements
         DaggerBottomSheetDialogFragment_MembersInjector.injectAndroidInjector((DaggerBottomSheetDialogFragment)voiceoverBottomSheetDialogFragment, (DispatchingAndroidInjector)this.androidInjectorProvider.get());
         BaseBottomSheetDialogFragment_MembersInjector.injectEventBus((BaseBottomSheetDialogFragment)voiceoverBottomSheetDialogFragment, (EventBus)this.eventBusProvider.get());
         injectPresenter(voiceoverBottomSheetDialogFragment, (VoiceoverPresenter)this.presenterProvider.get());
+    }
+    
+    public /* bridge */ void injectMembers(final Object o) {
+        this.injectMembers((VoiceoverBottomSheetDialogFragment)o);
     }
 }

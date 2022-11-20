@@ -4,80 +4,97 @@
 
 package c5;
 
-import sg2.e;
+import androidx.compose.runtime.SnapshotMutableStateImpl;
+import androidx.paging.PagingDataDiffer;
+import b5.b0;
+import b5.c0;
+import java.util.Iterator;
+import b5.r;
+import java.util.Collection;
+import dg2.o;
+import b5.a0;
+import java.util.ArrayList;
+import zi2.g1;
+import androidx.paging.compose.a;
+import java.util.List;
+import b5.j;
+import kotlin.collections.EmptyList;
+import ej2.m;
+import z0.k0;
+import b5.t;
+import cj2.e;
 
-public final class b
+public final class b<T>
 {
-    public final k a;
-    public final k b;
-    public final k c;
-    public final l d;
-    public final l e;
+    public final e<t<T>> a;
+    public final k0 b;
+    public final b$b c;
+    public final k0 d;
     
-    public b(final k a, final k b, final k c, final l d, final l e) {
-        sg2.e.f((Object)a, "refresh");
-        sg2.e.f((Object)b, "prepend");
-        sg2.e.f((Object)c, "append");
-        sg2.e.f((Object)d, "source");
+    public b(final e<t<T>> a) {
+        ng2.e.f((Object)a, "flow");
         this.a = a;
-        this.b = b;
-        this.c = c;
-        this.d = d;
-        this.e = e;
+        final ij2.b a2 = zi2.k0.a;
+        final g1 a3 = m.a;
+        this.b = ah0.b.Z0((Object)new j(0, 0, (List)EmptyList.INSTANCE));
+        this.c = new b$b(this, new b$a(this), a3);
+        final b5.m a4 = androidx.paging.compose.a.a;
+        this.d = ah0.b.Z0((Object)new b5.b(a4.a, a4.b, a4.c, a4, (b5.m)null));
     }
     
-    @Override
-    public final boolean equals(final Object o) {
-        if (this == o) {
-            return true;
+    public static final void a(final b b) {
+        final r c = ((PagingDataDiffer)b.c).c;
+        final int c2 = c.c;
+        final int d = c.d;
+        final ArrayList a = c.a;
+        final ArrayList list = new ArrayList();
+        final Iterator iterator = a.iterator();
+        while (iterator.hasNext()) {
+            o.B4((Iterable)((a0)iterator.next()).b, (Collection)list);
         }
-        Object class1;
-        if (o == null) {
-            class1 = null;
+        ((SnapshotMutableStateImpl)b.b).setValue((Object)new j(c2, d, (List)list));
+    }
+    
+    public final T b(final int i) {
+        final b$b c = this.c;
+        ((PagingDataDiffer)c).h = true;
+        ((PagingDataDiffer)c).i = i;
+        final b0 d = ((PagingDataDiffer)c).d;
+        if (d != null) {
+            d.b((c0)((PagingDataDiffer)c).c.a(i));
+        }
+        final r c2 = ((PagingDataDiffer)c).c;
+        if (i >= 0) {
+            if (i < c2.d()) {
+                final int n = i - c2.c;
+                if (n >= 0) {
+                    if (n < c2.b) {
+                        c2.c(n);
+                    }
+                }
+                return (T)((j)((SnapshotMutableStateImpl)this.b).getValue()).get(i);
+            }
         }
         else {
-            class1 = o.getClass();
+            c2.getClass();
         }
-        if (!sg2.e.a((Object)b.class, class1)) {
-            return false;
-        }
-        if (o != null) {
-            final b b = (b)o;
-            return sg2.e.a((Object)this.a, (Object)b.a) && sg2.e.a((Object)this.b, (Object)b.b) && sg2.e.a((Object)this.c, (Object)b.c) && sg2.e.a((Object)this.d, (Object)b.d) && sg2.e.a((Object)this.e, (Object)b.e);
-        }
-        throw new NullPointerException("null cannot be cast to non-null type androidx.paging.CombinedLoadStates");
+        final StringBuilder o = android.support.v4.media.a.o("Index: ", i, ", Size: ");
+        o.append(c2.d());
+        throw new IndexOutOfBoundsException(o.toString());
     }
     
-    @Override
-    public final int hashCode() {
-        final int hashCode = this.a.hashCode();
-        final int hashCode2 = this.b.hashCode();
-        final int hashCode3 = this.c.hashCode();
-        final int hashCode4 = this.d.hashCode();
-        final l e = this.e;
-        int hashCode5;
-        if (e == null) {
-            hashCode5 = 0;
-        }
-        else {
-            hashCode5 = e.hashCode();
-        }
-        return (hashCode4 + (hashCode3 + (hashCode2 + hashCode * 31) * 31) * 31) * 31 + hashCode5;
+    public final int c() {
+        return ((j)((SnapshotMutableStateImpl)this.b).getValue()).a();
     }
     
-    @Override
-    public final String toString() {
-        final StringBuilder r = a.r("CombinedLoadStates(refresh=");
-        r.append(this.a);
-        r.append(", prepend=");
-        r.append(this.b);
-        r.append(", append=");
-        r.append(this.c);
-        r.append(", source=");
-        r.append(this.d);
-        r.append(", mediator=");
-        r.append(this.e);
-        r.append(')');
-        return r.toString();
+    public final b5.b d() {
+        return (b5.b)((SnapshotMutableStateImpl)this.d).getValue();
+    }
+    
+    public final void e() {
+        final b0 d = ((PagingDataDiffer)this.c).d;
+        if (d != null) {
+            d.retry();
+        }
     }
 }

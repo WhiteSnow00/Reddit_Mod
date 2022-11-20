@@ -4,41 +4,50 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.h1;
-import ge.s8;
-import ge.y0;
+import he.g1;
+import he.r;
+import com.google.android.gms.internal.firebase-auth-api.zzaau;
+import he.p8;
+import com.google.android.gms.internal.firebase-auth-api.m0;
+import he.x0;
 
-public final class l0 extends e implements y0
+public final class l0 extends e implements x0
 {
     private static final com.google.android.gms.internal.firebase-auth-api.l0 zzb;
-    private int zze;
-    private int zzf;
-    private int zzg;
+    private m0 zze;
     
     static {
         e.d((Class)com.google.android.gms.internal.firebase-auth-api.l0.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.l0)new l0()));
     }
     
-    public static s8 r() {
-        return (s8)((e)l0.zzb).i();
+    public static p8 r() {
+        return (p8)((e)l0.zzb).k();
     }
     
-    public static com.google.android.gms.internal.firebase-auth-api.l0 t() {
+    public static com.google.android.gms.internal.firebase-auth-api.l0 s() {
         return l0.zzb;
     }
     
-    public final Object g(int n) {
+    public static com.google.android.gms.internal.firebase-auth-api.l0 t(final zzaau zzaau, final r r) throws zzacf {
+        return (com.google.android.gms.internal.firebase-auth-api.l0)e.p((com.google.android.gms.internal.firebase-auth-api.e)l0.zzb, zzaau, r);
+    }
+    
+    public static void v(final com.google.android.gms.internal.firebase-auth-api.l0 l0, final m0 zze) {
+        ((l0)l0).zze = zze;
+    }
+    
+    public final Object h(int n) {
         if (--n == 0) {
             return 1;
         }
         if (n == 2) {
-            return new h1((com.google.android.gms.internal.firebase-auth-api.e)l0.zzb, "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\f\u0002\f\u0003\f", new Object[] { "zze", "zzf", "zzg" });
+            return new g1((com.google.android.gms.internal.firebase-auth-api.e)l0.zzb, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\t", new Object[] { "zze" });
         }
         if (n == 3) {
             return new l0();
         }
         if (n == 4) {
-            return new s8(0);
+            return new p8(0);
         }
         if (n != 5) {
             return null;
@@ -46,89 +55,11 @@ public final class l0 extends e implements y0
         return l0.zzb;
     }
     
-    public final int u() {
-        final int zzg = this.zzg;
-        int n = 3;
-        if (zzg != 0) {
-            if (zzg != 1) {
-                if (zzg != 2) {
-                    if (zzg != 3) {
-                        n = 0;
-                    }
-                    else {
-                        n = 5;
-                    }
-                }
-                else {
-                    n = 4;
-                }
-            }
+    public final m0 u() {
+        m0 m0;
+        if ((m0 = this.zze) == null) {
+            m0 = com.google.android.gms.internal.firebase_auth_api.m0.t();
         }
-        else {
-            n = 2;
-        }
-        if (n == 0) {
-            return 1;
-        }
-        return n;
-    }
-    
-    public final int v() {
-        final int zzf = this.zzf;
-        int n = 3;
-        if (zzf != 0) {
-            if (zzf != 1) {
-                if (zzf != 2) {
-                    if (zzf != 3) {
-                        n = 0;
-                    }
-                    else {
-                        n = 5;
-                    }
-                }
-                else {
-                    n = 4;
-                }
-            }
-        }
-        else {
-            n = 2;
-        }
-        if (n == 0) {
-            return 1;
-        }
-        return n;
-    }
-    
-    public final int w() {
-        final int zze = this.zze;
-        int n = 4;
-        if (zze != 0) {
-            if (zze != 1) {
-                if (zze != 2) {
-                    if (zze != 3) {
-                        if (zze != 4) {
-                            n = 0;
-                        }
-                        else {
-                            n = 6;
-                        }
-                    }
-                    else {
-                        n = 5;
-                    }
-                }
-            }
-            else {
-                n = 3;
-            }
-        }
-        else {
-            n = 2;
-        }
-        if (n == 0) {
-            return 1;
-        }
-        return n;
+        return m0;
     }
 }

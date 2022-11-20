@@ -6,23 +6,23 @@ package com.google.android.material.bottomsheet;
 
 import android.app.Dialog;
 import android.view.View$OnTouchListener;
-import df.f;
-import a4.q0;
-import df.e;
+import ef.f;
+import a4.l0;
+import ef.e;
 import android.view.View$OnClickListener;
-import df.d;
+import ef.d;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.view.ViewGroup;
 import android.view.ViewGroup$LayoutParams;
-import android.view.View;
 import android.view.Window;
 import android.os.Bundle;
+import android.view.View;
 import android.util.TypedValue;
 import android.content.Context;
 import android.widget.FrameLayout;
-import h.n;
+import h.m;
 
-public class a extends n
+public class a extends m
 {
     public BottomSheetBehavior<FrameLayout> j;
     public FrameLayout k;
@@ -39,13 +39,24 @@ public class a extends n
                 resourceId = typedValue.resourceId;
             }
             else {
-                resourceId = 2132017876;
+                resourceId = 2132017878;
             }
         }
         super(context, resourceId);
         this.l = true;
         this.m = true;
-        this.o = new a$a(this);
+        this.o = new BottomSheetBehavior$c(this) {
+            public final a a;
+            
+            public final void onSlide(final View view, final float n) {
+            }
+            
+            public final void onStateChanged(final View view, final int n) {
+                if (n == 5) {
+                    this.a.cancel();
+                }
+            }
+        };
         this.v(1);
     }
     
@@ -56,7 +67,6 @@ public class a extends n
         super.cancel();
     }
     
-    @Override
     public void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
         final Window window = ((Dialog)this).getWindow();
@@ -95,30 +105,27 @@ public class a extends n
         this.n = true;
     }
     
-    @Override
     public void setContentView(final int n) {
         super.setContentView((View)this.x(null, n, null));
     }
     
-    @Override
     public void setContentView(final View view) {
         super.setContentView((View)this.x(view, 0, null));
     }
     
-    @Override
     public void setContentView(final View view, final ViewGroup$LayoutParams viewGroup$LayoutParams) {
         super.setContentView((View)this.x(view, 0, viewGroup$LayoutParams));
     }
     
     public final void w() {
         if (this.k == null) {
-            final FrameLayout k = (FrameLayout)View.inflate(((Dialog)this).getContext(), 2131624180, (ViewGroup)null);
+            final FrameLayout k = (FrameLayout)View.inflate(((Dialog)this).getContext(), 2131624182, (ViewGroup)null);
             this.k = k;
-            final BottomSheetBehavior a = BottomSheetBehavior.A((View)((View)k).findViewById(2131428675));
-            this.j = (BottomSheetBehavior<FrameLayout>)a;
-            final a$a o = this.o;
+            final BottomSheetBehavior<FrameLayout> a = BottomSheetBehavior.A((FrameLayout)((View)k).findViewById(2131428675));
+            this.j = a;
+            final BottomSheetBehavior$c o = this.o;
             if (!a.I.contains(o)) {
-                a.I.add(o);
+                a.I.add((BottomSheetBehavior.BottomSheetBehavior$c)o);
             }
             this.j.D(this.l);
         }
@@ -139,8 +146,8 @@ public class a extends n
         else {
             ((ViewGroup)frameLayout).addView(inflate, viewGroup$LayoutParams);
         }
-        ((View)coordinatorLayout).findViewById(2131431867).setOnClickListener((View$OnClickListener)new d(this));
-        q0.l((View)frameLayout, new e(this));
+        ((View)coordinatorLayout).findViewById(2131431874).setOnClickListener((View$OnClickListener)new d(this));
+        l0.l((View)frameLayout, (a4.a)new e(this));
         ((View)frameLayout).setOnTouchListener((View$OnTouchListener)new f());
         return this.k;
     }

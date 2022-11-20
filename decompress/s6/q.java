@@ -5,169 +5,423 @@
 package s6;
 
 import java.util.List;
+import java.util.Collections;
+import p6.h0;
+import w6.b;
+import w6.i;
+import pc.c;
+import w6.h;
+import c7.d;
 import android.graphics.PointF;
-import java.util.ArrayList;
-import y6.h;
-import y6.i;
-import com.airbnb.lottie.LottieDrawable;
-import t6.a;
+import android.graphics.Matrix;
 
-public final class q implements s, a
+public final class q
 {
-    public final LottieDrawable a;
-    public final t6.a<Float, Float> b;
-    public i c;
+    public final Matrix a;
+    public final Matrix b;
+    public final Matrix c;
+    public final Matrix d;
+    public final float[] e;
+    public a<PointF, PointF> f;
+    public a<?, PointF> g;
+    public a<d, d> h;
+    public a<Float, Float> i;
+    public a<Integer, Integer> j;
+    public s6.d k;
+    public s6.d l;
+    public a<?, Float> m;
+    public a<?, Float> n;
     
-    public q(final LottieDrawable a, final com.airbnb.lottie.model.layer.a a2, final h h) {
-        this.a = a;
-        h.getClass();
-        final t6.a a3 = h.a.a();
-        a2.c(this.b = a3);
-        a3.a((a)this);
+    public q(final h h) {
+        this.a = new Matrix();
+        final c a = h.a;
+        a<PointF, PointF> b;
+        if (a == null) {
+            b = null;
+        }
+        else {
+            b = a.b();
+        }
+        this.f = b;
+        final i<PointF, PointF> b2 = h.b;
+        a<?, PointF> b3;
+        if (b2 == null) {
+            b3 = null;
+        }
+        else {
+            b3 = b2.b();
+        }
+        this.g = b3;
+        final w6.a c = h.c;
+        a<d, d> b4;
+        if (c == null) {
+            b4 = null;
+        }
+        else {
+            b4 = c.b();
+        }
+        this.h = b4;
+        final b d = h.d;
+        a<Float, Float> b5;
+        if (d == null) {
+            b5 = null;
+        }
+        else {
+            b5 = d.b();
+        }
+        this.i = b5;
+        final b f = h.f;
+        s6.d k;
+        if (f == null) {
+            k = null;
+        }
+        else {
+            k = (s6.d)f.b();
+        }
+        this.k = k;
+        if (k != null) {
+            this.b = new Matrix();
+            this.c = new Matrix();
+            this.d = new Matrix();
+            this.e = new float[9];
+        }
+        else {
+            this.b = null;
+            this.c = null;
+            this.d = null;
+            this.e = null;
+        }
+        final b g = h.g;
+        s6.d l;
+        if (g == null) {
+            l = null;
+        }
+        else {
+            l = (s6.d)g.b();
+        }
+        this.l = l;
+        final w6.d e = h.e;
+        if (e != null) {
+            this.j = e.b();
+        }
+        final b h2 = h.h;
+        if (h2 != null) {
+            this.m = h2.b();
+        }
+        else {
+            this.m = null;
+        }
+        final b i = h.i;
+        if (i != null) {
+            this.n = i.b();
+        }
+        else {
+            this.n = null;
+        }
     }
     
-    public static int a(final int n, final int n2) {
-        int n4;
-        final int n3 = n4 = n / n2;
-        if ((n ^ n2) < 0) {
-            n4 = n3;
-            if (n2 * n3 != n) {
-                n4 = n3 - 1;
-            }
-        }
-        return n - n4 * n2;
+    public final void a(final com.airbnb.lottie.model.layer.a a) {
+        a.c((a)this.j);
+        a.c((a)this.m);
+        a.c((a)this.n);
+        a.c((a)this.f);
+        a.c((a)this.g);
+        a.c((a)this.h);
+        a.c((a)this.i);
+        a.c((a)this.k);
+        a.c((a)this.l);
     }
     
-    public final i e(final i i) {
-        final ArrayList a = i.a;
-        if (a.size() <= 2) {
-            return i;
+    public final void b(final a.a a) {
+        final a<Integer, Integer> j = this.j;
+        if (j != null) {
+            j.a(a);
         }
-        final float floatValue = this.b.f();
-        if (floatValue == 0.0f) {
-            return i;
+        final a<?, Float> m = this.m;
+        if (m != null) {
+            m.a(a);
         }
-        final ArrayList a2 = i.a;
-        final boolean c = i.c;
-        int j = a2.size() - 1;
-        final int n = 0;
-        int n2 = 0;
-        while (j >= 0) {
-            final w6.a a3 = (w6.a)a2.get(j);
-            final int n3 = j - 1;
-            final w6.a a4 = (w6.a)a2.get(a(n3, a2.size()));
-            PointF pointF;
-            if (j == 0 && !c) {
-                pointF = i.b;
-            }
-            else {
-                pointF = a4.c;
-            }
-            PointF b;
-            if (j == 0 && !c) {
-                b = pointF;
-            }
-            else {
-                b = a4.b;
-            }
-            final PointF a5 = a3.a;
-            final boolean b2 = !i.c && j == 0 && j == a2.size() - 1;
-            if (b.equals((Object)pointF) && a5.equals((Object)pointF) && !b2) {
-                n2 += 2;
-            }
-            else {
-                ++n2;
-            }
-            j = n3;
+        final a<?, Float> n = this.n;
+        if (n != null) {
+            n.a(a);
         }
-        final i c2 = this.c;
-        if (c2 == null || c2.a.size() != n2) {
-            final ArrayList list = new ArrayList<w6.a>(n2);
-            for (int k = 0; k < n2; ++k) {
-                list.add(new w6.a());
-            }
-            this.c = new i(new PointF(0.0f, 0.0f), false, (List)list);
+        final a<PointF, PointF> f = this.f;
+        if (f != null) {
+            f.a(a);
         }
-        final i c3 = this.c;
-        c3.c = c;
-        final PointF b3 = i.b;
-        c3.a(b3.x, b3.y);
-        final ArrayList a6 = c3.a;
-        final boolean c4 = i.c;
-        int n4 = 0;
-        int l = n;
-        for (ArrayList list2 = a; l < list2.size(); ++l) {
-            final w6.a a7 = (w6.a)list2.get(l);
-            final w6.a a8 = (w6.a)list2.get(a(l - 1, list2.size()));
-            final w6.a a9 = (w6.a)list2.get(a(l - 2, list2.size()));
-            PointF pointF2;
-            if (l == 0 && !c4) {
-                pointF2 = i.b;
+        final a<?, PointF> g = this.g;
+        if (g != null) {
+            g.a(a);
+        }
+        final a<d, d> h = this.h;
+        if (h != null) {
+            h.a(a);
+        }
+        final a<Float, Float> i = this.i;
+        if (i != null) {
+            i.a(a);
+        }
+        final s6.d k = this.k;
+        if (k != null) {
+            ((a)k).a(a);
+        }
+        final s6.d l = this.l;
+        if (l != null) {
+            ((a)l).a(a);
+        }
+    }
+    
+    public final boolean c(final c7.c c, final Object o) {
+        if (o == h0.f) {
+            final a<PointF, PointF> f = this.f;
+            if (f == null) {
+                this.f = new r<PointF, PointF>(c, new PointF());
             }
             else {
-                pointF2 = a8.c;
+                f.k(c);
             }
-            PointF b4;
-            if (l == 0 && !c4) {
-                b4 = pointF2;
+        }
+        else if (o == h0.g) {
+            final a<?, PointF> g = this.g;
+            if (g == null) {
+                this.g = new r<Object, PointF>(c, new PointF());
             }
             else {
-                b4 = a8.b;
+                g.k(c);
             }
-            final PointF a10 = a7.a;
-            final PointF c5 = a9.c;
-            final PointF c6 = a7.c;
-            final boolean b5 = !i.c && l == 0 && l == list2.size() - 1;
-            if (b4.equals((Object)pointF2) && a10.equals((Object)pointF2) && !b5) {
-                final float x = pointF2.x;
-                final float x2 = c5.x;
-                final float y = pointF2.y;
-                final float y2 = c5.y;
-                final float x3 = c6.x;
-                final float y3 = c6.y;
-                final float n5 = (float)Math.hypot(x - x2, y - y2);
-                final float n6 = (float)Math.hypot(x3 - x, y3 - y);
-                final float min = Math.min(floatValue / n5, 0.5f);
-                final float min2 = Math.min(floatValue / n6, 0.5f);
-                final float x4 = pointF2.x;
-                final float b6 = a.b(c5.x, x4, min, x4);
-                final float y4 = pointF2.y;
-                final float b7 = a.b(c5.y, y4, min, y4);
-                final float b8 = a.b(c6.x, x4, min2, x4);
-                final float b9 = a.b(c6.y, y4, min2, y4);
-                final w6.a a11 = (w6.a)a6.get(a(n4 - 1, a6.size()));
-                final w6.a a12 = (w6.a)a6.get(n4);
-                a11.b.set(b6, b7);
-                a11.c.set(b6, b7);
-                if (l == 0) {
-                    c3.a(b6, b7);
+        }
+        else {
+            if (o == h0.h) {
+                final a<?, PointF> g2 = this.g;
+                if (g2 instanceof n) {
+                    final n n = (n)g2;
+                    final c7.c<Float> m = n.m;
+                    n.m = c;
+                    return true;
                 }
-                a12.a.set(b6 - (b6 - x4) * 0.5519f, b7 - (b7 - y4) * 0.5519f);
-                ++n4;
-                final w6.a a13 = (w6.a)a6.get(n4);
-                a12.b.set(b8 - (b8 - x4) * 0.5519f, b9 - (b9 - y4) * 0.5519f);
-                a12.c.set(b8, b9);
-                a13.a.set(b8, b9);
+            }
+            if (o == h0.i) {
+                final a<?, PointF> g3 = this.g;
+                if (g3 instanceof n) {
+                    final n n2 = (n)g3;
+                    final c7.c<Float> n3 = n2.n;
+                    n2.n = c;
+                    return true;
+                }
+            }
+            if (o == h0.o) {
+                final a<d, d> h = this.h;
+                if (h == null) {
+                    this.h = new r<d, d>(c, new d());
+                }
+                else {
+                    h.k(c);
+                }
+            }
+            else if (o == h0.p) {
+                final a<Float, Float> i = this.i;
+                if (i == null) {
+                    this.i = new r<Float, Float>(c, 0.0f);
+                }
+                else {
+                    i.k(c);
+                }
+            }
+            else if (o == h0.c) {
+                final a<Integer, Integer> j = this.j;
+                if (j == null) {
+                    this.j = new r<Integer, Integer>(c, 100);
+                }
+                else {
+                    j.k(c);
+                }
+            }
+            else if (o == h0.C) {
+                final a<?, Float> k = this.m;
+                if (k == null) {
+                    this.m = new r<Object, Float>(c, 100.0f);
+                }
+                else {
+                    k.k(c);
+                }
+            }
+            else if (o == h0.D) {
+                final a<?, Float> n4 = this.n;
+                if (n4 == null) {
+                    this.n = new r<Object, Float>(c, 100.0f);
+                }
+                else {
+                    n4.k(c);
+                }
+            }
+            else if (o == h0.q) {
+                if (this.k == null) {
+                    this.k = new s6.d((List)Collections.singletonList(new c7.a(0.0f)));
+                }
+                ((a<K, Object>)this.k).k(c);
             }
             else {
-                final w6.a a14 = (w6.a)a6.get(a(n4 - 1, a6.size()));
-                final w6.a a15 = (w6.a)a6.get(n4);
-                final PointF c7 = a8.c;
-                a14.b.set(c7.x, c7.y);
-                final PointF c8 = a8.c;
-                a14.c.set(c8.x, c8.y);
-                final PointF c9 = a7.c;
-                a15.a.set(c9.x, c9.y);
+                if (o != h0.r) {
+                    return false;
+                }
+                if (this.l == null) {
+                    this.l = new s6.d((List)Collections.singletonList(new c7.a(0.0f)));
+                }
+                ((a<K, Object>)this.l).k(c);
             }
-            ++n4;
         }
-        return c3;
+        return true;
     }
     
-    public final void f() {
-        this.a.invalidateSelf();
+    public final Matrix d() {
+        this.a.reset();
+        final a<?, PointF> g = this.g;
+        if (g != null) {
+            final PointF pointF = g.f();
+            if (pointF != null) {
+                final float x = pointF.x;
+                if (x != 0.0f || pointF.y != 0.0f) {
+                    this.a.preTranslate(x, pointF.y);
+                }
+            }
+        }
+        final a<Float, Float> i = this.i;
+        if (i != null) {
+            float n;
+            if (i instanceof r) {
+                n = i.f();
+            }
+            else {
+                n = ((s6.d)i).l();
+            }
+            if (n != 0.0f) {
+                this.a.preRotate(n);
+            }
+        }
+        final s6.d k = this.k;
+        if (k != null) {
+            final s6.d l = this.l;
+            float n2;
+            if (l == null) {
+                n2 = 0.0f;
+            }
+            else {
+                n2 = (float)Math.cos(Math.toRadians(-l.l() + 90.0f));
+            }
+            final s6.d j = this.l;
+            float n3;
+            if (j == null) {
+                n3 = 1.0f;
+            }
+            else {
+                n3 = (float)Math.sin(Math.toRadians(-j.l() + 90.0f));
+            }
+            final float n4 = (float)Math.tan(Math.toRadians(k.l()));
+            for (int n5 = 0; n5 < 9; ++n5) {
+                this.e[n5] = 0.0f;
+            }
+            final float[] e = this.e;
+            e[0] = n2;
+            e[1] = n3;
+            final float n6 = -n3;
+            e[3] = n6;
+            e[4] = n2;
+            e[8] = 1.0f;
+            this.b.setValues(e);
+            for (int n7 = 0; n7 < 9; ++n7) {
+                this.e[n7] = 0.0f;
+            }
+            final float[] e2 = this.e;
+            e2[0] = 1.0f;
+            e2[3] = n4;
+            e2[8] = (e2[4] = 1.0f);
+            this.c.setValues(e2);
+            for (int n8 = 0; n8 < 9; ++n8) {
+                this.e[n8] = 0.0f;
+            }
+            final float[] e3 = this.e;
+            e3[0] = n2;
+            e3[1] = n6;
+            e3[3] = n3;
+            e3[4] = n2;
+            e3[8] = 1.0f;
+            this.d.setValues(e3);
+            this.c.preConcat(this.b);
+            this.d.preConcat(this.c);
+            this.a.preConcat(this.d);
+        }
+        final a<d, d> h = this.h;
+        if (h != null) {
+            final d d = h.f();
+            final float a = d.a;
+            if (a != 1.0f || d.b != 1.0f) {
+                this.a.preScale(a, d.b);
+            }
+        }
+        final a<PointF, PointF> f = this.f;
+        if (f != null) {
+            final PointF pointF2 = f.f();
+            final float x2 = pointF2.x;
+            if (x2 != 0.0f || pointF2.y != 0.0f) {
+                this.a.preTranslate(-x2, -pointF2.y);
+            }
+        }
+        return this.a;
     }
     
-    public final void g(final List<s6.c> list, final List<s6.c> list2) {
+    public final Matrix e(final float n) {
+        final a<?, PointF> g = this.g;
+        final PointF pointF = null;
+        PointF pointF2;
+        if (g == null) {
+            pointF2 = null;
+        }
+        else {
+            pointF2 = g.f();
+        }
+        final a<d, d> h = this.h;
+        d d;
+        if (h == null) {
+            d = null;
+        }
+        else {
+            d = h.f();
+        }
+        this.a.reset();
+        if (pointF2 != null) {
+            this.a.preTranslate(pointF2.x * n, pointF2.y * n);
+        }
+        if (d != null) {
+            final Matrix a = this.a;
+            final double n2 = d.a;
+            final double n3 = n;
+            a.preScale((float)Math.pow(n2, n3), (float)Math.pow(d.b, n3));
+        }
+        final a<Float, Float> i = this.i;
+        if (i != null) {
+            final float floatValue = i.f();
+            final a<PointF, PointF> f = this.f;
+            PointF pointF3;
+            if (f == null) {
+                pointF3 = pointF;
+            }
+            else {
+                pointF3 = f.f();
+            }
+            final Matrix a2 = this.a;
+            float y = 0.0f;
+            float x;
+            if (pointF3 == null) {
+                x = 0.0f;
+            }
+            else {
+                x = pointF3.x;
+            }
+            if (pointF3 != null) {
+                y = pointF3.y;
+            }
+            a2.preRotate(floatValue * n, x, y);
+        }
+        return this.a;
     }
 }

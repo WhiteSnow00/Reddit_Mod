@@ -4,24 +4,23 @@
 
 package com.google.android.gms.internal.measurement;
 
-import ie.ba;
-import ie.c5;
+import je.aa;
+import je.z4;
 
-public final class b0 implements c5
+public final class b0 implements z4
 {
     public static final b0 g;
-    public final c5 f;
+    public final z4 f;
     
     static {
         g = new b0();
     }
     
     public b0() {
-        final zzik zzik = new zzik(new ba());
-        this.f = a.b((c5)zzik);
+        final zzik zzik = new zzik(new aa());
+        this.f = a.a((z4)zzik);
     }
     
-    @Override
     public final Object zza() {
         return this.f.zza();
     }

@@ -4,21 +4,22 @@
 
 package io.reactivex.internal.schedulers;
 
-import wf2.c;
+import io.reactivex.disposables.CompositeDisposable;
+import rf2.c;
 import java.util.concurrent.RejectedExecutionException;
 import io.reactivex.internal.disposables.EmptyDisposable;
 import java.util.concurrent.Future;
 import java.util.concurrent.Callable;
 import io.reactivex.plugins.RxJavaPlugins;
-import if2.a;
+import df2.a;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
-import wf2.h;
+import rf2.h;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.atomic.AtomicReference;
-import ff2.b0;
+import af2.b0;
 
 public final class b extends b0
 {
@@ -31,7 +32,7 @@ public final class b extends b0
     }
     
     public b() {
-        this(io.reactivex.internal.schedulers.b.c);
+        this((ThreadFactory)io.reactivex.internal.schedulers.b.c);
     }
     
     public b(final ThreadFactory threadFactory) {
@@ -46,10 +47,10 @@ public final class b extends b0
     }
     
     public final b0.c a() {
-        return (b0.c)new b.b$a((ScheduledExecutorService)this.b.get());
+        return new a(this.b.get());
     }
     
-    public final a d(final Runnable runnable, final long n, final TimeUnit timeUnit) {
+    public final df2.a d(final Runnable runnable, final long n, final TimeUnit timeUnit) {
         final ScheduledDirectTask scheduledDirectTask = new ScheduledDirectTask(RxJavaPlugins.onSchedule(runnable));
         Label_0040: {
             if (n > 0L) {
@@ -58,20 +59,20 @@ public final class b extends b0
             try {
                 Object future = this.b.get().submit((Callable<V>)scheduledDirectTask);
                 while (true) {
-                    ((AbstractDirectTask)scheduledDirectTask).setFuture((Future<?>)future);
-                    return (a)scheduledDirectTask;
+                    scheduledDirectTask.setFuture((Future<?>)future);
+                    return (df2.a)scheduledDirectTask;
                     future = this.b.get().schedule((Callable<T>)scheduledDirectTask, n, timeUnit);
                     continue;
                 }
             }
             catch (final RejectedExecutionException ex) {
-                RxJavaPlugins.onError(ex);
-                return (a)EmptyDisposable.INSTANCE;
+                RxJavaPlugins.onError((Throwable)ex);
+                return (df2.a)EmptyDisposable.INSTANCE;
             }
         }
     }
     
-    public final a e(final Runnable runnable, final long n, final long n2, final TimeUnit timeUnit) {
+    public final df2.a e(final Runnable runnable, final long n, final long n2, final TimeUnit timeUnit) {
         final Runnable onSchedule = RxJavaPlugins.onSchedule(runnable);
         if (n2 <= 0L) {
             final ScheduledExecutorService scheduledExecutorService = this.b.get();
@@ -83,26 +84,77 @@ public final class b extends b0
                 try {
                     Object o = scheduledExecutorService.submit((Callable<V>)c);
                     while (true) {
-                        c.a((Future<?>)o);
-                        return (a)c;
+                        c.a((Future)o);
+                        return (df2.a)c;
                         o = scheduledExecutorService.schedule((Callable<T>)c, n, timeUnit);
                         continue;
                     }
                 }
                 catch (final RejectedExecutionException ex) {
-                    RxJavaPlugins.onError(ex);
-                    return (a)EmptyDisposable.INSTANCE;
+                    RxJavaPlugins.onError((Throwable)ex);
+                    return (df2.a)EmptyDisposable.INSTANCE;
                 }
             }
         }
         final ScheduledDirectPeriodicTask scheduledDirectPeriodicTask = new ScheduledDirectPeriodicTask(onSchedule);
         try {
-            ((AbstractDirectTask)scheduledDirectPeriodicTask).setFuture(this.b.get().scheduleAtFixedRate((Runnable)scheduledDirectPeriodicTask, n, n2, timeUnit));
-            return (a)scheduledDirectPeriodicTask;
+            scheduledDirectPeriodicTask.setFuture(this.b.get().scheduleAtFixedRate(scheduledDirectPeriodicTask, n, n2, timeUnit));
+            return (df2.a)scheduledDirectPeriodicTask;
         }
         catch (final RejectedExecutionException ex2) {
-            RxJavaPlugins.onError(ex2);
-            return (a)EmptyDisposable.INSTANCE;
+            RxJavaPlugins.onError((Throwable)ex2);
+            return (df2.a)EmptyDisposable.INSTANCE;
+        }
+    }
+    
+    public static final class a extends c
+    {
+        public final ScheduledExecutorService f;
+        public final CompositeDisposable g;
+        public volatile boolean h;
+        
+        public a(final ScheduledExecutorService f) {
+            this.f = f;
+            this.g = new CompositeDisposable();
+        }
+        
+        @Override
+        public final df2.a c(final Runnable runnable, final long n, final TimeUnit timeUnit) {
+            if (this.h) {
+                return (df2.a)EmptyDisposable.INSTANCE;
+            }
+            final ScheduledRunnable scheduledRunnable = new ScheduledRunnable(RxJavaPlugins.onSchedule(runnable), (gf2.a)this.g);
+            this.g.add((df2.a)scheduledRunnable);
+            Label_0059: {
+                if (n > 0L) {
+                    break Label_0059;
+                }
+                try {
+                    Object future = this.f.submit((Callable<V>)scheduledRunnable);
+                    while (true) {
+                        scheduledRunnable.setFuture((Future<?>)future);
+                        return (df2.a)scheduledRunnable;
+                        future = this.f.schedule((Callable<T>)scheduledRunnable, n, timeUnit);
+                        continue;
+                    }
+                }
+                catch (final RejectedExecutionException ex) {
+                    this.dispose();
+                    RxJavaPlugins.onError((Throwable)ex);
+                    return (df2.a)EmptyDisposable.INSTANCE;
+                }
+            }
+        }
+        
+        public final void dispose() {
+            if (!this.h) {
+                this.h = true;
+                this.g.dispose();
+            }
+        }
+        
+        public final boolean isDisposed() {
+            return this.h;
         }
     }
 }

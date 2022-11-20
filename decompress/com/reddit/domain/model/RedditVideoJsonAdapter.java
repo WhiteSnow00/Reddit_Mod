@@ -5,19 +5,19 @@
 package com.reddit.domain.model;
 
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import com.squareup.moshi.JsonAdapter;
 
-@Metadata(bv = {}, d1 = { "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u001d\u001a\u00020\u001c¢\u0006\u0004\b\u001e\u0010\u001fJ\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0010\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0013\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00120\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0011R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0011R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0011R\u001e\u0010\u001a\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u00198\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001a\u0010\u001b¨\u0006 " }, d2 = { "Lcom/reddit/domain/model/RedditVideoJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/RedditVideo;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lhg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "nullableStringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/RedditVideoMp4Urls;", "nullableRedditVideoMp4UrlsAdapter", "stringAdapter", "", "intAdapter", "", "booleanAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u001d\u001a\u00020\u001c¢\u0006\u0004\b\u001e\u0010\u001fJ\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0010\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0013\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00120\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0011R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0011R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0011R\u001e\u0010\u001a\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u00198\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001a\u0010\u001b¨\u0006 " }, d2 = { "Lcom/reddit/domain/model/RedditVideoJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/RedditVideo;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lcg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "nullableStringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/RedditVideoMp4Urls;", "nullableRedditVideoMp4UrlsAdapter", "stringAdapter", "", "intAdapter", "", "booleanAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class RedditVideoJsonAdapter extends JsonAdapter<RedditVideo>
 {
     private final JsonAdapter<Boolean> booleanAdapter;
@@ -168,7 +168,7 @@ public final class RedditVideoJsonAdapter extends JsonAdapter<RedditVideo>
                         }
                         case -1: {
                             jsonReader.H();
-                            jsonReader.F1();
+                            jsonReader.G1();
                             break;
                         }
                     }
@@ -264,38 +264,46 @@ public final class RedditVideoJsonAdapter extends JsonAdapter<RedditVideo>
         }
     }
     
+    public /* bridge */ Object fromJson(final JsonReader jsonReader) {
+        return this.fromJson(jsonReader);
+    }
+    
     public void toJson(final x x, final RedditVideo redditVideo) {
         e.f((Object)x, "writer");
         if (redditVideo != null) {
             x.h();
-            x.u("packaged_mp4_url");
+            x.v("packaged_mp4_url");
             this.nullableStringAdapter.toJson(x, (Object)redditVideo.getPackagedMp4Url());
-            x.u("mp4_urls");
+            x.v("mp4_urls");
             this.nullableRedditVideoMp4UrlsAdapter.toJson(x, (Object)redditVideo.getMp4Urls());
-            x.u("dash_url");
+            x.v("dash_url");
             this.stringAdapter.toJson(x, (Object)redditVideo.getDashUrl());
-            x.u("duration");
+            x.v("duration");
             this.intAdapter.toJson(x, (Object)redditVideo.getDuration());
-            x.u("fallback_url");
+            x.v("fallback_url");
             this.stringAdapter.toJson(x, (Object)redditVideo.getFallBackUrl());
-            x.u("height");
+            x.v("height");
             this.intAdapter.toJson(x, (Object)redditVideo.getHeight());
-            x.u("width");
+            x.v("width");
             this.intAdapter.toJson(x, (Object)redditVideo.getWidth());
-            x.u("hls_url");
+            x.v("hls_url");
             this.stringAdapter.toJson(x, (Object)redditVideo.getHlsUrl());
-            x.u("is_gif");
+            x.v("is_gif");
             this.booleanAdapter.toJson(x, (Object)redditVideo.isGif());
-            x.u("scrubber_media_url");
+            x.v("scrubber_media_url");
             this.stringAdapter.toJson(x, (Object)redditVideo.getScrubbedMediaUrl());
-            x.u("transcoding_status");
+            x.v("transcoding_status");
             this.stringAdapter.toJson(x, (Object)redditVideo.getTranscodingStatus());
-            x.u("downloadUrl");
+            x.v("downloadUrl");
             this.nullableStringAdapter.toJson(x, (Object)redditVideo.getDownloadUrl());
             x.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+    
+    public /* bridge */ void toJson(final x x, final Object o) {
+        this.toJson(x, (RedditVideo)o);
     }
     
     public String toString() {

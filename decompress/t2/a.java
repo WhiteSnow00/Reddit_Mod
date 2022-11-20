@@ -4,11 +4,15 @@
 
 package t2;
 
-import sg2.e;
+import ng2.e;
 
 public final class a
 {
-    public final float a = a;
+    public final float a;
+    
+    public a(final float a) {
+        this.a = a;
+    }
     
     @Override
     public final boolean equals(final Object o) {

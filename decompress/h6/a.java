@@ -4,7 +4,22 @@
 
 package h6;
 
-public interface a<T>
+import k6.q;
+import i6.d;
+import i6.g;
+import android.content.Context;
+
+public final class a extends c<Boolean>
 {
-    void a(final T p0);
+    public a(final Context context, final m6.a a) {
+        super((d)g.a(context, a).a);
+    }
+    
+    public final boolean b(final q q) {
+        return q.j.b;
+    }
+    
+    public final boolean c(final Object o) {
+        return (boolean)o ^ true;
+    }
 }

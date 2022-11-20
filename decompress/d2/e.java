@@ -4,10 +4,12 @@
 
 package d2;
 
-public final class e<T> extends a<T>
+import b6.h;
+import e2.b;
+
+public interface e extends g, b
 {
-    public e(final rg2.a<? extends T> a) {
-        sg2.e.f((Object)a, "defaultFactory");
-        super((rg2.a)a);
+    default h j() {
+        return (h)d2.b.f;
     }
 }

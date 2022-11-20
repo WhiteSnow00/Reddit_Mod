@@ -4,9 +4,10 @@
 
 package io.reactivex.internal.schedulers;
 
+import io.reactivex.internal.functions.Functions$r;
 import io.reactivex.internal.functions.Functions;
 import java.util.concurrent.FutureTask;
-import if2.a;
+import df2.a;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -19,9 +20,9 @@ abstract class AbstractDirectTask extends AtomicReference<Future<?>> implements 
     public Thread runner;
     
     static {
-        final Functions.r b = Functions.b;
-        FINISHED = new FutureTask<Void>(b, null);
-        DISPOSED = new FutureTask<Void>(b, null);
+        final Functions$r b = Functions.b;
+        FINISHED = new FutureTask<Void>((Runnable)b, null);
+        DISPOSED = new FutureTask<Void>((Runnable)b, null);
     }
     
     public AbstractDirectTask(final Runnable runnable) {

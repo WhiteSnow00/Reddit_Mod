@@ -240,7 +240,7 @@
     <string name="generic_error_no_keyguard">Este dispositivo não é compatível com PIN, padrão ou senha.</string>
     <string name="generic_error_user_canceled">Autenticação cancelada pelo usuário.</string>
     <string name="in_progress">Em andamento</string>
-    <string name="indeterminate">Nem marcada nem desmarcada</string>
+    <string name="indeterminate">Parcialmente selecionada</string>
     <string name="mdtp_date_v1_monthyear">MMMM \'de\' yyyy</string>
     <string name="mdtp_date_v2_daymonthyear">EEE, dd \'de\' MMM</string>
     <string name="mdtp_day_picker_description">Grade mensal de dias</string>

@@ -9,14 +9,15 @@ import j0.g;
 import java.util.Iterator;
 import java.util.Set;
 import kotlin.text.b;
+import android.support.v4.media.a;
 import java.util.Collection;
 import kotlin.collections.CollectionsKt___CollectionsKt;
 import android.net.Uri;
-import sg2.e;
+import ng2.e;
 import javax.inject.Provider;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u00007\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\n\n\u0002\b\u0005*\u0001\u001b\b\u00c0\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u001e\u0010\u0016J\u001e\u0010\u0007\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\f\u0010\t\u001a\u00020\u0005*\u00020\bH\u0002J,\u0010\f\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005J\u001a\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\r\u001a\u00020\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005J\u0017\u0010\u0014\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0010H\u0001¢\u0006\u0004\b\u0012\u0010\u0013J\u000f\u0010\u0017\u001a\u00020\u000eH\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0006\u0010\u0018\u001a\u00020\u0010R\u0014\u0010\u0019\u001a\u00020\u00108\u0002X\u0082T¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR\u0014\u0010\u001c\u001a\u00020\u001b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001c\u0010\u001d¨\u0006\u001f" }, d2 = { "Lcom/reddit/video/player/internal/player/RedditVideoPlayerPool;", "", "Ljavax/inject/Provider;", "Lcom/reddit/video/player/internal/player/RedditVideoPlayer;", "provider", "", "key", "newPlayer", "Landroid/net/Uri;", "sanitize", "url", "id", "getPlayer", "player", "Lhg2/j;", "detachPlayer", "", "newSize", "resize$player_release", "(I)V", "resize", "clear$player_release", "()V", "clear", "size", "DEFAULT_LRU_SIZE", "I", "com/reddit/video/player/internal/player/RedditVideoPlayerPool$lruCache$1", "lruCache", "Lcom/reddit/video/player/internal/player/RedditVideoPlayerPool$lruCache$1;", "<init>", "player_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u00007\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\n\n\u0002\b\u0005*\u0001\u001b\b\u00c0\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u001e\u0010\u0016J\u001e\u0010\u0007\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\f\u0010\t\u001a\u00020\u0005*\u00020\bH\u0002J,\u0010\f\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005J\u001a\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\r\u001a\u00020\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005J\u0017\u0010\u0014\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0010H\u0001¢\u0006\u0004\b\u0012\u0010\u0013J\u000f\u0010\u0017\u001a\u00020\u000eH\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0006\u0010\u0018\u001a\u00020\u0010R\u0014\u0010\u0019\u001a\u00020\u00108\u0002X\u0082T¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR\u0014\u0010\u001c\u001a\u00020\u001b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001c\u0010\u001d¨\u0006\u001f" }, d2 = { "Lcom/reddit/video/player/internal/player/RedditVideoPlayerPool;", "", "Ljavax/inject/Provider;", "Lcom/reddit/video/player/internal/player/RedditVideoPlayer;", "provider", "", "key", "newPlayer", "Landroid/net/Uri;", "sanitize", "url", "id", "getPlayer", "player", "Lcg2/j;", "detachPlayer", "", "newSize", "resize$player_release", "(I)V", "resize", "clear$player_release", "()V", "clear", "size", "DEFAULT_LRU_SIZE", "I", "com/reddit/video/player/internal/player/RedditVideoPlayerPool$lruCache$1", "lruCache", "Lcom/reddit/video/player/internal/player/RedditVideoPlayerPool$lruCache$1;", "<init>", "player_release" }, k = 1, mv = { 1, 7, 1 })
 public final class RedditVideoPlayerPool
 {
     private static final int DEFAULT_LRU_SIZE = 5;
@@ -29,6 +30,23 @@ public final class RedditVideoPlayerPool
     }
     
     private RedditVideoPlayerPool() {
+    }
+    
+    public static void detachPlayer$default(final RedditVideoPlayerPool redditVideoPlayerPool, final RedditVideoPlayer redditVideoPlayer, String s, final int n, final Object o) {
+        if ((n & 0x2) != 0x0) {
+            s = null;
+        }
+        redditVideoPlayerPool.detachPlayer(redditVideoPlayer, s);
+    }
+    
+    public static RedditVideoPlayer getPlayer$default(final RedditVideoPlayerPool redditVideoPlayerPool, final Provider provider, String s, String s2, final int n, final Object o) {
+        if ((n & 0x2) != 0x0) {
+            s = null;
+        }
+        if ((n & 0x4) != 0x0) {
+            s2 = null;
+        }
+        return redditVideoPlayerPool.getPlayer((Provider<RedditVideoPlayer>)provider, s, s2);
     }
     
     private final RedditVideoPlayer newPlayer(final Provider<RedditVideoPlayer> provider, final String s) {
@@ -50,36 +68,36 @@ public final class RedditVideoPlayerPool
         }
         if (queryParameterNames != null) {
             sb.append("?");
-            for (final String s2 : CollectionsKt___CollectionsKt.e4((Collection)queryParameterNames)) {
-                final StringBuilder s3 = a.s(s2, '=');
-                s3.append(uri.getQueryParameter(s2));
-                s3.append('&');
-                sb.append(s3.toString());
+            for (final String s2 : CollectionsKt___CollectionsKt.w5((Collection)queryParameterNames)) {
+                final StringBuilder n2 = a.n(s2, '=');
+                n2.append(uri.getQueryParameter(s2));
+                n2.append('&');
+                sb.append(n2.toString());
             }
-            e.e((Object)sb.deleteCharAt(b.V0((CharSequence)sb)), "this.deleteCharAt(index)");
+            e.e((Object)sb.deleteCharAt(b.P0((CharSequence)sb)), "this.deleteCharAt(index)");
         }
         final StringBuilder sb2 = new StringBuilder();
         final String encodedFragment = uri.getEncodedFragment();
-        int n2;
+        int n3;
         if (encodedFragment != null && encodedFragment.length() > 0) {
-            n2 = n;
+            n3 = n;
         }
         else {
-            n2 = 0;
+            n3 = 0;
         }
-        String s4 = s;
-        if (n2 != 0) {
-            s4 = "#";
+        String s3 = s;
+        if (n3 != 0) {
+            s3 = "#";
         }
-        final String s5 = "";
-        String s6;
-        if ((s6 = s4) == null) {
-            s6 = "";
+        final String s4 = "";
+        String s5;
+        if ((s5 = s3) == null) {
+            s5 = "";
         }
-        sb2.append(s6);
+        sb2.append(s5);
         String encodedFragment2 = uri.getEncodedFragment();
         if (encodedFragment2 == null) {
-            encodedFragment2 = s5;
+            encodedFragment2 = s4;
         }
         sb2.append(encodedFragment2);
         final String string = sb2.toString();

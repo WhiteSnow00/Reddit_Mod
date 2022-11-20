@@ -4,11 +4,22 @@
 
 package androidx.compose.ui.platform;
 
-public final class n0
+import ng2.e;
+import cg2.j;
+import mg2.l;
+import j1.d;
+
+public final class n0 extends p0 implements b
 {
-    public final f1 a;
+    public final a g;
     
-    public n0() {
-        this.a = new f1();
+    public n0(final l<? super o0, j> l) {
+        e.f((Object)l, "inspectorInfo");
+        super((l)l);
+        this.g = new a();
+    }
+    
+    public final class a implements b
+    {
     }
 }

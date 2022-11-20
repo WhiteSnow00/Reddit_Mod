@@ -4,8 +4,9 @@
 
 package com.reddit.domain.model;
 
+import p1.h;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.model.topic.InterestTopic;
 import java.util.List;
 import kotlin.Metadata;
@@ -29,10 +30,20 @@ public final class TopicsRecommendationFeedElement extends ILink
         super((DefaultConstructorMarker)null);
         this.id = id;
         this.topics = topics;
-        final StringBuilder r = a.r("topics_discovery_unit_");
-        r.append(this.getId());
-        this.kindWithId = r.toString();
+        final StringBuilder t = a.t("topics_discovery_unit_");
+        t.append(this.getId());
+        this.kindWithId = t.toString();
         this.uniqueId = this.getId();
+    }
+    
+    public static TopicsRecommendationFeedElement copy$default(final TopicsRecommendationFeedElement topicsRecommendationFeedElement, String id, List topics, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            id = topicsRecommendationFeedElement.getId();
+        }
+        if ((n & 0x2) != 0x0) {
+            topics = topicsRecommendationFeedElement.topics;
+        }
+        return topicsRecommendationFeedElement.copy(id, topics);
     }
     
     public final String component1() {
@@ -93,9 +104,9 @@ public final class TopicsRecommendationFeedElement extends ILink
     }
     
     public String toString() {
-        final StringBuilder r = a.r("TopicsRecommendationFeedElement(id=");
-        r.append(this.getId());
-        r.append(", topics=");
-        return d.o(r, (List)this.topics, ')');
+        final StringBuilder t = a.t("TopicsRecommendationFeedElement(id=");
+        t.append(this.getId());
+        t.append(", topics=");
+        return h.d(t, (List)this.topics, ')');
     }
 }

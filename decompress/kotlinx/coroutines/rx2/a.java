@@ -4,30 +4,30 @@
 
 package kotlinx.coroutines.rx2;
 
-import yd.b;
+import cg.d;
 import kotlin.Result;
-import ej2.l;
-import hg2.j;
-import ej2.k;
-import ff2.c;
+import zi2.m;
+import cg2.j;
+import zi2.l;
+import af2.c;
 
 public final class a implements c
 {
-    public final /* synthetic */ k<j> f;
+    public final l<j> f;
     
-    public a(final l f) {
-        this.f = (k<j>)f;
+    public a(final m f) {
+        this.f = (l<j>)f;
     }
     
     public final void onComplete() {
-        ((lg2.c)this.f).resumeWith(Result.constructor-impl((Object)j.a));
+        ((gg2.c)this.f).resumeWith(Result.constructor-impl((Object)j.a));
     }
     
     public final void onError(final Throwable t) {
-        ((lg2.c)this.f).resumeWith(Result.constructor-impl((Object)b.o(t)));
+        ((gg2.c)this.f).resumeWith(Result.constructor-impl((Object)d.B1(t)));
     }
     
-    public final void onSubscribe(final if2.a a) {
-        this.f.F((rg2.l<? super Throwable, j>)new RxAwaitKt$disposeOnCancellation$1(a));
+    public final void onSubscribe(final df2.a a) {
+        this.f.Z((mg2.l)new RxAwaitKt$disposeOnCancellation$1(a));
     }
 }

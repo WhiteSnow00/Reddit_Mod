@@ -5,20 +5,21 @@
 package kotlinx.coroutines.flow;
 
 import java.util.List;
-import al0.f0;
-import rg2.l;
+import p1.h;
+import mg2.l;
 import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.builders.ListBuilder;
-import rg2.p;
-import hj2.j;
-import rg2.q;
-import lg2.c;
-import hj2.e;
-import hj2.a0;
-import xv.a;
-import hj2.y;
+import mg2.p;
+import cj2.j;
+import mg2.q;
+import p2.b;
+import gg2.c;
+import cj2.e;
+import cj2.y;
+import m5.a;
+import cj2.w;
 
-public final class StartedWhileSubscribed implements y
+public final class StartedWhileSubscribed implements w
 {
     public final long a;
     public final long b;
@@ -28,7 +29,7 @@ public final class StartedWhileSubscribed implements y
         this.b = b;
         final int n = 1;
         if (a < 0L) {
-            throw new IllegalArgumentException(xv.a.a("stopTimeout(", a, " ms) cannot be negative").toString());
+            throw new IllegalArgumentException(m5.a.f("stopTimeout(", a, " ms) cannot be negative").toString());
         }
         int n2;
         if (b >= 0L) {
@@ -40,12 +41,11 @@ public final class StartedWhileSubscribed implements y
         if (n2 != 0) {
             return;
         }
-        throw new IllegalArgumentException(xv.a.a("replayExpiration(", b, " ms) cannot be negative").toString());
+        throw new IllegalArgumentException(m5.a.f("replayExpiration(", b, " ms) cannot be negative").toString());
     }
     
-    @Override
-    public final e<SharingCommand> a(final a0<Integer> a0) {
-        return kotlinx.coroutines.flow.a.r((e)new j((p)new StartedWhileSubscribed$command$2((c)null), (e)kotlinx.coroutines.flow.a.O((e)a0, (q)new StartedWhileSubscribed$command$1(this, (c)null))));
+    public final e<SharingCommand> a(final y<Integer> y) {
+        return (e<SharingCommand>)p2.b.y((e)new j((p)new StartedWhileSubscribed$command$2((c)null), (e)p2.b.S((e)y, (q)new StartedWhileSubscribed$command$1(this, (c)null))));
     }
     
     @Override
@@ -69,17 +69,17 @@ public final class StartedWhileSubscribed implements y
     public final String toString() {
         final ListBuilder listBuilder = new ListBuilder(2);
         if (this.a > 0L) {
-            final StringBuilder r = a.r("stopTimeout=");
-            r.append(this.a);
-            r.append("ms");
-            ((List<String>)listBuilder).add(r.toString());
+            final StringBuilder t = a.t("stopTimeout=");
+            t.append(this.a);
+            t.append("ms");
+            ((List<String>)listBuilder).add(t.toString());
         }
         if (this.b < Long.MAX_VALUE) {
-            final StringBuilder r2 = a.r("replayExpiration=");
-            r2.append(this.b);
-            r2.append("ms");
-            ((List<String>)listBuilder).add(r2.toString());
+            final StringBuilder t2 = a.t("replayExpiration=");
+            t2.append(this.b);
+            t2.append("ms");
+            ((List<String>)listBuilder).add(t2.toString());
         }
-        return f0.n(a.r("SharingStarted.WhileSubscribed("), CollectionsKt___CollectionsKt.I3((Iterable)listBuilder.build(), (CharSequence)null, (String)null, (String)null, (l)null, 63), ')');
+        return h.c(a.t("SharingStarted.WhileSubscribed("), CollectionsKt___CollectionsKt.a5((Iterable)listBuilder.build(), (CharSequence)null, (String)null, (String)null, (l)null, 63), ')');
     }
 }

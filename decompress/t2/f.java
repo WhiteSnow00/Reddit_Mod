@@ -6,7 +6,11 @@ package t2;
 
 public final class f
 {
-    public final int a = a;
+    public final int a;
+    
+    public f(final int a) {
+        this.a = a;
+    }
     
     @Override
     public final boolean equals(final Object o) {
@@ -32,24 +36,27 @@ public final class f
         final int n = 0;
         String s;
         if (a == 1) {
-            s = "Ltr";
+            s = "Left";
         }
         else if (a == 2) {
-            s = "Rtl";
+            s = "Right";
         }
         else if (a == 3) {
-            s = "Content";
+            s = "Center";
         }
         else if (a == 4) {
-            s = "ContentOrLtr";
+            s = "Justify";
+        }
+        else if (a == 5) {
+            s = "Start";
         }
         else {
             int n2 = n;
-            if (a == 5) {
+            if (a == 6) {
                 n2 = 1;
             }
             if (n2 != 0) {
-                s = "ContentOrRtl";
+                s = "End";
             }
             else {
                 s = "Invalid";

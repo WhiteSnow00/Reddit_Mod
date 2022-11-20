@@ -4,9 +4,9 @@
 
 package com.google.android.exoplayer2;
 
-import ad.c0;
+import bd.c0;
 import android.os.Bundle;
-import ad.d0;
+import ah0.b;
 
 public final class v implements f
 {
@@ -21,8 +21,8 @@ public final class v implements f
     
     public v(final float f, final float g) {
         final boolean b = true;
-        d0.c(f > 0.0f);
-        d0.c(g > 0.0f && b);
+        ah0.b.C(f > 0.0f);
+        ah0.b.C(g > 0.0f && b);
         this.f = f;
         this.g = g;
         this.h = Math.round(f * 1000.0f);
@@ -49,7 +49,6 @@ public final class v implements f
         return Float.floatToRawIntBits(this.g) + (Float.floatToRawIntBits(this.f) + 527) * 31;
     }
     
-    @Override
     public final Bundle toBundle() {
         final Bundle bundle = new Bundle();
         bundle.putFloat(Integer.toString(0, 36), this.f);
@@ -59,6 +58,6 @@ public final class v implements f
     
     @Override
     public final String toString() {
-        return c0.n("PlaybackParameters(speed=%.2f, pitch=%.2f)", this.f, this.g);
+        return c0.n("PlaybackParameters(speed=%.2f, pitch=%.2f)", new Object[] { this.f, this.g });
     }
 }

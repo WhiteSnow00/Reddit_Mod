@@ -13,5 +13,9 @@ public abstract class RatingSurveyEntryAction
     private RatingSurveyEntryAction() {
     }
     
+    public RatingSurveyEntryAction(final DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+    
     public abstract int getPosition();
 }

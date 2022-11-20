@@ -4,56 +4,46 @@
 
 package pd;
 
-import android.os.IInterface;
-import android.os.RemoteException;
-import android.util.Log;
-import android.os.Bundle;
-import android.os.IBinder;
+import android.os.Handler;
+import mg.d0;
+import nd.b;
+import com.google.android.gms.common.api.Scope;
+import java.util.Set;
+import qd.i;
+import com.google.android.gms.common.api.a$e;
+import qd.b$c;
 
-public final class z0 extends n0
+public final class z0 implements b$c, j1
 {
-    public final IBinder g;
-    public final /* synthetic */ b h;
+    public final a$e a;
+    public final a<?> b;
+    public i c;
+    public Set<Scope> d;
+    public boolean e;
+    public final e f;
     
-    public z0(final b h, final int n, final IBinder g, final Bundle bundle) {
-        this.h = h;
-        super(h, n, bundle);
-        this.g = g;
+    public z0(final e f, final a$e a, final a<?> b) {
+        this.f = f;
+        this.c = null;
+        this.d = null;
+        this.e = false;
+        this.a = a;
+        this.b = b;
     }
     
-    public final void c(final md.b b) {
-        final b$b z = this.h.z;
-        if (z != null) {
-            z.o(b);
-        }
-        this.h.G(b);
+    public final void a(final b b) {
+        ((Handler)this.f.s).post((Runnable)new y0(this, b));
     }
     
-    public final boolean d() {
-        try {
-            final IBinder g = this.g;
-            lw0.b.R((Object)g);
-            final String interfaceDescriptor = g.getInterfaceDescriptor();
-            if (!this.h.D().equals(interfaceDescriptor)) {
-                final String d = this.h.D();
-                Log.w("GmsClient", b.j(new StringBuilder(String.valueOf(d).length() + 34 + String.valueOf(interfaceDescriptor).length()), "service descriptor mismatch: ", d, " vs. ", interfaceDescriptor));
-                return false;
-            }
-            final IInterface w = this.h.w(this.g);
-            if (w != null && (b.I(this.h, 2, 4, w) || b.I(this.h, 3, 4, w))) {
-                final b h = this.h;
-                h.D = null;
-                final b$a y = h.y;
-                if (y != null) {
-                    y.b();
-                }
-                return true;
-            }
-            return false;
-        }
-        catch (final RemoteException ex) {
-            Log.w("GmsClient", "service probably died");
-            return false;
+    public final void b(final b b) {
+        final w0 w0 = this.f.o.get(this.b);
+        if (w0 != null) {
+            d0.s(w0.l.s);
+            final a$e b2 = w0.b;
+            final String name = b2.getClass().getName();
+            final String value = String.valueOf(b);
+            b2.d(xm2.a.b(new StringBuilder(name.length() + 25 + value.length()), "onSignInFailed for ", name, " with ", value));
+            w0.p(b, (RuntimeException)null);
         }
     }
 }

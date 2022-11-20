@@ -5,14 +5,14 @@
 package com.reddit.domain.model;
 
 import com.squareup.moshi.x;
-import hg2.j;
-import id2.a;
+import cg2.j;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import com.squareup.moshi.a0;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import com.reddit.common.size.MediaSize;
@@ -22,7 +22,7 @@ import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import com.squareup.moshi.JsonAdapter;
 
-@Metadata(bv = {}, d1 = { "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010!\u001a\u00020 ¢\u0006\u0004\b\"\u0010#J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0011R\u001c\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0011R\u001c\u0010\u0017\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0011R\u001c\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00180\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u0011R\"\u0010\u001c\u001a\u0010\u0012\f\u0012\n\u0012\u0004\u0012\u00020\u001b\u0018\u00010\u001a0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001c\u0010\u0011R\u001e\u0010\u001e\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010\u001f¨\u0006$" }, d2 = { "Lcom/reddit/domain/model/UserSubredditJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/UserSubreddit;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lhg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "stringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "nullableStringAdapter", "", "nullableBooleanAdapter", "booleanAdapter", "", "nullableIntAdapter", "Lcom/reddit/common/size/MediaSize;", "nullableMediaSizeAdapter", "", "Lcom/reddit/common/subreddit/SubredditPostType;", "nullableListOfSubredditPostTypeAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010!\u001a\u00020 ¢\u0006\u0004\b\"\u0010#J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0011R\u001c\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0011R\u001c\u0010\u0017\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0011R\u001c\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00180\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u0011R\"\u0010\u001c\u001a\u0010\u0012\f\u0012\n\u0012\u0004\u0012\u00020\u001b\u0018\u00010\u001a0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001c\u0010\u0011R\u001e\u0010\u001e\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010\u001f¨\u0006$" }, d2 = { "Lcom/reddit/domain/model/UserSubredditJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/UserSubreddit;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lcg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "stringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "nullableStringAdapter", "", "nullableBooleanAdapter", "booleanAdapter", "", "nullableIntAdapter", "Lcom/reddit/common/size/MediaSize;", "nullableMediaSizeAdapter", "", "Lcom/reddit/common/subreddit/SubredditPostType;", "nullableListOfSubredditPostTypeAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
 {
     private final JsonAdapter<Boolean> booleanAdapter;
@@ -79,12 +79,12 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
         Boolean b3 = b2;
         while (jsonReader.hasNext()) {
             int n2 = 0;
-            Label_0979: {
+            Label_0935: {
                 int n3 = 0;
                 switch (jsonReader.E(this.options)) {
                     default: {
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 24: {
                         o21 = this.nullableListOfSubredditPostTypeAdapter.fromJson(jsonReader);
@@ -133,7 +133,7 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                     case 17: {
                         o17 = this.nullableBooleanAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 16: {
                         o8 = this.stringAdapter.fromJson(jsonReader);
@@ -155,7 +155,7 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                         o10 = this.stringAdapter.fromJson(jsonReader);
                         if (o10 != null) {
                             n2 = (n & 0xFFFFBFFF);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("keyColor", "key_color", jsonReader);
                     }
@@ -163,20 +163,20 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                         b3 = (Boolean)this.booleanAdapter.fromJson(jsonReader);
                         if (b3 != null) {
                             n2 = (n & 0xFFFFDFFF);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("isDefaultIcon", "is_default_icon", jsonReader);
                     }
                     case 12: {
                         o15 = this.nullableIntAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 11: {
                         o2 = this.stringAdapter.fromJson(jsonReader);
                         if (o2 != null) {
                             n2 = (n & 0xFFFFF7FF);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("displayNamePrefixed", "display_name_prefixed", jsonReader);
                     }
@@ -184,7 +184,7 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                         o = this.stringAdapter.fromJson(jsonReader);
                         if (o != null) {
                             n2 = (n & 0xFFFFFBFF);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("iconImg", "icon_img", jsonReader);
                     }
@@ -192,27 +192,27 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                         false = (Boolean)this.booleanAdapter.fromJson(jsonReader);
                         if (false != null) {
                             n2 = (n & 0xFFFFFDFF);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("over18", "over_18", jsonReader);
                     }
                     case 8: {
                         o12 = this.nullableBooleanAdapter.fromJson(jsonReader);
                         n2 = (n & 0xFFFFFEFF);
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 7: {
                         o3 = this.stringAdapter.fromJson(jsonReader);
                         if (o3 != null) {
                             n2 = (n & 0xFFFFFF7F);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("title", "title", jsonReader);
                     }
                     case 6: {
                         o11 = this.nullableStringAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 5: {
                         o5 = this.stringAdapter.fromJson(jsonReader);
@@ -225,39 +225,39 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
                     case 4: {
                         o13 = this.nullableBooleanAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 3: {
                         o9 = this.stringAdapter.fromJson(jsonReader);
                         if (o9 != null) {
                             n2 = (n & 0xFFFFFFF7);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("description", "description", jsonReader);
                     }
                     case 2: {
                         o14 = this.nullableBooleanAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 1: {
                         o16 = this.nullableStringAdapter.fromJson(jsonReader);
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                     case 0: {
                         o6 = this.stringAdapter.fromJson(jsonReader);
                         if (o6 != null) {
                             n2 = (n & 0xFFFFFFFE);
-                            break Label_0979;
+                            break Label_0935;
                         }
                         throw a.n("kindWithId", "name", jsonReader);
                     }
                     case -1: {
                         jsonReader.H();
-                        jsonReader.F1();
+                        jsonReader.G1();
                         n2 = n;
-                        break Label_0979;
+                        break Label_0935;
                     }
                 }
                 n2 = (n & n3);
@@ -294,64 +294,72 @@ public final class UserSubredditJsonAdapter extends JsonAdapter<UserSubreddit>
         return instance;
     }
     
+    public /* bridge */ Object fromJson(final JsonReader jsonReader) {
+        return this.fromJson(jsonReader);
+    }
+    
     public void toJson(final x x, final UserSubreddit userSubreddit) {
         e.f((Object)x, "writer");
         if (userSubreddit != null) {
             x.h();
-            x.u("name");
+            x.v("name");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getKindWithId());
-            x.u("banner_img");
+            x.v("banner_img");
             this.nullableStringAdapter.toJson(x, (Object)userSubreddit.getBannerImg());
-            x.u("user_is_banned");
+            x.v("user_is_banned");
             this.nullableBooleanAdapter.toJson(x, (Object)userSubreddit.getUserIsBanned());
-            x.u("description");
+            x.v("description");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getDescription());
-            x.u("user_is_muted");
+            x.v("user_is_muted");
             this.nullableBooleanAdapter.toJson(x, (Object)userSubreddit.getUserIsMuted());
-            x.u("display_name");
+            x.v("display_name");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getDisplayName());
-            x.u("header_img");
+            x.v("header_img");
             this.nullableStringAdapter.toJson(x, (Object)userSubreddit.getHeaderImg());
-            x.u("title");
+            x.v("title");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getTitle());
-            x.u("user_is_moderator");
+            x.v("user_is_moderator");
             this.nullableBooleanAdapter.toJson(x, (Object)userSubreddit.getUserIsModerator());
-            x.u("over_18");
+            x.v("over_18");
             this.booleanAdapter.toJson(x, (Object)userSubreddit.getOver18());
-            x.u("icon_img");
+            x.v("icon_img");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getIconImg());
-            x.u("display_name_prefixed");
+            x.v("display_name_prefixed");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getDisplayNamePrefixed());
-            x.u("subscribers");
+            x.v("subscribers");
             this.nullableIntAdapter.toJson(x, (Object)userSubreddit.getSubscribers());
-            x.u("is_default_icon");
+            x.v("is_default_icon");
             this.booleanAdapter.toJson(x, (Object)userSubreddit.isDefaultIcon());
-            x.u("key_color");
+            x.v("key_color");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getKeyColor());
-            x.u("is_default_banner");
+            x.v("is_default_banner");
             this.booleanAdapter.toJson(x, (Object)userSubreddit.isDefaultBanner());
-            x.u("url");
+            x.v("url");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getUrl());
-            x.u("user_is_contributor");
+            x.v("user_is_contributor");
             this.nullableBooleanAdapter.toJson(x, (Object)userSubreddit.getUserIsContributor());
-            x.u("public_description");
+            x.v("public_description");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getPublicDescription());
-            x.u("subreddit_type");
+            x.v("subreddit_type");
             this.stringAdapter.toJson(x, (Object)userSubreddit.getSubredditType());
-            x.u("user_is_subscriber");
+            x.v("user_is_subscriber");
             this.nullableBooleanAdapter.toJson(x, (Object)userSubreddit.getUserIsSubscriber());
-            x.u("default_set");
+            x.v("default_set");
             this.booleanAdapter.toJson(x, (Object)userSubreddit.getShowInDefaultSubreddits());
-            x.u("icon_size");
+            x.v("icon_size");
             this.nullableMediaSizeAdapter.toJson(x, (Object)userSubreddit.getIconSize());
-            x.u("banner_size");
+            x.v("banner_size");
             this.nullableMediaSizeAdapter.toJson(x, (Object)userSubreddit.getBannerSize());
-            x.u("allowedPostTypes");
+            x.v("allowedPostTypes");
             this.nullableListOfSubredditPostTypeAdapter.toJson(x, (Object)userSubreddit.getAllowedPostTypes());
             x.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+    
+    public /* bridge */ void toJson(final x x, final Object o) {
+        this.toJson(x, (UserSubreddit)o);
     }
     
     public String toString() {

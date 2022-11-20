@@ -4,7 +4,7 @@
 
 package com.reddit.video.player.player;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -45,6 +45,100 @@ public final class Model
         this.fullscreen = fullscreen;
         this.muteAlwaysVisible = muteAlwaysVisible;
         this.autoplayOverrides = autoplayOverrides;
+    }
+    
+    public Model(boolean b, boolean b2, boolean b3, boolean b4, boolean b5, boolean b6, boolean b7, boolean b8, boolean b9, boolean b10, boolean b11, boolean b12, boolean b13, ModelOverride modelOverride, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        final boolean b14 = false;
+        if ((n & 0x1) != 0x0) {
+            b = false;
+        }
+        if ((n & 0x2) != 0x0) {
+            b2 = false;
+        }
+        final boolean b15 = true;
+        if ((n & 0x4) != 0x0) {
+            b3 = true;
+        }
+        if ((n & 0x8) != 0x0) {
+            b4 = false;
+        }
+        if ((n & 0x10) != 0x0) {
+            b5 = false;
+        }
+        if ((n & 0x20) != 0x0) {
+            b6 = false;
+        }
+        if ((n & 0x40) != 0x0) {
+            b7 = false;
+        }
+        if ((n & 0x80) != 0x0) {
+            b8 = false;
+        }
+        if ((n & 0x100) != 0x0) {
+            b9 = true;
+        }
+        if ((n & 0x200) != 0x0) {
+            b10 = false;
+        }
+        if ((n & 0x400) != 0x0) {
+            b11 = false;
+        }
+        if ((n & 0x800) != 0x0) {
+            b12 = b15;
+        }
+        if ((n & 0x1000) != 0x0) {
+            b13 = b14;
+        }
+        if ((n & 0x2000) != 0x0) {
+            modelOverride = null;
+        }
+        this(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, modelOverride);
+    }
+    
+    public static Model copy$default(final Model model, boolean bufferingSpinner, boolean autohide, boolean canhide, boolean controls, boolean play, boolean pause, boolean replay, boolean callToAction, boolean shadow, boolean showOnStateChange, boolean hideOnStateChange, boolean fullscreen, boolean muteAlwaysVisible, ModelOverride autoplayOverrides, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            bufferingSpinner = model.bufferingSpinner;
+        }
+        if ((n & 0x2) != 0x0) {
+            autohide = model.autohide;
+        }
+        if ((n & 0x4) != 0x0) {
+            canhide = model.canhide;
+        }
+        if ((n & 0x8) != 0x0) {
+            controls = model.controls;
+        }
+        if ((n & 0x10) != 0x0) {
+            play = model.play;
+        }
+        if ((n & 0x20) != 0x0) {
+            pause = model.pause;
+        }
+        if ((n & 0x40) != 0x0) {
+            replay = model.replay;
+        }
+        if ((n & 0x80) != 0x0) {
+            callToAction = model.callToAction;
+        }
+        if ((n & 0x100) != 0x0) {
+            shadow = model.shadow;
+        }
+        if ((n & 0x200) != 0x0) {
+            showOnStateChange = model.showOnStateChange;
+        }
+        if ((n & 0x400) != 0x0) {
+            hideOnStateChange = model.hideOnStateChange;
+        }
+        if ((n & 0x800) != 0x0) {
+            fullscreen = model.fullscreen;
+        }
+        if ((n & 0x1000) != 0x0) {
+            muteAlwaysVisible = model.muteAlwaysVisible;
+        }
+        if ((n & 0x2000) != 0x0) {
+            autoplayOverrides = model.autoplayOverrides;
+        }
+        return model.copy(bufferingSpinner, autohide, canhide, controls, play, pause, replay, callToAction, shadow, showOnStateChange, hideOnStateChange, fullscreen, muteAlwaysVisible, autoplayOverrides);
     }
     
     public final boolean component1() {
@@ -244,35 +338,35 @@ public final class Model
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Model(bufferingSpinner=");
-        r.append(this.bufferingSpinner);
-        r.append(", autohide=");
-        r.append(this.autohide);
-        r.append(", canhide=");
-        r.append(this.canhide);
-        r.append(", controls=");
-        r.append(this.controls);
-        r.append(", play=");
-        r.append(this.play);
-        r.append(", pause=");
-        r.append(this.pause);
-        r.append(", replay=");
-        r.append(this.replay);
-        r.append(", callToAction=");
-        r.append(this.callToAction);
-        r.append(", shadow=");
-        r.append(this.shadow);
-        r.append(", showOnStateChange=");
-        r.append(this.showOnStateChange);
-        r.append(", hideOnStateChange=");
-        r.append(this.hideOnStateChange);
-        r.append(", fullscreen=");
-        r.append(this.fullscreen);
-        r.append(", muteAlwaysVisible=");
-        r.append(this.muteAlwaysVisible);
-        r.append(", autoplayOverrides=");
-        r.append(this.autoplayOverrides);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("Model(bufferingSpinner=");
+        t.append(this.bufferingSpinner);
+        t.append(", autohide=");
+        t.append(this.autohide);
+        t.append(", canhide=");
+        t.append(this.canhide);
+        t.append(", controls=");
+        t.append(this.controls);
+        t.append(", play=");
+        t.append(this.play);
+        t.append(", pause=");
+        t.append(this.pause);
+        t.append(", replay=");
+        t.append(this.replay);
+        t.append(", callToAction=");
+        t.append(this.callToAction);
+        t.append(", shadow=");
+        t.append(this.shadow);
+        t.append(", showOnStateChange=");
+        t.append(this.showOnStateChange);
+        t.append(", hideOnStateChange=");
+        t.append(this.hideOnStateChange);
+        t.append(", fullscreen=");
+        t.append(this.fullscreen);
+        t.append(", muteAlwaysVisible=");
+        t.append(this.muteAlwaysVisible);
+        t.append(", autoplayOverrides=");
+        t.append(this.autoplayOverrides);
+        t.append(')');
+        return t.toString();
     }
 }

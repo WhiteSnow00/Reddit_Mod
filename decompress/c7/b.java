@@ -4,13 +4,13 @@
 
 package c7;
 
-import java.util.HashSet;
-
-public final class b
+public final class b<T>
 {
-    public static final HashSet a;
-    
-    static {
-        a = new HashSet();
-    }
+    public float a;
+    public float b;
+    public T c;
+    public T d;
+    public float e;
+    public float f;
+    public float g;
 }

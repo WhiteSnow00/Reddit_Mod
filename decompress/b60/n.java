@@ -4,26 +4,38 @@
 
 package b60;
 
-import sg2.e;
-import al0.b;
+import ng2.e;
+import com.reddit.listing.common.ListingViewMode;
+import zu.a;
+import com.reddit.domain.model.media.VideoContext;
 
 public final class n
 {
     public final String a;
-    public final String b;
+    public final VideoContext b;
     public final String c;
-    public final long d;
+    public final a d;
+    public final ListingViewMode e;
     
     public n() {
-        this(null, null, null, 15);
+        this(null, null, null, 31);
     }
     
-    public n(final String a, final String b, final String c, final long d) {
-        al0.b.q(a, "username", b, "subredditName", c, "responseJson");
+    public n(String a, VideoContext b, a d, final int n) {
+        if ((n & 0x1) != 0x0) {
+            a = null;
+        }
+        if ((n & 0x2) != 0x0) {
+            b = null;
+        }
+        if ((n & 0x8) != 0x0) {
+            d = null;
+        }
         this.a = a;
         this.b = b;
-        this.c = c;
+        this.c = null;
         this.d = d;
+        this.e = null;
     }
     
     @Override
@@ -35,23 +47,64 @@ public final class n
             return false;
         }
         final n n = (n)o;
-        return e.a((Object)this.a, (Object)n.a) && e.a((Object)this.b, (Object)n.b) && e.a((Object)this.c, (Object)n.c) && this.d == n.d;
+        return ng2.e.a((Object)this.a, (Object)n.a) && ng2.e.a((Object)this.b, (Object)n.b) && ng2.e.a((Object)this.c, (Object)n.c) && ng2.e.a((Object)this.d, (Object)n.d) && this.e == n.e;
     }
     
     @Override
     public final int hashCode() {
-        return Long.hashCode(this.d) + b.c(this.c, b.c(this.b, this.a.hashCode() * 31, 31), 31);
+        final String a = this.a;
+        int hashCode = 0;
+        int hashCode2;
+        if (a == null) {
+            hashCode2 = 0;
+        }
+        else {
+            hashCode2 = a.hashCode();
+        }
+        final VideoContext b = this.b;
+        int hashCode3;
+        if (b == null) {
+            hashCode3 = 0;
+        }
+        else {
+            hashCode3 = b.hashCode();
+        }
+        final String c = this.c;
+        int hashCode4;
+        if (c == null) {
+            hashCode4 = 0;
+        }
+        else {
+            hashCode4 = c.hashCode();
+        }
+        final a d = this.d;
+        int hashCode5;
+        if (d == null) {
+            hashCode5 = 0;
+        }
+        else {
+            hashCode5 = d.hashCode();
+        }
+        final ListingViewMode e = this.e;
+        if (e != null) {
+            hashCode = e.hashCode();
+        }
+        return (((hashCode2 * 31 + hashCode3) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode;
     }
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("ModeratorsResponseDataModel(username=");
-        r.append(this.a);
-        r.append(", subredditName=");
-        r.append(this.b);
-        r.append(", responseJson=");
-        r.append(this.c);
-        r.append(", lastUpdateTimestamp=");
-        return b.i(r, this.d, ')');
+        final StringBuilder t = a.t("RecommendedVideosRequestKey(after=");
+        t.append(this.a);
+        t.append(", videoContext=");
+        t.append(this.b);
+        t.append(", adDistance=");
+        t.append(this.c);
+        t.append(", adContext=");
+        t.append(this.d);
+        t.append(", viewMode=");
+        t.append(this.e);
+        t.append(')');
+        return t.toString();
     }
 }

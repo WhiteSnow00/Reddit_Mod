@@ -4,45 +4,62 @@
 
 package e8;
 
-import a4.t1;
-import java.util.WeakHashMap;
-import java.util.ArrayList;
-import android.view.ViewGroup;
-import a4.q0$i;
-import a4.q0;
-import android.view.ViewTreeObserver$OnPreDrawListener;
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
+import android.animation.AnimatorSet;
 import android.view.View;
+import android.view.ViewGroup;
 
-public final class c implements Runnable
+public final class c extends a
 {
-    public final /* synthetic */ View f;
-    public final /* synthetic */ View g;
-    public final /* synthetic */ ViewTreeObserver$OnPreDrawListener h;
-    public final /* synthetic */ n.a i;
-    public final /* synthetic */ j j;
-    
-    public c(final j j, final View f, final View g, final ViewTreeObserver$OnPreDrawListener h, final n.a i) {
-        this.j = j;
-        this.f = f;
-        this.g = g;
-        this.h = h;
-        this.i = i;
+    public c() {
     }
     
-    @Override
-    public final void run() {
-        final ArrayList m = this.j.m;
-        final View f = this.f;
-        final WeakHashMap<View, t1> a = q0.a;
-        m.remove(q0$i.k(f));
-        final ArrayList n = this.j.n;
-        final View f2 = this.f;
-        n.add(new j.b((ViewGroup)f2.getParent(), f2));
-        ((ViewGroup)this.f.getParent()).removeView(this.f);
-        if (this.j.m.size() == 0) {
-            this.g.getViewTreeObserver().removeOnPreDrawListener(this.h);
-            this.g.setVisibility(4);
-            this.i.onPrepared();
+    public c(final long n) {
+        super(n);
+    }
+    
+    public c(final long n, final boolean b) {
+        super(n, b);
+    }
+    
+    public c(final boolean b) {
+        super(b);
+    }
+    
+    public final com.bluelinelabs.conductor.c c() {
+        return (com.bluelinelabs.conductor.c)new c(super.i, super.j);
+    }
+    
+    public final AnimatorSet o(final ViewGroup viewGroup, final View view, final View view2, final boolean b, final boolean b2) {
+        final AnimatorSet set = new AnimatorSet();
+        if (b) {
+            if (view != null) {
+                set.play((Animator)ObjectAnimator.ofFloat((Object)view, View.TRANSLATION_X, new float[] { (float)(-view.getWidth()) }));
+            }
+            if (view2 != null) {
+                set.play((Animator)ObjectAnimator.ofFloat((Object)view2, View.TRANSLATION_X, new float[] { (float)view2.getWidth(), 0.0f }));
+            }
         }
+        else {
+            if (view != null) {
+                set.play((Animator)ObjectAnimator.ofFloat((Object)view, View.TRANSLATION_X, new float[] { (float)view.getWidth() }));
+            }
+            if (view2 != null) {
+                float translationX;
+                if (view != null) {
+                    translationX = view.getTranslationX();
+                }
+                else {
+                    translationX = 0.0f;
+                }
+                set.play((Animator)ObjectAnimator.ofFloat((Object)view2, View.TRANSLATION_X, new float[] { translationX - view2.getWidth(), 0.0f }));
+            }
+        }
+        return set;
+    }
+    
+    public final void q(final View view) {
+        view.setTranslationX(0.0f);
     }
 }

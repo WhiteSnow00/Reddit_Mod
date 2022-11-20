@@ -5,11 +5,11 @@
 package com.reddit.video.player.controls;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import hg2.j;
-import rg2.a;
+import cg2.j;
+import mg2.a;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0014\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB/\u0012\b\b\u0002\u0010\t\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u0015\u001a\u00020\u0007¢\u0006\u0004\b\u0018\u0010\u0019J\u001c\u0010\u0006\u001a\u00020\u00032\u0014\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0002j\u0004\u0018\u0001`\u0004R*\u0010\t\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\t\u0010\n\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR*\u0010\u000f\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u000f\u0010\n\u001a\u0004\b\u0010\u0010\f\"\u0004\b\u0011\u0010\u000eR*\u0010\u0012\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0012\u0010\n\u001a\u0004\b\u0013\u0010\f\"\u0004\b\u0014\u0010\u000eR*\u0010\u0015\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0015\u0010\n\u001a\u0004\b\u0016\u0010\f\"\u0004\b\u0017\u0010\u000e¨\u0006\u001b" }, d2 = { "Lcom/reddit/video/player/controls/Margins;", "", "Lkotlin/Function0;", "Lhg2/j;", "Lcom/reddit/video/player/internal/Delegate;", "callback", "onUpdate", "", "value", "top", "I", "getTop", "()I", "setTop", "(I)V", "right", "getRight", "setRight", "bottom", "getBottom", "setBottom", "left", "getLeft", "setLeft", "<init>", "(IIII)V", "Companion", "player_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0014\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB/\u0012\b\b\u0002\u0010\t\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u0015\u001a\u00020\u0007¢\u0006\u0004\b\u0018\u0010\u0019J\u001c\u0010\u0006\u001a\u00020\u00032\u0014\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0002j\u0004\u0018\u0001`\u0004R*\u0010\t\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\t\u0010\n\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR*\u0010\u000f\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u000f\u0010\n\u001a\u0004\b\u0010\u0010\f\"\u0004\b\u0011\u0010\u000eR*\u0010\u0012\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0012\u0010\n\u001a\u0004\b\u0013\u0010\f\"\u0004\b\u0014\u0010\u000eR*\u0010\u0015\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00078\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0015\u0010\n\u001a\u0004\b\u0016\u0010\f\"\u0004\b\u0017\u0010\u000e¨\u0006\u001b" }, d2 = { "Lcom/reddit/video/player/controls/Margins;", "", "Lkotlin/Function0;", "Lcg2/j;", "Lcom/reddit/video/player/internal/Delegate;", "callback", "onUpdate", "", "value", "top", "I", "getTop", "()I", "setTop", "(I)V", "right", "getRight", "setRight", "bottom", "getBottom", "setBottom", "left", "getLeft", "setLeft", "<init>", "(IIII)V", "Companion", "player_release" }, k = 1, mv = { 1, 7, 1 })
 public final class Margins
 {
     public static final Companion Companion;
@@ -36,7 +36,23 @@ public final class Margins
         this.left = left;
     }
     
-    public static final /* synthetic */ Margins access$getZero$cp() {
+    public Margins(int n, int n2, int n3, int n4, final int n5, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n5 & 0x1) != 0x0) {
+            n = 0;
+        }
+        if ((n5 & 0x2) != 0x0) {
+            n2 = 0;
+        }
+        if ((n5 & 0x4) != 0x0) {
+            n3 = 0;
+        }
+        if ((n5 & 0x8) != 0x0) {
+            n4 = 0;
+        }
+        this(n, n2, n3, n4);
+    }
+    
+    public static final Margins access$getZero$cp() {
         return Margins.zero;
     }
     
@@ -100,6 +116,13 @@ public final class Margins
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+        
+        public static void getZero$annotations() {
         }
         
         public final Margins getZero() {

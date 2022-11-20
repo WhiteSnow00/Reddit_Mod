@@ -4,7 +4,8 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import java.util.List;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -21,6 +22,16 @@ public final class Regions
         e.f((Object)mappings, "mappings");
         this.language = language;
         this.mappings = mappings;
+    }
+    
+    public static Regions copy$default(final Regions regions, String language, List mappings, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            language = regions.language;
+        }
+        if ((n & 0x2) != 0x0) {
+            mappings = regions.mappings;
+        }
+        return regions.copy(language, mappings);
     }
     
     public final String component1() {
@@ -64,9 +75,9 @@ public final class Regions
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Regions(language=");
-        r.append(this.language);
-        r.append(", mappings=");
-        return d.o(r, (List)this.mappings, ')');
+        final StringBuilder t = a.t("Regions(language=");
+        t.append(this.language);
+        t.append(", mappings=");
+        return h.d(t, (List)this.mappings, ')');
     }
 }

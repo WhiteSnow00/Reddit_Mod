@@ -4,39 +4,48 @@
 
 package pd;
 
-import android.os.Parcelable;
-import a92.b;
-import android.os.Parcel;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import android.accounts.Account;
-import android.os.Parcelable$Creator;
-import qd.a;
+import ph0.a;
+import android.os.Message;
+import android.os.Looper;
+import ee.f;
 
-public final class j0 extends a
+public final class j0 extends f
 {
-    public static final Parcelable$Creator<j0> CREATOR;
-    public final int f;
-    public final Account g;
-    public final int h;
-    public final GoogleSignInAccount i;
+    public final l0 a;
     
-    static {
-        CREATOR = (Parcelable$Creator)new k0();
+    public j0(final l0 a, final Looper looper) {
+        this.a = a;
+        super(looper);
     }
     
-    public j0(final int f, final Account g, final int h, final GoogleSignInAccount i) {
-        this.f = f;
-        this.g = g;
-        this.h = h;
-        this.i = i;
-    }
-    
-    public final void writeToParcel(final Parcel parcel, final int n) {
-        final int y0 = b.y0(parcel, 20293);
-        b.p0(parcel, 1, this.f);
-        b.s0(parcel, 2, (Parcelable)this.g, n);
-        b.p0(parcel, 3, this.h);
-        b.s0(parcel, 4, (Parcelable)this.i, n);
-        b.D0(parcel, y0);
+    public final void handleMessage(Message a) {
+        final int what = a.what;
+        if (what != 1) {
+            if (what != 2) {
+                a.h(31, "Unknown message id: ", what, "GoogleApiClientImpl");
+                return;
+            }
+            a = (Message)this.a;
+            ((l0)a).g.lock();
+            try {
+                if (((l0)a).n) {
+                    ((l0)a).l();
+                }
+                return;
+            }
+            finally {
+                ((l0)a).g.unlock();
+            }
+        }
+        final l0 a2 = this.a;
+        a2.g.lock();
+        try {
+            if (a2.j()) {
+                a2.l();
+            }
+        }
+        finally {
+            a2.g.unlock();
+        }
     }
 }

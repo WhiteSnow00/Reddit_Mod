@@ -5,8 +5,8 @@
 package com.reddit.domain.model;
 
 import kotlin.NoWhenBranchMatchedException;
-import sg2.e;
-import rg2.l;
+import ng2.e;
+import mg2.l;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -14,6 +14,10 @@ import kotlin.Metadata;
 public abstract class Result<T>
 {
     private Result() {
+    }
+    
+    public Result(final DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
     
     public abstract String getError();
@@ -54,6 +58,29 @@ public abstract class Result<T>
             this.error = error;
             this.isTextError = isTextError;
             this.errorType = errorType;
+        }
+        
+        public Error(final String s, boolean b, ErrorType unknown, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+            if ((n & 0x2) != 0x0) {
+                b = false;
+            }
+            if ((n & 0x4) != 0x0) {
+                unknown = ErrorType.UNKNOWN;
+            }
+            this(s, b, unknown);
+        }
+        
+        public static Error copy$default(final Error error, String error2, boolean isTextError, ErrorType errorType, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                error2 = error.getError();
+            }
+            if ((n & 0x2) != 0x0) {
+                isTextError = error.isTextError;
+            }
+            if ((n & 0x4) != 0x0) {
+                errorType = error.errorType;
+            }
+            return error.copy(error2, isTextError, errorType);
         }
         
         public final String component1() {
@@ -116,23 +143,33 @@ public abstract class Result<T>
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("Error(error=");
-            r.append(this.getError());
-            r.append(", isTextError=");
-            r.append(this.isTextError);
-            r.append(", errorType=");
-            r.append(this.errorType);
-            r.append(')');
-            return r.toString();
+            final StringBuilder t = a.t("Error(error=");
+            t.append(this.getError());
+            t.append(", isTextError=");
+            t.append(this.isTextError);
+            t.append(", errorType=");
+            t.append(this.errorType);
+            t.append(')');
+            return t.toString();
         }
     }
     
     @Metadata(d1 = { "\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006" }, d2 = { "Lcom/reddit/domain/model/Result$ErrorType;", "", "(Ljava/lang/String;I)V", "UNKNOWN", "CONNECTION", "SERVER", "model_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public enum ErrorType
     {
+        private static final ErrorType[] $VALUES;
+        
         CONNECTION, 
         SERVER, 
         UNKNOWN;
+        
+        private static final ErrorType[] $values() {
+            return new ErrorType[] { ErrorType.UNKNOWN, ErrorType.CONNECTION, ErrorType.SERVER };
+        }
+        
+        static {
+            $VALUES = $values();
+        }
     }
     
     @Metadata(d1 = { "\u0000*\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u0000*\u0006\b\u0001\u0010\u0001 \u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00028\u0001¢\u0006\u0002\u0010\u0004J\u000e\u0010\f\u001a\u00028\u0001H\u00c6\u0003¢\u0006\u0002\u0010\nJ\u001e\u0010\r\u001a\b\u0012\u0004\u0012\u00028\u00010\u00002\b\b\u0002\u0010\u0003\u001a\u00028\u0001H\u00c6\u0001¢\u0006\u0002\u0010\u000eJ\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u00d6\u0003J\t\u0010\u0013\u001a\u00020\u0014H\u00d6\u0001J\t\u0010\u0015\u001a\u00020\u0006H\u00d6\u0001R\u0016\u0010\u0005\u001a\u0004\u0018\u00010\u00068VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0016\u0010\u0003\u001a\u00028\u0001X\u0096\u0004¢\u0006\n\n\u0002\u0010\u000b\u001a\u0004\b\t\u0010\n¨\u0006\u0016" }, d2 = { "Lcom/reddit/domain/model/Result$Success;", "T", "Lcom/reddit/domain/model/Result;", "result", "(Ljava/lang/Object;)V", "error", "", "getError", "()Ljava/lang/String;", "getResult", "()Ljava/lang/Object;", "Ljava/lang/Object;", "component1", "copy", "(Ljava/lang/Object;)Lcom/reddit/domain/model/Result$Success;", "equals", "", "other", "", "hashCode", "", "toString", "model_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
@@ -143,6 +180,13 @@ public abstract class Result<T>
         public Success(final T result) {
             super(null);
             this.result = result;
+        }
+        
+        public static Success copy$default(final Success success, Object result, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                result = success.getResult();
+            }
+            return success.copy(result);
         }
         
         public final T component1() {
@@ -182,10 +226,10 @@ public abstract class Result<T>
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("Success(result=");
-            r.append(this.getResult());
-            r.append(')');
-            return r.toString();
+            final StringBuilder t = a.t("Success(result=");
+            t.append(this.getResult());
+            t.append(')');
+            return t.toString();
         }
     }
 }

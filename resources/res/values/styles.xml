@@ -1998,6 +1998,13 @@
         <item name="android:textColor">@color/exo_white_opacity_70</item>
         <item name="android:text">·</item>
     </style>
+    <style name="FloatingDialogTheme">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="FloatingDialogWindowTheme">
+        <item name="android:dialogTheme">@style/FloatingDialogTheme</item>
+        <item name="android:windowClipToOutline">false</item>
+    </style>
     <style name="IbFrActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">#ff0000</item>
     </style>

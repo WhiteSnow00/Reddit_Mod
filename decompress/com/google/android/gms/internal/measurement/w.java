@@ -4,29 +4,33 @@
 
 package com.google.android.gms.internal.measurement;
 
-import ie.q9;
-import ie.r9;
-import ie.c5;
+import je.p9;
+import je.q9;
+import je.z4;
 
-public final class w implements c5
+public final class w implements z4
 {
     public static final w g;
-    public final c5 f;
+    public final z4 f;
     
     static {
         g = new w();
     }
     
     public w() {
-        final zzik zzik = new zzik(new r9());
-        this.f = a.b((c5)zzik);
+        final zzik zzik = new zzik(new q9());
+        this.f = a.a((z4)zzik);
     }
     
     public static void b() {
         w.g.a().zza();
     }
     
-    public final q9 a() {
-        return (q9)this.f.zza();
+    public final p9 a() {
+        return (p9)this.f.zza();
+    }
+    
+    public final /* bridge */ Object zza() {
+        return this.a();
     }
 }

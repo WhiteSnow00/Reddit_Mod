@@ -9,18 +9,17 @@ import java.util.Set;
 import kotlin.Pair;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import bg.d;
-import ig2.m;
+import dg2.m;
 import kotlin.collections.EmptyList;
 import com.reddit.domain.model.ResultOrException;
 import java.util.List;
 import kotlin.collections.CollectionsKt___CollectionsKt;
-import yd.b;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import java.util.Map;
 import javax.inject.Inject;
-import sg2.e;
-import qz.c;
+import ng2.e;
+import sz.c;
 
 public final class FetchListingPricesUseCase
 {
@@ -32,72 +31,72 @@ public final class FetchListingPricesUseCase
         this.a = a;
     }
     
-    public final Object a(a l$0, final lg2.c<? super Map<String, ? extends tz.e>> c) {
+    public final Object a(a l$0, final gg2.c<? super Map<String, ? extends vz.e>> c) {
         Object o = null;
-        Label_0050: {
+        Label_0051: {
             if (c instanceof FetchListingPricesUseCase$invoke$1) {
                 final FetchListingPricesUseCase$invoke$1 fetchListingPricesUseCase$invoke$1 = (FetchListingPricesUseCase$invoke$1)c;
                 final int label = fetchListingPricesUseCase$invoke$1.label;
                 if ((label & Integer.MIN_VALUE) != 0x0) {
                     fetchListingPricesUseCase$invoke$1.label = label + Integer.MIN_VALUE;
                     o = fetchListingPricesUseCase$invoke$1;
-                    break Label_0050;
+                    break Label_0051;
                 }
             }
-            o = new FetchListingPricesUseCase$invoke$1(this, (lg2.c)c);
+            o = new FetchListingPricesUseCase$invoke$1(this, (gg2.c)c);
         }
         final Object result = ((FetchListingPricesUseCase$invoke$1)o).result;
         final CoroutineSingletons coroutine_SUSPENDED = CoroutineSingletons.COROUTINE_SUSPENDED;
         final int label2 = ((FetchListingPricesUseCase$invoke$1)o).label;
-        Object c2;
+        Object d;
         if (label2 != 0) {
             if (label2 != 1) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             l$0 = (a)((FetchListingPricesUseCase$invoke$1)o).L$0;
-            b.k0(result);
-            c2 = result;
+            cg.d.b4(result);
+            d = result;
         }
         else {
-            b.k0(result);
-            final Set u4 = CollectionsKt___CollectionsKt.u4((Iterable)CollectionsKt___CollectionsKt.y3((Iterable)l$0.a.values()));
+            cg.d.b4(result);
+            final Set m5 = CollectionsKt___CollectionsKt.M5((Iterable)CollectionsKt___CollectionsKt.Q4((Iterable)l$0.a.values()));
             final c a = this.a;
-            final List q4 = CollectionsKt___CollectionsKt.q4((Iterable)u4);
+            final List i5 = CollectionsKt___CollectionsKt.I5((Iterable)m5);
             ((FetchListingPricesUseCase$invoke$1)o).L$0 = l$0;
             ((FetchListingPricesUseCase$invoke$1)o).label = 1;
-            if ((c2 = a.c(q4, (lg2.c)o)) == coroutine_SUSPENDED) {
+            if ((d = a.d(i5, (gg2.c)o)) == coroutine_SUSPENDED) {
                 return coroutine_SUSPENDED;
             }
         }
         Object instance;
-        if ((instance = ((ResultOrException<List, E>)c2).getResult()) == null) {
+        if ((instance = ((ResultOrException<List, E>)d).getResult()) == null) {
             instance = EmptyList.INSTANCE;
         }
-        int o2;
-        if ((o2 = d.o0(m.c3((Iterable)instance, 10))) < 16) {
-            o2 = 16;
+        int p2;
+        if ((p2 = cg.d.p3(m.u4((Iterable)instance, 10))) < 16) {
+            p2 = 16;
         }
-        final LinkedHashMap linkedHashMap = new LinkedHashMap<String, tz.e>(o2);
+        final LinkedHashMap linkedHashMap = new LinkedHashMap<String, vz.e>(p2);
         for (final Object next : instance) {
-            linkedHashMap.put(((tz.e)next).b(), (tz.e)next);
+            linkedHashMap.put(((vz.e)next).b(), (vz.e)next);
         }
         final Map<String, String> a2 = l$0.a;
         final ArrayList<Object> list = new ArrayList<Object>();
         for (final Map.Entry<K, String> entry : a2.entrySet()) {
             final String s = (String)entry.getKey();
-            final tz.e e = linkedHashMap.get(entry.getValue());
-            Object o3;
+            final vz.e e = linkedHashMap.get(entry.getValue());
+            Object o2;
             if (e != null) {
-                o3 = new Pair((Object)s, (Object)e);
+                o2 = new Pair((Object)s, (Object)e);
             }
             else {
-                o3 = null;
+                o2 = null;
             }
-            if (o3 != null) {
-                list.add(o3);
+            if (o2 != null) {
+                list.add(o2);
             }
         }
-        return kotlin.collections.c.g1((List)list);
+        return kotlin.collections.c.E4((List)list);
     }
     
     public static final class a
@@ -120,7 +119,7 @@ public final class FetchListingPricesUseCase
         
         @Override
         public final String toString() {
-            return a81.e.o(a.r("Params(listingIdToExternalId="), (Map)this.a, ')');
+            return aq2.a.p(a.t("Params(listingIdToExternalId="), (Map)this.a, ')');
         }
     }
 }

@@ -4,49 +4,22 @@
 
 package gc2;
 
-import com.sendbird.android.shadow.com.google.gson.JsonParseException;
-import fc2.h;
-import com.sendbird.android.shadow.com.google.gson.stream.MalformedJsonException;
-import java.io.IOException;
-import com.sendbird.android.shadow.com.google.gson.JsonIOException;
-import com.sendbird.android.shadow.com.google.gson.JsonSyntaxException;
-import java.io.EOFException;
-import hc2.f$u;
-import hc2.f;
-import fc2.g;
-import kc2.a;
+import java.util.concurrent.ThreadFactory;
 
-public final class c
+public final class c implements ThreadFactory
 {
-    public static g a(final a a) throws JsonParseException {
-        boolean b;
-        try {
-            try {
-                a.E();
-                b = false;
-                try {
-                    final hc2.g a2 = f.a;
-                    return f$u.Z0(a);
-                }
-                catch (final EOFException ex) {}
-            }
-            catch (final NumberFormatException ex2) {
-                throw new JsonSyntaxException((Throwable)ex2);
-            }
-            catch (final IOException ex3) {
-                throw new JsonIOException((Throwable)ex3);
-            }
-            catch (final MalformedJsonException ex4) {
-                throw new JsonSyntaxException((Throwable)ex4);
-            }
-        }
-        catch (final EOFException ex) {
-            b = true;
-        }
-        if (b) {
-            return h.f;
-        }
-        final EOFException ex;
-        throw new JsonSyntaxException((Throwable)ex);
+    public final String f;
+    public final boolean g;
+    
+    public c(final String f, final boolean g) {
+        this.f = f;
+        this.g = g;
+    }
+    
+    @Override
+    public final Thread newThread(final Runnable runnable) {
+        final Thread thread = new Thread(runnable, this.f);
+        thread.setDaemon(this.g);
+        return thread;
     }
 }

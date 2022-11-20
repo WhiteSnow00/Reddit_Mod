@@ -4,9 +4,11 @@
 
 package wh2;
 
-import nh2.d;
-
-public interface c extends b
+public interface c
 {
-    d a();
+    String a(final int p0);
+    
+    boolean b(final int p0);
+    
+    String getString(final int p0);
 }

@@ -11,13 +11,15 @@ import androidx.fragment.app.Fragment;
 import android.os.Parcelable;
 import androidx.recyclerview.widget.y;
 import android.view.View$OnClickListener;
+import androidx.recyclerview.widget.RecyclerView$t;
 import com.google.android.material.button.MaterialButton;
 import androidx.recyclerview.widget.RecyclerView$n;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView$Adapter;
 import androidx.recyclerview.widget.RecyclerView$o;
 import android.widget.ListAdapter;
-import a4.q0;
+import a4.l0;
+import b4.c$b;
 import android.widget.GridView;
 import android.content.Context;
 import android.view.ContextThemeWrapper;
@@ -31,18 +33,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public final class MaterialCalendar<S> extends x<S>
 {
+    public static final int q = 0;
     public int g;
-    public com.google.android.material.datepicker.d<S> h;
+    public d<S> h;
     public a i;
     public s j;
-    public CalendarSelector k;
+    public MaterialCalendar.MaterialCalendar$CalendarSelector k;
     public c l;
     public RecyclerView m;
     public RecyclerView n;
     public View o;
     public View p;
     
-    public final void F(final s j) {
+    public final void o0(final s j) {
         final s f = ((v)this.n.getAdapter()).k.f;
         final Calendar f2 = f.f;
         if (!(f2 instanceof GregorianCalendar)) {
@@ -86,7 +89,7 @@ public final class MaterialCalendar<S> extends x<S>
             arguments = ((Fragment)this).getArguments();
         }
         this.g = ((BaseBundle)arguments).getInt("THEME_RES_ID_KEY");
-        this.h = (com.google.android.material.datepicker.d)arguments.getParcelable("GRID_SELECTOR_KEY");
+        this.h = (d<S>)arguments.getParcelable("GRID_SELECTOR_KEY");
         this.i = (a)arguments.getParcelable("CALENDAR_CONSTRAINTS_KEY");
         this.j = (s)arguments.getParcelable("CURRENT_MONTH_KEY");
     }
@@ -99,25 +102,32 @@ public final class MaterialCalendar<S> extends x<S>
         int n;
         int n2;
         if (com.google.android.material.datepicker.o.p0((Context)contextThemeWrapper)) {
-            n = 2131624903;
+            n = 2131624906;
             n2 = 1;
         }
         else {
-            n = 2131624898;
+            n = 2131624901;
             n2 = 0;
         }
         final View inflate = cloneInContext.inflate(n, viewGroup, false);
-        final GridView gridView = (GridView)inflate.findViewById(2131430180);
-        q0.l((View)gridView, (a4.a)new MaterialCalendar$a());
+        final GridView gridView = (GridView)inflate.findViewById(2131430182);
+        l0.l((View)gridView, (a4.a)new a4.a() {
+            public final void onInitializeAccessibilityNodeInfo(final View view, final b4.c c) {
+                super.onInitializeAccessibilityNodeInfo(view, c);
+                c.q((c$b)null);
+            }
+        });
         gridView.setAdapter((ListAdapter)new f());
         gridView.setNumColumns(f.j);
         ((View)gridView).setEnabled(false);
-        (this.n = (RecyclerView)inflate.findViewById(2131430183)).setLayoutManager((RecyclerView$o)new MaterialCalendar$b(this, ((Fragment)this).getContext(), n2, n2));
+        (this.n = (RecyclerView)inflate.findViewById(2131430185)).setLayoutManager((RecyclerView$o)new MaterialCalendar$b(this, ((Fragment)this).getContext(), n2, n2));
         ((View)this.n).setTag((Object)"MONTHS_VIEW_GROUP_TAG");
-        final v adapter = new v(contextThemeWrapper, (com.google.android.material.datepicker.d)this.h, this.i, new MaterialCalendar$c(this));
+        final v adapter = new v(contextThemeWrapper, this.h, this.i, new MaterialCalendar$d(this) {
+            public final MaterialCalendar a;
+        });
         this.n.setAdapter((RecyclerView$Adapter)adapter);
         final int integer = contextThemeWrapper.getResources().getInteger(2131492894);
-        final RecyclerView m = (RecyclerView)inflate.findViewById(2131430186);
+        final RecyclerView m = (RecyclerView)inflate.findViewById(2131430188);
         this.m = m;
         if (m != null) {
             m.setHasFixedSize(true);
@@ -125,19 +135,19 @@ public final class MaterialCalendar<S> extends x<S>
             this.m.setAdapter((RecyclerView$Adapter)new c0(this));
             this.m.addItemDecoration((RecyclerView$n)new h(this));
         }
-        if (inflate.findViewById(2131430168) != null) {
-            final MaterialButton materialButton = (MaterialButton)inflate.findViewById(2131430168);
+        if (inflate.findViewById(2131430170) != null) {
+            final MaterialButton materialButton = (MaterialButton)inflate.findViewById(2131430170);
             ((View)materialButton).setTag((Object)"SELECTOR_TOGGLE_TAG");
-            q0.l((View)materialButton, (a4.a)new i(this));
-            final MaterialButton materialButton2 = (MaterialButton)inflate.findViewById(2131430170);
+            l0.l((View)materialButton, (a4.a)new i(this));
+            final MaterialButton materialButton2 = (MaterialButton)inflate.findViewById(2131430172);
             ((View)materialButton2).setTag((Object)"NAVIGATION_PREV_TAG");
-            final MaterialButton materialButton3 = (MaterialButton)inflate.findViewById(2131430169);
+            final MaterialButton materialButton3 = (MaterialButton)inflate.findViewById(2131430171);
             ((View)materialButton3).setTag((Object)"NAVIGATION_NEXT_TAG");
-            this.o = inflate.findViewById(2131430186);
-            this.p = inflate.findViewById(2131430179);
-            this.p0(CalendarSelector.DAY);
+            this.o = inflate.findViewById(2131430188);
+            this.p = inflate.findViewById(2131430181);
+            this.p0(MaterialCalendar.MaterialCalendar$CalendarSelector.DAY);
             ((TextView)materialButton).setText((CharSequence)this.j.g);
-            this.n.addOnScrollListener((RecyclerView.t)new j(this, adapter, materialButton));
+            this.n.addOnScrollListener((RecyclerView$t)new j(this, adapter, materialButton));
             ((View)materialButton).setOnClickListener((View$OnClickListener)new k(this));
             ((View)materialButton3).setOnClickListener((View$OnClickListener)new l(this, adapter));
             ((View)materialButton2).setOnClickListener((View$OnClickListener)new m(this, adapter));
@@ -163,27 +173,17 @@ public final class MaterialCalendar<S> extends x<S>
         bundle.putParcelable("CURRENT_MONTH_KEY", (Parcelable)this.j);
     }
     
-    public final void p0(final CalendarSelector k) {
+    public final void p0(final MaterialCalendar.MaterialCalendar$CalendarSelector k) {
         this.k = k;
-        if (k == CalendarSelector.YEAR) {
+        if (k == MaterialCalendar.MaterialCalendar$CalendarSelector.YEAR) {
             this.m.getLayoutManager().scrollToPosition(this.j.i - ((c0)this.m.getAdapter()).k.i.f.i);
             this.o.setVisibility(0);
             this.p.setVisibility(8);
         }
-        else if (k == CalendarSelector.DAY) {
+        else if (k == MaterialCalendar.MaterialCalendar$CalendarSelector.DAY) {
             this.o.setVisibility(8);
             this.p.setVisibility(0);
-            this.F(this.j);
+            this.o0(this.j);
         }
-    }
-    
-    public enum CalendarSelector
-    {
-        DAY, 
-        YEAR;
-    }
-    
-    public interface d
-    {
     }
 }

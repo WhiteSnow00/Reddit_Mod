@@ -6,14 +6,15 @@ package io.reactivex.internal.subscriptions;
 
 import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.exceptions.ProtocolViolationException;
-import al0.g7;
-import vl.a;
+import m5.a;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
-import qt2.d;
+import nt2.d;
 
 public enum SubscriptionHelper implements d
 {
+    private static final SubscriptionHelper[] $VALUES;
+    
     CANCELLED;
     
     public static boolean cancel(final AtomicReference<d> atomicReference) {
@@ -37,7 +38,7 @@ public enum SubscriptionHelper implements d
             d.request(andSet);
         }
         else if (validate(andSet)) {
-            a.l(atomicLong, andSet);
+            cg.d.w0(atomicLong, andSet);
             final d d2 = atomicReference.get();
             if (d2 != null) {
                 andSet = atomicLong.getAndSet(0L);
@@ -61,7 +62,7 @@ public enum SubscriptionHelper implements d
     
     public static boolean replace(final AtomicReference<d> atomicReference, final d d) {
         boolean b;
-    Label_0055:
+    Label_0057:
         do {
             final d d2 = atomicReference.get();
             final SubscriptionHelper cancelled = SubscriptionHelper.CANCELLED;
@@ -74,7 +75,7 @@ public enum SubscriptionHelper implements d
             }
             while (!atomicReference.compareAndSet(d2, d)) {
                 if (atomicReference.get() != d2) {
-                    continue Label_0055;
+                    continue Label_0057;
                 }
             }
             b = true;
@@ -83,17 +84,17 @@ public enum SubscriptionHelper implements d
     }
     
     public static void reportMoreProduced(final long n) {
-        RxJavaPlugins.onError(new ProtocolViolationException(g7.g("More produced than requested: ", n)));
+        RxJavaPlugins.onError((Throwable)new ProtocolViolationException(a.e("More produced than requested: ", n)));
     }
     
     public static void reportSubscriptionSet() {
-        RxJavaPlugins.onError(new ProtocolViolationException("Subscription already set!"));
+        RxJavaPlugins.onError((Throwable)new ProtocolViolationException("Subscription already set!"));
     }
     
     public static boolean set(final AtomicReference<d> atomicReference, final d d) {
         boolean b;
         d d2 = null;
-    Label_0055:
+    Label_0057:
         do {
             d2 = atomicReference.get();
             final SubscriptionHelper cancelled = SubscriptionHelper.CANCELLED;
@@ -106,7 +107,7 @@ public enum SubscriptionHelper implements d
             }
             while (!atomicReference.compareAndSet(d2, d)) {
                 if (atomicReference.get() != d2) {
-                    continue Label_0055;
+                    continue Label_0057;
                 }
             }
             b = true;
@@ -150,7 +151,7 @@ public enum SubscriptionHelper implements d
     
     public static boolean validate(final long n) {
         if (n <= 0L) {
-            RxJavaPlugins.onError(new IllegalArgumentException(g7.g("n > 0 required but it was ", n)));
+            RxJavaPlugins.onError((Throwable)new IllegalArgumentException(a.e("n > 0 required but it was ", n)));
             return false;
         }
         return true;
@@ -158,7 +159,7 @@ public enum SubscriptionHelper implements d
     
     public static boolean validate(final d d, final d d2) {
         if (d2 == null) {
-            RxJavaPlugins.onError(new NullPointerException("next is null"));
+            RxJavaPlugins.onError((Throwable)new NullPointerException("next is null"));
             return false;
         }
         if (d != null) {

@@ -32,14 +32,16 @@ import com.reddit.network.common.RetryAlgo;
 import h7.k;
 import mr0.e$a;
 import com.reddit.queries.x8;
-import h7.h;
+import u10.o;
+import h7.h$a;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import java.io.Serializable;
-import lg2.c;
+import gg2.c;
 import java.util.List;
 import javax.inject.Inject;
-import sg2.e;
-import hg2.f;
+import ng2.e;
+import cg2.f;
 import com.reddit.data.model.graphql.GqlPostToLinkDomainModelMapper;
 import com.squareup.moshi.y;
 import mr0.g;
@@ -55,13 +57,13 @@ public final class a implements b
     
     @Inject
     public a(final GqlPostToLinkDomainModelMapper c, final jr0.a d, final g a, final y b) {
-        sg2.e.f((Object)b, "moshi");
-        sg2.e.f((Object)d, "goldFeatures");
+        ng2.e.f((Object)b, "moshi");
+        ng2.e.f((Object)d, "goldFeatures");
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = d;
-        this.e = kotlin.a.b((rg2.a)new RemoteGqlPracticeFeedDataSource$richTextAdapter$2(this));
+        this.e = kotlin.a.b((mg2.a)new RemoteGqlPracticeFeedDataSource$richTextAdapter$2(this));
     }
     
     public final Serializable a(final List list, final int n, final c c) {
@@ -88,13 +90,13 @@ public final class a implements b
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             a = (a)((RemoteGqlPracticeFeedDataSource$getLinks$1)o).L$0;
-            yd.b.k0(result);
+            cg.d.b4(result);
             b = result;
         }
         else {
-            yd.b.k0(result);
+            cg.d.b4(result);
             final g a2 = this.a;
-            final x8 x8 = new x8(h.a.c(list), a.g(n), a81.e.k(this.d), 52);
+            final x8 x8 = new x8(h$a.c((Object)list), u10.o.h(n), aq2.a.h(this.d), 52);
             ((RemoteGqlPracticeFeedDataSource$getLinks$1)o).L$0 = this;
             ((RemoteGqlPracticeFeedDataSource$getLinks$1)o).label = 1;
             b = e$a.b(14, (k)x8, (mr0.e)a2, (RetryAlgo)null, (Map)null, (c)o, (OkHttpClient)null);
@@ -155,8 +157,8 @@ public final class a implements b
                                                         }
                                                     }
                                                     final PostRecommendationFragment$u b7 = a4.b;
-                                                    final JsonAdapter jsonAdapter = a.e.getValue();
-                                                    sg2.e.e((Object)jsonAdapter, "richTextAdapter");
+                                                    final JsonAdapter jsonAdapter = (JsonAdapter)a.e.getValue();
+                                                    ng2.e.e((Object)jsonAdapter, "richTextAdapter");
                                                     map$default = GqlPostToLinkDomainModelMapper.map$default(c3, a7, a6, b7, (FeedAnswerableQuestionsFragment)null, (CrosspostContentFragment)null, (String)null, (List)null, (Integer)null, jsonAdapter, 248, (Object)null);
                                                 }
                                             }

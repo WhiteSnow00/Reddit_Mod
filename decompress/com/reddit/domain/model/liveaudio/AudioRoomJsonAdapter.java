@@ -5,13 +5,13 @@
 package com.reddit.domain.model.liveaudio;
 
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import com.squareup.moshi.a0;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import com.reddit.domain.model.Redditor;
@@ -20,7 +20,7 @@ import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import com.squareup.moshi.JsonAdapter;
 
-@Metadata(bv = {}, d1 = { "\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010#\u001a\u00020\"¢\u0006\u0004\b$\u0010%J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0011R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0011R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0011R\u001a\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00190\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001a\u0010\u0011R\u001c\u0010\u001b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0011R \u0010\u001e\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001d0\u001c0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u0011R\u001e\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b \u0010!¨\u0006&" }, d2 = { "Lcom/reddit/domain/model/liveaudio/AudioRoomJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/liveaudio/AudioRoom;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lhg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "stringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "nullableStringAdapter", "", "intAdapter", "", "booleanAdapter", "Lcom/reddit/domain/model/liveaudio/TalkRoomStatus;", "talkRoomStatusAdapter", "Lcom/reddit/domain/model/liveaudio/AudioRecordingStatus;", "audioRecordingStatusAdapter", "nullableIntAdapter", "", "Lcom/reddit/domain/model/Redditor;", "listOfRedditorAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010#\u001a\u00020\"¢\u0006\u0004\b$\u0010%J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0016R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0011R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0011R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0011R\u001a\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00190\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001a\u0010\u0011R\u001c\u0010\u001b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0011R \u0010\u001e\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001d0\u001c0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u0011R\u001e\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b \u0010!¨\u0006&" }, d2 = { "Lcom/reddit/domain/model/liveaudio/AudioRoomJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lcom/reddit/domain/model/liveaudio/AudioRoom;", "", "toString", "Lcom/squareup/moshi/JsonReader;", "reader", "fromJson", "Lcom/squareup/moshi/x;", "writer", "value_", "Lcg2/j;", "toJson", "Lcom/squareup/moshi/JsonReader$b;", "options", "Lcom/squareup/moshi/JsonReader$b;", "stringAdapter", "Lcom/squareup/moshi/JsonAdapter;", "nullableStringAdapter", "", "intAdapter", "", "booleanAdapter", "Lcom/reddit/domain/model/liveaudio/TalkRoomStatus;", "talkRoomStatusAdapter", "Lcom/reddit/domain/model/liveaudio/AudioRecordingStatus;", "audioRecordingStatusAdapter", "nullableIntAdapter", "", "Lcom/reddit/domain/model/Redditor;", "listOfRedditorAdapter", "Ljava/lang/reflect/Constructor;", "constructorRef", "Ljava/lang/reflect/Constructor;", "Lcom/squareup/moshi/y;", "moshi", "<init>", "(Lcom/squareup/moshi/y;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class AudioRoomJsonAdapter extends JsonAdapter<AudioRoom>
 {
     private final JsonAdapter<AudioRecordingStatus> audioRecordingStatusAdapter;
@@ -181,7 +181,7 @@ public final class AudioRoomJsonAdapter extends JsonAdapter<AudioRoom>
                         }
                         case -1: {
                             jsonReader.H();
-                            jsonReader.F1();
+                            jsonReader.G1();
                             break;
                         }
                     }
@@ -251,42 +251,50 @@ public final class AudioRoomJsonAdapter extends JsonAdapter<AudioRoom>
         }
     }
     
+    public /* bridge */ Object fromJson(final JsonReader jsonReader) {
+        return this.fromJson(jsonReader);
+    }
+    
     public void toJson(final x x, final AudioRoom audioRoom) {
         e.f((Object)x, "writer");
         if (audioRoom != null) {
             x.h();
-            x.u("room_id");
+            x.v("room_id");
             this.stringAdapter.toJson(x, (Object)audioRoom.getRoomId());
-            x.u("room_title");
+            x.v("room_title");
             this.stringAdapter.toJson(x, (Object)audioRoom.getRoomTitle());
-            x.u("metadata");
+            x.v("metadata");
             this.nullableStringAdapter.toJson(x, (Object)audioRoom.getMetadataJson());
-            x.u("notification_path");
+            x.v("notification_path");
             this.stringAdapter.toJson(x, (Object)audioRoom.getNotificationPath());
-            x.u("participant_count");
+            x.v("participant_count");
             this.intAdapter.toJson(x, (Object)audioRoom.getParticipantCount());
-            x.u("is_live");
+            x.v("is_live");
             this.booleanAdapter.toJson(x, (Object)audioRoom.isLive());
-            x.u("status");
+            x.v("status");
             this.talkRoomStatusAdapter.toJson(x, (Object)audioRoom.getStatus());
-            x.u("recording_status");
+            x.v("recording_status");
             this.audioRecordingStatusAdapter.toJson(x, (Object)audioRoom.getRecordingStatus());
-            x.u("recording_hls_url");
+            x.v("recording_hls_url");
             this.nullableStringAdapter.toJson(x, (Object)audioRoom.getRecordingHlsUrl());
-            x.u("recording_dash_url");
+            x.v("recording_dash_url");
             this.nullableStringAdapter.toJson(x, (Object)audioRoom.getRecordingDashUrl());
-            x.u("recording_fallback_url");
+            x.v("recording_fallback_url");
             this.nullableStringAdapter.toJson(x, (Object)audioRoom.getRecordingFallbackUrl());
-            x.u("recording_duration");
+            x.v("recording_duration");
             this.nullableIntAdapter.toJson(x, (Object)audioRoom.getRecordingDuration());
-            x.u("top_users");
+            x.v("top_users");
             this.listOfRedditorAdapter.toJson(x, (Object)audioRoom.getTopUsers());
-            x.u("started_at");
+            x.v("started_at");
             this.nullableStringAdapter.toJson(x, (Object)audioRoom.getStartedAt());
             x.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+    
+    public /* bridge */ void toJson(final x x, final Object o) {
+        this.toJson(x, (AudioRoom)o);
     }
     
     public String toString() {

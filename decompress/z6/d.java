@@ -4,60 +4,70 @@
 
 package z6;
 
-import java.util.ArrayList;
-import b7.j;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.RectF;
-import java.util.Collections;
-import y6.k;
-import com.airbnb.lottie.model.layer.Layer;
-import com.airbnb.lottie.LottieDrawable;
-import com.airbnb.lottie.model.layer.b;
-import com.airbnb.lottie.model.layer.a;
+import java.io.OutputStream;
+import java.io.IOException;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.File;
+import com.airbnb.lottie.network.FileExtension;
 
-public final class d extends a
+public final class d
 {
-    public final s6.d C;
-    public final b D;
+    public final c a;
     
-    public d(final LottieDrawable lottieDrawable, final Layer layer, final b d) {
-        super(lottieDrawable, layer);
-        this.D = d;
-        (this.C = new s6.d(lottieDrawable, this, new k("__container", false, layer.a))).g(Collections.emptyList(), Collections.emptyList());
+    public d(final p6.c a) {
+        this.a = a;
     }
     
-    @Override
-    public final void b(final RectF rectF, final Matrix matrix, final boolean b) {
-        super.b(rectF, matrix, b);
-        this.C.b(rectF, super.n, b);
-    }
-    
-    @Override
-    public final void k(final Canvas canvas, final Matrix matrix, final int n) {
-        this.C.d(canvas, matrix, n);
-    }
-    
-    @Override
-    public final y6.a l() {
-        final y6.a w = super.p.w;
-        if (w != null) {
-            return w;
+    public static String a(String s, final FileExtension fileExtension, final boolean b) {
+        final StringBuilder t = a.t("lottie_cache_");
+        t.append(s.replaceAll("\\W+", ""));
+        if (b) {
+            s = fileExtension.tempExtension();
         }
-        return ((a)this.D).p.w;
-    }
-    
-    @Override
-    public final j m() {
-        final j x = super.p.x;
-        if (x != null) {
-            return x;
+        else {
+            s = fileExtension.extension;
         }
-        return ((a)this.D).p.x;
+        t.append(s);
+        return t.toString();
     }
     
-    @Override
-    public final void q(final w6.d d, final int n, final ArrayList list, final w6.d d2) {
-        this.C.h(d, n, list, d2);
+    public final File b() {
+        final p6.c c = (p6.c)this.a;
+        c.getClass();
+        final File file = new File(c.a.getCacheDir(), "lottie_network_cache");
+        if (file.isFile()) {
+            file.delete();
+        }
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        return file;
+    }
+    
+    public final File c(String a, final InputStream inputStream, final FileExtension fileExtension) throws IOException {
+        a = a((String)a, fileExtension, true);
+        final File file = new File(this.b(), (String)a);
+        try {
+            a = new FileOutputStream(file);
+            try {
+                final byte[] array = new byte[1024];
+                while (true) {
+                    final int read = inputStream.read(array);
+                    if (read == -1) {
+                        break;
+                    }
+                    ((OutputStream)a).write(array, 0, read);
+                }
+                ((OutputStream)a).flush();
+                return file;
+            }
+            finally {
+                ((OutputStream)a).close();
+            }
+        }
+        finally {
+            inputStream.close();
+        }
     }
 }

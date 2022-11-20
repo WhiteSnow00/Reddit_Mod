@@ -11,13 +11,13 @@ import androidx.biometric.BiometricPrompt$b;
 import androidx.biometric.BiometricPrompt$c;
 import android.hardware.fingerprint.FingerprintManager$AuthenticationResult;
 import androidx.lifecycle.x;
-import androidx.biometric.s;
-import androidx.biometric.s$a;
+import androidx.biometric.r;
+import androidx.biometric.r$a;
 import android.hardware.fingerprint.FingerprintManager$AuthenticationCallback;
 
 public final class a extends FingerprintManager$AuthenticationCallback
 {
-    public final /* synthetic */ b.b a;
+    public final b.b a;
     
     public a(final androidx.biometric.a a) {
         this.a = (b.b)a;
@@ -32,13 +32,13 @@ public final class a extends FingerprintManager$AuthenticationCallback
     }
     
     public final void onAuthenticationHelp(final int n, final CharSequence charSequence) {
-        final s$a s$a = (s$a)((androidx.biometric.a)this.a).a.c;
-        if (s$a.a.get() != null) {
-            final s s = (s)s$a.a.get();
-            if (s.t == null) {
-                s.t = new x();
+        final r$a r$a = (r$a)((androidx.biometric.a)this.a).a.c;
+        if (r$a.a.get() != null) {
+            final r r = (r)r$a.a.get();
+            if (r.t == null) {
+                r.t = new x();
             }
-            androidx.biometric.s.i(s.t, (Object)charSequence);
+            androidx.biometric.r.i(r.t, (Object)charSequence);
         }
     }
     

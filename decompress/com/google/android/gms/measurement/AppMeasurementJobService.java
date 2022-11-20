@@ -5,22 +5,22 @@
 package com.google.android.gms.measurement;
 
 import android.os.BaseBundle;
-import pe.d3;
-import com.android.billingclient.api.j0;
-import pe.g7;
-import od.e2;
-import ie.c1;
-import pe.h4;
+import qe.h3;
+import com.android.billingclient.api.h0;
+import qe.c7;
+import qe.l4;
+import je.a1;
+import qe.j4;
 import android.content.Context;
 import android.app.job.JobParameters;
 import android.content.Intent;
-import pe.r6;
-import pe.q6;
+import qe.l6;
+import qe.k6;
 import android.app.job.JobService;
 
-public final class AppMeasurementJobService extends JobService implements q6
+public final class AppMeasurementJobService extends JobService implements k6
 {
-    public r6 f;
+    public l6 f;
     
     public final boolean a(final int n) {
         throw new UnsupportedOperationException();
@@ -33,20 +33,20 @@ public final class AppMeasurementJobService extends JobService implements q6
         this.jobFinished(jobParameters, false);
     }
     
-    public final r6 d() {
+    public final l6 d() {
         if (this.f == null) {
-            this.f = new r6((Context)this);
+            this.f = new l6((Context)this);
         }
         return this.f;
     }
     
     public final void onCreate() {
         super.onCreate();
-        h4.s(this.d().a, (c1)null, (Long)null).h().s.a("Local AppMeasurementService is starting up");
+        j4.t(this.d().a, (a1)null, (Long)null).c().u.a("Local AppMeasurementService is starting up");
     }
     
     public final void onDestroy() {
-        h4.s(this.d().a, (c1)null, (Long)null).h().s.a("Local AppMeasurementService is shutting down");
+        j4.t(this.d().a, (a1)null, (Long)null).c().u.a("Local AppMeasurementService is shutting down");
         super.onDestroy();
     }
     
@@ -55,14 +55,14 @@ public final class AppMeasurementJobService extends JobService implements q6
     }
     
     public final boolean onStartJob(final JobParameters jobParameters) {
-        final r6 d = this.d();
-        final d3 h = h4.s(d.a, (c1)null, (Long)null).h();
+        final l6 d = this.d();
+        final h3 c = j4.t(d.a, (a1)null, (Long)null).c();
         final String string = ((BaseBundle)jobParameters.getExtras()).getString("action");
-        h.s.b((Object)string, "Local AppMeasurementJobService called. action");
+        c.u.b((Object)string, "Local AppMeasurementJobService called. action");
         if ("com.google.android.gms.measurement.UPLOAD".equals(string)) {
-            final e2 e2 = new e2(d, h, jobParameters);
-            final g7 n = g7.N(d.a);
-            n.b().U((Runnable)new j0(n, (Runnable)e2));
+            final l4 l4 = new l4((Object)d, 2, (Object)c, (Object)jobParameters);
+            final c7 n = c7.N(d.a);
+            n.a().B((Runnable)new h0(n, (Runnable)l4));
         }
         return true;
     }

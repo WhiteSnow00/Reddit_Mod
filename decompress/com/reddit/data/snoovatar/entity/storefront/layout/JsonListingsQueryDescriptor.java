@@ -5,12 +5,12 @@
 package com.reddit.data.snoovatar.entity.storefront.layout;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonListingsQueryDescriptor;", "", "data_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonListingsQueryDescriptor;", "", "impl_release" }, k = 1, mv = { 1, 7, 1 })
 public final class JsonListingsQueryDescriptor
 {
     public final JsonListingsFilters a;
@@ -20,6 +20,13 @@ public final class JsonListingsQueryDescriptor
         e.f((Object)a, "filters");
         this.a = a;
         this.b = b;
+    }
+    
+    public JsonListingsQueryDescriptor(final JsonListingsFilters jsonListingsFilters, JsonListingsSort jsonListingsSort, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x2) != 0x0) {
+            jsonListingsSort = null;
+        }
+        this(jsonListingsFilters, jsonListingsSort);
     }
     
     @Override
@@ -50,11 +57,11 @@ public final class JsonListingsQueryDescriptor
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("JsonListingsQueryDescriptor(filters=");
-        r.append(this.a);
-        r.append(", sort=");
-        r.append(this.b);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("JsonListingsQueryDescriptor(filters=");
+        t.append(this.a);
+        t.append(", sort=");
+        t.append(this.b);
+        t.append(')');
+        return t.toString();
     }
 }

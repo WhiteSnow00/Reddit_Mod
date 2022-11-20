@@ -4,19 +4,12 @@
 
 package lj2;
 
-import java.util.concurrent.CancellationException;
-import ej2.z0;
-import kf2.f;
+import mj2.e;
+import nj2.c;
 
-public final class a implements f
+public interface a<T>
 {
-    public final z0 a;
+    T deserialize(final c p0);
     
-    public a(final ej2.a a) {
-        this.a = (z0)a;
-    }
-    
-    public final void cancel() {
-        this.a.a((CancellationException)null);
-    }
+    e getDescriptor();
 }

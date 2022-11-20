@@ -4,233 +4,210 @@
 
 package kotlinx.serialization.internal;
 
+import oj2.p0;
 import kotlinx.serialization.json.internal.JsonNamesMapKt;
 import kotlinx.serialization.descriptors.SerialDescriptorImpl;
-import sj2.u0;
 import java.util.List;
-import tj2.n;
-import sg2.e;
-import uj2.b;
+import cg.d;
+import pj2.m;
+import qj2.b;
+import mj2.e;
 import java.util.ArrayList;
-import rj2.a;
-import rj2.c;
+import nj2.a;
+import nj2.c;
 
 public abstract class TaggedDecoder<Tag> implements c, a
 {
-    public final ArrayList<Tag> a;
-    public boolean b;
+    public final ArrayList<Tag> f;
+    public boolean g;
     
     public TaggedDecoder() {
-        this.a = new ArrayList<Tag>();
+        this.f = new ArrayList<Tag>();
     }
     
-    @Override
-    public final int B() {
-        final String g = this.G();
+    public final double A(final e e, final int n) {
+        ng2.e.f((Object)e, "descriptor");
+        return this.m(((b)this).L(e, n));
+    }
+    
+    public final int C() {
+        final String d = this.D();
         final b b = (b)this;
-        final String s = g;
-        e.f((Object)s, "tag");
-        final n r = b.R(s);
+        final String s = d;
+        ng2.e.f((Object)s, "tag");
+        final m k = b.K(s);
         try {
-            return Integer.parseInt(r.a());
+            return Integer.parseInt(k.a());
         }
         catch (final IllegalArgumentException ex) {
-            b.U("int");
+            b.N("int");
             throw null;
         }
     }
     
-    public abstract String C(final Tag p0);
-    
-    @Override
-    public final boolean D(final qj2.e e, final int n) {
-        e.f((Object)e, "descriptor");
-        return this.b(((b)this).S(e, n));
-    }
-    
-    @Override
-    public final double E(final qj2.e e, final int n) {
-        e.f((Object)e, "descriptor");
-        return this.t(((b)this).S(e, n));
-    }
-    
-    @Override
-    public final float F() {
-        return this.v(this.G());
-    }
-    
-    public final Tag G() {
-        final ArrayList<Tag> a = this.a;
-        final Tag remove = a.remove(lw0.b.L0((List)a));
-        this.b = true;
+    public final Tag D() {
+        final ArrayList<Tag> f = this.f;
+        final Tag remove = f.remove(d.R2((List)f));
+        this.g = true;
         return remove;
     }
     
-    @Override
-    public final char H(final u0 u0, final int n) {
-        e.f((Object)u0, "descriptor");
-        return this.l(((b)this).S((qj2.e)u0, n));
+    public final float F(final e e, final int n) {
+        ng2.e.f((Object)e, "descriptor");
+        return this.n(((b)this).L(e, n));
     }
     
-    @Override
-    public final boolean I() {
-        return this.b(this.G());
+    public final float O() {
+        return this.n(this.D());
     }
     
-    @Override
-    public final int J(final qj2.e e, int int1) {
-        e.f((Object)e, "descriptor");
+    public final boolean P() {
+        return this.b(this.D());
+    }
+    
+    public final int V(final e e, int int1) {
+        ng2.e.f((Object)e, "descriptor");
         final b b = (b)this;
-        final n r = b.R(b.S(e, int1));
+        final m k = b.K(b.L(e, int1));
         try {
-            int1 = Integer.parseInt(r.a());
+            int1 = Integer.parseInt(k.a());
             return int1;
         }
         catch (final IllegalArgumentException ex) {
-            b.U("int");
+            b.N("int");
             throw null;
         }
     }
     
-    @Override
-    public abstract boolean K();
-    
-    @Override
-    public final byte M() {
-        return this.g(this.G());
-    }
+    public abstract boolean W();
     
     public abstract boolean b(final Tag p0);
     
-    @Override
+    public final byte d0() {
+        return this.i(this.D());
+    }
+    
+    public final Object e(final e e, final int n, final lj2.b b, final Object o) {
+        ng2.e.f((Object)e, "descriptor");
+        ng2.e.f((Object)b, "deserializer");
+        final String l = ((b)this).L(e, n);
+        final TaggedDecoder$decodeNullableSerializableElement$1 taggedDecoder$decodeNullableSerializableElement$1 = new TaggedDecoder$decodeNullableSerializableElement$1(this, (lj2.a)b, o);
+        this.f.add((Tag)l);
+        final Object invoke = ((mg2.a)taggedDecoder$decodeNullableSerializableElement$1).invoke();
+        if (!this.g) {
+            this.D();
+        }
+        this.g = false;
+        return invoke;
+    }
+    
     public final void f() {
     }
     
-    public abstract byte g(final Tag p0);
-    
-    @Override
-    public final short h(final u0 u0, final int n) {
-        e.f((Object)u0, "descriptor");
-        return this.w(((b)this).S((qj2.e)u0, n));
-    }
-    
-    @Override
-    public final long i() {
-        final String g = this.G();
+    public final long g() {
+        final String d = this.D();
         final b b = (b)this;
-        final String s = g;
-        e.f((Object)s, "tag");
-        final n r = b.R(s);
+        final String s = d;
+        ng2.e.f((Object)s, "tag");
+        final m k = b.K(s);
         try {
-            return Long.parseLong(r.a());
+            return Long.parseLong(k.a());
         }
         catch (final IllegalArgumentException ex) {
-            b.U("long");
+            b.N("long");
             throw null;
         }
     }
     
-    @Override
-    public final int j(final SerialDescriptorImpl serialDescriptorImpl) {
-        e.f((Object)serialDescriptorImpl, "enumDescriptor");
-        final String g = this.G();
+    public final int h(final SerialDescriptorImpl serialDescriptorImpl) {
+        ng2.e.f((Object)serialDescriptorImpl, "enumDescriptor");
+        final String d = this.D();
         final b b = (b)this;
-        final String s = g;
-        e.f((Object)s, "tag");
-        return JsonNamesMapKt.c(serialDescriptorImpl, b.c, b.R(s).a(), "");
+        final String s = d;
+        ng2.e.f((Object)s, "tag");
+        return JsonNamesMapKt.c(serialDescriptorImpl, b.h, b.K(s).a(), "");
     }
     
-    @Override
-    public final String k(final qj2.e e, final int n) {
-        e.f((Object)e, "descriptor");
-        return this.C(((b)this).S(e, n));
+    public abstract byte i(final Tag p0);
+    
+    public final char i0(final p0 p2, final int n) {
+        ng2.e.f((Object)p2, "descriptor");
+        return this.k(((b)this).L((e)p2, n));
     }
     
-    public abstract char l(final Tag p0);
-    
-    @Override
-    public final void m() {
+    public final void j() {
     }
     
-    @Override
-    public final float n(final qj2.e e, final int n) {
-        e.f((Object)e, "descriptor");
-        return this.v(((b)this).S(e, n));
-    }
+    public abstract char k(final Tag p0);
     
-    @Override
-    public final short p() {
-        return this.w(this.G());
-    }
+    public abstract double m(final Tag p0);
     
-    @Override
-    public final double q() {
-        return this.t(this.G());
-    }
+    public abstract float n(final Tag p0);
     
-    @Override
-    public final Object r(final qj2.e e, final int n, final pj2.b b, final Object o) {
-        e.f((Object)e, "descriptor");
-        e.f((Object)b, "deserializer");
-        final String s = ((b)this).S(e, n);
-        final TaggedDecoder$decodeNullableSerializableElement$1 taggedDecoder$decodeNullableSerializableElement$1 = new TaggedDecoder$decodeNullableSerializableElement$1(this, (pj2.a)b, o);
-        this.a.add((Tag)s);
-        final Object invoke = ((rg2.a<Object>)taggedDecoder$decodeNullableSerializableElement$1).invoke();
-        if (!this.b) {
-            this.G();
-        }
-        this.b = false;
-        return invoke;
-    }
+    public abstract short o(final Tag p0);
     
-    @Override
-    public final char s() {
-        return this.l(this.G());
-    }
+    public abstract String p(final Tag p0);
     
-    public abstract double t(final Tag p0);
-    
-    @Override
-    public final byte u(final u0 u0, final int n) {
-        e.f((Object)u0, "descriptor");
-        return this.g(((b)this).S((qj2.e)u0, n));
-    }
-    
-    public abstract float v(final Tag p0);
-    
-    public abstract short w(final Tag p0);
-    
-    @Override
-    public final String x() {
-        return this.C(this.G());
-    }
-    
-    @Override
-    public final long y(final qj2.e e, final int n) {
-        e.f((Object)e, "descriptor");
+    public final long q(final e e, final int n) {
+        ng2.e.f((Object)e, "descriptor");
         final b b = (b)this;
-        final n r = b.R(b.S(e, n));
+        final m k = b.K(b.L(e, n));
         try {
-            return Long.parseLong(r.a());
+            return Long.parseLong(k.a());
         }
         catch (final IllegalArgumentException ex) {
-            b.U("long");
+            b.N("long");
             throw null;
         }
     }
     
-    @Override
-    public final <T> T z(final qj2.e e, final int n, final pj2.a<T> a, final T t) {
-        e.f((Object)e, "descriptor");
-        e.f((Object)a, "deserializer");
-        final String s = ((b)this).S(e, n);
-        final TaggedDecoder$decodeSerializableElement$1 taggedDecoder$decodeSerializableElement$1 = new TaggedDecoder$decodeSerializableElement$1(this, (pj2.a)a, (Object)t);
-        this.a.add((Tag)s);
-        final T invoke = ((rg2.a<T>)taggedDecoder$decodeSerializableElement$1).invoke();
-        if (!this.b) {
-            this.G();
+    public final short r() {
+        return this.o(this.D());
+    }
+    
+    public final double s() {
+        return this.m(this.D());
+    }
+    
+    public final char t() {
+        return this.k(this.D());
+    }
+    
+    public final <T> T u(final e e, final int n, final lj2.a<T> a, final T t) {
+        ng2.e.f((Object)e, "descriptor");
+        ng2.e.f((Object)a, "deserializer");
+        final String l = ((b)this).L(e, n);
+        final TaggedDecoder$decodeSerializableElement$1 taggedDecoder$decodeSerializableElement$1 = new TaggedDecoder$decodeSerializableElement$1(this, (lj2.a)a, (Object)t);
+        this.f.add((Tag)l);
+        final Object invoke = ((mg2.a)taggedDecoder$decodeSerializableElement$1).invoke();
+        if (!this.g) {
+            this.D();
         }
-        this.b = false;
-        return invoke;
+        this.g = false;
+        return (T)invoke;
+    }
+    
+    public final byte v(final p0 p2, final int n) {
+        ng2.e.f((Object)p2, "descriptor");
+        return this.i(((b)this).L((e)p2, n));
+    }
+    
+    public final String w() {
+        return this.p(this.D());
+    }
+    
+    public final boolean x(final e e, final int n) {
+        ng2.e.f((Object)e, "descriptor");
+        return this.b(((b)this).L(e, n));
+    }
+    
+    public final String y(final e e, final int n) {
+        ng2.e.f((Object)e, "descriptor");
+        return this.p(((b)this).L(e, n));
+    }
+    
+    public final short z(final p0 p2, final int n) {
+        ng2.e.f((Object)p2, "descriptor");
+        return this.o(((b)this).L((e)p2, n));
     }
 }

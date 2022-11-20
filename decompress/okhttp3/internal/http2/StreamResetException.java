@@ -4,7 +4,7 @@
 
 package okhttp3.internal.http2;
 
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 import java.io.IOException;
 

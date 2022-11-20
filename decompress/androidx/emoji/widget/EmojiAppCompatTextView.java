@@ -35,11 +35,12 @@ public class EmojiAppCompatTextView extends AppCompatTextView
     
     private f getEmojiTextViewHelper() {
         if (this.m == null) {
-            this.m = new f((TextView)this);
+            this.m = new f(this);
         }
         return this.m;
     }
     
+    @Override
     public void setAllCaps(final boolean allCaps) {
         super.setAllCaps(allCaps);
         final f.f$a a = this.getEmojiTextViewHelper().a;
@@ -51,6 +52,7 @@ public class EmojiAppCompatTextView extends AppCompatTextView
         }
     }
     
+    @Override
     public void setFilters(InputFilter[] filters) {
         final f.f$a a = this.getEmojiTextViewHelper().a;
         a.getClass();

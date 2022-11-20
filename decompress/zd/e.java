@@ -4,14 +4,15 @@
 
 package zd;
 
-import android.os.RemoteException;
-import android.os.IInterface;
+import android.database.Cursor;
 
-public interface e extends IInterface
+public final class e
 {
-    boolean a() throws RemoteException;
+    public Cursor a;
     
-    String s() throws RemoteException;
+    public e() {
+    }
     
-    boolean t() throws RemoteException;
+    public e(final int n) {
+    }
 }

@@ -4,7 +4,8 @@
 
 package com.reddit.domain.chat.model;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import java.util.List;
 import kotlin.Metadata;
@@ -19,6 +20,13 @@ public final class JoinDownToChatMultiple
     public JoinDownToChatMultiple(@n(name = "deeplink_urls") final List<String> deeplinkUrls) {
         e.f((Object)deeplinkUrls, "deeplinkUrls");
         this.deeplinkUrls = deeplinkUrls;
+    }
+    
+    public static JoinDownToChatMultiple copy$default(final JoinDownToChatMultiple joinDownToChatMultiple, List deeplinkUrls, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            deeplinkUrls = joinDownToChatMultiple.deeplinkUrls;
+        }
+        return joinDownToChatMultiple.copy(deeplinkUrls);
     }
     
     public final List<String> component1() {
@@ -46,6 +54,6 @@ public final class JoinDownToChatMultiple
     
     @Override
     public String toString() {
-        return d.o(a.r("JoinDownToChatMultiple(deeplinkUrls="), (List)this.deeplinkUrls, ')');
+        return h.d(a.t("JoinDownToChatMultiple(deeplinkUrls="), (List)this.deeplinkUrls, ')');
     }
 }

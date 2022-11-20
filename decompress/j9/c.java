@@ -4,23 +4,26 @@
 
 package j9;
 
-import java.security.MessageDigest;
-import o8.d;
+import com.bumptech.glide.load.DataSource;
 
-public final class c implements d
+public final class c<R> implements d<R>
 {
-    public static final c a;
+    public static final c<?> a;
+    public static final a b;
     
     static {
-        a = new c();
+        a = new c<Object>();
+        b = new a();
     }
     
-    @Override
-    public final String toString() {
-        return "EmptySignature";
+    public final boolean a(final Object o, final d$a d$a) {
+        return false;
     }
     
-    @Override
-    public final void updateDiskCacheKey(final MessageDigest messageDigest) {
+    public static final class a<R> implements e<R>
+    {
+        public final d a(final DataSource dataSource) {
+            return (d)c.a;
+        }
     }
 }

@@ -14,8 +14,8 @@
 55667:46 exoplayer-smoothstreaming
 55714:75 Apollo GraphQL API
 55667:46 Android Support ExifInterface
-55790:45 anko
 55667:46 androidx.databinding:viewbinding
+55790:45 anko
 55667:46 exoplayer-extractor
 55667:46 firebase-database-collection
 55667:46 RxRelay
@@ -52,7 +52,6 @@
 126397:43 Lottie
 55667:46 Saved State
 126441:34 dbflow-kotlinextensions
-55667:46 Compose Material Components
 126397:43 org.conscrypt:conscrypt-android
 55667:46 exoplayer-database
 0:47 play-services-measurement-sdk-api
@@ -72,10 +71,9 @@
 55667:46 extension-workmanager
 55667:46 firebase-appcheck-interop
 55667:46 Android Paging-Runtime
-55667:46 napier
 126350:46 Glide
 55667:46 Glide
-55667:46 Compose UI Text
+55667:46 napier
 126531:61 Android State
 55667:46 Android Support Library loader
 55667:46 SavedState Kotlin Extensions
@@ -85,7 +83,6 @@
 55667:46 androidx.customview:poolingcontainer
 126593:92 Cronet
 67241:26 Instabug Surveys Library
-55667:46 Compose Geometry
 126686:35 komputing/KHex
 55667:46 flexbox-layout
 55667:46 androidx.profileinstaller:profileinstaller
@@ -96,6 +93,7 @@
 55667:46 Android Support VectorDrawable
 126686:35 komputing/KEthereum
 126755:0 DeepLinkDispatch library
+55667:46 Compose Tooling API
 126756:31 com.nytimes.android
 0:47 play-services-tasks
 42705:11358 JSpecify
@@ -124,6 +122,7 @@
 0:47 play-services-places-placereport
 0:47 play-services-location
 55667:46 Android Support Library core utils
+55667:46 Compose Util
 67268:47 kotlinx-coroutines-android
 251722:52 core
 55667:46 Android Lifecycle LiveData
@@ -132,9 +131,10 @@
 126397:43 Lottie Compose
 67268:47 kotlinx-serialization-json
 55667:46 Accompanist Insets library
-55667:46 Compose Material Ripple
+55667:46 Compose Saveable
 55667:46 exoplayer-datasource
 55667:46 SplashScreen
+55667:46 Compose Animation Core
 55667:46 okio
 55667:46 Android Support Library fragment
 55667:46 exoplayer-dash
@@ -153,7 +153,6 @@
 126441:34 dbflow-rx2
 55667:46 Dynamic animation Kotlin Extensions
 55667:46 firebase-common
-55667:46 Compose UI primitives
 0:47 firebase-iid
 252901:16013 Android SDK
 268915:10695 AndroidX activity library
@@ -193,10 +192,10 @@
 126350:46 Glide RecyclerView Integration
 55667:46 Glide RecyclerView Integration
 55667:46 okio
-55667:46 Compose Animation
 55667:46 firebase-components
 67268:47 JetBrains Java Annotations
 55667:46 Disk LRU Cache
+55667:46 Compose Graphics
 55667:46 WebView Support Library
 55667:46 ConstraintLayout for Jetpack Compose
 55667:46 Android Support Library Async Layout Inflater
@@ -215,13 +214,9 @@
 126756:31 com.nytimes.android
 0:47 play-services-measurement-impl
 126441:34 dbflow-core
-55667:46 Compose Foundation
-55667:46 Compose Runtime
 126756:31 com.nytimes.android
 55667:46 Kotlin Stdlib
-55667:46 Compose Unit
 332640:67 Bolts-Tasks
-55667:46 Compose Material Icons Core
 55667:46 exoplayer-rtsp
 55667:46 Android Lifecycle ViewModel Kotlin Extensions
 126686:35 komputing/KEthereum
@@ -236,7 +231,6 @@
 67268:47 Dagger Android
 67268:47 kotlinx-serialization-json
 55667:46 RxJava
-55667:46 Compose Layouts
 55667:46 Android Lifecycle Runtime
 55667:46 Android Support Library Print
 55667:46 firebase-perf-ktx
@@ -252,6 +246,7 @@
 67198:42 io.grpc:grpc-android
 55667:46 Kotlin Android Extensions Runtime
 332762:43 UUID
+55667:46 Compose Layouts
 55667:46 AndroidX Autofill
 67198:42 perfmark:perfmark-api
 67268:47 kotlinx-serialization-core
@@ -272,8 +267,12 @@
 55667:46 exoplayer
 55667:46 Android Lifecycle ViewModel
 332847:54 Stetho OkHttp 3 module
+55667:46 Compose Runtime
+55667:46 Compose Foundation
 55790:45 anko
 0:47 play-services-base
+55667:46 Compose Unit
+55667:46 Compose Material Icons Core
 55667:46 firebase-database
 55667:46 Android ConstraintLayout
 55667:46 Kotlin Reflect
@@ -300,13 +299,13 @@
 42705:11358 Tink
 42705:11358 android_build
 42705:11358 conscrypt
+55667:46 Compose Animation
 55667:46 RxPermission
 55667:46 Accompanist SwipeRefresh library
 55667:46 Conductor
 55667:46 Conductor PagerAdapter
 55667:46 exoplayer-common
 55667:46 Conductor AndroidX Transition Extensions
-55667:46 Compose Graphics
 55714:75 Apollo GraphQL http cache api
 55667:46 AndroidX Futures
 55667:46 LiveData Kotlin Extensions
@@ -319,7 +318,6 @@
 55667:46 exoplayer-ui
 55667:46 firebase-installations-interop
 55667:46 transport-runtime
-55667:46 Compose Animation Core
 126755:0 tobiasrohloff/NestedScrollWebView
 55667:46 Android Paging-Common
 67268:47 kotlinx-coroutines-rx2
@@ -342,6 +340,8 @@
 55667:46 TagSoup
 67241:26 Instabug Crash Reporting Library
 55714:75 Apollo GraphQL Normalized Cache APIs
+55667:46 Compose UI primitives
+55667:46 Android Support Library Annotations
 55667:46 Android Support RecyclerView
 55667:46 Android Support Custom Tabs
 55667:46 firebase-config
@@ -355,25 +355,24 @@
 55667:46 Kotlin Stdlib Common
 67198:42 gRPC Kotlin Stub
 126686:35 komputing/KEthereum
-55667:46 Biometric
 67198:42 io.grpc:grpc-protobuf-lite
+55667:46 Biometric
 67268:47 logging-interceptor
 67268:47 Gson
 55667:46 Android WorkManager RxJava2 Support
-55667:46 Compose Util
 55667:46 firebase-database-ktx
 55667:46 Android DB
 55667:46 Android Support SQLite - Framework Implementation
 55714:75 Apollo GraphQL API
 55790:45 anko
 67241:26 Instabug Core Library
-0:47 play-services-oss-licenses
-1120068:11365 absl
 55667:46 Android Support Library core UI
 67198:42 io.grpc:grpc-stub
+0:47 play-services-oss-licenses
+1120068:11365 absl
 67268:47 kotlinx-coroutines-bom
 55667:46 thrifty-runtime
-55667:46 Compose Saveable
+55667:46 Compose Material Ripple
 1119954:42 uCrop
 0:47 play-services-basement
 55667:46 Android Support Library Document File
@@ -383,12 +382,12 @@
 55667:46 firebase-installations
 55667:46 Core Kotlin Extensions
 55667:46 transport-api
+55667:46 Compose Geometry
 55667:46 Android Transition Support Library
 0:47 play-services-measurement-api
 67268:47 okhttp
 67268:47 okhttp-urlconnection
 55667:46 Android Dual Cache
-55667:46 Compose Tooling API
 126476:54 Tweet Ui Android SDK
 126686:35 komputing/KEthereum
 67241:26 Instabug Full Library
@@ -399,6 +398,7 @@
 55667:46 Glide Annotations
 0:47 play-services-stats
 126756:31 com.nytimes.android
+55667:46 Compose Material Components
 55667:46 Android Tracing
 1131434:41 ivs-player
 55667:46 protolite-well-known-types
@@ -416,10 +416,10 @@
 55667:46 Android Multi-Dex Library
 55667:46 ReLinker
 67268:47 okhttp
+55667:46 Compose UI Text
 1131632:61 Audioswitch
 55667:46 Android WorkManager Kotlin Extensions
 55667:46 napier
-55667:46 Android Support Library Annotations
 55667:46 Android Lifecycle Kotlin Extensions
 55667:46 Android Support Library Custom View
 55667:46 Android Arch-Common

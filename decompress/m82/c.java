@@ -4,27 +4,33 @@
 
 package m82;
 
-import sg2.e;
-import o5.a;
-import k5.b;
+import com.reddit.vault.m;
+import cg2.j;
+import java.util.Set;
+import r82.k0;
+import r82.j0;
+import java.util.Map;
+import r82.l0;
+import com.reddit.vault.domain.model.PendingTransactionSubtype;
+import r82.h;
+import java.util.List;
+import cj2.e;
 
-public final class c extends b
+public interface c
 {
-    public static final c c;
+    e<List<h>> a();
     
-    static {
-        c = new c();
-    }
+    e<List<l0>> b(final PendingTransactionSubtype p0);
     
-    public c() {
-        super(3, 4);
-    }
+    e<Map<String, j0>> c(final String p0);
     
-    @Override
-    public final void a(final a a) {
-        e.f((Object)a, "database");
-        a.execSQL("ALTER TABLE `points` ADD COLUMN `fetchedAt` INTEGER NOT NULL DEFAULT 0");
-        a.execSQL("ALTER TABLE `transaction` ADD COLUMN `recipient` TEXT");
-        a.execSQL("ALTER TABLE `transaction` ADD COLUMN `recipientId` TEXT");
-    }
+    e d();
+    
+    e<Boolean> e();
+    
+    e<List<k0>> f();
+    
+    Object g(final Set<String> p0, final String p1, final boolean p2, final gg2.c<? super j> p3);
+    
+    Object h(final gg2.c<? super m> p0);
 }

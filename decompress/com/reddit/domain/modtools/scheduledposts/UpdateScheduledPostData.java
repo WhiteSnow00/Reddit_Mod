@@ -6,17 +6,16 @@ package com.reddit.domain.modtools.scheduledposts;
 
 import java.util.LinkedHashMap;
 import java.util.Iterator;
-import al0.b;
 import android.os.Parcel;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.model.MediaMetaData;
 import java.util.Map;
 import android.os.Parcelable$Creator;
 import kotlin.Metadata;
 import android.os.Parcelable;
 
-@Metadata(bv = {}, d1 = { "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0010\b\u0087\b\u0018\u00002\u00020\u0001B\u0087\u0001\u0012\u0006\u0010\u0012\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0006\u0012\u0016\b\u0002\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b6\u00107J\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003J\u0017\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\bH\u00c6\u0003J\u0012\u0010\f\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\f\u0010\rJ\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u000e\u0010\rJ\u0012\u0010\u000f\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u000f\u0010\rJ\u0012\u0010\u0010\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u0010\u0010\rJ\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u0011\u0010\rJ\u0092\u0001\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0012\u001a\u00020\u00022\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00062\u0016\b\u0002\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000bH\u00c6\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ\t\u0010\u001e\u001a\u00020\u0002H\u00d6\u0001J\t\u0010 \u001a\u00020\u001fH\u00d6\u0001J\u0013\u0010#\u001a\u00020\u000b2\b\u0010\"\u001a\u0004\u0018\u00010!H\u00d6\u0003J\t\u0010$\u001a\u00020\u001fH\u00d6\u0001J\u0019\u0010)\u001a\u00020(2\u0006\u0010&\u001a\u00020%2\u0006\u0010'\u001a\u00020\u001fH\u00d6\u0001R\u0017\u0010\u0012\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0012\u0010*\u001a\u0004\b+\u0010,R\u0019\u0010\u0013\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0013\u0010*\u001a\u0004\b-\u0010,R\u0019\u0010\u0014\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0014\u0010*\u001a\u0004\b.\u0010,R\u0019\u0010\u0015\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b\u0015\u0010/\u001a\u0004\b0\u00101R%\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\u0016\u00102\u001a\u0004\b3\u00104R\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0017\u00105\u001a\u0004\b\u0017\u0010\rR\u0019\u0010\u0018\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0018\u00105\u001a\u0004\b\u0018\u0010\rR\u0019\u0010\u0019\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0019\u00105\u001a\u0004\b\u0019\u0010\rR\u0019\u0010\u001a\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u001a\u00105\u001a\u0004\b\u001a\u0010\rR\u0019\u0010\u001b\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u001b\u00105\u001a\u0004\b\u001b\u0010\r¨\u00068" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/UpdateScheduledPostData;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "component4", "", "Lcom/reddit/domain/model/MediaMetaData;", "component5", "", "component6", "()Ljava/lang/Boolean;", "component7", "component8", "component9", "component10", "id", "title", "body", "bodyContentType", "mediaMetaData", "isSticky", "isDistinguishedAsMod", "isOriginalContent", "isSpoiler", "isNSFW", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/reddit/domain/modtools/scheduledposts/UpdateScheduledPostData;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Ljava/lang/String;", "getId", "()Ljava/lang/String;", "getTitle", "getBody", "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "getBodyContentType", "()Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "Ljava/util/Map;", "getMediaMetaData", "()Ljava/util/Map;", "Ljava/lang/Boolean;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0010\b\u0087\b\u0018\u00002\u00020\u0001B\u0087\u0001\u0012\u0006\u0010\u0012\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0006\u0012\u0016\b\u0002\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b6\u00107J\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003J\u0017\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\bH\u00c6\u0003J\u0012\u0010\f\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\f\u0010\rJ\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u000e\u0010\rJ\u0012\u0010\u000f\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u000f\u0010\rJ\u0012\u0010\u0010\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u0010\u0010\rJ\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u000bH\u00c6\u0003¢\u0006\u0004\b\u0011\u0010\rJ\u0092\u0001\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0012\u001a\u00020\u00022\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00062\u0016\b\u0002\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000bH\u00c6\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ\t\u0010\u001e\u001a\u00020\u0002H\u00d6\u0001J\t\u0010 \u001a\u00020\u001fH\u00d6\u0001J\u0013\u0010#\u001a\u00020\u000b2\b\u0010\"\u001a\u0004\u0018\u00010!H\u00d6\u0003J\t\u0010$\u001a\u00020\u001fH\u00d6\u0001J\u0019\u0010)\u001a\u00020(2\u0006\u0010&\u001a\u00020%2\u0006\u0010'\u001a\u00020\u001fH\u00d6\u0001R\u0017\u0010\u0012\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0012\u0010*\u001a\u0004\b+\u0010,R\u0019\u0010\u0013\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0013\u0010*\u001a\u0004\b-\u0010,R\u0019\u0010\u0014\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0014\u0010*\u001a\u0004\b.\u0010,R\u0019\u0010\u0015\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b\u0015\u0010/\u001a\u0004\b0\u00101R%\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\u0016\u00102\u001a\u0004\b3\u00104R\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0017\u00105\u001a\u0004\b\u0017\u0010\rR\u0019\u0010\u0018\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0018\u00105\u001a\u0004\b\u0018\u0010\rR\u0019\u0010\u0019\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0019\u00105\u001a\u0004\b\u0019\u0010\rR\u0019\u0010\u001a\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u001a\u00105\u001a\u0004\b\u001a\u0010\rR\u0019\u0010\u001b\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u001b\u00105\u001a\u0004\b\u001b\u0010\r¨\u00068" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/UpdateScheduledPostData;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "component4", "", "Lcom/reddit/domain/model/MediaMetaData;", "component5", "", "component6", "()Ljava/lang/Boolean;", "component7", "component8", "component9", "component10", "id", "title", "body", "bodyContentType", "mediaMetaData", "isSticky", "isDistinguishedAsMod", "isOriginalContent", "isSpoiler", "isNSFW", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/reddit/domain/modtools/scheduledposts/UpdateScheduledPostData;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Ljava/lang/String;", "getId", "()Ljava/lang/String;", "getTitle", "getBody", "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "getBodyContentType", "()Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "Ljava/util/Map;", "getMediaMetaData", "()Ljava/util/Map;", "Ljava/lang/Boolean;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
 public final class UpdateScheduledPostData implements Parcelable
 {
     public static final Parcelable$Creator<UpdateScheduledPostData> CREATOR;
@@ -47,6 +46,72 @@ public final class UpdateScheduledPostData implements Parcelable
         this.isOriginalContent = isOriginalContent;
         this.isSpoiler = isSpoiler;
         this.isNSFW = isNSFW;
+    }
+    
+    public UpdateScheduledPostData(final String s, String s2, String s3, SubredditScheduledPost.ContentType contentType, Map map, Boolean b, Boolean b2, Boolean b3, Boolean b4, Boolean b5, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        final Boolean b6 = null;
+        if ((n & 0x2) != 0x0) {
+            s2 = null;
+        }
+        if ((n & 0x4) != 0x0) {
+            s3 = null;
+        }
+        if ((n & 0x8) != 0x0) {
+            contentType = null;
+        }
+        if ((n & 0x10) != 0x0) {
+            map = null;
+        }
+        if ((n & 0x20) != 0x0) {
+            b = null;
+        }
+        if ((n & 0x40) != 0x0) {
+            b2 = null;
+        }
+        if ((n & 0x80) != 0x0) {
+            b3 = null;
+        }
+        if ((n & 0x100) != 0x0) {
+            b4 = null;
+        }
+        if ((n & 0x200) != 0x0) {
+            b5 = b6;
+        }
+        this(s, s2, s3, contentType, map, b, b2, b3, b4, b5);
+    }
+    
+    public static UpdateScheduledPostData copy$default(final UpdateScheduledPostData updateScheduledPostData, String id, String title, String body, SubredditScheduledPost.ContentType bodyContentType, Map mediaMetaData, Boolean isSticky, Boolean isDistinguishedAsMod, Boolean isOriginalContent, Boolean isSpoiler, Boolean isNSFW, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            id = updateScheduledPostData.id;
+        }
+        if ((n & 0x2) != 0x0) {
+            title = updateScheduledPostData.title;
+        }
+        if ((n & 0x4) != 0x0) {
+            body = updateScheduledPostData.body;
+        }
+        if ((n & 0x8) != 0x0) {
+            bodyContentType = updateScheduledPostData.bodyContentType;
+        }
+        if ((n & 0x10) != 0x0) {
+            mediaMetaData = updateScheduledPostData.mediaMetaData;
+        }
+        if ((n & 0x20) != 0x0) {
+            isSticky = updateScheduledPostData.isSticky;
+        }
+        if ((n & 0x40) != 0x0) {
+            isDistinguishedAsMod = updateScheduledPostData.isDistinguishedAsMod;
+        }
+        if ((n & 0x80) != 0x0) {
+            isOriginalContent = updateScheduledPostData.isOriginalContent;
+        }
+        if ((n & 0x100) != 0x0) {
+            isSpoiler = updateScheduledPostData.isSpoiler;
+        }
+        if ((n & 0x200) != 0x0) {
+            isNSFW = updateScheduledPostData.isNSFW;
+        }
+        return updateScheduledPostData.copy(id, title, body, bodyContentType, mediaMetaData, isSticky, isDistinguishedAsMod, isOriginalContent, isSpoiler, isNSFW);
     }
     
     public final String component1() {
@@ -227,26 +292,26 @@ public final class UpdateScheduledPostData implements Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("UpdateScheduledPostData(id=");
-        r.append(this.id);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", body=");
-        r.append(this.body);
-        r.append(", bodyContentType=");
-        r.append(this.bodyContentType);
-        r.append(", mediaMetaData=");
-        r.append(this.mediaMetaData);
-        r.append(", isSticky=");
-        r.append(this.isSticky);
-        r.append(", isDistinguishedAsMod=");
-        r.append(this.isDistinguishedAsMod);
-        r.append(", isOriginalContent=");
-        r.append(this.isOriginalContent);
-        r.append(", isSpoiler=");
-        r.append(this.isSpoiler);
-        r.append(", isNSFW=");
-        return android.support.v4.media.a.j(r, this.isNSFW, ')');
+        final StringBuilder t = a.t("UpdateScheduledPostData(id=");
+        t.append(this.id);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", body=");
+        t.append(this.body);
+        t.append(", bodyContentType=");
+        t.append(this.bodyContentType);
+        t.append(", mediaMetaData=");
+        t.append(this.mediaMetaData);
+        t.append(", isSticky=");
+        t.append(this.isSticky);
+        t.append(", isDistinguishedAsMod=");
+        t.append(this.isDistinguishedAsMod);
+        t.append(", isOriginalContent=");
+        t.append(this.isOriginalContent);
+        t.append(", isSpoiler=");
+        t.append(this.isSpoiler);
+        t.append(", isNSFW=");
+        return android.support.v4.media.a.m(t, this.isNSFW, ')');
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -279,35 +344,35 @@ public final class UpdateScheduledPostData implements Parcelable
             parcel.writeInt(0);
         }
         else {
-            b.o(parcel, 1, isSticky);
+            aq2.a.w(parcel, 1, isSticky);
         }
         final Boolean isDistinguishedAsMod = this.isDistinguishedAsMod;
         if (isDistinguishedAsMod == null) {
             parcel.writeInt(0);
         }
         else {
-            b.o(parcel, 1, isDistinguishedAsMod);
+            aq2.a.w(parcel, 1, isDistinguishedAsMod);
         }
         final Boolean isOriginalContent = this.isOriginalContent;
         if (isOriginalContent == null) {
             parcel.writeInt(0);
         }
         else {
-            b.o(parcel, 1, isOriginalContent);
+            aq2.a.w(parcel, 1, isOriginalContent);
         }
         final Boolean isSpoiler = this.isSpoiler;
         if (isSpoiler == null) {
             parcel.writeInt(0);
         }
         else {
-            b.o(parcel, 1, isSpoiler);
+            aq2.a.w(parcel, 1, isSpoiler);
         }
         final Boolean isNSFW = this.isNSFW;
         if (isNSFW == null) {
             parcel.writeInt(0);
         }
         else {
-            b.o(parcel, 1, isNSFW);
+            aq2.a.w(parcel, 1, isNSFW);
         }
     }
     
@@ -387,8 +452,16 @@ public final class UpdateScheduledPostData implements Parcelable
             return new UpdateScheduledPostData(string, string2, string3, (SubredditScheduledPost.ContentType)value, map, value2, value3, value4, value5, value6);
         }
         
+        public /* bridge */ Object createFromParcel(final Parcel parcel) {
+            return this.createFromParcel(parcel);
+        }
+        
         public final UpdateScheduledPostData[] newArray(final int n) {
             return new UpdateScheduledPostData[n];
+        }
+        
+        public /* bridge */ Object[] newArray(final int n) {
+            return this.newArray(n);
         }
     }
 }

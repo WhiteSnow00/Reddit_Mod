@@ -4,8 +4,11 @@
 
 package io.reactivex.internal.schedulers;
 
-import wf2.f;
-import wf2.c;
+import rf2.f;
+import io.reactivex.disposables.CompositeDisposable;
+import gf2.b;
+import rf2.c;
+import java.io.Serializable;
 import java.util.concurrent.RejectedExecutionException;
 import io.reactivex.internal.disposables.EmptyDisposable;
 import java.util.concurrent.Future;
@@ -14,15 +17,15 @@ import io.reactivex.plugins.RxJavaPlugins;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicReference;
-import ff2.b0;
+import af2.b0;
 
 public final class a extends b0
 {
-    public static final b c;
+    public static final a$b c;
     public static final RxThreadFactory d;
     public static final int e;
-    public static final c f;
-    public final AtomicReference<b> b;
+    public static final a$c f;
+    public final AtomicReference<a$b> b;
     
     static {
         final int availableProcessors = Runtime.getRuntime().availableProcessors();
@@ -38,96 +41,96 @@ public final class a extends b0
             }
         }
         e = e2;
-        (f = new c(new RxThreadFactory("RxComputationShutdown"))).dispose();
-        final c[] b = (c = new b(0, d = new RxThreadFactory("RxComputationThreadPool", Math.max(1, Math.min(10, Integer.getInteger("rx2.computation-priority", 5))), true))).b;
+        ((f)(f = new a$c((ThreadFactory)new RxThreadFactory("RxComputationShutdown")))).dispose();
+        final a$c[] b = (c = new a$b(0, (ThreadFactory)(d = new RxThreadFactory("RxComputationThreadPool", Math.max(1, Math.min(10, Integer.getInteger("rx2.computation-priority", 5))), true)))).b;
         for (int length = b.length, i = n; i < length; ++i) {
-            b[i].dispose();
+            ((f)b[i]).dispose();
         }
     }
     
     public a() {
-        this(a.d);
+        this((ThreadFactory)a.d);
     }
     
     public a(final ThreadFactory threadFactory) {
-        final b c = a.c;
-        final AtomicReference b = new AtomicReference<b>(c);
-        this.b = (AtomicReference<b>)b;
-        final b b2 = new b(a.e, threadFactory);
+        final a$b c = a.c;
+        final AtomicReference b = new AtomicReference<a$b>(c);
+        this.b = (AtomicReference<a$b>)b;
+        final a$b a$b = new a$b(a.e, threadFactory);
         while (true) {
             do {
-                final boolean compareAndSet = b.compareAndSet(c, b2);
+                final boolean compareAndSet = b.compareAndSet(c, a$b);
                 final int n = 0;
                 if (compareAndSet) {
-                    final boolean b3 = true;
-                    if (!b3) {
-                        final c[] b4 = b2.b;
-                        for (int length = b4.length, i = n; i < length; ++i) {
-                            b4[i].dispose();
+                    final boolean b2 = true;
+                    if (!b2) {
+                        final a$c[] b3 = a$b.b;
+                        for (int length = b3.length, i = n; i < length; ++i) {
+                            ((f)b3[i]).dispose();
                         }
                     }
                     return;
                 }
             } while (b.get() == c);
-            final boolean b3 = false;
+            final boolean b2 = false;
             continue;
         }
     }
     
     public final b0.c a() {
-        return (b0.c)new a.a$a(this.b.get().a());
+        return new a(this.b.get().a());
     }
     
-    public final if2.a d(final Runnable runnable, final long n, final TimeUnit timeUnit) {
-        final c a = this.b.get().a();
+    public final a d(final Runnable runnable, final long n, final TimeUnit timeUnit) {
+        final a$c a = this.b.get().a();
         a.getClass();
         final ScheduledDirectTask scheduledDirectTask = new ScheduledDirectTask(RxJavaPlugins.onSchedule(runnable));
         while (true) {
             if (n <= 0L) {
-                Object instance;
+                Serializable instance;
                 try {
-                    Object future = a.f.submit((Callable<V>)scheduledDirectTask);
+                    Object future = ((f)a).f.submit((Callable<V>)scheduledDirectTask);
                     while (true) {
-                        ((AbstractDirectTask)scheduledDirectTask).setFuture((Future<?>)future);
+                        scheduledDirectTask.setFuture((Future<?>)future);
                         instance = scheduledDirectTask;
-                        return (if2.a)instance;
-                        future = a.f.schedule((Callable<T>)scheduledDirectTask, n, timeUnit);
+                        return (a)instance;
+                        future = ((f)a).f.schedule((Callable<T>)scheduledDirectTask, n, timeUnit);
                         continue;
                     }
                 }
                 catch (final RejectedExecutionException ex) {
-                    RxJavaPlugins.onError(ex);
+                    RxJavaPlugins.onError((Throwable)ex);
                     instance = EmptyDisposable.INSTANCE;
                 }
-                return (if2.a)instance;
+                return (a)instance;
             }
             continue;
         }
     }
     
-    public final if2.a e(Runnable onSchedule, final long n, final long n2, final TimeUnit timeUnit) {
-        final c a = this.b.get().a();
+    public final a e(Runnable onSchedule, final long n, final long n2, final TimeUnit timeUnit) {
+        final a$c a = this.b.get().a();
         a.getClass();
         onSchedule = RxJavaPlugins.onSchedule(onSchedule);
         Object o2 = null;
         if (n2 <= 0L) {
-            final wf2.c c = new wf2.c(onSchedule, a.f);
+            final c c = new c(onSchedule, ((f)a).f);
             Label_0070: {
                 if (n > 0L) {
                     break Label_0070;
                 }
                 try {
-                    Object o = a.f.submit((Callable<V>)c);
+                    Object o = ((f)a).f.submit((Callable<V>)c);
                     while (true) {
-                        c.a((Future<?>)o);
+                        c.a((Future)o);
                         o2 = c;
-                        return (if2.a)o2;
-                        o = a.f.schedule((Callable<T>)c, n, timeUnit);
+                        return (a)o2;
+                        o = ((f)a).f.schedule((Callable<T>)c, n, timeUnit);
                         continue;
                     }
                 }
                 catch (final RejectedExecutionException ex) {
-                    RxJavaPlugins.onError(ex);
+                    RxJavaPlugins.onError((Throwable)ex);
                     o2 = EmptyDisposable.INSTANCE;
                 }
             }
@@ -135,46 +138,60 @@ public final class a extends b0
         else {
             o2 = new ScheduledDirectPeriodicTask(onSchedule);
             try {
-                ((AbstractDirectTask)o2).setFuture(a.f.scheduleAtFixedRate((Runnable)o2, n, n2, timeUnit));
+                ((AbstractDirectTask)o2).setFuture(((f)a).f.scheduleAtFixedRate((Runnable)o2, n, n2, timeUnit));
             }
             catch (final RejectedExecutionException ex2) {
-                RxJavaPlugins.onError(ex2);
+                RxJavaPlugins.onError((Throwable)ex2);
                 o2 = EmptyDisposable.INSTANCE;
             }
         }
-        return (if2.a)o2;
+        return (a)o2;
     }
     
-    public static final class b
+    public static final class a extends c
     {
-        public final int a;
-        public final c[] b;
-        public long c;
+        public final b f;
+        public final CompositeDisposable g;
+        public final b h;
+        public final a$c i;
+        public volatile boolean j;
         
-        public b(final int a, final ThreadFactory threadFactory) {
-            this.a = a;
-            this.b = new c[a];
-            for (int i = 0; i < a; ++i) {
-                this.b[i] = new c(threadFactory);
+        public a(final a$c i) {
+            this.i = i;
+            final b f = new b();
+            this.f = f;
+            final CompositeDisposable g = new CompositeDisposable();
+            this.g = g;
+            final b h = new b();
+            (this.h = h).add((df2.a)f);
+            h.add((df2.a)g);
+        }
+        
+        @Override
+        public final df2.a b(final Runnable runnable) {
+            if (this.j) {
+                return (df2.a)EmptyDisposable.INSTANCE;
+            }
+            return (df2.a)((f)this.i).e(runnable, 0L, TimeUnit.MILLISECONDS, (gf2.a)this.f);
+        }
+        
+        @Override
+        public final df2.a c(final Runnable runnable, final long n, final TimeUnit timeUnit) {
+            if (this.j) {
+                return (df2.a)EmptyDisposable.INSTANCE;
+            }
+            return (df2.a)((f)this.i).e(runnable, n, timeUnit, (gf2.a)this.g);
+        }
+        
+        public final void dispose() {
+            if (!this.j) {
+                this.j = true;
+                this.h.dispose();
             }
         }
         
-        public final c a() {
-            final int a = this.a;
-            if (a == 0) {
-                return io.reactivex.internal.schedulers.a.f;
-            }
-            final c[] b = this.b;
-            final long c = this.c;
-            this.c = 1L + c;
-            return b[(int)(c % a)];
-        }
-    }
-    
-    public static final class c extends f
-    {
-        public c(final ThreadFactory threadFactory) {
-            super(threadFactory);
+        public final boolean isDisposed() {
+            return this.j;
         }
     }
 }

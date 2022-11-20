@@ -5,7 +5,7 @@
 package com.reddit.domain.model;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.model.sociallink.SocialLinkType;
 import kotlin.Metadata;
 
@@ -25,6 +25,32 @@ public final class SocialLinkInput
         this.handle = handle;
         this.id = id;
         this.type = type;
+    }
+    
+    public SocialLinkInput(final String s, final String s2, final String s3, String s4, final SocialLinkType socialLinkType, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x8) != 0x0) {
+            s4 = null;
+        }
+        this(s, s2, s3, s4, socialLinkType);
+    }
+    
+    public static SocialLinkInput copy$default(final SocialLinkInput socialLinkInput, String url, String title, String handle, String id, SocialLinkType type, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            url = socialLinkInput.url;
+        }
+        if ((n & 0x2) != 0x0) {
+            title = socialLinkInput.title;
+        }
+        if ((n & 0x4) != 0x0) {
+            handle = socialLinkInput.handle;
+        }
+        if ((n & 0x8) != 0x0) {
+            id = socialLinkInput.id;
+        }
+        if ((n & 0x10) != 0x0) {
+            type = socialLinkInput.type;
+        }
+        return socialLinkInput.copy(url, title, handle, id, type);
     }
     
     public final String component1() {
@@ -120,17 +146,17 @@ public final class SocialLinkInput
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SocialLinkInput(url=");
-        r.append(this.url);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", handle=");
-        r.append(this.handle);
-        r.append(", id=");
-        r.append(this.id);
-        r.append(", type=");
-        r.append(this.type);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("SocialLinkInput(url=");
+        t.append(this.url);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", handle=");
+        t.append(this.handle);
+        t.append(", id=");
+        t.append(this.id);
+        t.append(", type=");
+        t.append(this.type);
+        t.append(')');
+        return t.toString();
     }
 }

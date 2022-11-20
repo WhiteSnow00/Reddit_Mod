@@ -4,39 +4,38 @@
 
 package com.google.android.gms.internal.measurement;
 
-import ie.c5;
+import je.z4;
 import java.io.Serializable;
 
-final class zzii implements Serializable, c5
+final class zzii implements Serializable, z4
 {
-    public final c5 zza;
+    public final z4 zza;
     public transient volatile boolean zzb;
     public transient Object zzc;
     
-    public zzii(final c5 zza) {
+    public zzii(final z4 zza) {
         zza.getClass();
         this.zza = zza;
     }
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("Suppliers.memoize(");
+        final StringBuilder t = a.t("Suppliers.memoize(");
         Object o;
         if (this.zzb) {
-            final StringBuilder r2 = a.r("<supplier that returned ");
-            r2.append(this.zzc);
-            r2.append(">");
-            o = r2.toString();
+            final StringBuilder t2 = a.t("<supplier that returned ");
+            t2.append(this.zzc);
+            t2.append(">");
+            o = t2.toString();
         }
         else {
             o = this.zza;
         }
-        r.append(o);
-        r.append(")");
-        return r.toString();
+        t.append(o);
+        t.append(")");
+        return t.toString();
     }
     
-    @Override
     public final Object zza() {
         if (!this.zzb) {
             synchronized (this) {

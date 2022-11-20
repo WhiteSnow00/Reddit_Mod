@@ -1,0 +1,10 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package ae0;
+
+public interface j
+{
+    void vs(final String p0, final boolean p1);
+}

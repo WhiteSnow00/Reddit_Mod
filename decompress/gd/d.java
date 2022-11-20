@@ -4,33 +4,15 @@
 
 package gd;
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
-import android.os.Parcel;
-import com.google.android.gms.auth.api.credentials.IdToken;
-import android.os.Parcelable$Creator;
+import com.google.android.gms.common.api.a$e;
+import android.os.Looper;
+import android.content.Context;
+import com.google.android.gms.common.api.a;
 
-public final class d implements Parcelable$Creator<IdToken>
+public final class d extends a<be.a, c>
 {
-    public final Object createFromParcel(final Parcel parcel) {
-        final int o = SafeParcelReader.o(parcel);
-        String c = null;
-        String c2 = null;
-        while (parcel.dataPosition() < o) {
-            final int int1 = parcel.readInt();
-            final char c3 = (char)int1;
-            if (c3 != '\u0001') {
-                if (c3 != '\u0002') {
-                    SafeParcelReader.n(parcel, int1);
-                }
-                else {
-                    c2 = SafeParcelReader.c(parcel, int1);
-                }
-            }
-            else {
-                c = SafeParcelReader.c(parcel, int1);
-            }
-        }
-        SafeParcelReader.g(parcel, o);
-        return new IdToken(c, c2);
+    @Override
+    public final a$e b(final Context context, final Looper looper, final qd.d d, final Object o, final com.google.android.gms.common.api.c.b b, final com.google.android.gms.common.api.c.c c) {
+        return (a$e)new be.a(context, looper, d, (c)o, b, c);
     }
 }

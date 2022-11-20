@@ -6,7 +6,11 @@ package o1;
 
 public final class c0
 {
-    public final int a = a;
+    public final int a;
+    
+    public c0(final int a) {
+        this.a = a;
+    }
     
     @Override
     public final boolean equals(final Object o) {

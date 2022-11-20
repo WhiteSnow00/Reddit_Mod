@@ -4,30 +4,19 @@
 
 package c6;
 
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.ThreadFactory;
+import v3.g;
+import android.os.Looper;
+import android.os.Handler;
 
-public final class a implements ThreadFactory
+public final class a
 {
-    public final AtomicInteger f;
-    public final /* synthetic */ boolean g;
+    public final Handler a;
     
-    public a(final boolean g) {
-        this.g = g;
-        this.f = new AtomicInteger(0);
-    }
-    
-    @Override
-    public final Thread newThread(final Runnable runnable) {
-        String s;
-        if (this.g) {
-            s = "WM.task-";
+    public a(final int n) {
+        if (n != 1) {
+            this.a = g.a(Looper.getMainLooper());
+            return;
         }
-        else {
-            s = "androidx.work-";
-        }
-        final StringBuilder r = a.r(s);
-        r.append(this.f.incrementAndGet());
-        return new Thread(runnable, r.toString());
+        this.a = new Handler(Looper.getMainLooper());
     }
 }

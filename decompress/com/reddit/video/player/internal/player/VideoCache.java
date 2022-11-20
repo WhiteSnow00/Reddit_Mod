@@ -4,18 +4,18 @@
 
 package com.reddit.video.player.internal.player;
 
-import yd.b;
+import cg.d;
 import kotlin.Result;
-import zc.k;
-import sg2.e;
-import cw0.a;
+import ad.k;
+import ng2.e;
+import dw0.a;
 import android.content.Context;
 import java.io.File;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import com.google.android.exoplayer2.upstream.cache.c;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\t\b\u0002¢\u0006\u0004\b\u0014\u0010\u000eJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0018\u0010\u000b\u001a\u0004\u0018\u00010\n2\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\bJ\u000f\u0010\u000f\u001a\u00020\fH\u0001¢\u0006\u0004\b\r\u0010\u000eR\u0018\u0010\u0010\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0012\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013¨\u0006\u0016" }, d2 = { "Lcom/reddit/video/player/internal/player/VideoCache;", "", "Ljava/io/File;", "cacheDir", "", "isValid", "Landroid/content/Context;", "context", "Lcw0/a;", "redditLogger", "Lcom/google/android/exoplayer2/upstream/cache/c;", "getCache", "Lhg2/j;", "reset$player_release", "()V", "reset", "cache", "Lcom/google/android/exoplayer2/upstream/cache/c;", "initialized", "Z", "<init>", "Companion", "player_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\t\b\u0002¢\u0006\u0004\b\u0014\u0010\u000eJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0018\u0010\u000b\u001a\u0004\u0018\u00010\n2\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\bJ\u000f\u0010\u000f\u001a\u00020\fH\u0001¢\u0006\u0004\b\r\u0010\u000eR\u0018\u0010\u0010\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0012\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013¨\u0006\u0016" }, d2 = { "Lcom/reddit/video/player/internal/player/VideoCache;", "", "Ljava/io/File;", "cacheDir", "", "isValid", "Landroid/content/Context;", "context", "Ldw0/a;", "redditLogger", "Lcom/google/android/exoplayer2/upstream/cache/c;", "getCache", "Lcg2/j;", "reset$player_release", "()V", "reset", "cache", "Lcom/google/android/exoplayer2/upstream/cache/c;", "initialized", "Z", "<init>", "Companion", "player_release" }, k = 1, mv = { 1, 7, 1 })
 public final class VideoCache
 {
     private static final String CACHE_DIR = "reddit-video";
@@ -33,7 +33,7 @@ public final class VideoCache
     private VideoCache() {
     }
     
-    public static final /* synthetic */ VideoCache access$getInstance$cp() {
+    public static final VideoCache access$getInstance$cp() {
         return VideoCache.instance;
     }
     
@@ -71,11 +71,11 @@ public final class VideoCache
             }
             Object constructor-impl = null;
             try {
-                Result.constructor-impl((Object)new c(file, new k(), new ya.c(context)));
+                Result.constructor-impl((Object)new c(file, new k(), new za.c(context)));
             }
             finally {
                 final Throwable t;
-                constructor-impl = Result.constructor-impl((Object)b.o(t));
+                constructor-impl = Result.constructor-impl((Object)d.B1(t));
             }
             if (Result.isFailure-impl(constructor-impl)) {
                 constructor-impl = c;
@@ -96,6 +96,10 @@ public final class VideoCache
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
         
         public final VideoCache getInstance() {

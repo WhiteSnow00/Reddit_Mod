@@ -4,13 +4,9 @@
 
 package rd;
 
-import com.google.android.gms.common.api.a$e;
-import od.l;
-import android.os.Looper;
-import android.content.Context;
-import pd.s;
-import com.google.android.gms.common.api.a;
+import android.os.Parcelable;
 
-public final class b extends a<d, s>
+public interface b extends Parcelable
 {
+    public static final String NULL = "SAFE_PARCELABLE_NULL_STRING";
 }

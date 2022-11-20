@@ -21,10 +21,10 @@ final class zzig extends zzif
     }
     
     public final String toString() {
-        final StringBuilder r = a.r("Optional.of(");
-        r.append(this.zza);
-        r.append(")");
-        return r.toString();
+        final StringBuilder t = a.t("Optional.of(");
+        t.append(this.zza);
+        t.append(")");
+        return t.toString();
     }
     
     public final Object zza() {

@@ -6,10 +6,10 @@ package zc;
 
 public final class a
 {
-    public final long a;
-    public final long b;
+    public final byte[] a;
+    public final int b;
     
-    public a(final long a, final long b) {
+    public a(final byte[] a, final int b) {
         this.a = a;
         this.b = b;
     }

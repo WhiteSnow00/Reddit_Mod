@@ -4,35 +4,38 @@
 
 package vb;
 
+import u10.o;
+import bd.c0;
 import android.os.Parcel;
 import android.os.Parcelable$Creator;
-import pb.a$b;
 
-public final class e implements a$b
+public final class e extends h
 {
     public static final Parcelable$Creator<e> CREATOR;
-    public final float f;
-    public final int g;
+    public final String g;
+    public final String h;
+    public final String i;
     
     static {
         CREATOR = (Parcelable$Creator)new e$a();
     }
     
-    public e(final float f, final int g) {
-        this.f = f;
-        this.g = g;
-    }
-    
     public e(final Parcel parcel) {
-        this.f = parcel.readFloat();
-        this.g = parcel.readInt();
+        super("COMM");
+        final String string = parcel.readString();
+        final int a = c0.a;
+        this.g = string;
+        this.h = parcel.readString();
+        this.i = parcel.readString();
     }
     
-    public final int describeContents() {
-        return 0;
+    public e(final String g, final String h, final String i) {
+        super("COMM");
+        this.g = g;
+        this.h = h;
+        this.i = i;
     }
     
-    @Override
     public final boolean equals(final Object o) {
         boolean b = true;
         if (this == o) {
@@ -40,7 +43,7 @@ public final class e implements a$b
         }
         if (o != null && e.class == o.getClass()) {
             final e e = (e)o;
-            if (this.f != e.f || this.g != e.g) {
+            if (!c0.a((Object)this.h, (Object)e.h) || !c0.a((Object)this.g, (Object)e.g) || !c0.a((Object)this.i, (Object)e.i)) {
                 b = false;
             }
             return b;
@@ -48,25 +51,43 @@ public final class e implements a$b
         return false;
     }
     
-    @Override
     public final int hashCode() {
-        return (Float.valueOf(this.f).hashCode() + 527) * 31 + this.g;
+        final String g = this.g;
+        int hashCode = 0;
+        int hashCode2;
+        if (g != null) {
+            hashCode2 = g.hashCode();
+        }
+        else {
+            hashCode2 = 0;
+        }
+        final String h = this.h;
+        int hashCode3;
+        if (h != null) {
+            hashCode3 = h.hashCode();
+        }
+        else {
+            hashCode3 = 0;
+        }
+        final String i = this.i;
+        if (i != null) {
+            hashCode = i.hashCode();
+        }
+        return ((527 + hashCode2) * 31 + hashCode3) * 31 + hashCode;
     }
     
-    @Override
     public final String toString() {
-        final float f = this.f;
-        final int g = this.g;
-        final StringBuilder sb = new StringBuilder(73);
-        sb.append("smta: captureFrameRate=");
-        sb.append(f);
-        sb.append(", svcTemporalLayerCount=");
-        sb.append(g);
-        return sb.toString();
+        final String f = super.f;
+        final String g = this.g;
+        final String h = this.h;
+        final StringBuilder p = d.p(o.e(h, o.e(g, o.e(f, 25))), f, ": language=", g, ", description=");
+        p.append(h);
+        return p.toString();
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        parcel.writeFloat(this.f);
-        parcel.writeInt(this.g);
+        parcel.writeString(super.f);
+        parcel.writeString(this.g);
+        parcel.writeString(this.i);
     }
 }

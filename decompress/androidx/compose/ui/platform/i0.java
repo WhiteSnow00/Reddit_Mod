@@ -4,10 +4,11 @@
 
 package androidx.compose.ui.platform;
 
+import z0.g0;
+import cg2.d;
+import z0.q0;
+import z0.f1;
 import z0.h0;
-import hg2.d;
-import z0.s0;
-import z0.h1;
 import i1.m;
 import android.util.SizeF;
 import android.util.Size;
@@ -29,10 +30,10 @@ public final class i0
         boolean a = true;
         if (b) {
             final m m = (m)value;
-            if (m.e() != z0.i0.a && m.e() != h1.a && m.e() != s0.a) {
+            if (m.c() != h0.a && m.c() != f1.a && m.c() != q0.a) {
                 return false;
             }
-            value = ((h0)m).getValue();
+            value = ((g0)m).getValue();
             if (value != null) {
                 a = a(value);
             }

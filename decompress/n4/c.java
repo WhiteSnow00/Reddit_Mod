@@ -4,10 +4,12 @@
 
 package n4;
 
+import m4.a$b;
 import android.os.BaseBundle;
 import android.text.Editable;
-import s5.b;
+import r5.b;
 import android.os.Bundle;
+import m4.a$a;
 import m4.a;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
@@ -29,21 +31,21 @@ public final class c extends InputConnectionWrapper
             b2 = false;
         }
         if (b2 && editorInfo != null && editorInfo.extras != null) {
-            final a.a$a e = a2.e;
+            final a$a e = a2.e;
             e.getClass();
             final Bundle extras = editorInfo.extras;
             final b a3 = e.c.a;
-            final int a4 = ((s5.c)a3).a(4);
+            final int a4 = a3.a(4);
             int int1;
             if (a4 != 0) {
-                int1 = ((s5.c)a3).b.getInt(a4 + ((s5.c)a3).a);
+                int1 = a3.b.getInt(a4 + a3.a);
             }
             else {
                 int1 = 0;
             }
             ((BaseBundle)extras).putInt("android.support.text.emoji.emojiCompat_metadataVersion", int1);
             final Bundle extras2 = editorInfo.extras;
-            ((a.b)e).a.getClass();
+            ((a$b)e).a.getClass();
             ((BaseBundle)extras2).putBoolean("android.support.text.emoji.emojiCompat_replaceAll", false);
         }
     }

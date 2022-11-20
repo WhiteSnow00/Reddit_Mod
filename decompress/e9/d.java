@@ -4,13 +4,69 @@
 
 package e9;
 
-import com.bumptech.glide.Registry;
-import com.bumptech.glide.c;
+import android.content.BroadcastReceiver;
+import android.content.IntentFilter;
+import android.net.NetworkInfo;
+import android.util.Log;
+import android.net.ConnectivityManager;
+import com.bumptech.glide.i;
 import android.content.Context;
 
-public abstract class d implements f
+public final class d implements b
 {
-    @Override
-    public void b(final Context context, final c c, final Registry registry) {
+    public final Context f;
+    public final b$a g;
+    public boolean h;
+    public boolean i;
+    public final d$a j;
+    
+    public d(final Context context, final i.c g) {
+        this.j = new d$a(this);
+        this.f = context.getApplicationContext();
+        this.g = (b$a)g;
+    }
+    
+    public static boolean a(final Context context) {
+        final ConnectivityManager connectivityManager = (ConnectivityManager)context.getSystemService("connectivity");
+        ah0.b.F((Object)connectivityManager);
+        boolean b = true;
+        try {
+            final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+            if (activeNetworkInfo == null || !activeNetworkInfo.isConnected()) {
+                b = false;
+            }
+            return b;
+        }
+        catch (final RuntimeException ex) {
+            if (Log.isLoggable("ConnectivityMonitor", 5)) {
+                Log.w("ConnectivityMonitor", "Failed to determine connectivity status when connectivity changed", (Throwable)ex);
+            }
+            return true;
+        }
+    }
+    
+    public final void onDestroy() {
+    }
+    
+    public final void onStart() {
+        if (!this.i) {
+            this.h = a(this.f);
+            try {
+                this.f.registerReceiver((BroadcastReceiver)this.j, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+                this.i = true;
+            }
+            catch (final SecurityException ex) {
+                if (Log.isLoggable("ConnectivityMonitor", 5)) {
+                    Log.w("ConnectivityMonitor", "Failed to register", (Throwable)ex);
+                }
+            }
+        }
+    }
+    
+    public final void onStop() {
+        if (this.i) {
+            this.f.unregisterReceiver((BroadcastReceiver)this.j);
+            this.i = false;
+        }
     }
 }

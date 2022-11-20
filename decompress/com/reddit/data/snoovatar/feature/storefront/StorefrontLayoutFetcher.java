@@ -15,14 +15,14 @@ import h7.k;
 import mr0.e$a;
 import com.reddit.queries.b2;
 import kotlin.Result;
-import yd.b;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import com.reddit.data.snoovatar.entity.storefront.layout.JsonLayout;
-import lg2.c;
+import gg2.c;
 import javax.inject.Inject;
-import sg2.e;
-import cw0.a;
-import n60.f;
+import ng2.e;
+import dw0.a;
+import p60.f;
 import mr0.g;
 
 public final class StorefrontLayoutFetcher
@@ -64,10 +64,10 @@ public final class StorefrontLayoutFetcher
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             storefrontLayoutFetcher = (StorefrontLayoutFetcher)storefrontLayoutFetcher$fetchLayout$2.L$0;
-            yd.b.k0(o);
+            d.b4(o);
         }
         else {
-            yd.b.k0(o);
+            d.b4(o);
             storefrontLayoutFetcher$fetchLayout$2.L$0 = this;
             storefrontLayoutFetcher$fetchLayout$2.label = 1;
             o = this.b((c<? super String>)storefrontLayoutFetcher$fetchLayout$2);
@@ -119,10 +119,10 @@ public final class StorefrontLayoutFetcher
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             storefrontLayoutFetcher = (StorefrontLayoutFetcher)((StorefrontLayoutFetcher$fetchLayoutJson$1)o).L$0;
-            yd.b.k0(o2);
+            d.b4(o2);
         }
         else {
-            yd.b.k0(o2);
+            d.b4(o2);
             final b2 b2 = new b2();
             final g a = this.a;
             ((StorefrontLayoutFetcher$fetchLayoutJson$1)o).L$0 = this;

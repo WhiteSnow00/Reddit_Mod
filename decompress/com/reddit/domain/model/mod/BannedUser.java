@@ -4,8 +4,10 @@
 
 package com.reddit.domain.model.mod;
 
-import al0.f0;
-import sg2.e;
+import p1.h;
+import aq2.a;
+import ng2.e;
+import b5.k;
 import com.squareup.moshi.n;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -28,7 +30,7 @@ public final class BannedUser implements ModToolsUserModel
     private final String username;
     
     public BannedUser(@n(name = "username") final String username, @n(name = "bannedAtUTC") final long atUtc, @n(name = "banMessage") final String banMessage, @n(name = "bannedBy") final String bannedBy, @n(name = "reason") final String reason, @n(name = "duration") final Long duration, @n(name = "post") final String postId, @n(name = "id") final String id, @n(name = "modNote") final String modNote, @n(name = "accountIcon") final String accountIcon, @n(name = "commentId") final String commentId, @n(name = "subredditId") final String subredditId) {
-        d.y(username, "username", banMessage, "banMessage", bannedBy, "bannedBy", id, "id", subredditId, "subredditId");
+        k.x(username, "username", banMessage, "banMessage", bannedBy, "bannedBy", id, "id", subredditId, "subredditId");
         this.username = username;
         this.atUtc = atUtc;
         this.banMessage = banMessage;
@@ -41,6 +43,46 @@ public final class BannedUser implements ModToolsUserModel
         this.accountIcon = accountIcon;
         this.commentId = commentId;
         this.subredditId = subredditId;
+    }
+    
+    public static BannedUser copy$default(final BannedUser bannedUser, String username, long atUtc, String banMessage, String bannedBy, String reason, Long duration, String postId, String id, String modNote, String accountIcon, String commentId, String subredditId, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            username = bannedUser.getUsername();
+        }
+        if ((n & 0x2) != 0x0) {
+            atUtc = bannedUser.getAtUtc();
+        }
+        if ((n & 0x4) != 0x0) {
+            banMessage = bannedUser.banMessage;
+        }
+        if ((n & 0x8) != 0x0) {
+            bannedBy = bannedUser.bannedBy;
+        }
+        if ((n & 0x10) != 0x0) {
+            reason = bannedUser.getReason();
+        }
+        if ((n & 0x20) != 0x0) {
+            duration = bannedUser.duration;
+        }
+        if ((n & 0x40) != 0x0) {
+            postId = bannedUser.postId;
+        }
+        if ((n & 0x80) != 0x0) {
+            id = bannedUser.getId();
+        }
+        if ((n & 0x100) != 0x0) {
+            modNote = bannedUser.modNote;
+        }
+        if ((n & 0x200) != 0x0) {
+            accountIcon = bannedUser.getAccountIcon();
+        }
+        if ((n & 0x400) != 0x0) {
+            commentId = bannedUser.commentId;
+        }
+        if ((n & 0x800) != 0x0) {
+            subredditId = bannedUser.subredditId;
+        }
+        return bannedUser.copy(username, atUtc, banMessage, bannedBy, reason, duration, postId, id, modNote, accountIcon, commentId, subredditId);
     }
     
     public final String component1() {
@@ -162,7 +204,7 @@ public final class BannedUser implements ModToolsUserModel
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.bannedBy, b.c(this.banMessage, (Long.hashCode(this.getAtUtc()) + this.getUsername().hashCode() * 31) * 31, 31), 31);
+        final int e = a.e(this.bannedBy, a.e(this.banMessage, (Long.hashCode(this.getAtUtc()) + this.getUsername().hashCode() * 31) * 31, 31), 31);
         final String reason = this.getReason();
         int hashCode = 0;
         int hashCode2;
@@ -208,34 +250,34 @@ public final class BannedUser implements ModToolsUserModel
         if (commentId != null) {
             hashCode = commentId.hashCode();
         }
-        return this.subredditId.hashCode() + ((((hashCode5 + (((c + hashCode2) * 31 + hashCode3) * 31 + hashCode4) * 31) * 31 + hashCode6) * 31 + hashCode7) * 31 + hashCode) * 31;
+        return this.subredditId.hashCode() + ((((hashCode5 + (((e + hashCode2) * 31 + hashCode3) * 31 + hashCode4) * 31) * 31 + hashCode6) * 31 + hashCode7) * 31 + hashCode) * 31;
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("BannedUser(username=");
-        r.append(this.getUsername());
-        r.append(", atUtc=");
-        r.append(this.getAtUtc());
-        r.append(", banMessage=");
-        r.append(this.banMessage);
-        r.append(", bannedBy=");
-        r.append(this.bannedBy);
-        r.append(", reason=");
-        r.append(this.getReason());
-        r.append(", duration=");
-        r.append(this.duration);
-        r.append(", postId=");
-        r.append(this.postId);
-        r.append(", id=");
-        r.append(this.getId());
-        r.append(", modNote=");
-        r.append(this.modNote);
-        r.append(", accountIcon=");
-        r.append(this.getAccountIcon());
-        r.append(", commentId=");
-        r.append(this.commentId);
-        r.append(", subredditId=");
-        return f0.n(r, this.subredditId, ')');
+        final StringBuilder t = a.t("BannedUser(username=");
+        t.append(this.getUsername());
+        t.append(", atUtc=");
+        t.append(this.getAtUtc());
+        t.append(", banMessage=");
+        t.append(this.banMessage);
+        t.append(", bannedBy=");
+        t.append(this.bannedBy);
+        t.append(", reason=");
+        t.append(this.getReason());
+        t.append(", duration=");
+        t.append(this.duration);
+        t.append(", postId=");
+        t.append(this.postId);
+        t.append(", id=");
+        t.append(this.getId());
+        t.append(", modNote=");
+        t.append(this.modNote);
+        t.append(", accountIcon=");
+        t.append(this.getAccountIcon());
+        t.append(", commentId=");
+        t.append(this.commentId);
+        t.append(", subredditId=");
+        return h.c(t, this.subredditId, ')');
     }
 }

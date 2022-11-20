@@ -4,9 +4,9 @@
 
 package com.reddit.domain.model;
 
-import al0.g7;
+import aq2.a;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import java.util.List;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -39,6 +39,68 @@ public final class SiteRuleFlow
         this.complaintPageTitle = complaintPageTitle;
         this.complaintButtonText = complaintButtonText;
         this.requestCrisisSupport = requestCrisisSupport;
+    }
+    
+    public SiteRuleFlow(final String s, final String s2, String s3, List list, boolean b, String s4, String s5, String s6, String s7, boolean b2, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x4) != 0x0) {
+            s3 = null;
+        }
+        if ((n & 0x8) != 0x0) {
+            list = null;
+        }
+        if ((n & 0x10) != 0x0) {
+            b = false;
+        }
+        if ((n & 0x20) != 0x0) {
+            s4 = null;
+        }
+        if ((n & 0x40) != 0x0) {
+            s5 = null;
+        }
+        if ((n & 0x80) != 0x0) {
+            s6 = null;
+        }
+        if ((n & 0x100) != 0x0) {
+            s7 = null;
+        }
+        if ((n & 0x200) != 0x0) {
+            b2 = false;
+        }
+        this(s, s2, s3, list, b, s4, s5, s6, s7, b2);
+    }
+    
+    public static SiteRuleFlow copy$default(final SiteRuleFlow siteRuleFlow, String reasonTextToShow, String reasonText, String nextStepHeader, List nextStepReasons, boolean fileComplaint, String complaintUrl, String complaintPrompt, String complaintPageTitle, String complaintButtonText, boolean requestCrisisSupport, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            reasonTextToShow = siteRuleFlow.reasonTextToShow;
+        }
+        if ((n & 0x2) != 0x0) {
+            reasonText = siteRuleFlow.reasonText;
+        }
+        if ((n & 0x4) != 0x0) {
+            nextStepHeader = siteRuleFlow.nextStepHeader;
+        }
+        if ((n & 0x8) != 0x0) {
+            nextStepReasons = siteRuleFlow.nextStepReasons;
+        }
+        if ((n & 0x10) != 0x0) {
+            fileComplaint = siteRuleFlow.fileComplaint;
+        }
+        if ((n & 0x20) != 0x0) {
+            complaintUrl = siteRuleFlow.complaintUrl;
+        }
+        if ((n & 0x40) != 0x0) {
+            complaintPrompt = siteRuleFlow.complaintPrompt;
+        }
+        if ((n & 0x80) != 0x0) {
+            complaintPageTitle = siteRuleFlow.complaintPageTitle;
+        }
+        if ((n & 0x100) != 0x0) {
+            complaintButtonText = siteRuleFlow.complaintButtonText;
+        }
+        if ((n & 0x200) != 0x0) {
+            requestCrisisSupport = siteRuleFlow.requestCrisisSupport;
+        }
+        return siteRuleFlow.copy(reasonTextToShow, reasonText, nextStepHeader, nextStepReasons, fileComplaint, complaintUrl, complaintPrompt, complaintPageTitle, complaintButtonText, requestCrisisSupport);
     }
     
     public final String component1() {
@@ -141,7 +203,7 @@ public final class SiteRuleFlow
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.reasonText, this.reasonTextToShow.hashCode() * 31, 31);
+        final int e = a.e(this.reasonText, this.reasonTextToShow.hashCode() * 31, 31);
         final String nextStepHeader = this.nextStepHeader;
         int hashCode = 0;
         int hashCode2;
@@ -197,30 +259,30 @@ public final class SiteRuleFlow
         if (requestCrisisSupport == 0) {
             n = requestCrisisSupport;
         }
-        return (((((((c + hashCode2) * 31 + hashCode3) * 31 + n2) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode6) * 31 + hashCode) * 31 + n;
+        return (((((((e + hashCode2) * 31 + hashCode3) * 31 + n2) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode6) * 31 + hashCode) * 31 + n;
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SiteRuleFlow(reasonTextToShow=");
-        r.append(this.reasonTextToShow);
-        r.append(", reasonText=");
-        r.append(this.reasonText);
-        r.append(", nextStepHeader=");
-        r.append(this.nextStepHeader);
-        r.append(", nextStepReasons=");
-        r.append(this.nextStepReasons);
-        r.append(", fileComplaint=");
-        r.append(this.fileComplaint);
-        r.append(", complaintUrl=");
-        r.append(this.complaintUrl);
-        r.append(", complaintPrompt=");
-        r.append(this.complaintPrompt);
-        r.append(", complaintPageTitle=");
-        r.append(this.complaintPageTitle);
-        r.append(", complaintButtonText=");
-        r.append(this.complaintButtonText);
-        r.append(", requestCrisisSupport=");
-        return g7.m(r, this.requestCrisisSupport, ')');
+        final StringBuilder t = a.t("SiteRuleFlow(reasonTextToShow=");
+        t.append(this.reasonTextToShow);
+        t.append(", reasonText=");
+        t.append(this.reasonText);
+        t.append(", nextStepHeader=");
+        t.append(this.nextStepHeader);
+        t.append(", nextStepReasons=");
+        t.append(this.nextStepReasons);
+        t.append(", fileComplaint=");
+        t.append(this.fileComplaint);
+        t.append(", complaintUrl=");
+        t.append(this.complaintUrl);
+        t.append(", complaintPrompt=");
+        t.append(this.complaintPrompt);
+        t.append(", complaintPageTitle=");
+        t.append(this.complaintPageTitle);
+        t.append(", complaintButtonText=");
+        t.append(this.complaintButtonText);
+        t.append(", requestCrisisSupport=");
+        return d.n(t, this.requestCrisisSupport, ')');
     }
 }

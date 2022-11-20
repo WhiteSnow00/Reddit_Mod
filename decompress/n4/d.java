@@ -5,6 +5,7 @@
 package n4;
 
 import android.view.View;
+import m4.a$d;
 import m4.a;
 import android.text.Spanned;
 import android.widget.TextView;
@@ -57,7 +58,7 @@ public final class d implements InputFilter
         if (this.b == null) {
             this.b = new d.d$a(this.a);
         }
-        a.g((a.d)this.b);
+        a.g((a$d)this.b);
         return subSequence;
     }
 }

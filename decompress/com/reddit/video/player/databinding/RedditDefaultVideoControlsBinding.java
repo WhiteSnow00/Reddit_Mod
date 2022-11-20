@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.view.LayoutInflater;
 import android.view.View;
 import com.reddit.video.player.controls.RedditVideoControlsView;
-import x5.a;
+import w5.a;
 
 public final class RedditDefaultVideoControlsBinding implements a
 {
@@ -36,6 +36,11 @@ public final class RedditDefaultVideoControlsBinding implements a
             viewGroup.addView(inflate);
         }
         return bind(inflate);
+    }
+    
+    @Override
+    public /* bridge */ View getRoot() {
+        return (View)this.getRoot();
     }
     
     public RedditVideoControlsView getRoot() {

@@ -4,39 +4,16 @@
 
 package te;
 
-import android.content.Intent;
-import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
-import android.os.Parcel;
-import android.os.Parcelable$Creator;
+import com.google.android.gms.common.api.a$e;
+import android.os.Looper;
+import android.content.Context;
+import com.google.android.gms.common.api.a;
 
-public final class c implements Parcelable$Creator<b>
+public final class c extends a<ue.a, d>
 {
-    public final Object createFromParcel(final Parcel parcel) {
-        final int o = SafeParcelReader.o(parcel);
-        int j = 0;
-        Intent intent = null;
-        int i = 0;
-        while (parcel.dataPosition() < o) {
-            final int int1 = parcel.readInt();
-            final char c = (char)int1;
-            if (c != '\u0001') {
-                if (c != '\u0002') {
-                    if (c != '\u0003') {
-                        SafeParcelReader.n(parcel, int1);
-                    }
-                    else {
-                        intent = (Intent)SafeParcelReader.b(parcel, int1, Intent.CREATOR);
-                    }
-                }
-                else {
-                    i = SafeParcelReader.j(parcel, int1);
-                }
-            }
-            else {
-                j = SafeParcelReader.j(parcel, int1);
-            }
-        }
-        SafeParcelReader.g(parcel, o);
-        return new b(j, i, intent);
+    @Override
+    public final /* bridge */ a$e b(final Context context, final Looper looper, final qd.d d, final Object o, final com.google.android.gms.common.api.c.b b, final com.google.android.gms.common.api.c.c c) {
+        final d d2 = (d)o;
+        throw null;
     }
 }

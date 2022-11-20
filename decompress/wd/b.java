@@ -4,41 +4,34 @@
 
 package wd;
 
-import a4.q;
-import ud.f;
-import android.os.Process;
-import android.os.Binder;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager$NameNotFoundException;
-import android.content.pm.ApplicationInfo;
-import android.content.Context;
+import com.android.billingclient.api.w;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.ThreadFactory;
 
-public final class b
+public final class b implements ThreadFactory
 {
-    public final Context a;
+    public final String f;
+    public final AtomicInteger g;
+    public final ThreadFactory h;
     
-    public b(final Context a) {
-        this.a = a;
+    public b(final String f) {
+        this.g = new AtomicInteger();
+        this.h = Executors.defaultThreadFactory();
+        this.f = f;
     }
     
-    public final ApplicationInfo a(final int n, final String s) throws PackageManager$NameNotFoundException {
-        return this.a.getPackageManager().getApplicationInfo(s, n);
-    }
-    
-    public final PackageInfo b(final int n, final String s) throws PackageManager$NameNotFoundException {
-        return this.a.getPackageManager().getPackageInfo(s, n);
-    }
-    
-    public final boolean c() {
-        if (Binder.getCallingUid() == Process.myUid()) {
-            return wd.a.T(this.a);
-        }
-        if (f.a()) {
-            final String nameForUid = this.a.getPackageManager().getNameForUid(Binder.getCallingUid());
-            if (nameForUid != null) {
-                return q.k(this.a.getPackageManager(), nameForUid);
-            }
-        }
-        return false;
+    @Override
+    public final Thread newThread(final Runnable runnable) {
+        final Thread thread = this.h.newThread((Runnable)new w(runnable));
+        final String f = this.f;
+        final int andIncrement = this.g.getAndIncrement();
+        final StringBuilder sb = new StringBuilder(f.length() + 13);
+        sb.append(f);
+        sb.append("[");
+        sb.append(andIncrement);
+        sb.append("]");
+        thread.setName(sb.toString());
+        return thread;
     }
 }

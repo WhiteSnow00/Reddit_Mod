@@ -4,10 +4,10 @@
 
 package com.reddit.domain.modtools.pnsettings.usecase;
 
-import m20.b;
+import p20.b;
 import com.reddit.domain.modtools.pnsettings.ModNotificationSettingsRepository;
 import javax.inject.Provider;
-import se2.d;
+import ne2.d;
 
 public final class UpdateModNotificationSetting_Factory implements d<UpdateModNotificationSetting>
 {
@@ -29,5 +29,9 @@ public final class UpdateModNotificationSetting_Factory implements d<UpdateModNo
     
     public UpdateModNotificationSetting get() {
         return newInstance((ModNotificationSettingsRepository)this.repositoryProvider.get(), (b)this.resourceProvider.get());
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

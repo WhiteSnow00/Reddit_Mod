@@ -5,54 +5,50 @@
 package i1;
 
 import java.util.Set;
-import hg2.j;
+import cg2.j;
 import androidx.compose.runtime.snapshots.SnapshotKt;
 import kotlin.Pair;
 import java.util.LinkedHashMap;
-import bg.d;
-import ig2.m;
+import cg.d;
+import dg2.m;
 import b1.b;
 import java.util.Iterator;
-import tg2.d$a;
-import tg2.a;
+import og2.d$a;
+import og2.a;
 import java.util.Collection;
-import sg2.e;
+import ng2.e;
 import java.util.Map;
 
 public final class i<K, V> extends k<K, V, Map.Entry<K, V>>
 {
     public i(final o<K, V> o) {
-        sg2.e.f((Object)o, "map");
-        super(o);
+        e.f((Object)o, "map");
+        super((o)o);
     }
     
-    @Override
     public final boolean add(final Object o) {
-        sg2.e.f((Object)o, "element");
+        e.f((Object)o, "element");
         p.a();
         throw null;
     }
     
-    @Override
     public final boolean addAll(final Collection collection) {
-        sg2.e.f((Object)collection, "elements");
+        e.f((Object)collection, "elements");
         p.a();
         throw null;
     }
     
-    @Override
     public final boolean contains(final Object o) {
         if (!(o instanceof Map.Entry) || (o instanceof a && !(o instanceof d$a))) {
             return false;
         }
         final Map.Entry entry = (Map.Entry)o;
-        sg2.e.f((Object)entry, "element");
-        return sg2.e.a(super.f.get(entry.getKey()), entry.getValue());
+        e.f((Object)entry, "element");
+        return e.a(super.f.get(entry.getKey()), entry.getValue());
     }
     
-    @Override
     public final boolean containsAll(final Collection<?> collection) {
-        sg2.e.f((Object)collection, "elements");
+        e.f((Object)collection, "elements");
         final boolean empty = collection.isEmpty();
         final boolean b = true;
         boolean b2;
@@ -73,13 +69,11 @@ public final class i<K, V> extends k<K, V, Map.Entry<K, V>>
         return b2;
     }
     
-    @Override
     public final Iterator<Map.Entry<K, V>> iterator() {
-        final o<K, V> f = (o<K, V>)super.f;
-        return (Iterator<Map.Entry<K, V>>)new s((o)f, (Iterator)((Set<Object>)((Map<Object, Object>)f.c().c).entrySet()).iterator());
+        final o f = super.f;
+        return new s<K, V>(f, (Iterator<? extends Map.Entry<?, ?>>)((Set<Object>)((o.a)f.b()).c.entrySet()).iterator());
     }
     
-    @Override
     public final boolean remove(final Object o) {
         final boolean b = o instanceof Map.Entry;
         boolean b2 = true;
@@ -87,16 +81,15 @@ public final class i<K, V> extends k<K, V, Map.Entry<K, V>>
             return false;
         }
         final Map.Entry entry = (Map.Entry)o;
-        sg2.e.f((Object)entry, "element");
+        e.f((Object)entry, "element");
         if (super.f.remove(entry.getKey()) == null) {
             b2 = false;
         }
         return b2;
     }
     
-    @Override
     public final boolean removeAll(final Collection<?> collection) {
-        sg2.e.f((Object)collection, "elements");
+        e.f((Object)collection, "elements");
         final Iterator<?> iterator = collection.iterator();
         boolean b = false;
     Label_0013:
@@ -113,60 +106,62 @@ public final class i<K, V> extends k<K, V, Map.Entry<K, V>>
         return b;
     }
     
-    @Override
     public final boolean retainAll(final Collection<?> collection) {
-        sg2.e.f((Object)collection, "elements");
-        int o0;
-        if ((o0 = d.o0(m.c3((Iterable)collection, 10))) < 16) {
-            o0 = 16;
+        e.f((Object)collection, "elements");
+        int p;
+        if ((p = d.p3(m.u4((Iterable)collection, 10))) < 16) {
+            p = 16;
         }
-        final LinkedHashMap linkedHashMap = new LinkedHashMap(o0);
+        final LinkedHashMap linkedHashMap = new LinkedHashMap(p);
         for (final Map.Entry entry : collection) {
             final Pair pair = new Pair(entry.getKey(), entry.getValue());
             linkedHashMap.put(pair.getFirst(), pair.getSecond());
         }
-        final o<K, V> f = (o<K, V>)super.f;
+        final o f = super.f;
         boolean b = false;
         while (true) {
-            Object o2 = p.a;
-            synchronized (o2) {
-                final o$a o$a = SnapshotKt.h(f.f, SnapshotKt.i());
-                final b1.d c = o$a.c;
-                final int d = o$a.d;
-                final j a = j.a;
-                monitorexit(o2);
-                sg2.e.c((Object)c);
-                o2 = c.builder();
+            Object o = i1.p.a;
+            synchronized (o) {
+                final o.a f2 = f.f;
+                e.d((Object)f2, "null cannot be cast to non-null type androidx.compose.runtime.snapshots.SnapshotStateMap.StateMapStateRecord<K of androidx.compose.runtime.snapshots.SnapshotStateMap, V of androidx.compose.runtime.snapshots.SnapshotStateMap>");
+                final o.a a = (o.a)SnapshotKt.h((x)f2);
+                final b1.d<K, ? extends V> c = a.c;
+                final int d = a.d;
+                final j a2 = j.a;
+                monitorexit(o);
+                e.c((Object)c);
+                o = c.builder();
                 final Iterator iterator2 = f.g.iterator();
                 final int n = 1;
                 boolean b2 = b;
                 while (((t)iterator2).hasNext()) {
                     final Map.Entry entry2 = (Map.Entry)((s)iterator2).next();
-                    if (!linkedHashMap.containsKey(entry2.getKey()) || !sg2.e.a(linkedHashMap.get(entry2.getKey()), (Object)entry2.getValue())) {
-                        ((d1.e)o2).remove(entry2.getKey());
+                    if (!linkedHashMap.containsKey(entry2.getKey()) || !e.a(linkedHashMap.get(entry2.getKey()), (Object)entry2.getValue())) {
+                        ((d1.e)o).remove(entry2.getKey());
                         b2 = true;
                     }
                 }
-                final j a2 = j.a;
-                o2 = ((d1.e)o2).g();
-                if (!sg2.e.a(o2, (Object)c)) {
-                    synchronized (p.a) {
-                        final o$a f2 = f.f;
+                final j a3 = j.a;
+                o = ((d1.e)o).f();
+                if (!e.a(o, (Object)c)) {
+                    synchronized (i1.p.a) {
+                        final o.a f3 = f.f;
+                        e.d((Object)f3, "null cannot be cast to non-null type androidx.compose.runtime.snapshots.SnapshotStateMap.StateMapStateRecord<K of androidx.compose.runtime.snapshots.SnapshotStateMap, V of androidx.compose.runtime.snapshots.SnapshotStateMap>");
                         synchronized (SnapshotKt.c) {
-                            final f i = SnapshotKt.i();
-                            final o$a o$a2 = SnapshotKt.u(f2, (w)f, i);
+                            final f j = SnapshotKt.j();
+                            final o.a a4 = (o.a)SnapshotKt.u((x)f3, (w)f, j);
                             int n2;
-                            if (o$a2.d == d) {
-                                o$a2.c((b1.d)o2);
-                                ++o$a2.d;
+                            if (a4.d == d) {
+                                a4.c((b1.d)o);
+                                ++a4.d;
                                 n2 = n;
                             }
                             else {
                                 n2 = 0;
                             }
                             monitorexit(SnapshotKt.c);
-                            SnapshotKt.m(i, (w)f);
-                            monitorexit(p.a);
+                            SnapshotKt.n(j, (w)f);
+                            monitorexit(i1.p.a);
                             b = b2;
                             if (n2 != 0) {
                                 return b2;

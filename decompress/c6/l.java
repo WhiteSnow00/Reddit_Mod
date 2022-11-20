@@ -4,21 +4,36 @@
 
 package c6;
 
-import d6.f;
-import java.util.List;
-import java.util.Collections;
-import androidx.work.d;
-import androidx.lifecycle.v;
+import androidx.work.ListenableWorker$a;
+import java.util.concurrent.Future;
+import b6.j;
+import androidx.work.impl.utils.futures.a;
+import xg.c;
 
-public abstract class l
+public final class l implements Runnable
 {
-    public abstract j a();
+    public final c f;
+    public final a g;
+    public final n h;
     
-    public abstract v b();
-    
-    public final l c(final d d) {
-        return this.d(Collections.singletonList(d));
+    public l(final n h, final a f, final a g) {
+        this.h = h;
+        this.f = (c)f;
+        this.g = g;
     }
     
-    public abstract f d(final List p0);
+    @Override
+    public final void run() {
+        try {
+            ((Future<Object>)this.f).get();
+            j.c().a(n.y, String.format("Starting work for %s", this.h.j.c), new Throwable[0]);
+            final n h = this.h;
+            h.w = (c<ListenableWorker$a>)h.k.startWork();
+            this.g.k((c)this.h.w);
+        }
+        finally {
+            final Throwable t;
+            this.g.j(t);
+        }
+    }
 }

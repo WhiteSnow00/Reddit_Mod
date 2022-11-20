@@ -9,7 +9,7 @@ import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import kotlin.Metadata;
@@ -31,8 +31,8 @@ public final class GifUserDataModelJsonAdapter extends JsonAdapter<GifUserDataMo
         e.f((Object)jsonReader, "reader");
         jsonReader.h();
         String s = null;
-        String s3;
-        String s2 = s3 = null;
+        String s2 = null;
+        String s3 = null;
         while (jsonReader.hasNext()) {
             final int e = jsonReader.E(this.options);
             if (e != -1) {
@@ -53,7 +53,7 @@ public final class GifUserDataModelJsonAdapter extends JsonAdapter<GifUserDataMo
             }
             else {
                 jsonReader.H();
-                jsonReader.F1();
+                jsonReader.G1();
             }
         }
         jsonReader.r();
@@ -65,11 +65,11 @@ public final class GifUserDataModelJsonAdapter extends JsonAdapter<GifUserDataMo
         e.f((Object)x, "writer");
         if (gifUserDataModel != null) {
             x.h();
-            x.u("username");
+            x.v("username");
             this.nullableStringAdapter.toJson(x, (Object)gifUserDataModel.a);
-            x.u("display_name");
+            x.v("display_name");
             this.nullableStringAdapter.toJson(x, (Object)gifUserDataModel.b);
-            x.u("profile_url");
+            x.v("profile_url");
             this.nullableStringAdapter.toJson(x, (Object)gifUserDataModel.c);
             x.s();
             return;

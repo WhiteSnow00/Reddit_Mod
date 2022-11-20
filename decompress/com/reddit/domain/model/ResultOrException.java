@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -12,6 +12,10 @@ import kotlin.Metadata;
 public abstract class ResultOrException<T, E extends Exception>
 {
     private ResultOrException() {
+    }
+    
+    public ResultOrException(final DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
     
     public abstract E getError();
@@ -36,6 +40,13 @@ public abstract class ResultOrException<T, E extends Exception>
             this.error = error;
         }
         
+        public static Error copy$default(final Error error, Exception error2, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                error2 = error.getError();
+            }
+            return error.copy(error2);
+        }
+        
         public final E component1() {
             return this.getError();
         }
@@ -56,6 +67,11 @@ public abstract class ResultOrException<T, E extends Exception>
         }
         
         @Override
+        public /* bridge */ Object getResult() {
+            return this.getResult();
+        }
+        
+        @Override
         public Void getResult() {
             return this.result;
         }
@@ -67,10 +83,15 @@ public abstract class ResultOrException<T, E extends Exception>
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("Error(error=");
-            r.append(this.getError());
-            r.append(')');
-            return r.toString();
+            final StringBuilder t = a.t("Error(error=");
+            t.append(this.getError());
+            t.append(')');
+            return t.toString();
+        }
+        
+        @Override
+        public /* bridge */ Object tryUnwrap() {
+            return this.tryUnwrap();
         }
         
         @Override
@@ -90,6 +111,13 @@ public abstract class ResultOrException<T, E extends Exception>
             this.result = result;
         }
         
+        public static Success copy$default(final Success success, Object result, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                result = success.getResult();
+            }
+            return success.copy(result);
+        }
+        
         public final T component1() {
             return this.getResult();
         }
@@ -101,6 +129,11 @@ public abstract class ResultOrException<T, E extends Exception>
         @Override
         public boolean equals(final Object o) {
             return this == o || (o instanceof Success && e.a(this.getResult(), ((Success)o).getResult()));
+        }
+        
+        @Override
+        public /* bridge */ Exception getError() {
+            return (Exception)this.getError();
         }
         
         public Void getError() {
@@ -126,10 +159,10 @@ public abstract class ResultOrException<T, E extends Exception>
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("Success(result=");
-            r.append(this.getResult());
-            r.append(')');
-            return r.toString();
+            final StringBuilder t = a.t("Success(result=");
+            t.append(this.getResult());
+            t.append(')');
+            return t.toString();
         }
         
         @Override

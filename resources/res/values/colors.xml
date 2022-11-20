@@ -1010,6 +1010,8 @@
     <color name="snoovatar_style_tile_tops">@color/ds_primitive_periwinkle_100</color>
     <color name="snoovatar_style_tile_unknown">@color/ds_primitive_mint_100</color>
     <color name="spaces_modal_container_backdrop">#88000000</color>
+    <color name="speed_read_button_enhancement_color_blue">#0045ac</color>
+    <color name="speed_read_button_enhancement_color_grey">#eaedef</color>
     <color name="sso_buttons_color">@color/alienblue_secondary</color>
     <color name="sticky_message_bg_comment">#0d000000</color>
     <color name="sticky_message_bg_end">#0094d3</color>

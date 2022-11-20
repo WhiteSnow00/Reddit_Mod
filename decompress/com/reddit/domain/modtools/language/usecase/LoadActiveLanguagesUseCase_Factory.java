@@ -4,10 +4,10 @@
 
 package com.reddit.domain.modtools.language.usecase;
 
-import m20.b;
+import p20.b;
 import com.reddit.domain.modtools.language.LanguageRepository;
 import javax.inject.Provider;
-import se2.d;
+import ne2.d;
 
 public final class LoadActiveLanguagesUseCase_Factory implements d<LoadActiveLanguagesUseCase>
 {
@@ -29,5 +29,9 @@ public final class LoadActiveLanguagesUseCase_Factory implements d<LoadActiveLan
     
     public LoadActiveLanguagesUseCase get() {
         return newInstance((LanguageRepository)this.languageRepositoryProvider.get(), (b)this.resourceProvider.get());
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

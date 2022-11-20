@@ -4,36 +4,22 @@
 
 package la2;
 
-import sg2.e;
-import androidx.recyclerview.widget.RecyclerView$b0;
-import androidx.recyclerview.widget.RecyclerView;
-import android.view.View;
-import android.graphics.Rect;
-import androidx.recyclerview.widget.RecyclerView$n;
+import java.util.ArrayList;
+import r82.q;
+import java.math.BigInteger;
+import r82.h;
 
-public final class d extends RecyclerView$n
+public interface d
 {
-    public final int f;
-    public final int g;
-    public final int h;
-    public final int i;
+    void C(final CharSequence p0);
     
-    public d(final int n) {
-        this.f = 0;
-        this.g = 0;
-        this.h = n;
-        this.i = n;
-    }
+    void Fo();
     
-    public final void getItemOffsets(final Rect rect, final View view, final RecyclerView recyclerView, final RecyclerView$b0 recyclerView$b0) {
-        e.f((Object)rect, "outRect");
-        e.f((Object)view, "view");
-        e.f((Object)recyclerView, "parent");
-        e.f((Object)recyclerView$b0, "state");
-        super.getItemOffsets(rect, view, recyclerView, recyclerView$b0);
-        rect.top = this.h;
-        rect.left = this.f;
-        rect.right = this.g;
-        rect.bottom = this.i;
-    }
+    void Lk(final a p0, final String p1);
+    
+    void Us(final f p0, final h p1, final String p2, final String p3, final String p4, final mg2.a p5, final BigInteger p6, final la2.h p7, final q p8, final ArrayList p9);
+    
+    void hideLoading();
+    
+    void showLoading();
 }

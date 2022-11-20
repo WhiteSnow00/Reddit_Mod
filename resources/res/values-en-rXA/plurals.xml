@@ -172,6 +172,10 @@
         <item quantity="one">[Ýöûŕ åççöûñţ ĥåš ɓééñ šûšþéñðéð ƒŕöḿ Ŕéððîţ ƒöŕ »%d« ðåý. one two three four five six]</item>
         <item quantity="other">[Ýöûŕ åççöûñţ ĥåš ɓééñ šûšþéñðéð ƒŕöḿ Ŕéððîţ ƒöŕ »%d« ðåýš. one two three four five six seven]</item>
     </plurals>
+    <plurals name="accounts_fmt_num_followers">
+        <item quantity="one">[»%1$s« ƒöļļöŵéŕ one two]</item>
+        <item quantity="other">[»%1$s« ƒöļļöŵéŕš one two]</item>
+    </plurals>
     <plurals name="action_subtitle_days_ban">
         <item quantity="one">[βåññéð ƒöŕ »%1$d« ðåý one two three]</item>
         <item quantity="other">[βåññéð ƒöŕ »%1$d« ðåýš one two three]</item>

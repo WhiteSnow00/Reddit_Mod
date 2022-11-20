@@ -4,61 +4,71 @@
 
 package hi2;
 
-import sg2.e;
-import hh2.t;
+import kotlin.collections.EmptyList;
+import kotlin.reflect.jvm.internal.impl.incremental.components.NoLookupLocation;
+import java.util.Iterator;
+import java.util.Collection;
+import kotlin.reflect.jvm.internal.impl.descriptors.f;
+import java.util.LinkedHashSet;
+import mg2.l;
+import kotlin.reflect.jvm.internal.impl.utils.FunctionsKt;
+import yh2.e;
+import java.util.Set;
+import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 
-public abstract class g<T>
+public abstract class g implements MemberScope
 {
-    public final T a;
-    
-    public g(final T a) {
-        this.a = a;
-    }
-    
-    public abstract ti2.t a(final t p0);
-    
-    public T b() {
-        return this.a;
-    }
-    
-    @Override
-    public final boolean equals(final Object o) {
-        if (this != o) {
-            final Object b = this.b();
-            final boolean b2 = o instanceof g;
-            Object b3 = null;
-            g g;
-            if (b2) {
-                g = (g)o;
-            }
-            else {
-                g = null;
-            }
-            if (g != null) {
-                b3 = g.b();
-            }
-            if (!e.a(b, b3)) {
-                return false;
+    public Set<e> a() {
+        final Collection<ch2.g> g = this.g(d.p, (l<? super e, Boolean>)FunctionsKt.a);
+        final LinkedHashSet set = new LinkedHashSet();
+        for (final f next : g) {
+            if (next instanceof f) {
+                final e name = ((ch2.g)next).getName();
+                ng2.e.e((Object)name, "it.name");
+                set.add(name);
             }
         }
-        return true;
+        return set;
     }
     
-    @Override
-    public final int hashCode() {
-        final Object b = this.b();
-        int hashCode;
-        if (b != null) {
-            hashCode = b.hashCode();
-        }
-        else {
-            hashCode = 0;
-        }
-        return hashCode;
+    public Collection b(final e e, final NoLookupLocation noLookupLocation) {
+        ng2.e.f((Object)e, "name");
+        ng2.e.f((Object)noLookupLocation, "location");
+        return (Collection)EmptyList.INSTANCE;
     }
     
-    @Override
-    public String toString() {
-        return String.valueOf(this.b());
+    public Collection c(final e e, final NoLookupLocation noLookupLocation) {
+        ng2.e.f((Object)e, "name");
+        ng2.e.f((Object)noLookupLocation, "location");
+        return (Collection)EmptyList.INSTANCE;
+    }
+    
+    public Set<e> d() {
+        final Collection<ch2.g> g = this.g(d.q, (l<? super e, Boolean>)FunctionsKt.a);
+        final LinkedHashSet set = new LinkedHashSet();
+        for (final f next : g) {
+            if (next instanceof f) {
+                final e name = ((ch2.g)next).getName();
+                ng2.e.e((Object)name, "it.name");
+                set.add(name);
+            }
+        }
+        return set;
+    }
+    
+    public ch2.e e(final e e, final NoLookupLocation noLookupLocation) {
+        ng2.e.f((Object)e, "name");
+        ng2.e.f((Object)noLookupLocation, "location");
+        return null;
+    }
+    
+    public Set<e> f() {
+        return null;
+    }
+    
+    public Collection<ch2.g> g(final d d, final l<? super e, Boolean> l) {
+        ng2.e.f((Object)d, "kindFilter");
+        ng2.e.f((Object)l, "nameFilter");
+        return (Collection<ch2.g>)EmptyList.INSTANCE;
     }
 }

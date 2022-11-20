@@ -4,32 +4,22 @@
 
 package kotlinx.coroutines.flow;
 
-import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import rg2.a;
-import kotlinx.coroutines.flow.internal.d;
-import hg2.j;
-import lg2.c;
-import hj2.f;
-import rg2.q;
+import mg2.q;
+import p2.b;
+import gg2.c;
+import kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest;
+import mg2.p;
+import xd.a;
 
-public final class e implements hj2.e<Object>
+public final class e
 {
-    public final /* synthetic */ hj2.e f;
-    public final /* synthetic */ hj2.e g;
-    public final /* synthetic */ q h;
+    public static final int a;
     
-    public e(final hj2.e f, final hj2.e g, final q h) {
-        this.f = f;
-        this.g = g;
-        this.h = h;
+    static {
+        a = (int)xd.a.r1("kotlinx.coroutines.flow.defaultConcurrency", (long)16, (long)1, (long)Integer.MAX_VALUE);
     }
     
-    @Override
-    public final Object a(final f<Object> f, final c<? super j> c) {
-        final Object a = d.a(new hj2.e[] { this.f, this.g }, (a)FlowKt__ZipKt$nullArrayFactory$1.INSTANCE, (q)new FlowKt__ZipKt$combine$1$1(this.h, (c)null), (f)f, (c)c);
-        if (a == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return a;
-        }
-        return j.a;
+    public static final ChannelFlowTransformLatest a(final p p2, final cj2.e e) {
+        return b.S(e, (q)new FlowKt__MergeKt$mapLatest$1(p2, (c)null));
     }
 }

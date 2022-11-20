@@ -4,35 +4,37 @@
 
 package com.google.android.gms.common.api.internal;
 
-import nd.d;
+import od.d;
 import android.util.Pair;
 import android.os.Message;
-import de.f;
+import ee.f;
+import mg.d0;
 import android.util.Log;
-import nd.b;
-import od.a1;
+import od.b;
+import pd.a1;
 import android.os.Looper;
-import od.a2;
+import pd.z1;
 import com.google.android.gms.common.api.Status;
-import od.o1;
+import pd.n1;
 import java.util.concurrent.atomic.AtomicReference;
+import od.a$a;
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
 import java.lang.ref.WeakReference;
-import od.z1;
+import pd.y1;
 import com.google.android.gms.common.annotation.KeepName;
-import nd.a;
-import nd.c;
+import od.a;
+import od.c;
 
 @KeepName
-public abstract class BasePendingResult<R extends c> extends nd.a<R>
+public abstract class BasePendingResult<R extends c> extends od.a<R>
 {
-    public static final z1 l;
+    public static final y1 l;
     public final Object a;
     public final WeakReference<com.google.android.gms.common.api.c> b;
     public final CountDownLatch c;
-    public final ArrayList<nd.a.a> d;
-    public final AtomicReference<o1> e;
+    public final ArrayList<a$a> d;
+    public final AtomicReference<n1> e;
     public R f;
     public Status g;
     public volatile boolean h;
@@ -40,18 +42,18 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
     public boolean j;
     public boolean k;
     @KeepName
-    private a2 mResultGuardian;
+    private z1 mResultGuardian;
     
     static {
-        l = new z1(0);
+        l = new y1(0);
     }
     
     @Deprecated
     public BasePendingResult() {
         this.a = new Object();
         this.c = new CountDownLatch(1);
-        this.d = new ArrayList<nd.a.a>();
-        this.e = new AtomicReference<o1>();
+        this.d = new ArrayList<a$a>();
+        this.e = new AtomicReference<n1>();
         this.k = false;
         new a(Looper.getMainLooper());
         this.b = new WeakReference<com.google.android.gms.common.api.c>(null);
@@ -60,8 +62,8 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
     public BasePendingResult(final a1 a1) {
         this.a = new Object();
         this.c = new CountDownLatch(1);
-        this.d = new ArrayList<nd.a.a>();
-        this.e = new AtomicReference<o1>();
+        this.d = new ArrayList<a$a>();
+        this.e = new AtomicReference<n1>();
         this.k = false;
         Looper looper;
         if (a1 != null) {
@@ -71,7 +73,7 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
             looper = Looper.getMainLooper();
         }
         new a(looper);
-        this.b = new WeakReference<com.google.android.gms.common.api.c>(a1);
+        this.b = new WeakReference<com.google.android.gms.common.api.c>((com.google.android.gms.common.api.c)a1);
     }
     
     public static void k(final c c) {
@@ -85,13 +87,17 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
         }
     }
     
-    public final void b(final nd.a.a a) {
+    public /* bridge */ void a(final Status status) {
+        this.g(status);
+    }
+    
+    public final void b(final a$a a$a) {
         synchronized (this.a) {
             if (this.f()) {
-                a.a(this.g);
+                a$a.a(this.g);
             }
             else {
-                this.d.add(a);
+                this.d.add(a$a);
             }
         }
     }
@@ -126,8 +132,8 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
         synchronized (this.a) {
             if (!this.j && !this.i) {
                 this.f();
-                lw0.b.W(this.f() ^ true, "Results have already been set");
-                lw0.b.W(this.h ^ true, "Result has already been consumed");
+                d0.D(this.f() ^ true, "Results have already been set");
+                d0.D(this.h ^ true, "Result has already been consumed");
                 this.i(r);
                 return;
             }
@@ -138,17 +144,17 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
     public final R h() {
         Object a = this.a;
         synchronized (a) {
-            lw0.b.W(this.h ^ true, "Result has already been consumed.");
-            lw0.b.W(this.f(), "Result is not ready.");
+            d0.D(this.h ^ true, "Result has already been consumed.");
+            d0.D(this.f(), "Result is not ready.");
             final c f = this.f;
             this.f = null;
             this.h = true;
             monitorexit(a);
             a = this.e.getAndSet(null);
             if (a != null) {
-                ((o1)a).a.a.remove(this);
+                ((n1)a).a.a.remove(this);
             }
-            lw0.b.R((Object)f);
+            d0.y((Object)f);
             return (R)f;
         }
     }
@@ -159,12 +165,12 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
         this.c.countDown();
         if (!this.i) {
             if (this.f instanceof b) {
-                this.mResultGuardian = new a2(this);
+                this.mResultGuardian = new z1(this);
             }
         }
-        final ArrayList<nd.a.a> d = this.d;
+        final ArrayList<a$a> d = this.d;
         for (int size = d.size(), i = 0; i < size; ++i) {
-            ((nd.a.a)d.get(i)).a(this.g);
+            ((a$a)d.get(i)).a(this.g);
         }
         this.d.clear();
     }
@@ -179,7 +185,7 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
             super(looper);
         }
         
-        public final void handleMessage(final Message message) {
+        public final void handleMessage(Message message) {
             final int what = message.what;
             if (what != 1) {
                 if (what != 2) {
@@ -194,12 +200,12 @@ public abstract class BasePendingResult<R extends c> extends nd.a<R>
             else {
                 final Pair pair = (Pair)message.obj;
                 final d d = (d)pair.first;
-                final c c = (c)pair.second;
+                message = (Message)pair.second;
                 try {
-                    d.a(c);
+                    d.a((c)message);
                 }
                 catch (final RuntimeException ex) {
-                    BasePendingResult.k(c);
+                    BasePendingResult.k((c)message);
                     throw ex;
                 }
             }

@@ -5,7 +5,7 @@
 package j1;
 
 import u2.i;
-import sg2.e;
+import ng2.e;
 import androidx.compose.ui.unit.LayoutDirection;
 
 public final class b implements j1.a
@@ -30,7 +30,7 @@ public final class b implements j1.a
             a = -1 * this.a;
         }
         final float n5 = 1;
-        return a92.b.j(lw0.b.k2((a + n5) * n3), lw0.b.k2((n5 + this.b) * n4));
+        return xd.a.g(p7.a.W((a + n5) * n3), p7.a.W((n5 + this.b) * n4));
     }
     
     @Override
@@ -52,10 +52,10 @@ public final class b implements j1.a
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("BiasAlignment(horizontalBias=");
-        r.append(this.a);
-        r.append(", verticalBias=");
-        return b.h(r, this.b, ')');
+        final StringBuilder t = a.t("BiasAlignment(horizontalBias=");
+        t.append(this.a);
+        t.append(", verticalBias=");
+        return aq2.a.n(t, this.b, ')');
     }
     
     public static final class a implements a$b
@@ -76,7 +76,7 @@ public final class b implements j1.a
             else {
                 a = -1 * this.a;
             }
-            return lw0.b.k2((1 + a) * n3);
+            return p7.a.W((1 + a) * n3);
         }
         
         @Override
@@ -91,7 +91,7 @@ public final class b implements j1.a
         
         @Override
         public final String toString() {
-            return b.h(a.r("Horizontal(bias="), this.a, ')');
+            return aq2.a.n(a.t("Horizontal(bias="), this.a, ')');
         }
     }
     
@@ -104,7 +104,7 @@ public final class b implements j1.a
         }
         
         public final int a(final int n, final int n2) {
-            return lw0.b.k2((1 + this.a) * ((n2 - n) / 2.0f));
+            return p7.a.W((1 + this.a) * ((n2 - n) / 2.0f));
         }
         
         @Override
@@ -119,7 +119,7 @@ public final class b implements j1.a
         
         @Override
         public final String toString() {
-            return b.h(a.r("Vertical(bias="), this.a, ')');
+            return aq2.a.n(a.t("Vertical(bias="), this.a, ')');
         }
     }
 }

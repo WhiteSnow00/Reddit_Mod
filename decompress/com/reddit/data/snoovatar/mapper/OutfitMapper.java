@@ -4,10 +4,11 @@
 
 package com.reddit.data.snoovatar.mapper;
 
+import p1.h;
 import kotlin.a;
-import sg2.e;
+import ng2.e;
 import kotlin.collections.EmptyList;
-import hg2.f;
+import cg2.f;
 import com.reddit.domain.snoovatar.model.AccessoryModel;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -31,7 +32,7 @@ public interface OutfitMapper
         public Outfits(final List<AccessoryModel> a) {
             e.f((Object)a, "allOutfits");
             this.a = a;
-            this.b = a.b((rg2.a)new OutfitMapper$Outfits$nftOutfits$2(this));
+            this.b = a.b((mg2.a)new OutfitMapper$Outfits$nftOutfits$2(this));
         }
         
         @Override
@@ -46,7 +47,7 @@ public interface OutfitMapper
         
         @Override
         public final String toString() {
-            return d.o(a.r("Outfits(allOutfits="), (List)this.a, ')');
+            return h.d(a.t("Outfits(allOutfits="), (List)this.a, ')');
         }
     }
 }

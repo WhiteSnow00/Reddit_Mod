@@ -4,9 +4,9 @@
 
 package com.google.android.gms.internal.play_billing;
 
+import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.Parcel;
-import android.os.Bundle;
 import android.os.IBinder;
 
 public final class b extends e implements d
@@ -15,139 +15,139 @@ public final class b extends e implements d
         super(binder);
     }
     
-    public final Bundle A0(final String s, final String s2, final String s3, final Bundle bundle) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(9);
-        l.writeString(s);
-        l.writeString(s2);
-        l.writeString(s3);
-        final int a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 11);
-        final Bundle bundle2 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
-        return bundle2;
-    }
-    
-    public final Bundle J0(final String s, final String s2, final Bundle bundle) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(9);
-        l.writeString(s);
-        l.writeString(s2);
-        final int a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 902);
-        final Bundle bundle2 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
-        return bundle2;
-    }
-    
-    public final int Q0(int int1, final String s, final String s2) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(int1);
-        l.writeString(s);
-        l.writeString(s2);
-        final Parcel o = this.o(l, 1);
-        int1 = o.readInt();
-        o.recycle();
+    public final int H0(int int1, final String s, final String s2) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(int1);
+        k.writeString(s);
+        k.writeString(s2);
+        final Parcel m = this.m(k, 1);
+        int1 = m.readInt();
+        m.recycle();
         return int1;
     }
     
-    public final Bundle a0(int a, final String s, final String s2, final String s3, final Bundle bundle) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(a);
-        l.writeString(s);
-        l.writeString(s2);
-        l.writeString(s3);
-        l.writeString((String)null);
+    public final Bundle R(int a, final String s, final String s2, final String s3, final Bundle bundle) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(a);
+        k.writeString(s);
+        k.writeString(s2);
+        k.writeString(s3);
+        k.writeString((String)null);
         a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 8);
-        final Bundle bundle2 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 8);
+        final Bundle bundle2 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
         return bundle2;
     }
     
-    public final Bundle g1(final String s, final String s2, final Bundle bundle) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(9);
-        l.writeString(s);
-        l.writeString(s2);
+    public final Bundle c1(final String s, final String s2, final Bundle bundle) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(9);
+        k.writeString(s);
+        k.writeString(s2);
         final int a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 12);
-        final Bundle bundle2 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 12);
+        final Bundle bundle2 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
         return bundle2;
     }
     
-    public final int k(final String s, final String s2) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(3);
-        l.writeString(s);
-        l.writeString(s2);
-        final Parcel o = this.o(l, 5);
-        final int int1 = o.readInt();
-        o.recycle();
-        return int1;
-    }
-    
-    public final Bundle n1(final String s, final String s2, final Bundle bundle) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(3);
-        l.writeString(s);
-        l.writeString(s2);
-        final int a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 2);
-        final Bundle bundle2 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
-        return bundle2;
-    }
-    
-    public final Bundle r0(final String s, final String s2, final String s3) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(3);
-        l.writeString(s);
-        l.writeString(s2);
-        l.writeString(s3);
-        final Parcel o = this.o(l, 4);
-        final Bundle bundle = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
+    public final Bundle d0(final String s, final String s2, final String s3) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(3);
+        k.writeString(s);
+        k.writeString(s2);
+        k.writeString(s3);
+        final Parcel m = this.m(k, 4);
+        final Bundle bundle = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
         return bundle;
     }
     
-    public final Bundle s0(final String s, final String s2, final Bundle bundle, final Bundle bundle2) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(10);
-        l.writeString(s);
-        l.writeString(s2);
+    public final Bundle f0(final String s, final String s2, final Bundle bundle, final Bundle bundle2) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(10);
+        k.writeString(s);
+        k.writeString(s2);
         final int a = g.a;
-        l.writeInt(1);
-        bundle.writeToParcel(l, 0);
-        l.writeInt(1);
-        bundle2.writeToParcel(l, 0);
-        final Parcel o = this.o(l, 901);
-        final Bundle bundle3 = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        k.writeInt(1);
+        bundle2.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 901);
+        final Bundle bundle3 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
         return bundle3;
     }
     
-    public final Bundle z0(final String s, final String s2, final String s3) throws RemoteException {
-        final Parcel l = e.l();
-        l.writeInt(3);
-        l.writeString(s);
-        l.writeString(s2);
-        l.writeString(s3);
-        l.writeString((String)null);
-        final Parcel o = this.o(l, 3);
-        final Bundle bundle = (Bundle)g.a(o, Bundle.CREATOR);
-        o.recycle();
+    public final int j(final String s, final String s2) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(3);
+        k.writeString(s);
+        k.writeString(s2);
+        final Parcel m = this.m(k, 5);
+        final int int1 = m.readInt();
+        m.recycle();
+        return int1;
+    }
+    
+    public final Bundle k1(final String s, final String s2, final Bundle bundle) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(3);
+        k.writeString(s);
+        k.writeString(s2);
+        final int a = g.a;
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 2);
+        final Bundle bundle2 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
+        return bundle2;
+    }
+    
+    public final Bundle m0(final String s, final String s2, final String s3) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(3);
+        k.writeString(s);
+        k.writeString(s2);
+        k.writeString(s3);
+        k.writeString((String)null);
+        final Parcel m = this.m(k, 3);
+        final Bundle bundle = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
         return bundle;
+    }
+    
+    public final Bundle n0(final String s, final String s2, final String s3, final Bundle bundle) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(9);
+        k.writeString(s);
+        k.writeString(s2);
+        k.writeString(s3);
+        final int a = g.a;
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 11);
+        final Bundle bundle2 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
+        return bundle2;
+    }
+    
+    public final Bundle x0(final String s, final String s2, final Bundle bundle) throws RemoteException {
+        final Parcel k = e.k();
+        k.writeInt(9);
+        k.writeString(s);
+        k.writeString(s2);
+        final int a = g.a;
+        k.writeInt(1);
+        bundle.writeToParcel(k, 0);
+        final Parcel m = this.m(k, 902);
+        final Bundle bundle2 = (Bundle)g.a(m, Bundle.CREATOR);
+        m.recycle();
+        return bundle2;
     }
 }

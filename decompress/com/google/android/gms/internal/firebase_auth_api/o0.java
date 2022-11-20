@@ -4,47 +4,73 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.h1;
-import ge.v8;
+import he.g1;
+import he.r;
+import he.t8;
 import com.google.android.gms.internal.firebase-auth-api.zzaau;
-import ge.y0;
+import com.google.android.gms.internal.firebase-auth-api.m0;
+import he.x0;
 
-public final class o0 extends e implements y0
+public final class o0 extends e implements x0
 {
     private static final com.google.android.gms.internal.firebase-auth-api.o0 zzb;
-    private String zze;
-    private zzaau zzf;
-    private int zzg;
+    private int zze;
+    private m0 zzf;
+    private zzaau zzg;
     
     static {
         e.d((Class)com.google.android.gms.internal.firebase-auth-api.o0.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.o0)new o0()));
     }
     
     public o0() {
-        this.zze = "";
-        this.zzf = com.google.android.gms.internal.firebase_auth_api.zzaau.zzb;
+        this.zzg = com.google.android.gms.internal.firebase_auth_api.zzaau.zzb;
     }
     
-    public static v8 r() {
-        return (v8)((e)o0.zzb).i();
+    public static void A(final com.google.android.gms.internal.firebase-auth-api.o0 o0, final zzaau zzg) {
+        ((o0)o0).zzg = zzg;
     }
     
-    public static com.google.android.gms.internal.firebase-auth-api.o0 t() {
+    public static t8 t() {
+        return (t8)((e)o0.zzb).k();
+    }
+    
+    public static com.google.android.gms.internal.firebase-auth-api.o0 u() {
         return o0.zzb;
     }
     
-    public final Object g(int n) {
+    public static com.google.android.gms.internal.firebase-auth-api.o0 v() {
+        return o0.zzb;
+    }
+    
+    public static com.google.android.gms.internal.firebase-auth-api.o0 w(final zzaau zzaau, final r r) throws zzacf {
+        return (com.google.android.gms.internal.firebase-auth-api.o0)e.p((com.google.android.gms.internal.firebase-auth-api.e)o0.zzb, zzaau, r);
+    }
+    
+    public static void y(final com.google.android.gms.internal.firebase-auth-api.o0 o0) {
+        ((o0)o0).zze = 0;
+    }
+    
+    public static void z(final com.google.android.gms.internal.firebase-auth-api.o0 o0, final m0 zzf) {
+        zzf.getClass();
+        ((o0)o0).zzf = zzf;
+    }
+    
+    public final boolean B() {
+        return this.zzf != null;
+    }
+    
+    public final Object h(int n) {
         if (--n == 0) {
             return 1;
         }
         if (n == 2) {
-            return new h1((com.google.android.gms.internal.firebase-auth-api.e)o0.zzb, "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u0208\u0002\n\u0003\f", new Object[] { "zze", "zzf", "zzg" });
+            return new g1((com.google.android.gms.internal.firebase-auth-api.e)o0.zzb, "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u000b\u0002\t\u0003\n", new Object[] { "zze", "zzf", "zzg" });
         }
         if (n == 3) {
             return new o0();
         }
         if (n == 4) {
-            return new v8(0);
+            return new t8(0);
         }
         if (n != 5) {
             return null;
@@ -52,43 +78,19 @@ public final class o0 extends e implements y0
         return o0.zzb;
     }
     
-    public final zzaau u() {
-        return this.zzf;
-    }
-    
-    public final String v() {
+    public final int r() {
         return this.zze;
     }
     
-    public final int y() {
-        final int zzg = this.zzg;
-        int n = 4;
-        if (zzg != 0) {
-            if (zzg != 1) {
-                if (zzg != 2) {
-                    if (zzg != 3) {
-                        if (zzg != 4) {
-                            n = 0;
-                        }
-                        else {
-                            n = 6;
-                        }
-                    }
-                    else {
-                        n = 5;
-                    }
-                }
-            }
-            else {
-                n = 3;
-            }
+    public final m0 s() {
+        m0 m0;
+        if ((m0 = this.zzf) == null) {
+            m0 = com.google.android.gms.internal.firebase_auth_api.m0.t();
         }
-        else {
-            n = 2;
-        }
-        if (n == 0) {
-            return 1;
-        }
-        return n;
+        return m0;
+    }
+    
+    public final zzaau x() {
+        return this.zzg;
     }
 }

@@ -5,11 +5,11 @@
 package com.google.android.exoplayer2;
 
 import java.io.IOException;
-import wa.c0;
-import va.f0;
-import ac.p;
+import xa.d0;
+import bc.o;
+import wa.g0;
 
-public interface z extends b
+public interface z extends x$b
 {
     boolean b();
     
@@ -17,31 +17,31 @@ public interface z extends b
     
     boolean f();
     
-    void g(final n[] p0, final p p1, final long p2, final long p3) throws ExoPlaybackException;
+    void g(final g0 p0, final n[] p1, final o p2, final long p3, final boolean p4, final boolean p5, final long p6, final long p7) throws ExoPlaybackException;
     
     String getName();
     
     int getState();
     
-    p getStream();
+    o getStream();
     
-    boolean i();
+    void h(final int p0, final d0 p1);
     
     boolean isReady();
     
-    void j(final f0 p0, final n[] p1, final p p2, final long p3, final boolean p4, final boolean p5, final long p6, final long p7) throws ExoPlaybackException;
+    boolean j();
     
-    void l(final long p0, final long p1) throws ExoPlaybackException;
+    void k(final n[] p0, final o p1, final long p2, final long p3) throws ExoPlaybackException;
     
-    long m();
+    void m(final long p0, final long p1) throws ExoPlaybackException;
     
-    void n(final long p0) throws ExoPlaybackException;
+    long n();
     
-    ad.n o();
+    void o(final long p0) throws ExoPlaybackException;
     
-    void p();
+    bd.o p();
     
-    void q(final int p0, final c0 p1);
+    void q();
     
     void r() throws IOException;
     
@@ -56,12 +56,5 @@ public interface z extends b
     e t();
     
     default void v(final float n, final float n2) throws ExoPlaybackException {
-    }
-    
-    public interface a
-    {
-        void a();
-        
-        void b(final long p0);
     }
 }

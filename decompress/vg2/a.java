@@ -4,31 +4,17 @@
 
 package vg2;
 
-import zg2.c;
-import sg2.e;
-import zg2.k;
+import kotlin.reflect.KVariance;
 
-public final class a<T> implements d<Object, T>
+public final class a
 {
-    public T f;
+    public static final int[] a;
     
-    @Override
-    public final T getValue(Object f, final k<?> k) {
-        e.f((Object)k, "property");
-        f = this.f;
-        if (f != null) {
-            return (T)f;
-        }
-        final StringBuilder r = a.r("Property ");
-        r.append(((c)k).getName());
-        r.append(" should be initialized before get.");
-        throw new IllegalStateException(r.toString());
-    }
-    
-    @Override
-    public final void setValue(final Object o, final k<?> k, final T f) {
-        e.f((Object)k, "property");
-        e.f((Object)f, "value");
-        this.f = f;
+    static {
+        final int[] a2 = new int[KVariance.values().length];
+        a2[((Enum)KVariance.INVARIANT).ordinal()] = 1;
+        a2[((Enum)KVariance.IN).ordinal()] = 2;
+        a2[((Enum)KVariance.OUT).ordinal()] = 3;
+        a = a2;
     }
 }

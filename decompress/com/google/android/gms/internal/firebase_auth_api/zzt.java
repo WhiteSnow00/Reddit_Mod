@@ -4,13 +4,13 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.ab;
-import ge.v9;
+import he.bb;
+import he.v9;
 import java.util.regex.Pattern;
 import java.io.Serializable;
-import ge.ha;
+import he.ia;
 
-final class zzt extends ha implements Serializable
+final class zzt extends ia implements Serializable
 {
     private final Pattern zza;
     
@@ -19,13 +19,11 @@ final class zzt extends ha implements Serializable
         this.zza = zza;
     }
     
-    @Override
     public final String toString() {
         return this.zza.toString();
     }
     
-    @Override
     public final v9 zza(final CharSequence charSequence) {
-        return (v9)new ab(this.zza.matcher(charSequence));
+        return (v9)new bb(this.zza.matcher(charSequence));
     }
 }

@@ -5,9 +5,9 @@
 package com.reddit.domain.modtools.scheduledposts.usecase;
 
 import com.reddit.domain.modtools.scheduledposts.ScheduledPostRepository;
-import m20.b;
+import p20.b;
 import javax.inject.Provider;
-import se2.d;
+import ne2.d;
 
 public final class ConvertRichTextToMarkdownUseCase_Factory implements d<ConvertRichTextToMarkdownUseCase>
 {
@@ -29,5 +29,9 @@ public final class ConvertRichTextToMarkdownUseCase_Factory implements d<Convert
     
     public ConvertRichTextToMarkdownUseCase get() {
         return newInstance((ScheduledPostRepository)this.scheduledPostRepositoryProvider.get(), (b)this.resourceProvider.get());
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

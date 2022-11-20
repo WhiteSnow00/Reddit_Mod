@@ -4,28 +4,26 @@
 
 package lh2;
 
-import kotlin.reflect.jvm.internal.impl.descriptors.Visibilities$f;
-import hh2.o0;
+import ng2.e;
+import fh2.d0;
+import rh2.n;
 
-public final class c extends o0
+public interface c
 {
-    public static final c a;
+    void a(final n p0, final d0 p1);
     
-    static {
-        a = new c();
-    }
-    
-    public c() {
-        super("protected_static", true);
-    }
-    
-    @Override
-    public final String getInternalDisplayName() {
-        return "protected/*protected static*/";
-    }
-    
-    @Override
-    public final o0 normalize() {
-        return (o0)Visibilities$f.a;
+    public static final class a implements c
+    {
+        public static final a a;
+        
+        static {
+            a = new a();
+        }
+        
+        @Override
+        public final void a(final n n, final d0 d0) {
+            e.f((Object)n, "field");
+            e.f((Object)d0, "descriptor");
+        }
     }
 }

@@ -4,8 +4,9 @@
 
 package com.reddit.domain.model;
 
-import aw.b;
-import sg2.e;
+import p1.h;
+import ph0.a;
+import ng2.e;
 import com.squareup.moshi.n;
 import java.util.List;
 import kotlin.Metadata;
@@ -26,6 +27,19 @@ public final class RulesWrapper
         this.communityRule = communityRule;
         this.siteRules = siteRules;
         this.siteRulesFlow = siteRulesFlow;
+    }
+    
+    public static RulesWrapper copy$default(final RulesWrapper rulesWrapper, List communityRule, List siteRules, List siteRulesFlow, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            communityRule = rulesWrapper.communityRule;
+        }
+        if ((n & 0x2) != 0x0) {
+            siteRules = rulesWrapper.siteRules;
+        }
+        if ((n & 0x4) != 0x0) {
+            siteRulesFlow = rulesWrapper.siteRulesFlow;
+        }
+        return rulesWrapper.copy(communityRule, siteRules, siteRulesFlow);
     }
     
     public final List<CommunityRule> component1() {
@@ -73,16 +87,16 @@ public final class RulesWrapper
     
     @Override
     public int hashCode() {
-        return this.siteRulesFlow.hashCode() + b.c((List)this.siteRules, this.communityRule.hashCode() * 31, 31);
+        return this.siteRulesFlow.hashCode() + a.b((List)this.siteRules, this.communityRule.hashCode() * 31, 31);
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("RulesWrapper(communityRule=");
-        r.append(this.communityRule);
-        r.append(", siteRules=");
-        r.append(this.siteRules);
-        r.append(", siteRulesFlow=");
-        return d.o(r, (List)this.siteRulesFlow, ')');
+        final StringBuilder t = a.t("RulesWrapper(communityRule=");
+        t.append(this.communityRule);
+        t.append(", siteRules=");
+        t.append(this.siteRules);
+        t.append(", siteRulesFlow=");
+        return h.d(t, (List)this.siteRulesFlow, ')');
     }
 }

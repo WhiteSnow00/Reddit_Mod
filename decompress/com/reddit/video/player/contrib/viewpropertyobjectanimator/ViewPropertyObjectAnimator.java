@@ -53,8 +53,16 @@ public class ViewPropertyObjectAnimator
         this.viewRef = new WeakReference<View>(view);
     }
     
-    public static /* synthetic */ WeakReference access$100(final ViewPropertyObjectAnimator viewPropertyObjectAnimator) {
+    public static boolean access$000(final ViewPropertyObjectAnimator viewPropertyObjectAnimator) {
+        return viewPropertyObjectAnimator.hasView();
+    }
+    
+    public static WeakReference access$100(final ViewPropertyObjectAnimator viewPropertyObjectAnimator) {
         return viewPropertyObjectAnimator.viewRef;
+    }
+    
+    public static boolean access$200(final View view) {
+        return isAttachedToWindow(view);
     }
     
     public static ViewPropertyObjectAnimator animate(final View view) {
@@ -223,21 +231,22 @@ public class ViewPropertyObjectAnimator
             final Collection<PropertyValuesHolder> values = this.propertyHoldersMap.values();
             final ObjectAnimator ofPropertyValuesHolder = ObjectAnimator.ofPropertyValuesHolder(this.viewRef.get(), (PropertyValuesHolder[])values.toArray(new PropertyValuesHolder[values.size()]));
             if (this.withLayer) {
-                ((Animator)ofPropertyValuesHolder).addListener((Animator$AnimatorListener)new AnimatorListenerAdapter() {
+                ((Animator)ofPropertyValuesHolder).addListener((Animator$AnimatorListener)new AnimatorListenerAdapter(this) {
                     public int currentLayerType = 0;
+                    public final ViewPropertyObjectAnimator this$0;
                     
                     public void onAnimationEnd(final Animator animator) {
-                        if (ViewPropertyObjectAnimator.this.hasView()) {
-                            ((View)ViewPropertyObjectAnimator.access$100(ViewPropertyObjectAnimator.this).get()).setLayerType(this.currentLayerType, (Paint)null);
+                        if (ViewPropertyObjectAnimator.access$000(this.this$0)) {
+                            ((View)ViewPropertyObjectAnimator.access$100(this.this$0).get()).setLayerType(this.currentLayerType, (Paint)null);
                         }
                     }
                     
                     public void onAnimationStart(final Animator animator) {
-                        if (ViewPropertyObjectAnimator.this.hasView()) {
-                            final View view = (View)ViewPropertyObjectAnimator.access$100(ViewPropertyObjectAnimator.this).get();
+                        if (ViewPropertyObjectAnimator.access$000(this.this$0)) {
+                            final View view = (View)ViewPropertyObjectAnimator.access$100(this.this$0).get();
                             this.currentLayerType = view.getLayerType();
                             view.setLayerType(2, (Paint)null);
-                            if (isAttachedToWindow(view)) {
+                            if (ViewPropertyObjectAnimator.access$200(view)) {
                                 view.buildLayer();
                             }
                         }
@@ -805,8 +814,10 @@ public class ViewPropertyObjectAnimator
     }
     
     public ViewPropertyObjectAnimator withEndAction(final Runnable runnable) {
-        return this.addListener((Animator$AnimatorListener)new AnimatorListenerAdapter() {
+        return this.addListener((Animator$AnimatorListener)new AnimatorListenerAdapter(this, runnable) {
             private boolean isCanceled;
+            public final ViewPropertyObjectAnimator this$0;
+            public final Runnable val$runnable;
             
             public void onAnimationCancel(final Animator animator) {
                 this.isCanceled = true;
@@ -814,9 +825,9 @@ public class ViewPropertyObjectAnimator
             
             public void onAnimationEnd(final Animator animator) {
                 if (!this.isCanceled) {
-                    runnable.run();
+                    this.val$runnable.run();
                 }
-                ViewPropertyObjectAnimator.this.removeListener((Animator$AnimatorListener)this);
+                this.this$0.removeListener((Animator$AnimatorListener)this);
             }
         });
     }
@@ -827,10 +838,13 @@ public class ViewPropertyObjectAnimator
     }
     
     public ViewPropertyObjectAnimator withStartAction(final Runnable runnable) {
-        return this.addListener((Animator$AnimatorListener)new AnimatorListenerAdapter() {
+        return this.addListener((Animator$AnimatorListener)new AnimatorListenerAdapter(this, runnable) {
+            public final ViewPropertyObjectAnimator this$0;
+            public final Runnable val$runnable;
+            
             public void onAnimationStart(final Animator animator) {
-                runnable.run();
-                ViewPropertyObjectAnimator.this.removeListener((Animator$AnimatorListener)this);
+                this.val$runnable.run();
+                this.this$0.removeListener((Animator$AnimatorListener)this);
             }
         });
     }

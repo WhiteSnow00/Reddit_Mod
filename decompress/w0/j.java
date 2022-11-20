@@ -5,15 +5,16 @@
 package w0;
 
 import androidx.compose.runtime.SnapshotMutableStateImpl;
-import androidx.compose.ui.platform.b1;
+import androidx.compose.ui.platform.d1;
 import androidx.compose.ui.platform.TextToolbarStatus;
-import o2.m;
+import o2.l;
 import i2.n;
-import v0.q;
+import v0.p;
 import androidx.compose.foundation.text.TextFieldState;
 import androidx.compose.foundation.text.selection.a;
+import androidx.compose.foundation.text.selection.a$a;
 import i2.o;
-import sg2.e;
+import ng2.e;
 import n1.c;
 import androidx.compose.foundation.text.Handle;
 import androidx.compose.foundation.text.selection.TextFieldSelectionManager;
@@ -21,8 +22,8 @@ import v0.k;
 
 public final class j implements k
 {
-    public final /* synthetic */ TextFieldSelectionManager a;
-    public final /* synthetic */ boolean b;
+    public final TextFieldSelectionManager a;
+    public final boolean b;
     
     public j(final TextFieldSelectionManager a, final boolean b) {
         this.a = a;
@@ -45,16 +46,16 @@ public final class j implements k
     
     public final void b(long b) {
         final TextFieldSelectionManager a = this.a;
-        a.n = c.f(a.n, b);
+        a.n = c.h(a.n, b);
         final TextFieldState d = this.a.d;
         if (d != null) {
-            final q c = d.c();
+            final p c = d.c();
             if (c != null) {
                 final n a2 = c.a;
                 if (a2 != null) {
                     final TextFieldSelectionManager a3 = this.a;
                     final boolean b2 = this.b;
-                    ((SnapshotMutableStateImpl)a3.p).setValue((Object)new c(n1.c.f(a3.l, a3.n)));
+                    ((SnapshotMutableStateImpl)a3.p).setValue((Object)new c(n1.c.h(a3.l, a3.n)));
                     int n;
                     if (b2) {
                         final c c2 = (c)((SnapshotMutableStateImpl)a3.p).getValue();
@@ -62,7 +63,7 @@ public final class j implements k
                         n = a2.l(c2.a);
                     }
                     else {
-                        final m b3 = a3.b;
+                        final l b3 = a3.b;
                         b = a3.j().b;
                         final int c3 = o.c;
                         n = b3.b((int)(b >> 32));
@@ -76,13 +77,13 @@ public final class j implements k
                         e.c((Object)c4);
                         n2 = a2.l(c4.a);
                     }
-                    TextFieldSelectionManager.c(a3, a3.j(), n, n2, b2, (a)androidx.compose.foundation.text.selection.a.a.a);
+                    TextFieldSelectionManager.c(a3, a3.j(), n, n2, b2, (a)a$a.a);
                 }
             }
         }
         final TextFieldState d2 = this.a.d;
         if (d2 != null) {
-            d2.i = false;
+            d2.k = false;
         }
     }
     
@@ -103,13 +104,13 @@ public final class j implements k
         ((SnapshotMutableStateImpl)a3.o).setValue((Object)value);
         final TextFieldState d = this.a.d;
         if (d != null) {
-            d.i = false;
+            d.k = false;
         }
     }
     
     public final void d() {
-        TextFieldSelectionManager.b(this.a, null);
-        TextFieldSelectionManager.a(this.a, null);
+        TextFieldSelectionManager.b(this.a, (Handle)null);
+        TextFieldSelectionManager.a(this.a, (c)null);
     }
     
     public final void onCancel() {
@@ -118,14 +119,14 @@ public final class j implements k
     public final void onStop() {
         final TextFieldSelectionManager a = this.a;
         TextToolbarStatus status = null;
-        TextFieldSelectionManager.b(a, null);
-        TextFieldSelectionManager.a(this.a, null);
+        TextFieldSelectionManager.b(a, (Handle)null);
+        TextFieldSelectionManager.a(this.a, (c)null);
         final TextFieldSelectionManager a2 = this.a;
         final TextFieldState d = a2.d;
         if (d != null) {
-            d.i = true;
+            d.k = true;
         }
-        final b1 h = a2.h;
+        final d1 h = a2.h;
         if (h != null) {
             status = h.getStatus();
         }

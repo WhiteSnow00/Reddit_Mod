@@ -4,14 +4,15 @@
 
 package com.reddit.data.snoovatar.entity.storefront.layout;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import java.util.List;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonListingsFilters;", "", "data_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonListingsFilters;", "", "impl_release" }, k = 1, mv = { 1, 7, 1 })
 public final class JsonListingsFilters
 {
     public final List<String> a;
@@ -44,6 +45,44 @@ public final class JsonListingsFilters
         this.k = k;
     }
     
+    public JsonListingsFilters(List list, List list2, JsonListingsThemeFilter jsonListingsThemeFilter, JsonListingsStatusFilter jsonListingsStatusFilter, Integer n, Integer n2, Integer n3, Integer n4, Integer n5, Integer n6, List list3, final int n7, final DefaultConstructorMarker defaultConstructorMarker) {
+        final List list4 = null;
+        if ((n7 & 0x1) != 0x0) {
+            list = null;
+        }
+        if ((n7 & 0x2) != 0x0) {
+            list2 = null;
+        }
+        if ((n7 & 0x4) != 0x0) {
+            jsonListingsThemeFilter = null;
+        }
+        if ((n7 & 0x8) != 0x0) {
+            jsonListingsStatusFilter = null;
+        }
+        if ((n7 & 0x10) != 0x0) {
+            n = null;
+        }
+        if ((n7 & 0x20) != 0x0) {
+            n2 = null;
+        }
+        if ((n7 & 0x40) != 0x0) {
+            n3 = null;
+        }
+        if ((n7 & 0x80) != 0x0) {
+            n4 = null;
+        }
+        if ((n7 & 0x100) != 0x0) {
+            n5 = null;
+        }
+        if ((n7 & 0x200) != 0x0) {
+            n6 = null;
+        }
+        if ((n7 & 0x400) != 0x0) {
+            list3 = list4;
+        }
+        this(list, list2, jsonListingsThemeFilter, jsonListingsStatusFilter, n, n2, n3, n4, n5, n6, list3);
+    }
+    
     @Override
     public final boolean equals(final Object o) {
         if (this == o) {
@@ -53,7 +92,7 @@ public final class JsonListingsFilters
             return false;
         }
         final JsonListingsFilters jsonListingsFilters = (JsonListingsFilters)o;
-        return sg2.e.a((Object)this.a, (Object)jsonListingsFilters.a) && sg2.e.a((Object)this.b, (Object)jsonListingsFilters.b) && this.c == jsonListingsFilters.c && this.d == jsonListingsFilters.d && sg2.e.a((Object)this.e, (Object)jsonListingsFilters.e) && sg2.e.a((Object)this.f, (Object)jsonListingsFilters.f) && sg2.e.a((Object)this.g, (Object)jsonListingsFilters.g) && sg2.e.a((Object)this.h, (Object)jsonListingsFilters.h) && sg2.e.a((Object)this.i, (Object)jsonListingsFilters.i) && sg2.e.a((Object)this.j, (Object)jsonListingsFilters.j) && sg2.e.a((Object)this.k, (Object)jsonListingsFilters.k);
+        return ng2.e.a((Object)this.a, (Object)jsonListingsFilters.a) && ng2.e.a((Object)this.b, (Object)jsonListingsFilters.b) && this.c == jsonListingsFilters.c && this.d == jsonListingsFilters.d && ng2.e.a((Object)this.e, (Object)jsonListingsFilters.e) && ng2.e.a((Object)this.f, (Object)jsonListingsFilters.f) && ng2.e.a((Object)this.g, (Object)jsonListingsFilters.g) && ng2.e.a((Object)this.h, (Object)jsonListingsFilters.h) && ng2.e.a((Object)this.i, (Object)jsonListingsFilters.i) && ng2.e.a((Object)this.j, (Object)jsonListingsFilters.j) && ng2.e.a((Object)this.k, (Object)jsonListingsFilters.k);
     }
     
     @Override
@@ -148,27 +187,27 @@ public final class JsonListingsFilters
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("JsonListingsFilters(ids=");
-        r.append(this.a);
-        r.append(", artistIds=");
-        r.append(this.b);
-        r.append(", theme=");
-        r.append(this.c);
-        r.append(", status=");
-        r.append(this.d);
-        r.append(", priceLowerBound=");
-        r.append(this.e);
-        r.append(", priceUpperBound=");
-        r.append(this.f);
-        r.append(", totalInventoryLowerBound=");
-        r.append(this.g);
-        r.append(", totalInventoryUpperBound=");
-        r.append(this.h);
-        r.append(", percentInventoryRemainingLowerBound=");
-        r.append(this.i);
-        r.append(", percentInventoryRemainingUpperBound=");
-        r.append(this.j);
-        r.append(", tags=");
-        return d.o(r, (List)this.k, ')');
+        final StringBuilder t = a.t("JsonListingsFilters(ids=");
+        t.append(this.a);
+        t.append(", artistIds=");
+        t.append(this.b);
+        t.append(", theme=");
+        t.append(this.c);
+        t.append(", status=");
+        t.append(this.d);
+        t.append(", priceLowerBound=");
+        t.append(this.e);
+        t.append(", priceUpperBound=");
+        t.append(this.f);
+        t.append(", totalInventoryLowerBound=");
+        t.append(this.g);
+        t.append(", totalInventoryUpperBound=");
+        t.append(this.h);
+        t.append(", percentInventoryRemainingLowerBound=");
+        t.append(this.i);
+        t.append(", percentInventoryRemainingUpperBound=");
+        t.append(this.j);
+        t.append(", tags=");
+        return p1.h.d(t, (List)this.k, ')');
     }
 }

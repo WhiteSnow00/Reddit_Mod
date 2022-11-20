@@ -6,7 +6,7 @@ package com.reddit.domain.modtools.crowdcontrol.usecase;
 
 import com.reddit.domain.modtools.crowdcontrol.AdjustCrowdControlRepository;
 import javax.inject.Provider;
-import se2.d;
+import ne2.d;
 
 public final class UpdateCrowdControlLevelUseCaseImpl_Factory implements d<UpdateCrowdControlLevelUseCaseImpl>
 {
@@ -26,5 +26,9 @@ public final class UpdateCrowdControlLevelUseCaseImpl_Factory implements d<Updat
     
     public UpdateCrowdControlLevelUseCaseImpl get() {
         return newInstance((AdjustCrowdControlRepository)this.adjustCrowdControlRepositoryProvider.get());
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

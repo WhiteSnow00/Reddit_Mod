@@ -4,19 +4,14 @@
 
 package zc;
 
-import java.nio.ByteBuffer;
+import java.io.IOException;
+import com.google.android.exoplayer2.upstream.b;
 
 public interface h
 {
-    default long a(final h h) {
-        final byte[] array = ((j)h).b.get("exo_len");
-        long long1;
-        if (array != null) {
-            long1 = ByteBuffer.wrap(array).getLong();
-        }
-        else {
-            long1 = -1L;
-        }
-        return long1;
-    }
+    void a(final b p0) throws IOException;
+    
+    void close() throws IOException;
+    
+    void write(final byte[] p0, final int p1, final int p2) throws IOException;
 }

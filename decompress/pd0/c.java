@@ -4,7 +4,7 @@
 
 package pd0;
 
-import se2.d;
+import ne2.d;
 
 public final class c implements d<b>
 {

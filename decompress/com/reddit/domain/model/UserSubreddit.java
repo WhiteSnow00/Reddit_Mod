@@ -6,8 +6,10 @@ package com.reddit.domain.model;
 
 import java.util.Iterator;
 import android.os.Parcel;
+import p1.h;
+import aq2.a;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.n;
 import com.reddit.common.size.MediaSize;
 import com.reddit.common.subreddit.SubredditPostType;
@@ -18,7 +20,7 @@ import com.squareup.moshi.o;
 import android.os.Parcelable;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b%\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u0002B\u009d\u0002\u0012\b\b\u0003\u0010$\u001a\u00020\u0003\u0012\n\b\u0001\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010&\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010'\u001a\u00020\u0003\u0012\n\b\u0001\u0010(\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010)\u001a\u00020\u0003\u0012\n\b\u0001\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0003\u0010+\u001a\u00020\u0003\u0012\n\b\u0003\u0010,\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010-\u001a\u00020\u0006\u0012\b\b\u0003\u0010.\u001a\u00020\u0003\u0012\b\b\u0003\u0010/\u001a\u00020\u0003\u0012\n\b\u0001\u00100\u001a\u0004\u0018\u00010\u0012\u0012\b\b\u0003\u00101\u001a\u00020\u0006\u0012\b\b\u0003\u00102\u001a\u00020\u0003\u0012\b\b\u0003\u00103\u001a\u00020\u0006\u0012\b\b\u0003\u00104\u001a\u00020\u0003\u0012\n\b\u0001\u00105\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u00106\u001a\u00020\u0003\u0012\b\b\u0003\u00107\u001a\u00020\u0003\u0012\n\b\u0003\u00108\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u00109\u001a\u00020\u0006\u0012\n\b\u0003\u0010:\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0003\u0010;\u001a\u0004\u0018\u00010\u001e\u0012\u0010\b\u0002\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!¢\u0006\u0004\bk\u0010lJ\t\u0010\u0004\u001a\u00020\u0003H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0012\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u0007\u0010\bJ\t\u0010\t\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\n\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\n\u0010\bJ\t\u0010\u000b\u001a\u00020\u0003H\u00c6\u0003J\u000b\u0010\f\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010\r\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u000e\u0010\bJ\t\u0010\u000f\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0011\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u0013\u001a\u0004\u0018\u00010\u0012H\u00c6\u0003¢\u0006\u0004\b\u0013\u0010\u0014J\t\u0010\u0015\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0018\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u0019\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u0019\u0010\bJ\t\u0010\u001a\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u001c\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u001c\u0010\bJ\t\u0010\u001d\u001a\u00020\u0006H\u00c6\u0003J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u001eH\u00c6\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u001eH\u00c6\u0003J\u0011\u0010#\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!H\u00c6\u0003J¦\u0002\u0010=\u001a\u00020\u00002\b\b\u0003\u0010$\u001a\u00020\u00032\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010'\u001a\u00020\u00032\n\b\u0003\u0010(\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010)\u001a\u00020\u00032\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u00032\b\b\u0003\u0010+\u001a\u00020\u00032\n\b\u0003\u0010,\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010-\u001a\u00020\u00062\b\b\u0003\u0010.\u001a\u00020\u00032\b\b\u0003\u0010/\u001a\u00020\u00032\n\b\u0003\u00100\u001a\u0004\u0018\u00010\u00122\b\b\u0003\u00101\u001a\u00020\u00062\b\b\u0003\u00102\u001a\u00020\u00032\b\b\u0003\u00103\u001a\u00020\u00062\b\b\u0003\u00104\u001a\u00020\u00032\n\b\u0003\u00105\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u00106\u001a\u00020\u00032\b\b\u0003\u00107\u001a\u00020\u00032\n\b\u0003\u00108\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u00109\u001a\u00020\u00062\n\b\u0003\u0010:\u001a\u0004\u0018\u00010\u001e2\n\b\u0003\u0010;\u001a\u0004\u0018\u00010\u001e2\u0010\b\u0002\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!H\u00c6\u0001¢\u0006\u0004\b=\u0010>J\t\u0010?\u001a\u00020\u0003H\u00d6\u0001J\t\u0010@\u001a\u00020\u0012H\u00d6\u0001J\u0013\u0010C\u001a\u00020\u00062\b\u0010B\u001a\u0004\u0018\u00010AH\u00d6\u0003J\t\u0010D\u001a\u00020\u0012H\u00d6\u0001J\u0019\u0010I\u001a\u00020H2\u0006\u0010F\u001a\u00020E2\u0006\u0010G\u001a\u00020\u0012H\u00d6\u0001R\u001a\u0010$\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b$\u0010J\u001a\u0004\bK\u0010LR\u0019\u0010%\u001a\u0004\u0018\u00010\u00038\u0006¢\u0006\f\n\u0004\b%\u0010J\u001a\u0004\bM\u0010LR\u0019\u0010&\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b&\u0010N\u001a\u0004\bO\u0010\bR\u0017\u0010'\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b'\u0010J\u001a\u0004\bP\u0010LR\u0019\u0010(\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b(\u0010N\u001a\u0004\bQ\u0010\bR\u0017\u0010)\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b)\u0010J\u001a\u0004\bR\u0010LR\u0019\u0010*\u001a\u0004\u0018\u00010\u00038\u0006¢\u0006\f\n\u0004\b*\u0010J\u001a\u0004\bS\u0010LR\u0017\u0010+\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b+\u0010J\u001a\u0004\bT\u0010LR\u0019\u0010,\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b,\u0010N\u001a\u0004\bU\u0010\bR\u0017\u0010-\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b-\u0010V\u001a\u0004\bW\u0010XR\u0017\u0010.\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b.\u0010J\u001a\u0004\bY\u0010LR\u0017\u0010/\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b/\u0010J\u001a\u0004\bZ\u0010LR\u0019\u00100\u001a\u0004\u0018\u00010\u00128\u0006¢\u0006\f\n\u0004\b0\u0010[\u001a\u0004\b\\\u0010\u0014R\u0017\u00101\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b1\u0010V\u001a\u0004\b1\u0010XR\u0017\u00102\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b2\u0010J\u001a\u0004\b]\u0010LR\u0017\u00103\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b3\u0010V\u001a\u0004\b3\u0010XR\u0017\u00104\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b4\u0010J\u001a\u0004\b^\u0010LR\u0019\u00105\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b5\u0010N\u001a\u0004\b_\u0010\bR\u0017\u00106\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b6\u0010J\u001a\u0004\b`\u0010LR\u0017\u00107\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b7\u0010J\u001a\u0004\ba\u0010LR\u0019\u00108\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b8\u0010N\u001a\u0004\bb\u0010\bR\u0017\u00109\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b9\u0010V\u001a\u0004\bc\u0010XR\u0019\u0010:\u001a\u0004\u0018\u00010\u001e8\u0006¢\u0006\f\n\u0004\b:\u0010d\u001a\u0004\be\u0010fR\u0019\u0010;\u001a\u0004\u0018\u00010\u001e8\u0006¢\u0006\f\n\u0004\b;\u0010d\u001a\u0004\bg\u0010fR\u001f\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!8\u0006¢\u0006\f\n\u0004\b<\u0010h\u001a\u0004\bi\u0010j¨\u0006m" }, d2 = { "Lcom/reddit/domain/model/UserSubreddit;", "Lcom/reddit/domain/model/RedditModel;", "Landroid/os/Parcelable;", "", "component1", "component2", "", "component3", "()Ljava/lang/Boolean;", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "", "component13", "()Ljava/lang/Integer;", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "component21", "component22", "Lcom/reddit/common/size/MediaSize;", "component23", "component24", "", "Lcom/reddit/common/subreddit/SubredditPostType;", "component25", "kindWithId", "bannerImg", "userIsBanned", "description", "userIsMuted", "displayName", "headerImg", "title", "userIsModerator", "over18", "iconImg", "displayNamePrefixed", "subscribers", "isDefaultIcon", "keyColor", "isDefaultBanner", "url", "userIsContributor", "publicDescription", "subredditType", "userIsSubscriber", "showInDefaultSubreddits", "iconSize", "bannerSize", "allowedPostTypes", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLcom/reddit/common/size/MediaSize;Lcom/reddit/common/size/MediaSize;Ljava/util/List;)Lcom/reddit/domain/model/UserSubreddit;", "toString", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Ljava/lang/String;", "getKindWithId", "()Ljava/lang/String;", "getBannerImg", "Ljava/lang/Boolean;", "getUserIsBanned", "getDescription", "getUserIsMuted", "getDisplayName", "getHeaderImg", "getTitle", "getUserIsModerator", "Z", "getOver18", "()Z", "getIconImg", "getDisplayNamePrefixed", "Ljava/lang/Integer;", "getSubscribers", "getKeyColor", "getUrl", "getUserIsContributor", "getPublicDescription", "getSubredditType", "getUserIsSubscriber", "getShowInDefaultSubreddits", "Lcom/reddit/common/size/MediaSize;", "getIconSize", "()Lcom/reddit/common/size/MediaSize;", "getBannerSize", "Ljava/util/List;", "getAllowedPostTypes", "()Ljava/util/List;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLcom/reddit/common/size/MediaSize;Lcom/reddit/common/size/MediaSize;Ljava/util/List;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b%\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u0002B\u009d\u0002\u0012\b\b\u0003\u0010$\u001a\u00020\u0003\u0012\n\b\u0001\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010&\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010'\u001a\u00020\u0003\u0012\n\b\u0001\u0010(\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010)\u001a\u00020\u0003\u0012\n\b\u0001\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0003\u0010+\u001a\u00020\u0003\u0012\n\b\u0003\u0010,\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u0010-\u001a\u00020\u0006\u0012\b\b\u0003\u0010.\u001a\u00020\u0003\u0012\b\b\u0003\u0010/\u001a\u00020\u0003\u0012\n\b\u0001\u00100\u001a\u0004\u0018\u00010\u0012\u0012\b\b\u0003\u00101\u001a\u00020\u0006\u0012\b\b\u0003\u00102\u001a\u00020\u0003\u0012\b\b\u0003\u00103\u001a\u00020\u0006\u0012\b\b\u0003\u00104\u001a\u00020\u0003\u0012\n\b\u0001\u00105\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u00106\u001a\u00020\u0003\u0012\b\b\u0003\u00107\u001a\u00020\u0003\u0012\n\b\u0003\u00108\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0003\u00109\u001a\u00020\u0006\u0012\n\b\u0003\u0010:\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0003\u0010;\u001a\u0004\u0018\u00010\u001e\u0012\u0010\b\u0002\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!¢\u0006\u0004\bk\u0010lJ\t\u0010\u0004\u001a\u00020\u0003H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0012\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u0007\u0010\bJ\t\u0010\t\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\n\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\n\u0010\bJ\t\u0010\u000b\u001a\u00020\u0003H\u00c6\u0003J\u000b\u0010\f\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010\r\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u000e\u0010\bJ\t\u0010\u000f\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0011\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u0013\u001a\u0004\u0018\u00010\u0012H\u00c6\u0003¢\u0006\u0004\b\u0013\u0010\u0014J\t\u0010\u0015\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\u0018\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u0019\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u0019\u0010\bJ\t\u0010\u001a\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\u0003H\u00c6\u0003J\u0012\u0010\u001c\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003¢\u0006\u0004\b\u001c\u0010\bJ\t\u0010\u001d\u001a\u00020\u0006H\u00c6\u0003J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u001eH\u00c6\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u001eH\u00c6\u0003J\u0011\u0010#\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!H\u00c6\u0003J¦\u0002\u0010=\u001a\u00020\u00002\b\b\u0003\u0010$\u001a\u00020\u00032\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010'\u001a\u00020\u00032\n\b\u0003\u0010(\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010)\u001a\u00020\u00032\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u00032\b\b\u0003\u0010+\u001a\u00020\u00032\n\b\u0003\u0010,\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u0010-\u001a\u00020\u00062\b\b\u0003\u0010.\u001a\u00020\u00032\b\b\u0003\u0010/\u001a\u00020\u00032\n\b\u0003\u00100\u001a\u0004\u0018\u00010\u00122\b\b\u0003\u00101\u001a\u00020\u00062\b\b\u0003\u00102\u001a\u00020\u00032\b\b\u0003\u00103\u001a\u00020\u00062\b\b\u0003\u00104\u001a\u00020\u00032\n\b\u0003\u00105\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u00106\u001a\u00020\u00032\b\b\u0003\u00107\u001a\u00020\u00032\n\b\u0003\u00108\u001a\u0004\u0018\u00010\u00062\b\b\u0003\u00109\u001a\u00020\u00062\n\b\u0003\u0010:\u001a\u0004\u0018\u00010\u001e2\n\b\u0003\u0010;\u001a\u0004\u0018\u00010\u001e2\u0010\b\u0002\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!H\u00c6\u0001¢\u0006\u0004\b=\u0010>J\t\u0010?\u001a\u00020\u0003H\u00d6\u0001J\t\u0010@\u001a\u00020\u0012H\u00d6\u0001J\u0013\u0010C\u001a\u00020\u00062\b\u0010B\u001a\u0004\u0018\u00010AH\u00d6\u0003J\t\u0010D\u001a\u00020\u0012H\u00d6\u0001J\u0019\u0010I\u001a\u00020H2\u0006\u0010F\u001a\u00020E2\u0006\u0010G\u001a\u00020\u0012H\u00d6\u0001R\u001a\u0010$\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b$\u0010J\u001a\u0004\bK\u0010LR\u0019\u0010%\u001a\u0004\u0018\u00010\u00038\u0006¢\u0006\f\n\u0004\b%\u0010J\u001a\u0004\bM\u0010LR\u0019\u0010&\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b&\u0010N\u001a\u0004\bO\u0010\bR\u0017\u0010'\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b'\u0010J\u001a\u0004\bP\u0010LR\u0019\u0010(\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b(\u0010N\u001a\u0004\bQ\u0010\bR\u0017\u0010)\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b)\u0010J\u001a\u0004\bR\u0010LR\u0019\u0010*\u001a\u0004\u0018\u00010\u00038\u0006¢\u0006\f\n\u0004\b*\u0010J\u001a\u0004\bS\u0010LR\u0017\u0010+\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b+\u0010J\u001a\u0004\bT\u0010LR\u0019\u0010,\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b,\u0010N\u001a\u0004\bU\u0010\bR\u0017\u0010-\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b-\u0010V\u001a\u0004\bW\u0010XR\u0017\u0010.\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b.\u0010J\u001a\u0004\bY\u0010LR\u0017\u0010/\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b/\u0010J\u001a\u0004\bZ\u0010LR\u0019\u00100\u001a\u0004\u0018\u00010\u00128\u0006¢\u0006\f\n\u0004\b0\u0010[\u001a\u0004\b\\\u0010\u0014R\u0017\u00101\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b1\u0010V\u001a\u0004\b1\u0010XR\u0017\u00102\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b2\u0010J\u001a\u0004\b]\u0010LR\u0017\u00103\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b3\u0010V\u001a\u0004\b3\u0010XR\u0017\u00104\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b4\u0010J\u001a\u0004\b^\u0010LR\u0019\u00105\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b5\u0010N\u001a\u0004\b_\u0010\bR\u0017\u00106\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b6\u0010J\u001a\u0004\b`\u0010LR\u0017\u00107\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b7\u0010J\u001a\u0004\ba\u0010LR\u0019\u00108\u001a\u0004\u0018\u00010\u00068\u0006¢\u0006\f\n\u0004\b8\u0010N\u001a\u0004\bb\u0010\bR\u0017\u00109\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b9\u0010V\u001a\u0004\bc\u0010XR\u0019\u0010:\u001a\u0004\u0018\u00010\u001e8\u0006¢\u0006\f\n\u0004\b:\u0010d\u001a\u0004\be\u0010fR\u0019\u0010;\u001a\u0004\u0018\u00010\u001e8\u0006¢\u0006\f\n\u0004\b;\u0010d\u001a\u0004\bg\u0010fR\u001f\u0010<\u001a\n\u0012\u0004\u0012\u00020\"\u0018\u00010!8\u0006¢\u0006\f\n\u0004\b<\u0010h\u001a\u0004\bi\u0010j¨\u0006m" }, d2 = { "Lcom/reddit/domain/model/UserSubreddit;", "Lcom/reddit/domain/model/RedditModel;", "Landroid/os/Parcelable;", "", "component1", "component2", "", "component3", "()Ljava/lang/Boolean;", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "", "component13", "()Ljava/lang/Integer;", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "component21", "component22", "Lcom/reddit/common/size/MediaSize;", "component23", "component24", "", "Lcom/reddit/common/subreddit/SubredditPostType;", "component25", "kindWithId", "bannerImg", "userIsBanned", "description", "userIsMuted", "displayName", "headerImg", "title", "userIsModerator", "over18", "iconImg", "displayNamePrefixed", "subscribers", "isDefaultIcon", "keyColor", "isDefaultBanner", "url", "userIsContributor", "publicDescription", "subredditType", "userIsSubscriber", "showInDefaultSubreddits", "iconSize", "bannerSize", "allowedPostTypes", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLcom/reddit/common/size/MediaSize;Lcom/reddit/common/size/MediaSize;Ljava/util/List;)Lcom/reddit/domain/model/UserSubreddit;", "toString", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Ljava/lang/String;", "getKindWithId", "()Ljava/lang/String;", "getBannerImg", "Ljava/lang/Boolean;", "getUserIsBanned", "getDescription", "getUserIsMuted", "getDisplayName", "getHeaderImg", "getTitle", "getUserIsModerator", "Z", "getOver18", "()Z", "getIconImg", "getDisplayNamePrefixed", "Ljava/lang/Integer;", "getSubscribers", "getKeyColor", "getUrl", "getUserIsContributor", "getPublicDescription", "getSubredditType", "getUserIsSubscriber", "getShowInDefaultSubreddits", "Lcom/reddit/common/size/MediaSize;", "getIconSize", "()Lcom/reddit/common/size/MediaSize;", "getBannerSize", "Ljava/util/List;", "getAllowedPostTypes", "()Ljava/util/List;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ZLcom/reddit/common/size/MediaSize;Lcom/reddit/common/size/MediaSize;Ljava/util/List;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class UserSubreddit implements RedditModel, Parcelable
 {
     public static final Parcelable$Creator<UserSubreddit> CREATOR;
@@ -88,6 +90,146 @@ public final class UserSubreddit implements RedditModel, Parcelable
         this.iconSize = iconSize;
         this.bannerSize = bannerSize;
         this.allowedPostTypes = (List<SubredditPostType>)allowedPostTypes;
+    }
+    
+    public UserSubreddit(String s, final String s2, final Boolean b, String s3, final Boolean b2, String s4, final String s5, String s6, Boolean true, boolean b3, String s7, String s8, final Integer n, boolean b4, String s9, boolean b5, String s10, final Boolean b6, String s11, String s12, Boolean false, boolean b7, MediaSize mediaSize, MediaSize mediaSize2, List list, final int n2, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n2 & 0x1) != 0x0) {
+            s = "";
+        }
+        if ((n2 & 0x8) != 0x0) {
+            s3 = "";
+        }
+        if ((n2 & 0x20) != 0x0) {
+            s4 = "";
+        }
+        if ((n2 & 0x80) != 0x0) {
+            s6 = "";
+        }
+        if ((n2 & 0x100) != 0x0) {
+            true = Boolean.TRUE;
+        }
+        if ((n2 & 0x200) != 0x0) {
+            b3 = false;
+        }
+        if ((n2 & 0x400) != 0x0) {
+            s7 = "";
+        }
+        if ((n2 & 0x800) != 0x0) {
+            s8 = "";
+        }
+        if ((n2 & 0x2000) != 0x0) {
+            b4 = false;
+        }
+        if ((n2 & 0x4000) != 0x0) {
+            s9 = "";
+        }
+        if ((0x8000 & n2) != 0x0) {
+            b5 = false;
+        }
+        if ((0x10000 & n2) != 0x0) {
+            s10 = "";
+        }
+        if ((0x40000 & n2) != 0x0) {
+            s11 = "";
+        }
+        if ((0x80000 & n2) != 0x0) {
+            s12 = "";
+        }
+        if ((0x100000 & n2) != 0x0) {
+            false = Boolean.FALSE;
+        }
+        if ((0x200000 & n2) != 0x0) {
+            b7 = false;
+        }
+        if ((0x400000 & n2) != 0x0) {
+            mediaSize = null;
+        }
+        if ((0x800000 & n2) != 0x0) {
+            mediaSize2 = null;
+        }
+        if ((n2 & 0x1000000) != 0x0) {
+            list = null;
+        }
+        this(s, s2, b, s3, b2, s4, s5, s6, true, b3, s7, s8, n, b4, s9, b5, s10, b6, s11, s12, false, b7, mediaSize, mediaSize2, list);
+    }
+    
+    public static UserSubreddit copy$default(final UserSubreddit userSubreddit, String kindWithId, String bannerImg, Boolean userIsBanned, String description, Boolean userIsMuted, String displayName, String headerImg, String title, Boolean userIsModerator, boolean over18, String iconImg, String displayNamePrefixed, Integer subscribers, boolean isDefaultIcon, String keyColor, boolean isDefaultBanner, String url, Boolean userIsContributor, String publicDescription, String subredditType, Boolean userIsSubscriber, boolean showInDefaultSubreddits, MediaSize iconSize, MediaSize bannerSize, List allowedPostTypes, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            kindWithId = userSubreddit.getKindWithId();
+        }
+        if ((n & 0x2) != 0x0) {
+            bannerImg = userSubreddit.bannerImg;
+        }
+        if ((n & 0x4) != 0x0) {
+            userIsBanned = userSubreddit.userIsBanned;
+        }
+        if ((n & 0x8) != 0x0) {
+            description = userSubreddit.description;
+        }
+        if ((n & 0x10) != 0x0) {
+            userIsMuted = userSubreddit.userIsMuted;
+        }
+        if ((n & 0x20) != 0x0) {
+            displayName = userSubreddit.displayName;
+        }
+        if ((n & 0x40) != 0x0) {
+            headerImg = userSubreddit.headerImg;
+        }
+        if ((n & 0x80) != 0x0) {
+            title = userSubreddit.title;
+        }
+        if ((n & 0x100) != 0x0) {
+            userIsModerator = userSubreddit.userIsModerator;
+        }
+        if ((n & 0x200) != 0x0) {
+            over18 = userSubreddit.over18;
+        }
+        if ((n & 0x400) != 0x0) {
+            iconImg = userSubreddit.iconImg;
+        }
+        if ((n & 0x800) != 0x0) {
+            displayNamePrefixed = userSubreddit.displayNamePrefixed;
+        }
+        if ((n & 0x1000) != 0x0) {
+            subscribers = userSubreddit.subscribers;
+        }
+        if ((n & 0x2000) != 0x0) {
+            isDefaultIcon = userSubreddit.isDefaultIcon;
+        }
+        if ((n & 0x4000) != 0x0) {
+            keyColor = userSubreddit.keyColor;
+        }
+        if ((n & 0x8000) != 0x0) {
+            isDefaultBanner = userSubreddit.isDefaultBanner;
+        }
+        if ((n & 0x10000) != 0x0) {
+            url = userSubreddit.url;
+        }
+        if ((n & 0x20000) != 0x0) {
+            userIsContributor = userSubreddit.userIsContributor;
+        }
+        if ((n & 0x40000) != 0x0) {
+            publicDescription = userSubreddit.publicDescription;
+        }
+        if ((n & 0x80000) != 0x0) {
+            subredditType = userSubreddit.subredditType;
+        }
+        if ((n & 0x100000) != 0x0) {
+            userIsSubscriber = userSubreddit.userIsSubscriber;
+        }
+        if ((n & 0x200000) != 0x0) {
+            showInDefaultSubreddits = userSubreddit.showInDefaultSubreddits;
+        }
+        if ((n & 0x400000) != 0x0) {
+            iconSize = userSubreddit.iconSize;
+        }
+        if ((n & 0x800000) != 0x0) {
+            bannerSize = userSubreddit.bannerSize;
+        }
+        if ((n & 0x1000000) != 0x0) {
+            allowedPostTypes = userSubreddit.allowedPostTypes;
+        }
+        return userSubreddit.copy(kindWithId, bannerImg, userIsBanned, description, userIsMuted, displayName, headerImg, title, userIsModerator, over18, iconImg, displayNamePrefixed, subscribers, isDefaultIcon, keyColor, isDefaultBanner, url, userIsContributor, publicDescription, subredditType, userIsSubscriber, showInDefaultSubreddits, iconSize, bannerSize, allowedPostTypes);
     }
     
     public final String component1() {
@@ -333,7 +475,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         else {
             hashCode4 = userIsBanned.hashCode();
         }
-        final int c = b.c(this.description, ((hashCode * 31 + hashCode3) * 31 + hashCode4) * 31, 31);
+        final int e = a.e(this.description, ((hashCode * 31 + hashCode3) * 31 + hashCode4) * 31, 31);
         final Boolean userIsMuted = this.userIsMuted;
         int hashCode5;
         if (userIsMuted == null) {
@@ -342,7 +484,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         else {
             hashCode5 = userIsMuted.hashCode();
         }
-        final int c2 = b.c(this.displayName, (c + hashCode5) * 31, 31);
+        final int e2 = a.e(this.displayName, (e + hashCode5) * 31, 31);
         final String headerImg = this.headerImg;
         int hashCode6;
         if (headerImg == null) {
@@ -351,7 +493,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         else {
             hashCode6 = headerImg.hashCode();
         }
-        final int c3 = b.c(this.title, (c2 + hashCode6) * 31, 31);
+        final int e3 = a.e(this.title, (e2 + hashCode6) * 31, 31);
         final Boolean userIsModerator = this.userIsModerator;
         int hashCode7;
         if (userIsModerator == null) {
@@ -366,7 +508,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         if (over18 != 0) {
             n2 = 1;
         }
-        final int c4 = b.c(this.displayNamePrefixed, b.c(this.iconImg, ((c3 + hashCode7) * 31 + n2) * 31, 31), 31);
+        final int e4 = a.e(this.displayNamePrefixed, a.e(this.iconImg, ((e3 + hashCode7) * 31 + n2) * 31, 31), 31);
         final Integer subscribers = this.subscribers;
         int hashCode8;
         if (subscribers == null) {
@@ -379,12 +521,12 @@ public final class UserSubreddit implements RedditModel, Parcelable
         if ((isDefaultIcon = (this.isDefaultIcon ? 1 : 0)) != 0) {
             isDefaultIcon = 1;
         }
-        final int c5 = b.c(this.keyColor, ((c4 + hashCode8) * 31 + isDefaultIcon) * 31, 31);
+        final int e5 = a.e(this.keyColor, ((e4 + hashCode8) * 31 + isDefaultIcon) * 31, 31);
         int isDefaultBanner;
         if ((isDefaultBanner = (this.isDefaultBanner ? 1 : 0)) != 0) {
             isDefaultBanner = 1;
         }
-        final int c6 = b.c(this.url, (c5 + isDefaultBanner) * 31, 31);
+        final int e6 = a.e(this.url, (e5 + isDefaultBanner) * 31, 31);
         final Boolean userIsContributor = this.userIsContributor;
         int hashCode9;
         if (userIsContributor == null) {
@@ -393,7 +535,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         else {
             hashCode9 = userIsContributor.hashCode();
         }
-        final int c7 = b.c(this.subredditType, b.c(this.publicDescription, (c6 + hashCode9) * 31, 31), 31);
+        final int e7 = a.e(this.subredditType, a.e(this.publicDescription, (e6 + hashCode9) * 31, 31), 31);
         final Boolean userIsSubscriber = this.userIsSubscriber;
         int hashCode10;
         if (userIsSubscriber == null) {
@@ -426,7 +568,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
         if (allowedPostTypes != null) {
             hashCode2 = allowedPostTypes.hashCode();
         }
-        return ((((c7 + hashCode10) * 31 + showInDefaultSubreddits) * 31 + hashCode11) * 31 + hashCode12) * 31 + hashCode2;
+        return ((((e7 + hashCode10) * 31 + showInDefaultSubreddits) * 31 + hashCode11) * 31 + hashCode12) * 31 + hashCode2;
     }
     
     public final boolean isDefaultBanner() {
@@ -439,56 +581,56 @@ public final class UserSubreddit implements RedditModel, Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("UserSubreddit(kindWithId=");
-        r.append(this.getKindWithId());
-        r.append(", bannerImg=");
-        r.append(this.bannerImg);
-        r.append(", userIsBanned=");
-        r.append(this.userIsBanned);
-        r.append(", description=");
-        r.append(this.description);
-        r.append(", userIsMuted=");
-        r.append(this.userIsMuted);
-        r.append(", displayName=");
-        r.append(this.displayName);
-        r.append(", headerImg=");
-        r.append(this.headerImg);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", userIsModerator=");
-        r.append(this.userIsModerator);
-        r.append(", over18=");
-        r.append(this.over18);
-        r.append(", iconImg=");
-        r.append(this.iconImg);
-        r.append(", displayNamePrefixed=");
-        r.append(this.displayNamePrefixed);
-        r.append(", subscribers=");
-        r.append(this.subscribers);
-        r.append(", isDefaultIcon=");
-        r.append(this.isDefaultIcon);
-        r.append(", keyColor=");
-        r.append(this.keyColor);
-        r.append(", isDefaultBanner=");
-        r.append(this.isDefaultBanner);
-        r.append(", url=");
-        r.append(this.url);
-        r.append(", userIsContributor=");
-        r.append(this.userIsContributor);
-        r.append(", publicDescription=");
-        r.append(this.publicDescription);
-        r.append(", subredditType=");
-        r.append(this.subredditType);
-        r.append(", userIsSubscriber=");
-        r.append(this.userIsSubscriber);
-        r.append(", showInDefaultSubreddits=");
-        r.append(this.showInDefaultSubreddits);
-        r.append(", iconSize=");
-        r.append(this.iconSize);
-        r.append(", bannerSize=");
-        r.append(this.bannerSize);
-        r.append(", allowedPostTypes=");
-        return d.o(r, (List)this.allowedPostTypes, ')');
+        final StringBuilder t = a.t("UserSubreddit(kindWithId=");
+        t.append(this.getKindWithId());
+        t.append(", bannerImg=");
+        t.append(this.bannerImg);
+        t.append(", userIsBanned=");
+        t.append(this.userIsBanned);
+        t.append(", description=");
+        t.append(this.description);
+        t.append(", userIsMuted=");
+        t.append(this.userIsMuted);
+        t.append(", displayName=");
+        t.append(this.displayName);
+        t.append(", headerImg=");
+        t.append(this.headerImg);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", userIsModerator=");
+        t.append(this.userIsModerator);
+        t.append(", over18=");
+        t.append(this.over18);
+        t.append(", iconImg=");
+        t.append(this.iconImg);
+        t.append(", displayNamePrefixed=");
+        t.append(this.displayNamePrefixed);
+        t.append(", subscribers=");
+        t.append(this.subscribers);
+        t.append(", isDefaultIcon=");
+        t.append(this.isDefaultIcon);
+        t.append(", keyColor=");
+        t.append(this.keyColor);
+        t.append(", isDefaultBanner=");
+        t.append(this.isDefaultBanner);
+        t.append(", url=");
+        t.append(this.url);
+        t.append(", userIsContributor=");
+        t.append(this.userIsContributor);
+        t.append(", publicDescription=");
+        t.append(this.publicDescription);
+        t.append(", subredditType=");
+        t.append(this.subredditType);
+        t.append(", userIsSubscriber=");
+        t.append(this.userIsSubscriber);
+        t.append(", showInDefaultSubreddits=");
+        t.append(this.showInDefaultSubreddits);
+        t.append(", iconSize=");
+        t.append(this.iconSize);
+        t.append(", bannerSize=");
+        t.append(this.bannerSize);
+        t.append(", allowedPostTypes=");
+        return h.d(t, (List)this.allowedPostTypes, ')');
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -500,7 +642,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsBanned);
+            a.w(parcel, 1, userIsBanned);
         }
         parcel.writeString(this.description);
         final Boolean userIsMuted = this.userIsMuted;
@@ -508,7 +650,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsMuted);
+            a.w(parcel, 1, userIsMuted);
         }
         parcel.writeString(this.displayName);
         parcel.writeString(this.headerImg);
@@ -518,7 +660,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsModerator);
+            a.w(parcel, 1, userIsModerator);
         }
         parcel.writeInt((int)(this.over18 ? 1 : 0));
         parcel.writeString(this.iconImg);
@@ -528,7 +670,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            b.l(parcel, 1, subscribers);
+            ph0.a.j(parcel, 1, subscribers);
         }
         parcel.writeInt((int)(this.isDefaultIcon ? 1 : 0));
         parcel.writeString(this.keyColor);
@@ -539,7 +681,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsContributor);
+            a.w(parcel, 1, userIsContributor);
         }
         parcel.writeString(this.publicDescription);
         parcel.writeString(this.subredditType);
@@ -548,7 +690,7 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsSubscriber);
+            a.w(parcel, 1, userIsSubscriber);
         }
         parcel.writeInt((int)(this.showInDefaultSubreddits ? 1 : 0));
         parcel.writeParcelable((Parcelable)this.iconSize, n);
@@ -558,9 +700,9 @@ public final class UserSubreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            final Iterator t = d.t(parcel, 1, (List)allowedPostTypes);
-            while (t.hasNext()) {
-                parcel.writeString(((Enum)t.next()).name());
+            final Iterator j = u10.o.j(parcel, 1, (List)allowedPostTypes);
+            while (j.hasNext()) {
+                parcel.writeString(((Enum)j.next()).name());
             }
         }
     }

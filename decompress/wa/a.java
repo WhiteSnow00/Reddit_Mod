@@ -4,62 +4,55 @@
 
 package wa;
 
-import android.os.Looper;
-import com.google.android.exoplayer2.source.i$b;
+import java.util.AbstractCollection;
+import java.util.List;
+import android.os.RemoteException;
+import android.os.Parcel;
+import java.util.Collection;
+import java.util.ArrayList;
+import a4.u1;
+import bd.c0;
+import android.os.Bundle;
 import com.google.common.collect.ImmutableList;
-import za.e;
-import za.g;
-import com.google.android.exoplayer2.n;
-import com.google.android.exoplayer2.drm.c;
-import yc.d$a;
-import com.google.android.exoplayer2.source.j;
-import com.google.android.exoplayer2.w;
+import android.os.Binder;
 
-public interface a extends w.c, j, d$a, c
+public final class a extends Binder
 {
-    void D();
+    public static final int b;
+    public final ImmutableList<Bundle> a;
     
-    void a(final String p0);
+    static {
+        int a;
+        if (c0.a >= 30) {
+            a = u1.a();
+        }
+        else {
+            a = 65536;
+        }
+        b = a;
+    }
     
-    void b(final String p0);
+    public a(final ArrayList list) {
+        this.a = (ImmutableList<Bundle>)ImmutableList.copyOf((Collection)list);
+    }
     
-    void c(final long p0, final Object p1);
-    
-    void d(final long p0, final long p1, final String p2);
-    
-    void e(final int p0, final long p1);
-    
-    void f(final int p0, final long p1);
-    
-    void g(final Exception p0);
-    
-    void h(final n p0, final g p1);
-    
-    void i(final e p0);
-    
-    void k(final Exception p0);
-    
-    void l(final long p0);
-    
-    void m(final Exception p0);
-    
-    void n(final e p0);
-    
-    void o(final e p0);
-    
-    void p(final n p0, final g p1);
-    
-    void q(final e p0);
-    
-    void r(final long p0, final long p1, final String p2);
-    
-    void release();
-    
-    void s(final int p0, final long p1, final long p2);
-    
-    void v(final ImmutableList p0, final i$b p1);
-    
-    void w(final w p0, final Looper p1);
-    
-    void y(final wa.b p0);
+    public final boolean onTransact(int int1, final Parcel parcel, final Parcel parcel2, int n) throws RemoteException {
+        if (int1 != 1) {
+            return super.onTransact(int1, parcel, parcel2, n);
+        }
+        n = 0;
+        if (parcel2 == null) {
+            return false;
+        }
+        int size;
+        for (size = ((AbstractCollection)this.a).size(), int1 = parcel.readInt(); int1 < size && parcel2.dataSize() < wa.a.b; ++int1) {
+            parcel2.writeInt(1);
+            parcel2.writeBundle((Bundle)((List<Bundle>)this.a).get(int1));
+        }
+        if (int1 < size) {
+            n = 2;
+        }
+        parcel2.writeInt(n);
+        return true;
+    }
 }

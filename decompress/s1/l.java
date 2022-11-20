@@ -4,9 +4,9 @@
 
 package s1;
 
-import aw.b;
-import sg2.e;
-import sg2.h;
+import ph0.a;
+import ng2.e;
+import ng2.h;
 import o1.n;
 import java.util.List;
 
@@ -49,7 +49,7 @@ public final class l extends k
         if (this == o) {
             return true;
         }
-        if (o != null && e.a((Object)sg2.h.a((Class)l.class), (Object)sg2.h.a((Class)o.getClass()))) {
+        if (o != null && e.a((Object)ng2.h.a((Class)l.class), (Object)ng2.h.a((Class)o.getClass()))) {
             final l l = (l)o;
             return e.a((Object)this.f, (Object)l.f) && e.a((Object)this.i, (Object)l.i) && this.j == l.j && e.a((Object)this.k, (Object)l.k) && this.l == l.l && this.m == l.m && this.n == l.n && this.o == l.o && this.p == l.p && this.q == l.q && this.r == l.r && this.s == l.s && this.h == l.h && e.a((Object)this.g, (Object)l.g);
         }
@@ -58,7 +58,7 @@ public final class l extends k
     
     @Override
     public final int hashCode() {
-        final int c = b.c((List)this.g, this.f.hashCode() * 31, 31);
+        final int b = a.b((List)this.g, this.f.hashCode() * 31, 31);
         final n i = this.i;
         final int n = 0;
         int hashCode;
@@ -68,12 +68,12 @@ public final class l extends k
         else {
             hashCode = 0;
         }
-        final int d = d.d(this.j, (c + hashCode) * 31, 31);
+        final int b2 = aq2.a.b(this.j, (b + hashCode) * 31, 31);
         final n k = this.k;
         int hashCode2 = n;
         if (k != null) {
             hashCode2 = k.hashCode();
         }
-        return Integer.hashCode(this.h) + d.d(this.s, d.d(this.r, d.d(this.q, d.d(this.p, a.c(this.o, a.c(this.n, d.d(this.m, d.d(this.l, (d + hashCode2) * 31, 31), 31), 31), 31), 31), 31), 31), 31);
+        return Integer.hashCode(this.h) + aq2.a.b(this.s, aq2.a.b(this.r, aq2.a.b(this.q, aq2.a.b(this.p, aq2.a.c(this.o, aq2.a.c(this.n, aq2.a.b(this.m, aq2.a.b(this.l, (b2 + hashCode2) * 31, 31), 31), 31), 31), 31), 31), 31), 31);
     }
 }

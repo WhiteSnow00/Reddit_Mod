@@ -4,21 +4,17 @@
 
 package nf;
 
-import android.animation.FloatEvaluator;
-import android.animation.TypeEvaluator;
+import android.view.View;
 
-public final class b implements TypeEvaluator<Float>
+public final class b
 {
-    public FloatEvaluator a;
+    public final View a;
+    public boolean b;
+    public int c;
     
-    public b() {
-        this.a = new FloatEvaluator();
-    }
-    
-    public final Object evaluate(float floatValue, final Object o, final Object o2) {
-        if ((floatValue = this.a.evaluate(floatValue, (Number)o, (Number)o2)) < 0.1f) {
-            floatValue = 0.0f;
-        }
-        return floatValue;
+    public b(final a a) {
+        this.b = false;
+        this.c = 0;
+        this.a = (View)a;
     }
 }

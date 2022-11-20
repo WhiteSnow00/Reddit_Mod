@@ -4,12 +4,12 @@
 
 package com.reddit.domain.modtools.newcommunityprogressv2;
 
-import se2.d;
+import ne2.d;
 
 public final class NewCommunityProgressV2UiMapper_Factory implements d<NewCommunityProgressV2UiMapper>
 {
     public static NewCommunityProgressV2UiMapper_Factory create() {
-        return InstanceHolder.access$000();
+        return NewCommunityProgressV2UiMapper_Factory.NewCommunityProgressV2UiMapper_Factory$InstanceHolder.access$000();
     }
     
     public static NewCommunityProgressV2UiMapper newInstance() {
@@ -20,19 +20,7 @@ public final class NewCommunityProgressV2UiMapper_Factory implements d<NewCommun
         return newInstance();
     }
     
-    public static final class InstanceHolder
-    {
-        private static final NewCommunityProgressV2UiMapper_Factory INSTANCE;
-        
-        static {
-            INSTANCE = new NewCommunityProgressV2UiMapper_Factory();
-        }
-        
-        private InstanceHolder() {
-        }
-        
-        public static /* synthetic */ NewCommunityProgressV2UiMapper_Factory access$000() {
-            return InstanceHolder.INSTANCE;
-        }
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

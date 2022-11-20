@@ -4,32 +4,47 @@
 
 package c6;
 
+import androidx.work.impl.utils.futures.AbstractFuture;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
+import b6.j;
+import androidx.work.ListenableWorker$a;
 import androidx.work.impl.utils.futures.a;
-import java.util.UUID;
-import d6.b;
-import d6.f;
-import java.util.List;
-import java.util.Collections;
-import androidx.work.d;
-import androidx.work.ExistingWorkPolicy;
 
-public abstract class m
+public final class m implements Runnable
 {
-    public final l a(final ExistingWorkPolicy existingWorkPolicy, final d d, final String s) {
-        return this.b(s, existingWorkPolicy, Collections.singletonList(d));
+    public final a f;
+    public final String g;
+    public final n h;
+    
+    public m(final n h, final a f, final String g) {
+        this.h = h;
+        this.f = f;
+        this.g = g;
     }
     
-    public abstract f b(final String p0, final ExistingWorkPolicy p1, final List p2);
-    
-    public abstract b c(final String p0);
-    
-    public abstract b d(final UUID p0);
-    
-    public abstract j e(final String p0, final ExistingWorkPolicy p1, final List<d> p2);
-    
-    public final void f(final ExistingWorkPolicy existingWorkPolicy, final d d, final String s) {
-        this.e(s, existingWorkPolicy, Collections.singletonList(d));
+    @Override
+    public final void run() {
+        try {
+            try {
+                final ListenableWorker$a m = (ListenableWorker$a)((AbstractFuture)this.f).get();
+                if (m == null) {
+                    j.c().b(n.y, String.format("%s returned a null result. Treating it as a failure.", this.h.j.c), new Throwable[0]);
+                }
+                j.c().a(n.y, String.format("%s returned a %s result.", this.h.j.c, m), new Throwable[0]);
+                this.h.m = m;
+            }
+            finally {}
+        }
+        catch (final ExecutionException t) {
+            goto Label_0112;
+        }
+        catch (final InterruptedException ex) {}
+        catch (final CancellationException ex2) {
+            j.c().d(n.y, String.format("%s was cancelled", this.g), new Throwable[] { ex2 });
+        }
+        this.h.c();
+        return;
+        this.h.c();
     }
-    
-    public abstract a g(final UUID p0);
 }

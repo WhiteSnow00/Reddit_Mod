@@ -4,71 +4,74 @@
 
 package com.reddit.data.predictions;
 
-import yd.b;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import lg2.c;
+import gg2.c;
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import java.util.concurrent.ConcurrentHashMap;
-import q50.h;
+import s50.g;
 import od0.a;
 
 public final class RedditCanCreatePredictionInSubredditRepository implements a
 {
-    public final h a;
+    public final g a;
     public final ConcurrentHashMap<String, Boolean> b;
     
     @Inject
-    public RedditCanCreatePredictionInSubredditRepository(final h a) {
+    public RedditCanCreatePredictionInSubredditRepository(final g a) {
         e.f((Object)a, "remoteGqlPredictionsDataSource");
         this.a = a;
         this.b = new ConcurrentHashMap<String, Boolean>();
     }
     
-    public final Object a(String l$1, final c<? super Boolean> c) {
-        Object o = null;
-        Label_0050: {
+    public final Object a(final String l$1, final c<? super Boolean> c) {
+        RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1 redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2 = null;
+        Label_0051: {
             if (c instanceof RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1) {
                 final RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1 redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1 = (RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)c;
                 final int label = redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1.label;
                 if ((label & Integer.MIN_VALUE) != 0x0) {
                     redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1.label = label + Integer.MIN_VALUE;
-                    o = redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1;
-                    break Label_0050;
+                    redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2 = redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1;
+                    break Label_0051;
                 }
             }
-            o = new RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1(this, (c)c);
+            redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2 = new RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1(this, (c)c);
         }
-        Object o2 = ((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).result;
+        Object o = redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.result;
         final CoroutineSingletons coroutine_SUSPENDED = CoroutineSingletons.COROUTINE_SUSPENDED;
-        final int label2 = ((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).label;
+        final int label2 = redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.label;
         RedditCanCreatePredictionInSubredditRepository redditCanCreatePredictionInSubredditRepository;
+        String s2;
         if (label2 != 0) {
             if (label2 != 1) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            l$1 = (String)((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).L$1;
-            redditCanCreatePredictionInSubredditRepository = (RedditCanCreatePredictionInSubredditRepository)((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).L$0;
-            yd.b.k0(o2);
+            final String s = (String)redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.L$1;
+            redditCanCreatePredictionInSubredditRepository = (RedditCanCreatePredictionInSubredditRepository)redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.L$0;
+            d.b4(o);
+            s2 = s;
         }
         else {
-            yd.b.k0(o2);
+            d.b4(o);
             final Boolean b = this.b.get(l$1);
             if (b != null) {
                 return b;
             }
-            final h a = this.a;
-            ((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).L$0 = this;
-            ((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).L$1 = l$1;
-            ((RedditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$1)o).label = 1;
-            o2 = a.a(l$1, (c)o);
-            if (o2 == coroutine_SUSPENDED) {
+            final g a = this.a;
+            redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.L$0 = this;
+            redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.L$1 = l$1;
+            redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2.label = 1;
+            o = a.a(l$1, (c<? super Boolean>)redditCanCreatePredictionInSubredditRepository$canCreatePredictionInSubreddit$2);
+            if (o == coroutine_SUSPENDED) {
                 return coroutine_SUSPENDED;
             }
+            s2 = l$1;
             redditCanCreatePredictionInSubredditRepository = this;
         }
-        final boolean booleanValue = (boolean)o2;
-        redditCanCreatePredictionInSubredditRepository.b.put(l$1, booleanValue);
+        final boolean booleanValue = (boolean)o;
+        redditCanCreatePredictionInSubredditRepository.b.put(s2, booleanValue);
         return booleanValue;
     }
 }

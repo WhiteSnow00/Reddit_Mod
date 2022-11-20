@@ -4,7 +4,8 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.reddit.domain.model.sociallink.SocialLink;
 import java.util.List;
 import kotlin.Metadata;
@@ -19,6 +20,16 @@ public final class SocialLinkDeleteResponse
         e.f((Object)socialLinks, "socialLinks");
         this.ok = ok;
         this.socialLinks = socialLinks;
+    }
+    
+    public static SocialLinkDeleteResponse copy$default(final SocialLinkDeleteResponse socialLinkDeleteResponse, boolean ok, List socialLinks, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            ok = socialLinkDeleteResponse.ok;
+        }
+        if ((n & 0x2) != 0x0) {
+            socialLinks = socialLinkDeleteResponse.socialLinks;
+        }
+        return socialLinkDeleteResponse.copy(ok, socialLinks);
     }
     
     public final boolean component1() {
@@ -65,9 +76,9 @@ public final class SocialLinkDeleteResponse
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SocialLinkDeleteResponse(ok=");
-        r.append(this.ok);
-        r.append(", socialLinks=");
-        return d.o(r, (List)this.socialLinks, ')');
+        final StringBuilder t = a.t("SocialLinkDeleteResponse(ok=");
+        t.append(this.ok);
+        t.append(", socialLinks=");
+        return h.d(t, (List)this.socialLinks, ')');
     }
 }

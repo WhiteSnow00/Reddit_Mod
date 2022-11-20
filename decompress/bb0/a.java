@@ -4,30 +4,41 @@
 
 package bb0;
 
-import kotlin.Result;
-import hg2.j;
-import com.reddit.common.customemojis.Emote;
-import b20.c;
-import hj2.e;
-import kotlinx.coroutines.flow.StateFlowImpl;
-import b20.b;
-import java.util.List;
+import p1.h;
+import ng2.e;
 
-public interface a
+public final class a
 {
-    StateFlowImpl a(final String p0, final String p1, final List p2, final b p3);
+    public final int a;
+    public final String b;
     
-    e<List<c>> b(final String p0, final String p1, final boolean p2);
+    public a(final int a, final String b) {
+        this.a = a;
+        this.b = b;
+    }
     
-    void c(final bb0.c p0, final b p1);
+    @Override
+    public final boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof a)) {
+            return false;
+        }
+        final a a = (a)o;
+        return this.a == a.a && e.a((Object)this.b, (Object)a.b);
+    }
     
-    StateFlowImpl d(final String p0, final String p1, final List p2, final b p3);
+    @Override
+    public final int hashCode() {
+        return this.b.hashCode() + Integer.hashCode(this.a) * 31;
+    }
     
-    void e(final String p0);
-    
-    Object f(final String p0, final b20.e p1, final lg2.c p2);
-    
-    Object g(final String p0, final Emote p1, final lg2.c<? super j> p2);
-    
-    Object h(final String p0, final lg2.c<? super Result<Boolean>> p1);
+    @Override
+    public final String toString() {
+        final StringBuilder t = a.t("CreatorStatTrendData(value=");
+        t.append(this.a);
+        t.append(", timestamp=");
+        return h.c(t, this.b, ')');
+    }
 }

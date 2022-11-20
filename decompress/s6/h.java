@@ -4,335 +4,150 @@
 
 package s6;
 
-import java.util.List;
-import android.graphics.Paint;
-import android.graphics.BlurMaskFilter;
-import android.graphics.BlurMaskFilter$Blur;
-import android.graphics.MaskFilter;
-import android.graphics.ColorFilter;
-import android.graphics.Shader;
-import android.graphics.Shader$TileMode;
-import y6.d;
-import android.graphics.PointF;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import q6.g0;
-import x6.b;
-import t6.c;
-import com.airbnb.lottie.LottieDrawable;
-import t6.r;
-import t6.g;
-import com.airbnb.lottie.model.content.GradientType;
+import android.database.Cursor;
+import com.instabug.library.internal.storage.cache.db.DatabaseManager;
+import com.instabug.library.diagnostics.nonfatals.NonFatals;
+import java.util.Iterator;
+import com.instabug.library.internal.storage.cache.db.SQLiteDatabaseWrapper;
+import java.util.Map;
+import android.content.ContentValues;
+import com.airbnb.lottie.model.content.Mask;
 import java.util.ArrayList;
-import android.graphics.RectF;
-import android.graphics.Path;
-import android.graphics.RadialGradient;
-import android.graphics.LinearGradient;
-import j0.f;
-import t6.a;
+import java.util.List;
+import java.util.Collection;
+import h7.n;
+import h7.p;
+import ok.a;
+import pl2.b;
 
-public final class h implements e, a, k
+public final class h implements b
 {
-    public final String a;
-    public final boolean b;
-    public final com.airbnb.lottie.model.layer.a c;
-    public final f<LinearGradient> d;
-    public final f<RadialGradient> e;
-    public final Path f;
-    public final r6.a g;
-    public final RectF h;
-    public final ArrayList i;
-    public final GradientType j;
-    public final g k;
-    public final t6.f l;
-    public final t6.k m;
-    public final t6.k n;
-    public r o;
-    public r p;
-    public final LottieDrawable q;
-    public final int r;
-    public t6.a<Float, Float> s;
-    public float t;
-    public t6.c u;
+    public Object f;
+    public Object g;
+    public Object h;
     
-    public h(final LottieDrawable q, final com.airbnb.lottie.model.layer.a c, final y6.e e) {
-        this.d = (f<LinearGradient>)new f();
-        this.e = (f<RadialGradient>)new f();
-        final Path f = new Path();
+    public h() {
+        synchronized (a.class) {
+            if (ok.a.j == null) {
+                ok.a.j = new gk.b();
+            }
+            final gk.b j = ok.a.j;
+            monitorexit(a.class);
+            this.f = j;
+            this.g = ok.a.d();
+            this.h = ok.a.h();
+        }
+    }
+    
+    public h(final gl2.b f) {
         this.f = f;
-        this.g = new r6.a(1);
-        this.h = new RectF();
-        this.i = new ArrayList();
-        this.t = 0.0f;
-        this.c = c;
-        this.a = e.g;
-        this.b = e.h;
-        this.q = q;
-        this.j = e.a;
-        f.setFillType(e.b);
-        this.r = (int)(q.f.b() / 32.0f);
-        final t6.a a = e.c.a();
-        this.k = (g)a;
-        a.a((a)this);
-        c.c(a);
-        final t6.a a2 = e.d.a();
-        this.l = (t6.f)a2;
-        a2.a((a)this);
-        c.c(a2);
-        final t6.a a3 = e.e.a();
-        this.m = (t6.k)a3;
-        a3.a((a)this);
-        c.c(a3);
-        final t6.a a4 = e.f.a();
-        this.n = (t6.k)a4;
-        a4.a((a)this);
-        c.c(a4);
-        if (c.l() != null) {
-            (this.s = ((b)c.l().f).a()).a((a)this);
-            c.c(this.s);
-        }
-        if (c.m() != null) {
-            this.u = new t6.c((a)this, c, c.m());
+    }
+    
+    public h(final p f, final n g, final Collection h) {
+        this.f = f;
+        this.g = g;
+        this.h = h;
+    }
+    
+    public h(final List h) {
+        this.h = h;
+        this.f = new ArrayList(h.size());
+        this.g = new ArrayList(h.size());
+        for (int i = 0; i < h.size(); ++i) {
+            ((List)this.f).add(new m((List<c7.a<x6.h>>)((Mask)h.get(i)).b.g));
+            ((List)this.g).add(((Mask)h.get(i)).c.b());
         }
     }
     
-    public final void a(final d7.c c, final Object o) {
-        if (o == g0.d) {
-            ((t6.a<K, Object>)this.l).k(c);
-        }
-        else if (o == g0.K) {
-            final r o2 = this.o;
-            if (o2 != null) {
-                this.c.p((t6.a<?, ?>)o2);
+    public final void a(final lk.b b) {
+        final gk.b b2 = (gk.b)this.f;
+        if (b2.a != null) {
+            b2.b.getClass();
+            zk.a.g("updating app launch");
+            final SQLiteDatabaseWrapper openDatabase = b2.a.openDatabase();
+            final ContentValues contentValues = new ContentValues();
+            final String c = b.c;
+            if (c != null) {
+                contentValues.put("screen_name", c);
             }
-            if (c == null) {
-                this.o = null;
-            }
-            else {
-                ((t6.a)(this.o = new r(c, (Object)null))).a((a)this);
-                this.c.c((t6.a<?, ?>)this.o);
-            }
-        }
-        else if (o == g0.L) {
-            final r p2 = this.p;
-            if (p2 != null) {
-                this.c.p((t6.a<?, ?>)p2);
-            }
-            if (c == null) {
-                this.p = null;
-            }
-            else {
-                this.d.b();
-                this.e.b();
-                ((t6.a)(this.p = new r(c, (Object)null))).a((a)this);
-                this.c.c((t6.a<?, ?>)this.p);
-            }
-        }
-        else if (o == g0.j) {
-            final t6.a<Float, Float> s = this.s;
-            if (s != null) {
-                s.k(c);
-            }
-            else {
-                (this.s = (t6.a<Float, Float>)new r(c, (Object)null)).a((a)this);
-                this.c.c(this.s);
-            }
-        }
-        else {
-            if (o == g0.e) {
-                final t6.c u = this.u;
-                if (u != null) {
-                    u.b.k(c);
-                    return;
-                }
-            }
-            if (o == g0.G) {
-                final t6.c u2 = this.u;
-                if (u2 != null) {
-                    u2.b(c);
-                    return;
-                }
-            }
-            if (o == g0.H) {
-                final t6.c u3 = this.u;
-                if (u3 != null) {
-                    ((t6.a<K, Object>)u3.d).k(c);
-                    return;
-                }
-            }
-            if (o == g0.I) {
-                final t6.c u4 = this.u;
-                if (u4 != null) {
-                    ((t6.a<K, Object>)u4.e).k(c);
-                    return;
-                }
-            }
-            if (o == g0.J) {
-                final t6.c u5 = this.u;
-                if (u5 != null) {
-                    ((t6.a<K, Object>)u5.f).k(c);
-                }
-            }
-        }
-    }
-    
-    public final void b(final RectF rectF, final Matrix matrix, final boolean b) {
-        this.f.reset();
-        for (int i = 0; i < this.i.size(); ++i) {
-            this.f.addPath(((m)this.i.get(i)).T0(), matrix);
-        }
-        this.f.computeBounds(rectF, false);
-        rectF.set(rectF.left - 1.0f, rectF.top - 1.0f, rectF.right + 1.0f, rectF.bottom + 1.0f);
-    }
-    
-    public final int[] c(int[] array) {
-        final r p = this.p;
-        int[] array2 = array;
-        if (p != null) {
-            final Integer[] array3 = (Integer[])p.f();
-            final int length = array.length;
-            final int length2 = array3.length;
-            final int n = 0;
-            int n2 = 0;
-            if (length == length2) {
-                while (true) {
-                    array2 = array;
-                    if (n2 >= array.length) {
+            contentValues.put("duration", Long.valueOf(b.e));
+            openDatabase.update("app_launch", contentValues, "app_launch_id = ?", new String[] { String.valueOf(b.a) });
+            final Map f = b.f;
+            if (f != null) {
+                for (final Map.Entry<String, V> entry : f.entrySet()) {
+                    if (entry.getKey().equals("eal_mus")) {
+                        final ContentValues contentValues2 = new ContentValues();
+                        contentValues2.put("app_launch_id", Long.valueOf(b.a));
+                        contentValues2.put("attribute_key", (String)entry.getKey());
+                        contentValues2.put("attribute_value", (String)entry.getValue());
+                        openDatabase.insert("app_launch_attributes", (String)null, contentValues2);
                         break;
                     }
-                    array[n2] = array3[n2];
-                    ++n2;
                 }
             }
-            else {
-                array = new int[array3.length];
-                int n3 = n;
-                while (true) {
-                    array2 = array;
-                    if (n3 >= array3.length) {
-                        break;
+            openDatabase.close();
+            final zk.a b3 = b2.b;
+            final StringBuilder t = a.t("updating app launch done with id: ");
+            t.append(b.a);
+            final String string = t.toString();
+            b3.getClass();
+            zk.a.g(string);
+        }
+    }
+    
+    public final ArrayList b(final String s) {
+        final gk.b b = (gk.b)this.f;
+        final DatabaseManager a = b.a;
+        final Throwable t = null;
+        final Cursor cursor = null;
+        Throwable t2 = t;
+        if (a != null) {
+            final SQLiteDatabaseWrapper openDatabase = a.openDatabase();
+            Cursor cursor3 = null;
+            Label_0232: {
+                Cursor cursor2;
+                try {
+                    final Cursor query = openDatabase.query("app_launch", (String[])null, "session_id = ?", new String[] { s }, (String)null, (String)null, (String)null);
+                    try {
+                        try {
+                            b.a(openDatabase, query);
+                            openDatabase.close();
+                            if (query != null) {
+                                query.close();
+                            }
+                        }
+                        finally {}
                     }
-                    array[n3] = array3[n3];
-                    ++n3;
+                    catch (final Exception t2) {}
                 }
-            }
-        }
-        return array2;
-    }
-    
-    public final void d(final Canvas canvas, final Matrix localMatrix, int n) {
-        if (this.b) {
-            return;
-        }
-        this.f.reset();
-        for (int i = 0; i < this.i.size(); ++i) {
-            this.f.addPath(((m)this.i.get(i)).T0(), localMatrix);
-        }
-        this.f.computeBounds(this.h, false);
-        Object shader;
-        if (this.j == GradientType.LINEAR) {
-            final int j = this.i();
-            final f<LinearGradient> d = this.d;
-            final long n2 = j;
-            shader = d.e(n2, (Long)null);
-            if (shader == null) {
-                final PointF pointF = ((t6.a<K, PointF>)this.m).f();
-                final PointF pointF2 = ((t6.a<K, PointF>)this.n).f();
-                final d d2 = ((t6.a<K, d>)this.k).f();
-                shader = new LinearGradient(pointF.x, pointF.y, pointF2.x, pointF2.y, this.c(d2.b), d2.a, Shader$TileMode.CLAMP);
-                this.d.g(n2, shader);
-            }
-        }
-        else {
-            final int k = this.i();
-            final f<RadialGradient> e = this.e;
-            final long n3 = k;
-            shader = e.e(n3, (Long)null);
-            if (shader == null) {
-                final PointF pointF3 = ((t6.a<K, PointF>)this.m).f();
-                final PointF pointF4 = ((t6.a<K, PointF>)this.n).f();
-                final d d3 = ((t6.a<K, d>)this.k).f();
-                final int[] c = this.c(d3.b);
-                final float[] a = d3.a;
-                final float x = pointF3.x;
-                final float y = pointF3.y;
-                float n4;
-                if ((n4 = (float)Math.hypot(pointF4.x - x, pointF4.y - y)) <= 0.0f) {
-                    n4 = 0.001f;
+                catch (final Exception t2) {
+                    cursor2 = null;
                 }
-                shader = new RadialGradient(x, y, n4, c, a, Shader$TileMode.CLAMP);
-                this.e.g(n3, shader);
+                finally {
+                    cursor3 = cursor;
+                    break Label_0232;
+                }
+                final zk.a b2 = b.b;
+                final StringBuilder sb = new StringBuilder();
+                sb.append("Error while getting app launches for session: ");
+                sb.append(t2.getMessage());
+                b2.b(sb.toString(), t2);
+                final StringBuilder sb2 = new StringBuilder();
+                sb2.append("Error while getting app launches for session: ");
+                sb2.append(t2.getMessage());
+                NonFatals.reportNonFatal(t2, sb2.toString());
+                t2 = t;
+                if (cursor2 != null) {
+                    cursor2.close();
+                    t2 = t;
+                    return (ArrayList)t2;
+                }
+                return (ArrayList)t2;
+            }
+            if (cursor3 != null) {
+                cursor3.close();
             }
         }
-        ((Shader)shader).setLocalMatrix(localMatrix);
-        ((Paint)this.g).setShader((Shader)shader);
-        final r o = this.o;
-        if (o != null) {
-            ((Paint)this.g).setColorFilter((ColorFilter)o.f());
-        }
-        final t6.a<Float, Float> s = this.s;
-        if (s != null) {
-            final float floatValue = s.f();
-            if (floatValue == 0.0f) {
-                ((Paint)this.g).setMaskFilter((MaskFilter)null);
-            }
-            else if (floatValue != this.t) {
-                ((Paint)this.g).setMaskFilter((MaskFilter)new BlurMaskFilter(floatValue, BlurMaskFilter$Blur.NORMAL));
-            }
-            this.t = floatValue;
-        }
-        final t6.c u = this.u;
-        if (u != null) {
-            u.a(this.g);
-        }
-        n = (int)(n / 255.0f * ((t6.a<K, Integer>)this.l).f() / 100.0f * 255.0f);
-        final r6.a g = this.g;
-        final PointF a2 = c7.f.a;
-        g.setAlpha(Math.max(0, Math.min(255, n)));
-        canvas.drawPath(this.f, (Paint)this.g);
-        ml0.a.A();
-    }
-    
-    public final void f() {
-        this.q.invalidateSelf();
-    }
-    
-    public final void g(final List<s6.c> list, final List<s6.c> list2) {
-        for (int i = 0; i < list2.size(); ++i) {
-            final s6.c c = list2.get(i);
-            if (c instanceof m) {
-                this.i.add(c);
-            }
-        }
-    }
-    
-    public final String getName() {
-        return this.a;
-    }
-    
-    public final void h(final w6.d d, final int n, final ArrayList list, final w6.d d2) {
-        c7.f.d(d, n, list, d2, (k)this);
-    }
-    
-    public final int i() {
-        final int round = Math.round(((t6.a)this.m).d * this.r);
-        final int round2 = Math.round(((t6.a)this.n).d * this.r);
-        final int round3 = Math.round(((t6.a)this.k).d * this.r);
-        int n;
-        if (round != 0) {
-            n = round * 527;
-        }
-        else {
-            n = 17;
-        }
-        int n2 = n;
-        if (round2 != 0) {
-            n2 = n * 31 * round2;
-        }
-        int n3 = n2;
-        if (round3 != 0) {
-            n3 = n2 * 31 * round3;
-        }
-        return n3;
+        return (ArrayList)t2;
     }
 }

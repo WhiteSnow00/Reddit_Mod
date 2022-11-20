@@ -7,13 +7,13 @@ package com.google.android.gms.internal.firebase_auth_api;
 import com.google.android.gms.internal.firebase-auth-api.zzaau;
 import java.io.IOException;
 import java.util.logging.Level;
-import ge.i1;
-import ge.x0;
-import ge.f0;
-import ge.c2;
-import ge.o;
+import he.h1;
+import he.w0;
+import he.f0;
+import he.b2;
+import he.o;
 import java.util.logging.Logger;
-import ge.h;
+import he.h;
 
 public abstract class d extends h
 {
@@ -23,7 +23,13 @@ public abstract class d extends h
     
     static {
         b = Logger.getLogger(com.google.android.gms.internal.firebase-auth-api.d.class.getName());
-        c = c2.e;
+        c = b2.e;
+    }
+    
+    public d() {
+    }
+    
+    public d(final int n) {
     }
     
     public static int b(final String s) {
@@ -86,11 +92,11 @@ public abstract class d extends h
     }
     
     @Deprecated
-    public static int w(int n, final x0 x0, final i1 i1) {
+    public static int w(int n, final w0 w0, final h1 h1) {
         final int d = d(n << 3);
-        final a a = (a)x0;
+        final a a = (a)w0;
         if ((n = a.a()) == -1) {
-            n = i1.c(a);
+            n = h1.c((Object)a);
             a.b(n);
         }
         return d + d + n;
@@ -134,7 +140,7 @@ public abstract class d extends h
     
     public abstract void o(final int p0) throws IOException;
     
-    public abstract void p(final int p0, final x0 p1, final i1 p2) throws IOException;
+    public abstract void p(final int p0, final w0 p1, final h1 p2) throws IOException;
     
     public abstract void q(final int p0, final String p1) throws IOException;
     

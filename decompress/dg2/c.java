@@ -4,15 +4,26 @@
 
 package dg2;
 
-import sg2.e;
-import rg2.l;
-import kf2.g;
+import java.util.AbstractList;
 
-public final class c implements g
+public abstract class c<E> extends AbstractList<E> implements og2.c
 {
-    public final /* synthetic */ l f;
+    @Override
+    public abstract void add(final int p0, final E p1);
     
-    public c(final l f) {
-        this.f = f;
+    public abstract int getSize();
+    
+    @Override
+    public final /* bridge */ E remove(final int n) {
+        return this.removeAt(n);
+    }
+    
+    public abstract E removeAt(final int p0);
+    
+    @Override
+    public abstract E set(final int p0, final E p1);
+    
+    public final /* bridge */ int size() {
+        return this.getSize();
     }
 }

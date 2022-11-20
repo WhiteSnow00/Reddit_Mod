@@ -4,20 +4,24 @@
 
 package androidx.compose.ui.platform;
 
-import ml0.a;
+import java.util.Iterator;
+import java.util.ArrayList;
+import wi2.k;
 
-public interface h1
+public final class h1 implements k<g1>
 {
-    long a();
+    public final ArrayList a;
     
-    float b();
+    public h1() {
+        this.a = new ArrayList();
+    }
     
-    long c();
+    public final void c(final Object o, final String s) {
+        this.a.add(new g1(s, o));
+    }
     
-    long d();
-    
-    default long e() {
-        final float n = 48;
-        return a.c(n, n);
+    @Override
+    public final Iterator<g1> iterator() {
+        return this.a.iterator();
     }
 }

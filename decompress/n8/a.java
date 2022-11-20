@@ -4,44 +4,48 @@
 
 package n8;
 
-import java.io.IOException;
-import com.bumptech.glide.integration.webp.decoder.WebpFrameCacheStrategy;
-import com.bumptech.glide.integration.webp.WebpImage;
-import java.nio.ByteBuffer;
-import r8.d;
-import r8.b;
-import o8.f;
+import com.bumptech.glide.integration.webp.WebpFrame;
 
 public final class a
 {
-    public static final f<Boolean> d;
-    public final b a;
-    public final d b;
-    public final b9.b c;
+    public final int a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public final int f;
+    public final boolean g;
+    public final boolean h;
     
-    static {
-        d = f.a(Boolean.FALSE, "com.bumptech.glide.integration.webp.decoder.AnimatedWebpBitmapDecoder.DisableBitmap");
-    }
-    
-    public a(final b a, final d b) {
+    public a(final int a, final WebpFrame webpFrame) {
         this.a = a;
-        this.b = b;
-        this.c = new b9.b(a, b);
+        this.b = webpFrame.getXOffest();
+        this.c = webpFrame.getYOffest();
+        this.d = webpFrame.getWidth();
+        this.e = webpFrame.getHeight();
+        this.f = webpFrame.getDurationMs();
+        this.g = webpFrame.isBlendWithPreviousFrame();
+        this.h = webpFrame.shouldDisposeToBackgroundColor();
     }
     
-    public final x8.d a(ByteBuffer byteBuffer, int n, final int n2) throws IOException {
-        final int remaining = byteBuffer.remaining();
-        final byte[] array = new byte[remaining];
-        byteBuffer.get(array, 0, remaining);
-        final WebpImage create = WebpImage.create(array);
-        n = ml0.a.N(create.getWidth(), create.getHeight(), n, n2);
-        byteBuffer = (ByteBuffer)new i(this.c, create, byteBuffer, n, WebpFrameCacheStrategy.b);
-        try {
-            ((i)byteBuffer).a();
-            return x8.d.b(this.b, ((i)byteBuffer).getNextFrame());
-        }
-        finally {
-            ((i)byteBuffer).clear();
-        }
+    @Override
+    public final String toString() {
+        final StringBuilder t = a.t("frameNumber=");
+        t.append(this.a);
+        t.append(", xOffset=");
+        t.append(this.b);
+        t.append(", yOffset=");
+        t.append(this.c);
+        t.append(", width=");
+        t.append(this.d);
+        t.append(", height=");
+        t.append(this.e);
+        t.append(", duration=");
+        t.append(this.f);
+        t.append(", blendPreviousFrame=");
+        t.append(this.g);
+        t.append(", disposeBackgroundColor=");
+        t.append(this.h);
+        return t.toString();
     }
 }

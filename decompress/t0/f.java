@@ -4,13 +4,14 @@
 
 package t0;
 
-import hg2.j;
-import lg2.c;
+import cg2.j;
+import gg2.c;
 import n1.d;
+import mg2.a;
 
 public interface f
 {
-    Object a(final d p0, final c<? super j> p1);
+    Object a(final a<d> p0, final c<? super j> p1);
     
-    d b(final d p0);
+    d d(final d p0);
 }

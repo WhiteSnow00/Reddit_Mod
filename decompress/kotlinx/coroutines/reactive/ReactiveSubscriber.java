@@ -4,16 +4,15 @@
 
 package kotlinx.coroutines.reactive;
 
-import gj2.a;
-import sg2.e;
-import gj2.h;
-import yd.b;
+import ng2.e;
+import bj2.h$b;
+import bj2.h;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import a4.a0;
+import zg.a;
 import kotlinx.coroutines.channels.BufferOverflow;
 import kotlinx.coroutines.channels.AbstractChannel;
-import qt2.d;
-import qt2.c;
+import nt2.d;
+import nt2.c;
 
 public final class ReactiveSubscriber<T> implements c<T>
 {
@@ -27,10 +26,10 @@ public final class ReactiveSubscriber<T> implements c<T>
         if (n == 0) {
             n2 = 1;
         }
-        this.h = a0.g(n2, bufferOverflow, 4);
+        this.h = a.e(n2, bufferOverflow, 4);
     }
     
-    public final Object a(final lg2.c<? super T> c) {
+    public final Object a(final gg2.c<? super T> c) {
         Object o = null;
         Label_0047: {
             if (c instanceof ReactiveSubscriber$takeNextOrNull$1) {
@@ -42,7 +41,7 @@ public final class ReactiveSubscriber<T> implements c<T>
                     break Label_0047;
                 }
             }
-            o = new ReactiveSubscriber$takeNextOrNull$1(this, (lg2.c)c);
+            o = new ReactiveSubscriber$takeNextOrNull$1(this, (gg2.c)c);
         }
         final Object result = ((ReactiveSubscriber$takeNextOrNull$1)o).result;
         final CoroutineSingletons coroutine_SUSPENDED = CoroutineSingletons.COROUTINE_SUSPENDED;
@@ -52,22 +51,22 @@ public final class ReactiveSubscriber<T> implements c<T>
             if (label2 != 1) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            b.k0(result);
+            cg.d.b4(result);
             o2 = ((h)result).a;
         }
         else {
-            b.k0(result);
+            cg.d.b4(result);
             final AbstractChannel h = this.h;
             ((ReactiveSubscriber$takeNextOrNull$1)o).label = 1;
-            if ((o2 = h.i((lg2.c)o)) == coroutine_SUSPENDED) {
+            if ((o2 = h.N((gg2.c)o)) == coroutine_SUSPENDED) {
                 return coroutine_SUSPENDED;
             }
         }
-        final Throwable a = gj2.h.a(o2);
+        final Throwable a = bj2.h.a(o2);
         if (a == null) {
             Object o3 = o2;
-            if (o2 instanceof h.b) {
-                gj2.h.a(o2);
+            if (o2 instanceof h$b) {
+                bj2.h.a(o2);
                 o3 = null;
             }
             return o3;
@@ -76,15 +75,15 @@ public final class ReactiveSubscriber<T> implements c<T>
     }
     
     public final void onComplete() {
-        ((a)this.h).P((Throwable)null);
+        ((bj2.a)this.h).Q(null);
     }
     
     public final void onError(final Throwable t) {
-        ((a)this.h).P(t);
+        ((bj2.a)this.h).Q(t);
     }
     
     public final void onNext(final T t) {
-        if (((a)this.h).e((Object)t) instanceof h.b ^ true) {
+        if (((bj2.a<T>)this.h).i(t) instanceof h$b ^ true) {
             return;
         }
         final StringBuilder sb = new StringBuilder();

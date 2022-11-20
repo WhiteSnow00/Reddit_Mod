@@ -4,8 +4,9 @@
 
 package com.reddit.domain.model;
 
-import al0.f0;
-import sg2.e;
+import t5.w;
+import p1.h;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -13,6 +14,10 @@ import kotlin.Metadata;
 public abstract class SubmitPostResult<T>
 {
     private SubmitPostResult() {
+    }
+    
+    public SubmitPostResult(final DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
     
     @Metadata(d1 = { "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\t\u0010\u0007\u001a\u00020\u0003H\u00c6\u0003J\u0013\u0010\b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003H\u00c6\u0001J\u0013\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\f\u001a\u00020\rH\u00d6\u0001J\t\u0010\u000e\u001a\u00020\u0003H\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000f" }, d2 = { "Lcom/reddit/domain/model/SubmitPostResult$MediaPostCreating;", "", "websocketUrl", "", "(Ljava/lang/String;)V", "getWebsocketUrl", "()Ljava/lang/String;", "component1", "copy", "equals", "", "other", "hashCode", "", "toString", "model_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
@@ -23,6 +28,13 @@ public abstract class SubmitPostResult<T>
         public MediaPostCreating(final String websocketUrl) {
             e.f((Object)websocketUrl, "websocketUrl");
             this.websocketUrl = websocketUrl;
+        }
+        
+        public static MediaPostCreating copy$default(final MediaPostCreating mediaPostCreating, String websocketUrl, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                websocketUrl = mediaPostCreating.websocketUrl;
+            }
+            return mediaPostCreating.copy(websocketUrl);
         }
         
         public final String component1() {
@@ -50,7 +62,7 @@ public abstract class SubmitPostResult<T>
         
         @Override
         public String toString() {
-            return f0.n(a.r("MediaPostCreating(websocketUrl="), this.websocketUrl, ')');
+            return h.c(a.t("MediaPostCreating(websocketUrl="), this.websocketUrl, ')');
         }
     }
     
@@ -62,6 +74,13 @@ public abstract class SubmitPostResult<T>
         public PostCreated(final String postId) {
             e.f((Object)postId, "postId");
             this.postId = postId;
+        }
+        
+        public static PostCreated copy$default(final PostCreated postCreated, String postId, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                postId = postCreated.postId;
+            }
+            return postCreated.copy(postId);
         }
         
         public final String component1() {
@@ -89,7 +108,7 @@ public abstract class SubmitPostResult<T>
         
         @Override
         public String toString() {
-            return f0.n(a.r("PostCreated(postId="), this.postId, ')');
+            return h.c(a.t("PostCreated(postId="), this.postId, ')');
         }
     }
     
@@ -102,6 +121,13 @@ public abstract class SubmitPostResult<T>
             e.f((Object)error, "error");
             super(null);
             this.error = error;
+        }
+        
+        public static SubmitError copy$default(final SubmitError submitError, String error, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                error = submitError.error;
+            }
+            return submitError.copy(error);
         }
         
         public final String component1() {
@@ -129,7 +155,7 @@ public abstract class SubmitPostResult<T>
         
         @Override
         public String toString() {
-            return f0.n(a.r("SubmitError(error="), this.error, ')');
+            return h.c(a.t("SubmitError(error="), this.error, ')');
         }
     }
     
@@ -141,6 +167,13 @@ public abstract class SubmitPostResult<T>
         public Success(final T result) {
             super(null);
             this.result = result;
+        }
+        
+        public static Success copy$default(final Success success, Object result, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                result = success.result;
+            }
+            return success.copy(result);
         }
         
         public final T component1() {
@@ -175,7 +208,7 @@ public abstract class SubmitPostResult<T>
         
         @Override
         public String toString() {
-            return wu.a.b(a.r("Success(result="), (Object)this.result, ')');
+            return w.h(a.t("Success(result="), (Object)this.result, ')');
         }
     }
     
@@ -188,6 +221,13 @@ public abstract class SubmitPostResult<T>
             e.f((Object)postSubmitValidationErrors, "postSubmitValidationErrors");
             super(null);
             this.postSubmitValidationErrors = postSubmitValidationErrors;
+        }
+        
+        public static ValidationError copy$default(final ValidationError validationError, PostSubmitValidationErrors postSubmitValidationErrors, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                postSubmitValidationErrors = validationError.postSubmitValidationErrors;
+            }
+            return validationError.copy(postSubmitValidationErrors);
         }
         
         public final PostSubmitValidationErrors component1() {
@@ -215,10 +255,10 @@ public abstract class SubmitPostResult<T>
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("ValidationError(postSubmitValidationErrors=");
-            r.append(this.postSubmitValidationErrors);
-            r.append(')');
-            return r.toString();
+            final StringBuilder t = a.t("ValidationError(postSubmitValidationErrors=");
+            t.append(this.postSubmitValidationErrors);
+            t.append(')');
+            return t.toString();
         }
     }
 }

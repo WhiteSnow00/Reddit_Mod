@@ -172,6 +172,10 @@
         <item quantity="one">Your account has been suspended from Reddit for %d day.</item>
         <item quantity="other">Your account has been suspended from Reddit for %d days.</item>
     </plurals>
+    <plurals name="accounts_fmt_num_followers">
+        <item quantity="one">%1$s follower</item>
+        <item quantity="other">%1$s followers</item>
+    </plurals>
     <plurals name="action_subtitle_days_ban">
         <item quantity="one">Banned for %1$d day</item>
         <item quantity="other">Banned for %1$d days</item>

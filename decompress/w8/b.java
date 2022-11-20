@@ -4,40 +4,71 @@
 
 package w8;
 
-import com.bumptech.glide.load.PreferredColorSpace;
-import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
-import o8.f;
-import com.bumptech.glide.load.resource.bitmap.a;
-import com.bumptech.glide.load.DecodeFormat;
-import x8.d;
-import q8.l;
-import java.io.IOException;
-import o8.g;
-import x8.o;
-import android.graphics.ImageDecoder$Source;
-import o8.h;
+import java.util.ArrayDeque;
+import v8.r;
+import v8.o;
+import p8.d;
+import com.bumptech.glide.load.data.j;
+import v8.m$a;
+import v8.n$a;
+import p8.g;
+import v8.m;
+import java.io.InputStream;
+import v8.f;
+import v8.n;
 
-public abstract class b<T> implements h<ImageDecoder$Source, T>
+public final class b implements n<f, InputStream>
 {
-    public final o a;
+    public static final p8.f<Integer> b;
+    public final m<f, f> a;
     
-    public b() {
-        if (o.j == null) {
-            synchronized (o.class) {
-                if (o.j == null) {
-                    o.j = new o();
+    static {
+        b = p8.f.a(2500, "com.bumptech.glide.load.model.stream.HttpGlideUrlLoader.Timeout");
+    }
+    
+    public b(final m<f, f> a) {
+        this.a = a;
+    }
+    
+    public final n$a buildLoadData(final Object o, final int n, final int n2, final g g) {
+        final f f = (f)o;
+        final m<f, f> a = this.a;
+        final f f2 = f;
+        if (a != null) {
+            final m$a a2 = m$a.a(0, 0, (Object)f);
+            final Object a3 = ((l9.g)a.a).a((Object)a2);
+            Object o2 = m$a.d;
+            synchronized (o2) {
+                ((ArrayDeque<m$a>)o2).offer(a2);
+                monitorexit(o2);
+                if (a3 == null) {
+                    o2 = this.a;
+                    ((ArrayDeque)o2).getClass();
+                    ((l9.g)((m)o2).a).d((Object)m$a.a(0, 0, (Object)f), (Object)f);
                 }
             }
         }
-        this.a = o.j;
+        return new n$a((d)f2, (com.bumptech.glide.load.data.d)new j(f2, g.a(w8.b.b)));
     }
     
-    public final d c(final ImageDecoder$Source imageDecoder$Source, final int n, final int n2, final g g) throws IOException {
-        final DecodeFormat decodeFormat = g.a((f<DecodeFormat>)com.bumptech.glide.load.resource.bitmap.a.f);
-        final DownsampleStrategy downsampleStrategy = g.a(DownsampleStrategy.h);
-        final f j = com.bumptech.glide.load.resource.bitmap.a.j;
-        return this.d(imageDecoder$Source, n, n2, new w8.a(this, n, n2, g.a((f<Object>)j) != null && g.a((f<Boolean>)j), decodeFormat, downsampleStrategy, g.a((f<PreferredColorSpace>)com.bumptech.glide.load.resource.bitmap.a.g)));
+    public final /* bridge */ boolean handles(final Object o) {
+        final f f = (f)o;
+        return true;
     }
     
-    public abstract d d(final ImageDecoder$Source p0, final int p1, final int p2, final w8.a p3) throws IOException;
+    public static final class a implements o<f, InputStream>
+    {
+        public final m<f, f> a;
+        
+        public a() {
+            this.a = (m<f, f>)new m();
+        }
+        
+        public final n<f, InputStream> build(final r r) {
+            return (n<f, InputStream>)new b(this.a);
+        }
+        
+        public final void teardown() {
+        }
+    }
 }

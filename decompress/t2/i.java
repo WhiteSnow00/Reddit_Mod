@@ -6,52 +6,46 @@ package t2;
 
 public final class i
 {
-    public final int a = a;
+    public static final i c;
+    public final float a;
+    public final float b;
     
-    public static String a(final int n) {
-        final int n2 = 0;
-        String s;
-        if (n == 1) {
-            s = "Clip";
-        }
-        else if (n == 2) {
-            s = "Ellipsis";
-        }
-        else {
-            int n3 = n2;
-            if (n == 3) {
-                n3 = 1;
-            }
-            if (n3 != 0) {
-                s = "Visible";
-            }
-            else {
-                s = "Invalid";
-            }
-        }
-        return s;
+    static {
+        c = new i(1.0f, 0.0f);
+    }
+    
+    public i() {
+        this(1.0f, 0.0f);
+    }
+    
+    public i(final float a, final float b) {
+        this.a = a;
+        this.b = b;
     }
     
     @Override
     public final boolean equals(final Object o) {
-        final int a = this.a;
-        final boolean b = o instanceof i;
-        boolean b2 = false;
-        if (b) {
-            if (a == ((i)o).a) {
-                b2 = true;
-            }
+        if (this == o) {
+            return true;
         }
-        return b2;
+        if (!(o instanceof i)) {
+            return false;
+        }
+        final float a = this.a;
+        final i i = (i)o;
+        return a == i.a && this.b == i.b;
     }
     
     @Override
     public final int hashCode() {
-        return Integer.hashCode(this.a);
+        return Float.hashCode(this.b) + Float.hashCode(this.a) * 31;
     }
     
     @Override
     public final String toString() {
-        return a(this.a);
+        final StringBuilder t = a.t("TextGeometricTransform(scaleX=");
+        t.append(this.a);
+        t.append(", skewX=");
+        return aq2.a.n(t, this.b, ')');
     }
 }

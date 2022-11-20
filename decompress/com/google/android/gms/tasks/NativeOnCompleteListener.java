@@ -4,14 +4,12 @@
 
 package com.google.android.gms.tasks;
 
-import ve.g;
-import ve.c;
+import we.g;
+import we.c;
 
 public class NativeOnCompleteListener implements c<Object>
 {
-    public native void nativeOnComplete(final long p0, final Object p1, final boolean p2, final boolean p3, final String p4);
-    
-    public final void z(final g<Object> g) {
+    public final void k(final g<Object> g) {
         Object j = null;
         String message = null;
         Label_0047: {
@@ -28,9 +26,12 @@ public class NativeOnCompleteListener implements c<Object>
                         break Label_0047;
                     }
                 }
-                j = (message = null);
+                j = null;
+                message = null;
             }
         }
         this.nativeOnComplete(0L, j, g.n(), g.l(), message);
     }
+    
+    public native void nativeOnComplete(final long p0, final Object p1, final boolean p2, final boolean p3, final String p4);
 }

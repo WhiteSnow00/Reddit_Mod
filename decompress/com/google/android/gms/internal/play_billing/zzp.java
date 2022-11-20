@@ -111,6 +111,10 @@ public abstract class zzp<E> extends zzm<E> implements List<E>, RandomAccess
         return n3;
     }
     
+    public final /* bridge */ Iterator iterator() {
+        return this.zzh(0);
+    }
+    
     public final int lastIndexOf(@NullableDecl final Object o) {
         final int n = -1;
         if (o == null) {
@@ -132,6 +136,14 @@ public abstract class zzp<E> extends zzm<E> implements List<E>, RandomAccess
         return n3;
     }
     
+    public final /* bridge */ ListIterator listIterator() {
+        return this.zzh(0);
+    }
+    
+    public final /* bridge */ ListIterator listIterator(final int n) {
+        return this.zzh(n);
+    }
+    
     @Deprecated
     public final E remove(final int n) {
         throw new UnsupportedOperationException();
@@ -140,6 +152,10 @@ public abstract class zzp<E> extends zzm<E> implements List<E>, RandomAccess
     @Deprecated
     public final E set(final int n, final E e) {
         throw new UnsupportedOperationException();
+    }
+    
+    public /* bridge */ List subList(final int n, final int n2) {
+        return this.zzf(n, n2);
     }
     
     public int zza(final Object[] array, int i) {

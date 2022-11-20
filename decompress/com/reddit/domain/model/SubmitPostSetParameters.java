@@ -5,13 +5,12 @@
 package com.reddit.domain.model;
 
 import android.os.Parcel;
-import sg2.e;
-import al0.b;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import android.os.Parcelable$Creator;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0013\b\u0087\b\u0018\u0000 62\u00020\u0001:\u00016Bq\u0012\u0006\u0010\u000f\u001a\u00020\u0002\u0012\u0006\u0010\u0010\u001a\u00020\u0002\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\b\u0012\b\b\u0002\u0010\u0015\u001a\u00020\n\u0012\b\b\u0002\u0010\u0016\u001a\u00020\n\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b4\u00105J\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0004\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u0006\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\t\u001a\u0004\u0018\u00010\bH\u00c6\u0003J\t\u0010\u000b\u001a\u00020\nH\u00c6\u0003J\t\u0010\f\u001a\u00020\nH\u00c6\u0003J\u000b\u0010\r\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u000e\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003Jw\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u000f\u001a\u00020\u00022\b\b\u0002\u0010\u0010\u001a\u00020\u00022\b\b\u0002\u0010\u0011\u001a\u00020\u00022\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\u0015\u001a\u00020\n2\b\b\u0002\u0010\u0016\u001a\u00020\n2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0002H\u00c6\u0001J\t\u0010\u001a\u001a\u00020\u0002H\u00d6\u0001J\t\u0010\u001c\u001a\u00020\u001bH\u00d6\u0001J\u0013\u0010\u001f\u001a\u00020\n2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001dH\u00d6\u0003J\t\u0010 \u001a\u00020\u001bH\u00d6\u0001J\u0019\u0010%\u001a\u00020$2\u0006\u0010\"\u001a\u00020!2\u0006\u0010#\u001a\u00020\u001bH\u00d6\u0001R\u001a\u0010\u000f\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000f\u0010&\u001a\u0004\b'\u0010(R\u001a\u0010\u0010\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0010\u0010&\u001a\u0004\b)\u0010(R\u001a\u0010\u0011\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0011\u0010&\u001a\u0004\b*\u0010(R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0012\u0010&\u001a\u0004\b+\u0010(R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010&\u001a\u0004\b,\u0010(R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0014\u0010-\u001a\u0004\b.\u0010/R\u001a\u0010\u0015\u001a\u00020\n8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0015\u00100\u001a\u0004\b\u0015\u00101R\u001a\u0010\u0016\u001a\u00020\n8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0016\u00100\u001a\u0004\b\u0016\u00101R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0017\u0010&\u001a\u0004\b2\u0010(R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0018\u0010&\u001a\u0004\b3\u0010(¨\u00067" }, d2 = { "Lcom/reddit/domain/model/SubmitPostSetParameters;", "Lcom/reddit/domain/model/SubmitParameters;", "", "component1", "component2", "component3", "component4", "component5", "Lcom/reddit/domain/model/DiscussionType;", "component6", "", "component7", "component8", "component9", "component10", "subreddit", "title", "content", "flairText", "flairId", "discussionType", "isNsfw", "isSpoiler", "postSetId", "linkId", "copy", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Ljava/lang/String;", "getSubreddit", "()Ljava/lang/String;", "getTitle", "getContent", "getFlairText", "getFlairId", "Lcom/reddit/domain/model/DiscussionType;", "getDiscussionType", "()Lcom/reddit/domain/model/DiscussionType;", "Z", "()Z", "getPostSetId", "getLinkId", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/DiscussionType;ZZLjava/lang/String;Ljava/lang/String;)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0013\b\u0087\b\u0018\u0000 62\u00020\u0001:\u00016Bq\u0012\u0006\u0010\u000f\u001a\u00020\u0002\u0012\u0006\u0010\u0010\u001a\u00020\u0002\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\b\u0012\b\b\u0002\u0010\u0015\u001a\u00020\n\u0012\b\b\u0002\u0010\u0016\u001a\u00020\n\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b4\u00105J\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0004\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u0006\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\t\u001a\u0004\u0018\u00010\bH\u00c6\u0003J\t\u0010\u000b\u001a\u00020\nH\u00c6\u0003J\t\u0010\f\u001a\u00020\nH\u00c6\u0003J\u000b\u0010\r\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u000e\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003Jw\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u000f\u001a\u00020\u00022\b\b\u0002\u0010\u0010\u001a\u00020\u00022\b\b\u0002\u0010\u0011\u001a\u00020\u00022\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\u0015\u001a\u00020\n2\b\b\u0002\u0010\u0016\u001a\u00020\n2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0002H\u00c6\u0001J\t\u0010\u001a\u001a\u00020\u0002H\u00d6\u0001J\t\u0010\u001c\u001a\u00020\u001bH\u00d6\u0001J\u0013\u0010\u001f\u001a\u00020\n2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001dH\u00d6\u0003J\t\u0010 \u001a\u00020\u001bH\u00d6\u0001J\u0019\u0010%\u001a\u00020$2\u0006\u0010\"\u001a\u00020!2\u0006\u0010#\u001a\u00020\u001bH\u00d6\u0001R\u001a\u0010\u000f\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000f\u0010&\u001a\u0004\b'\u0010(R\u001a\u0010\u0010\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0010\u0010&\u001a\u0004\b)\u0010(R\u001a\u0010\u0011\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0011\u0010&\u001a\u0004\b*\u0010(R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0012\u0010&\u001a\u0004\b+\u0010(R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010&\u001a\u0004\b,\u0010(R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0014\u0010-\u001a\u0004\b.\u0010/R\u001a\u0010\u0015\u001a\u00020\n8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0015\u00100\u001a\u0004\b\u0015\u00101R\u001a\u0010\u0016\u001a\u00020\n8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0016\u00100\u001a\u0004\b\u0016\u00101R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0017\u0010&\u001a\u0004\b2\u0010(R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0018\u0010&\u001a\u0004\b3\u0010(¨\u00067" }, d2 = { "Lcom/reddit/domain/model/SubmitPostSetParameters;", "Lcom/reddit/domain/model/SubmitParameters;", "", "component1", "component2", "component3", "component4", "component5", "Lcom/reddit/domain/model/DiscussionType;", "component6", "", "component7", "component8", "component9", "component10", "subreddit", "title", "content", "flairText", "flairId", "discussionType", "isNsfw", "isSpoiler", "postSetId", "linkId", "copy", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Ljava/lang/String;", "getSubreddit", "()Ljava/lang/String;", "getTitle", "getContent", "getFlairText", "getFlairId", "Lcom/reddit/domain/model/DiscussionType;", "getDiscussionType", "()Lcom/reddit/domain/model/DiscussionType;", "Z", "()Z", "getPostSetId", "getLinkId", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/DiscussionType;ZZLjava/lang/String;Ljava/lang/String;)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class SubmitPostSetParameters extends SubmitParameters
 {
     public static final Parcelable$Creator<SubmitPostSetParameters> CREATOR;
@@ -34,7 +33,7 @@ public final class SubmitPostSetParameters extends SubmitParameters
     }
     
     public SubmitPostSetParameters(final String subreddit, final String title, final String content, final String flairText, final String flairId, final DiscussionType discussionType, final boolean isNsfw, final boolean isSpoiler, final String postSetId, final String linkId) {
-        b.q(subreddit, "subreddit", title, "title", content, "content");
+        b.w(subreddit, "subreddit", title, "title", content, "content");
         super("SubmitPostSetParameters", PostType.SELF, subreddit, title, "", null, null, null, false, false, postSetId, linkId, 992, null);
         this.subreddit = subreddit;
         this.title = title;
@@ -46,6 +45,68 @@ public final class SubmitPostSetParameters extends SubmitParameters
         this.isSpoiler = isSpoiler;
         this.postSetId = postSetId;
         this.linkId = linkId;
+    }
+    
+    public SubmitPostSetParameters(final String s, final String s2, String s3, String s4, String s5, DiscussionType discussionType, boolean b, boolean b2, String s6, String s7, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x4) != 0x0) {
+            s3 = "";
+        }
+        if ((n & 0x8) != 0x0) {
+            s4 = null;
+        }
+        if ((n & 0x10) != 0x0) {
+            s5 = null;
+        }
+        if ((n & 0x20) != 0x0) {
+            discussionType = null;
+        }
+        if ((n & 0x40) != 0x0) {
+            b = false;
+        }
+        if ((n & 0x80) != 0x0) {
+            b2 = false;
+        }
+        if ((n & 0x100) != 0x0) {
+            s6 = null;
+        }
+        if ((n & 0x200) != 0x0) {
+            s7 = null;
+        }
+        this(s, s2, s3, s4, s5, discussionType, b, b2, s6, s7);
+    }
+    
+    public static SubmitPostSetParameters copy$default(final SubmitPostSetParameters submitPostSetParameters, String subreddit, String title, String content, String flairText, String flairId, DiscussionType discussionType, boolean nsfw, boolean spoiler, String postSetId, String linkId, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            subreddit = submitPostSetParameters.getSubreddit();
+        }
+        if ((n & 0x2) != 0x0) {
+            title = submitPostSetParameters.getTitle();
+        }
+        if ((n & 0x4) != 0x0) {
+            content = submitPostSetParameters.getContent();
+        }
+        if ((n & 0x8) != 0x0) {
+            flairText = submitPostSetParameters.getFlairText();
+        }
+        if ((n & 0x10) != 0x0) {
+            flairId = submitPostSetParameters.getFlairId();
+        }
+        if ((n & 0x20) != 0x0) {
+            discussionType = submitPostSetParameters.getDiscussionType();
+        }
+        if ((n & 0x40) != 0x0) {
+            nsfw = submitPostSetParameters.isNsfw();
+        }
+        if ((n & 0x80) != 0x0) {
+            spoiler = submitPostSetParameters.isSpoiler();
+        }
+        if ((n & 0x100) != 0x0) {
+            postSetId = submitPostSetParameters.getPostSetId();
+        }
+        if ((n & 0x200) != 0x0) {
+            linkId = submitPostSetParameters.getLinkId();
+        }
+        return submitPostSetParameters.copy(subreddit, title, content, flairText, flairId, discussionType, nsfw, spoiler, postSetId, linkId);
     }
     
     public final String component1() {
@@ -214,28 +275,28 @@ public final class SubmitPostSetParameters extends SubmitParameters
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SubmitPostSetParameters(subreddit=");
-        r.append(this.getSubreddit());
-        r.append(", title=");
-        r.append(this.getTitle());
-        r.append(", content=");
-        r.append(this.getContent());
-        r.append(", flairText=");
-        r.append(this.getFlairText());
-        r.append(", flairId=");
-        r.append(this.getFlairId());
-        r.append(", discussionType=");
-        r.append(this.getDiscussionType());
-        r.append(", isNsfw=");
-        r.append(this.isNsfw());
-        r.append(", isSpoiler=");
-        r.append(this.isSpoiler());
-        r.append(", postSetId=");
-        r.append(this.getPostSetId());
-        r.append(", linkId=");
-        r.append(this.getLinkId());
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("SubmitPostSetParameters(subreddit=");
+        t.append(this.getSubreddit());
+        t.append(", title=");
+        t.append(this.getTitle());
+        t.append(", content=");
+        t.append(this.getContent());
+        t.append(", flairText=");
+        t.append(this.getFlairText());
+        t.append(", flairId=");
+        t.append(this.getFlairId());
+        t.append(", discussionType=");
+        t.append(this.getDiscussionType());
+        t.append(", isNsfw=");
+        t.append(this.isNsfw());
+        t.append(", isSpoiler=");
+        t.append(this.isSpoiler());
+        t.append(", postSetId=");
+        t.append(this.getPostSetId());
+        t.append(", linkId=");
+        t.append(this.getLinkId());
+        t.append(')');
+        return t.toString();
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -263,6 +324,10 @@ public final class SubmitPostSetParameters extends SubmitParameters
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
     
@@ -292,8 +357,16 @@ public final class SubmitPostSetParameters extends SubmitParameters
             return new SubmitPostSetParameters(string, string2, string3, string4, string5, value, b2, b, parcel.readString(), parcel.readString());
         }
         
+        public /* bridge */ Object createFromParcel(final Parcel parcel) {
+            return this.createFromParcel(parcel);
+        }
+        
         public final SubmitPostSetParameters[] newArray(final int n) {
             return new SubmitPostSetParameters[n];
+        }
+        
+        public /* bridge */ Object[] newArray(final int n) {
+            return this.newArray(n);
         }
     }
 }

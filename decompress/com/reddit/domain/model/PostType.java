@@ -13,6 +13,8 @@ import com.squareup.moshi.o;
 @Keep
 public enum PostType
 {
+    private static final PostType[] $VALUES;
+    
     CROSSPOST, 
     IMAGE, 
     LIVE_AUDIO, 
@@ -27,4 +29,12 @@ public enum PostType
     UNKNOWN, 
     VIDEO, 
     WEBSITE;
+    
+    private static final PostType[] $values() {
+        return new PostType[] { PostType.UNKNOWN, PostType.SELF, PostType.SELF_IMAGE, PostType.IMAGE, PostType.VIDEO, PostType.SUBMITTED_VIDEO, PostType.WEBSITE, PostType.CROSSPOST, PostType.RPAN_VIDEO, PostType.POLL, PostType.MEDIA_GALLERY, PostType.PREDICTION, PostType.PREDICTION_TOURNAMENT, PostType.LIVE_AUDIO };
+    }
+    
+    static {
+        $VALUES = $values();
+    }
 }

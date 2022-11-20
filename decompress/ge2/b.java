@@ -4,27 +4,23 @@
 
 package ge2;
 
-import android.content.ContentResolver;
-import android.provider.Settings$System;
-import android.os.Handler;
-import android.database.ContentObserver;
+import android.graphics.Bitmap$CompressFormat;
 
-public final class b extends ContentObserver
+public final class b
 {
-    public final /* synthetic */ c a;
+    public int a;
+    public int b;
+    public Bitmap$CompressFormat c;
+    public int d;
+    public String e;
+    public String f;
     
-    public b(final c a) {
+    public b(final int a, final int b, final Bitmap$CompressFormat c, final String e, final String f, final c c2) {
         this.a = a;
-        super((Handler)null);
-    }
-    
-    public final void onChange(final boolean b) {
-        final c a = this.a;
-        final ContentResolver contentResolver = a.a.getContentResolver();
-        boolean d = false;
-        if (Settings$System.getInt(contentResolver, "haptic_feedback_enabled", 0) == 1) {
-            d = true;
-        }
-        a.d = d;
+        this.b = b;
+        this.c = c;
+        this.d = 100;
+        this.e = e;
+        this.f = f;
     }
 }

@@ -4,29 +4,27 @@
 
 package kotlinx.serialization.descriptors;
 
-import al0.f0;
-import lg.e0;
 import java.util.Arrays;
 import java.util.Set;
-import ig2.u;
+import dg2.u;
 import java.util.Iterator;
 import kotlin.collections.c;
-import ig2.t;
-import ig2.v;
+import dg2.t;
+import dg2.v;
 import kotlin.Pair;
 import java.util.ArrayList;
-import ig2.m;
-import yd.b;
+import dg2.m;
+import kotlin.collections.b;
 import kotlin.collections.CollectionsKt___CollectionsKt;
-import qj2.a;
-import hg2.f;
+import mj2.a;
+import cg2.f;
 import java.util.Map;
 import java.util.HashSet;
 import java.lang.annotation.Annotation;
 import java.util.List;
-import qj2.h;
-import sj2.l;
-import qj2.e;
+import mj2.h;
+import oj2.l;
+import mj2.e;
 
 public final class SerialDescriptorImpl implements e, l
 {
@@ -44,25 +42,25 @@ public final class SerialDescriptorImpl implements e, l
     public final f l;
     
     public SerialDescriptorImpl(final String a, final h b, int c, final List<? extends e> list, final a a2) {
-        sg2.e.f((Object)a, "serialName");
-        sg2.e.f((Object)b, "kind");
-        sg2.e.f((Object)list, "typeParameters");
+        ng2.e.f((Object)a, "serialName");
+        ng2.e.f((Object)b, "kind");
+        ng2.e.f((Object)list, "typeParameters");
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = (List<Annotation>)a2.a;
-        this.e = CollectionsKt___CollectionsKt.o4((Iterable)a2.b);
+        this.e = CollectionsKt___CollectionsKt.G5((Iterable)a2.b);
         final ArrayList b2 = a2.b;
         c = 0;
         final String[] array = b2.toArray(new String[0]);
-        sg2.e.d((Object)array, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
+        ng2.e.d((Object)array, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
         this.f = array;
-        this.g = yd.b.i((List)a2.d);
+        this.g = if0.a.l((List)a2.d);
         final List[] array2 = a2.e.toArray(new List[0]);
-        sg2.e.d((Object)array2, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
+        ng2.e.d((Object)array2, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
         this.h = array2;
         final ArrayList f = a2.f;
-        sg2.e.f((Object)f, "<this>");
+        ng2.e.f((Object)f, "<this>");
         final boolean[] i = new boolean[f.size()];
         final Iterator iterator = f.iterator();
         while (iterator.hasNext()) {
@@ -70,9 +68,9 @@ public final class SerialDescriptorImpl implements e, l
             ++c;
         }
         this.i = i;
-        final u z1 = kotlin.collections.b.z1(this.f);
-        final ArrayList list2 = new ArrayList<Pair>(m.c3((Iterable)z1, 10));
-        final Iterator iterator2 = z1.iterator();
+        final u i2 = kotlin.collections.b.I2((Object[])this.f);
+        final ArrayList list2 = new ArrayList<Pair>(m.u4((Iterable)i2, 10));
+        final Iterator iterator2 = i2.iterator();
         while (true) {
             final v v = (v)iterator2;
             if (!v.hasNext()) {
@@ -81,9 +79,9 @@ public final class SerialDescriptorImpl implements e, l
             final t t = (t)v.next();
             list2.add(new Pair(t.b, (Object)t.a));
         }
-        this.j = kotlin.collections.c.g1((List)list2);
-        this.k = yd.b.i((List)list);
-        this.l = kotlin.a.b((rg2.a)new SerialDescriptorImpl$_hashCode$2(this));
+        this.j = kotlin.collections.c.E4((List)list2);
+        this.k = if0.a.l((List)list);
+        this.l = kotlin.a.b((mg2.a)new SerialDescriptorImpl$_hashCode$2(this));
     }
     
     public final Set<String> a() {
@@ -97,7 +95,7 @@ public final class SerialDescriptorImpl implements e, l
     
     @Override
     public final int c(final String s) {
-        sg2.e.f((Object)s, "name");
+        ng2.e.f((Object)s, "name");
         final Integer n = this.j.get(s);
         int intValue;
         if (n != null) {
@@ -130,7 +128,7 @@ public final class SerialDescriptorImpl implements e, l
             if (o instanceof SerialDescriptorImpl) {
                 final String h = this.h();
                 final e e = (e)o;
-                if (sg2.e.a((Object)h, (Object)e.h())) {
+                if (ng2.e.a((Object)h, (Object)e.h())) {
                     if (Arrays.equals(this.k, ((SerialDescriptorImpl)o).k)) {
                         if (this.e() == e.e()) {
                             final int e2 = this.e();
@@ -140,10 +138,10 @@ public final class SerialDescriptorImpl implements e, l
                                 if (n >= e2) {
                                     return b2;
                                 }
-                                if (!sg2.e.a((Object)this.d(n).h(), (Object)e.d(n).h())) {
+                                if (!ng2.e.a((Object)this.d(n).h(), (Object)e.d(n).h())) {
                                     break;
                                 }
-                                if (!sg2.e.a((Object)this.d(n).getKind(), (Object)e.d(n).getKind())) {
+                                if (!ng2.e.a((Object)this.d(n).getKind(), (Object)e.d(n).getKind())) {
                                     break;
                                 }
                                 ++n;
@@ -184,7 +182,7 @@ public final class SerialDescriptorImpl implements e, l
     
     @Override
     public final int hashCode() {
-        return this.l.getValue().intValue();
+        return ((Number)this.l.getValue()).intValue();
     }
     
     @Override
@@ -199,6 +197,6 @@ public final class SerialDescriptorImpl implements e, l
     
     @Override
     public final String toString() {
-        return CollectionsKt___CollectionsKt.I3((Iterable)e0.v0(0, this.c), (CharSequence)", ", f0.n(new StringBuilder(), this.a, '('), ")", (rg2.l)new SerialDescriptorImpl$toString$1(this), 24);
+        return CollectionsKt___CollectionsKt.a5((Iterable)zd.b.w1(0, this.c), (CharSequence)", ", p1.h.c(new StringBuilder(), this.a, '('), ")", (mg2.l)new SerialDescriptorImpl$toString$1(this), 24);
     }
 }

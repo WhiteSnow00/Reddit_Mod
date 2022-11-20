@@ -6,6 +6,7 @@ package com.google.android.material.datepicker;
 
 import androidx.fragment.app.Fragment;
 import android.os.Parcelable;
+import java.util.Iterator;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
@@ -22,13 +23,22 @@ public final class r<S> extends x<S>
         if (bundle == null) {
             arguments = ((Fragment)this).getArguments();
         }
-        this.g = (d)arguments.getParcelable("DATE_SELECTOR_KEY");
+        this.g = (d<S>)arguments.getParcelable("DATE_SELECTOR_KEY");
         this.h = (a)arguments.getParcelable("CALENDAR_CONSTRAINTS_KEY");
     }
     
     public final View onCreateView(final LayoutInflater layoutInflater, final ViewGroup viewGroup, final Bundle bundle) {
         final d<S> g = this.g;
-        new r$a(this);
+        new w<S>(this) {
+            public final r a;
+            
+            public final void a(final S n) {
+                final Iterator iterator = this.a.f.iterator();
+                while (iterator.hasNext()) {
+                    ((w)iterator.next()).a((Object)n);
+                }
+            }
+        };
         return g.N();
     }
     

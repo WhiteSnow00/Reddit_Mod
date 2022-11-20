@@ -4,10 +4,10 @@
 
 package com.reddit.domain.modtools.welcomemessage.usecase;
 
-import m20.b;
+import p20.b;
 import com.reddit.domain.modtools.welcomemessage.WelcomeMessageRepository;
 import javax.inject.Provider;
-import se2.d;
+import ne2.d;
 
 public final class GetWelcomeMessageUseCase_Factory implements d<GetWelcomeMessageUseCase>
 {
@@ -29,5 +29,9 @@ public final class GetWelcomeMessageUseCase_Factory implements d<GetWelcomeMessa
     
     public GetWelcomeMessageUseCase get() {
         return newInstance((WelcomeMessageRepository)this.repositoryProvider.get(), (b)this.resourceProvider.get());
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

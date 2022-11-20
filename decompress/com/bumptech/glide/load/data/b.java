@@ -21,7 +21,6 @@ public abstract class b<T> implements d<T>
         this.f = f;
     }
     
-    @Override
     public final void b() {
         final T h = this.h;
         if (h == null) {
@@ -33,25 +32,22 @@ public abstract class b<T> implements d<T>
         catch (final IOException ex) {}
     }
     
-    @Override
     public final DataSource c() {
         return DataSource.LOCAL;
     }
     
-    @Override
     public final void cancel() {
     }
     
-    @Override
-    public final void d(final Priority priority, final a<? super T> a) {
+    public final void d(final Priority priority, final d$a<? super T> d$a) {
         try {
-            a.e(this.h = this.f(this.g, this.f));
+            d$a.e((Object)(this.h = this.f(this.g, this.f)));
         }
         catch (final IOException ex) {
             if (Log.isLoggable("AssetPathFetcher", 3)) {
                 Log.d("AssetPathFetcher", "Failed to load data from asset manager", (Throwable)ex);
             }
-            a.f(ex);
+            d$a.f((Exception)ex);
         }
     }
     

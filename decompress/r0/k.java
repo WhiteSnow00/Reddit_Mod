@@ -4,11 +4,6 @@
 
 package r0;
 
-public final class k implements j
+public interface k
 {
-    public static final k a;
-    
-    static {
-        a = new k();
-    }
 }

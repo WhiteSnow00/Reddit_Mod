@@ -4,7 +4,7 @@
 
 package com.reddit.video.player.internal.extensions;
 
-import sg2.e;
+import ng2.e;
 import android.view.View;
 import kotlin.Metadata;
 

@@ -4,33 +4,95 @@
 
 package nd;
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
-import android.os.Parcel;
-import com.google.android.gms.common.api.Scope;
-import android.os.Parcelable$Creator;
+import android.net.Uri$Builder;
+import android.app.PendingIntent;
+import android.content.pm.PackageManager$NameNotFoundException;
+import xd.c;
+import android.text.TextUtils;
+import vd.d;
+import android.net.Uri;
+import qd.i1;
+import android.content.Intent;
+import android.content.Context;
 
-public final class f implements Parcelable$Creator<Scope>
+public class f
 {
-    public final Object createFromParcel(final Parcel parcel) {
-        final int o = SafeParcelReader.o(parcel);
-        int j = 0;
-        String c = null;
-        while (parcel.dataPosition() < o) {
-            final int int1 = parcel.readInt();
-            final char c2 = (char)int1;
-            if (c2 != '\u0001') {
-                if (c2 != '\u0002') {
-                    SafeParcelReader.n(parcel, int1);
-                }
-                else {
-                    c = SafeParcelReader.c(parcel, int1);
-                }
+    public static final int a;
+    public static final f b;
+    
+    static {
+        a = g.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+        b = new f();
+    }
+    
+    public Intent a(final Context context, int n, final String s) {
+        if (n != 1 && n != 2) {
+            if (n != 3) {
+                return null;
             }
-            else {
-                j = SafeParcelReader.j(parcel, int1);
+            n = i1.a;
+            final Uri fromParts = Uri.fromParts("package", "com.google.android.gms", (String)null);
+            final Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
+            intent.setData(fromParts);
+            return intent;
+        }
+        else {
+            if (context != null && d.a(context)) {
+                n = i1.a;
+                final Intent intent2 = new Intent("com.google.android.clockwork.home.UPDATE_ANDROID_WEAR_ACTION");
+                intent2.setPackage("com.google.android.wearable.app");
+                return intent2;
+            }
+            Object o = a.t("gcore_");
+            ((StringBuilder)o).append(f.a);
+            ((StringBuilder)o).append("-");
+            if (!TextUtils.isEmpty((CharSequence)s)) {
+                ((StringBuilder)o).append(s);
+            }
+            ((StringBuilder)o).append("-");
+            if (context != null) {
+                ((StringBuilder)o).append(context.getPackageName());
+            }
+            ((StringBuilder)o).append("-");
+            while (true) {
+                if (context == null) {
+                    break Label_0178;
+                }
+                try {
+                    ((StringBuilder)o).append(c.a(context).b(0, context.getPackageName()).versionCode);
+                    final String string = ((StringBuilder)o).toString();
+                    n = i1.a;
+                    final Intent intent3 = new Intent("android.intent.action.VIEW");
+                    o = Uri.parse("market://details").buildUpon().appendQueryParameter("id", "com.google.android.gms");
+                    if (!TextUtils.isEmpty((CharSequence)string)) {
+                        ((Uri$Builder)o).appendQueryParameter("pcampaignid", string);
+                    }
+                    intent3.setData(((Uri$Builder)o).build());
+                    intent3.setPackage("com.android.vending");
+                    intent3.addFlags(524288);
+                    return intent3;
+                }
+                catch (final PackageManager$NameNotFoundException ex) {
+                    continue;
+                }
+                break;
             }
         }
-        SafeParcelReader.g(parcel, o);
-        return new Scope(j, c);
+    }
+    
+    public final PendingIntent b(final int n, final int n2, final Context context, final String s) {
+        final Intent a = this.a(context, n, s);
+        if (a == null) {
+            return null;
+        }
+        return PendingIntent.getActivity(context, n2, a, ge.d.a | 0x8000000);
+    }
+    
+    public int c(final Context context, int googlePlayServicesAvailable) {
+        googlePlayServicesAvailable = g.isGooglePlayServicesAvailable(context, googlePlayServicesAvailable);
+        if (g.isPlayServicesPossiblyUpdating(context, googlePlayServicesAvailable)) {
+            return 18;
+        }
+        return googlePlayServicesAvailable;
     }
 }

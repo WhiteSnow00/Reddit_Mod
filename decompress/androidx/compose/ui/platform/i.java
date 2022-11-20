@@ -4,8 +4,8 @@
 
 package androidx.compose.ui.platform;
 
-import a4.s;
-import sg2.e;
+import a4.p;
+import ng2.e;
 import java.util.List;
 import android.view.accessibility.AccessibilityNodeInfo;
 
@@ -20,6 +20,6 @@ public final class i
     public final void a(final AccessibilityNodeInfo accessibilityNodeInfo, final List<String> list) {
         e.f((Object)accessibilityNodeInfo, "node");
         e.f((Object)list, "data");
-        s.k(accessibilityNodeInfo, (List)list);
+        p.n(accessibilityNodeInfo, (List)list);
     }
 }

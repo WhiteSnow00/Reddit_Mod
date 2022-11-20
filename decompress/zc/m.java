@@ -4,26 +4,24 @@
 
 package zc;
 
-import com.google.android.exoplayer2.upstream.cache.c;
-import android.os.ConditionVariable;
+import sg.h;
 
-public final class m extends Thread
+public final class m implements h
 {
-    public final /* synthetic */ ConditionVariable f;
-    public final /* synthetic */ c g;
+    public final int f;
     
-    public m(final c g, final ConditionVariable f) {
-        this.g = g;
+    public m(final int f) {
         this.f = f;
-        super("ExoPlayer:SimpleCacheInit");
     }
     
-    @Override
-    public final void run() {
-        synchronized (this.g) {
-            this.f.open();
-            c.m(this.g);
-            this.g.b.c();
+    public final boolean apply(final Object o) {
+        switch (this.f) {
+            default: {
+                return ((Class)o).isInterface();
+            }
+            case 0: {
+                return o != null;
+            }
         }
     }
 }

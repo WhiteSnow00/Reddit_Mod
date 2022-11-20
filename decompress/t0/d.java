@@ -4,8 +4,8 @@
 
 package t0;
 
-import hg2.j;
-import lg2.c;
+import cg2.j;
+import gg2.c;
 
 public interface d
 {

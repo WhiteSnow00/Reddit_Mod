@@ -4,8 +4,20 @@
 
 package rg2;
 
-import hg2.d;
+import ng2.e;
+import java.util.Random;
 
-public interface b<P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R> extends d<R>
+public final class b extends a
 {
+    public final b$a g;
+    
+    public b() {
+        this.g = new b$a();
+    }
+    
+    public final Random a() {
+        final Random value = ((ThreadLocal<Random>)this.g).get();
+        e.e((Object)value, "implStorage.get()");
+        return value;
+    }
 }

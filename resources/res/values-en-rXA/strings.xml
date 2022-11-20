@@ -185,8 +185,8 @@
     <string name="account_settings_personalization_title">[Þéŕšöñåļîžåţîöñ one two three]</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_description">[Åļļöŵ ûš ţö ûšé ýöûŕ îñţéŕåçţîöñš ŵîţĥ šîţéš åñð åþþš ŵé þåŕţñéŕ ŵîţĥ åñð îñƒöŕḿåţîöñ ţĥåţ öûŕ åðVéŕţîšîñĝ þåŕţñéŕš šéñð ûš ţö šĥöŵ ýöû ɓéţţéŕ åðš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_title">[Þéŕšöñåļîžé åðš ɓåšéð öñ ýöûŕ åçţîVîţý åñð îñƒöŕḿåţîöñ ƒŕöḿ öûŕ þåŕţñéŕš one two three four five six seven eight]</string>
-    <string name="account_settings_personalized_ads_from_activity_description">[Åļļöŵ ûš ţö ûšé ýöûŕ îñţéŕåçţîöñš öñ Ŕéððîţ ţö šĥöŵ ýöû ɓéţţéŕ åðš. one two three four five six seven eight]</string>
-    <string name="account_settings_personalized_ads_from_activity_title">[Þéŕšöñåļîžé åðš ɓåšéð öñ ýöûŕ Ŕéððîţ åçţîVîţý one two three four five]</string>
+    <string name="account_settings_personalized_ads_from_activity_description">[Åļļöŵ ûš ţö ûšé ýöûŕ îñţéŕåçţîöñš öñ Ŕéððîţ åñð åççöûñţ îñƒöŕḿåţîöñ ţö šĥöŵ ýöû ɓéţţéŕ åðš. one two three four five six seven eight nine ten]</string>
+    <string name="account_settings_personalized_ads_from_activity_title">[Þéŕšöñåļîžé åðš ɓåšéð öñ ýöûŕ Ŕéððîţ åçţîVîţý åñð åççöûñţ îñƒö one two three four five six seven]</string>
     <string name="account_settings_personalized_ads_from_third_party_data_description">[Åļļöŵ ûš ţö ûšé ýöûŕ îñţéŕåçţîöñš ŵîţĥ šîţéš åñð åþþš ŵé þåŕţñéŕ ŵîţĥ ţö šĥöŵ ýöû ɓéţţéŕ åðš. one two three four five six seven eight nine ten]</string>
     <string name="account_settings_personalized_ads_from_third_party_data_title">[Þéŕšöñåļîžé åðš ɓåšéð öñ ýöûŕ åçţîVîţý ŵîţĥ öûŕ þåŕţñéŕš one two three four five six seven]</string>
     <string name="account_settings_personalized_ads_from_third_party_info_description">[Åļļöŵ ûš ţö ûšé îñƒöŕḿåţîöñ ţĥåţ öûŕ åðVéŕţîšîñĝ þåŕţñéŕš šéñð ûš ţö šĥöŵ ýöû ɓéţţéŕ åðš. one two three four five six seven eight nine ten]</string>
@@ -200,6 +200,11 @@
     <string name="account_suspended_fpr_message">[Þåššŵöŕð ûþðåţé ŕéQûîŕéð.\10Ţö ķééþ ýöûŕ åççöûñţ šåƒé, çŕéåţé å ñéŵ þåššŵöŕð. one two three four five six seven eight]</string>
     <string name="account_suspended_permanent">[Ýöûŕ åççöûñţ ĥåš ɓééñ þéŕḿåñéñţļý šûšþéñðéð ƒŕöḿ Ŕéððîţ. one two three four five six seven]</string>
     <string name="account_switch_message">[Šîĝñéð îñ åš û/»%s« one two three]</string>
+    <string name="accounts_content_description_close">[Çļöšé one]</string>
+    <string name="accounts_error_block_account">[Fåîļéð ţö ɓļöçķ åççöûñţ one two three]</string>
+    <string name="accounts_error_block_user">[Fåîļéð ţö ɓļöçķ åççöûñţ one two three]</string>
+    <string name="accounts_placeholder_karma_count">[— Ķåŕḿå one two]</string>
+    <string name="accounts_title_edit_profile">[Éðîţ one]</string>
     <string name="achievement_flair_count_template">[+»%1$d« one]</string>
     <string name="achievement_flair_hide_flairs_checkbox_text">[Šĥöŵ Šûþþöŕţéŕ åñð ÅçĥîéVéḿéñţ Fļåîŕ one two three four five]</string>
     <string name="achievement_flair_hide_flairs_checkbox_text_without_powerups">[Šĥöŵ ÅçĥîéVéḿéñţ Fļåîŕ one two three]</string>
@@ -427,7 +432,7 @@
     <string name="action_show_fewer_posts_like_this">[Šĥöŵ ƒéŵéŕ þöšţš ļîķé ţĥîš one two three four]</string>
     <string name="action_show_more_posts_like_this">[Šĥöŵ ḿöŕé þöšţš ļîķé ţĥîš one two three]</string>
     <string name="action_show_original_post">[Šĥöŵ öŕîĝîñåļ þöšţ one two three]</string>
-    <string name="action_sign_up">[Šîĝñ ûþ one two]</string>
+    <string name="action_sign_up">[Šîĝñ Ûþ one two]</string>
     <string name="action_skip">[Šķîþ one]</string>
     <string name="action_sneak_peek">[Šéé ŵĥåţ öţĥéŕš þŕéðîçţéð one two three]</string>
     <string name="action_sort">[Šöŕţ one]</string>
@@ -502,6 +507,10 @@
     <string name="action_yes">[Ýéš one]</string>
     <string name="action_yes_end">[Ýéš, Éñð one two]</string>
     <string name="action_yes_save">[Ýéš, ŠåVé one two]</string>
+    <string name="actioned_approved">[ÅþþŕöVéð one two]</string>
+    <string name="actioned_removed">[ŔéḿöVéð one two]</string>
+    <string name="actioned_removed_as_span">[ŔéḿöVéð åš šþåḿ one two three]</string>
+    <string name="actioned_user_timestamp">[»%1$s« • »%2$s« one]</string>
     <string name="active_chip">[ÅçţîVé one two]</string>
     <string name="active_communities_banner">[ÅçţîVé îñ ţĥéšé çöḿḿûñîţîéš one two three four]</string>
     <string name="active_count_chip">[ÅçţîVé ŵîţĥ çöûñţ one two three]</string>
@@ -533,6 +542,7 @@
     <string name="adjust_clips_on_new_line">[Åðĵûšţ\10Çļîþš one two]</string>
     <string name="adjust_crowd_control_title">[Åðĵûšţ çŕöŵð çöñţŕöļ öñ ţĥîš þöšţ one two three four]</string>
     <string name="adjust_video">[Åðĵûšţ Vîðéö one two]</string>
+    <string name="adjust_your_search">[åðĵûšţ ýöûŕ šéåŕçĥ one two three]</string>
     <string name="ads_promoted_label">[Þŕöḿöţéð one two]</string>
     <string name="agreement">[Ûšéŕ Åĝŕééḿéñţ one two three]</string>
     <string name="agreement_message">[βý çöñţîñûîñĝ, ýöû åĝŕéé ţö öûŕ Ûšéŕ Åĝŕééḿéñţ åñð åçķñöŵļéðĝé ţĥåţ ýöû ûñðéŕšţåñð ţĥé ÞŕîVåçý Þöļîçý. one two three four five six seven eight nine ten eleven]</string>
@@ -662,7 +672,6 @@
     <string name="awards_list_mod_description">[ÉхçļûšîVé ḿöð-ĝîVéñ åŵåŕð one two three]</string>
     <string name="back">[βåçķ one]</string>
     <string name="background_color_chip">[Çûšţöḿ ɓåçķĝŕöûñð çöļöŕ one two three]</string>
-    <string name="backup_format">[β_»%1$s« one]</string>
     <string name="badge_management_tab_titles_item_1">[Ļöýåļţý one two]</string>
     <string name="badge_management_tab_titles_item_2">[ÅçĥîéVéḿéñţ one two]</string>
     <string name="badge_management_tab_titles_item_3">[Šţýļé one]</string>
@@ -820,6 +829,9 @@
     <string name="carousel_create_community_subtitle">[Çŕéåţé ýöûŕ öŵñ åñð ɓéçöḿé ţĥé ñéхţ ɓîĝ ţĥîñĝ. one two three four five six]</string>
     <string name="carousel_create_community_title">[Ţĥéšé çöḿḿûñîţîéš ñöţ ðöîñĝ îţ ƒöŕ ýöû¿ one two three four five]</string>
     <string name="carousel_hide_option_text">[Ĥîðé šûĝĝéšţîöñš ƒŕöḿ »%s« one two three]</string>
+    <string name="carousel_next_button_content_description">[Ñéхţ one]</string>
+    <string name="carousel_pagination_count_format">[»%1$d« / »%2$d« one]</string>
+    <string name="carousel_prev_button_content_description">[ÞŕéVîöûš one two]</string>
     <string name="carousel_show_less_option_text">[Šĥöŵ ḿé ļéšš öƒ ţĥîš one two three]</string>
     <string name="cd_admin">[Åðḿîñ one]</string>
     <string name="cd_back">[βåçķ one]</string>
@@ -885,7 +897,7 @@
     <string name="chat_error_channel_name_blank">[Ĝŕöûþ ñåḿé çåñ\'ţ ɓé ɓļåñķ. one two three four]</string>
     <string name="chat_error_chat_with_yourself">[Ýöû çåñ\'ţ çĥåţ ŵîţĥ ýöûŕšéļƒ. one two three four]</string>
     <string name="chat_error_connect_to_chat">[Fåîļéð ţö çöññéçţ ţö çĥåţ. Þļéåšé ţŕý åĝåîñ ļåţéŕ one two three four five six]</string>
-    <string name="chat_error_create_chat">[Šöḿéţĥîñĝ ŵéñţ ŵŕöñĝ åñð ţĥé çöñVéŕšåţîöñ çöûļðñ\'ţ ɓé çŕéåţéð. one two three four five six seven]</string>
+    <string name="chat_error_create_chat">[Fåîļéð ţö çŕéåţé Çĥåţ one two three]</string>
     <string name="chat_error_create_group_chat">[Fåîļéð ţö çŕéåţé Ĝŕöûþ Çĥåţ one two three four]</string>
     <string name="chat_error_create_subreddit_channel_fail">[Fåîļéð ţö çŕéåţé ŕööḿ, þļéåšé ţŕý åĝåîñ ļåţéŕ. one two three four five six]</string>
     <string name="chat_error_error_data_is_still_loading">[Ðåţå îš šţîļļ ļöåðîñĝ. one two three]</string>
@@ -1084,6 +1096,7 @@
     <string name="comment_replying_to">[Ŕéþļýîñĝ ţö one two]</string>
     <string name="comments_disabled_message">[Çöḿḿéñţš ĥåVé ɓééñ ðîšåɓļéð öñ ţĥîš þöšţ. one two three four five]</string>
     <string name="comments_loading_in_progress">[Ţĥé çöḿḿéñţš åŕé ļöåðîñĝ one two three]</string>
+    <string name="comments_with_query">[Çöḿḿéñţš ŵîţĥ \"»%1$s«\" one two three]</string>
     <string name="common_error_not_authorized">[Ţĥîš ƒéåţûŕé îš çûŕŕéñţļý ûñåVåîļåɓļé. one two three four five]</string>
     <string name="common_error_service_error">[Šöḿéţĥîñĝ\'š ŵŕöñĝ ŵîţĥ ţĥé ţåļķ šéŕVîçé ŕîĝĥţ ñöŵ. Çĥéçķ ɓåçķ ļåţéŕ. one two three four five six seven eight]</string>
     <string name="common_error_user_not_logged_in">[Ļöĝ îñ ţö Ŕéððîţ ţö ĵöîñ ţĥîš ţåļķ. one two three four]</string>
@@ -1122,6 +1135,7 @@
     <string name="community_creation_module_button">[Çŕéåţé Çöḿḿûñîţý one two three]</string>
     <string name="community_creation_module_subtitle">[Ýöû’ŕé ðéƒîñîţéļý öñţö šöḿéţĥîñĝ ĥéŕé… Ķééþ ţĥé çöñVéŕšåţîöñ ĝöîñĝ åñð šþîñ îţ öƒƒ îñţö îţš öŵñ çöḿḿûñîţý. one two three four five six seven eight nine ten eleven]</string>
     <string name="community_creation_module_title">[Šĥöûļð ţĥîš þöšţ ɓé îţš öŵñ çöḿḿûñîţý¿ one two three four five]</string>
+    <string name="community_dot_tooltip">[Éхþļöŕé ýöûŕ çöḿḿûñîţîéš one two three]</string>
     <string name="community_emote_pack_title">[»%1$s« éḿöĵîš one two]</string>
     <string name="community_hub_channel_empty_state_message">[Þöšţ ţö ţĥîš çĥåññéļ ûšîñĝ ţĥé \"»%s«\" ƒļåîŕ one two three four five]</string>
     <string name="community_hub_onboarding_banner_message">[Ţĥé »%1$s« ƒééð îš öþéñ ţö åļļ ḿéḿɓéŕš one two three four]</string>
@@ -1245,6 +1259,7 @@
     <string name="content_desc_instagram">[Îñšţåĝŕåḿ one two]</string>
     <string name="content_desc_item_listing_below_illustration">[šñöö ţĥûḿɓš ûþ îļļûšţŕåţîöñ one two three four]</string>
     <string name="content_desc_item_related_community_icon">[çöḿḿûñîţý îçöñ one two three]</string>
+    <string name="content_desc_mod_actions">[Ḿöð Åçţîöñš Ḿéñû one two three]</string>
     <string name="content_desc_overflow">[ÖVéŕƒļöŵ ḿéñû one two]</string>
     <string name="content_desc_overflow_button">[Éхţŕå Ţåĝš one two]</string>
     <string name="content_desc_related_subreddit_icon">[ŕéļåţéð çöḿḿûñîţý îçöñ one two three]</string>
@@ -1278,13 +1293,14 @@
     <string name="content_description_caret">[çåŕéţ one]</string>
     <string name="content_description_chat_notification">[Ñéŵ çĥåţ ḿéššåĝéš one two three]</string>
     <string name="content_description_clear_video">[Çļéåŕ one]</string>
-    <string name="content_description_close">[Çļöšé one]</string>
+    <string name="content_description_close">[çļöšé one]</string>
     <string name="content_description_close_email_digest_checkbox_widget">[Çļöšé éḿåîļ ðîĝéšţ çĥéçķɓöх ŵîðĝéţ one two three four]</string>
     <string name="content_description_coins_decrement">[Ðéçŕéḿéñţ one two]</string>
     <string name="content_description_coins_increment">[Îñçŕéḿéñţ one two]</string>
     <string name="content_description_collage_category_image">[Çåţéĝöŕý îḿåĝé one two three]</string>
     <string name="content_description_community_avatar">[Çöḿḿûñîţý åVåţåŕ one two three]</string>
     <string name="content_description_community_icon">[Çöḿḿûñîţý îçöñ one two three]</string>
+    <string name="content_description_create_post">[çŕéåţé þöšţ one two]</string>
     <string name="content_description_crop_button">[Çŕöþ one]</string>
     <string name="content_description_direction">[Çöḿḿûñîţý ðîŕéçţîöñ one two three]</string>
     <string name="content_description_dismiss_subreddit">[Ðîšḿîšš šûɓŕéððîţ one two three]</string>
@@ -1647,6 +1663,7 @@
     <string name="empty_inbox_generic_header">[Ŵéļçöḿé ţö çĥåţ¡\10Ļéţ’š šţåŕţ å çöñVéŕšåţîöñ one two three four five]</string>
     <string name="empty_inbox_live_body">[Ŵĥéñ å çöḿḿûñîţý öŕ þéŕšöñ ýöû ƒöļļöŵ ĥöšţš å ļîVé çĥåţ, ýöû’ļļ ƒîñð îţ ĥéŕé. one two three four five six seven eight]</string>
     <string name="empty_inbox_live_header">[ĻîVé çĥåţš ļîVé ĥéŕé one two three]</string>
+    <string name="empty_post_comment_search_body">[Ðöûɓļé-çĥéçķ ýöûŕ šþéļļîñĝ öŕ ţŕý ðîƒƒéŕéñţ ķéýŵöŕðš ţö »%1$s« one two three four five six seven]</string>
     <string name="empty_raised_hands">[Ţĥéŕé åŕé ñö ŕåîšéð ĥåñðš one two three]</string>
     <string name="empty_state_content_cats">[Ţĥåţ’š öķ, ḿåýɓé ýöû ĵûšţ ñééð ţĥé ŕîĝĥţ îñšþîŕåţîöñ. ĤåVé ýöû ĥåð ýöûŕ ðåîļý çåţ ƒîх¿ one two three four five six seven eight nine]</string>
     <string name="empty_state_content_community">[Ţĥåţ’š öķ, ḿåýɓé ýöû ĵûšţ ñééð ţĥé ŕîĝĥţ îñšþîŕåţîöñ. Çĥéçķ öûţ »%1$s«, å þöþûļåŕ çöḿḿûñîţý ƒöŕ ðîšçûššîöñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]</string>
@@ -1662,6 +1679,7 @@
     <string name="empty_state_title_notifications">[Ţûŕñ öñ ñöţîƒîçåţîöñš one two three]</string>
     <string name="empty_trophy_url_error">[Šöŕŕý, ţĥéŕé ðöéšñ\'ţ šééḿ ţö ɓé åñýţĥîñĝ ĥéŕé. one two three four five six]</string>
     <string name="enable_access">[Éñåɓļé Åççéšš one two]</string>
+    <string name="enable_community_hub_flair_feed">[Éñåɓļé Çöḿḿûñîţý Ĥûɓ ƒļåîŕ ƒééð one two three four]</string>
     <string name="enable_gifs_subtitle">[Åļļöŵ ĜÎFš îñ çöḿḿéñţš ûñļöçķéð ŵîţĥ Þöŵéŕûþš. Îţ ḿåý ţåķé å ƒéŵ ḿîñûţéš ţö ûþðåţé. one two three four five six seven eight nine]</string>
     <string name="enable_gifs_title">[ĜÎFš îñ Çöḿḿéñţš one two three]</string>
     <string name="enable_post_flair">[Éñåɓļé þöšţ ƒļåîŕ one two three]</string>
@@ -1792,8 +1810,10 @@
     <string name="error_playback_error">[Šöḿéţĥîñĝ ŵéñţ ŵŕöñĝ. Ţŕý ļîšţéñîñĝ ţö ţĥé ţåļķ åĝåîñ. one two three four five six seven]</string>
     <string name="error_post_hide_failed">[Fåîļéð ţö ĥîðé þöšţ. one two three]</string>
     <string name="error_post_hide_failure">[Fåîļéð ţö ĥîðé þöšţ. one two three]</string>
+    <string name="error_post_saved">[Fåîļéð ţö šåVé þöšţ. one two three]</string>
     <string name="error_post_unhide_failed">[Fåîļéð ţö ûñ-ĥîðé þöšţ. one two three]</string>
     <string name="error_post_unhide_failure">[Fåîļéð ţö ûñ-ĥîðé þöšţ. one two three]</string>
+    <string name="error_post_unsaved">[Fåîļéð ţö ûñšåVé þöšţ. one two three]</string>
     <string name="error_prediction_failed">[Þŕéðîçţîöñ ƒåîļéð one two three]</string>
     <string name="error_remove_failure">[Fåîļéð ţö ŕéḿöVé þöšţ. one two three]</string>
     <string name="error_report_comment">[Fåîļéð ţö ŕéþöŕţ çöḿḿéñţ. one two three]</string>
@@ -1916,6 +1936,8 @@
     <string name="explore_topics_du_title">[Ŵĥåţ ðö ýöû ŵåñţ ţö šéé ḿöŕé öƒ¿ one two three four]</string>
     <string name="exposed_dropdown_menu_content_description">[Šĥöŵ ðŕöþðöŵñ ḿéñû one two three]</string>
     <string name="external_video_description">[νîðéö ÞŕéVîéŵ one two]</string>
+    <string name="failed_to_create_conversation_error">[Šöḿéţĥîñĝ ŵéñţ ŵŕöñĝ åñð ţĥé çöñVéŕšåţîöñ çöûļðñ\'ţ ɓé çŕéåţéð. one two three four five six seven]</string>
+    <string name="failed_to_create_invite_link">[Fåîļéð ţö çŕéåţé ļîñķ one two three]</string>
     <string name="failed_to_follow_error">[Fåîļéð ţö ƒöļļöŵ »%s« one two three]</string>
     <string name="failed_to_join_error">[Fåîļéð ţö ĵöîñ »%s« one two three]</string>
     <string name="fallback_menu_item_copy_link">[Çöþý ļîñķ one two]</string>
@@ -2338,6 +2360,7 @@
     <string name="image_placeholder">[Îḿåĝé þļåçéĥöļðéŕ one two three]</string>
     <string name="image_posts_subtitle">[Åļļöŵ îḿåĝéš ûþļöåðéð ðîŕéçţļý ţö Ŕéððîţ åš ŵéļļ åš ļîñķš ţö þöþûļåŕ îḿåĝé ĥöšţîñĝ šîţéš šûçĥ åš Îḿĝûŕ one two three four five six seven eight nine ten eleven]</string>
     <string name="image_posts_title">[Îḿåĝé þöšţš one two]</string>
+    <string name="image_processing">[Îḿåĝé þŕöçéššîñĝ one two three]</string>
     <string name="import_nft_description">[Çöþý ýöûŕ þûɓļîç åððŕéšš, þåšţé îţ îñ ýöûŕ éхţéŕñåļ ŵåļļéţ åñð çöḿþļéţé ţĥé ţŕåñšƒéŕ öûţšîðé Ŕéððîţ. Öñçé çöḿþļéţé, ýöûŕ ÑFŢ ŵîļļ åþþéåŕ îñ ýöûŕ åVåţåŕš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven]</string>
     <string name="import_nft_screen_title">[Îḿþöŕţ ţö νåûļţ one two three]</string>
     <string name="import_nft_subtitle">[Îḿþöŕţ ýöûŕ ÑFŢ ţö νåûļţ one two three]</string>
@@ -2361,7 +2384,7 @@
     <string name="incognito_session_exit_screen_title">[Åñöñýḿöûš βŕöŵšîñĝ éñðéð one two three]</string>
     <string name="incognito_session_timeout_description_account">[Šîñçé ýöû ŵéŕé îñåçţîVé ƒöŕ å ŵĥîļé, ýöû\'Vé ɓééñ ŕéţûŕñéð ţö ýöûŕ û/»%1$s« åççöûñţ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
     <string name="incognito_session_timeout_description_logout">[Šîñçé ýöû ŵéŕé îñåçţîVé ƒöŕ å ŵĥîļé, ýöû\'Vé ɓééñ ļöĝĝéð öûţ. one two three four five six seven]</string>
-    <string name="indeterminate">[Ñéîţĥéŕ çĥéçķéð ñöŕ ûñçĥéçķéð one two three four]</string>
+    <string name="indeterminate">[Þåŕţîåļļý çĥéçķéð one two three]</string>
     <string name="india">[Îñðîå one]</string>
     <string name="indicator_approved">[ÅþþŕöVéð îñðîçåţöŕ one two three]</string>
     <string name="indicator_deleted">[Ðéļéţéð îñðîçåţöŕ one two three]</string>
@@ -2483,7 +2506,7 @@
     <string name="invite_friends_trophy_description">[ÎñVîţé ýöûŕ ƒŕîéñðš ţö ðöŵñļöåð ţĥé Ŕéððîţ åþþ åñð ĝéţ ţĥîš ƒŕîéñðļý ţŕöþĥý¡ one two three four five six seven eight]</string>
     <string name="invite_friends_trophy_title">[ÎñVîţé ýöûŕ ƒŕîéñðš ţö Ŕéððîţ. βéçåûšé ţŕöþĥý. one two three four five six]</string>
     <string name="invite_link_copied">[Ļîñķ çöþîéð¡ one two]</string>
-    <string name="invite_link_copy_error">[Fåîļéð ţö çŕéåţé ļîñķ one two three]</string>
+    <string name="invite_link_copy_error">[Fåîļéð ţö çöþý ļîñķ one two three]</string>
     <string name="invite_link_create_error">[Fåîļéð ţö çŕéåţé ļîñķ one two three]</string>
     <string name="invite_link_easy_access_tooltip">[Ļöñĝ þŕéšš ţö çöþý çĥåţ ļîñķ one two three four]</string>
     <string name="invite_link_expired_error">[Ţĥîš ļîñķ ĥåš éхþîŕéð one two three]</string>
@@ -2753,7 +2776,6 @@
     <string name="label_create_vault_use_existing">[Ûšé Éхîšţîñĝ νåûļţ one two three]</string>
     <string name="label_create_your_feed">[Çŕéåţé ýöûŕ ĥöḿé ƒééð one two three]</string>
     <string name="label_create_your_profile">[Çŕéåţé ýöûŕ þŕöƒîļé one two three]</string>
-    <string name="label_creator_community">[Çŕéåţöŕ Çöḿḿûñîţý one two three]</string>
     <string name="label_crosspost">[Çöḿḿûñîţý one two]</string>
     <string name="label_current_balance">[Ýöûŕ çûŕŕéñţ ɓåļåñçé îš »%1$s« one two three]</string>
     <string name="label_current_user_awarder">[»%1$s« (ýöû) one two]</string>
@@ -3056,7 +3078,6 @@
     <string name="label_more_in_live">[Ḿöŕé îñ Ŕéððîţ ĻîVé one two three]</string>
     <string name="label_more_trending_posts">[Ḿöŕé ţŕéñðîñĝ þöšţš one two three]</string>
     <string name="label_my_profile">[Ḿý þŕöƒîļé one two]</string>
-    <string name="label_my_reddit">[Ḿý Ŕéððîţ one two]</string>
     <string name="label_name">[Ñåḿé one]</string>
     <string name="label_net_dg_content">[ÑéţžÐĜ Çöñţéñţ one two three]</string>
     <string name="label_network_config">[Ñéţŵöŕķ çöñƒîĝ one two three]</string>
@@ -3144,6 +3165,7 @@
     <string name="label_personalization_settings">[Þéŕšöñåļîžåţîöñ one two three]</string>
     <string name="label_pick_username">[Þîçķ ûšéŕñåḿé one two]</string>
     <string name="label_pinned_posts">[Þîññéð Þöšţš one two]</string>
+    <string name="label_pinned_posts_collapsed">[Þîññéð Þöšţš (»%1$d«) one two three]</string>
     <string name="label_place">[Þļåçé one]</string>
     <string name="label_place_tile">[Þļåçé ýöûŕ ţîļé one two three]</string>
     <string name="label_points_info_title">[Åɓöûţ Ţĥé Þöîñţš one two three]</string>
@@ -4459,6 +4481,7 @@
     <string name="nsfw_popular">[ŕ/þöþûļåŕ one two]</string>
     <string name="nsfw_search_banner_content">[Çöñƒîŕḿ ýöû åŕé öVéŕ 18 åñð ûþðåţé ýöûŕ šéţţîñĝš ţö šéé þöţéñţîåļļý éхþļîçîţ çöñţéñţ. one two three four five six seven eight nine]</string>
     <string name="nsfw_search_banner_setting_button">[ÛÞÐÅŢÉ ŠÉŢŢÎÑĜŠ one two three]</string>
+    <string name="nsfw_search_banner_setting_button_updated">[Ûþðåţé Šéţţîñĝš one two three]</string>
     <string name="nsfw_search_banner_title">[šéåŕçĥ ŕéšûļţš åŕé ĥîððéñ one two three]</string>
     <string name="nsfw_search_banner_title_updated">[ÑŠFŴ šéåŕçĥ ŕéšûļţš åŕé ĥîððéñ one two three four]</string>
     <string name="nsfw_update_settings">[Ûþðåţé šéţţîñĝš one two three]</string>
@@ -4470,6 +4493,16 @@
     <string name="offer_survey_toast_2">[Ţåķé öûŕ öñé-ḿîñûţé šûŕVéý. one two three four]</string>
     <string name="okay">[Öķåý one]</string>
     <string name="on">[Öñ one]</string>
+    <string name="onboarding_carousel_comment_subtitle">[Ţåþ ţĥé çöḿḿéñţ îçöñ ţö Vîéŵ ţĥé çöñVéŕšåţîöñ åñð ĵûḿþ îñ ŵîţĥ ýöûŕ öŵñ ţĥöûĝĥţš. one two three four five six seven eight nine]</string>
+    <string name="onboarding_carousel_comment_title">[Çĥéçķ ţĥé çöḿḿéñţš one two three]</string>
+    <string name="onboarding_carousel_home_subtitle">[Šéé þöšţš ƒŕöḿ çöḿḿûñîţîéš ýöû’Vé ĵöîñéð åñð öñéš ŵé ţĥîñķ ýöû’ļļ ļîķé. one two three four five six seven eight]</string>
+    <string name="onboarding_carousel_home_title">[βŕöŵšé ýöûŕ ĥöḿé ƒééð one two three]</string>
+    <string name="onboarding_carousel_join_subtitle">[νîéŵ å çöḿḿûñîţý ɓý ţåþþîñĝ ţĥéîŕ ñåḿé. Ĵöîñ ţö šéé ţĥéîŕ þöšţš îñ ýöûŕ ĥöḿé ƒééð. one two three four five six seven eight nine]</string>
+    <string name="onboarding_carousel_join_title">[Ĵöîñ ḿöŕé çöḿḿûñîţîéš one two three]</string>
+    <string name="onboarding_carousel_search_subtitle">[Ţåþ ţĥé šéåŕçĥ îçöñ ţö ļööķ ƒöŕ ñéŵ çöḿḿûñîţîéš, ĥöñéšţ ðîšçûššîöñš, åñð ḿöŕé. one two three four five six seven eight nine]</string>
+    <string name="onboarding_carousel_search_title">[Šéåŕçĥ ƒöŕ åñýţĥîñĝ one two three]</string>
+    <string name="onboarding_carousel_upvote_subtitle">[νöţîñĝ ĥéļþš šûŕƒåçé ţĥé ɓéšţ þöšţš ţö ýöû åñð öţĥéŕ ŕéððîţöŕš. Ýöûŕ Vöţé îš åñöñýḿöûš. one two three four five six seven eight nine]</string>
+    <string name="onboarding_carousel_upvote_title">[ÛþVöţé ţĥîñĝš ýöû ļîķé one two three]</string>
     <string name="onboarding_chat_topic_selection_subtitle">[Çĥööšé å ţöþîç ýöû’ŕé îñţö, åñð ŵé’ļļ çŕéåţé å šḿåļļ çĥåţ ĝŕöûþ ƒöŕ îţ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
     <string name="onboarding_cta_button">[Ĥöšţ å ţåļķ one two]</string>
     <string name="onboarding_outro_one_line">[Ļéţ’š ĝéţ ţö ţĥé ĝööð þåŕţ one two three four]</string>
@@ -5238,6 +5271,7 @@
     <string name="reddit_live_chat_warning_description">[Ýöûŕ ḿéššåĝéš ĥåVé ɓééñ ƒļåĝĝéð ƒöŕ Vîöļåţîñĝ Ŕéððîţ’š &lt;a href=https://www.reddit.com/help/contentpolicy/&gt;Çöñţéñţ Þöļîçý.&lt;/a&gt; ĤåVé ƒûñ çĥåţţîñĝ, ɓûţ îƒ ýöû’ŕé ƒļåĝĝéð ḿûļţîþļé ţîḿéš ýöû ḿåý ļöšé ţĥé åɓîļîţý ţö þåŕţîçîþåţé îñ Ŕéððîţ ĻîVé çĥåţš one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen]</string>
     <string name="reddit_live_chat_warning_muted_description">[ βéçåûšé ýöû’Vé ɓééñ ƒļåĝĝéð ḿûļţîþļé ţîḿéš ƒöŕ Vîöļåţîñĝ Ŕéððîţ’š &lt;a href=https://www.reddit.com/help/contentpolicy/&gt;Çöñţéñţ Þöļîçý.&lt;/a&gt;, ţĥé šýšţéḿ ĥåš ŕéḿöVéð ýöûŕ åɓîļîţý ţö çĥåţ îñ Ŕéððîţ ĻîVé. Ţĥîš çåñ’ţ ɓé ûñðöñé (ñöţ éVéñ ɓý å ḿöð), ɓûţ åƒţéŕ 24 ĥöûŕš ýöû’ļļ ɓé åɓļé ţö çĥåţ åĝåîñ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]</string>
     <string name="reddit_live_default_stream_prompt">[ĻîVé šţŕéåḿ ýöûŕšéļƒ ţö ŕ/»%1$s«¡ one two three four]</string>
+    <string name="reddit_logo_icon">[Ŕéððîţ ļöĝö one two]</string>
     <string name="reddit_premium_icon_content_description">[Ŕéððîţ Þŕéḿîûḿ one two three]</string>
     <string name="reddit_recap">[Ŕéçåþ one]</string>
     <string name="reddit_recap_title">[Ŕéððîţ Ŕéçåþ one two]</string>
@@ -5337,6 +5371,8 @@
     <string name="revealed_message_survey_gratitude">[Ţĥåñķš ýöû ƒöŕ ýöûŕ ƒééðɓåçķ. one two three four]</string>
     <string name="rising_guided_search_item">[Ŕîšîñĝ îñ »%1$s« one two]</string>
     <string name="ritual_link_cta">[Åðð one]</string>
+    <string name="ritual_post_unit_non_user">[Åðð ýöûŕš one two]</string>
+    <string name="ritual_post_unit_user">[Åðð ḿöŕé one two]</string>
     <string name="ritual_selection_add_post">[Ñéŵ þöšţ one two]</string>
     <string name="ritual_selection_select_topic_title">[öŕ šţåŕţ ŵîţĥ å ţöþîç one two three]</string>
     <string name="ritual_selection_title">[Çŕéåţé å þöšţ one two]</string>
@@ -5347,7 +5383,10 @@
     <string name="russia">[Ŕûššîå one two]</string>
     <string name="safe_search_banner_content_off">[Ýöû’ļļ šéé åðûļţ åñð Ñöţ Šåƒé ƒöŕ Ŵöŕķ (ÑŠFŴ) šéåŕçĥ ŕéšûļţš ûñļéšš ýöû ţûŕñ Šåƒé Šéåŕçĥ öñ one two three four five six seven eight nine ten]</string>
     <string name="safe_search_banner_content_on">[Ýöû ŵöñ’ţ šéé åðûļţ öŕ Ñöţ Šåƒé ƒöŕ Ŵöŕķ (ÑŠFŴ) šéåŕçĥ ŕéšûļţš ûñļéšš ýöû ţûŕñ Šåƒé Šéåŕçĥ öƒƒ one two three four five six seven eight nine ten]</string>
+    <string name="safe_search_banner_cta_text">[Ûþðåţé one two]</string>
     <string name="safe_search_banner_title">[ŠÅFÉ ŠÉÅŔÇĤ one two]</string>
+    <string name="safe_search_banner_title_off">[Šåƒé Šéåŕçĥ îš Öƒƒ one two three]</string>
+    <string name="safe_search_banner_title_on">[Šåƒé Šéåŕçĥ îš Öñ one two three]</string>
     <string name="safe_search_filter_default">[Šåƒé Šéåŕçĥ one two]</string>
     <string name="safe_search_off">[ÖFF one]</string>
     <string name="safe_search_off_description">[Ţöĝĝļé Šåƒé Šéåŕçĥ öñ ţö éхçļûðé ÑŠFŴ (Ñöţ Šåƒé ƒöŕ Ŵöŕķ) åñð åðûļţ çöñţéñţ ƒŕöḿ ýöûŕ šéåŕçĥ ŕéšûļţš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]</string>
@@ -5400,6 +5439,7 @@
     <string name="search_more_communities">[Šéé åļļ one two]</string>
     <string name="search_more_results">[Šéé ḿöŕé one two]</string>
     <string name="search_new_posts_description">[ñéŵ þöšţš one two]</string>
+    <string name="search_post_comments_hint">[Šéåŕçĥ Çöḿḿéñţš one two three]</string>
     <string name="search_preview_image_content_description">[ÞŕéVîéŵ ţĥûḿɓñåîļ ƒöŕ šéåŕçĥ ŕéšûļţ one two three four]</string>
     <string name="search_relevance_description">[ŕéļéVåñţ þöšţš one two three]</string>
     <string name="search_result_button">[Ŕéšûļţš ƒöŕ \"»%1$s«…\" one two three]</string>
@@ -5466,10 +5506,6 @@
     <string name="share_card_hide_avatar">[Ĥîðé åVåţåŕ one two]</string>
     <string name="share_card_hide_username">[Ĥîðé ûšéŕñåḿé one two]</string>
     <string name="share_card_karma_label">[ĶÅŔḾÅ one]</string>
-    <string name="share_card_level_common">[ÇÖḾḾÖÑ one two]</string>
-    <string name="share_card_level_epic">[ÉÞÎÇ one]</string>
-    <string name="share_card_level_legendary">[ĻÉĜÉÑÐÅŔÝ one two]</string>
-    <string name="share_card_level_rare">[ŔÅŔÉ one]</string>
     <string name="share_cards_content_description">[Šĥåŕé Çåŕðš one two]</string>
     <string name="share_cards_credit_logo_description">[Ŕéððîţ one two]</string>
     <string name="share_cards_credit_template_subreddit">[Þöšţéð îñ ŕ/ one two]</string>
@@ -5734,6 +5770,7 @@
     <string name="success_post_removed">[Þöšţ ĥåš ɓééñ ŕéḿöVéð. one two three]</string>
     <string name="success_post_removed_spam">[Þöšţ ĥåš ɓééñ ŕéḿöVéð åš šþåḿ. one two three four]</string>
     <string name="success_post_save">[Þöšţ šåVéð¡ one two]</string>
+    <string name="success_post_saved">[Þöšţ šåVéð¡ one two]</string>
     <string name="success_post_subscribe">[Þöšţ šûɓšçŕîɓéð¡ one two three]</string>
     <string name="success_post_undistinguish">[Ţĥîš þöšţ îš ñö ļöñĝéŕ ðîšţîñĝûîšĥéð. one two three four five]</string>
     <string name="success_post_unhidden">[Þöšţ ûñĥîððéñ¡ one two three]</string>
@@ -5742,6 +5779,7 @@
     <string name="success_post_unmarked_spoiler">[Ţĥé þöšţ îš ñöŵ ûñḿåŕķéð šþöîļéŕ. one two three four]</string>
     <string name="success_post_unpin">[Þöšţ ĥåš ɓééñ ûñþîññéð. one two three]</string>
     <string name="success_post_unsave">[Þöšţ ûñšåVéð¡ one two]</string>
+    <string name="success_post_unsaved">[Þöšţ ûñšåVéð¡ one two]</string>
     <string name="success_post_unsubscribed">[Þöšţ ûñšûɓšçŕîɓéð¡ one two three]</string>
     <string name="success_report_complaint">[Îƒ ýöû ţĥîñķ çöñţéñţ öñ Ŕéððîţ Vîöļåţéš ýöûŕ îñţéļļéçţûåļ þŕöþéŕţý, ýöû çåñ ƒîļé å çöḿþļåîñţ. Ûšé ţĥé ļîñķ ɓéļöŵ: one two three four five six seven eight nine ten eleven twelve]</string>
     <string name="success_report_thanks">[Ţĥåñķš ƒöŕ ļéţţîñĝ ûš ķñöŵ¡ \10\10Ŵé\'Vé ŕéçéîVéð ýöûŕ ŕéþöŕţ. Ĥéŕé åŕé šöḿé ţĥîñĝš ýöû çåñ ðö: one two three four five six seven eight nine ten]</string>
@@ -6137,6 +6175,7 @@
     <string name="vault_feed_screen_empty_vault_description_link">[Ļéåŕñ ĥöŵ ţö ĝéţ Þöîñţš ĥéŕé. one two three four]</string>
     <string name="vault_feed_screen_empty_vault_title">[Ýöûŕ νåûļţ îš éḿþţý one two three]</string>
     <string name="vault_feed_screen_learn_points_section_title">[Ļéåŕñ ḿöŕé one two]</string>
+    <string name="vault_feed_screen_send_points">[Šéñð Þöîñţš one two]</string>
     <string name="vault_help_email">[šþšûþþöŕţ@ŕéððîţ.çöḿ one two three]</string>
     <string name="vault_help_subject">[νåûļţ Fééðɓåçķ (Åñðŕöîð »%1$s«) one two three]</string>
     <string name="vault_options_menu_description">[Åççéšš ýöûŕ Våûļţ öþţîöñš one two three]</string>

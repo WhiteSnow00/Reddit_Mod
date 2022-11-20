@@ -7,11 +7,11 @@ package com.google.android.flexbox;
 import android.view.ViewGroup$MarginLayoutParams;
 import android.os.Parcel;
 import android.os.Parcelable$Creator;
-import ed.b;
-import al0.g7;
+import fd.b;
 import androidx.recyclerview.widget.RecyclerView$a0;
 import androidx.recyclerview.widget.x;
 import android.os.Parcelable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView$Adapter;
 import android.graphics.PointF;
 import androidx.recyclerview.widget.e0;
@@ -25,21 +25,21 @@ import android.content.Context;
 import android.util.SparseArray;
 import androidx.recyclerview.widget.f0;
 import androidx.recyclerview.widget.RecyclerView$b0;
-import androidx.recyclerview.widget.RecyclerView;
-import ed.c;
+import androidx.recyclerview.widget.RecyclerView$v;
+import fd.c;
 import java.util.List;
 import android.view.View;
 import android.graphics.Rect;
 import androidx.recyclerview.widget.RecyclerView$a0$b;
-import ed.a;
+import fd.a;
 import androidx.recyclerview.widget.RecyclerView$o;
 
-public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, RecyclerView$a0$b
+public class FlexboxLayoutManager extends RecyclerView$o implements a, RecyclerView$a0$b
 {
     public static final Rect D;
     public View A;
     public int B;
-    public com.google.android.flexbox.a.a C;
+    public a$a C;
     public int e;
     public int f;
     public int g;
@@ -47,15 +47,15 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     public int i;
     public boolean j;
     public boolean k;
-    public List<ed.c> l;
+    public List<c> l;
     public final com.google.android.flexbox.a m;
-    public RecyclerView.v n;
+    public RecyclerView$v n;
     public RecyclerView$b0 o;
-    public c p;
-    public a q;
+    public FlexboxLayoutManager.FlexboxLayoutManager$c p;
+    public FlexboxLayoutManager.FlexboxLayoutManager$a q;
     public f0 r;
     public f0 s;
-    public d t;
+    public FlexboxLayoutManager.FlexboxLayoutManager$d t;
     public int u;
     public int v;
     public int w;
@@ -69,16 +69,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     
     public FlexboxLayoutManager(final Context z) {
         this.i = -1;
-        this.l = new ArrayList<ed.c>();
-        this.m = new com.google.android.flexbox.a((ed.a)this);
-        this.q = new a();
+        this.l = new ArrayList<c>();
+        this.m = new com.google.android.flexbox.a((a)this);
+        this.q = new FlexboxLayoutManager.FlexboxLayoutManager$a(this);
         this.u = -1;
         this.v = Integer.MIN_VALUE;
         this.w = Integer.MIN_VALUE;
         this.x = Integer.MIN_VALUE;
         this.y = (SparseArray<View>)new SparseArray();
         this.B = -1;
-        this.C = new com.google.android.flexbox.a.a();
+        this.C = new a$a();
         this.u(0);
         this.v();
         this.t(4);
@@ -87,16 +87,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     
     public FlexboxLayoutManager(final Context z, final AttributeSet set, int a, final int n) {
         this.i = -1;
-        this.l = new ArrayList<ed.c>();
-        this.m = new com.google.android.flexbox.a((ed.a)this);
-        this.q = new a();
+        this.l = new ArrayList<c>();
+        this.m = new com.google.android.flexbox.a((a)this);
+        this.q = new FlexboxLayoutManager.FlexboxLayoutManager$a(this);
         this.u = -1;
         this.v = Integer.MIN_VALUE;
         this.w = Integer.MIN_VALUE;
         this.x = Integer.MIN_VALUE;
         this.y = (SparseArray<View>)new SparseArray();
         this.B = -1;
-        this.C = new com.google.android.flexbox.a.a();
+        this.C = new a$a();
         final RecyclerView$o$d properties = RecyclerView$o.getProperties(z, set, a, n);
         a = properties.a;
         if (a != 0) {
@@ -123,17 +123,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     public static boolean isMeasurementUpToDate(final int n, int size, final int n2) {
         final int mode = View$MeasureSpec.getMode(size);
         size = View$MeasureSpec.getSize(size);
-        final boolean b = false;
-        boolean b2 = false;
+        boolean b = false;
+        final boolean b2 = false;
         if (n2 > 0 && n != n2) {
             return false;
         }
         if (mode == Integer.MIN_VALUE) {
-            boolean b3 = b;
             if (size >= n) {
-                b3 = true;
+                b = true;
             }
-            return b3;
+            return b;
         }
         if (mode == 0) {
             return true;
@@ -141,10 +140,11 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         if (mode != 1073741824) {
             return false;
         }
+        boolean b3 = b2;
         if (size == n) {
-            b2 = true;
+            b3 = true;
         }
-        return b2;
+        return b3;
     }
     
     private boolean shouldMeasureChild(final View view, final int n, final int n2, final RecyclerView$p recyclerView$p) {
@@ -175,27 +175,27 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         }
     }
     
-    public final int b(final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0, final c c) {
-        final int f = c.f;
+    public final int b(final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0, final FlexboxLayoutManager.FlexboxLayoutManager$c flexboxLayoutManager$c) {
+        final int f = flexboxLayoutManager$c.f;
         if (f != Integer.MIN_VALUE) {
-            final int a = c.a;
+            final int a = flexboxLayoutManager$c.a;
             if (a < 0) {
-                c.f = f + a;
+                flexboxLayoutManager$c.f = f + a;
             }
-            this.r(v, c);
+            this.r(recyclerView$v, flexboxLayoutManager$c);
         }
-        int a2 = c.a;
+        int a2 = flexboxLayoutManager$c.a;
         final boolean q = this.q();
         int n = 0;
-        ed.c c3;
-        for (int n2 = a2; n2 > 0 || this.p.b; n2 -= c3.c) {
-            final List<ed.c> l = this.l;
-            final int d = c.d;
+        c c2;
+        for (int n2 = a2; n2 > 0 || this.p.b; n2 -= c2.c) {
+            final List<c> l = this.l;
+            final int d = flexboxLayoutManager$c.d;
             boolean b = false;
             Label_0137: {
                 if (d >= 0 && d < recyclerView$b0.b()) {
-                    final int c2 = c.c;
-                    if (c2 >= 0 && c2 < l.size()) {
+                    final int c = flexboxLayoutManager$c.c;
+                    if (c >= 0 && c < l.size()) {
                         b = true;
                         break Label_0137;
                     }
@@ -205,18 +205,18 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             if (!b) {
                 break;
             }
-            c3 = this.l.get(c.c);
-            c.d = c3.k;
-            int c4;
+            c2 = this.l.get(flexboxLayoutManager$c.c);
+            flexboxLayoutManager$c.d = c2.k;
+            int c3;
             if (this.q()) {
                 final int paddingLeft = this.getPaddingLeft();
                 final int paddingRight = this.getPaddingRight();
                 final int width = this.getWidth();
-                int e = c.e;
-                if (c.i == -1) {
-                    e -= c3.c;
+                int e = flexboxLayoutManager$c.e;
+                if (flexboxLayoutManager$c.i == -1) {
+                    e -= c2.c;
                 }
-                final int d2 = c.d;
+                final int d2 = flexboxLayoutManager$c.d;
                 final int g = this.g;
                 float n5 = 0.0f;
                 float n7 = 0.0f;
@@ -227,7 +227,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                             if (g != 2) {
                                 if (g == 3) {
                                     final float n3 = (float)paddingLeft;
-                                    final int d3 = c3.d;
+                                    final int d3 = c2.d;
                                     float n4;
                                     if (d3 != 1) {
                                         n4 = (float)(d3 - 1);
@@ -235,16 +235,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     else {
                                         n4 = 1.0f;
                                     }
-                                    n5 = (width - c3.a) / n4;
+                                    n5 = (width - c2.a) / n4;
                                     final float n6 = (float)(width - paddingRight);
                                     n7 = n3;
                                     n8 = n6;
                                     break Label_0566;
                                 }
                                 if (g == 4) {
-                                    final int d4 = c3.d;
+                                    final int d4 = c2.d;
                                     if (d4 != 0) {
-                                        n5 = (width - c3.a) / (float)d4;
+                                        n5 = (width - c2.a) / (float)d4;
                                     }
                                     else {
                                         n5 = 0.0f;
@@ -256,9 +256,9 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     break Label_0566;
                                 }
                                 if (g == 5) {
-                                    final int d5 = c3.d;
+                                    final int d5 = c2.d;
                                     if (d5 != 0) {
-                                        n5 = (width - c3.a) / (float)(d5 + 1);
+                                        n5 = (width - c2.a) / (float)(d5 + 1);
                                     }
                                     else {
                                         n5 = 0.0f;
@@ -267,19 +267,19 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     n8 = width - paddingRight - n5;
                                     break Label_0566;
                                 }
-                                final StringBuilder r = a.r("Invalid justifyContent is set: ");
-                                r.append(this.g);
-                                throw new IllegalStateException(r.toString());
+                                final StringBuilder t = a.t("Invalid justifyContent is set: ");
+                                t.append(this.g);
+                                throw new IllegalStateException(t.toString());
                             }
                             else {
                                 final float n11 = (float)paddingLeft;
-                                final float n12 = (width - c3.a) / 2.0f;
+                                final float n12 = (width - c2.a) / 2.0f;
                                 n7 = n11 + n12;
                                 n8 = width - paddingRight - n12;
                             }
                         }
                         else {
-                            final int a3 = c3.a;
+                            final int a3 = c2.a;
                             n7 = (float)(width - a3 + paddingRight);
                             n8 = (float)(a3 - paddingLeft);
                         }
@@ -294,14 +294,14 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 final float n14 = n7 - n13;
                 float n15 = n8 - n13;
                 final float max = Math.max(n5, 0.0f);
-                final int d6 = c3.d;
+                final int d6 = c2.d;
                 int n16 = 0;
                 int i = d2;
                 float n17 = n14;
                 while (i < d2 + d6) {
                     final View j = this.l(i);
                     if (j != null) {
-                        if (c.i == 1) {
+                        if (flexboxLayoutManager$c.i == 1) {
                             this.calculateItemDecorationsForChild(j, FlexboxLayoutManager.D);
                             this.addView(j);
                         }
@@ -321,11 +321,10 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                         final float n22 = n15 - (this.getRightDecorationWidth(j) + ((ViewGroup$MarginLayoutParams)b2).rightMargin);
                         final int n23 = this.getTopDecorationHeight(j) + e;
                         if (this.j) {
-                            this.m.l(j, c3, Math.round(n22) - j.getMeasuredWidth(), n23, Math.round(n22), j.getMeasuredHeight() + n23);
+                            this.m.l(j, c2, Math.round(n22) - j.getMeasuredWidth(), n23, Math.round(n22), j.getMeasuredHeight() + n23);
                         }
                         else {
-                            final View view = j;
-                            this.m.l(view, c3, Math.round(n21), n23, view.getMeasuredWidth() + Math.round(n21), view.getMeasuredHeight() + n23);
+                            this.m.l(j, c2, Math.round(n21), n23, j.getMeasuredWidth() + Math.round(n21), j.getMeasuredHeight() + n23);
                         }
                         final float n24 = (float)(this.getRightDecorationWidth(j) + (j.getMeasuredWidth() + ((ViewGroup$MarginLayoutParams)b2).rightMargin));
                         n15 = n22 - (this.getLeftDecorationWidth(j) + (j.getMeasuredWidth() + ((ViewGroup$MarginLayoutParams)b2).leftMargin) + max);
@@ -333,38 +332,38 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                     }
                     ++i;
                 }
-                c.c += this.p.i;
-                c4 = c3.c;
+                flexboxLayoutManager$c.c += this.p.i;
+                c3 = c2.c;
             }
             else {
                 final int n25 = a2;
                 final int paddingTop = this.getPaddingTop();
                 final int paddingBottom = this.getPaddingBottom();
                 final int height = this.getHeight();
-                final int e2 = c.e;
+                final int e2 = flexboxLayoutManager$c.e;
                 int n26;
                 int n27;
-                if (c.i == -1) {
-                    final int c5 = c3.c;
-                    n26 = e2 + c5;
-                    n27 = e2 - c5;
+                if (flexboxLayoutManager$c.i == -1) {
+                    final int c4 = c2.c;
+                    n26 = e2 + c4;
+                    n27 = e2 - c4;
                 }
                 else {
                     n26 = e2;
                     n27 = e2;
                 }
-                final int d7 = c.d;
+                final int d7 = flexboxLayoutManager$c.d;
                 final int g2 = this.g;
                 float n30 = 0.0f;
                 float n32 = 0.0f;
                 float n33 = 0.0f;
-                Label_1424: {
+                Label_1420: {
                     if (g2 != 0) {
                         if (g2 != 1) {
                             if (g2 != 2) {
                                 if (g2 == 3) {
                                     final float n28 = (float)paddingTop;
-                                    final int d8 = c3.d;
+                                    final int d8 = c2.d;
                                     float n29;
                                     if (d8 != 1) {
                                         n29 = (float)(d8 - 1);
@@ -372,16 +371,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     else {
                                         n29 = 1.0f;
                                     }
-                                    n30 = (height - c3.a) / n29;
+                                    n30 = (height - c2.a) / n29;
                                     final float n31 = (float)(height - paddingBottom);
                                     n32 = n28;
                                     n33 = n31;
-                                    break Label_1424;
+                                    break Label_1420;
                                 }
                                 if (g2 == 4) {
-                                    final int d9 = c3.d;
+                                    final int d9 = c2.d;
                                     if (d9 != 0) {
-                                        n30 = (height - c3.a) / (float)d9;
+                                        n30 = (height - c2.a) / (float)d9;
                                     }
                                     else {
                                         n30 = 0.0f;
@@ -390,33 +389,33 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     final float n35 = n30 / 2.0f;
                                     n32 = n34 + n35;
                                     n33 = height - paddingBottom - n35;
-                                    break Label_1424;
+                                    break Label_1420;
                                 }
                                 if (g2 == 5) {
-                                    final int d10 = c3.d;
+                                    final int d10 = c2.d;
                                     if (d10 != 0) {
-                                        n30 = (height - c3.a) / (float)(d10 + 1);
+                                        n30 = (height - c2.a) / (float)(d10 + 1);
                                     }
                                     else {
                                         n30 = 0.0f;
                                     }
                                     n32 = paddingTop + n30;
                                     n33 = height - paddingBottom - n30;
-                                    break Label_1424;
+                                    break Label_1420;
                                 }
-                                final StringBuilder r2 = a.r("Invalid justifyContent is set: ");
-                                r2.append(this.g);
-                                throw new IllegalStateException(r2.toString());
+                                final StringBuilder t2 = a.t("Invalid justifyContent is set: ");
+                                t2.append(this.g);
+                                throw new IllegalStateException(t2.toString());
                             }
                             else {
                                 final float n36 = (float)paddingTop;
-                                final float n37 = (height - c3.a) / 2.0f;
+                                final float n37 = (height - c2.a) / 2.0f;
                                 n32 = n36 + n37;
                                 n33 = height - paddingBottom - n37;
                             }
                         }
                         else {
-                            final int a4 = c3.a;
+                            final int a4 = c2.a;
                             n32 = (float)(height - a4 + paddingBottom);
                             n33 = (float)(a4 - paddingTop);
                         }
@@ -431,7 +430,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 final float n39 = n32 - n38;
                 float n40 = n33 - n38;
                 final float max2 = Math.max(n30, 0.0f);
-                final int d11 = c3.d;
+                final int d11 = c2.d;
                 int n41 = 0;
                 int k = d7;
                 float n42 = n39;
@@ -447,7 +446,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                         }
                         final float n46 = n42 + (this.getTopDecorationHeight(m) + ((ViewGroup$MarginLayoutParams)b3).topMargin);
                         final float n47 = n40 - (this.getBottomDecorationHeight(m) + ((ViewGroup$MarginLayoutParams)b3).rightMargin);
-                        if (c.i == 1) {
+                        if (flexboxLayoutManager$c.i == 1) {
                             this.calculateItemDecorationsForChild(m, FlexboxLayoutManager.D);
                             this.addView(m);
                         }
@@ -461,21 +460,17 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                         final boolean j2 = this.j;
                         if (j2) {
                             if (this.k) {
-                                this.m.m(m, c3, j2, n49 - m.getMeasuredWidth(), Math.round(n47) - m.getMeasuredHeight(), n49, Math.round(n47));
+                                this.m.m(m, c2, j2, n49 - m.getMeasuredWidth(), Math.round(n47) - m.getMeasuredHeight(), n49, Math.round(n47));
                             }
                             else {
-                                final View view2 = m;
-                                this.m.m(view2, c3, j2, n49 - view2.getMeasuredWidth(), Math.round(n46), n49, view2.getMeasuredHeight() + Math.round(n46));
+                                this.m.m(m, c2, j2, n49 - m.getMeasuredWidth(), Math.round(n46), n49, m.getMeasuredHeight() + Math.round(n46));
                             }
                         }
+                        else if (this.k) {
+                            this.m.m(m, c2, j2, n48, Math.round(n47) - m.getMeasuredHeight(), m.getMeasuredWidth() + n48, Math.round(n47));
+                        }
                         else {
-                            final View view3 = m;
-                            if (this.k) {
-                                this.m.m(view3, c3, j2, n48, Math.round(n47) - view3.getMeasuredHeight(), view3.getMeasuredWidth() + n48, Math.round(n47));
-                            }
-                            else {
-                                this.m.m(view3, c3, j2, n48, Math.round(n46), view3.getMeasuredWidth() + n48, view3.getMeasuredHeight() + Math.round(n46));
-                            }
+                            this.m.m(m, c2, j2, n48, Math.round(n46), m.getMeasuredWidth() + n48, m.getMeasuredHeight() + Math.round(n46));
                         }
                         final float n50 = (float)(this.getBottomDecorationHeight(m) + (m.getMeasuredHeight() + ((ViewGroup$MarginLayoutParams)b3).topMargin));
                         n40 = n47 - (this.getTopDecorationHeight(m) + (m.getMeasuredHeight() + ((ViewGroup$MarginLayoutParams)b3).bottomMargin) + max2);
@@ -483,31 +478,31 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                     }
                     ++k;
                 }
-                c.c += this.p.i;
-                final int c6 = c3.c;
+                flexboxLayoutManager$c.c += this.p.i;
+                final int c5 = c2.c;
                 a2 = n25;
-                c4 = c6;
+                c3 = c5;
             }
-            n += c4;
+            n += c3;
             if (!q && this.j) {
-                c.e -= c3.c * c.i;
+                flexboxLayoutManager$c.e -= c2.c * flexboxLayoutManager$c.i;
             }
             else {
-                c.e += c3.c * c.i;
+                flexboxLayoutManager$c.e += c2.c * flexboxLayoutManager$c.i;
             }
         }
-        final int a5 = c.a - n;
-        c.a = a5;
-        final int f2 = c.f;
+        final int a5 = flexboxLayoutManager$c.a - n;
+        flexboxLayoutManager$c.a = a5;
+        final int f2 = flexboxLayoutManager$c.f;
         if (f2 != Integer.MIN_VALUE) {
             final int f3 = f2 + n;
-            c.f = f3;
+            flexboxLayoutManager$c.f = f3;
             if (a5 < 0) {
-                c.f = f3 + a5;
+                flexboxLayoutManager$c.f = f3 + a5;
             }
-            this.r(v, c);
+            this.r(recyclerView$v, flexboxLayoutManager$c);
         }
-        return a2 - c.a;
+        return a2 - flexboxLayoutManager$c.a;
     }
     
     public final View c(int position) {
@@ -681,7 +676,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         return this.computeScrollRange(recyclerView$b0);
     }
     
-    public final View d(View view, final ed.c c) {
+    public final View d(View view, final c c) {
         final boolean q = this.q();
         final int d = c.d;
         int i = 1;
@@ -689,7 +684,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         while (i < d) {
             final View child = this.getChildAt(i);
             view = view2;
-            Label_0114: {
+            Label_0113: {
                 if (child != null) {
                     if (child.getVisibility() == 8) {
                         view = view2;
@@ -698,13 +693,13 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                         if (this.j && !q) {
                             view = view2;
                             if (this.r.b(view2) >= this.r.b(child)) {
-                                break Label_0114;
+                                break Label_0113;
                             }
                         }
                         else {
                             view = view2;
                             if (this.r.e(view2) <= this.r.e(child)) {
-                                break Label_0114;
+                                break Label_0113;
                             }
                         }
                         view = child;
@@ -727,58 +722,51 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         return this.f(h, this.l.get(position));
     }
     
-    public final View f(View view, final ed.c c) {
+    public final View f(View view, final c c) {
         final boolean q = this.q();
-        int i = this.getChildCount() - 2;
-        final int childCount = this.getChildCount();
-        final int d = c.d;
-        View view2 = view;
-        while (i > childCount - d - 1) {
+        View view2;
+        for (int i = this.getChildCount() - 2; i > this.getChildCount() - c.d - 1; --i, view = view2) {
             final View child = this.getChildAt(i);
-            view = view2;
-            Label_0130: {
-                if (child != null) {
-                    if (child.getVisibility() == 8) {
-                        view = view2;
+            view2 = view;
+            if (child != null) {
+                if (child.getVisibility() == 8) {
+                    view2 = view;
+                }
+                else {
+                    if (this.j && !q) {
+                        view2 = view;
+                        if (this.r.e(view) <= this.r.e(child)) {
+                            continue;
+                        }
                     }
                     else {
-                        if (this.j && !q) {
-                            view = view2;
-                            if (this.r.e(view2) <= this.r.e(child)) {
-                                break Label_0130;
-                            }
+                        view2 = view;
+                        if (this.r.b(view) >= this.r.b(child)) {
+                            continue;
                         }
-                        else {
-                            view = view2;
-                            if (this.r.b(view2) >= this.r.b(child)) {
-                                break Label_0130;
-                            }
-                        }
-                        view = child;
                     }
+                    view2 = child;
                 }
             }
-            --i;
-            view2 = view;
         }
-        return view2;
+        return view;
     }
     
-    public final int fixLayoutEndGap(int n, final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0, final boolean b) {
+    public final int fixLayoutEndGap(int n, final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0, final boolean b) {
         int o;
         if (!this.q() && this.j) {
             final int n2 = n - this.r.k();
             if (n2 <= 0) {
                 return 0;
             }
-            o = this.o(n2, v, recyclerView$b0);
+            o = this.o(n2, recyclerView$v, recyclerView$b0);
         }
         else {
             final int n3 = this.r.g() - n;
             if (n3 <= 0) {
                 return 0;
             }
-            o = -this.o(-n3, v, recyclerView$b0);
+            o = -this.o(-n3, recyclerView$v, recyclerView$b0);
         }
         if (b) {
             n = this.r.g() - (n + o);
@@ -790,21 +778,21 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         return o;
     }
     
-    public final int fixLayoutStartGap(int n, final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0, final boolean b) {
+    public final int fixLayoutStartGap(int n, final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0, final boolean b) {
         int o;
         if (!this.q() && this.j) {
             final int n2 = this.r.g() - n;
             if (n2 <= 0) {
                 return 0;
             }
-            o = this.o(-n2, v, recyclerView$b0);
+            o = this.o(-n2, recyclerView$v, recyclerView$b0);
         }
         else {
             final int n3 = n - this.r.k();
             if (n3 <= 0) {
                 return 0;
             }
-            o = -this.o(n3, v, recyclerView$b0);
+            o = -this.o(n3, recyclerView$v, recyclerView$b0);
         }
         int n4 = o;
         if (b) {
@@ -875,7 +863,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     public final View h(int i, final int n, final int n2) {
         this.a();
         if (this.p == null) {
-            this.p = new c();
+            this.p = new FlexboxLayoutManager.FlexboxLayoutManager$c();
         }
         final int k = this.r.k();
         final int g = this.r.g();
@@ -987,7 +975,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         return max;
     }
     
-    public final int o(int g, final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0) {
+    public final int o(int g, final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0) {
         if (this.getChildCount() == 0 || g == 0) {
             return 0;
         }
@@ -1001,30 +989,30 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         final int measureSpec = View$MeasureSpec.makeMeasureSpec(this.getWidth(), this.getWidthMode());
         final int measureSpec2 = View$MeasureSpec.makeMeasureSpec(this.getHeight(), this.getHeightMode());
         final boolean b2 = !q && this.j;
-        Label_0884: {
+        Label_0887: {
             if (i == 1) {
                 final View child = this.getChildAt(this.getChildCount() - 1);
                 if (child == null) {
-                    break Label_0884;
+                    break Label_0887;
                 }
                 this.p.e = this.r.b(child);
-                int position = this.getPosition(child);
+                final int position = this.getPosition(child);
                 final View f = this.f(child, this.l.get(this.m.c[position]));
-                final c p3 = this.p;
+                final FlexboxLayoutManager.FlexboxLayoutManager$c p3 = this.p;
                 p3.h = 1;
-                ++position;
-                p3.d = position;
+                final int d = position + 1;
+                p3.d = d;
                 final int[] c = this.m.c;
-                if (c.length <= position) {
+                if (c.length <= d) {
                     p3.c = -1;
                 }
                 else {
-                    p3.c = c[position];
+                    p3.c = c[d];
                 }
                 if (b2) {
                     p3.e = this.r.e(f);
                     this.p.f = this.r.k() + -this.r.e(f);
-                    final c p4 = this.p;
+                    final FlexboxLayoutManager.FlexboxLayoutManager$c p4 = this.p;
                     p4.f = Math.max(p4.f, 0);
                 }
                 else {
@@ -1033,16 +1021,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 }
                 final int c2 = this.p.c;
                 if ((c2 == -1 || c2 > this.l.size() - 1) && this.p.d <= this.m()) {
-                    final c p5 = this.p;
+                    final FlexboxLayoutManager.FlexboxLayoutManager$c p5 = this.p;
                     final int n = abs - p5.f;
-                    final com.google.android.flexbox.a.a c3 = this.C;
+                    final a$a c3 = this.C;
                     c3.a = null;
                     if (n > 0) {
                         if (q) {
-                            this.m.b(c3, measureSpec, measureSpec2, n, p5.d, -1, this.l);
+                            this.m.b(c3, measureSpec, measureSpec2, n, p5.d, -1, (List)this.l);
                         }
                         else {
-                            this.m.b(c3, measureSpec2, measureSpec, n, p5.d, -1, this.l);
+                            this.m.b(c3, measureSpec2, measureSpec, n, p5.d, -1, (List)this.l);
                         }
                         this.m.e(measureSpec, measureSpec2, this.p.d);
                         this.m.q(this.p.d);
@@ -1052,12 +1040,12 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             else {
                 final View child2 = this.getChildAt(0);
                 if (child2 == null) {
-                    break Label_0884;
+                    break Label_0887;
                 }
                 this.p.e = this.r.e(child2);
                 final int position2 = this.getPosition(child2);
-                final View d = this.d(child2, this.l.get(this.m.c[position2]));
-                final c p6 = this.p;
+                final View d2 = this.d(child2, this.l.get(this.m.c[position2]));
+                final FlexboxLayoutManager.FlexboxLayoutManager$c p6 = this.p;
                 p6.h = 1;
                 int c4;
                 if ((c4 = this.m.c[position2]) == -1) {
@@ -1069,7 +1057,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 else {
                     p6.d = -1;
                 }
-                final c p7 = this.p;
+                final FlexboxLayoutManager.FlexboxLayoutManager$c p7 = this.p;
                 if (c4 > 0) {
                     --c4;
                 }
@@ -1078,21 +1066,21 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 }
                 p7.c = c4;
                 if (b2) {
-                    p7.e = this.r.b(d);
-                    this.p.f = this.r.b(d) - this.r.g();
-                    final c p8 = this.p;
+                    p7.e = this.r.b(d2);
+                    this.p.f = this.r.b(d2) - this.r.g();
+                    final FlexboxLayoutManager.FlexboxLayoutManager$c p8 = this.p;
                     p8.f = Math.max(p8.f, 0);
                 }
                 else {
-                    p7.e = this.r.e(d);
-                    this.p.f = this.r.k() + -this.r.e(d);
+                    p7.e = this.r.e(d2);
+                    this.p.f = this.r.k() + -this.r.e(d2);
                 }
             }
-            final c p9 = this.p;
+            final FlexboxLayoutManager.FlexboxLayoutManager$c p9 = this.p;
             p9.a = abs - p9.f;
         }
-        final c p10 = this.p;
-        final int n2 = this.b(v, recyclerView$b0, p10) + p10.f;
+        final FlexboxLayoutManager.FlexboxLayoutManager$c p10 = this.p;
+        final int n2 = this.b(recyclerView$v, recyclerView$b0, p10) + p10.f;
         if (n2 < 0) {
             return 0;
         }
@@ -1117,8 +1105,8 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         this.A = (View)((View)recyclerView).getParent();
     }
     
-    public final void onDetachedFromWindow(final RecyclerView recyclerView, final RecyclerView.v v) {
-        super.onDetachedFromWindow(recyclerView, v);
+    public final void onDetachedFromWindow(final RecyclerView recyclerView, final RecyclerView$v recyclerView$v) {
+        super.onDetachedFromWindow(recyclerView, recyclerView$v);
     }
     
     public final void onItemsAdded(final RecyclerView recyclerView, final int n, final int n2) {
@@ -1146,7 +1134,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         this.w(n);
     }
     
-    public final void onLayoutChildren(final RecyclerView.v n, final RecyclerView$b0 o) {
+    public final void onLayoutChildren(final RecyclerView$v n, final RecyclerView$b0 o) {
         this.n = n;
         this.o = o;
         final int b = o.b();
@@ -1191,26 +1179,26 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         }
         this.a();
         if (this.p == null) {
-            this.p = new c();
+            this.p = new FlexboxLayoutManager.FlexboxLayoutManager$c();
         }
         this.m.g(b);
         this.m.h(b);
         this.m.f(b);
         this.p.j = false;
-        final d t = this.t;
+        final FlexboxLayoutManager.FlexboxLayoutManager$d t = this.t;
         if (t != null) {
             final int f = t.f;
             if (f >= 0 && f < b) {
                 this.u = f;
             }
         }
-        final a q = this.q;
+        final FlexboxLayoutManager.FlexboxLayoutManager$a q = this.q;
         if (!q.f || this.u != -1 || t != null) {
-            a.b(q);
-            final a q2 = this.q;
-            final d t2 = this.t;
+            FlexboxLayoutManager.FlexboxLayoutManager$a.b(q);
+            final FlexboxLayoutManager.FlexboxLayoutManager$a q2 = this.q;
+            final FlexboxLayoutManager.FlexboxLayoutManager$d t2 = this.t;
             boolean b3 = false;
-            Label_0872: {
+            Label_0848: {
                 if (!o.g) {
                     final int u = this.u;
                     if (u != -1) {
@@ -1218,8 +1206,8 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                             final int u2 = this.u;
                             q2.a = u2;
                             q2.b = this.m.c[u2];
-                            final d t3 = this.t;
-                            Label_0852: {
+                            final FlexboxLayoutManager.FlexboxLayoutManager$d t3 = this.t;
+                            Label_0830: {
                                 if (t3 != null) {
                                     final int b2 = o.b();
                                     final int f2 = t3.f;
@@ -1227,14 +1215,14 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                         q2.c = this.r.k() + t2.g;
                                         q2.g = true;
                                         q2.b = -1;
-                                        break Label_0852;
+                                        break Label_0830;
                                     }
                                 }
                                 if (this.v == Integer.MIN_VALUE) {
                                     final View viewByPosition = this.findViewByPosition(this.u);
                                     if (viewByPosition != null) {
                                         if (this.r.c(viewByPosition) > this.r.l()) {
-                                            a.a(q2);
+                                            FlexboxLayoutManager.FlexboxLayoutManager$a.a(q2);
                                         }
                                         else if (this.r.e(viewByPosition) - this.r.k() < 0) {
                                             q2.c = this.r.k();
@@ -1262,7 +1250,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                                 q2.e = (this.u < this.getPosition(child));
                                             }
                                         }
-                                        a.a(q2);
+                                        FlexboxLayoutManager.FlexboxLayoutManager$a.a(q2);
                                     }
                                 }
                                 else if (!this.q() && this.j) {
@@ -1273,7 +1261,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                 }
                             }
                             b3 = true;
-                            break Label_0872;
+                            break Label_0848;
                         }
                         this.u = -1;
                         this.v = Integer.MIN_VALUE;
@@ -1283,7 +1271,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             }
             if (!b3) {
                 boolean b6 = false;
-                Label_1316: {
+                Label_1268: {
                     if (this.getChildCount() != 0) {
                         View view;
                         if (q2.e) {
@@ -1344,13 +1332,13 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                 q2.c = c2;
                             }
                             b6 = true;
-                            break Label_1316;
+                            break Label_1268;
                         }
                     }
                     b6 = false;
                 }
                 if (!b6) {
-                    a.a(q2);
+                    FlexboxLayoutManager.FlexboxLayoutManager$a.a(q2);
                     q2.a = 0;
                     q2.b = 0;
                 }
@@ -1358,7 +1346,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             this.q.f = true;
         }
         this.detachAndScrapAttachedViews(n);
-        final a q3 = this.q;
+        final FlexboxLayoutManager.FlexboxLayoutManager$a q3 = this.q;
         if (q3.e) {
             this.y(q3, false, true);
         }
@@ -1374,7 +1362,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         if (this.q()) {
             final int w = this.w;
             final boolean b7 = w != Integer.MIN_VALUE && w != width;
-            final c p2 = this.p;
+            final FlexboxLayoutManager.FlexboxLayoutManager$c p2 = this.p;
             if (p2.b) {
                 final int heightPixels = this.z.getResources().getDisplayMetrics().heightPixels;
                 b8 = b7;
@@ -1389,7 +1377,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         else {
             final int x = this.x;
             b8 = (x != Integer.MIN_VALUE && x != height);
-            final c p3 = this.p;
+            final FlexboxLayoutManager.FlexboxLayoutManager$c p3 = this.p;
             if (p3.b) {
                 n2 = this.z.getResources().getDisplayMetrics().widthPixels;
             }
@@ -1405,15 +1393,15 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 this.l.clear();
                 this.C.a = null;
                 if (this.q()) {
-                    this.m.b(this.C, measureSpec, measureSpec2, n2, 0, this.q.a, this.l);
+                    this.m.b(this.C, measureSpec, measureSpec2, n2, 0, this.q.a, (List)this.l);
                 }
                 else {
-                    this.m.b(this.C, measureSpec2, measureSpec, n2, 0, this.q.a, this.l);
+                    this.m.b(this.C, measureSpec2, measureSpec, n2, 0, this.q.a, (List)this.l);
                 }
                 this.l = this.C.a;
                 this.m.e(measureSpec, measureSpec2, 0);
                 this.m.q(0);
-                final a q4 = this.q;
+                final FlexboxLayoutManager.FlexboxLayoutManager$a q4 = this.q;
                 final int n3 = this.m.c[q4.a];
                 q4.b = n3;
                 this.p.c = n3;
@@ -1430,28 +1418,28 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             this.C.a = null;
             if (this.q()) {
                 if (this.l.size() > 0) {
-                    this.m.d(n4, this.l);
-                    this.m.b(this.C, measureSpec, measureSpec2, n2, n4, this.q.a, this.l);
+                    this.m.d(n4, (List)this.l);
+                    this.m.b(this.C, measureSpec, measureSpec2, n2, n4, this.q.a, (List)this.l);
                 }
                 else {
                     this.m.f(b);
-                    this.m.b(this.C, measureSpec, measureSpec2, n2, 0, -1, this.l);
+                    this.m.b(this.C, measureSpec, measureSpec2, n2, 0, -1, (List)this.l);
                 }
             }
             else if (this.l.size() > 0) {
-                this.m.d(n4, this.l);
-                this.m.b(this.C, measureSpec2, measureSpec, n2, n4, this.q.a, this.l);
+                this.m.d(n4, (List)this.l);
+                this.m.b(this.C, measureSpec2, measureSpec, n2, n4, this.q.a, (List)this.l);
             }
             else {
                 this.m.f(b);
-                this.m.b(this.C, measureSpec2, measureSpec, n2, 0, -1, this.l);
+                this.m.b(this.C, measureSpec2, measureSpec, n2, 0, -1, (List)this.l);
             }
             this.l = this.C.a;
             this.m.e(measureSpec, measureSpec2, n4);
             this.m.q(n4);
         }
         this.b(n, o, this.p);
-        final a q5 = this.q;
+        final FlexboxLayoutManager.FlexboxLayoutManager$a q5 = this.q;
         int n5;
         int n6;
         if (q5.e) {
@@ -1482,32 +1470,32 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         this.u = -1;
         this.v = Integer.MIN_VALUE;
         this.B = -1;
-        a.b(this.q);
+        FlexboxLayoutManager.FlexboxLayoutManager$a.b(this.q);
         this.y.clear();
     }
     
     public final void onRestoreInstanceState(final Parcelable parcelable) {
-        if (parcelable instanceof d) {
-            this.t = (d)parcelable;
+        if (parcelable instanceof FlexboxLayoutManager.FlexboxLayoutManager$d) {
+            this.t = (FlexboxLayoutManager.FlexboxLayoutManager$d)parcelable;
             this.requestLayout();
         }
     }
     
     public final Parcelable onSaveInstanceState() {
-        final d t = this.t;
+        final FlexboxLayoutManager.FlexboxLayoutManager$d t = this.t;
         if (t != null) {
-            return (Parcelable)new d(t);
+            return (Parcelable)new FlexboxLayoutManager.FlexboxLayoutManager$d(t);
         }
-        final d d = new d();
+        final FlexboxLayoutManager.FlexboxLayoutManager$d flexboxLayoutManager$d = new FlexboxLayoutManager.FlexboxLayoutManager$d();
         if (this.getChildCount() > 0) {
             final View child = this.getChildAt(0);
-            d.f = this.getPosition(child);
-            d.g = this.r.e(child) - this.r.k();
+            flexboxLayoutManager$d.f = this.getPosition(child);
+            flexboxLayoutManager$d.g = this.r.e(child) - this.r.k();
         }
         else {
-            d.f = -1;
+            flexboxLayoutManager$d.f = -1;
         }
-        return (Parcelable)d;
+        return (Parcelable)flexboxLayoutManager$d;
     }
     
     public final int p(final int n) {
@@ -1569,14 +1557,14 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         return b;
     }
     
-    public final void r(final RecyclerView.v v, final c c) {
-        if (!c.j) {
+    public final void r(final RecyclerView$v recyclerView$v, final FlexboxLayoutManager.FlexboxLayoutManager$c flexboxLayoutManager$c) {
+        if (!flexboxLayoutManager$c.j) {
             return;
         }
-        final int i = c.i;
+        final int i = flexboxLayoutManager$c.i;
         int n = -1;
         if (i == -1) {
-            if (c.f >= 0) {
+            if (flexboxLayoutManager$c.f >= 0) {
                 int childCount = this.getChildCount();
                 if (childCount != 0) {
                     final int n2 = childCount - 1;
@@ -1584,7 +1572,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                     if (child != null) {
                         int n3 = this.m.c[this.getPosition(child)];
                         if (n3 != -1) {
-                            ed.c c2 = this.l.get(n3);
+                            c c = this.l.get(n3);
                             int n4 = n2;
                             int n5;
                             int j;
@@ -1595,39 +1583,39 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                                     break;
                                 }
                                 final View child2 = this.getChildAt(n4);
-                                ed.c c3;
+                                c c2;
                                 int n6;
                                 if (child2 == null) {
-                                    c3 = c2;
+                                    c2 = c;
                                     n6 = n3;
                                 }
                                 else {
-                                    final int f = c.f;
+                                    final int f = flexboxLayoutManager$c.f;
                                     final boolean b = (!this.q() && this.j) ? (this.r.b(child2) <= f) : (this.r.e(child2) >= this.r.f() - f);
                                     n5 = childCount;
                                     j = n2;
                                     if (!b) {
                                         break;
                                     }
-                                    c3 = c2;
+                                    c2 = c;
                                     n6 = n3;
-                                    if (c2.k == this.getPosition(child2)) {
+                                    if (c.k == this.getPosition(child2)) {
                                         if (n3 <= 0) {
                                             n5 = n4;
                                             j = n2;
                                             break;
                                         }
-                                        n6 = n3 + c.i;
-                                        c3 = this.l.get(n6);
+                                        n6 = n3 + flexboxLayoutManager$c.i;
+                                        c2 = this.l.get(n6);
                                         childCount = n4;
                                     }
                                 }
                                 --n4;
-                                c2 = c3;
+                                c = c2;
                                 n3 = n6;
                             }
                             while (j >= n5) {
-                                this.removeAndRecycleViewAt(j, v);
+                                this.removeAndRecycleViewAt(j, recyclerView$v);
                                 --j;
                             }
                         }
@@ -1635,14 +1623,14 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                 }
             }
         }
-        else if (c.f >= 0) {
+        else if (flexboxLayoutManager$c.f >= 0) {
             final int childCount2 = this.getChildCount();
             if (childCount2 != 0) {
                 final View child3 = this.getChildAt(0);
                 if (child3 != null) {
                     int n7 = this.m.c[this.getPosition(child3)];
                     if (n7 != -1) {
-                        ed.c c4 = this.l.get(n7);
+                        c c3 = this.l.get(n7);
                         int n8 = 0;
                         int k;
                         while (true) {
@@ -1652,36 +1640,36 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
                             }
                             final View child4 = this.getChildAt(n8);
                             int n9;
-                            ed.c c5;
+                            c c4;
                             if (child4 == null) {
                                 n9 = n7;
-                                c5 = c4;
+                                c4 = c3;
                             }
                             else {
-                                final int f2 = c.f;
+                                final int f2 = flexboxLayoutManager$c.f;
                                 final boolean b2 = (!this.q() && this.j) ? (this.r.f() - this.r.e(child4) <= f2) : (this.r.b(child4) <= f2);
                                 k = n;
                                 if (!b2) {
                                     break;
                                 }
                                 n9 = n7;
-                                c5 = c4;
-                                if (c4.l == this.getPosition(child4)) {
+                                c4 = c3;
+                                if (c3.l == this.getPosition(child4)) {
                                     if (n7 >= this.l.size() - 1) {
                                         k = n8;
                                         break;
                                     }
-                                    n9 = n7 + c.i;
-                                    c5 = this.l.get(n9);
+                                    n9 = n7 + flexboxLayoutManager$c.i;
+                                    c4 = this.l.get(n9);
                                     n = n8;
                                 }
                             }
                             ++n8;
                             n7 = n9;
-                            c4 = c5;
+                            c3 = c4;
                         }
                         while (k >= 0) {
-                            this.removeAndRecycleViewAt(k, v);
+                            this.removeAndRecycleViewAt(k, recyclerView$v);
                             --k;
                         }
                     }
@@ -1701,15 +1689,15 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         this.p.b = (n == 0 || n == Integer.MIN_VALUE);
     }
     
-    public final int scrollHorizontallyBy(int n, final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0) {
+    public final int scrollHorizontallyBy(int n, final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0) {
         if (this.q() && this.f != 0) {
             n = this.p(n);
-            final a q = this.q;
+            final FlexboxLayoutManager.FlexboxLayoutManager$a q = this.q;
             q.d += n;
             this.s.p(-n);
             return n;
         }
-        n = this.o(n, v, recyclerView$b0);
+        n = this.o(n, recyclerView$v, recyclerView$b0);
         this.y.clear();
         return n;
     }
@@ -1717,22 +1705,22 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
     public final void scrollToPosition(final int u) {
         this.u = u;
         this.v = Integer.MIN_VALUE;
-        final d t = this.t;
+        final FlexboxLayoutManager.FlexboxLayoutManager$d t = this.t;
         if (t != null) {
             t.f = -1;
         }
         this.requestLayout();
     }
     
-    public final int scrollVerticallyBy(int n, final RecyclerView.v v, final RecyclerView$b0 recyclerView$b0) {
+    public final int scrollVerticallyBy(int n, final RecyclerView$v recyclerView$v, final RecyclerView$b0 recyclerView$b0) {
         if (!this.q() && (this.f != 0 || this.q())) {
             n = this.p(n);
-            final a q = this.q;
+            final FlexboxLayoutManager.FlexboxLayoutManager$a q = this.q;
             q.d += n;
             this.s.p(-n);
             return n;
         }
-        n = this.o(n, v, recyclerView$b0);
+        n = this.o(n, recyclerView$v, recyclerView$b0);
         this.y.clear();
         return n;
     }
@@ -1749,7 +1737,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             if (h2 == 4 || h == 4) {
                 this.removeAllViews();
                 this.l.clear();
-                a.b(this.q);
+                FlexboxLayoutManager.FlexboxLayoutManager$a.b(this.q);
                 this.q.d = 0;
             }
             this.h = h;
@@ -1764,7 +1752,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             this.r = null;
             this.s = null;
             this.l.clear();
-            a.b(this.q);
+            FlexboxLayoutManager.FlexboxLayoutManager$a.b(this.q);
             this.q.d = 0;
             this.requestLayout();
         }
@@ -1776,7 +1764,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             if (f == 0) {
                 this.removeAllViews();
                 this.l.clear();
-                a.b(this.q);
+                FlexboxLayoutManager.FlexboxLayoutManager$a.b(this.q);
                 this.q.d = 0;
             }
             this.f = 1;
@@ -1818,7 +1806,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         }
     }
     
-    public final void x(final a a, final boolean b, final boolean b2) {
+    public final void x(final FlexboxLayoutManager.FlexboxLayoutManager$a flexboxLayoutManager$a, final boolean b, final boolean b2) {
         if (b2) {
             this.s();
         }
@@ -1826,30 +1814,30 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             this.p.b = false;
         }
         if (!this.q() && this.j) {
-            this.p.a = a.c - this.getPaddingRight();
+            this.p.a = flexboxLayoutManager$a.c - this.getPaddingRight();
         }
         else {
-            this.p.a = this.r.g() - a.c;
+            this.p.a = this.r.g() - flexboxLayoutManager$a.c;
         }
-        final c p3 = this.p;
-        p3.d = a.a;
+        final FlexboxLayoutManager.FlexboxLayoutManager$c p3 = this.p;
+        p3.d = flexboxLayoutManager$a.a;
         p3.h = 1;
         p3.i = 1;
-        p3.e = a.c;
+        p3.e = flexboxLayoutManager$a.c;
         p3.f = Integer.MIN_VALUE;
-        p3.c = a.b;
+        p3.c = flexboxLayoutManager$a.b;
         if (b && this.l.size() > 1) {
-            final int b3 = a.b;
+            final int b3 = flexboxLayoutManager$a.b;
             if (b3 >= 0 && b3 < this.l.size() - 1) {
-                final ed.c c = this.l.get(a.b);
-                final c p4 = this.p;
+                final c c = this.l.get(flexboxLayoutManager$a.b);
+                final FlexboxLayoutManager.FlexboxLayoutManager$c p4 = this.p;
                 ++p4.c;
                 p4.d += c.d;
             }
         }
     }
     
-    public final void y(final a a, final boolean b, final boolean b2) {
+    public final void y(final FlexboxLayoutManager.FlexboxLayoutManager$a flexboxLayoutManager$a, final boolean b, final boolean b2) {
         if (b2) {
             this.s();
         }
@@ -1857,25 +1845,25 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             this.p.b = false;
         }
         if (!this.q() && this.j) {
-            this.p.a = this.A.getWidth() - a.c - this.r.k();
+            this.p.a = this.A.getWidth() - flexboxLayoutManager$a.c - this.r.k();
         }
         else {
-            this.p.a = a.c - this.r.k();
+            this.p.a = flexboxLayoutManager$a.c - this.r.k();
         }
-        final c p3 = this.p;
-        p3.d = a.a;
+        final FlexboxLayoutManager.FlexboxLayoutManager$c p3 = this.p;
+        p3.d = flexboxLayoutManager$a.a;
         p3.h = 1;
         p3.i = -1;
-        p3.e = a.c;
+        p3.e = flexboxLayoutManager$a.c;
         p3.f = Integer.MIN_VALUE;
-        final int b3 = a.b;
+        final int b3 = flexboxLayoutManager$a.b;
         p3.c = b3;
         if (b && b3 > 0) {
             final int size = this.l.size();
-            final int b4 = a.b;
+            final int b4 = flexboxLayoutManager$a.b;
             if (size > b4) {
-                final ed.c c = this.l.get(b4);
-                final c p4 = this.p;
+                final c c = this.l.get(b4);
+                final FlexboxLayoutManager.FlexboxLayoutManager$c p4 = this.p;
                 --p4.c;
                 p4.d -= c.d;
             }
@@ -1886,113 +1874,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         this.y.put(n, (Object)view);
     }
     
-    public final class a
-    {
-        public int a;
-        public int b;
-        public int c;
-        public int d;
-        public boolean e;
-        public boolean f;
-        public boolean g;
-        public final /* synthetic */ FlexboxLayoutManager h;
-        
-        public a() {
-            this.d = 0;
-        }
-        
-        public static void a(final a a) {
-            if (!a.h.q()) {
-                final FlexboxLayoutManager h = a.h;
-                if (h.j) {
-                    int g;
-                    if (a.e) {
-                        g = h.r.g();
-                    }
-                    else {
-                        g = h.getWidth() - a.h.r.k();
-                    }
-                    a.c = g;
-                    return;
-                }
-            }
-            int c;
-            if (a.e) {
-                c = a.h.r.g();
-            }
-            else {
-                c = a.h.r.k();
-            }
-            a.c = c;
-        }
-        
-        public static void b(final a a) {
-            a.a = -1;
-            a.b = -1;
-            a.c = Integer.MIN_VALUE;
-            final boolean b = false;
-            final boolean b2 = false;
-            final boolean b3 = false;
-            boolean e = false;
-            a.f = false;
-            a.g = false;
-            if (a.h.q()) {
-                final FlexboxLayoutManager h = a.h;
-                final int f = h.f;
-                if (f == 0) {
-                    if (h.e == 1) {
-                        e = true;
-                    }
-                    a.e = e;
-                }
-                else {
-                    boolean e2 = b;
-                    if (f == 2) {
-                        e2 = true;
-                    }
-                    a.e = e2;
-                }
-            }
-            else {
-                final FlexboxLayoutManager h2 = a.h;
-                final int f2 = h2.f;
-                if (f2 == 0) {
-                    boolean e3 = b2;
-                    if (h2.e == 3) {
-                        e3 = true;
-                    }
-                    a.e = e3;
-                }
-                else {
-                    boolean e4 = b3;
-                    if (f2 == 2) {
-                        e4 = true;
-                    }
-                    a.e = e4;
-                }
-            }
-        }
-        
-        @Override
-        public final String toString() {
-            final StringBuilder r = a.r("AnchorInfo{mPosition=");
-            r.append(this.a);
-            r.append(", mFlexLinePosition=");
-            r.append(this.b);
-            r.append(", mCoordinate=");
-            r.append(this.c);
-            r.append(", mPerpendicularCoordinate=");
-            r.append(this.d);
-            r.append(", mLayoutFromEnd=");
-            r.append(this.e);
-            r.append(", mValid=");
-            r.append(this.f);
-            r.append(", mAssignedFromSavedState=");
-            return g7.m(r, this.g, '}');
-        }
-    }
-    
-    public static final class b extends RecyclerView$p implements ed.b
+    public static final class b extends RecyclerView$p implements fd.b
     {
         public static final Parcelable$Creator<b> CREATOR;
         public float j;
@@ -2006,15 +1888,7 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
         public boolean r;
         
         static {
-            CREATOR = (Parcelable$Creator)new Parcelable$Creator<b>() {
-                public final Object createFromParcel(final Parcel parcel) {
-                    return new b(parcel);
-                }
-                
-                public final Object[] newArray(final int n) {
-                    return new b[n];
-                }
-            };
+            CREATOR = (Parcelable$Creator)new FlexboxLayoutManager$b$a();
         }
         
         public b() {
@@ -2066,43 +1940,43 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             return this.m;
         }
         
-        public final int D() {
-            return this.n;
-        }
-        
-        public final boolean D0() {
+        public final boolean C0() {
             return this.r;
         }
         
-        public final int F() {
-            return ((ViewGroup$MarginLayoutParams)this).topMargin;
+        public final int E() {
+            return this.n;
         }
         
         public final int F0() {
             return this.p;
         }
         
-        public final void L0(final int n) {
+        public final int G() {
+            return ((ViewGroup$MarginLayoutParams)this).topMargin;
+        }
+        
+        public final void M0(final int n) {
             this.n = n;
         }
         
-        public final int M0() {
+        public final int N0() {
             return ((ViewGroup$MarginLayoutParams)this).leftMargin;
         }
         
-        public final int Q0() {
+        public final int S0() {
             return ((ViewGroup$MarginLayoutParams)this).rightMargin;
         }
         
-        public final int T0() {
-            return this.o;
-        }
-        
-        public final int U() {
+        public final int T() {
             return ((ViewGroup$MarginLayoutParams)this).bottomMargin;
         }
         
-        public final int U0() {
+        public final int V0() {
+            return this.o;
+        }
+        
+        public final int W0() {
             return this.q;
         }
         
@@ -2118,12 +1992,16 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             return ((ViewGroup$MarginLayoutParams)this).width;
         }
         
-        public final int o0() {
+        public final int m0() {
             return this.l;
         }
         
-        public final float q0() {
+        public final float o0() {
             return this.k;
+        }
+        
+        public final void w0(final int o) {
+            this.o = o;
         }
         
         public final void writeToParcel(final Parcel parcel, final int n) {
@@ -2144,100 +2022,8 @@ public class FlexboxLayoutManager extends RecyclerView$o implements ed.a, Recycl
             parcel.writeInt(((ViewGroup$MarginLayoutParams)this).width);
         }
         
-        public final void x0(final int o) {
-            this.o = o;
-        }
-        
         public final float z0() {
             return this.j;
-        }
-    }
-    
-    public static final class c
-    {
-        public int a;
-        public boolean b;
-        public int c;
-        public int d;
-        public int e;
-        public int f;
-        public int g;
-        public int h;
-        public int i;
-        public boolean j;
-        
-        public c() {
-            this.h = 1;
-            this.i = 1;
-        }
-        
-        @Override
-        public final String toString() {
-            final StringBuilder r = a.r("LayoutState{mAvailable=");
-            r.append(this.a);
-            r.append(", mFlexLinePosition=");
-            r.append(this.c);
-            r.append(", mPosition=");
-            r.append(this.d);
-            r.append(", mOffset=");
-            r.append(this.e);
-            r.append(", mScrollingOffset=");
-            r.append(this.f);
-            r.append(", mLastScrollDelta=");
-            r.append(this.g);
-            r.append(", mItemDirection=");
-            r.append(this.h);
-            r.append(", mLayoutDirection=");
-            return d.l(r, this.i, '}');
-        }
-    }
-    
-    public static final class d implements Parcelable
-    {
-        public static final Parcelable$Creator<d> CREATOR;
-        public int f;
-        public int g;
-        
-        static {
-            CREATOR = (Parcelable$Creator)new Parcelable$Creator<d>() {
-                public final Object createFromParcel(final Parcel parcel) {
-                    return new d(parcel);
-                }
-                
-                public final Object[] newArray(final int n) {
-                    return new d[n];
-                }
-            };
-        }
-        
-        public d() {
-        }
-        
-        public d(final Parcel parcel) {
-            this.f = parcel.readInt();
-            this.g = parcel.readInt();
-        }
-        
-        public d(final d d) {
-            this.f = d.f;
-            this.g = d.g;
-        }
-        
-        public final int describeContents() {
-            return 0;
-        }
-        
-        @Override
-        public final String toString() {
-            final StringBuilder r = a.r("SavedState{mAnchorPosition=");
-            r.append(this.f);
-            r.append(", mAnchorOffset=");
-            return d.l(r, this.g, '}');
-        }
-        
-        public final void writeToParcel(final Parcel parcel, final int n) {
-            parcel.writeInt(this.f);
-            parcel.writeInt(this.g);
         }
     }
 }

@@ -5,9 +5,8 @@
 package r1;
 
 import n1.f;
-import sg2.e;
+import ng2.e;
 import u2.i;
-import lw0.b;
 import u2.g;
 import o1.s;
 import o1.w;
@@ -24,7 +23,7 @@ public final class a extends Painter
     public s q;
     
     public a(final w w) {
-        this(w, g.b, b.l(w.getWidth(), w.getHeight()));
+        this(w, g.b, a01.a.f(w.getWidth(), w.getHeight()));
     }
     
     public a(final w k, final long l, final long n) {
@@ -35,7 +34,7 @@ public final class a extends Painter
         this.n = 1;
         final int c = g.c;
         Label_0100: {
-            if ((int)(l >> 32) >= 0 && g.b(l) >= 0) {
+            if ((int)(l >> 32) >= 0 && g.c(l) >= 0) {
                 final int n2 = (int)(n >> 32);
                 if (n2 >= 0 && i.b(n) >= 0 && n2 <= k.getWidth() && i.b(n) <= k.getHeight()) {
                     break Label_0100;
@@ -56,7 +55,7 @@ public final class a extends Painter
         return true;
     }
     
-    public final boolean c(final s q) {
+    public final boolean e(final s q) {
         this.q = q;
         return true;
     }
@@ -70,17 +69,11 @@ public final class a extends Painter
         }
         final w k = this.k;
         final a a = (a)o;
-        if (!e.a((Object)k, (Object)a.k)) {
-            return false;
-        }
-        final long l = this.l;
-        final long i = a.l;
-        final int c = g.c;
-        return l == i && u2.i.a(this.m, a.m) && this.n == a.n;
+        return e.a((Object)k, (Object)a.k) && g.b(this.l, a.l) && i.a(this.m, a.m) && this.n == a.n;
     }
     
     public final long h() {
-        return b.S2(this.o);
+        return a01.a.b0(this.o);
     }
     
     public final int hashCode() {
@@ -92,17 +85,17 @@ public final class a extends Painter
     
     public final void i(final q1.e e) {
         e.f((Object)e, "<this>");
-        q1.e.J(e, this.k, this.l, this.m, 0L, b.l(b.k2(f.f(e.b())), b.k2(f.d(e.b()))), this.p, (q1.f)null, this.q, 0, this.n, 328);
+        q1.e.N(e, this.k, this.l, this.m, 0L, a01.a.f(p7.a.W(f.f(e.e())), p7.a.W(f.d(e.e()))), this.p, null, this.q, 0, this.n, 328);
     }
     
     public final String toString() {
-        final StringBuilder r = a.r("BitmapPainter(image=");
-        r.append(this.k);
-        r.append(", srcOffset=");
-        r.append((Object)g.c(this.l));
-        r.append(", srcSize=");
-        r.append((Object)i.c(this.m));
-        r.append(", filterQuality=");
+        final StringBuilder t = a.t("BitmapPainter(image=");
+        t.append(this.k);
+        t.append(", srcOffset=");
+        t.append((Object)g.d(this.l));
+        t.append(", srcSize=");
+        t.append((Object)i.c(this.m));
+        t.append(", filterQuality=");
         final int n = this.n;
         final int n2 = 0;
         String s;
@@ -127,8 +120,8 @@ public final class a extends Painter
                 s = "Unknown";
             }
         }
-        r.append((Object)s);
-        r.append(')');
-        return r.toString();
+        t.append((Object)s);
+        t.append(')');
+        return t.toString();
     }
 }

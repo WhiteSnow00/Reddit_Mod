@@ -4,12 +4,10 @@
 
 package s1;
 
-import q1.a$b;
 import o1.b0;
 import java.util.Collection;
-import lq0.k;
-import hg2.j;
-import rg2.a;
+import cg2.j;
+import mg2.a;
 import o1.h;
 import java.util.List;
 import java.util.ArrayList;
@@ -45,19 +43,19 @@ public final class b extends f
     
     @Override
     public final void a(final q1.e e) {
-        sg2.e.f((Object)e, "<this>");
+        ng2.e.f((Object)e, "<this>");
         final boolean q = this.q;
         int i = 0;
         if (q) {
             float[] b = this.b;
             if (b == null) {
-                b = lq0.k.y();
+                b = if0.a.m();
                 this.b = b;
             }
             else {
-                lq0.k.p0(b);
+                if0.a.V(b);
             }
-            lq0.k.R0(b, this.k + this.o, this.l + this.p);
+            if0.a.g0(b, this.k + this.o, this.l + this.p);
             final double n = this.j * 3.141592653589793 / 180.0;
             final float n2 = (float)Math.cos(n);
             final float n3 = (float)Math.sin(n);
@@ -100,7 +98,7 @@ public final class b extends f
             b[9] *= 1.0f;
             b[10] *= 1.0f;
             b[11] *= 1.0f;
-            lq0.k.R0(b, -this.k, -this.l);
+            if0.a.g0(b, -this.k, -this.l);
             this.q = false;
         }
         if (this.e) {
@@ -115,36 +113,36 @@ public final class b extends f
                 }
                 h f = this.f;
                 if (f == null) {
-                    f = yg.a.u();
+                    f = xd.a.j();
                     this.f = f;
                 }
                 else {
                     f.reset();
                 }
                 final List<? extends d> d = this.d;
-                sg2.e.f((Object)d, "nodes");
+                ng2.e.f((Object)d, "nodes");
                 g.a.addAll(d);
-                g.c(f);
+                g.c((b0)f);
             }
             this.e = false;
         }
-        final a$b a0 = e.a0();
-        final long b2 = a0.b();
-        a0.a().save();
-        final q1.b a2 = a0.a;
-        final float[] b3 = this.b;
-        if (b3 != null) {
-            a2.f(b3);
+        final q1.d c0 = (q1.d)e.c0();
+        final long e2 = c0.e();
+        c0.a().save();
+        final q1.b a = c0.a;
+        final float[] b2 = this.b;
+        if (b2 != null) {
+            a.f(b2);
         }
         final h f2 = this.f;
         if ((this.d.isEmpty() ^ true) && f2 != null) {
-            a2.a(f2, 1);
+            a.a(f2, 1);
         }
-        for (ArrayList c = this.c; i < c.size(); ++i) {
-            ((f)c.get(i)).a(e);
+        for (ArrayList c2 = this.c; i < c2.size(); ++i) {
+            ((f)c2.get(i)).a(e);
         }
-        a0.a().restore();
-        a0.c(b2);
+        c0.a().restore();
+        c0.b(e2);
     }
     
     @Override
@@ -173,17 +171,17 @@ public final class b extends f
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("VGroup: ");
-        r.append(this.i);
+        final StringBuilder t = a.t("VGroup: ");
+        t.append(this.i);
         final ArrayList c = this.c;
         for (int size = c.size(), i = 0; i < size; ++i) {
             final f f = (f)c.get(i);
-            r.append("\t");
-            r.append(f.toString());
-            r.append("\n");
+            t.append("\t");
+            t.append(f.toString());
+            t.append("\n");
         }
-        final String string = r.toString();
-        sg2.e.e((Object)string, "sb.toString()");
+        final String string = t.toString();
+        ng2.e.e((Object)string, "sb.toString()");
         return string;
     }
 }

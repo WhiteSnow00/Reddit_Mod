@@ -6,17 +6,18 @@ package com.reddit.domain.modtools.scheduledposts.usecase;
 
 import java.util.concurrent.CancellationException;
 import kotlin.jvm.internal.DefaultConstructorMarker;
+import cg.d;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import com.reddit.domain.model.Link;
 import com.reddit.domain.model.Result;
-import lg2.c;
+import gg2.c;
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.modtools.scheduledposts.ScheduledPostRepository;
-import m20.b;
+import p20.b;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0019\b\u0007\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ!\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0086@\u00f8\u0001\u0000¢\u0006\u0004\b\u0006\u0010\u0007R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010\n\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u000f" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/usecase/SubmitScheduledPostUseCase;", "", "", "scheduledPostId", "Lcom/reddit/domain/model/Result;", "Lcom/reddit/domain/model/Link;", "execute", "(Ljava/lang/String;Llg2/c;)Ljava/lang/Object;", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "scheduledPostRepository", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "Lm20/b;", "resourceProvider", "<init>", "(Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;Lm20/b;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0019\b\u0007\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ!\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0086@\u00f8\u0001\u0000¢\u0006\u0004\b\u0006\u0010\u0007R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010\n\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u000f" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/usecase/SubmitScheduledPostUseCase;", "", "", "scheduledPostId", "Lcom/reddit/domain/model/Result;", "Lcom/reddit/domain/model/Link;", "execute", "(Ljava/lang/String;Lgg2/c;)Ljava/lang/Object;", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "scheduledPostRepository", "Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;", "Lp20/b;", "resourceProvider", "<init>", "(Lcom/reddit/domain/modtools/scheduledposts/ScheduledPostRepository;Lp20/b;)V", "domain_release" }, k = 1, mv = { 1, 7, 1 })
 public final class SubmitScheduledPostUseCase
 {
     private final b resourceProvider;
@@ -32,14 +33,14 @@ public final class SubmitScheduledPostUseCase
     
     public final Object execute(String ex, final c<? super Result<Link>> c) {
         Object o = null;
-        Label_0050: {
+        Label_0051: {
             if (c instanceof SubmitScheduledPostUseCase$execute$1) {
                 final SubmitScheduledPostUseCase$execute$1 submitScheduledPostUseCase$execute$1 = (SubmitScheduledPostUseCase$execute$1)c;
                 final int label = submitScheduledPostUseCase$execute$1.label;
                 if ((label & Integer.MIN_VALUE) != 0x0) {
                     submitScheduledPostUseCase$execute$1.label = label + Integer.MIN_VALUE;
                     o = submitScheduledPostUseCase$execute$1;
-                    break Label_0050;
+                    break Label_0051;
                 }
             }
             o = new SubmitScheduledPostUseCase$execute$1(this, (c)c);
@@ -48,20 +49,20 @@ public final class SubmitScheduledPostUseCase
         final CoroutineSingletons coroutine_SUSPENDED = CoroutineSingletons.COROUTINE_SUSPENDED;
         final int label2 = ((SubmitScheduledPostUseCase$execute$1)o).label;
         boolean b = true;
-        Label_0107: {
+        Label_0109: {
             if (label2 == 0) {
-                break Label_0107;
+                break Label_0109;
             }
-            Label_0097: {
+            Label_0099: {
                 if (label2 != 1) {
-                    break Label_0097;
+                    break Label_0099;
                 }
                 SubmitScheduledPostUseCase submitScheduledPostUseCase = (SubmitScheduledPostUseCase)(ex = (CancellationException)((SubmitScheduledPostUseCase$execute$1)o).L$0);
                 try {
-                    yd.b.k0(o2);
-                    Label_0146: {
-                        break Label_0146;
-                        yd.b.k0(o2);
+                    d.b4(o2);
+                    Label_0153: {
+                        break Label_0153;
+                        d.b4(o2);
                         try {
                             o2 = this.scheduledPostRepository;
                             ((SubmitScheduledPostUseCase$execute$1)o).L$0 = this;
@@ -80,7 +81,7 @@ public final class SubmitScheduledPostUseCase
                             }
                             o2 = result;
                             if (b) {
-                                o2 = Result.Error.copy$default((Result.Error<Object>)result, submitScheduledPostUseCase.resourceProvider.getString(2131953262), false, null, 6, null);
+                                o2 = Result.Error.copy$default((Result.Error<Object>)result, submitScheduledPostUseCase.resourceProvider.getString(2131953281), false, null, 6, null);
                                 return o2;
                             }
                             return o2;
@@ -89,7 +90,7 @@ public final class SubmitScheduledPostUseCase
                             ex = (CancellationException)this;
                         }
                     }
-                    o2 = new Result.Error(((SubmitScheduledPostUseCase)ex).resourceProvider.getString(2131953262), false, null, 6, null);
+                    o2 = new Result.Error(((SubmitScheduledPostUseCase)ex).resourceProvider.getString(2131953281), false, null, 6, null);
                     return o2;
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
@@ -97,7 +98,7 @@ public final class SubmitScheduledPostUseCase
                     throw ex;
                 }
                 finally {
-                    return new Result.Error(((SubmitScheduledPostUseCase)ex).resourceProvider.getString(2131953262), false, null, 6, null);
+                    return new Result.Error(((SubmitScheduledPostUseCase)ex).resourceProvider.getString(2131953281), false, null, 6, null);
                 }
             }
         }

@@ -4,11 +4,13 @@
 
 package com.reddit.vault.feature.vault.feed.composables;
 
-import sg2.e;
+import androidx.constraintlayout.compose.ConstrainScope$VerticalAnchorable;
+import androidx.constraintlayout.compose.ConstrainScope$HorizontalAnchorable;
+import ng2.e;
 import kotlin.Metadata;
-import hg2.j;
+import cg2.j;
 import androidx.constraintlayout.compose.ConstrainScope;
-import rg2.l;
+import mg2.l;
 import kotlin.jvm.internal.Lambda;
 
 @Metadata(k = 3, mv = { 1, 7, 1 }, xi = 48)
@@ -24,10 +26,15 @@ final class CollectibleAvatarsKt$NftCardItem$1$1 extends Lambda implements l<Con
         super(1);
     }
     
+    public /* bridge */ Object invoke(final Object o) {
+        this.invoke((ConstrainScope)o);
+        return j.a;
+    }
+    
     public final void invoke(final ConstrainScope constrainScope) {
         e.f((Object)constrainScope, "$this$constrainAs");
-        ConstrainScope.HorizontalAnchorable.b(constrainScope.e, constrainScope.c.c);
-        ConstrainScope.VerticalAnchorable.b(constrainScope.d, constrainScope.c.b);
-        ConstrainScope.VerticalAnchorable.b(constrainScope.f, constrainScope.c.d);
+        ConstrainScope$HorizontalAnchorable.b(constrainScope.e, constrainScope.c.c);
+        ConstrainScope$VerticalAnchorable.b(constrainScope.d, constrainScope.c.b);
+        ConstrainScope$VerticalAnchorable.b(constrainScope.f, constrainScope.c.d);
     }
 }

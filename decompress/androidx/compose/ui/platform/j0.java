@@ -7,7 +7,7 @@ package androidx.compose.ui.platform;
 import android.graphics.Canvas;
 import o1.b;
 import o1.c;
-import sg2.e;
+import ng2.e;
 import android.view.View;
 import o1.p;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class j0 extends ViewGroup
     public j0(final Context context) {
         super(context);
         this.setClipChildren(false);
-        ((View)this).setTag(2131429320, (Object)Boolean.TRUE);
+        ((View)this).setTag(2131429322, (Object)Boolean.TRUE);
     }
     
     public final void a(final p p3, final View view, final long n) {
@@ -35,9 +35,7 @@ public class j0 extends ViewGroup
         while (true) {
             for (int childCount = super.getChildCount(), i = 0; i < childCount; ++i) {
                 final View child = this.getChildAt(i);
-                if (child == null) {
-                    throw new NullPointerException("null cannot be cast to non-null type androidx.compose.ui.platform.ViewLayer");
-                }
+                e.d((Object)child, "null cannot be cast to non-null type androidx.compose.ui.platform.ViewLayer");
                 if (((ViewLayer)child).m) {
                     final boolean b = true;
                     if (b) {

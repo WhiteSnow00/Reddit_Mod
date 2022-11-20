@@ -4,8 +4,8 @@
 
 package com.reddit.domain.chat.model;
 
-import al0.f0;
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -22,6 +22,19 @@ public final class JoinError
         this.code = code;
         this.detail = detail;
         this.reason = reason;
+    }
+    
+    public static JoinError copy$default(final JoinError joinError, Integer code, JoinErrorDetails detail, String reason, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            code = joinError.code;
+        }
+        if ((n & 0x2) != 0x0) {
+            detail = joinError.detail;
+        }
+        if ((n & 0x4) != 0x0) {
+            reason = joinError.reason;
+        }
+        return joinError.copy(code, detail, reason);
     }
     
     public final Integer component1() {
@@ -92,12 +105,12 @@ public final class JoinError
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("JoinError(code=");
-        r.append(this.code);
-        r.append(", detail=");
-        r.append(this.detail);
-        r.append(", reason=");
-        return f0.n(r, this.reason, ')');
+        final StringBuilder t = a.t("JoinError(code=");
+        t.append(this.code);
+        t.append(", detail=");
+        t.append(this.detail);
+        t.append(", reason=");
+        return h.c(t, this.reason, ')');
     }
     
     @o(generateAdapter = true)
@@ -112,6 +125,19 @@ public final class JoinError
             this.message = message;
             this.code = code;
             this.error = error;
+        }
+        
+        public static JoinErrorDetails copy$default(final JoinErrorDetails joinErrorDetails, String message, Integer code, Boolean error, final int n, final Object o) {
+            if ((n & 0x1) != 0x0) {
+                message = joinErrorDetails.message;
+            }
+            if ((n & 0x2) != 0x0) {
+                code = joinErrorDetails.code;
+            }
+            if ((n & 0x4) != 0x0) {
+                error = joinErrorDetails.error;
+            }
+            return joinErrorDetails.copy(message, code, error);
         }
         
         public final String component1() {
@@ -182,12 +208,12 @@ public final class JoinError
         
         @Override
         public String toString() {
-            final StringBuilder r = a.r("JoinErrorDetails(message=");
-            r.append(this.message);
-            r.append(", code=");
-            r.append(this.code);
-            r.append(", error=");
-            return android.support.v4.media.a.j(r, this.error, ')');
+            final StringBuilder t = a.t("JoinErrorDetails(message=");
+            t.append(this.message);
+            t.append(", code=");
+            t.append(this.code);
+            t.append(", error=");
+            return android.support.v4.media.a.m(t, this.error, ')');
         }
     }
 }

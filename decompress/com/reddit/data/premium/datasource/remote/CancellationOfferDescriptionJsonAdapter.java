@@ -4,14 +4,14 @@
 
 package com.reddit.data.premium.datasource.remote;
 
-import al0.b;
+import t5.w;
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import kotlin.Metadata;
@@ -61,7 +61,7 @@ public final class CancellationOfferDescriptionJsonAdapter extends JsonAdapter<C
             }
             else {
                 jsonReader.H();
-                jsonReader.F1();
+                jsonReader.G1();
             }
         }
         jsonReader.r();
@@ -80,8 +80,8 @@ public final class CancellationOfferDescriptionJsonAdapter extends JsonAdapter<C
         e.f((Object)x, "writer");
         if (cancellationOfferDescription != null) {
             x.h();
-            x.u("bonus_coins");
-            b.n(cancellationOfferDescription.a, (JsonAdapter)this.intAdapter, x, "description");
+            x.v("bonus_coins");
+            w.l(cancellationOfferDescription.a, (JsonAdapter)this.intAdapter, x, "description");
             this.stringAdapter.toJson(x, (Object)cancellationOfferDescription.b);
             x.s();
             return;

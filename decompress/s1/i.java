@@ -5,11 +5,10 @@
 package s1;
 
 import java.util.Iterator;
-import aw.b;
-import sg2.e;
+import ng2.e;
 import kotlin.collections.EmptyList;
 import java.util.List;
-import tg2.a;
+import og2.a;
 
 public final class i extends k implements Iterable<k>, a
 {
@@ -57,7 +56,7 @@ public final class i extends k implements Iterable<k>, a
     }
     
     public final int hashCode() {
-        return this.o.hashCode() + b.c((List)this.n, d.d(this.m, d.d(this.l, d.d(this.k, d.d(this.j, d.d(this.i, d.d(this.h, d.d(this.g, this.f.hashCode() * 31, 31), 31), 31), 31), 31), 31), 31), 31);
+        return this.o.hashCode() + ph0.a.b((List)this.n, aq2.a.b(this.m, aq2.a.b(this.l, aq2.a.b(this.k, aq2.a.b(this.j, aq2.a.b(this.i, aq2.a.b(this.h, aq2.a.b(this.g, this.f.hashCode() * 31, 31), 31), 31), 31), 31), 31), 31), 31);
     }
     
     @Override

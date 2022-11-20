@@ -4,39 +4,28 @@
 
 package zd;
 
-import android.os.RemoteException;
-import android.os.Parcel;
-import android.os.IBinder;
-import android.os.IInterface;
+import android.os.Process;
 
-public class a implements IInterface
+public final class a extends Thread
 {
-    public final IBinder a;
-    
-    public a(final IBinder a) {
-        this.a = a;
+    public a(final ThreadGroup threadGroup) {
+        super(threadGroup, "GmsDynamite");
     }
     
-    public final IBinder asBinder() {
-        return this.a;
-    }
-    
-    public final Parcel l(final Parcel parcel, final int n) throws RemoteException {
-        final Parcel obtain = Parcel.obtain();
+    @Override
+    public final void run() {
+        Process.setThreadPriority(19);
+        monitorenter(this);
         try {
             try {
-                this.a.transact(n, parcel, obtain, 0);
-                obtain.readException();
-                parcel.recycle();
-                return obtain;
+                while (true) {
+                    this.wait();
+                }
             }
-            finally {}
+            finally {
+                monitorexit(this);
+            }
         }
-        catch (final RuntimeException ex) {
-            final Parcel parcel2;
-            parcel2.recycle();
-            throw ex;
-        }
-        parcel.recycle();
+        catch (final InterruptedException ex) {}
     }
 }

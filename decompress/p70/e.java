@@ -4,34 +4,23 @@
 
 package p70;
 
-import android.os.Parcel;
-import com.reddit.screen.BaseScreen;
-import com.reddit.events.deeplink.DeepLinkAnalytics;
-import android.os.Parcelable$Creator;
-import ae1.b;
+import n5.a;
+import j5.b;
 
-public final class e extends b<a>
+public final class e extends b
 {
-    public static final Parcelable$Creator<e> CREATOR;
+    public static final e c;
     
     static {
-        CREATOR = (Parcelable$Creator)new e$a();
+        c = new e();
     }
     
     public e() {
-        super((DeepLinkAnalytics)null);
+        super(14, 15);
     }
     
-    public final BaseScreen c() {
-        return (BaseScreen)new a();
-    }
-    
-    public final int describeContents() {
-        return 0;
-    }
-    
-    public final void writeToParcel(final Parcel parcel, final int n) {
-        sg2.e.f((Object)parcel, "out");
-        parcel.writeInt(1);
+    public final void a(final a a) {
+        ng2.e.f((Object)a, "database");
+        a.execSQL("CREATE TABLE IF NOT EXISTS unsubmitted_pixels (`url` TEXT NOT NULL, PRIMARY KEY(`url`))");
     }
 }

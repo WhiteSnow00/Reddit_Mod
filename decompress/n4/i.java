@@ -12,7 +12,7 @@ import android.text.TextWatcher;
 import java.lang.reflect.Array;
 import java.io.IOException;
 import android.text.Editable;
-import ej2.c0;
+import dg.l0;
 import java.util.ArrayList;
 import android.text.SpannableStringBuilder;
 
@@ -24,14 +24,14 @@ public final class i extends SpannableStringBuilder
     public i(final Class<?> f, final CharSequence charSequence) {
         super(charSequence);
         this.g = new ArrayList();
-        c0.J2((Object)f, "watcherClass cannot be null");
+        l0.P((Object)f, "watcherClass cannot be null");
         this.f = f;
     }
     
     public i(final Class<?> f, final CharSequence charSequence, final int n, final int n2) {
         super(charSequence, n, n2);
         this.g = new ArrayList();
-        c0.J2((Object)f, "watcherClass cannot be null");
+        l0.P((Object)f, "watcherClass cannot be null");
         this.f = f;
     }
     
@@ -225,6 +225,16 @@ public final class i extends SpannableStringBuilder
         if (a != null) {
             this.g.remove(a);
         }
+    }
+    
+    public final /* bridge */ Editable replace(final int n, final int n2, final CharSequence charSequence) {
+        this.replace(n, n2, charSequence);
+        return (Editable)this;
+    }
+    
+    public final /* bridge */ Editable replace(final int n, final int n2, final CharSequence charSequence, final int n3, final int n4) {
+        this.replace(n, n2, charSequence, n3, n4);
+        return (Editable)this;
     }
     
     public final SpannableStringBuilder replace(final int n, final int n2, final CharSequence charSequence) {

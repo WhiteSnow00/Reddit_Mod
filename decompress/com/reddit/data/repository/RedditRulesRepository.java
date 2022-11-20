@@ -4,13 +4,13 @@
 
 package com.reddit.data.repository;
 
-import rg2.p;
-import yd.b;
-import lg2.c;
-import sg2.e;
+import mg2.p;
+import ah0.b;
+import gg2.c;
+import ng2.e;
 import com.reddit.domain.model.streaming.RemovalReasons;
-import ff2.c0;
-import n20.a;
+import af2.c0;
+import q20.a;
 import com.reddit.data.remote.RemoteRulesDataSource;
 import xd0.z;
 
@@ -24,8 +24,9 @@ public final class RedditRulesRepository implements z
         this.b = b;
     }
     
+    @Override
     public final c0<RemovalReasons> a(final String s) {
         e.f((Object)s, "subreddit");
-        return yd.b.b0((p)new RedditRulesRepository$getRemovalReasons$1(this, s, (c)null));
+        return ah0.b.m1((p)new RedditRulesRepository$getRemovalReasons$1(this, s, (c)null));
     }
 }

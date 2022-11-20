@@ -795,6 +795,8 @@
     <dimen name="email_verification_text_line_spacing_extra_title">4sp</dimen>
     <dimen name="emote_size_small">20dp</dimen>
     <dimen name="empty_screen_scheduled_post_icon_size">42dp</dimen>
+    <dimen name="end_padding_for_large_icon">18dp</dimen>
+    <dimen name="end_padding_for_small_icon">18dp</dimen>
     <dimen name="event_title_vertical_margin">10dp</dimen>
     <dimen name="exo_error_message_height">32dp</dimen>
     <dimen name="exo_error_message_margin_bottom">64dp</dimen>
@@ -1975,6 +1977,8 @@
     <dimen name="tooltip_x_offset">106dp</dimen>
     <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
+    <dimen name="top_padding_for_large_icon">18dp</dimen>
+    <dimen name="top_padding_for_small_icon">20dp</dimen>
     <dimen name="topic_chip_stroke_width">@dimen/line_height</dimen>
     <dimen name="topic_corner_radius">48dp</dimen>
     <dimen name="topic_item_height">78dp</dimen>

@@ -4,16 +4,13 @@
 
 package s8;
 
-import java.io.File;
-import o8.d;
-
-public interface a
+public interface a<T>
 {
-    void b(final d p0, final q8.d p1);
+    int a(final T p0);
     
-    File e(final d p0);
+    int b();
     
-    public interface a
-    {
-    }
+    String getTag();
+    
+    T newArray(final int p0);
 }

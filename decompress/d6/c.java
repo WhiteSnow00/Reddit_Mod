@@ -4,179 +4,160 @@
 
 package d6;
 
-import androidx.work.impl.utils.futures.AbstractFuture;
-import java.util.concurrent.Future;
-import android.content.Intent;
-import androidx.work.impl.foreground.SystemForegroundService;
-import java.util.concurrent.Executor;
-import androidx.work.WorkerParameters$a;
-import m6.r;
-import java.util.Iterator;
-import androidx.work.ListenableWorker;
-import androidx.work.ListenableWorker$a;
-import n6.b;
-import c6.i;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.HashMap;
-import androidx.work.impl.WorkDatabase;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Collection;
+import android.text.TextUtils;
+import androidx.work.WorkerParameters$a;
+import androidx.work.WorkInfo$State;
+import k6.q;
+import androidx.work.a;
+import b6.j;
+import java.util.HashSet;
+import g6.d;
+import c6.k;
 import android.content.Context;
-import android.os.PowerManager$WakeLock;
+import c6.b;
+import c6.e;
 
-public final class c implements d6.a, a
+public final class c implements e, g6.c, b
 {
-    public static final String q;
-    public PowerManager$WakeLock f;
-    public Context g;
-    public androidx.work.a h;
-    public n6.a i;
-    public WorkDatabase j;
-    public HashMap k;
-    public HashMap l;
-    public List<d> m;
-    public HashSet n;
-    public final ArrayList o;
-    public final Object p;
+    public static final String n;
+    public final Context f;
+    public final k g;
+    public final d h;
+    public final HashSet i;
+    public d6.b j;
+    public boolean k;
+    public final Object l;
+    public Boolean m;
     
     static {
-        q = i.e("Processor");
+        n = j.e("GreedyScheduler");
     }
     
-    public c(final Context g, final androidx.work.a h, final b i, final WorkDatabase j, final List m) {
+    public c(final Context f, final a a, final m6.b b, final k g) {
+        this.i = new HashSet();
+        this.f = f;
         this.g = g;
-        this.h = h;
-        this.i = (n6.a)i;
-        this.j = j;
-        this.l = new HashMap();
-        this.k = new HashMap();
-        this.m = m;
-        this.n = new HashSet();
-        this.o = new ArrayList();
-        this.f = null;
-        this.p = new Object();
+        this.h = new d(f, (m6.a)b, (g6.c)this);
+        this.j = new d6.b(this, a.e);
+        this.l = new Object();
     }
     
-    public static boolean b(final String s, final m m) {
-        if (m != null) {
-            m.x = true;
-            m.i();
-            final wg.c<ListenableWorker$a> w = m.w;
-            boolean done;
-            if (w != null) {
-                done = ((Future)w).isDone();
-                ((Future)m.w).cancel(true);
-            }
-            else {
-                done = false;
-            }
-            final ListenableWorker k = m.k;
-            if (k != null && !done) {
-                k.stop();
-            }
-            else {
-                i.c().a(m.y, String.format("WorkSpec %s is already done. Not interrupting.", m.j), new Throwable[0]);
-            }
-            i.c().a(c.q, String.format("WorkerWrapper interrupted for %s", s), new Throwable[0]);
-            return true;
+    @Override
+    public final void a(final q... array) {
+        if (this.m == null) {
+            this.m = l6.j.a(this.f, this.g.b);
         }
-        i.c().a(c.q, String.format("WorkerWrapper could not be found for %s", s), new Throwable[0]);
+        if (!this.m) {
+            b6.j.c().d(c.n, "Ignoring schedule request in a secondary process", new Throwable[0]);
+            return;
+        }
+        if (!this.k) {
+            this.g.f.a((b)this);
+            this.k = true;
+        }
+        final HashSet<q> set = new HashSet<q>();
+        final HashSet<String> set2 = new HashSet<String>();
+        for (final q q : array) {
+            final long a = q.a();
+            final long currentTimeMillis = System.currentTimeMillis();
+            if (q.b == WorkInfo$State.ENQUEUED) {
+                if (currentTimeMillis < a) {
+                    final d6.b j = this.j;
+                    if (j != null) {
+                        final Runnable runnable = j.c.remove(q.a);
+                        if (runnable != null) {
+                            j.b.a.removeCallbacks(runnable);
+                        }
+                        final d6.a a2 = new d6.a(j, q);
+                        j.c.put(q.a, a2);
+                        j.b.a.postDelayed((Runnable)a2, q.a() - System.currentTimeMillis());
+                    }
+                }
+                else if (q.b()) {
+                    final b6.b k = q.j;
+                    if (k.c) {
+                        b6.j.c().a(c.n, String.format("Ignoring WorkSpec %s, Requires device idle.", q), new Throwable[0]);
+                    }
+                    else if (k.h.a.size() > 0) {
+                        b6.j.c().a(c.n, String.format("Ignoring WorkSpec %s, Requires ContentUri triggers.", q), new Throwable[0]);
+                    }
+                    else {
+                        set.add(q);
+                        set2.add(q.a);
+                    }
+                }
+                else {
+                    b6.j.c().a(c.n, String.format("Starting work for %s", q.a), new Throwable[0]);
+                    this.g.o(q.a, (WorkerParameters$a)null);
+                }
+            }
+        }
+        synchronized (this.l) {
+            if (!set.isEmpty()) {
+                b6.j.c().a(c.n, String.format("Starting tracking for [%s]", TextUtils.join((CharSequence)",", (Iterable)set2)), new Throwable[0]);
+                this.i.addAll(set);
+                this.h.b((Collection)this.i);
+            }
+        }
+    }
+    
+    @Override
+    public final boolean b() {
         return false;
     }
     
-    public final void a(final d6.a a) {
-        synchronized (this.p) {
-            this.o.add(a);
-        }
-    }
-    
     public final void c(final String s, final boolean b) {
-        synchronized (this.p) {
-            this.l.remove(s);
-            c6.i.c().a(c.q, String.format("%s %s executed; reschedule = %s", c.class.getSimpleName(), s, b), new Throwable[0]);
-            final Iterator iterator = this.o.iterator();
-            while (iterator.hasNext()) {
-                ((d6.a)iterator.next()).c(s, b);
-            }
-        }
-    }
-    
-    public final boolean d(final String s) {
-        synchronized (this.p) {
-            return this.l.containsKey(s) || this.k.containsKey(s);
-        }
-    }
-    
-    public final void e(final String s, final c6.d d) {
-        synchronized (this.p) {
-            c6.i.c().d(c.q, String.format("Moving WorkSpec (%s) to the foreground", s), new Throwable[0]);
-            final m m = this.l.remove(s);
-            if (m != null) {
-                if (this.f == null) {
-                    (this.f = r.a(this.g, "ProcessorForegroundLck")).acquire();
-                }
-                this.k.put(s, m);
-                n3.a.startForegroundService(this.g, androidx.work.impl.foreground.a.b(this.g, s, d));
-            }
-        }
-    }
-    
-    public final boolean f(final String s, final WorkerParameters$a h) {
-        synchronized (this.p) {
-            if (this.d(s)) {
-                c6.i.c().a(c.q, String.format("Work %s is already enqueued for processing", s), new Throwable[0]);
-                return false;
-            }
-            final m.a a = new m.a(this.g, this.h, this.i, this, this.j, s);
-            a.g = this.m;
-            if (h != null) {
-                a.h = h;
-            }
-            final m m = new m(a);
-            final androidx.work.impl.utils.futures.a<Boolean> v = m.v;
-            ((AbstractFuture)v).a((Runnable)new c.c$a((d6.a)this, s, (androidx.work.impl.utils.futures.a)v), (Executor)((b)this.i).c);
-            this.l.put(s, m);
-            monitorexit(this.p);
-            ((b)this.i).a.execute(m);
-            c6.i.c().a(c.q, String.format("%s: processing %s", c.class.getSimpleName(), s), new Throwable[0]);
-            return true;
-        }
-    }
-    
-    public final void g() {
-        synchronized (this.p) {
-            if (!(this.k.isEmpty() ^ true)) {
-                final Context g = this.g;
-                final String p = androidx.work.impl.foreground.a.p;
-                final Intent intent = new Intent(g, (Class)SystemForegroundService.class);
-                intent.setAction("ACTION_STOP_FOREGROUND");
-                try {
-                    this.g.startService(intent);
-                }
-                finally {
-                    final Throwable t;
-                    c6.i.c().b(c.q, "Unable to stop foreground service", t);
-                }
-                final PowerManager$WakeLock f = this.f;
-                if (f != null) {
-                    f.release();
-                    this.f = null;
+        synchronized (this.l) {
+            for (final q q : this.i) {
+                if (q.a.equals(s)) {
+                    b6.j.c().a(c.n, String.format("Stopping tracking for %s", s), new Throwable[0]);
+                    this.i.remove(q);
+                    this.h.b((Collection)this.i);
+                    break;
                 }
             }
         }
     }
     
-    public final boolean h(final String s) {
-        synchronized (this.p) {
-            c6.i.c().a(c.q, String.format("Processor stopping foreground work %s", s), new Throwable[0]);
-            return b(s, this.k.remove(s));
+    @Override
+    public final void cancel(final String s) {
+        if (this.m == null) {
+            this.m = l6.j.a(this.f, this.g.b);
+        }
+        if (!this.m) {
+            b6.j.c().d(c.n, "Ignoring schedule request in non-main process", new Throwable[0]);
+            return;
+        }
+        if (!this.k) {
+            this.g.f.a((b)this);
+            this.k = true;
+        }
+        b6.j.c().a(c.n, String.format("Cancelling work ID %s", s), new Throwable[0]);
+        final d6.b j = this.j;
+        if (j != null) {
+            final Runnable runnable = j.c.remove(s);
+            if (runnable != null) {
+                j.b.a.removeCallbacks(runnable);
+            }
+        }
+        this.g.p(s);
+    }
+    
+    public final void d(final ArrayList list) {
+        for (final String s : list) {
+            b6.j.c().a(c.n, String.format("Constraints not met: Cancelling work ID %s", s), new Throwable[0]);
+            this.g.p(s);
         }
     }
     
-    public final boolean i(final String s) {
-        synchronized (this.p) {
-            c6.i.c().a(c.q, String.format("Processor stopping background work %s", s), new Throwable[0]);
-            return b(s, this.l.remove(s));
+    public final void e(final List<String> list) {
+        for (final String s : (ArrayList)list) {
+            b6.j.c().a(c.n, String.format("Constraints met: Scheduling work ID %s", s), new Throwable[0]);
+            this.g.o(s, (WorkerParameters$a)null);
         }
     }
 }

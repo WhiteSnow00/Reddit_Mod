@@ -4,8 +4,8 @@
 
 package com.reddit.domain.model.mod;
 
-import al0.b;
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -37,6 +37,37 @@ public final class Moderator implements ModToolsUserModel
         this.postKarma = postKarma;
         this.reason = reason;
         this.editable = editable;
+    }
+    
+    public static Moderator copy$default(final Moderator moderator, String username, String authorFlairText, String id, long atUtc, ModPermissions modPermissions, String accountIcon, double postKarma, String reason, Boolean editable, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            username = moderator.getUsername();
+        }
+        if ((n & 0x2) != 0x0) {
+            authorFlairText = moderator.authorFlairText;
+        }
+        if ((n & 0x4) != 0x0) {
+            id = moderator.getId();
+        }
+        if ((n & 0x8) != 0x0) {
+            atUtc = moderator.getAtUtc();
+        }
+        if ((n & 0x10) != 0x0) {
+            modPermissions = moderator.modPermissions;
+        }
+        if ((n & 0x20) != 0x0) {
+            accountIcon = moderator.getAccountIcon();
+        }
+        if ((n & 0x40) != 0x0) {
+            postKarma = moderator.postKarma;
+        }
+        if ((n & 0x80) != 0x0) {
+            reason = moderator.getReason();
+        }
+        if ((n & 0x100) != 0x0) {
+            editable = moderator.editable;
+        }
+        return moderator.copy(username, authorFlairText, id, atUtc, modPermissions, accountIcon, postKarma, reason, editable);
     }
     
     public final String component1() {
@@ -152,7 +183,7 @@ public final class Moderator implements ModToolsUserModel
         else {
             hashCode6 = this.getAccountIcon().hashCode();
         }
-        final int c = b.c(this.postKarma, ((hashCode5 + (hashCode4 + (hashCode3 + (hashCode * 31 + hashCode2) * 31) * 31) * 31) * 31 + hashCode6) * 31, 31);
+        final int a = h.a(this.postKarma, ((hashCode5 + (hashCode4 + (hashCode3 + (hashCode * 31 + hashCode2) * 31) * 31) * 31) * 31 + hashCode6) * 31, 31);
         int hashCode7;
         if (this.getReason() == null) {
             hashCode7 = 0;
@@ -168,28 +199,28 @@ public final class Moderator implements ModToolsUserModel
         else {
             hashCode8 = editable.hashCode();
         }
-        return (c + hashCode7) * 31 + hashCode8;
+        return (a + hashCode7) * 31 + hashCode8;
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Moderator(username=");
-        r.append(this.getUsername());
-        r.append(", authorFlairText=");
-        r.append(this.authorFlairText);
-        r.append(", id=");
-        r.append(this.getId());
-        r.append(", atUtc=");
-        r.append(this.getAtUtc());
-        r.append(", modPermissions=");
-        r.append(this.modPermissions);
-        r.append(", accountIcon=");
-        r.append(this.getAccountIcon());
-        r.append(", postKarma=");
-        r.append(this.postKarma);
-        r.append(", reason=");
-        r.append(this.getReason());
-        r.append(", editable=");
-        return android.support.v4.media.a.j(r, this.editable, ')');
+        final StringBuilder t = a.t("Moderator(username=");
+        t.append(this.getUsername());
+        t.append(", authorFlairText=");
+        t.append(this.authorFlairText);
+        t.append(", id=");
+        t.append(this.getId());
+        t.append(", atUtc=");
+        t.append(this.getAtUtc());
+        t.append(", modPermissions=");
+        t.append(this.modPermissions);
+        t.append(", accountIcon=");
+        t.append(this.getAccountIcon());
+        t.append(", postKarma=");
+        t.append(this.postKarma);
+        t.append(", reason=");
+        t.append(this.getReason());
+        t.append(", editable=");
+        return android.support.v4.media.a.m(t, this.editable, ')');
     }
 }

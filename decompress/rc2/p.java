@@ -4,71 +4,304 @@
 
 package rc2;
 
-public final class p
+import java.nio.ByteBuffer;
+import java.io.EOFException;
+import java.nio.charset.Charset;
+import java.io.IOException;
+import com.sendbird.android.shadow.okio.ByteString;
+import com.sendbird.android.shadow.okio.a;
+
+public final class p implements e
 {
-    public static final int[] b;
-    public static final byte[] c;
-    public static final p d;
-    public final a a;
+    public final a f;
+    public final t g;
+    public boolean h;
     
-    static {
-        b = new int[] { 8184, 8388568, 268435426, 268435427, 268435428, 268435429, 268435430, 268435431, 268435432, 16777194, 1073741820, 268435433, 268435434, 1073741821, 268435435, 268435436, 268435437, 268435438, 268435439, 268435440, 268435441, 268435442, 1073741822, 268435443, 268435444, 268435445, 268435446, 268435447, 268435448, 268435449, 268435450, 268435451, 20, 1016, 1017, 4090, 8185, 21, 248, 2042, 1018, 1019, 249, 2043, 250, 22, 23, 24, 0, 1, 2, 25, 26, 27, 28, 29, 30, 31, 92, 251, 32764, 32, 4091, 1020, 8186, 33, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 252, 115, 253, 8187, 524272, 8188, 16380, 34, 32765, 3, 35, 4, 36, 5, 37, 38, 39, 6, 116, 117, 40, 41, 42, 7, 43, 118, 44, 8, 9, 45, 119, 120, 121, 122, 123, 32766, 2044, 16381, 8189, 268435452, 1048550, 4194258, 1048551, 1048552, 4194259, 4194260, 4194261, 8388569, 4194262, 8388570, 8388571, 8388572, 8388573, 8388574, 16777195, 8388575, 16777196, 16777197, 4194263, 8388576, 16777198, 8388577, 8388578, 8388579, 8388580, 2097116, 4194264, 8388581, 4194265, 8388582, 8388583, 16777199, 4194266, 2097117, 1048553, 4194267, 4194268, 8388584, 8388585, 2097118, 8388586, 4194269, 4194270, 16777200, 2097119, 4194271, 8388587, 8388588, 2097120, 2097121, 4194272, 2097122, 8388589, 4194273, 8388590, 8388591, 1048554, 4194274, 4194275, 4194276, 8388592, 4194277, 4194278, 8388593, 67108832, 67108833, 1048555, 524273, 4194279, 8388594, 4194280, 33554412, 67108834, 67108835, 67108836, 134217694, 134217695, 67108837, 16777201, 33554413, 524274, 2097123, 67108838, 134217696, 134217697, 67108839, 134217698, 16777202, 2097124, 2097125, 67108840, 67108841, 268435453, 134217699, 134217700, 134217701, 1048556, 16777203, 1048557, 2097126, 4194281, 2097127, 2097128, 8388595, 4194282, 4194283, 33554414, 33554415, 16777204, 16777205, 67108842, 8388596, 67108843, 134217702, 67108844, 67108845, 134217703, 134217704, 134217705, 134217706, 134217707, 268435454, 134217708, 134217709, 134217710, 134217711, 134217712, 67108846 };
-        c = new byte[] { 13, 23, 28, 28, 28, 28, 28, 28, 28, 24, 30, 28, 28, 30, 28, 28, 28, 28, 28, 28, 28, 28, 30, 28, 28, 28, 28, 28, 28, 28, 28, 28, 6, 10, 10, 12, 13, 6, 8, 11, 10, 10, 8, 11, 8, 6, 6, 6, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 7, 8, 15, 6, 12, 10, 13, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 7, 8, 13, 19, 13, 14, 6, 15, 5, 6, 5, 6, 5, 6, 6, 6, 5, 7, 7, 6, 6, 6, 5, 6, 7, 6, 5, 5, 6, 7, 7, 7, 7, 7, 15, 11, 14, 13, 28, 20, 22, 20, 20, 22, 22, 22, 23, 22, 23, 23, 23, 23, 23, 24, 23, 24, 24, 22, 23, 24, 23, 23, 23, 23, 21, 22, 23, 22, 23, 23, 24, 22, 21, 20, 22, 22, 23, 23, 21, 23, 22, 22, 24, 21, 22, 23, 23, 21, 21, 22, 21, 23, 22, 23, 23, 20, 22, 22, 22, 23, 22, 22, 23, 26, 26, 20, 19, 22, 23, 22, 25, 26, 26, 26, 27, 27, 26, 24, 25, 19, 21, 26, 27, 27, 26, 27, 24, 21, 21, 26, 26, 28, 27, 27, 27, 20, 24, 20, 21, 22, 21, 21, 23, 22, 22, 25, 25, 24, 24, 26, 23, 26, 27, 26, 26, 27, 27, 27, 27, 27, 28, 27, 27, 27, 27, 27, 26 };
-        d = new p();
+    public p(final t g) {
+        this.f = new a();
+        if (g != null) {
+            this.g = g;
+            return;
+        }
+        throw new NullPointerException("source == null");
     }
     
-    public p() {
-        this.a = new a();
+    public final a S0() {
+        return this.f;
+    }
+    
+    public final ByteString U0(final long n) throws IOException {
+        this.c1(n);
+        return this.f.U0(n);
+    }
+    
+    public final String V0(final Charset charset) throws IOException {
+        if (charset != null) {
+            this.f.y(this.g);
+            return this.f.V0(charset);
+        }
+        throw new IllegalArgumentException("charset == null");
+    }
+    
+    public final long W0() throws IOException {
+        this.c1(1L);
         int n = 0;
         while (true) {
-            final byte[] c = p.c;
-            if (n >= c.length) {
-                return;
+            final int n2 = n + 1;
+            if (!this.request(n2)) {
+                break;
             }
-            final int n2 = p.b[n];
-            byte b = c[n];
-            final a a = new a(n, b);
-            a a2 = this.a;
-            while (b > 8) {
-                b -= 8;
-                final int n3 = n2 >>> b & 0xFF;
-                final a[] a3 = a2.a;
-                if (a3 == null) {
-                    throw new IllegalStateException("invalid dictionary: prefix not unique");
+            final byte k = this.f.k((long)n);
+            if ((k < 48 || k > 57) && (k < 97 || k > 102) && (k < 65 || k > 70)) {
+                if (n != 0) {
+                    break;
                 }
-                if (a3[n3] == null) {
-                    a3[n3] = new a();
+                throw new NumberFormatException(String.format("Expected leading [0-9a-fA-F] character but was %#x", k));
+            }
+            else {
+                n = n2;
+            }
+        }
+        return this.f.W0();
+    }
+    
+    public final String Z0(final long n) throws IOException {
+        if (n < 0L) {
+            throw new IllegalArgumentException(m5.a.e("limit < 0: ", n));
+        }
+        long n2;
+        if (n == Long.MAX_VALUE) {
+            n2 = Long.MAX_VALUE;
+        }
+        else {
+            n2 = n + 1L;
+        }
+        final long a = this.a((byte)10, 0L, n2);
+        if (a != -1L) {
+            return this.f.t(a);
+        }
+        if (n2 < Long.MAX_VALUE && this.request(n2) && this.f.k(n2 - 1L) == 13 && this.request(1L + n2) && this.f.k(n2) == 10) {
+            return this.f.t(n2);
+        }
+        final a a2 = new a();
+        final a f = this.f;
+        f.j(a2, 0L, Math.min(32L, f.g));
+        final StringBuilder t = a.t("\\n not found: limit=");
+        t.append(Math.min(this.f.g, n));
+        t.append(" content=");
+        t.append(a2.q().hex());
+        t.append('\u2026');
+        throw new EOFException(t.toString());
+    }
+    
+    public final long a(final byte b, long max, final long n) throws IOException {
+        if (this.h) {
+            throw new IllegalStateException("closed");
+        }
+        max = 0L;
+        if (n >= 0L) {
+            while (max < n) {
+                final long l = this.f.l(b, max, n);
+                if (l != -1L) {
+                    return l;
                 }
-                a2 = a3[n3];
+                final a f = this.f;
+                final long g = f.g;
+                if (g >= n) {
+                    break;
+                }
+                if (this.g.m(f, 8192L) == -1L) {
+                    break;
+                }
+                max = Math.max(max, g);
             }
-            int i = 0;
-            for (int n4 = 8 - b; i < (i = (n2 << n4 & 0xFF)) + (1 << n4); ++i) {
-                a2.a[i] = a;
+            return -1L;
+        }
+        throw new IllegalArgumentException(String.format("fromIndex=%s toIndex=%s", 0L, n));
+    }
+    
+    public final String b1() throws IOException {
+        return this.Z0(Long.MAX_VALUE);
+    }
+    
+    public final void c1(final long n) throws IOException {
+        if (this.request(n)) {
+            return;
+        }
+        throw new EOFException();
+    }
+    
+    public final void close() throws IOException {
+        if (this.h) {
+            return;
+        }
+        this.h = true;
+        this.g.close();
+        this.f.b();
+    }
+    
+    public final boolean e1() throws IOException {
+        if (!this.h) {
+            return this.f.e1() && this.g.m(this.f, 8192L) == -1L;
+        }
+        throw new IllegalStateException("closed");
+    }
+    
+    public final boolean g(final ByteString byteString) throws IOException {
+        final int size = byteString.size();
+        if (!this.h) {
+            boolean b2;
+            final boolean b = b2 = false;
+            if (size >= 0) {
+                if (byteString.size() - 0 < size) {
+                    b2 = b;
+                }
+                else {
+                    for (int i = 0; i < size; ++i) {
+                        final long n = i + 0L;
+                        if (!this.request(1L + n)) {
+                            b2 = b;
+                            return b2;
+                        }
+                        if (this.f.k(n) != byteString.getByte(0 + i)) {
+                            b2 = b;
+                            return b2;
+                        }
+                    }
+                    b2 = true;
+                }
             }
-            ++n;
+            return b2;
+        }
+        throw new IllegalStateException("closed");
+    }
+    
+    public final boolean isOpen() {
+        return this.h ^ true;
+    }
+    
+    public final long m(final a a, long min) throws IOException {
+        if (a == null) {
+            throw new IllegalArgumentException("sink == null");
+        }
+        if (min < 0L) {
+            throw new IllegalArgumentException(m5.a.e("byteCount < 0: ", min));
+        }
+        if (this.h) {
+            throw new IllegalStateException("closed");
+        }
+        final a f = this.f;
+        if (f.g == 0L && this.g.m(f, 8192L) == -1L) {
+            return -1L;
+        }
+        min = Math.min(min, this.f.g);
+        return this.f.m(a, min);
+    }
+    
+    public final int read(final ByteBuffer byteBuffer) throws IOException {
+        final a f = this.f;
+        if (f.g == 0L && this.g.m(f, 8192L) == -1L) {
+            return -1;
+        }
+        return this.f.read(byteBuffer);
+    }
+    
+    public final byte readByte() throws IOException {
+        this.c1(1L);
+        return this.f.readByte();
+    }
+    
+    public final void readFully(final byte[] array) throws IOException {
+        try {
+            this.c1(array.length);
+            this.f.readFully(array);
+        }
+        catch (final EOFException ex) {
+            int n = 0;
+            while (true) {
+                final a f = this.f;
+                final long g = f.g;
+                if (g <= 0L) {
+                    throw ex;
+                }
+                final int read = f.read(array, n, (int)g);
+                if (read == -1) {
+                    throw new AssertionError();
+                }
+                n += read;
+            }
         }
     }
     
-    public static final class a
-    {
-        public final a[] a;
-        public final int b;
-        public final int c;
-        
-        public a() {
-            this.a = new a[256];
-            this.b = 0;
-            this.c = 0;
+    public final int readInt() throws IOException {
+        this.c1(4L);
+        return this.f.readInt();
+    }
+    
+    public final long readLong() throws IOException {
+        this.c1(8L);
+        return this.f.readLong();
+    }
+    
+    public final short readShort() throws IOException {
+        this.c1(2L);
+        return this.f.readShort();
+    }
+    
+    public final boolean request(final long n) throws IOException {
+        if (n < 0L) {
+            throw new IllegalArgumentException(m5.a.e("byteCount < 0: ", n));
         }
-        
-        public a(int n, int n2) {
-            this.a = null;
-            this.b = n;
-            n2 = (n = (n2 & 0x7));
-            if (n2 == 0) {
-                n = 8;
+        if (!this.h) {
+            a f;
+            do {
+                f = this.f;
+                if (f.g < n) {
+                    continue;
+                }
+                return true;
+            } while (this.g.m(f, 8192L) != -1L);
+            return false;
+        }
+        throw new IllegalStateException("closed");
+    }
+    
+    public final void skip(long n) throws IOException {
+        if (!this.h) {
+            while (n > 0L) {
+                final a f = this.f;
+                if (f.g == 0L && this.g.m(f, 8192L) == -1L) {
+                    throw new EOFException();
+                }
+                final long min = Math.min(n, this.f.g);
+                this.f.skip(min);
+                n -= min;
             }
-            this.c = n;
+            return;
+        }
+        throw new IllegalStateException("closed");
+    }
+    
+    public final u timeout() {
+        return this.g.timeout();
+    }
+    
+    @Override
+    public final String toString() {
+        final StringBuilder t = a.t("buffer(");
+        t.append(this.g);
+        t.append(")");
+        return t.toString();
+    }
+    
+    public final void z(final a a, final long n) throws IOException {
+        try {
+            this.c1(n);
+            this.f.z(a, n);
+        }
+        catch (final EOFException ex) {
+            a.y((t)this.f);
+            throw ex;
         }
     }
 }

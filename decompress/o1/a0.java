@@ -19,19 +19,19 @@ public interface a0
     
     Paint e();
     
-    Shader f();
+    float f();
     
-    void g(final int p0);
+    Shader g();
     
-    s h();
+    void h(final int p0);
     
-    int i();
+    s i();
     
-    void j(final s p0);
+    int j();
     
-    void k(final Shader p0);
+    void k(final s p0);
     
-    int l();
+    void l(final Shader p0);
     
-    float v();
+    int m();
 }

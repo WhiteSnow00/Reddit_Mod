@@ -4,57 +4,15 @@
 
 package rc;
 
-import java.util.Collections;
-import ad.c0;
-import ad.d0;
-import java.util.ArrayList;
-import mc.a;
-import java.util.List;
-import mc.f;
-
-public final class d implements f
+public final class d implements b
 {
-    public final List<List<a>> f;
-    public final List<Long> g;
+    public int a;
+    public int b;
+    public final int c;
     
-    public d(final ArrayList f, final ArrayList g) {
-        this.f = f;
-        this.g = g;
-    }
-    
-    public final long a(final int n) {
-        final boolean b = true;
-        d0.c(n >= 0);
-        d0.c(n < this.g.size() && b);
-        return this.g.get(n);
-    }
-    
-    public final int c() {
-        return this.g.size();
-    }
-    
-    public final int d(final long n) {
-        final List<Long> g = this.g;
-        final Long value = n;
-        final int a = c0.a;
-        int binarySearch = Collections.binarySearch(g, value);
-        if (binarySearch < 0) {
-            binarySearch ^= -1;
-        }
-        else {
-            while (++binarySearch < g.size() && ((Comparable<Long>)g.get(binarySearch)).compareTo(value) == 0) {}
-        }
-        if (binarySearch >= this.g.size()) {
-            binarySearch = -1;
-        }
-        return binarySearch;
-    }
-    
-    public final List<a> e(final long n) {
-        final int d = c0.d(this.g, n, false);
-        if (d == -1) {
-            return Collections.emptyList();
-        }
-        return this.f.get(d);
+    public d(final int a, final int b, final int c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 }

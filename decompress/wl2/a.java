@@ -4,62 +4,57 @@
 
 package wl2;
 
-import tl2.f;
-import tl2.g;
+import al2.i;
+import al2.h;
+import al2.f;
+import kk2.q;
+import zk2.c;
+import kk2.m;
+import rk2.b;
+import java.util.HashMap;
 
-public final class a extends bd0.a
+public final class a
 {
-    public final /* synthetic */ int h;
-    public final /* synthetic */ int[] i;
-    public final /* synthetic */ b j;
+    public static HashMap a;
+    public static HashMap b;
     
-    public a(final b j, final int h, final int[] i) {
-        this.j = j;
-        this.h = h;
-        this.i = i;
+    static {
+        wl2.a.a = new HashMap();
+        wl2.a.b = new HashMap();
+        final HashMap a = wl2.a.a;
+        final m a2 = rk2.b.a;
+        a.put("SHA-256", a2);
+        final HashMap a3 = wl2.a.a;
+        final m c = rk2.b.c;
+        a3.put("SHA-512", c);
+        final HashMap a4 = wl2.a.a;
+        final m g = rk2.b.g;
+        a4.put("SHAKE128", g);
+        final HashMap a5 = wl2.a.a;
+        final m h = rk2.b.h;
+        a5.put("SHAKE256", h);
+        wl2.a.b.put(a2, "SHA-256");
+        wl2.a.b.put(c, "SHA-512");
+        wl2.a.b.put(g, "SHAKE128");
+        wl2.a.b.put(h, "SHAKE256");
     }
     
-    public final g C0(final int n) {
-        final int[] array = new int[4];
-        final int[] array2 = new int[4];
-        int n2;
-        for (int i = n2 = 0; i < this.h; ++i) {
-            final int n3 = (i ^ n) - 1 >> 31;
-            for (int j = 0; j < 4; ++j) {
-                final int n4 = array[j];
-                final int[] k = this.i;
-                array[j] = (n4 ^ (k[n2 + j] & n3));
-                array2[j] ^= (k[n2 + 4 + j] & n3);
-            }
-            n2 += 8;
+    public static c a(final m m) {
+        if (((q)m).n((q)rk2.b.a)) {
+            return (c)new f();
         }
-        final b l = this.j;
-        final c c = new c(array);
-        final c c2 = new c(array2);
-        final f[] m = b.k;
-        l.getClass();
-        return (g)new d((tl2.d)l, (f)c, (f)c2, m);
-    }
-    
-    public final g E0(int i) {
-        final int[] array = new int[4];
-        final int[] array2 = new int[4];
-        final int n = i * 4 * 2;
-        int[] j;
-        for (i = 0; i < 4; ++i) {
-            j = this.i;
-            array[i] = j[n + i];
-            array2[i] = j[n + 4 + i];
+        if (((q)m).n((q)rk2.b.c)) {
+            return (c)new h();
         }
-        final b k = this.j;
-        final c c = new c(array);
-        final c c2 = new c(array2);
-        final f[] l = b.k;
-        k.getClass();
-        return (g)new d((tl2.d)k, (f)c, (f)c2, l);
-    }
-    
-    public final int w0() {
-        return this.h;
+        if (((q)m).n((q)rk2.b.g)) {
+            return (c)new i(128);
+        }
+        if (((q)m).n((q)rk2.b.h)) {
+            return (c)new i(256);
+        }
+        final StringBuilder sb = new StringBuilder();
+        sb.append("unrecognized digest OID: ");
+        sb.append(m);
+        throw new IllegalArgumentException(sb.toString());
     }
 }

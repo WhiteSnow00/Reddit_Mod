@@ -4,47 +4,34 @@
 
 package qg2;
 
-import java.util.Iterator;
-import sg2.e;
-import kotlin.io.FileWalkDirection;
-import java.io.File;
-import bj2.k;
+import ng2.e;
+import ug2.k;
 
-public final class b implements k<File>
+public abstract class b<V> implements d<Object, V>
 {
-    public final File a;
-    public final FileWalkDirection b;
-    public final int c;
+    public V f;
     
-    public b(final File a, final FileWalkDirection b) {
-        e.f((Object)a, "start");
-        e.f((Object)b, "direction");
-        this.a = a;
-        this.b = b;
-        this.c = Integer.MAX_VALUE;
+    public b(final V f) {
+        this.f = f;
     }
     
-    public final Iterator<File> iterator() {
-        return (Iterator<File>)new b.b$b(this);
+    public void a(final Object o, final k k, final Object o2) {
+        e.f((Object)k, "property");
     }
     
-    public abstract static class a extends c
-    {
-        public a(final File file) {
-            e.f((Object)file, "rootDir");
-            super(file);
-        }
+    public void b(final k k) {
+        e.f((Object)k, "property");
     }
     
-    public abstract static class c
-    {
-        public final File a;
-        
-        public c(final File a) {
-            e.f((Object)a, "root");
-            this.a = a;
-        }
-        
-        public abstract File a();
+    public final V getValue(final Object o, final k<?> k) {
+        e.f((Object)k, "property");
+        return this.f;
+    }
+    
+    public final void setValue(Object f, final k<?> k, final V f2) {
+        e.f((Object)k, "property");
+        f = this.f;
+        this.b(k);
+        this.a(f, k, this.f = f2);
     }
 }

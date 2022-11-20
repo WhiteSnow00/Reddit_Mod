@@ -4,7 +4,7 @@
 
 package com.reddit.video.player.player;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -38,6 +38,56 @@ public final class ViewModel
         this.playing = playing;
         this.ended = ended;
         this.transitional = transitional;
+    }
+    
+    public ViewModel(Settings settings, Model model, Model model2, Model model3, Model model4, Model model5, Model model6, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            settings = new Settings(false, false, false, 7, null);
+        }
+        if ((n & 0x2) != 0x0) {
+            model = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        if ((n & 0x4) != 0x0) {
+            model2 = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        if ((n & 0x8) != 0x0) {
+            model3 = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        if ((n & 0x10) != 0x0) {
+            model4 = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        if ((n & 0x20) != 0x0) {
+            model5 = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        if ((n & 0x40) != 0x0) {
+            model6 = new Model(false, false, false, false, false, false, false, false, false, false, false, false, false, null, 16383, null);
+        }
+        this(settings, model, model2, model3, model4, model5, model6);
+    }
+    
+    public static ViewModel copy$default(final ViewModel viewModel, Settings settings, Model idle, Model buffering, Model paused, Model playing, Model ended, Model transitional, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            settings = viewModel.settings;
+        }
+        if ((n & 0x2) != 0x0) {
+            idle = viewModel.idle;
+        }
+        if ((n & 0x4) != 0x0) {
+            buffering = viewModel.buffering;
+        }
+        if ((n & 0x8) != 0x0) {
+            paused = viewModel.paused;
+        }
+        if ((n & 0x10) != 0x0) {
+            playing = viewModel.playing;
+        }
+        if ((n & 0x20) != 0x0) {
+            ended = viewModel.ended;
+        }
+        if ((n & 0x40) != 0x0) {
+            transitional = viewModel.transitional;
+        }
+        return viewModel.copy(settings, idle, buffering, paused, playing, ended, transitional);
     }
     
     public final Settings component1() {
@@ -161,21 +211,21 @@ public final class ViewModel
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ViewModel(settings=");
-        r.append(this.settings);
-        r.append(", idle=");
-        r.append(this.idle);
-        r.append(", buffering=");
-        r.append(this.buffering);
-        r.append(", paused=");
-        r.append(this.paused);
-        r.append(", playing=");
-        r.append(this.playing);
-        r.append(", ended=");
-        r.append(this.ended);
-        r.append(", transitional=");
-        r.append(this.transitional);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("ViewModel(settings=");
+        t.append(this.settings);
+        t.append(", idle=");
+        t.append(this.idle);
+        t.append(", buffering=");
+        t.append(this.buffering);
+        t.append(", paused=");
+        t.append(this.paused);
+        t.append(", playing=");
+        t.append(this.playing);
+        t.append(", ended=");
+        t.append(this.ended);
+        t.append(", transitional=");
+        t.append(this.transitional);
+        t.append(')');
+        return t.toString();
     }
 }

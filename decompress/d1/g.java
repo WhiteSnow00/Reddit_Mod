@@ -6,14 +6,14 @@ package d1;
 
 import java.util.Iterator;
 import java.util.Map;
-import ig2.e;
+import dg2.e;
 
 public final class g<K, V> extends e<Map.Entry<Object, Object>>
 {
     public final d1.e<K, V> f;
     
     public g(final d1.e<K, V> f) {
-        sg2.e.f((Object)f, "builder");
+        ng2.e.f((Object)f, "builder");
         this.f = f;
     }
     
@@ -24,11 +24,11 @@ public final class g<K, V> extends e<Map.Entry<Object, Object>>
             return false;
         }
         final Map.Entry entry = (Map.Entry)o;
-        sg2.e.f((Object)entry, "element");
+        ng2.e.f((Object)entry, "element");
         final Object value = this.f.get(entry.getKey());
         boolean a;
         if (value != null) {
-            a = sg2.e.a(value, entry.getValue());
+            a = ng2.e.a(value, entry.getValue());
         }
         else {
             a = b2;
@@ -42,8 +42,9 @@ public final class g<K, V> extends e<Map.Entry<Object, Object>>
         return a;
     }
     
+    @Override
     public final boolean add(final Object o) {
-        sg2.e.f((Object)o, "element");
+        ng2.e.f((Object)o, "element");
         throw new UnsupportedOperationException();
     }
     
@@ -52,7 +53,7 @@ public final class g<K, V> extends e<Map.Entry<Object, Object>>
             return false;
         }
         final Map.Entry entry = (Map.Entry)o;
-        sg2.e.f((Object)entry, "element");
+        ng2.e.f((Object)entry, "element");
         return this.f.remove(entry.getKey(), entry.getValue());
     }
     
@@ -60,11 +61,20 @@ public final class g<K, V> extends e<Map.Entry<Object, Object>>
         this.f.clear();
     }
     
+    public final /* bridge */ boolean contains(final Object o) {
+        return this.a(o);
+    }
+    
+    @Override
     public final int getSize() {
-        return this.f.d();
+        return this.f.c();
     }
     
     public final Iterator<Map.Entry<K, V>> iterator() {
-        return new h<K, V>(this.f);
+        return new h(this.f);
+    }
+    
+    public final /* bridge */ boolean remove(final Object o) {
+        return this.c(o);
     }
 }

@@ -26,9 +26,11 @@ abstract class ChangeUpdateListener
     public class FloatValues
     {
         public float from;
+        public final ChangeUpdateListener this$0;
         public float to;
         
-        public FloatValues(final float from, final float to) {
+        public FloatValues(final ChangeUpdateListener this$0, final float from, final float to) {
+            this.this$0 = this$0;
             this.from = from;
             this.to = to;
         }
@@ -37,9 +39,11 @@ abstract class ChangeUpdateListener
     public class IntValues
     {
         public int from;
+        public final ChangeUpdateListener this$0;
         public int to;
         
-        public IntValues(final int from, final int to) {
+        public IntValues(final ChangeUpdateListener this$0, final int from, final int to) {
+            this.this$0 = this$0;
             this.from = from;
             this.to = to;
         }

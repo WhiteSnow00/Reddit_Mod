@@ -4,8 +4,9 @@
 
 package com.reddit.domain.modtools.scheduledposts;
 
+import p1.h;
 import kotlin.collections.EmptyList;
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import java.util.List;
 import kotlin.Metadata;
@@ -29,6 +30,13 @@ public final class DeleteScheduledPostResult
             instance = EmptyList.INSTANCE;
         }
         this((List<String>)instance);
+    }
+    
+    public static DeleteScheduledPostResult copy$default(final DeleteScheduledPostResult deleteScheduledPostResult, List errors, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            errors = deleteScheduledPostResult.errors;
+        }
+        return deleteScheduledPostResult.copy(errors);
     }
     
     public final List<String> component1() {
@@ -56,6 +64,6 @@ public final class DeleteScheduledPostResult
     
     @Override
     public String toString() {
-        return d.o(a.r("DeleteScheduledPostResult(errors="), (List)this.errors, ')');
+        return h.d(a.t("DeleteScheduledPostResult(errors="), (List)this.errors, ')');
     }
 }

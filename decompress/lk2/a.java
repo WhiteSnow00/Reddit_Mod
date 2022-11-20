@@ -4,23 +4,25 @@
 
 package lk2;
 
-import java.util.concurrent.Executors;
-import java.io.FileOutputStream;
-import java.util.concurrent.ExecutorService;
-import java.io.File;
+import kk2.m;
+import nm2.h;
+import java.util.Hashtable;
 
-public abstract class a implements f
+public final class a
 {
-    public final d a;
-    public final File b;
-    public final ExecutorService c;
-    public FileOutputStream d;
-    public final a$a e;
+    public static a$a a;
+    public static final Hashtable b;
+    public static final Hashtable c;
     
-    public a(final d$b a, final File b) {
-        this.c = Executors.newSingleThreadExecutor();
-        this.e = new a$a(this);
-        this.a = (d)a;
-        this.b = b;
+    static {
+        lk2.a.a = new a$a();
+        final Hashtable hashtable = b = new Hashtable();
+        final Hashtable hashtable2 = c = new Hashtable();
+        final Hashtable hashtable3 = new Hashtable();
+        final m a = lk2.b.a;
+        final a$a a2 = lk2.a.a;
+        hashtable.put(h.c("FRP256v1"), a);
+        hashtable3.put(a, "FRP256v1");
+        hashtable2.put(a, a2);
     }
 }

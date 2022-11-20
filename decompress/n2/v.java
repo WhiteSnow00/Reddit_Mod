@@ -4,9 +4,10 @@
 
 package n2;
 
-import a4.u0;
-import sg2.e;
+import a4.q;
+import ng2.e;
 import android.graphics.Typeface;
+import android.content.Context;
 
 public final class v
 {
@@ -16,10 +17,11 @@ public final class v
         a = new v();
     }
     
-    public final Typeface a(Typeface c, final int n, final boolean b) {
-        e.f((Object)c, "typeface");
-        c = u0.c(c, n, b);
-        e.e((Object)c, "create(typeface, finalFontWeight, finalFontStyle)");
-        return c;
+    public final Typeface a(final Context context, final u u) {
+        e.f((Object)context, "context");
+        e.f((Object)u, "font");
+        final Typeface e = q.e(context.getResources(), u.a);
+        ng2.e.e((Object)e, "context.resources.getFont(font.resId)");
+        return e;
     }
 }

@@ -4,9 +4,8 @@
 
 package com.reddit.domain.model.mod;
 
-import al0.f0;
-import sg2.e;
-import al0.b;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -23,13 +22,35 @@ public final class MutedUser implements ModToolsUserModel
     private final String username;
     
     public MutedUser(@n(name = "username") final String username, @n(name = "mutedAtUTC") final long atUtc, @n(name = "id") final String id, @n(name = "accountIcon") final String accountIcon, @n(name = "reason") final String reason, @n(name = "mutedBy") final String mutedBy) {
-        b.q(username, "username", id, "id", mutedBy, "mutedBy");
+        b.w(username, "username", id, "id", mutedBy, "mutedBy");
         this.username = username;
         this.atUtc = atUtc;
         this.id = id;
         this.accountIcon = accountIcon;
         this.reason = reason;
         this.mutedBy = mutedBy;
+    }
+    
+    public static MutedUser copy$default(final MutedUser mutedUser, String username, long atUtc, String id, String accountIcon, String reason, String mutedBy, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            username = mutedUser.getUsername();
+        }
+        if ((n & 0x2) != 0x0) {
+            atUtc = mutedUser.getAtUtc();
+        }
+        if ((n & 0x4) != 0x0) {
+            id = mutedUser.getId();
+        }
+        if ((n & 0x8) != 0x0) {
+            accountIcon = mutedUser.getAccountIcon();
+        }
+        if ((n & 0x10) != 0x0) {
+            reason = mutedUser.getReason();
+        }
+        if ((n & 0x20) != 0x0) {
+            mutedBy = mutedUser.mutedBy;
+        }
+        return mutedUser.copy(username, atUtc, id, accountIcon, reason, mutedBy);
     }
     
     public final String component1() {
@@ -121,17 +142,17 @@ public final class MutedUser implements ModToolsUserModel
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("MutedUser(username=");
-        r.append(this.getUsername());
-        r.append(", atUtc=");
-        r.append(this.getAtUtc());
-        r.append(", id=");
-        r.append(this.getId());
-        r.append(", accountIcon=");
-        r.append(this.getAccountIcon());
-        r.append(", reason=");
-        r.append(this.getReason());
-        r.append(", mutedBy=");
-        return f0.n(r, this.mutedBy, ')');
+        final StringBuilder t = a.t("MutedUser(username=");
+        t.append(this.getUsername());
+        t.append(", atUtc=");
+        t.append(this.getAtUtc());
+        t.append(", id=");
+        t.append(this.getId());
+        t.append(", accountIcon=");
+        t.append(this.getAccountIcon());
+        t.append(", reason=");
+        t.append(this.getReason());
+        t.append(", mutedBy=");
+        return h.c(t, this.mutedBy, ')');
     }
 }

@@ -5,23 +5,29 @@
 package com.google.android.gms.internal.measurement;
 
 import java.io.IOException;
-import ie.k6;
-import ie.m7;
-import ie.b7;
-import ie.f8;
-import ie.o5;
+import je.i6;
+import je.k7;
+import je.z6;
+import je.e8;
+import je.m5;
 import java.util.logging.Logger;
-import ie.j5;
+import je.h5;
 
-public abstract class d extends j5
+public abstract class d extends h5
 {
     public static final Logger b;
     public static final boolean c;
-    public o5 a;
+    public m5 a;
     
     static {
         b = Logger.getLogger(d.class.getName());
-        c = f8.e;
+        c = e8.e;
+    }
+    
+    public d() {
+    }
+    
+    public d(final int n) {
     }
     
     public static int a(final int n) {
@@ -69,12 +75,12 @@ public abstract class d extends j5
     }
     
     @Deprecated
-    public static int r(int n, final b7 b7, final m7 m7) {
+    public static int r(int n, final z6 z6, final k7 k7) {
         final int a = a(n << 3);
-        final b b8 = (b)b7;
-        if ((n = b8.a()) == -1) {
-            n = m7.c((Object)b8);
-            b8.h(n);
+        final b b = (b)z6;
+        if ((n = b.d()) == -1) {
+            n = k7.c((Object)b);
+            b.h(n);
         }
         return a + a + n;
     }
@@ -92,7 +98,7 @@ public abstract class d extends j5
             n = f.c((CharSequence)s);
         }
         catch (final zznb zznb) {
-            n = s.getBytes(k6.a).length;
+            n = s.getBytes(i6.a).length;
         }
         return a(n) + n;
     }

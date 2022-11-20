@@ -5,8 +5,8 @@
 package com.reddit.domain.model;
 
 import android.os.Parcel;
-import al0.f0;
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import android.os.Parcelable$Creator;
@@ -15,7 +15,7 @@ import com.squareup.moshi.o;
 import android.os.Parcelable;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\b\u0087\b\u0018\u00002\u00020\u0001BC\u0012\n\b\u0003\u0010\b\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\t\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\n\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\f\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b\"\u0010#J\u000b\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0006\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003JE\u0010\r\u001a\u00020\u00002\n\b\u0003\u0010\b\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\t\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\n\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\f\u001a\u0004\u0018\u00010\u0002H\u00c6\u0001J\t\u0010\u000e\u001a\u00020\u0002H\u00d6\u0001J\t\u0010\u0010\u001a\u00020\u000fH\u00d6\u0001J\u0013\u0010\u0014\u001a\u00020\u00132\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u00d6\u0003J\t\u0010\u0015\u001a\u00020\u000fH\u00d6\u0001J\u0019\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0018\u001a\u00020\u000fH\u00d6\u0001R\u0019\u0010\b\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\u001b\u001a\u0004\b\u001c\u0010\u001dR\u0019\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\t\u0010\u001b\u001a\u0004\b\u001e\u0010\u001dR\u0019\u0010\n\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\n\u0010\u001b\u001a\u0004\b\u001f\u0010\u001dR\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u001b\u001a\u0004\b \u0010\u001dR\u0019\u0010\f\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\f\u0010\u001b\u001a\u0004\b!\u0010\u001d¨\u0006$" }, d2 = { "Lcom/reddit/domain/model/RedditVideoMp4Urls;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "component4", "component5", "lowRes", "mediumRes", "highRes", "highestRes", "recommendedRes", "copy", "toString", "", "hashCode", "", "other", "", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Ljava/lang/String;", "getLowRes", "()Ljava/lang/String;", "getMediumRes", "getHighRes", "getHighestRes", "getRecommendedRes", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\b\u0087\b\u0018\u00002\u00020\u0001BC\u0012\n\b\u0003\u0010\b\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\t\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\n\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0003\u0010\f\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b\"\u0010#J\u000b\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0005\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0006\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u000b\u0010\u0007\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003JE\u0010\r\u001a\u00020\u00002\n\b\u0003\u0010\b\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\t\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\n\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u00022\n\b\u0003\u0010\f\u001a\u0004\u0018\u00010\u0002H\u00c6\u0001J\t\u0010\u000e\u001a\u00020\u0002H\u00d6\u0001J\t\u0010\u0010\u001a\u00020\u000fH\u00d6\u0001J\u0013\u0010\u0014\u001a\u00020\u00132\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u00d6\u0003J\t\u0010\u0015\u001a\u00020\u000fH\u00d6\u0001J\u0019\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0018\u001a\u00020\u000fH\u00d6\u0001R\u0019\u0010\b\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\u001b\u001a\u0004\b\u001c\u0010\u001dR\u0019\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\t\u0010\u001b\u001a\u0004\b\u001e\u0010\u001dR\u0019\u0010\n\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\n\u0010\u001b\u001a\u0004\b\u001f\u0010\u001dR\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u001b\u001a\u0004\b \u0010\u001dR\u0019\u0010\f\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\f\u0010\u001b\u001a\u0004\b!\u0010\u001d¨\u0006$" }, d2 = { "Lcom/reddit/domain/model/RedditVideoMp4Urls;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "component4", "component5", "lowRes", "mediumRes", "highRes", "highestRes", "recommendedRes", "copy", "toString", "", "hashCode", "", "other", "", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Ljava/lang/String;", "getLowRes", "()Ljava/lang/String;", "getMediumRes", "getHighRes", "getHighestRes", "getRecommendedRes", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class RedditVideoMp4Urls implements Parcelable
 {
     public static final Parcelable$Creator<RedditVideoMp4Urls> CREATOR;
@@ -39,6 +39,44 @@ public final class RedditVideoMp4Urls implements Parcelable
         this.highRes = highRes;
         this.highestRes = highestRes;
         this.recommendedRes = recommendedRes;
+    }
+    
+    public RedditVideoMp4Urls(String s, String s2, String s3, String s4, String s5, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            s = null;
+        }
+        if ((n & 0x2) != 0x0) {
+            s2 = null;
+        }
+        if ((n & 0x4) != 0x0) {
+            s3 = null;
+        }
+        if ((n & 0x8) != 0x0) {
+            s4 = null;
+        }
+        if ((n & 0x10) != 0x0) {
+            s5 = null;
+        }
+        this(s, s2, s3, s4, s5);
+    }
+    
+    public static RedditVideoMp4Urls copy$default(final RedditVideoMp4Urls redditVideoMp4Urls, String lowRes, String mediumRes, String highRes, String highestRes, String recommendedRes, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            lowRes = redditVideoMp4Urls.lowRes;
+        }
+        if ((n & 0x2) != 0x0) {
+            mediumRes = redditVideoMp4Urls.mediumRes;
+        }
+        if ((n & 0x4) != 0x0) {
+            highRes = redditVideoMp4Urls.highRes;
+        }
+        if ((n & 0x8) != 0x0) {
+            highestRes = redditVideoMp4Urls.highestRes;
+        }
+        if ((n & 0x10) != 0x0) {
+            recommendedRes = redditVideoMp4Urls.recommendedRes;
+        }
+        return redditVideoMp4Urls.copy(lowRes, mediumRes, highRes, highestRes, recommendedRes);
     }
     
     public final String component1() {
@@ -145,16 +183,16 @@ public final class RedditVideoMp4Urls implements Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("RedditVideoMp4Urls(lowRes=");
-        r.append(this.lowRes);
-        r.append(", mediumRes=");
-        r.append(this.mediumRes);
-        r.append(", highRes=");
-        r.append(this.highRes);
-        r.append(", highestRes=");
-        r.append(this.highestRes);
-        r.append(", recommendedRes=");
-        return f0.n(r, this.recommendedRes, ')');
+        final StringBuilder t = a.t("RedditVideoMp4Urls(lowRes=");
+        t.append(this.lowRes);
+        t.append(", mediumRes=");
+        t.append(this.mediumRes);
+        t.append(", highRes=");
+        t.append(this.highRes);
+        t.append(", highestRes=");
+        t.append(this.highestRes);
+        t.append(", recommendedRes=");
+        return h.c(t, this.recommendedRes, ')');
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -174,8 +212,16 @@ public final class RedditVideoMp4Urls implements Parcelable
             return new RedditVideoMp4Urls(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString());
         }
         
+        public /* bridge */ Object createFromParcel(final Parcel parcel) {
+            return this.createFromParcel(parcel);
+        }
+        
         public final RedditVideoMp4Urls[] newArray(final int n) {
             return new RedditVideoMp4Urls[n];
+        }
+        
+        public /* bridge */ Object[] newArray(final int n) {
+            return this.newArray(n);
         }
     }
 }

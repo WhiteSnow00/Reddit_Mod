@@ -17,23 +17,25 @@ import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.Ref$BooleanRef;
 import android.widget.SeekBar;
 import com.reddit.video.creation.widgets.utils.ViewExtensions;
+import wt1.a;
+import y72.b;
 import android.view.View$OnClickListener;
-import m42.a;
+import s92.g;
 import android.view.ViewGroup;
 import android.view.View;
 import android.util.AttributeSet;
-import sg2.e;
+import ng2.e;
 import android.content.Context;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import hg2.j;
-import rg2.l;
+import cg2.j;
+import mg2.l;
 import android.widget.TextView;
 import android.widget.RadioGroup;
 import android.widget.ImageView;
 import kotlin.Metadata;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-@Metadata(bv = {}, d1 = { "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 *2\u00020\u0001:\u0001*B'\b\u0007\u0012\u0006\u0010$\u001a\u00020#\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010%\u0012\b\b\u0002\u0010'\u001a\u00020\n¢\u0006\u0004\b(\u0010)J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0004\u001a\u00020\u0002H\u0003J\b\u0010\u0005\u001a\u00020\u0002H\u0002J\u0010\u0010\b\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J\u0014\u0010\f\u001a\u00020\u0002*\u00020\t2\u0006\u0010\u000b\u001a\u00020\nH\u0002J\b\u0010\r\u001a\u00020\u0002H\u0002J\b\u0010\u000e\u001a\u00020\u0002H\u0002J\u000e\u0010\u0011\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fJ\u001a\u0010\u0015\u001a\u00020\u00022\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00020\u0012R\u0018\u0010\u0010\u001a\u0004\u0018\u00010\u000f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0010\u0010\u0016R\u0016\u0010\u0018\u001a\u00020\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\u0016\u0010\u001a\u001a\u00020\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001a\u0010\u0019R\u0016\u0010\u001c\u001a\u00020\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001c\u0010\u001dR\u0016\u0010\u001e\u001a\u00020\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010\u001dR\u0016\u0010\u001f\u001a\u00020\t8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001f\u0010 R\u0016\u0010!\u001a\u00020\n8\u0002@\u0002X\u0083\u000e¢\u0006\u0006\n\u0004\b!\u0010\"¨\u0006+" }, d2 = { "Lcom/reddit/video/creation/widgets/widget/draw/DrawContainerView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lhg2/j;", "updateBrushControls", "initSeekBar", "setUpColorPicker", "Landroid/view/View;", "it", "setUpRadioButton", "Landroid/widget/RadioGroup;", "", "checkedId", "onRadioChecked", "hideViews", "showViews", "Lcom/reddit/video/creation/widgets/widget/draw/DrawView;", "drawView", "initView", "Lkotlin/Function1;", "", "listener", "setDoneListener", "Lcom/reddit/video/creation/widgets/widget/draw/DrawView;", "Landroid/widget/TextView;", "undo", "Landroid/widget/TextView;", "done", "Landroid/widget/ImageView;", "brush", "Landroid/widget/ImageView;", "eraser", "colorPicker", "Landroid/widget/RadioGroup;", "selectedColor", "I", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyle", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Companion", "widgets_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 *2\u00020\u0001:\u0001*B'\b\u0007\u0012\u0006\u0010$\u001a\u00020#\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010%\u0012\b\b\u0002\u0010'\u001a\u00020\n¢\u0006\u0004\b(\u0010)J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0004\u001a\u00020\u0002H\u0003J\b\u0010\u0005\u001a\u00020\u0002H\u0002J\u0010\u0010\b\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J\u0014\u0010\f\u001a\u00020\u0002*\u00020\t2\u0006\u0010\u000b\u001a\u00020\nH\u0002J\b\u0010\r\u001a\u00020\u0002H\u0002J\b\u0010\u000e\u001a\u00020\u0002H\u0002J\u000e\u0010\u0011\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fJ\u001a\u0010\u0015\u001a\u00020\u00022\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00020\u0012R\u0018\u0010\u0010\u001a\u0004\u0018\u00010\u000f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0010\u0010\u0016R\u0016\u0010\u0018\u001a\u00020\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\u0016\u0010\u001a\u001a\u00020\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001a\u0010\u0019R\u0016\u0010\u001c\u001a\u00020\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001c\u0010\u001dR\u0016\u0010\u001e\u001a\u00020\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010\u001dR\u0016\u0010\u001f\u001a\u00020\t8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001f\u0010 R\u0016\u0010!\u001a\u00020\n8\u0002@\u0002X\u0083\u000e¢\u0006\u0006\n\u0004\b!\u0010\"¨\u0006+" }, d2 = { "Lcom/reddit/video/creation/widgets/widget/draw/DrawContainerView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcg2/j;", "updateBrushControls", "initSeekBar", "setUpColorPicker", "Landroid/view/View;", "it", "setUpRadioButton", "Landroid/widget/RadioGroup;", "", "checkedId", "onRadioChecked", "hideViews", "showViews", "Lcom/reddit/video/creation/widgets/widget/draw/DrawView;", "drawView", "initView", "Lkotlin/Function1;", "", "listener", "setDoneListener", "Lcom/reddit/video/creation/widgets/widget/draw/DrawView;", "Landroid/widget/TextView;", "undo", "Landroid/widget/TextView;", "done", "Landroid/widget/ImageView;", "brush", "Landroid/widget/ImageView;", "eraser", "colorPicker", "Landroid/widget/RadioGroup;", "selectedColor", "I", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyle", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Companion", "widgets_release" }, k = 1, mv = { 1, 7, 1 })
 public final class DrawContainerView extends ConstraintLayout
 {
     public static final DrawContainerView.DrawContainerView$Companion Companion;
@@ -68,30 +70,40 @@ public final class DrawContainerView extends ConstraintLayout
         e.f((Object)context, "context");
         super(context, set, n);
         this.selectedColor = -16777216;
-        View.inflate(context, 2131624227, (ViewGroup)this);
+        View.inflate(context, 2131624230, (ViewGroup)this);
         this.hideViews();
-        final View viewById = ((View)this).findViewById(2131431949);
+        final View viewById = ((View)this).findViewById(2131431956);
         e.e((Object)viewById, "findViewById(R.id.tvUndo)");
         this.undo = (TextView)viewById;
-        final View viewById2 = ((View)this).findViewById(2131431922);
+        final View viewById2 = ((View)this).findViewById(2131431929);
         e.e((Object)viewById2, "findViewById(R.id.tvDone)");
         this.done = (TextView)viewById2;
         final View viewById3 = ((View)this).findViewById(2131427979);
         e.e((Object)viewById3, "findViewById(R.id.brush)");
         this.brush = (ImageView)viewById3;
-        final View viewById4 = ((View)this).findViewById(2131428896);
+        final View viewById4 = ((View)this).findViewById(2131428898);
         e.e((Object)viewById4, "findViewById(R.id.eraser)");
         this.eraser = (ImageView)viewById4;
         this.updateBrushControls();
-        ((View)this.brush).setOnClickListener((View$OnClickListener)new a((Object)this, 15));
-        ((View)this.eraser).setOnClickListener((View$OnClickListener)new t32.e((Object)this, 18));
-        final View viewById5 = ((View)this).findViewById(2131430869);
+        ((View)this.brush).setOnClickListener((View$OnClickListener)new g((Object)this, 8));
+        ((View)this.eraser).setOnClickListener((View$OnClickListener)new b((Object)this, 12));
+        final View viewById5 = ((View)this).findViewById(2131430872);
         e.e((Object)viewById5, "findViewById(R.id.rbOverlayColorPicker)");
         this.colorPicker = (RadioGroup)viewById5;
-        ((View)this.undo).setOnClickListener((View$OnClickListener)new zv1.a((Object)this, 17));
-        ((View)this.done).setOnClickListener((View$OnClickListener)new x62.a((Object)this, 14));
+        ((View)this.undo).setOnClickListener((View$OnClickListener)new wt1.a((Object)this, 27));
+        ((View)this.done).setOnClickListener((View$OnClickListener)new com.reddit.vault.feature.vault.transfer.a((Object)this, 5));
         this.initSeekBar();
         this.setUpColorPicker();
+    }
+    
+    public DrawContainerView(final Context context, AttributeSet set, int n, final int n2, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n2 & 0x2) != 0x0) {
+            set = null;
+        }
+        if ((n2 & 0x4) != 0x0) {
+            n = 0;
+        }
+        this(context, set, n);
     }
     
     private static final void _init_$lambda-0(final DrawContainerView drawContainerView, final View view) {
@@ -167,9 +179,21 @@ public final class DrawContainerView extends ConstraintLayout
             if (drawView5 != null) {
                 hasDrawing = drawView5.hasDrawing();
             }
-            listener.invoke(hasDrawing);
+            listener.invoke((Object)hasDrawing);
         }
-        ((RadioGroup)((View)drawContainerView).findViewById(2131430869)).clearCheck();
+        ((RadioGroup)((View)drawContainerView).findViewById(2131430872)).clearCheck();
+    }
+    
+    public static final DrawView access$getDrawView$p(final DrawContainerView drawContainerView) {
+        return drawContainerView.drawView;
+    }
+    
+    public static final void access$hideViews(final DrawContainerView drawContainerView) {
+        drawContainerView.hideViews();
+    }
+    
+    public static final void access$showViews(final DrawContainerView drawContainerView) {
+        drawContainerView.showViews();
     }
     
     private final void hideViews() {
@@ -177,8 +201,8 @@ public final class DrawContainerView extends ConstraintLayout
     }
     
     private final void initSeekBar() {
-        final SeekBar seekBar = (SeekBar)((View)this).findViewById(2131430400);
-        final ImageView imageView = (ImageView)((View)this).findViewById(2131431165);
+        final SeekBar seekBar = (SeekBar)((View)this).findViewById(2131430402);
+        final ImageView imageView = (ImageView)((View)this).findViewById(2131431170);
         ((ProgressBar)seekBar).setMax(60);
         ((ProgressBar)seekBar).setProgress(((ProgressBar)seekBar).getMax() / 2);
         ((View)seekBar).setOnTouchListener((View$OnTouchListener)new com.reddit.video.creation.widgets.widget.draw.a(new Ref$BooleanRef(), new Ref$ObjectRef(), seekBar, this, imageView));
@@ -219,6 +243,14 @@ public final class DrawContainerView extends ConstraintLayout
         return false;
     }
     
+    public static void n(final DrawContainerView drawContainerView, final View view) {
+        _init_$lambda-3(drawContainerView, view);
+    }
+    
+    public static void o(final DrawContainerView drawContainerView, final RadioGroup radioGroup, final RadioGroup radioGroup2, final int n) {
+        setUpColorPicker$lambda-7$lambda-6(drawContainerView, radioGroup, radioGroup2, n);
+    }
+    
     private final void onRadioChecked(final RadioGroup radioGroup, int n) {
         final ColorRadioButton colorRadioButton = (ColorRadioButton)((View)radioGroup).findViewById(n);
         if (colorRadioButton != null) {
@@ -234,6 +266,22 @@ public final class DrawContainerView extends ConstraintLayout
         }
     }
     
+    public static void p(final DrawContainerView drawContainerView, final View view) {
+        _init_$lambda-1(drawContainerView, view);
+    }
+    
+    public static void q(final DrawContainerView drawContainerView, final View view) {
+        _init_$lambda-0(drawContainerView, view);
+    }
+    
+    public static void r(final DrawContainerView drawContainerView, final View view) {
+        _init_$lambda-2(drawContainerView, view);
+    }
+    
+    public static boolean s(final Ref$BooleanRef ref$BooleanRef, final Ref$ObjectRef ref$ObjectRef, final SeekBar seekBar, final DrawContainerView drawContainerView, final ImageView imageView, final View view, final MotionEvent motionEvent) {
+        return initSeekBar$lambda-4(ref$BooleanRef, ref$ObjectRef, seekBar, drawContainerView, imageView, view, motionEvent);
+    }
+    
     private final void setUpColorPicker() {
         final RadioGroup colorPicker = this.colorPicker;
         for (int childCount = ((ViewGroup)colorPicker).getChildCount(), i = 0; i < childCount; ++i) {
@@ -241,7 +289,7 @@ public final class DrawContainerView extends ConstraintLayout
             e.e((Object)child, "getChildAt(index)");
             this.setUpRadioButton(child);
         }
-        colorPicker.setOnCheckedChangeListener((RadioGroup$OnCheckedChangeListener)new b(this, colorPicker));
+        colorPicker.setOnCheckedChangeListener((RadioGroup$OnCheckedChangeListener)new com.reddit.video.creation.widgets.widget.draw.b(this, colorPicker));
     }
     
     private static final void setUpColorPicker$lambda-7$lambda-6(final DrawContainerView drawContainerView, final RadioGroup radioGroup, final RadioGroup radioGroup2, final int n) {
@@ -283,12 +331,12 @@ public final class DrawContainerView extends ConstraintLayout
             b = false;
         }
         if (b) {
-            this.brush.setImageResource(2131231510);
-            this.eraser.setImageResource(2131231556);
+            this.brush.setImageResource(2131231516);
+            this.eraser.setImageResource(2131231562);
         }
         else {
-            this.brush.setImageResource(2131231511);
-            this.eraser.setImageResource(2131231555);
+            this.brush.setImageResource(2131231517);
+            this.eraser.setImageResource(2131231561);
         }
     }
     

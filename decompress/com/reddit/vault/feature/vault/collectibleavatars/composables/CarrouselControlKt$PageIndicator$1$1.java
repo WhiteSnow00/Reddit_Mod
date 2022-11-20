@@ -4,31 +4,28 @@
 
 package com.reddit.vault.feature.vault.collectibleavatars.composables;
 
-import aa1.a;
-import z0.t0;
-import z0.y0;
-import z0.c;
-import rg2.q;
+import xd.a;
+import mg2.q;
 import z0.d$a;
 import androidx.compose.foundation.layout.SizeKt;
-import z0.o0;
+import z0.m0;
 import androidx.compose.ui.platform.CompositionLocalsKt;
 import com.reddit.ui.compose.theme.RedditTheme;
 import androidx.compose.runtime.ComposerKt;
 import z0.d;
-import rg2.r;
-import sg2.e;
+import mg2.r;
+import ng2.e;
 import kotlin.Metadata;
-import hg2.j;
+import cg2.j;
 import androidx.compose.foundation.lazy.b;
-import rg2.l;
+import mg2.l;
 import kotlin.jvm.internal.Lambda;
 
 @Metadata(k = 3, mv = { 1, 7, 1 }, xi = 48)
 final class CarrouselControlKt$PageIndicator$1$1 extends Lambda implements l<b, j>
 {
-    public final /* synthetic */ int $currentPage;
-    public final /* synthetic */ int $numberOfPages;
+    public final int $currentPage;
+    public final int $numberOfPages;
     
     public CarrouselControlKt$PageIndicator$1$1(final int $numberOfPages, final int $currentPage) {
         this.$numberOfPages = $numberOfPages;
@@ -36,12 +33,22 @@ final class CarrouselControlKt$PageIndicator$1$1 extends Lambda implements l<b, 
         super(1);
     }
     
+    public /* bridge */ Object invoke(final Object o) {
+        this.invoke((b)o);
+        return j.a;
+    }
+    
     public final void invoke(final b b) {
         e.f((Object)b, "$this$LazyRow");
-        b.b(b, this.$numberOfPages, (l)null, (l)null, a.S((Lambda)new r<q0.e, Integer, z0.d, Integer, j>() {
-            public final /* synthetic */ int $currentPage = CarrouselControlKt$PageIndicator$1$1.this.$currentPage;
+        b.f(b, this.$numberOfPages, (l)null, (l)null, a.D((Lambda)new r<q0.e, Integer, d, Integer, j>(this.$currentPage) {
+            public final int $currentPage;
             
-            public final void invoke(final q0.e e, final int n, final z0.d d, final int n2) {
+            public /* bridge */ Object invoke(final Object o, final Object o2, final Object o3, final Object o4) {
+                this.invoke((q0.e)o, ((Number)o2).intValue(), (d)o3, ((Number)o4).intValue());
+                return j.a;
+            }
+            
+            public final void invoke(final q0.e e, final int n, final d d, final int n2) {
                 e.f((Object)e, "$this$items");
                 int n3 = n2;
                 if ((n2 & 0x70) == 0x0) {
@@ -54,24 +61,24 @@ final class CarrouselControlKt$PageIndicator$1$1 extends Lambda implements l<b, 
                     }
                     n3 = (n2 | n4);
                 }
-                if ((n3 & 0x2D1) == 0x90 && d.c()) {
-                    d.k();
+                if ((n3 & 0x2D1) == 0x90 && d.d()) {
+                    d.j();
                 }
                 else {
-                    final q<c<?>, y0, t0, j> a = ComposerKt.a;
+                    final q a = ComposerKt.a;
                     long n5;
                     if (n == this.$currentPage) {
                         d.A(1861376458);
                         n5 = RedditTheme.a(d).f();
-                        d.I();
+                        d.H();
                     }
                     else {
                         d.A(1861376506);
                         n5 = RedditTheme.a(d).h();
-                        d.I();
+                        d.H();
                     }
                     final float n6 = 8;
-                    final float m0 = ((u2.b)d.u((o0)CompositionLocalsKt.e)).M0(n6);
+                    final float m0 = ((u2.b)d.u((m0)CompositionLocalsKt.e)).M0(n6);
                     final j1.d s = SizeKt.s((j1.d)j1.d.a.f, n6);
                     final o1.r r = new o1.r(n5);
                     d.A(511388516);
@@ -83,7 +90,7 @@ final class CarrouselControlKt$PageIndicator$1$1 extends Lambda implements l<b, 
                         o = new CarrouselControlKt$PageIndicator$1$1$1$1.CarrouselControlKt$PageIndicator$1$1$1$1$1(n5, m0);
                         d.w(o);
                     }
-                    d.I();
+                    d.H();
                     androidx.compose.foundation.b.a(6, d, s, (l)o);
                 }
             }

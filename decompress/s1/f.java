@@ -5,8 +5,8 @@
 package s1;
 
 import q1.e;
-import hg2.j;
-import rg2.a;
+import cg2.j;
+import mg2.a;
 
 public abstract class f
 {

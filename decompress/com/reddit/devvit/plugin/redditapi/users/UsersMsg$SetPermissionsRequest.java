@@ -44,8 +44,56 @@ public final class UsersMsg$SetPermissionsRequest extends GeneratedMessageLite<U
         this.type_ = "";
     }
     
-    public static /* synthetic */ UsersMsg$SetPermissionsRequest access$5500() {
+    public static UsersMsg$SetPermissionsRequest access$5500() {
         return UsersMsg$SetPermissionsRequest.DEFAULT_INSTANCE;
+    }
+    
+    public static void access$5600(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final String name) {
+        usersMsg$SetPermissionsRequest.setName(name);
+    }
+    
+    public static void access$5700(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest) {
+        usersMsg$SetPermissionsRequest.clearName();
+    }
+    
+    public static void access$5800(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final ByteString nameBytes) {
+        usersMsg$SetPermissionsRequest.setNameBytes(nameBytes);
+    }
+    
+    public static void access$5900(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final String subreddit) {
+        usersMsg$SetPermissionsRequest.setSubreddit(subreddit);
+    }
+    
+    public static void access$6000(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest) {
+        usersMsg$SetPermissionsRequest.clearSubreddit();
+    }
+    
+    public static void access$6100(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final ByteString subredditBytes) {
+        usersMsg$SetPermissionsRequest.setSubredditBytes(subredditBytes);
+    }
+    
+    public static void access$6200(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final String permissions) {
+        usersMsg$SetPermissionsRequest.setPermissions(permissions);
+    }
+    
+    public static void access$6300(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest) {
+        usersMsg$SetPermissionsRequest.clearPermissions();
+    }
+    
+    public static void access$6400(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final ByteString permissionsBytes) {
+        usersMsg$SetPermissionsRequest.setPermissionsBytes(permissionsBytes);
+    }
+    
+    public static void access$6500(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final String type) {
+        usersMsg$SetPermissionsRequest.setType(type);
+    }
+    
+    public static void access$6600(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest) {
+        usersMsg$SetPermissionsRequest.clearType();
+    }
+    
+    public static void access$6700(final UsersMsg$SetPermissionsRequest usersMsg$SetPermissionsRequest, final ByteString typeBytes) {
+        usersMsg$SetPermissionsRequest.setTypeBytes(typeBytes);
     }
     
     private void clearName() {

@@ -4,56 +4,25 @@
 
 package bd0;
 
-import com.reddit.domain.powerups.PowerupsBenefit;
-import java.util.ArrayList;
-import kotlinx.coroutines.flow.StateFlowImpl;
-import r20.a;
-import ff2.t;
-import java.util.Map;
-import java.util.Set;
-import hg2.j;
-import lg2.c;
-import java.util.List;
-import ff2.n;
-import hj2.e;
-
 public interface k
 {
-    e<o> a();
+    void M(final boolean p0);
     
-    n b();
+    int Q();
     
-    Object c(final String p0, final String p1, final List<String> p2, final boolean p3, final c<? super j> p4);
+    void Z(final String p0);
     
-    Object d(final String p0, final String p1, final c<? super s> p2);
+    void i(final String p0);
     
-    Object e(final String p0, final Set<String> p1, final c<? super Map<String, ? extends Set<String>>> p2);
+    boolean i0(final String p0);
     
-    Object f(final String p0, final c<? super List<p>> p1);
+    void p0(final String p0);
     
-    void g(final boolean p0);
+    boolean u();
     
-    Object h(final String p0, final c<? super List<q>> p1);
+    boolean v0(final String p0);
     
-    t<List<h>> i(final String p0);
+    void w0(final String p0);
     
-    t<a<m>> j(final String p0);
-    
-    t<List<q>> k(final String p0);
-    
-    Object l(final String p0, final Set<String> p1, final c<? super List<s>> p2);
-    
-    Object m(final int p0, final String p1, final String p2, final String p3, final c p4, final boolean p5);
-    
-    t<o> n();
-    
-    Object o(final String p0, final c<? super m> p1);
-    
-    StateFlowImpl p();
-    
-    ArrayList q();
-    
-    Object r(final String p0, final String p1, final int p2, final boolean p3, final c<? super j> p4);
-    
-    Object s(final String p0, final String p1, final PowerupsBenefit p2, final boolean p3, final c<? super List<d>> p4);
+    void x0(final String p0);
 }

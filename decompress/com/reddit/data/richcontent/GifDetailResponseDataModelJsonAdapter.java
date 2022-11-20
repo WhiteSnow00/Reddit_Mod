@@ -5,12 +5,12 @@
 package com.reddit.data.richcontent;
 
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import kotlin.Metadata;
@@ -46,7 +46,7 @@ public final class GifDetailResponseDataModelJsonAdapter extends JsonAdapter<Gif
             }
             else {
                 jsonReader.H();
-                jsonReader.F1();
+                jsonReader.G1();
             }
         }
         jsonReader.r();
@@ -61,7 +61,7 @@ public final class GifDetailResponseDataModelJsonAdapter extends JsonAdapter<Gif
         e.f((Object)x, "writer");
         if (gifDetailResponseDataModel != null) {
             x.h();
-            x.u("data");
+            x.v("data");
             this.gifItemDataModelAdapter.toJson(x, (Object)gifDetailResponseDataModel.a);
             x.s();
             return;

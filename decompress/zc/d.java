@@ -4,52 +4,53 @@
 
 package zc;
 
-import java.io.File;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+import xa.a;
+import android.os.Handler;
 
-public class d implements Comparable<d>
+public interface d
 {
-    public final String f;
-    public final long g;
-    public final long h;
-    public final boolean i;
-    public final File j;
-    public final long k;
+    void a(final Handler p0, final a p1);
     
-    public d(final String f, final long g, final long h, final long k, final File j) {
-        this.f = f;
-        this.g = g;
-        this.h = h;
-        this.i = (j != null);
-        this.j = j;
-        this.k = k;
-    }
+    long c();
     
-    public final int a(final d d) {
-        if (!this.f.equals(d.f)) {
-            return this.f.compareTo(d.f);
-        }
-        final long n = lcmp(this.g - d.g, 0L);
-        int n2;
-        if (n == 0) {
-            n2 = 0;
-        }
-        else if (n < 0) {
-            n2 = -1;
-        }
-        else {
-            n2 = 1;
-        }
-        return n2;
-    }
+    void f(final xa.a p0);
     
-    @Override
-    public final String toString() {
-        final long g = this.g;
-        final long h = this.h;
-        final StringBuilder sb = new StringBuilder(44);
-        sb.append("[");
-        sb.append(g);
-        sb.append(", ");
-        return d.m(sb, h, "]");
+    l h();
+    
+    public interface a
+    {
+        void t(final int p0, final long p1, final long p2);
+        
+        public static final class a
+        {
+            public final CopyOnWriteArrayList<d.a.a.a> a;
+            
+            public a() {
+                this.a = new CopyOnWriteArrayList<d.a.a.a>();
+            }
+            
+            public final void a(final d.a a) {
+                for (final d.a.a.a a2 : this.a) {
+                    if (a2.b == a) {
+                        a2.c = true;
+                        this.a.remove(a2);
+                    }
+                }
+            }
+            
+            public static final class a
+            {
+                public final Handler a;
+                public final d.a b;
+                public boolean c;
+                
+                public a(final Handler a, final d.a b) {
+                    this.a = a;
+                    this.b = b;
+                }
+            }
+        }
     }
 }

@@ -4,43 +4,29 @@
 
 package qg2;
 
-import sg2.e;
-import java.util.List;
-import java.io.File;
+import ug2.c;
+import ng2.e;
+import ug2.k;
 
-public final class a
+public final class a<T> implements d<Object, T>
 {
-    public final File a;
-    public final List<File> b;
+    public T f;
     
-    public a(final File a, final List<? extends File> b) {
-        e.f((Object)b, "segments");
-        this.a = a;
-        this.b = (List<File>)b;
-    }
-    
-    @Override
-    public final boolean equals(final Object o) {
-        if (this == o) {
-            return true;
+    public final T getValue(Object f, final k<?> k) {
+        e.f((Object)k, "property");
+        f = this.f;
+        if (f != null) {
+            return (T)f;
         }
-        if (!(o instanceof a)) {
-            return false;
-        }
-        final a a = (a)o;
-        return e.a((Object)this.a, (Object)a.a) && e.a((Object)this.b, (Object)a.b);
+        final StringBuilder t = a.t("Property ");
+        t.append(((c)k).getName());
+        t.append(" should be initialized before get.");
+        throw new IllegalStateException(t.toString());
     }
     
-    @Override
-    public final int hashCode() {
-        return this.b.hashCode() + this.a.hashCode() * 31;
-    }
-    
-    @Override
-    public final String toString() {
-        final StringBuilder r = a.r("FilePathComponents(root=");
-        r.append(this.a);
-        r.append(", segments=");
-        return d.o(r, (List)this.b, ')');
+    public final void setValue(final Object o, final k<?> k, final T f) {
+        e.f((Object)k, "property");
+        e.f((Object)f, "value");
+        this.f = f;
     }
 }

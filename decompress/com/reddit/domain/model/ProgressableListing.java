@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import ng2.e;
 import java.util.List;
 import kotlin.Metadata;
 
@@ -19,6 +19,16 @@ public final class ProgressableListing
         e.f((Object)progress, "progress");
         this.items = items;
         this.progress = progress;
+    }
+    
+    public static ProgressableListing copy$default(final ProgressableListing progressableListing, List items, SubredditListingProgressIndicator progress, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            items = progressableListing.items;
+        }
+        if ((n & 0x2) != 0x0) {
+            progress = progressableListing.progress;
+        }
+        return progressableListing.copy(items, progress);
     }
     
     public final List<SubredditListItem> component1() {
@@ -62,11 +72,11 @@ public final class ProgressableListing
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ProgressableListing(items=");
-        r.append(this.items);
-        r.append(", progress=");
-        r.append(this.progress);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("ProgressableListing(items=");
+        t.append(this.items);
+        t.append(", progress=");
+        t.append(this.progress);
+        t.append(')');
+        return t.toString();
     }
 }

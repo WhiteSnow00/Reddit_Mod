@@ -44,8 +44,56 @@ public final class UsersMsg$UnfriendRequest extends GeneratedMessageLite<UsersMs
         this.subreddit_ = "";
     }
     
-    public static /* synthetic */ UsersMsg$UnfriendRequest access$6900() {
+    public static UsersMsg$UnfriendRequest access$6900() {
         return UsersMsg$UnfriendRequest.DEFAULT_INSTANCE;
+    }
+    
+    public static void access$7000(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final String id) {
+        usersMsg$UnfriendRequest.setId(id);
+    }
+    
+    public static void access$7100(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest) {
+        usersMsg$UnfriendRequest.clearId();
+    }
+    
+    public static void access$7200(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final ByteString idBytes) {
+        usersMsg$UnfriendRequest.setIdBytes(idBytes);
+    }
+    
+    public static void access$7300(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final String name) {
+        usersMsg$UnfriendRequest.setName(name);
+    }
+    
+    public static void access$7400(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest) {
+        usersMsg$UnfriendRequest.clearName();
+    }
+    
+    public static void access$7500(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final ByteString nameBytes) {
+        usersMsg$UnfriendRequest.setNameBytes(nameBytes);
+    }
+    
+    public static void access$7600(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final String type) {
+        usersMsg$UnfriendRequest.setType(type);
+    }
+    
+    public static void access$7700(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest) {
+        usersMsg$UnfriendRequest.clearType();
+    }
+    
+    public static void access$7800(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final ByteString typeBytes) {
+        usersMsg$UnfriendRequest.setTypeBytes(typeBytes);
+    }
+    
+    public static void access$7900(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final String subreddit) {
+        usersMsg$UnfriendRequest.setSubreddit(subreddit);
+    }
+    
+    public static void access$8000(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest) {
+        usersMsg$UnfriendRequest.clearSubreddit();
+    }
+    
+    public static void access$8100(final UsersMsg$UnfriendRequest usersMsg$UnfriendRequest, final ByteString subredditBytes) {
+        usersMsg$UnfriendRequest.setSubredditBytes(subredditBytes);
     }
     
     private void clearId() {

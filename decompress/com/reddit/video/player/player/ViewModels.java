@@ -5,7 +5,7 @@
 package com.reddit.video.player.player;
 
 import kotlin.collections.c;
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import java.util.Map;
 import kotlin.Metadata;
@@ -22,6 +22,20 @@ public final class ViewModels
     public ViewModels(final Map<String, ViewModel> modes) {
         e.f((Object)modes, "modes");
         this.modes = modes;
+    }
+    
+    public ViewModels(Map u4, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            u4 = c.u4();
+        }
+        this(u4);
+    }
+    
+    public static ViewModels copy$default(final ViewModels viewModels, Map modes, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            modes = viewModels.modes;
+        }
+        return viewModels.copy(modes);
     }
     
     public final Map<String, ViewModel> component1() {
@@ -49,6 +63,6 @@ public final class ViewModels
     
     @Override
     public String toString() {
-        return a81.e.o(a.r("ViewModels(modes="), (Map)this.modes, ')');
+        return aq2.a.p(a.t("ViewModels(modes="), (Map)this.modes, ')');
     }
 }

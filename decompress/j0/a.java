@@ -8,7 +8,7 @@ import java.util.Map;
 
 public final class a extends h<Object, Object>
 {
-    public final /* synthetic */ b d;
+    public final b d;
     
     public a(final b d) {
         this.d = d;

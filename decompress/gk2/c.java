@@ -4,7 +4,30 @@
 
 package gk2;
 
-public interface c
+import ng2.e;
+import java.util.ArrayList;
+import fk2.y;
+
+public final class c
 {
-    public static final float[][] a = { { 0.0f, -0.43388373f, -0.7818315f, -0.9749279f, 0.9848077f, 0.8660254f, 0.6427876f, 0.34202015f }, { 0.0f, -0.2079117f, -0.40673664f, -0.58778524f, -0.7431448f, -0.8660254f, -0.95105654f, -0.9945219f, 0.99573416f, 0.9618256f, 0.8951633f, 0.7980172f, 0.6736956f, 0.52643216f, 0.36124167f, 0.18374951f }, { 0.0f, -0.43388373f, 0.6427876f, 0.34202015f }, { 0.0f, -0.2079117f, -0.40673664f, -0.58778524f, 0.6736956f, 0.52643216f, 0.36124167f, 0.18374951f } };
+    public final y a;
+    public final boolean b;
+    public final long c;
+    public final long d;
+    public final int e;
+    public final Long f;
+    public final long g;
+    public final ArrayList h;
+    
+    public c(final y a, final boolean b, final String s, final long c, final long d, final int e, final Long f, final long g) {
+        ng2.e.f((Object)s, "comment");
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+        this.g = g;
+        this.h = new ArrayList();
+    }
 }

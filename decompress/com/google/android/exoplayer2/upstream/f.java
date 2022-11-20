@@ -27,21 +27,19 @@ public class f implements h
         this.minimumLoadableRetryCount = minimumLoadableRetryCount;
     }
     
-    @Override
-    public b getFallbackSelectionFor(final a a, final c c) {
-        if (!this.isEligibleForFallback(c.a)) {
+    public h$b getFallbackSelectionFor(final h$a h$a, final h$c h$c) {
+        if (!this.isEligibleForFallback(h$c.a)) {
             return null;
         }
-        if (a.a(1)) {
-            return new b(1, 300000L);
+        if (h$a.a(1)) {
+            return new h$b(1, 300000L);
         }
-        if (a.a(2)) {
-            return new b(2, 60000L);
+        if (h$a.a(2)) {
+            return new h$b(2, 60000L);
         }
         return null;
     }
     
-    @Override
     public int getMinimumLoadableRetryCount(int n) {
         final int minimumLoadableRetryCount = this.minimumLoadableRetryCount;
         if (minimumLoadableRetryCount == -1) {
@@ -56,12 +54,11 @@ public class f implements h
         return minimumLoadableRetryCount;
     }
     
-    @Override
-    public long getRetryDelayMsFor(final c c) {
-        final IOException a = c.a;
+    public long getRetryDelayMsFor(final h$c h$c) {
+        final IOException a = h$c.a;
         long n;
-        if (!(a instanceof ParserException) && !(a instanceof FileNotFoundException) && !(a instanceof HttpDataSource$CleartextNotPermittedException) && !(a instanceof Loader.UnexpectedLoaderException) && !DataSourceException.isCausedByPositionOutOfRange(a)) {
-            n = Math.min((c.b - 1) * 1000, 5000);
+        if (!(a instanceof ParserException) && !(a instanceof FileNotFoundException) && !(a instanceof HttpDataSource$CleartextNotPermittedException) && !(a instanceof Loader$UnexpectedLoaderException) && !DataSourceException.isCausedByPositionOutOfRange(a)) {
+            n = Math.min((h$c.b - 1) * 1000, 5000);
         }
         else {
             n = -9223372036854775807L;

@@ -4,10 +4,10 @@
 
 package d1;
 
-import sg2.e;
+import ng2.e;
 import java.util.Map;
 
-public class a<K, V> implements Entry<K, V>, tg2.a
+public class a<K, V> implements Entry<K, V>, og2.a
 {
     public final K f;
     public final V g;

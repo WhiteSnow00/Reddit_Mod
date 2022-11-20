@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -28,6 +28,10 @@ public final class SubmitResponse extends GenericResponse<LinkResult>
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
     

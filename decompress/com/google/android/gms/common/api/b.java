@@ -4,33 +4,35 @@
 
 package com.google.android.gms.common.api;
 
-import od.t1;
-import od.i1;
-import od.r1;
-import ve.c;
+import android.os.Handler;
+import pd.s1;
+import pd.h1;
+import pd.q1;
+import we.c;
 import java.util.concurrent.Executor;
-import od.r0;
-import od.f1;
+import pd.r0;
+import pd.f1;
 import android.os.SystemClock;
-import pd.o;
-import ve.x;
-import od.p;
+import qd.n;
+import we.v;
+import pd.p;
 import java.util.Set;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import java.util.Collection;
 import java.util.Collections;
 import android.accounts.Account;
-import pd.d$a;
-import de.f;
+import qd.d$a;
+import ee.f;
 import java.lang.reflect.InvocationTargetException;
-import od.h;
-import od.t;
+import pd.h;
+import pd.t;
 import com.google.android.gms.common.api.internal.LifecycleCallback;
-import od.g;
+import pd.g;
 import android.os.Build$VERSION;
+import mg.d0;
 import android.app.Activity;
-import od.e;
-import od.a1;
+import bu0.e;
+import pd.a1;
 import android.os.Looper;
 import android.content.Context;
 
@@ -40,30 +42,30 @@ public abstract class b<O extends a$c> implements d<O>
     public final String b;
     public final a<O> c;
     public final O d;
-    public final od.a<O> e;
+    public final pd.a<O> e;
     public final Looper f;
     public final int g;
     public final a1 h;
-    public final ui.b i;
-    public final e j;
+    public final e i;
+    public final pd.e j;
     
     @Deprecated
     public b() {
         throw null;
     }
     
-    public b(final Activity activity, final a<O> a, final O o, final b.b$a b$a) {
-        this((Context)activity, activity, (com.google.android.gms.common.api.a<a$c>)a, o, b$a);
-    }
-    
     @Deprecated
-    public b(final Activity activity, final a<O> a, final O o, final ui.b a2) {
+    public b(final Activity activity, final a<O> a, final O o, final e a2) {
         final b$a$a b$a$a = new b$a$a();
         b$a$a.a = a2;
         final Looper mainLooper = ((Context)activity).getMainLooper();
-        lw0.b.S((Object)mainLooper, "Looper must not be null.");
+        d0.z((Object)mainLooper, "Looper must not be null.");
         b$a$a.b = mainLooper;
         this(activity, (com.google.android.gms.common.api.a<a$c>)a, o, b$a$a.a());
+    }
+    
+    public b(final Activity activity, final a<O> a, final O o, final b.b$a b$a) {
+        this((Context)activity, activity, (com.google.android.gms.common.api.a<a$c>)a, o, b$a);
     }
     
     public b(final Context context, Activity activity, a<O> f, O o, b.b$a c) {
@@ -93,29 +95,29 @@ public abstract class b<O extends a$c> implements d<O>
                             this.c = (a<O>)f;
                             this.d = o;
                             this.f = c.b;
-                            o = (O)new od.a((com.google.android.gms.common.api.a<a$c>)f, o, b2);
-                            this.e = (od.a<O>)o;
-                            this.h = new a1((b<O>)this);
-                            f = od.e.f(this.a);
+                            o = (O)new pd.a((a)f, (a$c)o, b2);
+                            this.e = (pd.a<O>)o;
+                            this.h = new a1(this);
+                            f = pd.e.f(this.a);
                             this.j = f;
                             this.g = f.m.getAndIncrement();
                             this.i = c.a;
                             if (activity != null && !(activity instanceof GoogleApiActivity) && Looper.myLooper() == Looper.getMainLooper()) {
                                 c = (b.b$a)LifecycleCallback.c(new g(activity));
-                                activity = (Activity)((h)c).i(t.class, "ConnectionlessLifecycleHelper");
+                                activity = (Activity)((h)c).h((Class)t.class, "ConnectionlessLifecycleHelper");
                                 Object o2;
                                 if ((o2 = activity) == null) {
-                                    o2 = new t((h)c, f, md.e.d);
+                                    o2 = new t((h)c, f, nd.e.d);
                                 }
                                 ((t)o2).k.add((Object)o);
                                 f.a((t)o2);
                             }
                             final f s2 = f.s;
-                            s2.sendMessage(s2.obtainMessage(7, (Object)this));
+                            ((Handler)s2).sendMessage(((Handler)s2).obtainMessage(7, (Object)this));
                             return;
-                            throw new NullPointerException("Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
                             throw new NullPointerException("Null context is not permitted.");
                             throw new NullPointerException("Api must not be null.");
+                            throw new NullPointerException("Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
                         }
                         catch (final NoSuchMethodException | IllegalAccessException | InvocationTargetException ex) {
                             b2 = s;
@@ -139,9 +141,9 @@ public abstract class b<O extends a$c> implements d<O>
         Label_0087: {
             Label_0085: {
                 if (d instanceof a$c.b) {
-                    final GoogleSignInAccount e = ((a$c.b)d).e();
-                    if (e != null) {
-                        final String i = e.i;
+                    final GoogleSignInAccount f = ((a$c.b)d).f();
+                    if (f != null) {
+                        final String i = f.i;
                         if (i == null) {
                             break Label_0085;
                         }
@@ -161,12 +163,12 @@ public abstract class b<O extends a$c> implements d<O>
         final a$c d3 = this.d;
         Set<Object> set;
         if (d3 instanceof a$c.b) {
-            final GoogleSignInAccount e2 = ((a$c.b)d3).e();
-            if (e2 == null) {
+            final GoogleSignInAccount f2 = ((a$c.b)d3).f();
+            if (f2 == null) {
                 set = Collections.emptySet();
             }
             else {
-                set = e2.q();
+                set = f2.g();
             }
         }
         else {
@@ -181,30 +183,30 @@ public abstract class b<O extends a$c> implements d<O>
         return d$a;
     }
     
-    public final x b(final int n, final p p2) {
-        final ve.h h = new ve.h();
-        final e j = this.j;
-        final ui.b i = this.i;
+    public final v b(final int n, final p p2) {
+        final we.h h = new we.h();
+        final pd.e j = this.j;
+        final e i = this.i;
         j.getClass();
         final int c = p2.c;
         if (c != 0) {
-            final od.a<O> e = this.e;
+            final pd.a<O> e = this.e;
             final boolean b = j.b();
             Object o = null;
             if (b) {
-                pd.o.a().getClass();
+                n.a().getClass();
                 o = new f1(j, c, e, System.currentTimeMillis(), SystemClock.elapsedRealtime());
             }
             if (o != null) {
-                final x a = h.a;
+                final v a = h.a;
                 final f s = j.s;
                 s.getClass();
                 a.b((Executor)new r0(s), (c)o);
             }
         }
-        final r1 r1 = new r1<Object>(n, (od.p<Object, Object>)p2, (ve.h<Object>)h, i);
+        final q1 q1 = new q1(n, p2, h, i);
         final f s2 = j.s;
-        s2.sendMessage(s2.obtainMessage(4, (Object)new i1((t1)r1, j.n.get(), this)));
+        ((Handler)s2).sendMessage(((Handler)s2).obtainMessage(4, (Object)new h1((s1)q1, j.n.get(), this)));
         return h.a;
     }
 }

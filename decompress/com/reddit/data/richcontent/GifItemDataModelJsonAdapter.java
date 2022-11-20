@@ -5,13 +5,13 @@
 package com.reddit.data.richcontent;
 
 import com.squareup.moshi.x;
-import id2.a;
+import dd2.a;
 import com.squareup.moshi.JsonReader;
 import com.squareup.moshi.a0;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import java.util.Map;
@@ -39,8 +39,8 @@ public final class GifItemDataModelJsonAdapter extends JsonAdapter<GifItemDataMo
         e.f((Object)jsonReader, "reader");
         jsonReader.h();
         String s = null;
-        Object o2;
-        Object o = o2 = null;
+        Map map = null;
+        GifUserDataModel gifUserDataModel = null;
         while (jsonReader.hasNext()) {
             final int e = jsonReader.E(this.options);
             if (e != -1) {
@@ -49,11 +49,11 @@ public final class GifItemDataModelJsonAdapter extends JsonAdapter<GifItemDataMo
                         if (e != 2) {
                             continue;
                         }
-                        o2 = this.nullableGifUserDataModelAdapter.fromJson(jsonReader);
+                        gifUserDataModel = (GifUserDataModel)this.nullableGifUserDataModelAdapter.fromJson(jsonReader);
                     }
                     else {
-                        o = this.mapOfStringGifImageDataModelAdapter.fromJson(jsonReader);
-                        if (o != null) {
+                        map = (Map)this.mapOfStringGifImageDataModelAdapter.fromJson(jsonReader);
+                        if (map != null) {
                             continue;
                         }
                         throw a.n("images", "images", jsonReader);
@@ -69,15 +69,15 @@ public final class GifItemDataModelJsonAdapter extends JsonAdapter<GifItemDataMo
             }
             else {
                 jsonReader.H();
-                jsonReader.F1();
+                jsonReader.G1();
             }
         }
         jsonReader.r();
         if (s == null) {
             throw a.h("id", "id", jsonReader);
         }
-        if (o != null) {
-            return new GifItemDataModel(s, (Map<String, GifImageDataModel>)o, (GifUserDataModel)o2);
+        if (map != null) {
+            return new GifItemDataModel(s, map, gifUserDataModel);
         }
         throw a.h("images", "images", jsonReader);
     }
@@ -87,11 +87,11 @@ public final class GifItemDataModelJsonAdapter extends JsonAdapter<GifItemDataMo
         e.f((Object)x, "writer");
         if (gifItemDataModel != null) {
             x.h();
-            x.u("id");
+            x.v("id");
             this.stringAdapter.toJson(x, (Object)gifItemDataModel.a);
-            x.u("images");
+            x.v("images");
             this.mapOfStringGifImageDataModelAdapter.toJson(x, (Object)gifItemDataModel.b);
-            x.u("user");
+            x.v("user");
             this.nullableGifUserDataModelAdapter.toJson(x, (Object)gifItemDataModel.c);
             x.s();
             return;

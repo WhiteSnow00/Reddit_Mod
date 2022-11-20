@@ -13,4 +13,6 @@ public abstract class SimpleOnPageChangeListener implements ViewPager$j
     
     public void onPageScrolled(final int n, final float n2, final int n3) {
     }
+    
+    public abstract void onPageSelected(final int p0);
 }

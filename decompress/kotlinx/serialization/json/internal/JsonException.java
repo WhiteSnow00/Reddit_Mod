@@ -4,7 +4,7 @@
 
 package kotlinx.serialization.json.internal;
 
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 import kotlinx.serialization.SerializationException;
 

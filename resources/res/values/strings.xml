@@ -206,8 +206,8 @@
     <string name="account_settings_personalization_title">Personalization</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_description">Allow us to use your interactions with sites and apps we partner with and information that our advertising partners send us to show you better ads.</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_title">Personalize ads based on your activity and information from our partners</string>
-    <string name="account_settings_personalized_ads_from_activity_description">Allow us to use your interactions on Reddit to show you better ads.</string>
-    <string name="account_settings_personalized_ads_from_activity_title">Personalize ads based on your Reddit activity</string>
+    <string name="account_settings_personalized_ads_from_activity_description">Allow us to use your interactions on Reddit and account information to show you better ads.</string>
+    <string name="account_settings_personalized_ads_from_activity_title">Personalize ads based on your Reddit activity and account info</string>
     <string name="account_settings_personalized_ads_from_third_party_data_description">Allow us to use your interactions with sites and apps we partner with to show you better ads.</string>
     <string name="account_settings_personalized_ads_from_third_party_data_title">Personalize ads based on your activity with our partners</string>
     <string name="account_settings_personalized_ads_from_third_party_info_description">Allow us to use information that our advertising partners send us to show you better ads.</string>
@@ -224,6 +224,11 @@
     <string name="account_suspended_permanent">Your account has been permanently suspended from Reddit.</string>
     <string name="account_switch_message">Signed in as u/%s</string>
     <string name="account_type">com.reddit.account</string>
+    <string name="accounts_content_description_close">Close</string>
+    <string name="accounts_error_block_account">Failed to block account</string>
+    <string name="accounts_error_block_user">Failed to block account</string>
+    <string name="accounts_placeholder_karma_count">— Karma</string>
+    <string name="accounts_title_edit_profile">Edit</string>
     <string name="achievement_flair_count_template">+%1$d</string>
     <string name="achievement_flair_hide_flairs_checkbox_text">Show Supporter and Achievement Flair</string>
     <string name="achievement_flair_hide_flairs_checkbox_text_without_powerups">Show Achievement Flair</string>
@@ -452,7 +457,7 @@
     <string name="action_show_fewer_posts_like_this">Show fewer posts like this</string>
     <string name="action_show_more_posts_like_this">Show more posts like this</string>
     <string name="action_show_original_post">Show original post</string>
-    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_up">Sign Up</string>
     <string name="action_skip">Skip</string>
     <string name="action_sneak_peek">See what others predicted</string>
     <string name="action_sort">Sort</string>
@@ -527,6 +532,10 @@
     <string name="action_yes">Yes</string>
     <string name="action_yes_end">Yes, End</string>
     <string name="action_yes_save">Yes, Save</string>
+    <string name="actioned_approved">Approved</string>
+    <string name="actioned_removed">Removed</string>
+    <string name="actioned_removed_as_span">Removed as spam</string>
+    <string name="actioned_user_timestamp">%1$s • %2$s</string>
     <string name="active_chip">Active</string>
     <string name="active_communities_banner">Active in these communities</string>
     <string name="active_count_chip">Active with count</string>
@@ -558,6 +567,7 @@
     <string name="adjust_clips_on_new_line">Adjust\10Clips</string>
     <string name="adjust_crowd_control_title">Adjust crowd control on this post</string>
     <string name="adjust_video">Adjust video</string>
+    <string name="adjust_your_search">adjust your search</string>
     <string name="ads_promoted_label">Promoted</string>
     <string name="agreement">User Agreement</string>
     <string name="agreement_message">By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy.</string>
@@ -866,6 +876,9 @@
     <string name="carousel_create_community_subtitle">Create your own and become the next big thing.</string>
     <string name="carousel_create_community_title">These communities not doing it for you?</string>
     <string name="carousel_hide_option_text">Hide suggestions from %s</string>
+    <string name="carousel_next_button_content_description">Next</string>
+    <string name="carousel_pagination_count_format">%1$d / %2$d</string>
+    <string name="carousel_prev_button_content_description">Previous</string>
     <string name="carousel_show_less_option_text">Show me less of this</string>
     <string name="cd_admin">Admin</string>
     <string name="cd_back">Back</string>
@@ -933,7 +946,7 @@
     <string name="chat_error_channel_name_blank">Group name can\'t be blank.</string>
     <string name="chat_error_chat_with_yourself">You can\'t chat with yourself.</string>
     <string name="chat_error_connect_to_chat">Failed to connect to chat. Please try again later</string>
-    <string name="chat_error_create_chat">Something went wrong and the conversation couldn\'t be created.</string>
+    <string name="chat_error_create_chat">Failed to create Chat</string>
     <string name="chat_error_create_group_chat">Failed to create Group Chat</string>
     <string name="chat_error_create_subreddit_channel_fail">Failed to create room, please try again later.</string>
     <string name="chat_error_error_data_is_still_loading">Data is still loading.</string>
@@ -1083,7 +1096,7 @@
     <string name="collectible_secure_vault_skip_button">I’ll Do This Later</string>
     <string name="collectible_secure_vault_title">Your Avatar needs a Vault!</string>
     <string name="colombia">Colombia</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id">77e0eb4758f04a77b1e0562ed9bca2fa</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">f0709494b4b34371888a8fb375f1b1c1</string>
     <string name="comm_settings_list_archive_posts">Archive Posts</string>
     <string name="comm_settings_list_avatar">Avatar</string>
     <string name="comm_settings_list_community_discovery">Discovery</string>
@@ -1138,6 +1151,7 @@
     <string name="comment_replying_to">Replying to</string>
     <string name="comments_disabled_message">Comments have been disabled on this post.</string>
     <string name="comments_loading_in_progress">The comments are loading</string>
+    <string name="comments_with_query">Comments with \"%1$s\"</string>
     <string name="common_error_not_authorized">This feature is currently unavailable.</string>
     <string name="common_error_service_error">Something\'s wrong with the talk service right now. Check back later.</string>
     <string name="common_error_user_not_logged_in">Log in to Reddit to join this talk.</string>
@@ -1176,6 +1190,7 @@
     <string name="community_creation_module_button">Create Community</string>
     <string name="community_creation_module_subtitle">You’re definitely onto something here… Keep the conversation going and spin it off into its own community.</string>
     <string name="community_creation_module_title">Should this post be its own community?</string>
+    <string name="community_dot_tooltip">Explore your communities</string>
     <string name="community_emote_pack_title">%1$s emojis</string>
     <string name="community_hub_channel_empty_state_message">Post to this channel using the \"%s\" flair</string>
     <string name="community_hub_onboarding_banner_message">The %1$s feed is open to all members</string>
@@ -1300,6 +1315,7 @@
     <string name="content_desc_instagram">Instagram</string>
     <string name="content_desc_item_listing_below_illustration">snoo thumbs up illustration</string>
     <string name="content_desc_item_related_community_icon">community icon</string>
+    <string name="content_desc_mod_actions">Mod Actions Menu</string>
     <string name="content_desc_overflow">Overflow menu</string>
     <string name="content_desc_overflow_button">Extra Tags</string>
     <string name="content_desc_related_subreddit_icon">related community icon</string>
@@ -1333,13 +1349,14 @@
     <string name="content_description_caret">caret</string>
     <string name="content_description_chat_notification">New chat messages</string>
     <string name="content_description_clear_video">Clear</string>
-    <string name="content_description_close">Close</string>
+    <string name="content_description_close">close</string>
     <string name="content_description_close_email_digest_checkbox_widget">Close email digest checkbox widget</string>
     <string name="content_description_coins_decrement">Decrement</string>
     <string name="content_description_coins_increment">Increment</string>
     <string name="content_description_collage_category_image">Category image</string>
     <string name="content_description_community_avatar">Community avatar</string>
     <string name="content_description_community_icon">Community icon</string>
+    <string name="content_description_create_post">create post</string>
     <string name="content_description_crop_button">Crop</string>
     <string name="content_description_direction">Community direction</string>
     <string name="content_description_dismiss_subreddit">Dismiss subreddit</string>
@@ -1717,6 +1734,7 @@
     <string name="empty_inbox_generic_header">Welcome to chat!\10Let’s start a conversation</string>
     <string name="empty_inbox_live_body">When a community or person you follow hosts a live chat, you’ll find it here.</string>
     <string name="empty_inbox_live_header">Live chats live here</string>
+    <string name="empty_post_comment_search_body">Double-check your spelling or try different keywords to %1$s</string>
     <string name="empty_raised_hands">There are no raised hands</string>
     <string name="empty_state_content_cats">That’s ok, maybe you just need the right inspiration. Have you had your daily cat fix?</string>
     <string name="empty_state_content_community">That’s ok, maybe you just need the right inspiration. Check out %1$s, a popular community for discussion.</string>
@@ -1732,6 +1750,7 @@
     <string name="empty_state_title_notifications">Turn on notifications</string>
     <string name="empty_trophy_url_error">Sorry, there doesn\'t seem to be anything here.</string>
     <string name="enable_access">Enable Access</string>
+    <string name="enable_community_hub_flair_feed">Enable Community Hub flair feed</string>
     <string name="enable_gifs_subtitle">Allow GIFs in comments unlocked with Powerups. It may take a few minutes to update.</string>
     <string name="enable_gifs_title">GIFs in Comments</string>
     <string name="enable_post_flair">Enable post flair</string>
@@ -1862,8 +1881,10 @@
     <string name="error_playback_error">Something went wrong. Try listening to the talk again.</string>
     <string name="error_post_hide_failed">Failed to hide post.</string>
     <string name="error_post_hide_failure">Failed to hide post.</string>
+    <string name="error_post_saved">Failed to save post.</string>
     <string name="error_post_unhide_failed">Failed to un-hide post.</string>
     <string name="error_post_unhide_failure">Failed to un-hide post.</string>
+    <string name="error_post_unsaved">Failed to unsave post.</string>
     <string name="error_prediction_failed">Prediction failed</string>
     <string name="error_remove_failure">Failed to remove post.</string>
     <string name="error_report_comment">Failed to report comment.</string>
@@ -2004,6 +2025,8 @@
     <string name="external_video_description">Video Preview</string>
     <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="failed_to_create_conversation_error">Something went wrong and the conversation couldn\'t be created.</string>
+    <string name="failed_to_create_invite_link">Failed to create link</string>
     <string name="failed_to_follow_error">Failed to follow %s</string>
     <string name="failed_to_join_error">Failed to join %s</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
@@ -2518,6 +2541,7 @@
     <string name="image_placeholder">Image placeholder</string>
     <string name="image_posts_subtitle">Allow images uploaded directly to Reddit as well as links to popular image hosting sites such as Imgur</string>
     <string name="image_posts_title">Image posts</string>
+    <string name="image_processing">Image processing</string>
     <string name="import_nft_description">Copy your public address, paste it in your external wallet and complete the transfer outside Reddit. Once complete, your NFT will appear in your avatars.</string>
     <string name="import_nft_screen_title">Import to Vault</string>
     <string name="import_nft_subtitle">Import your NFT to Vault</string>
@@ -2543,7 +2567,7 @@
     <string name="incognito_session_exit_screen_title">Anonymous Browsing ended</string>
     <string name="incognito_session_timeout_description_account">Since you were inactive for a while, you\'ve been returned to your u/%1$s account.</string>
     <string name="incognito_session_timeout_description_logout">Since you were inactive for a while, you\'ve been logged out.</string>
-    <string name="indeterminate">Neither checked nor unchecked</string>
+    <string name="indeterminate">Partially checked</string>
     <string name="india">India</string>
     <string name="indicator_approved">Approved indicator</string>
     <string name="indicator_deleted">Deleted indicator</string>
@@ -2671,7 +2695,7 @@
     <string name="invite_friends_trophy_description">Invite your friends to download the Reddit app and get this friendly trophy!</string>
     <string name="invite_friends_trophy_title">Invite your friends to Reddit. Because trophy.</string>
     <string name="invite_link_copied">Link copied!</string>
-    <string name="invite_link_copy_error">Failed to create link</string>
+    <string name="invite_link_copy_error">Failed to copy link</string>
     <string name="invite_link_create_error">Failed to create link</string>
     <string name="invite_link_easy_access_tooltip">Long press to copy chat link</string>
     <string name="invite_link_expired_error">This link has expired</string>
@@ -2834,6 +2858,7 @@
     <string name="key_pref_uri_base">key_pref_uri_base</string>
     <string name="key_pref_uri_gateway">key_pref_uri_gateway</string>
     <string name="key_pref_uri_meta">key_pref_uri_meta</string>
+    <string name="key_pref_use_bad_rest_api">key_pref_use_bad_rest_api</string>
     <string name="key_pref_use_fake_storefront_repository">key_pref_use_fake_storefront_repository</string>
     <string name="key_pref_use_non_persisted_graphql_ops">key_pref_use_non_persisted_graphql_ops</string>
     <string name="key_pref_use_staging">key_pref_use_staging</string>
@@ -2841,6 +2866,7 @@
     <string name="key_pref_user_agreement">key_pref_user_agreement</string>
     <string name="key_pref_ux_targeting_service_bottom_sheet_override">key_pref_ux_targeting_service_bottom_sheet_override</string>
     <string name="key_pref_ux_targeting_service_in_feed_override">key_pref_ux_targeting_service_in_feed_override</string>
+    <string name="key_pref_view_options">key_pref_view_options</string>
     <string name="key_preferred_language_category">key_preferred_language_category</string>
     <string name="key_report_netz_dg_content">key_report_netz_dg_content</string>
     <string name="key_transparency_report">key_transparency_report</string>
@@ -3063,7 +3089,6 @@
     <string name="label_create_vault_use_existing">Use Existing Vault</string>
     <string name="label_create_your_feed">Create your home feed</string>
     <string name="label_create_your_profile">Create your profile</string>
-    <string name="label_creator_community">Creator Community</string>
     <string name="label_crosspost">Community</string>
     <string name="label_current_balance">Your current balance is %1$s</string>
     <string name="label_current_user_awarder">%1$s (you)</string>
@@ -3369,7 +3394,6 @@
     <string name="label_more_in_live">More in Reddit Live</string>
     <string name="label_more_trending_posts">More trending posts</string>
     <string name="label_my_profile">My profile</string>
-    <string name="label_my_reddit">My Reddit</string>
     <string name="label_name">Name</string>
     <string name="label_net_dg_content">NetzDG Content</string>
     <string name="label_network_config">Network config</string>
@@ -3468,6 +3492,7 @@
     <string name="label_personalization_settings">Personalization</string>
     <string name="label_pick_username">Pick username</string>
     <string name="label_pinned_posts">Pinned Posts</string>
+    <string name="label_pinned_posts_collapsed">Pinned Posts (%1$d)</string>
     <string name="label_place">Place</string>
     <string name="label_place_tile">Place your tile</string>
     <string name="label_points_info_title">About The Points</string>
@@ -3753,6 +3778,7 @@
     <string name="label_updates">Updates</string>
     <string name="label_updates_from_reddit">Updates from Reddit</string>
     <string name="label_uploads">Uploads</string>
+    <string name="label_use_bad_network">Use BAD REST - let REST API fails randomly</string>
     <string name="label_use_non_persisted_graphql_ops">Use unpersisted GQL operations</string>
     <string name="label_use_recovery_phrase_instead">Use recovery phrase instead</string>
     <string name="label_use_staging">Use staging with local cookie</string>
@@ -4832,6 +4858,7 @@
     <string name="nsfw_popular">r/popular</string>
     <string name="nsfw_search_banner_content">Confirm you are over 18 and update your settings to see potentially explicit content.</string>
     <string name="nsfw_search_banner_setting_button">UPDATE SETTINGS</string>
+    <string name="nsfw_search_banner_setting_button_updated">Update Settings</string>
     <string name="nsfw_search_banner_title">search results are hidden</string>
     <string name="nsfw_search_banner_title_updated">NSFW search results are hidden</string>
     <string name="nsfw_update_settings">Update settings</string>
@@ -4844,6 +4871,16 @@
     <string name="offer_survey_toast_2">Take our one-minute survey.</string>
     <string name="okay">Okay</string>
     <string name="on">On</string>
+    <string name="onboarding_carousel_comment_subtitle">Tap the comment icon to view the conversation and jump in with your own thoughts.</string>
+    <string name="onboarding_carousel_comment_title">Check the comments</string>
+    <string name="onboarding_carousel_home_subtitle">See posts from communities you’ve joined and ones we think you’ll like.</string>
+    <string name="onboarding_carousel_home_title">Browse your home feed</string>
+    <string name="onboarding_carousel_join_subtitle">View a community by tapping their name. Join to see their posts in your home feed.</string>
+    <string name="onboarding_carousel_join_title">Join more communities</string>
+    <string name="onboarding_carousel_search_subtitle">Tap the search icon to look for new communities, honest discussions, and more.</string>
+    <string name="onboarding_carousel_search_title">Search for anything</string>
+    <string name="onboarding_carousel_upvote_subtitle">Voting helps surface the best posts to you and other redditors. Your vote is anonymous.</string>
+    <string name="onboarding_carousel_upvote_title">Upvote things you like</string>
     <string name="onboarding_chat_topic_selection_subtitle">Choose a topic you’re into, and we’ll create a small chat group for it.</string>
     <string name="onboarding_cta_button">Host a talk</string>
     <string name="onboarding_outro_one_line">Let’s get to the good part</string>
@@ -5655,6 +5692,7 @@
     <string name="reddit_live_chat_warning_description">Your messages have been flagged for violating Reddit’s &lt;a href=https://www.reddit.com/help/contentpolicy/&gt;Content Policy.&lt;/a&gt; Have fun chatting, but if you’re flagged multiple times you may lose the ability to participate in Reddit Live chats</string>
     <string name="reddit_live_chat_warning_muted_description"> Because you’ve been flagged multiple times for violating Reddit’s &lt;a href=https://www.reddit.com/help/contentpolicy/&gt;Content Policy.&lt;/a&gt;, the system has removed your ability to chat in Reddit Live. This can’t be undone (not even by a mod), but after 24 hours you’ll be able to chat again</string>
     <string name="reddit_live_default_stream_prompt">Live stream yourself to r/%1$s!</string>
+    <string name="reddit_logo_icon">Reddit logo</string>
     <string name="reddit_premium_icon_content_description">Reddit Premium</string>
     <string name="reddit_recap">Recap</string>
     <string name="reddit_recap_title">Reddit Recap</string>
@@ -5760,6 +5798,8 @@
     <string name="revealed_message_survey_gratitude">Thanks you for your feedback.</string>
     <string name="rising_guided_search_item">Rising in %1$s</string>
     <string name="ritual_link_cta">Add</string>
+    <string name="ritual_post_unit_non_user">Add yours</string>
+    <string name="ritual_post_unit_user">Add more</string>
     <string name="ritual_selection_add_post">New post</string>
     <string name="ritual_selection_select_topic_title">or start with a topic</string>
     <string name="ritual_selection_title">Create a post</string>
@@ -5770,7 +5810,10 @@
     <string name="russia">Russia</string>
     <string name="safe_search_banner_content_off">You’ll see adult and Not Safe for Work (NSFW) search results unless you turn Safe Search on</string>
     <string name="safe_search_banner_content_on">You won’t see adult or Not Safe for Work (NSFW) search results unless you turn Safe Search off</string>
+    <string name="safe_search_banner_cta_text">Update</string>
     <string name="safe_search_banner_title">SAFE SEARCH</string>
+    <string name="safe_search_banner_title_off">Safe Search is Off</string>
+    <string name="safe_search_banner_title_on">Safe Search is On</string>
     <string name="safe_search_filter_default">Safe Search</string>
     <string name="safe_search_off">OFF</string>
     <string name="safe_search_off_description">Toggle Safe Search on to exclude NSFW (Not Safe for Work) and adult content from your search results.</string>
@@ -5823,6 +5866,7 @@
     <string name="search_more_communities">See all</string>
     <string name="search_more_results">See more</string>
     <string name="search_new_posts_description">new posts</string>
+    <string name="search_post_comments_hint">Search Comments</string>
     <string name="search_preview_image_content_description">Preview thumbnail for search result</string>
     <string name="search_relevance_description">relevant posts</string>
     <string name="search_result_button">Results for \"%1$s…\"</string>
@@ -5889,10 +5933,6 @@
     <string name="share_card_hide_avatar">Hide avatar</string>
     <string name="share_card_hide_username">Hide username</string>
     <string name="share_card_karma_label">KARMA</string>
-    <string name="share_card_level_common">COMMON</string>
-    <string name="share_card_level_epic">EPIC</string>
-    <string name="share_card_level_legendary">LEGENDARY</string>
-    <string name="share_card_level_rare">RARE</string>
     <string name="share_cards_content_description">Share Cards</string>
     <string name="share_cards_credit_logo_description">Reddit</string>
     <string name="share_cards_credit_template_subreddit">Posted in r/</string>
@@ -6192,6 +6232,7 @@
     <string name="success_post_removed">Post has been removed.</string>
     <string name="success_post_removed_spam">Post has been removed as spam.</string>
     <string name="success_post_save">Post saved!</string>
+    <string name="success_post_saved">Post saved!</string>
     <string name="success_post_subscribe">Post subscribed!</string>
     <string name="success_post_undistinguish">This post is no longer distinguished.</string>
     <string name="success_post_unhidden">Post unhidden!</string>
@@ -6200,6 +6241,7 @@
     <string name="success_post_unmarked_spoiler">The post is now unmarked spoiler.</string>
     <string name="success_post_unpin">Post has been unpinned.</string>
     <string name="success_post_unsave">Post unsaved!</string>
+    <string name="success_post_unsaved">Post unsaved!</string>
     <string name="success_post_unsubscribed">Post unsubscribed!</string>
     <string name="success_report_complaint">If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link below:</string>
     <string name="success_report_thanks">Thanks for letting us know! \10\10We\'ve received your report. Here are some things you can do:</string>
@@ -6620,6 +6662,7 @@
     <string name="vault_feed_screen_empty_vault_description_link">Learn how to get Points here.</string>
     <string name="vault_feed_screen_empty_vault_title">Your Vault is empty</string>
     <string name="vault_feed_screen_learn_points_section_title">Learn more</string>
+    <string name="vault_feed_screen_send_points">Send Points</string>
     <string name="vault_help_email">spsupport@reddit.com</string>
     <string name="vault_help_subject">Vault Feedback (Android %1$s)</string>
     <string name="vault_options_menu_description">Access your vault options</string>

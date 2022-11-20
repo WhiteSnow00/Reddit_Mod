@@ -4,21 +4,22 @@
 
 package androidx.compose.ui.platform;
 
-import androidx.compose.runtime.Recomposer;
+import android.app.Notification$Action;
+import android.graphics.RenderEffect;
 import android.view.View;
+import android.app.Notification$BigPictureStyle;
 
-public interface n1
+public final class n1
 {
-    public static final a a = n1.a.a;
+    public static /* bridge */ void a(final Notification$BigPictureStyle notification$BigPictureStyle, final boolean b) {
+        notification$BigPictureStyle.showBigPictureWhenCollapsed(b);
+    }
     
-    Recomposer a(final View p0);
+    public static /* bridge */ void b(final View view, final RenderEffect renderEffect) {
+        view.setRenderEffect(renderEffect);
+    }
     
-    public static final class a
-    {
-        public static final /* synthetic */ a a;
-        
-        static {
-            a = new a();
-        }
+    public static /* bridge */ boolean c(final Notification$Action notification$Action) {
+        return notification$Action.isAuthenticationRequired();
     }
 }

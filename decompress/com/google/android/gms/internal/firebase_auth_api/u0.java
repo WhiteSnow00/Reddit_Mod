@@ -4,59 +4,71 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.h1;
-import com.google.android.gms.internal.firebase-auth-api.t0;
-import ge.z8;
-import ge.g1;
-import ge.e0;
-import ge.y0;
+import he.g1;
+import he.a9;
+import he.x0;
 
-public final class u0 extends e implements y0
+public final class u0 extends e implements x0
 {
     private static final com.google.android.gms.internal.firebase-auth-api.u0 zzb;
-    private int zze;
-    private e0 zzf;
+    private String zze;
+    private int zzf;
+    private int zzg;
+    private int zzh;
     
     static {
         e.d((Class)com.google.android.gms.internal.firebase-auth-api.u0.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.u0)new u0()));
     }
     
     public u0() {
-        this.zzf = (e0)g1.i;
+        this.zze = "";
     }
     
-    public static z8 r() {
-        return (z8)((e)u0.zzb).i();
+    public static a9 s() {
+        return (a9)((e)u0.zzb).k();
     }
     
-    public static void v(final com.google.android.gms.internal.firebase-auth-api.u0 u0, final t0 t0) {
-        final e0 zzf = ((u0)u0).zzf;
-        if (!zzf.s()) {
-            final int size = zzf.size();
-            int n;
-            if (size == 0) {
-                n = 10;
-            }
-            else {
-                n = size + size;
-            }
-            ((u0)u0).zzf = zzf.h(n);
+    public static com.google.android.gms.internal.firebase-auth-api.u0 t() {
+        return u0.zzb;
+    }
+    
+    public static void u(final com.google.android.gms.internal.firebase-auth-api.u0 u0, final String zze) {
+        zze.getClass();
+        ((u0)u0).zze = zze;
+    }
+    
+    public static void v(final com.google.android.gms.internal.firebase-auth-api.u0 u0, final int zzg) {
+        ((u0)u0).zzg = zzg;
+    }
+    
+    public static void w(final com.google.android.gms.internal.firebase-auth-api.u0 u0, final int n) {
+        if (n != 1) {
+            ((u0)u0).zzh = n - 2;
+            return;
         }
-        ((u0)u0).zzf.add(t0);
+        throw new IllegalArgumentException("Can't get the number of an unknown enum value.");
     }
     
-    public final Object g(int n) {
+    public static void x(final com.google.android.gms.internal.firebase-auth-api.u0 u0, final int n) {
+        if (n != 1) {
+            ((u0)u0).zzf = n - 2;
+            return;
+        }
+        throw new IllegalArgumentException("Can't get the number of an unknown enum value.");
+    }
+    
+    public final Object h(int n) {
         if (--n == 0) {
             return 1;
         }
         if (n == 2) {
-            return new h1((com.google.android.gms.internal.firebase-auth-api.e)u0.zzb, "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0001\u0000\u0001\u000b\u0002\u001b", new Object[] { "zze", "zzf", t0.class });
+            return new g1((com.google.android.gms.internal.firebase-auth-api.e)u0.zzb, "\u0000\u0004\u0000\u0000\u0001\u0004\u0004\u0000\u0000\u0000\u0001\u0208\u0002\f\u0003\u000b\u0004\f", new Object[] { "zze", "zzf", "zzg", "zzh" });
         }
         if (n == 3) {
             return new u0();
         }
         if (n == 4) {
-            return new z8(0);
+            return new a9(0);
         }
         if (n != 5) {
             return null;
@@ -64,7 +76,7 @@ public final class u0 extends e implements y0
         return u0.zzb;
     }
     
-    public final t0 s() {
-        return (t0)this.zzf.get(0);
+    public final int r() {
+        return this.zzg;
     }
 }

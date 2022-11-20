@@ -4,8 +4,9 @@
 
 package com.reddit.domain.modtools.scheduledposts;
 
-import aw.b;
-import sg2.e;
+import p1.h;
+import ph0.a;
+import ng2.e;
 import java.util.List;
 import kotlin.Metadata;
 
@@ -23,6 +24,19 @@ public final class ScheduledPostContent
         this.subredditId = subredditId;
         this.recurringPosts = recurringPosts;
         this.standalonePosts = standalonePosts;
+    }
+    
+    public static ScheduledPostContent copy$default(final ScheduledPostContent scheduledPostContent, String subredditId, List recurringPosts, List standalonePosts, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            subredditId = scheduledPostContent.subredditId;
+        }
+        if ((n & 0x2) != 0x0) {
+            recurringPosts = scheduledPostContent.recurringPosts;
+        }
+        if ((n & 0x4) != 0x0) {
+            standalonePosts = scheduledPostContent.standalonePosts;
+        }
+        return scheduledPostContent.copy(subredditId, recurringPosts, standalonePosts);
     }
     
     public final String component1() {
@@ -70,16 +84,16 @@ public final class ScheduledPostContent
     
     @Override
     public int hashCode() {
-        return this.standalonePosts.hashCode() + b.c((List)this.recurringPosts, this.subredditId.hashCode() * 31, 31);
+        return this.standalonePosts.hashCode() + a.b((List)this.recurringPosts, this.subredditId.hashCode() * 31, 31);
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ScheduledPostContent(subredditId=");
-        r.append(this.subredditId);
-        r.append(", recurringPosts=");
-        r.append(this.recurringPosts);
-        r.append(", standalonePosts=");
-        return d.o(r, (List)this.standalonePosts, ')');
+        final StringBuilder t = a.t("ScheduledPostContent(subredditId=");
+        t.append(this.subredditId);
+        t.append(", recurringPosts=");
+        t.append(this.recurringPosts);
+        t.append(", standalonePosts=");
+        return h.d(t, (List)this.standalonePosts, ')');
     }
 }

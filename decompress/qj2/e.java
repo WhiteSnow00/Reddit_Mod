@@ -4,30 +4,31 @@
 
 package qj2;
 
-import java.lang.annotation.Annotation;
-import java.util.List;
-
-public interface e
+public class e
 {
-    boolean b();
+    public final l a;
+    public boolean b;
     
-    int c(final String p0);
+    public e(final i a) {
+        this.a = (l)a;
+        this.b = true;
+    }
     
-    e d(final int p0);
+    public void a() {
+        this.b = true;
+    }
     
-    int e();
+    public void b() {
+        this.b = false;
+    }
     
-    String f(final int p0);
+    public final void c(final char c) {
+        this.a.a(c);
+    }
     
-    List<Annotation> g(final int p0);
+    public void d() {
+    }
     
-    List<Annotation> getAnnotations();
-    
-    h getKind();
-    
-    String h();
-    
-    boolean i(final int p0);
-    
-    boolean isInline();
+    public void e() {
+    }
 }

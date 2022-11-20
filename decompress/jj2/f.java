@@ -4,26 +4,18 @@
 
 package jj2;
 
-import kotlin.coroutines.CoroutineContext;
-import ej2.b0;
+import java.util.concurrent.atomic.AtomicLongFieldUpdater;
 
-public final class f implements b0
+public final class f
 {
-    public final CoroutineContext f;
+    public static final AtomicLongFieldUpdater a;
+    private volatile long number;
     
-    public f(final CoroutineContext f) {
-        this.f = f;
+    static {
+        a = AtomicLongFieldUpdater.newUpdater(f.class, "number");
     }
     
-    public final CoroutineContext ox() {
-        return this.f;
-    }
-    
-    @Override
-    public final String toString() {
-        final StringBuilder r = a.r("CoroutineScope(coroutineContext=");
-        r.append(this.f);
-        r.append(')');
-        return r.toString();
+    public f() {
+        this.number = 1L;
     }
 }

@@ -5,8 +5,8 @@
 package d1;
 
 import java.util.NoSuchElementException;
-import sg2.e;
-import tg2.a;
+import ng2.e;
+import og2.a;
 import java.util.Iterator;
 
 public abstract class d<K, V, T> implements Iterator<T>, a
@@ -39,22 +39,22 @@ public abstract class d<K, V, T> implements Iterator<T>, a
             return;
         }
         while (-1 < g) {
-            final int c = this.c(g);
-            int c2;
-            if ((c2 = c) == -1) {
+            final int b = this.b(g);
+            int b2;
+            if ((b2 = b) == -1) {
                 final t<K, V, T> t2 = this.f[g];
                 final int h = t2.h;
                 final Object[] f2 = t2.f;
-                final boolean b = h < f2.length;
-                c2 = c;
-                if (b) {
+                final boolean b3 = h < f2.length;
+                b2 = b;
+                if (b3) {
                     final int length = f2.length;
                     t2.h = h + 1;
-                    c2 = this.c(g);
+                    b2 = this.b(g);
                 }
             }
-            if (c2 != -1) {
-                this.g = c2;
+            if (b2 != -1) {
+                this.g = b2;
                 return;
             }
             if (g > 0) {
@@ -75,23 +75,20 @@ public abstract class d<K, V, T> implements Iterator<T>, a
         this.h = false;
     }
     
-    public final int c(final int n) {
-        final t<K, V, T>[] f = this.f;
-        final t<K, V, T> t = f[n];
+    public final int b(final int n) {
+        final t<K, V, T> t = this.f[n];
         final int h = t.h;
         if (h < t.g) {
             return n;
         }
-        final Object[] f2 = t.f;
-        if (h >= f2.length) {
-            return -1;
-        }
-        final int length = f2.length;
-        final Object o = f2[h];
-        if (o != null) {
+        final Object[] f = t.f;
+        if (h < f.length) {
+            final int length = f.length;
+            final Object o = f[h];
+            e.d(o, "null cannot be cast to non-null type androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNode<K of androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNodeBaseIterator, V of androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNodeBaseIterator>");
             final s s = (s)o;
             if (n == 6) {
-                final t<K, V, T> t2 = f[n + 1];
+                final t<K, V, T> t2 = this.f[n + 1];
                 final Object[] d = s.d;
                 final int length2 = d.length;
                 t2.getClass();
@@ -100,7 +97,7 @@ public abstract class d<K, V, T> implements Iterator<T>, a
                 t2.h = 0;
             }
             else {
-                final t<K, V, T> t3 = f[n + 1];
+                final t<K, V, T> t3 = this.f[n + 1];
                 final Object[] d2 = s.d;
                 final int bitCount = Integer.bitCount(s.a);
                 t3.getClass();
@@ -109,9 +106,9 @@ public abstract class d<K, V, T> implements Iterator<T>, a
                 t3.g = bitCount * 2;
                 t3.h = 0;
             }
-            return this.c(n + 1);
+            return this.b(n + 1);
         }
-        throw new NullPointerException("null cannot be cast to non-null type androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNode<K of androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNodeBaseIterator, V of androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap.TrieNodeBaseIterator>");
+        return -1;
     }
     
     @Override

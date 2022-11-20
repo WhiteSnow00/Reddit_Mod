@@ -4,8 +4,8 @@
 
 package com.reddit.video.player.player.analytics;
 
-import al0.f0;
-import sg2.e;
+import p1.h;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -26,6 +26,38 @@ public final class FileDownloadPayload
         this.domainName = domainName;
         this.bytesLoaded = bytesLoaded;
         this.format = format;
+    }
+    
+    public FileDownloadPayload(Integer n, String s, Long n2, String s2, final int n3, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n3 & 0x1) != 0x0) {
+            n = null;
+        }
+        if ((n3 & 0x2) != 0x0) {
+            s = null;
+        }
+        if ((n3 & 0x4) != 0x0) {
+            n2 = null;
+        }
+        if ((n3 & 0x8) != 0x0) {
+            s2 = null;
+        }
+        this(n, s, n2, s2);
+    }
+    
+    public static FileDownloadPayload copy$default(final FileDownloadPayload fileDownloadPayload, Integer bitrate, String domainName, Long bytesLoaded, String format, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            bitrate = fileDownloadPayload.bitrate;
+        }
+        if ((n & 0x2) != 0x0) {
+            domainName = fileDownloadPayload.domainName;
+        }
+        if ((n & 0x4) != 0x0) {
+            bytesLoaded = fileDownloadPayload.bytesLoaded;
+        }
+        if ((n & 0x8) != 0x0) {
+            format = fileDownloadPayload.format;
+        }
+        return fileDownloadPayload.copy(bitrate, domainName, bytesLoaded, format);
     }
     
     public final Integer component1() {
@@ -112,13 +144,13 @@ public final class FileDownloadPayload
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("FileDownloadPayload(bitrate=");
-        r.append(this.bitrate);
-        r.append(", domainName=");
-        r.append(this.domainName);
-        r.append(", bytesLoaded=");
-        r.append(this.bytesLoaded);
-        r.append(", format=");
-        return f0.n(r, this.format, ')');
+        final StringBuilder t = a.t("FileDownloadPayload(bitrate=");
+        t.append(this.bitrate);
+        t.append(", domainName=");
+        t.append(this.domainName);
+        t.append(", bytesLoaded=");
+        t.append(this.bytesLoaded);
+        t.append(", format=");
+        return h.c(t, this.format, ')');
     }
 }

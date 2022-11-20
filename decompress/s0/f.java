@@ -4,49 +4,50 @@
 
 package s0;
 
-import u2.b;
-import com.reddit.news.ui.composables.RecommendationContextSection;
-import ej2.c0;
-import u2.k;
-import u2.j;
-import ml0.a;
-import c2.e0;
-import c2.u;
+import java.util.Iterator;
+import c2.m0$a;
+import ng2.e;
+import java.util.LinkedHashMap;
+import androidx.compose.foundation.lazy.layout.b;
+import c2.m0;
 
-public interface f extends u
+public final class f implements m0
 {
-    e0[] G(final int p0, final long p1);
+    public final b f;
+    public final LinkedHashMap g;
     
-    default long f(long n) {
-        if (n != n1.f.c) {
-            n = a.c(this.s(n1.f.f(n)), this.s(n1.f.d(n)));
+    public f(final b f) {
+        e.f((Object)f, "factory");
+        this.f = f;
+        this.g = new LinkedHashMap();
+    }
+    
+    @Override
+    public final void c(final m0$a m0$a) {
+        e.f((Object)m0$a, "slotIds");
+        this.g.clear();
+        final Iterator iterator = m0$a.iterator();
+        while (iterator.hasNext()) {
+            final Object b = this.f.b(iterator.next());
+            final Integer n = this.g.get(b);
+            int intValue;
+            if (n != null) {
+                intValue = n;
+            }
+            else {
+                intValue = 0;
+            }
+            if (intValue == 7) {
+                iterator.remove();
+            }
+            else {
+                this.g.put(b, intValue + 1);
+            }
         }
-        else {
-            n = u2.f.c;
-        }
-        return n;
     }
     
-    default float i(final long n) {
-        if (k.a(j.b(n), 4294967296L)) {
-            return ((b)this).getFontScale() * j.c(n);
-        }
-        throw new IllegalStateException("Only Sp can convert to Px".toString());
-    }
-    
-    default long j(final float n) {
-        return c0.L3(n / (((b)this).getDensity() * ((b)this).getFontScale()), 4294967296L);
-    }
-    
-    default float r(final int n) {
-        return n / ((b)this).getDensity();
-    }
-    
-    default float s(final float n) {
-        return n / ((b)this).getDensity();
-    }
-    
-    default long t() {
-        return c0.L3(RecommendationContextSection.f / ((b)this).getFontScale(), 4294967296L);
+    @Override
+    public final boolean g(final Object o, final Object o2) {
+        return e.a(this.f.b(o), this.f.b(o2));
     }
 }

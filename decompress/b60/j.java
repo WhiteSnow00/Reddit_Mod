@@ -4,25 +4,22 @@
 
 package b60;
 
-import al0.f0;
-import sg2.e;
-import al0.b;
+import p1.h;
+import aq2.a;
+import ng2.e;
 
 public final class j
 {
     public final String a;
-    public final int b;
+    public final String b;
     public final String c;
-    public long d;
-    public final String e;
     
-    public j(final int b, final long d, final String a, final String c, final String e) {
-        al0.b.q(a, "linkId", c, "linkJson", e, "subredditId");
+    public j(final String a, final String b, final String c) {
+        e.f((Object)a, "prefixedSubredditName");
+        e.f((Object)b, "linkId");
         this.a = a;
         this.b = b;
         this.c = c;
-        this.d = d;
-        this.e = e;
     }
     
     @Override
@@ -34,25 +31,21 @@ public final class j
             return false;
         }
         final j j = (j)o;
-        return sg2.e.a((Object)this.a, (Object)j.a) && this.b == j.b && sg2.e.a((Object)this.c, (Object)j.c) && this.d == j.d && sg2.e.a((Object)this.e, (Object)j.e);
+        return e.a((Object)this.a, (Object)j.a) && e.a((Object)this.b, (Object)j.b) && e.a((Object)this.c, (Object)j.c);
     }
     
     @Override
     public final int hashCode() {
-        return this.e.hashCode() + b.b(this.d, b.c(this.c, a.c(this.b, this.a.hashCode() * 31, 31), 31), 31);
+        return this.c.hashCode() + aq2.a.e(this.b, this.a.hashCode() * 31, 31);
     }
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("LinkDataModel(linkId=");
-        r.append(this.a);
-        r.append(", listingPosition=");
-        r.append(this.b);
-        r.append(", linkJson=");
-        r.append(this.c);
-        r.append(", listingId=");
-        r.append(this.d);
-        r.append(", subredditId=");
-        return f0.n(r, this.e, ')');
+        final StringBuilder t = a.t("PostDuplicatesKey(prefixedSubredditName=");
+        t.append(this.a);
+        t.append(", linkId=");
+        t.append(this.b);
+        t.append(", linkLastPathSegment=");
+        return h.c(t, this.c, ')');
     }
 }

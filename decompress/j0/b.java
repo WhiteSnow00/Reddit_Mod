@@ -49,7 +49,7 @@ public class b<K, V> extends i<K, V> implements Map<K, V>
     }
     
     public final void putAll(final Map<? extends K, ? extends V> map) {
-        this.c(map.size() + super.h);
+        this.b(map.size() + super.h);
         for (final Entry<Object, V> entry : map.entrySet()) {
             this.put(entry.getKey(), (Object)entry.getValue());
         }

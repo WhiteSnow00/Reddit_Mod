@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model.mod;
 
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -27,6 +27,25 @@ public final class ApprovedSubmitter implements ModToolsUserModel
         this.id = id;
         this.accountIcon = accountIcon;
         this.reason = reason;
+    }
+    
+    public static ApprovedSubmitter copy$default(final ApprovedSubmitter approvedSubmitter, String username, long atUtc, String id, String accountIcon, String reason, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            username = approvedSubmitter.getUsername();
+        }
+        if ((n & 0x2) != 0x0) {
+            atUtc = approvedSubmitter.getAtUtc();
+        }
+        if ((n & 0x4) != 0x0) {
+            id = approvedSubmitter.getId();
+        }
+        if ((n & 0x8) != 0x0) {
+            accountIcon = approvedSubmitter.getAccountIcon();
+        }
+        if ((n & 0x10) != 0x0) {
+            reason = approvedSubmitter.getReason();
+        }
+        return approvedSubmitter.copy(username, atUtc, id, accountIcon, reason);
     }
     
     public final String component1() {
@@ -109,17 +128,17 @@ public final class ApprovedSubmitter implements ModToolsUserModel
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ApprovedSubmitter(username=");
-        r.append(this.getUsername());
-        r.append(", atUtc=");
-        r.append(this.getAtUtc());
-        r.append(", id=");
-        r.append(this.getId());
-        r.append(", accountIcon=");
-        r.append(this.getAccountIcon());
-        r.append(", reason=");
-        r.append(this.getReason());
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("ApprovedSubmitter(username=");
+        t.append(this.getUsername());
+        t.append(", atUtc=");
+        t.append(this.getAtUtc());
+        t.append(", id=");
+        t.append(this.getId());
+        t.append(", accountIcon=");
+        t.append(this.getAccountIcon());
+        t.append(", reason=");
+        t.append(this.getReason());
+        t.append(')');
+        return t.toString();
     }
 }

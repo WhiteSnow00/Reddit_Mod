@@ -4,7 +4,7 @@
 
 package n4;
 
-import ej2.c0;
+import dg.l0;
 import android.widget.EditText;
 
 public final class a
@@ -16,7 +16,7 @@ public final class a
     public a(final EditText editText) {
         this.b = Integer.MAX_VALUE;
         this.c = 0;
-        c0.J2((Object)editText, "editText cannot be null");
+        l0.P((Object)editText, "editText cannot be null");
         this.a = new a.a$a(editText);
     }
     

@@ -9,7 +9,7 @@ import com.squareup.moshi.JsonReader;
 import java.util.Set;
 import java.lang.reflect.Type;
 import kotlin.collections.EmptySet;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.y;
 import com.squareup.moshi.JsonReader$b;
 import kotlin.Metadata;
@@ -33,7 +33,7 @@ public final class GifImageDataModelJsonAdapter extends JsonAdapter<GifImageData
         String s = null;
         String s2 = null;
         String s4;
-        String s3 = s4 = s2;
+        String s3 = s4 = null;
         while (jsonReader.hasNext()) {
             final int e = jsonReader.E(this.options);
             if (e != -1) {
@@ -59,7 +59,7 @@ public final class GifImageDataModelJsonAdapter extends JsonAdapter<GifImageData
             }
             else {
                 jsonReader.H();
-                jsonReader.F1();
+                jsonReader.G1();
             }
         }
         jsonReader.r();
@@ -71,13 +71,13 @@ public final class GifImageDataModelJsonAdapter extends JsonAdapter<GifImageData
         e.f((Object)x, "writer");
         if (gifImageDataModel != null) {
             x.h();
-            x.u("width");
+            x.v("width");
             this.nullableStringAdapter.toJson(x, (Object)gifImageDataModel.a);
-            x.u("height");
+            x.v("height");
             this.nullableStringAdapter.toJson(x, (Object)gifImageDataModel.b);
-            x.u("url");
+            x.v("url");
             this.nullableStringAdapter.toJson(x, (Object)gifImageDataModel.c);
-            x.u("mp4");
+            x.v("mp4");
             this.nullableStringAdapter.toJson(x, (Object)gifImageDataModel.d);
             x.s();
             return;

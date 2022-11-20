@@ -4,35 +4,35 @@
 
 package com.google.android.gms.measurement;
 
-import pe.d3;
-import com.android.billingclient.api.j0;
-import pe.p6;
-import ie.c1;
-import pe.h4;
-import pe.u4;
-import pe.g7;
+import qe.h3;
+import com.android.billingclient.api.h0;
+import qe.j6;
+import je.a1;
+import qe.j4;
+import qe.u4;
+import qe.c7;
 import android.os.IBinder;
 import android.content.Context;
 import android.app.job.JobParameters;
 import android.util.SparseArray;
 import android.util.Log;
 import android.os.PowerManager$WakeLock;
-import u4.a;
+import t4.a;
 import android.content.Intent;
-import pe.r6;
-import pe.q6;
+import qe.l6;
+import qe.k6;
 import android.app.Service;
 
-public final class AppMeasurementService extends Service implements q6
+public final class AppMeasurementService extends Service implements k6
 {
-    public r6 f;
+    public l6 f;
     
     public final boolean a(final int n) {
         return this.stopSelfResult(n);
     }
     
     public final void b(Intent f) {
-        final SparseArray f2 = a.f;
+        final SparseArray<PowerManager$WakeLock> f2 = a.f;
         final int intExtra = f.getIntExtra("androidx.contentpager.content.wakelockid", 0);
         if (intExtra == 0) {
             return;
@@ -58,26 +58,26 @@ public final class AppMeasurementService extends Service implements q6
         throw new UnsupportedOperationException();
     }
     
-    public final r6 d() {
+    public final l6 d() {
         if (this.f == null) {
-            this.f = new r6((Context)this);
+            this.f = new l6((Context)this);
         }
         return this.f;
     }
     
     public final IBinder onBind(final Intent intent) {
-        final r6 d = this.d();
+        final l6 d = this.d();
         if (intent == null) {
-            d.c().k.a("onBind called with null intent");
+            d.c().m.a("onBind called with null intent");
         }
         else {
             d.getClass();
             final String action = intent.getAction();
             if ("com.google.android.gms.measurement.START".equals(action)) {
-                final Object o = new u4(g7.N(d.a));
+                final Object o = new u4(c7.N(d.a));
                 return (IBinder)o;
             }
-            d.c().n.b((Object)action, "onBind received unknown action");
+            d.c().p.b((Object)action, "onBind received unknown action");
         }
         final Object o = null;
         return (IBinder)o;
@@ -85,11 +85,11 @@ public final class AppMeasurementService extends Service implements q6
     
     public final void onCreate() {
         super.onCreate();
-        h4.s(this.d().a, (c1)null, (Long)null).h().s.a("Local AppMeasurementService is starting up");
+        j4.t(this.d().a, (a1)null, (Long)null).c().u.a("Local AppMeasurementService is starting up");
     }
     
     public final void onDestroy() {
-        h4.s(this.d().a, (c1)null, (Long)null).h().s.a("Local AppMeasurementService is shutting down");
+        j4.t(this.d().a, (a1)null, (Long)null).c().u.a("Local AppMeasurementService is shutting down");
         super.onDestroy();
     }
     
@@ -98,18 +98,18 @@ public final class AppMeasurementService extends Service implements q6
     }
     
     public final int onStartCommand(final Intent intent, final int n, final int n2) {
-        final r6 d = this.d();
-        final d3 h = h4.s(d.a, (c1)null, (Long)null).h();
+        final l6 d = this.d();
+        final h3 c = j4.t(d.a, (a1)null, (Long)null).c();
         if (intent == null) {
-            h.n.a("AppMeasurementService started with null intent");
+            c.p.a("AppMeasurementService started with null intent");
         }
         else {
             final String action = intent.getAction();
-            h.s.c((Object)n2, "Local AppMeasurementService called. startId, action", (Object)action);
+            c.u.c((Object)n2, "Local AppMeasurementService called. startId, action", (Object)action);
             if ("com.google.android.gms.measurement.UPLOAD".equals(action)) {
-                final p6 p3 = new p6(d, n2, h, intent);
-                final g7 n3 = g7.N(d.a);
-                n3.b().U((Runnable)new j0(n3, (Runnable)p3));
+                final j6 j6 = new j6(d, n2, c, intent);
+                final c7 n3 = c7.N(d.a);
+                n3.a().B((Runnable)new h0(n3, (Runnable)j6));
             }
         }
         return 2;

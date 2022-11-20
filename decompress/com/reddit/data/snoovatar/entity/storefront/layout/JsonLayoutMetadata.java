@@ -4,12 +4,12 @@
 
 package com.reddit.data.snoovatar.entity.storefront.layout;
 
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonLayoutMetadata;", "", "data_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001¨\u0006\u0002" }, d2 = { "Lcom/reddit/data/snoovatar/entity/storefront/layout/JsonLayoutMetadata;", "", "impl_release" }, k = 1, mv = { 1, 7, 1 })
 public final class JsonLayoutMetadata
 {
     public final String a;
@@ -39,11 +39,11 @@ public final class JsonLayoutMetadata
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("JsonLayoutMetadata(id=");
-        r.append(this.a);
-        r.append(", telemetry=");
-        r.append(this.b);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("JsonLayoutMetadata(id=");
+        t.append(this.a);
+        t.append(", telemetry=");
+        t.append(this.b);
+        t.append(')');
+        return t.toString();
     }
 }

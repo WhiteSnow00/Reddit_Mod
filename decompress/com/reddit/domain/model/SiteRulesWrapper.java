@@ -4,7 +4,8 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import java.util.List;
 import kotlin.Metadata;
@@ -19,6 +20,13 @@ public final class SiteRulesWrapper
     public SiteRulesWrapper(@n(name = "sitewide_rules") final List<SiteRuleFlow> sitewide_rules) {
         e.f((Object)sitewide_rules, "sitewide_rules");
         this.sitewide_rules = sitewide_rules;
+    }
+    
+    public static SiteRulesWrapper copy$default(final SiteRulesWrapper siteRulesWrapper, List sitewide_rules, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            sitewide_rules = siteRulesWrapper.sitewide_rules;
+        }
+        return siteRulesWrapper.copy(sitewide_rules);
     }
     
     public final List<SiteRuleFlow> component1() {
@@ -46,6 +54,6 @@ public final class SiteRulesWrapper
     
     @Override
     public String toString() {
-        return d.o(a.r("SiteRulesWrapper(sitewide_rules="), (List)this.sitewide_rules, ')');
+        return h.d(a.t("SiteRulesWrapper(sitewide_rules="), (List)this.sitewide_rules, ')');
     }
 }

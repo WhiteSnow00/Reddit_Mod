@@ -4,38 +4,35 @@
 
 package com.google.android.material.appbar;
 
-import r3.a$c;
-import a4.q0$e;
+import a4.l0$e;
 import android.graphics.drawable.Drawable$Callback;
-import a4.q0$g;
+import a4.l0$g;
+import cg.d;
 import android.view.View$MeasureSpec;
-import bg.d;
+import px0.c;
 import android.view.ViewGroup;
-import androidx.coordinatorlayout.widget.CoordinatorLayout$c;
 import android.animation.ValueAnimator$AnimatorUpdateListener;
-import ye.b;
 import android.animation.TimeInterpolator;
 import android.graphics.Canvas;
-import a4.t1;
-import java.util.WeakHashMap;
 import android.view.ViewGroup$MarginLayoutParams;
 import android.widget.LinearLayout$LayoutParams;
 import android.view.ViewGroup$LayoutParams;
+import java.util.WeakHashMap;
 import android.content.res.TypedArray;
-import a4.g0;
-import a4.q0$i;
+import a4.b0;
+import a4.l0$i;
 import android.content.res.ColorStateList;
-import tf.f;
+import uf.f;
 import android.graphics.drawable.ColorDrawable;
-import a4.q0$d;
-import a4.q0;
-import pd.r;
+import a4.l0$d;
+import a4.l0;
+import oy0.b;
 import android.animation.AnimatorInflater;
-import of.g;
-import ye.h;
+import pf.g;
+import ze.h;
 import android.view.ViewOutlineProvider;
 import android.os.Build$VERSION;
-import yf.a;
+import zf.a;
 import android.util.AttributeSet;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -43,11 +40,11 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import a4.a2;
-import androidx.coordinatorlayout.widget.CoordinatorLayout$b;
+import a4.r1;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.widget.LinearLayout;
 
-public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
+public class AppBarLayout extends LinearLayout implements b
 {
     public int f;
     public int g;
@@ -55,7 +52,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     public int i;
     public boolean j;
     public int k;
-    public a2 l;
+    public r1 l;
     public ArrayList m;
     public boolean n;
     public boolean o;
@@ -67,7 +64,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     public Drawable u;
     
     public AppBarLayout(Context context, final AttributeSet set) {
-        super(yf.a.a(context, set, 2130968640, 2132018066), set, 2130968640);
+        super(a.a(context, set, 2130968640, 2132018068), set, 2130968640);
         this.g = -1;
         this.h = -1;
         this.i = -1;
@@ -77,28 +74,28 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
         final int sdk_INT = Build$VERSION.SDK_INT;
         ((View)this).setOutlineProvider(ViewOutlineProvider.BOUNDS);
         final Context context2 = ((View)this).getContext();
-        Object o = of.g.d(context2, set, ye.h.a, 2130968640, 2132018066, new int[0]);
+        Object o = pf.g.d(context2, set, ze.h.a, 2130968640, 2132018068, new int[0]);
         try {
             if (((TypedArray)o).hasValue(0)) {
                 ((View)this).setStateListAnimator(AnimatorInflater.loadStateListAnimator(context2, ((TypedArray)o).getResourceId(0, 0)));
             }
             ((TypedArray)o).recycle();
-            final TypedArray d = of.g.d(context, set, pd.r.p, 2130968640, 2132018066, new int[0]);
-            final Drawable drawable = d.getDrawable(0);
-            o = q0.a;
-            q0$d.q((View)this, drawable);
+            final TypedArray d = pf.g.d(context, set, oy0.b.w, 2130968640, 2132018068, new int[0]);
+            o = d.getDrawable(0);
+            final WeakHashMap a = l0.a;
+            l0$d.q((View)this, (Drawable)o);
             if (((View)this).getBackground() instanceof ColorDrawable) {
-                final ColorDrawable colorDrawable = (ColorDrawable)((View)this).getBackground();
-                o = new f();
-                ((f)o).l(ColorStateList.valueOf(colorDrawable.getColor()));
-                ((f)o).i(context);
-                q0$d.q((View)this, (Drawable)o);
+                o = ((View)this).getBackground();
+                final f f = new f();
+                f.l(ColorStateList.valueOf(((ColorDrawable)o).getColor()));
+                f.i(context);
+                l0$d.q((View)this, (Drawable)f);
             }
             if (d.hasValue(4)) {
                 this.f(d.getBoolean(4, false), false, false);
             }
             if (d.hasValue(3)) {
-                ye.h.a((View)this, (float)d.getDimensionPixelSize(3, 0));
+                ze.h.a((View)this, (float)d.getDimensionPixelSize(3, 0));
             }
             if (sdk_INT >= 26) {
                 if (d.hasValue(2)) {
@@ -112,7 +109,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             this.q = d.getResourceId(6, -1);
             this.setStatusBarForeground(d.getDrawable(7));
             d.recycle();
-            q0$i.u((View)this, (g0)new ye.a(this));
+            l0$i.u((View)this, (b0)new ze.a(this));
         }
         finally {
             ((TypedArray)o).recycle();
@@ -145,8 +142,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     public final void d(final int f) {
         this.f = f;
         if (!((View)this).willNotDraw()) {
-            final WeakHashMap<View, t1> a = q0.a;
-            q0$d.k((View)this);
+            final WeakHashMap a = l0.a;
+            l0$d.k((View)this);
         }
         final ArrayList m = this.m;
         if (m != null) {
@@ -227,8 +224,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
                     s.cancel();
                 }
                 (this.s = ValueAnimator.ofFloat(new float[] { n, dimension })).setDuration((long)((View)this).getResources().getInteger(2131492866));
-                this.s.setInterpolator((TimeInterpolator)xe.a.a);
-                this.s.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new ye.b(f));
+                this.s.setInterpolator((TimeInterpolator)ye.a.a);
+                this.s.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new ze.b(f));
                 this.s.start();
             }
             return true;
@@ -248,12 +245,20 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
         return (ViewGroup$LayoutParams)new AppBarLayout.AppBarLayout$b(((View)this).getContext(), set);
     }
     
+    public final /* bridge */ ViewGroup$LayoutParams generateLayoutParams(final ViewGroup$LayoutParams viewGroup$LayoutParams) {
+        return (ViewGroup$LayoutParams)c(viewGroup$LayoutParams);
+    }
+    
     public final LinearLayout$LayoutParams generateLayoutParams(final AttributeSet set) {
         return (LinearLayout$LayoutParams)new AppBarLayout.AppBarLayout$b(((View)this).getContext(), set);
     }
     
-    public CoordinatorLayout$c<AppBarLayout> getBehavior() {
-        return (CoordinatorLayout$c<AppBarLayout>)new Behavior();
+    public final /* bridge */ LinearLayout$LayoutParams generateLayoutParams(final ViewGroup$LayoutParams viewGroup$LayoutParams) {
+        return (LinearLayout$LayoutParams)c(viewGroup$LayoutParams);
+    }
+    
+    public CoordinatorLayout.c<AppBarLayout> getBehavior() {
+        return (CoordinatorLayout.c<AppBarLayout>)new Behavior();
     }
     
     public int getDownNestedPreScrollRange() {
@@ -275,24 +280,24 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
                 Label_0130: {
                     int d;
                     if ((a & 0x8) != 0x0) {
-                        final WeakHashMap<View, t1> a2 = q0.a;
-                        d = q0$d.d(child);
+                        final WeakHashMap a2 = l0.a;
+                        d = l0$d.d(child);
                     }
                     else {
                         if ((a & 0x2) == 0x0) {
                             n3 = n2 + measuredHeight;
                             break Label_0130;
                         }
-                        final WeakHashMap<View, t1> a3 = q0.a;
-                        d = measuredHeight - q0$d.d(child);
+                        final WeakHashMap a3 = l0.a;
+                        d = measuredHeight - l0$d.d(child);
                     }
                     n3 = d + n2;
                 }
                 int min = n3;
                 if (i == 0) {
-                    final WeakHashMap<View, t1> a4 = q0.a;
+                    final WeakHashMap a4 = l0.a;
                     min = n3;
-                    if (q0$d.b(child)) {
+                    if (l0$d.b(child)) {
                         min = Math.min(n3, measuredHeight - this.getTopInset());
                     }
                 }
@@ -313,8 +318,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             return i;
         }
         final int childCount = ((ViewGroup)this).getChildCount();
-        int n2;
-        int n = n2 = 0;
+        int n = 0;
+        int n2 = 0;
         int n3;
         while (true) {
             n3 = n2;
@@ -333,8 +338,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             }
             n2 += topMargin + bottomMargin + measuredHeight;
             if ((a & 0x2) != 0x0) {
-                final WeakHashMap<View, t1> a2 = q0.a;
-                n3 = n2 - q0$d.d(child);
+                final WeakHashMap a2 = l0.a;
+                n3 = n2 - l0$d.d(child);
                 break;
             }
             ++n;
@@ -348,12 +353,12 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     
     public final int getMinimumHeightForVisibleOverlappingContent() {
         final int topInset = this.getTopInset();
-        final WeakHashMap<View, t1> a = q0.a;
-        int n = q0$d.d((View)this);
+        final WeakHashMap a = l0.a;
+        int n = l0$d.d((View)this);
         if (n == 0) {
             final int childCount = ((ViewGroup)this).getChildCount();
             if (childCount >= 1) {
-                n = q0$d.d(((ViewGroup)this).getChildAt(childCount - 1));
+                n = l0$d.d(((ViewGroup)this).getChildAt(childCount - 1));
             }
             else {
                 n = 0;
@@ -379,7 +384,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     }
     
     public final int getTopInset() {
-        final a2 l = this.l;
+        final r1 l = this.l;
         int f;
         if (l != null) {
             f = l.f();
@@ -396,8 +401,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             return g;
         }
         final int childCount = ((ViewGroup)this).getChildCount();
-        int n2;
-        int n = n2 = 0;
+        int n = 0;
+        int n2 = 0;
         int n3;
         while (true) {
             n3 = n2;
@@ -414,15 +419,15 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             }
             final int n4 = n2 += measuredHeight + ((LinearLayout$LayoutParams)appBarLayout$b).topMargin + ((LinearLayout$LayoutParams)appBarLayout$b).bottomMargin;
             if (n == 0) {
-                final WeakHashMap<View, t1> a2 = q0.a;
+                final WeakHashMap a2 = l0.a;
                 n2 = n4;
-                if (q0$d.b(child)) {
+                if (l0$d.b(child)) {
                     n2 = n4 - this.getTopInset();
                 }
             }
             if ((a & 0x2) != 0x0) {
-                final WeakHashMap<View, t1> a3 = q0.a;
-                n3 = n2 - q0$d.d(child);
+                final WeakHashMap a3 = l0.a;
+                n3 = n2 - l0$d.d(child);
                 break;
             }
             ++n;
@@ -478,9 +483,9 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
             final View child = ((ViewGroup)this).getChildAt(0);
             b2 = b;
             if (child.getVisibility() != 8) {
-                final WeakHashMap<View, t1> a = q0.a;
+                final WeakHashMap a = l0.a;
                 b2 = b;
-                if (!q0$d.b(child)) {
+                if (!l0$d.b(child)) {
                     b2 = true;
                 }
             }
@@ -492,7 +497,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
         super.onAttachedToWindow();
         final Drawable background = ((View)this).getBackground();
         if (background instanceof f) {
-            d.D0((View)this, (f)background);
+            px0.c.P2((View)this, (f)background);
         }
     }
     
@@ -545,8 +550,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     
     public void onLayout(final boolean b, int i, int n, int childCount, final int n2) {
         super.onLayout(b, i, n, childCount, n2);
-        final WeakHashMap<View, t1> a = q0.a;
-        final boolean b2 = q0$d.b((View)this);
+        final WeakHashMap a = l0.a;
+        final boolean b2 = l0$d.b((View)this);
         final boolean b3 = true;
         if (b2 && this.i()) {
             n = this.getTopInset();
@@ -601,8 +606,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
         super.onMeasure(n, n2);
         final int mode = View$MeasureSpec.getMode(n2);
         if (mode != 1073741824) {
-            final WeakHashMap<View, t1> a = q0.a;
-            if (q0$d.b((View)this) && this.i()) {
+            final WeakHashMap a = l0.a;
+            if (l0$d.b((View)this) && this.i()) {
                 n = ((View)this).getMeasuredHeight();
                 if (mode != Integer.MIN_VALUE) {
                     if (mode == 0) {
@@ -611,7 +616,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
                 }
                 else {
                     n = ((View)this).getMeasuredHeight();
-                    n = wd.a.u(this.getTopInset() + n, 0, View$MeasureSpec.getSize(n2));
+                    n = d.h1(this.getTopInset() + n, 0, View$MeasureSpec.getSize(n2));
                 }
                 ((View)this).setMeasuredDimension(((View)this).getMeasuredWidth(), n);
             }
@@ -630,8 +635,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     }
     
     public void setExpanded(final boolean b) {
-        final WeakHashMap<View, t1> a = q0.a;
-        this.e(b, q0$g.c((View)this));
+        final WeakHashMap a = l0.a;
+        this.e(b, l0$g.c((View)this));
     }
     
     public void setLiftOnScroll(final boolean p) {
@@ -672,8 +677,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
                     this.u.setState(((View)this).getDrawableState());
                 }
                 final Drawable u3 = this.u;
-                final WeakHashMap<View, t1> a = q0.a;
-                a$c.b(u3, q0$e.d((View)this));
+                final WeakHashMap a = l0.a;
+                r3.a.c.b(u3, l0$e.d((View)this));
                 u = this.u;
                 u.setVisible(((View)this).getVisibility() == 0, false);
                 this.u.setCallback((Drawable$Callback)this);
@@ -686,8 +691,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
                 }
             }
             ((View)this).setWillNotDraw((boolean)((n2 ^ 0x1) != 0x0));
-            final WeakHashMap<View, t1> a2 = q0.a;
-            q0$d.k((View)this);
+            final WeakHashMap a2 = l0.a;
+            l0$d.k((View)this);
         }
     }
     
@@ -696,12 +701,12 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout$b
     }
     
     public void setStatusBarForegroundResource(final int n) {
-        this.setStatusBarForeground(wd.a.L(((View)this).getContext(), n));
+        this.setStatusBarForeground(vl.a.U1(((View)this).getContext(), n));
     }
     
     @Deprecated
     public void setTargetElevation(final float n) {
-        ye.h.a((View)this, n);
+        ze.h.a((View)this, n);
     }
     
     public void setVisibility(final int visibility) {

@@ -4,7 +4,7 @@
 
 package com.reddit.video.player.player;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -29,6 +29,50 @@ public final class ViewModelOverride
         this.paused = paused;
         this.playing = playing;
         this.ended = ended;
+    }
+    
+    public ViewModelOverride(SettingsOverride settingsOverride, ModelOverride modelOverride, ModelOverride modelOverride2, ModelOverride modelOverride3, ModelOverride modelOverride4, ModelOverride modelOverride5, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            settingsOverride = null;
+        }
+        if ((n & 0x2) != 0x0) {
+            modelOverride = null;
+        }
+        if ((n & 0x4) != 0x0) {
+            modelOverride2 = null;
+        }
+        if ((n & 0x8) != 0x0) {
+            modelOverride3 = null;
+        }
+        if ((n & 0x10) != 0x0) {
+            modelOverride4 = null;
+        }
+        if ((n & 0x20) != 0x0) {
+            modelOverride5 = null;
+        }
+        this(settingsOverride, modelOverride, modelOverride2, modelOverride3, modelOverride4, modelOverride5);
+    }
+    
+    public static ViewModelOverride copy$default(final ViewModelOverride viewModelOverride, SettingsOverride settings, ModelOverride idle, ModelOverride buffering, ModelOverride paused, ModelOverride playing, ModelOverride ended, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            settings = viewModelOverride.settings;
+        }
+        if ((n & 0x2) != 0x0) {
+            idle = viewModelOverride.idle;
+        }
+        if ((n & 0x4) != 0x0) {
+            buffering = viewModelOverride.buffering;
+        }
+        if ((n & 0x8) != 0x0) {
+            paused = viewModelOverride.paused;
+        }
+        if ((n & 0x10) != 0x0) {
+            playing = viewModelOverride.playing;
+        }
+        if ((n & 0x20) != 0x0) {
+            ended = viewModelOverride.ended;
+        }
+        return viewModelOverride.copy(settings, idle, buffering, paused, playing, ended);
     }
     
     public final SettingsOverride component1() {
@@ -147,19 +191,19 @@ public final class ViewModelOverride
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ViewModelOverride(settings=");
-        r.append(this.settings);
-        r.append(", idle=");
-        r.append(this.idle);
-        r.append(", buffering=");
-        r.append(this.buffering);
-        r.append(", paused=");
-        r.append(this.paused);
-        r.append(", playing=");
-        r.append(this.playing);
-        r.append(", ended=");
-        r.append(this.ended);
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("ViewModelOverride(settings=");
+        t.append(this.settings);
+        t.append(", idle=");
+        t.append(this.idle);
+        t.append(", buffering=");
+        t.append(this.buffering);
+        t.append(", paused=");
+        t.append(this.paused);
+        t.append(", playing=");
+        t.append(this.playing);
+        t.append(", ended=");
+        t.append(this.ended);
+        t.append(')');
+        return t.toString();
     }
 }

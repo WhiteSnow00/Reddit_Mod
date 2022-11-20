@@ -9,7 +9,7 @@ import o1.n;
 
 public abstract class m<T>
 {
-    public static final class a extends m<n>
+    public static final class a extends m<o1.n>
     {
         public static final a a;
         
@@ -81,7 +81,7 @@ public abstract class m<T>
         }
     }
     
-    public static final class i extends m<n>
+    public static final class i extends m<o1.n>
     {
         public static final i a;
         
@@ -123,6 +123,33 @@ public abstract class m<T>
         
         static {
             a = new m();
+        }
+    }
+    
+    public static final class n extends m<Float>
+    {
+        public static final n a;
+        
+        static {
+            a = new n();
+        }
+    }
+    
+    public static final class o extends m<Float>
+    {
+        public static final o a;
+        
+        static {
+            a = new o();
+        }
+    }
+    
+    public static final class p extends m<Float>
+    {
+        public static final p a;
+        
+        static {
+            a = new p();
         }
     }
 }

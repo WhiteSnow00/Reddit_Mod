@@ -4,63 +4,61 @@
 
 package com.reddit.data.repository;
 
-import z50.i1;
 import java.util.Iterator;
-import pf2.h;
-import z50.b1;
-import z50.d1;
-import z50.j1;
-import ff2.g0;
-import io.reactivex.internal.operators.single.SingleFlatMapCompletable;
-import i10.n;
-import rg2.l;
-import com.reddit.domain.model.ThumbnailsPreference;
+import kf2.h;
+import b60.r;
+import b60.a0;
+import p6.i;
+import b60.g1;
 import android.content.SharedPreferences$Editor;
+import com.reddit.listing.common.ListingViewMode$a;
 import com.reddit.common.resource.LocaleUtils;
-import z50.g1;
-import com.reddit.domain.model.CarouselCollectionState;
-import xd0.s$a;
+import b60.c1;
+import com.reddit.domain.model.ThumbnailsPreference;
+import ff2.q;
+import af2.t;
 import com.squareup.moshi.y;
 import com.reddit.domain.model.GeopopularRegionSelectFilter;
-import z50.q0;
-import kf2.q;
-import ff2.t;
-import z50.c1;
-import z50.h1;
+import j$.time.Instant;
+import b60.f1;
 import com.reddit.listing.model.sort.CommentSortType;
-import ff2.c0;
-import v40.o;
-import com.reddit.domain.repository.NsfwSetting$Type;
+import af2.c0;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import mg2.p;
+import kotlin.coroutines.CoroutineContext;
+import zi2.g;
+import cg2.j;
+import gg2.c;
+import b60.e1;
+import ff2.o;
+import af2.g0;
+import io.reactivex.internal.operators.single.SingleFlatMapCompletable;
+import i50.m;
+import com.reddit.domain.model.CarouselCollectionState;
+import mg2.l;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import com.reddit.domain.model.AccountPreferencesPatch;
+import com.reddit.domain.model.AccountPreferences$AcceptPrivateMessagesPolicy;
 import com.reddit.domain.model.AccountPreferences;
-import z50.f1;
-import n20.d;
+import b60.b1;
+import q20.d;
+import mg.d0;
 import io.reactivex.plugins.RxJavaPlugins;
 import java.util.concurrent.Callable;
-import pf2.f;
-import z50.e1;
-import com.reddit.listing.common.ListingViewMode$a;
-import com.reddit.domain.model.AccountPreferences$AcceptPrivateMessagesPolicy;
-import j$.time.Instant;
-import kotlin.coroutines.intrinsics.CoroutineSingletons;
-import rg2.p;
-import kotlin.coroutines.CoroutineContext;
-import ej2.g;
-import hg2.j;
-import lg2.c;
+import kf2.f;
+import b60.d1;
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import com.reddit.domain.repository.NsfwSetting;
 import kotlin.Pair;
 import io.reactivex.subjects.PublishSubject;
 import com.reddit.listing.common.ListingViewMode;
 import com.reddit.data.remote.RemoteAccountPreferenceDataSource;
-import n20.a;
+import q20.a;
 import com.reddit.session.Session;
 import android.content.SharedPreferences;
-import uw1.b;
-import ua0.k;
+import qw1.b;
+import va0.k;
 import xd0.s;
 
 public final class RedditPreferenceRepository implements s
@@ -69,24 +67,24 @@ public final class RedditPreferenceRepository implements s
     public final b b;
     public final SharedPreferences c;
     public final Session d;
-    public final a e;
-    public final us0.a f;
+    public final q20.a e;
+    public final ws0.a f;
     public final RemoteAccountPreferenceDataSource g;
-    public final a20.a h;
-    public final fg2.a<ListingViewMode> i;
+    public final d20.a h;
+    public final ag2.a<ListingViewMode> i;
     public final PublishSubject<Pair<String, Object>> j;
     public final PublishSubject<NsfwSetting> k;
     
     @Inject
-    public RedditPreferenceRepository(final k a, final b b, final SharedPreferences c, final Session d, final a e, final us0.a f, final RemoteAccountPreferenceDataSource g, final a20.a h) {
-        sg2.e.f((Object)a, "settings");
-        sg2.e.f((Object)b, "nsfwIncognitoSettings");
-        sg2.e.f((Object)c, "localPreferences");
-        sg2.e.f((Object)d, "activeSession");
-        sg2.e.f((Object)e, "backgroundThread");
-        sg2.e.f((Object)f, "appSettings");
-        sg2.e.f((Object)g, "remoteAccountPreferenceDataSource");
-        sg2.e.f((Object)h, "dispatcherProvider");
+    public RedditPreferenceRepository(final k a, final b b, final SharedPreferences c, final Session d, final q20.a e, final ws0.a f, final RemoteAccountPreferenceDataSource g, final d20.a h) {
+        ng2.e.f((Object)a, "settings");
+        ng2.e.f((Object)b, "nsfwIncognitoSettings");
+        ng2.e.f((Object)c, "localPreferences");
+        ng2.e.f((Object)d, "activeSession");
+        ng2.e.f((Object)e, "backgroundThread");
+        ng2.e.f((Object)f, "appSettings");
+        ng2.e.f((Object)g, "remoteAccountPreferenceDataSource");
+        ng2.e.f((Object)h, "dispatcherProvider");
         this.a = a;
         this.b = b;
         this.c = c;
@@ -95,120 +93,99 @@ public final class RedditPreferenceRepository implements s
         this.f = f;
         this.g = g;
         this.h = h;
-        this.i = (fg2.a<ListingViewMode>)new fg2.a();
-        final PublishSubject<Object> create = (PublishSubject<Object>)PublishSubject.create();
-        sg2.e.e((Object)create, "create<Pair<String, Any>>()");
+        this.i = new ag2.a<ListingViewMode>();
+        final PublishSubject create = PublishSubject.create();
+        ng2.e.e((Object)create, "create<Pair<String, Any>>()");
         this.j = (PublishSubject<Pair<String, Object>>)create;
-        final PublishSubject<Object> create2 = (PublishSubject<Object>)PublishSubject.create();
-        sg2.e.e((Object)create2, "create<NsfwSetting>()");
+        final PublishSubject create2 = PublishSubject.create();
+        ng2.e.e((Object)create2, "create<NsfwSetting>()");
         this.k = (PublishSubject<NsfwSetting>)create2;
     }
     
-    public final Object A(final boolean b, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setAllowPrivateMessages$2(b, this, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
+    @Override
+    public final af2.a A(final int n, final String s) {
+        ng2.e.f((Object)s, "key");
+        this.j.onNext((Object)new Pair((Object)s, (Object)n));
+        final af2.a onAssembly = RxJavaPlugins.onAssembly((af2.a)new f(new d1(this, s, n)));
+        ng2.e.e((Object)onAssembly, "fromCallable { localPref\u2026Int(key, value).apply() }");
+        return d0.S0(onAssembly, (d)this.e);
     }
     
-    public final Object B(final c<? super Instant> c) {
-        return ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$getSurveyLastSeenTime$2(this, (c)null), (c)c);
-    }
-    
-    public final Object C(final AccountPreferences$AcceptPrivateMessagesPolicy accountPreferences$AcceptPrivateMessagesPolicy, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setAllowPrivateMessagesOption$2(this, accountPreferences$AcceptPrivateMessagesPolicy, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
-    }
-    
-    public final ListingViewMode D(String string, final ListingViewMode listingViewMode) {
-        sg2.e.f((Object)string, "listingName");
-        sg2.e.f((Object)listingViewMode, "default");
-        string = this.c.getString(al0.b.h("listingViewMode.", string), listingViewMode.toString());
-        final ListingViewMode$a companion = ListingViewMode.Companion;
-        sg2.e.c((Object)string);
-        companion.getClass();
-        return ListingViewMode$a.b(string);
-    }
-    
-    public final ff2.a E(final int n, final String s) {
-        sg2.e.f((Object)s, "key");
-        this.j.onNext((Pair<String, Object>)new Pair((Object)s, (Object)n));
-        final ff2.a onAssembly = RxJavaPlugins.onAssembly((ff2.a)new f((Callable)new e1(this, s, n)));
-        sg2.e.e((Object)onAssembly, "fromCallable { localPref\u2026Int(key, value).apply() }");
-        return yd.b.i0(onAssembly, (d)this.e);
-    }
-    
-    public final ff2.a F(final boolean b) {
-        ff2.a a;
+    @Override
+    public final af2.a B(final boolean b) {
+        af2.a a;
         if (this.d.isIncognito()) {
-            a = ff2.a.p((Callable<?>)new f1(this, b));
+            a = af2.a.p(new b1(this, b, 1));
         }
         else {
             this.a.b(AccountPreferences.copy$default(this.a.a(), b, b, (String)null, false, (String)null, (String)null, false, false, (Integer)null, false, false, false, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33554428, (Object)null));
             a = this.n0(new AccountPreferencesPatch(Boolean.valueOf(b), Boolean.valueOf(b), (String)null, (String)null, (String)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194300, (DefaultConstructorMarker)null));
         }
-        sg2.e.e((Object)a, "if (activeSession.isInco\u2026\n        ),\n      )\n    }");
-        this.k.onNext(new NsfwSetting(NsfwSetting$Type.OVER_18, b));
+        ng2.e.e((Object)a, "if (activeSession.isInco\u2026\n        ),\n      )\n    }");
+        this.k.onNext((Object)new NsfwSetting(NsfwSetting.Type.OVER_18, b));
         return a;
     }
     
-    public final ff2.a G(final boolean b) {
+    @Override
+    public final af2.a C(final boolean b) {
         this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, (String)null, (String)null, false, false, (Integer)null, false, false, false, b, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33550335, (Object)null));
         return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, (String)null, (String)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, Boolean.valueOf(b), (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4193791, (DefaultConstructorMarker)null));
     }
     
-    public final ff2.a H(final String s) {
-        sg2.e.f((Object)s, "subredditId");
+    @Override
+    public final af2.a D(final a a, final l<? super CarouselCollectionState, CarouselCollectionState> l) {
+        final af2.a onAssembly = RxJavaPlugins.onAssembly((af2.a)new SingleFlatMapCompletable<Object>((af2.g0<?>)this.c0(a), (ff2.o<?, ? extends af2.e>)new m((Object)this, 1, (Object)a, (Object)l)));
+        ng2.e.e((Object)onAssembly, "getCarouselCollectionSta\u2026te(key, action(it))\n    }");
+        return d0.S0(onAssembly, (d)this.e);
+    }
+    
+    @Override
+    public final af2.a E(final String s) {
+        ng2.e.f((Object)s, "subredditId");
         return this.m0("closed_join_community_ids", s);
     }
     
-    public final ff2.a I(final String s) {
-        sg2.e.f((Object)s, "country");
-        ff2.a a;
-        if (!sg2.e.a((Object)this.a.getUsername(), (Object)"*") && !sg2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
-            final ff2.a p = ff2.a.p((Callable<?>)new q6.g(7, (Object)this, (Object)s));
-            sg2.e.e((Object)p, "fromCallable {\n        l\u2026         .apply()\n      }");
-            a = yd.b.i0(p, (d)this.e);
+    @Override
+    public final af2.a F(final String s) {
+        ng2.e.f((Object)s, "country");
+        af2.a a;
+        if (!ng2.e.a((Object)this.a.getUsername(), (Object)"*") && !ng2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
+            final af2.a p = af2.a.p(new e1(this, s, 1));
+            ng2.e.e((Object)p, "fromCallable {\n        l\u2026         .apply()\n      }");
+            a = d0.S0(p, (d)this.e);
         }
         else {
-            a = ff2.a.h();
-            sg2.e.e((Object)a, "{\n      Completable.complete()\n    }");
+            a = af2.a.h();
+            ng2.e.e((Object)a, "{\n      Completable.complete()\n    }");
         }
         return a;
     }
     
-    public final boolean J() {
+    @Override
+    public final boolean G() {
         return this.a.a().getEmailUnsubscribeAll();
     }
     
-    public final ff2.a K(final String s, final boolean b) {
-        this.j.onNext((Pair<String, Object>)new Pair((Object)s, (Object)b));
-        final ff2.a onAssembly = RxJavaPlugins.onAssembly((ff2.a)new f((Callable)new o(s, b, 1, (Object)this)));
-        sg2.e.e((Object)onAssembly, "fromCallable { localPref\u2026ean(key, value).apply() }");
-        return yd.b.i0(onAssembly, (d)this.e);
+    @Override
+    public final af2.a H(final String s, final boolean b) {
+        this.j.onNext((Object)new Pair((Object)s, (Object)b));
+        final af2.a onAssembly = RxJavaPlugins.onAssembly((af2.a)new f((Callable<?>)new x40.e(s, b, 1, (Object)this)));
+        ng2.e.e((Object)onAssembly, "fromCallable { localPref\u2026ean(key, value).apply() }");
+        return d0.S0(onAssembly, (d)this.e);
     }
     
-    public final Object L(final String s, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setCountryCode$2(this, s, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
-    }
-    
-    public final String M() {
+    @Override
+    public final String I() {
         return this.a.a().getCountryCode();
     }
     
-    public final boolean N() {
+    @Override
+    public final boolean J() {
         return this.c.getBoolean("streaming_feature_stream_entry_view_mode_compact", false);
     }
     
-    public final boolean O() {
+    @Override
+    public final boolean K() {
         final SharedPreferences c = this.c;
         boolean b = false;
         if (c.getInt("opened_creator_stats_count", 0) >= 2) {
@@ -217,94 +194,103 @@ public final class RedditPreferenceRepository implements s
         return b;
     }
     
-    public final boolean P() {
+    @Override
+    public final boolean L() {
         return this.a.a().getEmailDigestsEnabled();
     }
     
-    public final Object Q(final boolean b, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setEnableFollowers$2(this, b, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
-    }
-    
-    public final Object R(final String s, final String s2, final c<? super Integer> c) {
-        return ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$incrementCounterpartCommunityVisitCount$2(s2, s, this, (c)null), (c)c);
-    }
-    
-    public final c0<Boolean> S(final String s) {
-        sg2.e.f((Object)s, "subredditId");
-        return this.l0("closed_trending_settings_ids", s);
-    }
-    
-    public final boolean T() {
-        return this.a.a().getEnableFollowers();
-    }
-    
-    public final c0<Boolean> U(final String s) {
-        sg2.e.f((Object)s, "subredditId");
-        return this.l0("closed_join_counterpart_community_ids", s);
-    }
-    
-    public final c0<CommentSortType> V() {
-        final c0<Object> u = c0.u((Callable<?>)new h1(this));
-        sg2.e.e((Object)u, "fromCallable {\n      val\u2026SortType.CONFIDENCE\n    }");
-        return nn0.a.V((c0)u, (d)this.e);
-    }
-    
-    public final int W(final int n, final String s) {
-        sg2.e.f((Object)s, "key");
-        return this.c.getInt(s, n);
-    }
-    
-    public final AccountPreferences$AcceptPrivateMessagesPolicy X() {
-        return this.a.a().getAcceptPms();
-    }
-    
-    public final ff2.a Y() {
-        final ff2.a onAssembly = RxJavaPlugins.onAssembly((ff2.a)new f((Callable)new c1(this)));
-        sg2.e.e((Object)onAssembly, "fromCallable {\n      loc\u2026SEEN, seen).apply()\n    }");
-        return yd.b.i0(onAssembly, (d)this.e);
-    }
-    
-    public final ff2.a Z(final String s) {
-        sg2.e.f((Object)s, "subredditId");
-        return this.m0("closed_join_counterpart_community_ids", s);
-    }
-    
-    public final Object a(final Instant instant, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setSurveyLastSeenTime$2(this, instant, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
-    }
-    
-    public final boolean a0() {
-        final SharedPreferences c = this.c;
-        boolean b = false;
-        if (c.getInt("opened_my_reddit_count", 0) > 3) {
-            b = true;
-        }
-        return b;
-    }
-    
-    public final t b() {
-        final t map = ((t)this.j).filter((q)new z50.o((Object)"streaming_feature_stream_entry_view_mode_compact", 3)).map((kf2.o)new q0(5));
-        sg2.e.e((Object)map, "preferencesSubject\n     \u2026\n      .map { it.second }");
-        final t ofType = map.ofType((Class)Boolean.class);
-        sg2.e.b((Object)ofType, "ofType(R::class.java)");
-        final t startWith = ofType.startWith((Object)this.c.getBoolean("streaming_feature_stream_entry_view_mode_compact", false));
-        sg2.e.e((Object)startWith, "preferencesSubject\n     \u2026getBoolean(key, default))");
-        return startWith;
-    }
-    
-    public final Object b0(final c<? super AccountPreferences> c) {
+    @Override
+    public final Object M(final c<? super AccountPreferences> c) {
         return this.g.getPreferencesSuspend((c)c);
     }
     
-    public final GeopopularRegionSelectFilter c() {
+    @Override
+    public final Object N(final boolean b, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setEnableFollowers$2(this, b, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
+    }
+    
+    @Override
+    public final c0<Boolean> O(final String s) {
+        ng2.e.f((Object)s, "subredditId");
+        return this.l0("closed_trending_settings_ids", s);
+    }
+    
+    @Override
+    public final boolean P() {
+        return this.a.a().getEnableFollowers();
+    }
+    
+    @Override
+    public final c0<Boolean> Q(final String s) {
+        ng2.e.f((Object)s, "subredditId");
+        return this.l0("closed_join_counterpart_community_ids", s);
+    }
+    
+    @Override
+    public final c0<CommentSortType> R() {
+        final c0<Object> u = c0.u((Callable<?>)new f1(this));
+        ng2.e.e((Object)u, "fromCallable {\n      val\u2026SortType.CONFIDENCE\n    }");
+        return px1.a.K0((c0)u, (d)this.e);
+    }
+    
+    @Override
+    public final int S(final int n, final String s) {
+        ng2.e.f((Object)s, "key");
+        return this.c.getInt(s, n);
+    }
+    
+    @Override
+    public final AccountPreferences$AcceptPrivateMessagesPolicy T() {
+        return this.a.a().getAcceptPms();
+    }
+    
+    @Override
+    public final Object U(final boolean b, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setAllowPrivateMessages$2(b, this, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
+    }
+    
+    @Override
+    public final af2.a V() {
+        final af2.a onAssembly = RxJavaPlugins.onAssembly((af2.a)new f(new b1(this, true, 0)));
+        ng2.e.e((Object)onAssembly, "fromCallable {\n      loc\u2026SEEN, seen).apply()\n    }");
+        return d0.S0(onAssembly, (d)this.e);
+    }
+    
+    @Override
+    public final Object W(final String s, final String s2, final c<? super Long> c) {
+        return zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$saveLastSubredditVisitTime$2(s2, s, this, (c)null), c);
+    }
+    
+    @Override
+    public final Object X(final c<? super Instant> c) {
+        return zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$getSurveyLastSeenTime$2(this, (c)null), c);
+    }
+    
+    @Override
+    public final Object Y(final String s, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setCountryCode$2(this, s, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
+    }
+    
+    @Override
+    public final af2.a Z(final String s) {
+        ng2.e.f((Object)s, "subredditId");
+        return this.m0("closed_join_counterpart_community_ids", s);
+    }
+    
+    @Override
+    public final GeopopularRegionSelectFilter a() {
         final SharedPreferences c = this.c;
         String s = "";
         final String string = c.getString("RedditRegionRepository:GeopopularRegionFilter", "");
@@ -318,7 +304,7 @@ public final class RedditPreferenceRepository implements s
             geopopularRegionSelectFilter = GeopopularRegionSelectFilter.Companion.getDEFAULT();
         }
         else {
-            final y a = v10.e.a;
+            final y a = y10.e.a;
             int n2;
             if (s.length() == 0) {
                 n2 = n;
@@ -331,7 +317,7 @@ public final class RedditPreferenceRepository implements s
                 fromJson = null;
             }
             else {
-                fromJson = v10.e.a.a((Class)GeopopularRegionSelectFilter.class).fromJson(s);
+                fromJson = y10.e.a.a((Class)GeopopularRegionSelectFilter.class).fromJson(s);
             }
             if ((geopopularRegionSelectFilter = (GeopopularRegionSelectFilter)fromJson) == null) {
                 geopopularRegionSelectFilter = GeopopularRegionSelectFilter.Companion.getDEFAULT();
@@ -346,37 +332,61 @@ public final class RedditPreferenceRepository implements s
         return GeopopularRegionSelectFilter.Companion.getDEFAULT();
     }
     
-    public final ff2.a c0() {
-        final ff2.a k = this.g.getPreferences().w((kf2.o)new z50.p((Object)this, 3)).K();
-        sg2.e.e((Object)k, "remoteAccountPreferenceD\u2026 }\n      .toCompletable()");
-        return yd.b.i0(k, (d)this.e);
+    @Override
+    public final boolean a0() {
+        final SharedPreferences c = this.c;
+        boolean b = false;
+        if (c.getInt("opened_my_reddit_count", 0) > 15) {
+            b = true;
+        }
+        return b;
     }
     
+    @Override
+    public final t b() {
+        final t<Object> map = ((t<Pair<String, Object>>)this.j).filter((ff2.q<? super Pair<String, Object>>)new com.reddit.data.repository.b("streaming_feature_stream_entry_view_mode_compact", 5)).map((ff2.o<? super Pair<String, Object>, ?>)new b60.g0(5));
+        ng2.e.e((Object)map, "preferencesSubject\n     \u2026\n      .map { it.second }");
+        final t<Boolean> ofType = map.ofType(Boolean.class);
+        ng2.e.b((Object)ofType, "ofType(R::class.java)");
+        final t<Boolean> startWith = ofType.startWith(this.c.getBoolean("streaming_feature_stream_entry_view_mode_compact", false));
+        ng2.e.e((Object)startWith, "preferencesSubject\n     \u2026getBoolean(key, default))");
+        return startWith;
+    }
+    
+    @Override
+    public final af2.a b0() {
+        final af2.a k = this.g.getPreferences().w((o)new b60.q((Object)this, 4)).K();
+        ng2.e.e((Object)k, "remoteAccountPreferenceD\u2026 }\n      .toCompletable()");
+        return d0.S0(k, (d)this.e);
+    }
+    
+    @Override
+    public final af2.a c(final CommentSortType commentSortType) {
+        ng2.e.f((Object)commentSortType, "sort");
+        this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, commentSortType.toString(), (String)null, false, false, (Integer)null, false, false, false, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33554415, (Object)null));
+        return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, commentSortType.toString(), (String)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194295, (DefaultConstructorMarker)null));
+    }
+    
+    @Override
+    public final c0<CarouselCollectionState> c0(final a a) {
+        final c0 onAssembly = RxJavaPlugins.onAssembly((c0)new pf2.j(new e1(this, a, 0)));
+        ng2.e.e((Object)onAssembly, "fromCallable {\n      val\u2026tionState()\n      }\n    }");
+        return px1.a.K0(onAssembly, (d)this.e);
+    }
+    
+    @Override
     public final void d(final boolean b) {
         if (this.d.isIncognito()) {
             this.b.a(b);
         }
         else {
-            a.w(this.c, "blurNsfw", b);
+            b5.k.u(this.c, "blurNsfw", b);
         }
-        this.k.onNext(new NsfwSetting(NsfwSetting$Type.BLUR, b));
+        this.k.onNext((Object)new NsfwSetting(NsfwSetting.Type.BLUR, b));
     }
     
-    public final c0<CarouselCollectionState> d0(final s$a s$a) {
-        final c0<Object> onAssembly = RxJavaPlugins.onAssembly(new uf2.j<Object>((Callable<?>)new g1(this, s$a)));
-        sg2.e.e((Object)onAssembly, "fromCallable {\n      val\u2026tionState()\n      }\n    }");
-        return nn0.a.V((c0)onAssembly, (d)this.e);
-    }
-    
-    public final Object e(final boolean b, final c<? super j> c) {
-        final Object l = ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setShowPresence$2(this, b, (c)null), (c)c);
-        if (l == CoroutineSingletons.COROUTINE_SUSPENDED) {
-            return l;
-        }
-        return hg2.j.a;
-    }
-    
-    public final int e0() {
+    @Override
+    public final int d0() {
         final Integer minCommentScore = this.a.a().getMinCommentScore();
         int intValue;
         if (minCommentScore != null) {
@@ -388,67 +398,8 @@ public final class RedditPreferenceRepository implements s
         return intValue;
     }
     
-    public final Object f(final String s, final String s2, final c<? super Integer> c) {
-        return ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$incrementSubredditVisitCount$2(s2, s, this, (c)null), (c)c);
-    }
-    
-    public final ff2.a f0(final GeopopularRegionSelectFilter geopopularRegionSelectFilter) {
-        sg2.e.f((Object)geopopularRegionSelectFilter, "filter");
-        ff2.a a;
-        if (!sg2.e.a((Object)this.a.getUsername(), (Object)"*") && !sg2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
-            final ff2.a p = ff2.a.p((Callable<?>)new q6.g(6, (Object)this, (Object)geopopularRegionSelectFilter));
-            sg2.e.e((Object)p, "fromCallable {\n        s\u2026         .apply()\n      }");
-            a = yd.b.i0(p, (d)this.e);
-        }
-        else {
-            a = ff2.a.h();
-            sg2.e.e((Object)a, "{\n      Completable.complete()\n    }");
-        }
-        return a;
-    }
-    
-    public final ff2.a g(final CommentSortType commentSortType) {
-        sg2.e.f((Object)commentSortType, "sort");
-        this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, commentSortType.toString(), (String)null, false, false, (Integer)null, false, false, false, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33554415, (Object)null));
-        return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, commentSortType.toString(), (String)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194295, (DefaultConstructorMarker)null));
-    }
-    
-    public final String g0() {
-        final String m = this.M();
-        final int hashCode = m.hashCode();
-        if (hashCode != 2816) {
-            if (hashCode != 2818) {
-                if (hashCode != 2880) {
-                    return LocaleUtils.INSTANCE.getCountryByCountryCode(m);
-                }
-                if (!m.equals("ZZ")) {
-                    return LocaleUtils.INSTANCE.getCountryByCountryCode(m);
-                }
-            }
-            else if (!m.equals("XZ")) {
-                return LocaleUtils.INSTANCE.getCountryByCountryCode(m);
-            }
-            return "No Country Indentified";
-        }
-        if (m.equals("XX")) {
-            return "Other Country (Unknown)";
-        }
-        return LocaleUtils.INSTANCE.getCountryByCountryCode(m);
-    }
-    
-    public final Object h(final String s, final String s2, final c<? super Long> c) {
-        return ej2.g.l((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$saveLastSubredditVisitTime$2(s2, s, this, (c)null), (c)c);
-    }
-    
-    public final void h0() {
-        final int int1 = this.c.getInt("opened_my_reddit_count", 0);
-        final SharedPreferences$Editor edit = this.c.edit();
-        sg2.e.e((Object)edit, "editor");
-        edit.putInt("opened_my_reddit_count", int1 + 1);
-        edit.apply();
-    }
-    
-    public final ThumbnailsPreference i() {
+    @Override
+    public final ThumbnailsPreference e() {
         final String thumbnailPref = this.a.a().getThumbnailPref();
         ThumbnailsPreference thumbnailsPreference;
         if (thumbnailPref.length() == 0) {
@@ -460,47 +411,89 @@ public final class RedditPreferenceRepository implements s
         return thumbnailsPreference;
     }
     
-    public final ff2.a i0(final boolean b) {
-        this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, (String)null, (String)null, false, false, (Integer)null, false, false, b, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33552383, (Object)null));
-        return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, (String)null, (String)null, (Boolean)null, (Boolean)null, (Boolean)null, Boolean.valueOf(b), (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194047, (DefaultConstructorMarker)null));
+    @Override
+    public final af2.a e0(final GeopopularRegionSelectFilter geopopularRegionSelectFilter) {
+        ng2.e.f((Object)geopopularRegionSelectFilter, "filter");
+        af2.a a;
+        if (!ng2.e.a((Object)this.a.getUsername(), (Object)"*") && !ng2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
+            final af2.a p = af2.a.p(new c1(this, geopopularRegionSelectFilter));
+            ng2.e.e((Object)p, "fromCallable {\n        s\u2026         .apply()\n      }");
+            a = d0.S0(p, (d)this.e);
+        }
+        else {
+            a = af2.a.h();
+            ng2.e.e((Object)a, "{\n      Completable.complete()\n    }");
+        }
+        return a;
     }
     
-    public final ff2.a j(final s$a s$a, final l<? super CarouselCollectionState, CarouselCollectionState> l) {
-        final ff2.a onAssembly = RxJavaPlugins.onAssembly((ff2.a)new SingleFlatMapCompletable((g0)this.d0(s$a), (kf2.o)new n((Object)this, 1, (Object)s$a, (Object)l)));
-        sg2.e.e((Object)onAssembly, "getCarouselCollectionSta\u2026te(key, action(it))\n    }");
-        return yd.b.i0(onAssembly, (d)this.e);
+    @Override
+    public final Object f(final AccountPreferences$AcceptPrivateMessagesPolicy accountPreferences$AcceptPrivateMessagesPolicy, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setAllowPrivateMessagesOption$2(this, accountPreferences$AcceptPrivateMessagesPolicy, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
     }
     
-    public final int j0() {
-        return this.c.getInt("key_number_of_times_live_pill_was_shown", 0);
+    @Override
+    public final String f0() {
+        final String i = this.I();
+        final int hashCode = i.hashCode();
+        if (hashCode != 2816) {
+            if (hashCode != 2818) {
+                if (hashCode != 2880) {
+                    return LocaleUtils.INSTANCE.getCountryByCountryCode(i);
+                }
+                if (!i.equals("ZZ")) {
+                    return LocaleUtils.INSTANCE.getCountryByCountryCode(i);
+                }
+            }
+            else if (!i.equals("XZ")) {
+                return LocaleUtils.INSTANCE.getCountryByCountryCode(i);
+            }
+            return "No Country Indentified";
+        }
+        if (i.equals("XX")) {
+            return "Other Country (Unknown)";
+        }
+        return LocaleUtils.INSTANCE.getCountryByCountryCode(i);
     }
     
-    public final boolean k() {
+    @Override
+    public final boolean g() {
         return this.a.a().getShowPresence();
     }
     
-    public final ff2.a k0(final ListingViewMode listingViewMode) {
-        sg2.e.f((Object)listingViewMode, "viewMode");
-        final ff2.a p = ff2.a.p((Callable<?>)new j1(this, listingViewMode));
-        sg2.e.e((Object)p, "fromCallable {\n      loc\u2026le.onNext(viewMode)\n    }");
-        return yd.b.i0(p, (d)this.e);
+    @Override
+    public final Object g0(final boolean b, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setShowPresence$2(this, b, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
     }
     
-    public final ListingViewMode l() {
+    @Override
+    public final ListingViewMode h() {
         final String string = this.c.getString("listingViewMode.globalDefault", ListingViewMode.CARD.toString());
         final ListingViewMode$a companion = ListingViewMode.Companion;
-        sg2.e.c((Object)string);
+        ng2.e.c((Object)string);
         companion.getClass();
         return ListingViewMode$a.b(string);
     }
     
-    public final c0<Boolean> l0(final String s, final String s2) {
-        final c0<Object> onAssembly = RxJavaPlugins.onAssembly(new uf2.j<Object>((Callable<?>)new d1((Object)this, (Comparable)s, (Object)s2, 0)));
-        sg2.e.e((Object)onAssembly, "fromCallable {\n      loc\u2026ins(value) ?: false\n    }");
-        return nn0.a.V((c0)onAssembly, (d)this.e);
+    @Override
+    public final void h0() {
+        final int int1 = this.c.getInt("opened_my_reddit_count", 0);
+        final SharedPreferences$Editor edit = this.c.edit();
+        ng2.e.e((Object)edit, "editor");
+        edit.putInt("opened_my_reddit_count", int1 + 1);
+        edit.apply();
     }
     
-    public final boolean m(final String s) {
+    @Override
+    public final boolean i(final String s) {
         final SharedPreferences c = this.c;
         final StringBuilder sb = new StringBuilder();
         sb.append("not_a_new_feature.");
@@ -508,34 +501,27 @@ public final class RedditPreferenceRepository implements s
         return c.contains(sb.toString()) ^ true;
     }
     
-    public final ff2.a m0(final String s, final String s2) {
-        final ff2.a onAssembly = RxJavaPlugins.onAssembly((ff2.a)new pf2.e((kf2.a)new b1((Object)this, 0, (Object)s, (Object)s2)));
-        sg2.e.e((Object)onAssembly, "fromAction {\n      local\u2026   .apply()\n      }\n    }");
-        return yd.b.i0(onAssembly, (d)this.e);
+    @Override
+    public final af2.a i0(final boolean b) {
+        this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, (String)null, (String)null, false, false, (Integer)null, false, false, b, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33552383, (Object)null));
+        return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, (String)null, (String)null, (Boolean)null, (Boolean)null, (Boolean)null, Boolean.valueOf(b), (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194047, (DefaultConstructorMarker)null));
     }
     
-    public final c0<Boolean> n(final String s, final boolean b) {
-        final c0<Object> onAssembly = RxJavaPlugins.onAssembly(new uf2.j<Object>((Callable<?>)new v40.e(s, b, 1, (Object)this)));
-        sg2.e.e((Object)onAssembly, "fromCallable { localPref\u2026etBoolean(key, default) }");
-        return nn0.a.V((c0)onAssembly, (d)this.e);
+    @Override
+    public final c0<Boolean> j(final String s, final boolean b) {
+        final c0 onAssembly = RxJavaPlugins.onAssembly((c0)new pf2.j((Callable)new x40.l(s, b, 1, (Object)this)));
+        ng2.e.e((Object)onAssembly, "fromCallable { localPref\u2026etBoolean(key, default) }");
+        return px1.a.K0(onAssembly, (d)this.e);
     }
     
-    public final ff2.a n0(final AccountPreferencesPatch accountPreferencesPatch) {
-        ff2.a a;
-        if (!sg2.e.a((Object)this.a.getUsername(), (Object)"*") && !sg2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
-            final c0 w = this.g.patchPreferences(accountPreferencesPatch).w((kf2.o)new z50.o((Object)this, 3));
-            w.getClass();
-            a = RxJavaPlugins.onAssembly((ff2.a)new h((g0)w));
-        }
-        else {
-            a = ff2.a.h();
-        }
-        sg2.e.e((Object)a, "if (settings.username ==\u2026   .ignoreElement()\n    }");
-        return yd.b.i0(a, (d)this.e);
+    @Override
+    public final int j0() {
+        return this.c.getInt("key_number_of_times_live_pill_was_shown", 0);
     }
     
-    public final void o(final String s) {
-        sg2.e.f((Object)s, "featureName");
+    @Override
+    public final void k(final String s) {
+        ng2.e.f((Object)s, "featureName");
         final SharedPreferences$Editor edit = this.c.edit();
         final StringBuilder sb = new StringBuilder();
         sb.append("not_a_new_feature.");
@@ -543,7 +529,16 @@ public final class RedditPreferenceRepository implements s
         edit.putBoolean(sb.toString(), true).apply();
     }
     
-    public final boolean p() {
+    @Override
+    public final af2.a k0(final ListingViewMode listingViewMode) {
+        ng2.e.f((Object)listingViewMode, "viewMode");
+        final af2.a p = af2.a.p(new g1(this, listingViewMode));
+        ng2.e.e((Object)p, "fromCallable {\n      loc\u2026le.onNext(viewMode)\n    }");
+        return d0.S0(p, (d)this.e);
+    }
+    
+    @Override
+    public final boolean l() {
         boolean b;
         if (this.d.isIncognito()) {
             b = this.b.b();
@@ -554,33 +549,115 @@ public final class RedditPreferenceRepository implements s
         return b;
     }
     
-    public final void q() {
+    public final c0<Boolean> l0(final String s, final String s2) {
+        final c0 onAssembly = RxJavaPlugins.onAssembly((c0)new pf2.j(new i(s, s2, 1, this)));
+        ng2.e.e((Object)onAssembly, "fromCallable {\n      loc\u2026ins(value) ?: false\n    }");
+        return px1.a.K0(onAssembly, (d)this.e);
+    }
+    
+    @Override
+    public final void m() {
         final SharedPreferences$Editor edit = this.c.edit();
-        sg2.e.e((Object)edit, "editor");
+        ng2.e.e((Object)edit, "editor");
         edit.putInt("key_number_of_times_live_pill_was_shown", this.j0() + 1);
         edit.apply();
     }
     
-    public final void r() {
+    public final af2.a m0(final String s, final String s2) {
+        final af2.a onAssembly = RxJavaPlugins.onAssembly((af2.a)new kf2.e((ff2.a)new a0((Object)this, 1, (Object)s, (Object)s2)));
+        ng2.e.e((Object)onAssembly, "fromAction {\n      local\u2026   .apply()\n      }\n    }");
+        return d0.S0(onAssembly, (d)this.e);
+    }
+    
+    @Override
+    public final void n() {
         final int int1 = this.c.getInt("opened_creator_stats_count", 0);
         final SharedPreferences$Editor edit = this.c.edit();
-        sg2.e.e((Object)edit, "editor");
+        ng2.e.e((Object)edit, "editor");
         edit.putInt("opened_creator_stats_count", int1 + 1);
         edit.apply();
     }
     
-    public final ff2.a s(final ThumbnailsPreference thumbnailsPreference) {
-        sg2.e.f((Object)thumbnailsPreference, "pref");
+    public final af2.a n0(final AccountPreferencesPatch accountPreferencesPatch) {
+        af2.a a;
+        if (!ng2.e.a((Object)this.a.getUsername(), (Object)"*") && !ng2.e.a((Object)this.a.getUsername(), (Object)"#incognito")) {
+            final c0 w = this.g.patchPreferences(accountPreferencesPatch).w((o)new r((Object)this, 4));
+            w.getClass();
+            a = RxJavaPlugins.onAssembly((af2.a)new h<Object>((af2.g0<?>)w));
+        }
+        else {
+            a = af2.a.h();
+        }
+        ng2.e.e((Object)a, "if (settings.username ==\u2026   .ignoreElement()\n    }");
+        return d0.S0(a, (d)this.e);
+    }
+    
+    @Override
+    public final af2.a o(final ThumbnailsPreference thumbnailsPreference) {
+        ng2.e.f((Object)thumbnailsPreference, "pref");
         this.a.b(AccountPreferences.copy$default(this.a.a(), false, false, (String)null, false, (String)null, thumbnailsPreference.toString(), false, false, (Integer)null, false, false, false, false, false, false, false, false, false, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, false, false, false, (String)null, false, 33554399, (Object)null));
         return this.n0(new AccountPreferencesPatch((Boolean)null, (Boolean)null, (String)null, (String)null, thumbnailsPreference.toString(), (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Boolean)null, (Long)null, (AccountPreferences$AcceptPrivateMessagesPolicy)null, (Boolean)null, (Boolean)null, (Boolean)null, (String)null, (Boolean)null, 4194287, (DefaultConstructorMarker)null));
     }
     
-    public final ff2.a t(final String s) {
-        sg2.e.f((Object)s, "subredditId");
+    @Override
+    public final af2.a p(final String s) {
+        ng2.e.f((Object)s, "subredditId");
         return this.m0("closed_trending_settings_ids", s);
     }
     
-    public final boolean t3() {
+    @Override
+    public final void q() {
+        final SharedPreferences$Editor edit = this.c.edit();
+        for (final String s : this.c.getAll().keySet()) {
+            ng2.e.e((Object)s, "key");
+            if (xi2.j.I0(s, "listingViewMode.", false)) {
+                edit.remove(s);
+            }
+        }
+        edit.apply();
+    }
+    
+    @Override
+    public final c0<Boolean> r(final String s) {
+        ng2.e.f((Object)s, "subredditId");
+        return this.l0("closed_join_community_ids", s);
+    }
+    
+    @Override
+    public final boolean s() {
+        return this.a.a().getAcceptPms() == AccountPreferences$AcceptPrivateMessagesPolicy.EVERYONE;
+    }
+    
+    @Override
+    public final Object t(final Instant instant, final c<? super j> c) {
+        final Object j = zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$setSurveyLastSeenTime$2(this, instant, (c)null), c);
+        if (j == CoroutineSingletons.COROUTINE_SUSPENDED) {
+            return j;
+        }
+        return cg2.j.a;
+    }
+    
+    @Override
+    public final PublishSubject u() {
+        return this.k;
+    }
+    
+    @Override
+    public final af2.a v(final String s, final ListingViewMode listingViewMode) {
+        ng2.e.f((Object)s, "listingName");
+        ng2.e.f((Object)listingViewMode, "mode");
+        final af2.a p2 = af2.a.p((Callable<?>)new o50.j((Object)this, 1, (Object)s, (Object)listingViewMode));
+        ng2.e.e((Object)p2, "fromCallable {\n      loc\u2026(),\n      ).apply()\n    }");
+        return d0.S0(p2, (d)this.e);
+    }
+    
+    @Override
+    public final t<ListingViewMode> w() {
+        return px0.c.T2((t)this.i, this.e);
+    }
+    
+    @Override
+    public final boolean w3() {
         boolean b;
         if (this.d.isIncognito()) {
             b = this.b.d();
@@ -591,39 +668,24 @@ public final class RedditPreferenceRepository implements s
         return b;
     }
     
-    public final void u() {
-        final SharedPreferences$Editor edit = this.c.edit();
-        for (final String s : this.c.getAll().keySet()) {
-            sg2.e.e((Object)s, "key");
-            if (cj2.j.O0(s, "listingViewMode.", false)) {
-                edit.remove(s);
-            }
-        }
-        edit.apply();
+    @Override
+    public final Object x(final String s, final String s2, final c<? super Integer> c) {
+        return zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$incrementCounterpartCommunityVisitCount$2(s2, s, this, (c)null), c);
     }
     
-    public final c0<Boolean> v(final String s) {
-        sg2.e.f((Object)s, "subredditId");
-        return this.l0("closed_join_community_ids", s);
+    @Override
+    public final Object y(final String s, final String s2, final c<? super Integer> c) {
+        return zi2.g.j((CoroutineContext)this.h.c(), (p)new RedditPreferenceRepository$incrementSubredditVisitCount$2(s2, s, this, (c)null), c);
     }
     
-    public final boolean w() {
-        return this.a.a().getAcceptPms() == AccountPreferences$AcceptPrivateMessagesPolicy.EVERYONE;
-    }
-    
-    public final PublishSubject x() {
-        return this.k;
-    }
-    
-    public final ff2.a y(final String s, final ListingViewMode listingViewMode) {
-        sg2.e.f((Object)s, "listingName");
-        sg2.e.f((Object)listingViewMode, "mode");
-        final ff2.a p2 = ff2.a.p((Callable<?>)new i1((Object)this, s, (Object)listingViewMode, 0));
-        sg2.e.e((Object)p2, "fromCallable {\n      loc\u2026(),\n      ).apply()\n    }");
-        return yd.b.i0(p2, (d)this.e);
-    }
-    
-    public final t<ListingViewMode> z() {
-        return (t<ListingViewMode>)mf1.a.S((t)this.i, this.e);
+    @Override
+    public final ListingViewMode z(final String s, final ListingViewMode listingViewMode) {
+        ng2.e.f((Object)s, "listingName");
+        ng2.e.f((Object)listingViewMode, "default");
+        final String string = this.c.getString(b.l("listingViewMode.", s), listingViewMode.toString());
+        final ListingViewMode$a companion = ListingViewMode.Companion;
+        ng2.e.c((Object)string);
+        companion.getClass();
+        return ListingViewMode$a.b(string);
     }
 }

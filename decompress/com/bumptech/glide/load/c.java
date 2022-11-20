@@ -5,21 +5,20 @@
 package com.bumptech.glide.load;
 
 import java.io.IOException;
-import r8.b;
+import s8.b;
 import com.bumptech.glide.load.data.ParcelFileDescriptorRewinder;
 
-public final class c implements a
+public final class c implements d$a
 {
-    public final /* synthetic */ ParcelFileDescriptorRewinder a;
-    public final /* synthetic */ b b;
+    public final ParcelFileDescriptorRewinder a;
+    public final b b;
     
     public c(final ParcelFileDescriptorRewinder a, final b b) {
         this.a = a;
         this.b = b;
     }
     
-    @Override
-    public final ImageHeaderParser.ImageType a(final ImageHeaderParser p0) throws IOException {
+    public final ImageHeaderParser$ImageType a(final ImageHeaderParser p0) throws IOException {
         // 
         // This method could not be decompiled.
         // 
@@ -37,8 +36,8 @@ public final class c implements a
         //    22: aload_2        
         //    23: aload_3        
         //    24: aload_0        
-        //    25: getfield        com/bumptech/glide/load/c.b:Lr8/b;
-        //    28: invokespecial   com/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream.<init>:(Ljava/io/InputStream;Lr8/b;)V
+        //    25: getfield        com/bumptech/glide/load/c.b:Ls8/b;
+        //    28: invokespecial   com/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream.<init>:(Ljava/io/InputStream;Ls8/b;)V
         //    31: aload_1        
         //    32: aload_2        
         //    33: invokeinterface com/bumptech/glide/load/ImageHeaderParser.a:(Ljava/io/InputStream;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;

@@ -37,10 +37,10 @@ public final class R
     
     public static final class dimen
     {
-        public static final int reddit_video_controls_bar_height = 2131166579;
-        public static final int reddit_video_controls_mute_padding = 2131166580;
-        public static final int reddit_video_controls_mute_padding_bottom = 2131166581;
-        public static final int reddit_video_controls_overlay_button_size = 2131166582;
+        public static final int reddit_video_controls_bar_height = 2131166581;
+        public static final int reddit_video_controls_mute_padding = 2131166582;
+        public static final int reddit_video_controls_mute_padding_bottom = 2131166583;
+        public static final int reddit_video_controls_overlay_button_size = 2131166584;
         
         private dimen() {
         }
@@ -48,15 +48,15 @@ public final class R
     
     public static final class drawable
     {
-        public static final int controls_bg = 2131231161;
-        public static final int icon_audio_off = 2131231865;
-        public static final int icon_audio_on = 2131231866;
-        public static final int icon_fullscreen = 2131232027;
-        public static final int icon_fullscreen_exit = 2131232028;
-        public static final int mute_bg = 2131232693;
-        public static final int pause_button = 2131232825;
-        public static final int play_button = 2131232859;
-        public static final int replay_button = 2131233040;
+        public static final int controls_bg = 2131231165;
+        public static final int icon_audio_off = 2131231871;
+        public static final int icon_audio_on = 2131231872;
+        public static final int icon_fullscreen = 2131232033;
+        public static final int icon_fullscreen_exit = 2131232034;
+        public static final int mute_bg = 2131232699;
+        public static final int pause_button = 2131232831;
+        public static final int play_button = 2131232865;
+        public static final int replay_button = 2131233046;
         
         private drawable() {
         }
@@ -64,26 +64,26 @@ public final class R
     
     public static final class id
     {
-        public static final int reddit_video = 2131430912;
-        public static final int reddit_video_controls_bar = 2131430913;
-        public static final int reddit_video_controls_bg = 2131430914;
-        public static final int reddit_video_controls_call_to_action = 2131430915;
-        public static final int reddit_video_controls_call_to_action_icon = 2131430916;
-        public static final int reddit_video_controls_fullscreen = 2131430917;
-        public static final int reddit_video_controls_mute = 2131430918;
-        public static final int reddit_video_controls_mute_bg = 2131430919;
-        public static final int reddit_video_controls_pause = 2131430920;
-        public static final int reddit_video_controls_play = 2131430921;
-        public static final int reddit_video_controls_replay = 2131430922;
-        public static final int reddit_video_controls_replay_icon = 2131430923;
-        public static final int reddit_video_controls_seek_duration = 2131430924;
-        public static final int reddit_video_controls_seek_position = 2131430925;
-        public static final int reddit_video_controls_seekbar = 2131430926;
-        public static final int reddit_video_controls_shadow = 2131430927;
-        public static final int reddit_video_controls_spinner = 2131430928;
-        public static final int reddit_video_default_controls = 2131430930;
-        public static final int reddit_video_texture_view = 2131430931;
-        public static final int reddit_video_thumbnail = 2131430932;
+        public static final int reddit_video = 2131430915;
+        public static final int reddit_video_controls_bar = 2131430916;
+        public static final int reddit_video_controls_bg = 2131430917;
+        public static final int reddit_video_controls_call_to_action = 2131430918;
+        public static final int reddit_video_controls_call_to_action_icon = 2131430919;
+        public static final int reddit_video_controls_fullscreen = 2131430920;
+        public static final int reddit_video_controls_mute = 2131430921;
+        public static final int reddit_video_controls_mute_bg = 2131430922;
+        public static final int reddit_video_controls_pause = 2131430923;
+        public static final int reddit_video_controls_play = 2131430924;
+        public static final int reddit_video_controls_replay = 2131430925;
+        public static final int reddit_video_controls_replay_icon = 2131430926;
+        public static final int reddit_video_controls_seek_duration = 2131430927;
+        public static final int reddit_video_controls_seek_position = 2131430928;
+        public static final int reddit_video_controls_seekbar = 2131430929;
+        public static final int reddit_video_controls_shadow = 2131430930;
+        public static final int reddit_video_controls_spinner = 2131430931;
+        public static final int reddit_video_default_controls = 2131430933;
+        public static final int reddit_video_texture_view = 2131430934;
+        public static final int reddit_video_thumbnail = 2131430935;
         
         private id() {
         }
@@ -91,9 +91,9 @@ public final class R
     
     public static final class layout
     {
-        public static final int reddit_default_video_controls = 2131625082;
-        public static final int reddit_video_controls = 2131625084;
-        public static final int reddit_video_view = 2131625086;
+        public static final int reddit_default_video_controls = 2131625085;
+        public static final int reddit_video_controls = 2131625087;
+        public static final int reddit_video_view = 2131625089;
         
         private layout() {
         }
@@ -109,15 +109,15 @@ public final class R
     
     public static final class string
     {
-        public static final int reddit_video_call_to_action_description = 2131957134;
-        public static final int reddit_video_default_time = 2131957135;
-        public static final int reddit_video_fullscreen = 2131957136;
-        public static final int reddit_video_mute = 2131957137;
-        public static final int reddit_video_pause = 2131957138;
-        public static final int reddit_video_play = 2131957139;
-        public static final int reddit_video_replay = 2131957140;
-        public static final int reddit_video_replay_description = 2131957141;
-        public static final int reddit_video_thumbnail_description = 2131957142;
+        public static final int reddit_video_call_to_action_description = 2131957172;
+        public static final int reddit_video_default_time = 2131957173;
+        public static final int reddit_video_fullscreen = 2131957174;
+        public static final int reddit_video_mute = 2131957175;
+        public static final int reddit_video_pause = 2131957176;
+        public static final int reddit_video_play = 2131957177;
+        public static final int reddit_video_replay = 2131957178;
+        public static final int reddit_video_replay_description = 2131957179;
+        public static final int reddit_video_thumbnail_description = 2131957180;
         
         private string() {
         }

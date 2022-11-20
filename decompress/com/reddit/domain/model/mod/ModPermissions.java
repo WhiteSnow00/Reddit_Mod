@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model.mod;
 
-import sg2.e;
+import ng2.e;
 import android.os.Parcel;
 import com.squareup.moshi.n;
 import android.os.Parcelable$Creator;
@@ -13,7 +13,7 @@ import com.squareup.moshi.o;
 import android.os.Parcelable;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u0002Ba\u0012\b\b\u0001\u0010\r\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u000e\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u000f\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0011\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0012\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0013\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0014\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0015\u001a\u00020\u0003¢\u0006\u0004\b/\u00100J\t\u0010\u0004\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0006\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0007\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\t\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\n\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u000b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\f\u001a\u00020\u0003H\u00c6\u0003Jc\u0010\u0016\u001a\u00020\u00002\b\b\u0003\u0010\r\u001a\u00020\u00032\b\b\u0003\u0010\u000e\u001a\u00020\u00032\b\b\u0003\u0010\u000f\u001a\u00020\u00032\b\b\u0003\u0010\u0010\u001a\u00020\u00032\b\b\u0003\u0010\u0011\u001a\u00020\u00032\b\b\u0003\u0010\u0012\u001a\u00020\u00032\b\b\u0003\u0010\u0013\u001a\u00020\u00032\b\b\u0003\u0010\u0014\u001a\u00020\u00032\b\b\u0003\u0010\u0015\u001a\u00020\u0003H\u00c6\u0001J\t\u0010\u0018\u001a\u00020\u0017H\u00d6\u0001J\t\u0010\u001a\u001a\u00020\u0019H\u00d6\u0001J\u0013\u0010\u001d\u001a\u00020\u00032\b\u0010\u001c\u001a\u0004\u0018\u00010\u001bH\u00d6\u0003J\t\u0010\u001e\u001a\u00020\u0019H\u00d6\u0001J\u0019\u0010#\u001a\u00020\"2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010!\u001a\u00020\u0019H\u00d6\u0001R\u001a\u0010\r\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\r\u0010$\u001a\u0004\b%\u0010&R\u001a\u0010\u000e\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000e\u0010$\u001a\u0004\b'\u0010&R\u001a\u0010\u000f\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000f\u0010$\u001a\u0004\b(\u0010&R\u001a\u0010\u0010\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0010\u0010$\u001a\u0004\b)\u0010&R\u001a\u0010\u0011\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0011\u0010$\u001a\u0004\b*\u0010&R\u001a\u0010\u0012\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0012\u0010$\u001a\u0004\b+\u0010&R\u001a\u0010\u0013\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010$\u001a\u0004\b,\u0010&R\u001a\u0010\u0014\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0014\u0010$\u001a\u0004\b-\u0010&R\u001a\u0010\u0015\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0015\u0010$\u001a\u0004\b.\u0010&¨\u00061" }, d2 = { "Lcom/reddit/domain/model/mod/ModPermissions;", "Lcom/reddit/domain/model/mod/IModPermissions;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "access", "config", "flair", "mail", "posts", "wiki", "chatConfig", "chatOperator", "all", "copy", "", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Z", "getAccess", "()Z", "getConfig", "getFlair", "getMail", "getPosts", "getWiki", "getChatConfig", "getChatOperator", "getAll", "<init>", "(ZZZZZZZZZ)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u0002Ba\u0012\b\b\u0001\u0010\r\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u000e\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u000f\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0011\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0012\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0013\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0014\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0015\u001a\u00020\u0003¢\u0006\u0004\b/\u00100J\t\u0010\u0004\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0006\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0007\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\t\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\n\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u000b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\f\u001a\u00020\u0003H\u00c6\u0003Jc\u0010\u0016\u001a\u00020\u00002\b\b\u0003\u0010\r\u001a\u00020\u00032\b\b\u0003\u0010\u000e\u001a\u00020\u00032\b\b\u0003\u0010\u000f\u001a\u00020\u00032\b\b\u0003\u0010\u0010\u001a\u00020\u00032\b\b\u0003\u0010\u0011\u001a\u00020\u00032\b\b\u0003\u0010\u0012\u001a\u00020\u00032\b\b\u0003\u0010\u0013\u001a\u00020\u00032\b\b\u0003\u0010\u0014\u001a\u00020\u00032\b\b\u0003\u0010\u0015\u001a\u00020\u0003H\u00c6\u0001J\t\u0010\u0018\u001a\u00020\u0017H\u00d6\u0001J\t\u0010\u001a\u001a\u00020\u0019H\u00d6\u0001J\u0013\u0010\u001d\u001a\u00020\u00032\b\u0010\u001c\u001a\u0004\u0018\u00010\u001bH\u00d6\u0003J\t\u0010\u001e\u001a\u00020\u0019H\u00d6\u0001J\u0019\u0010#\u001a\u00020\"2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010!\u001a\u00020\u0019H\u00d6\u0001R\u001a\u0010\r\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\r\u0010$\u001a\u0004\b%\u0010&R\u001a\u0010\u000e\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000e\u0010$\u001a\u0004\b'\u0010&R\u001a\u0010\u000f\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000f\u0010$\u001a\u0004\b(\u0010&R\u001a\u0010\u0010\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0010\u0010$\u001a\u0004\b)\u0010&R\u001a\u0010\u0011\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0011\u0010$\u001a\u0004\b*\u0010&R\u001a\u0010\u0012\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0012\u0010$\u001a\u0004\b+\u0010&R\u001a\u0010\u0013\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010$\u001a\u0004\b,\u0010&R\u001a\u0010\u0014\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0014\u0010$\u001a\u0004\b-\u0010&R\u001a\u0010\u0015\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0015\u0010$\u001a\u0004\b.\u0010&¨\u00061" }, d2 = { "Lcom/reddit/domain/model/mod/ModPermissions;", "Lcom/reddit/domain/model/mod/IModPermissions;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "access", "config", "flair", "mail", "posts", "wiki", "chatConfig", "chatOperator", "all", "copy", "", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Z", "getAccess", "()Z", "getConfig", "getFlair", "getMail", "getPosts", "getWiki", "getChatConfig", "getChatOperator", "getAll", "<init>", "(ZZZZZZZZZ)V", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class ModPermissions implements IModPermissions, Parcelable
 {
     public static final Parcelable$Creator<ModPermissions> CREATOR;
@@ -41,6 +41,37 @@ public final class ModPermissions implements IModPermissions, Parcelable
         this.chatConfig = chatConfig;
         this.chatOperator = chatOperator;
         this.all = all;
+    }
+    
+    public static ModPermissions copy$default(final ModPermissions modPermissions, boolean access, boolean config, boolean flair, boolean mail, boolean posts, boolean wiki, boolean chatConfig, boolean chatOperator, boolean all, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            access = modPermissions.getAccess();
+        }
+        if ((n & 0x2) != 0x0) {
+            config = modPermissions.getConfig();
+        }
+        if ((n & 0x4) != 0x0) {
+            flair = modPermissions.getFlair();
+        }
+        if ((n & 0x8) != 0x0) {
+            mail = modPermissions.getMail();
+        }
+        if ((n & 0x10) != 0x0) {
+            posts = modPermissions.getPosts();
+        }
+        if ((n & 0x20) != 0x0) {
+            wiki = modPermissions.getWiki();
+        }
+        if ((n & 0x40) != 0x0) {
+            chatConfig = modPermissions.getChatConfig();
+        }
+        if ((n & 0x80) != 0x0) {
+            chatOperator = modPermissions.getChatOperator();
+        }
+        if ((n & 0x100) != 0x0) {
+            all = modPermissions.getAll();
+        }
+        return modPermissions.copy(access, config, flair, mail, posts, wiki, chatConfig, chatOperator, all);
     }
     
     public final boolean component1() {
@@ -180,26 +211,26 @@ public final class ModPermissions implements IModPermissions, Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("ModPermissions(access=");
-        r.append(this.getAccess());
-        r.append(", config=");
-        r.append(this.getConfig());
-        r.append(", flair=");
-        r.append(this.getFlair());
-        r.append(", mail=");
-        r.append(this.getMail());
-        r.append(", posts=");
-        r.append(this.getPosts());
-        r.append(", wiki=");
-        r.append(this.getWiki());
-        r.append(", chatConfig=");
-        r.append(this.getChatConfig());
-        r.append(", chatOperator=");
-        r.append(this.getChatOperator());
-        r.append(", all=");
-        r.append(this.getAll());
-        r.append(')');
-        return r.toString();
+        final StringBuilder t = a.t("ModPermissions(access=");
+        t.append(this.getAccess());
+        t.append(", config=");
+        t.append(this.getConfig());
+        t.append(", flair=");
+        t.append(this.getFlair());
+        t.append(", mail=");
+        t.append(this.getMail());
+        t.append(", posts=");
+        t.append(this.getPosts());
+        t.append(", wiki=");
+        t.append(this.getWiki());
+        t.append(", chatConfig=");
+        t.append(this.getChatConfig());
+        t.append(", chatOperator=");
+        t.append(this.getChatOperator());
+        t.append(", all=");
+        t.append(this.getAll());
+        t.append(')');
+        return t.toString();
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {

@@ -5,12 +5,14 @@
 package io.reactivex.internal.util;
 
 import java.util.ArrayList;
-import kf2.o;
+import ff2.o;
 import java.util.List;
 import java.util.concurrent.Callable;
 
 public enum ArrayListSupplier implements Callable<List<Object>>, o<Object, List<Object>>
 {
+    private static final ArrayListSupplier[] $VALUES;
+    
     INSTANCE;
     
     public static <T> Callable<List<T>> asCallable() {
@@ -21,8 +23,17 @@ public enum ArrayListSupplier implements Callable<List<Object>>, o<Object, List<
         return (o<O, List<T>>)ArrayListSupplier.INSTANCE;
     }
     
+    public /* bridge */ Object apply(final Object o) throws Exception {
+        return this.apply(o);
+    }
+    
     public List<Object> apply(final Object o) throws Exception {
         return new ArrayList<Object>();
+    }
+    
+    @Override
+    public /* bridge */ Object call() throws Exception {
+        return this.call();
     }
     
     @Override

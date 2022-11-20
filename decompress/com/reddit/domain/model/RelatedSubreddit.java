@@ -6,17 +6,18 @@ package com.reddit.domain.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import al0.f0;
+import u10.o;
 import android.os.Parcel;
-import sg2.e;
-import android.support.v4.media.a;
+import aq2.a;
+import ng2.e;
+import p1.h;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import java.util.List;
 import android.os.Parcelable$Creator;
 import kotlin.Metadata;
 import android.os.Parcelable;
 
-@Metadata(bv = {}, d1 = { "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0010\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0087\b\u0018\u0000 F2\u00020\u0001:\u0001FBw\u0012\u0006\u0010\u0015\u001a\u00020\u0002\u0012\u0006\u0010\u0016\u001a\u00020\u0002\u0012\u0006\u0010\u0017\u001a\u00020\u0002\u0012\u0006\u0010\u0018\u001a\u00020\u0006\u0012\u0006\u0010\u0019\u001a\u00020\u0006\u0012\u0006\u0010\u001a\u001a\u00020\u0006\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\u001d\u001a\u00020\u0002\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\u0010\u0012\u000e\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013¢\u0006\u0004\bD\u0010EJ\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0004\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0007\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\b\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\t\u001a\u00020\u0006H\u00c6\u0003J\u0012\u0010\u000b\u001a\u0004\u0018\u00010\nH\u00c6\u0003¢\u0006\u0004\b\u000b\u0010\fJ\u0012\u0010\r\u001a\u0004\u0018\u00010\nH\u00c6\u0003¢\u0006\u0004\b\r\u0010\fJ\t\u0010\u000e\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u0010H\u00c6\u0003¢\u0006\u0004\b\u0011\u0010\u0012J\u0011\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013H\u00c6\u0003J\u0098\u0001\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0015\u001a\u00020\u00022\b\b\u0002\u0010\u0016\u001a\u00020\u00022\b\b\u0002\u0010\u0017\u001a\u00020\u00022\b\b\u0002\u0010\u0018\u001a\u00020\u00062\b\b\u0002\u0010\u0019\u001a\u00020\u00062\b\b\u0002\u0010\u001a\u001a\u00020\u00062\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\n2\b\b\u0002\u0010\u001d\u001a\u00020\u00022\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00102\u0010\b\u0002\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013H\u00c6\u0001¢\u0006\u0004\b!\u0010\"J\t\u0010#\u001a\u00020\u0002H\u00d6\u0001J\t\u0010%\u001a\u00020$H\u00d6\u0001J\u0013\u0010(\u001a\u00020\u00062\b\u0010'\u001a\u0004\u0018\u00010&H\u00d6\u0003J\t\u0010)\u001a\u00020$H\u00d6\u0001J\u0019\u0010.\u001a\u00020-2\u0006\u0010+\u001a\u00020*2\u0006\u0010,\u001a\u00020$H\u00d6\u0001R\u0017\u0010\u0015\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0015\u0010/\u001a\u0004\b0\u00101R\u0017\u0010\u0016\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0016\u0010/\u001a\u0004\b2\u00101R\u0017\u0010\u0017\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0017\u0010/\u001a\u0004\b3\u00101R\u0017\u0010\u0018\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u0018\u00104\u001a\u0004\b\u0018\u00105R\u0017\u0010\u0019\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u0019\u00104\u001a\u0004\b\u0019\u00105R\u0017\u0010\u001a\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u001a\u00104\u001a\u0004\b\u001a\u00105R\u0019\u0010\u001b\u001a\u0004\u0018\u00010\n8\u0006¢\u0006\f\n\u0004\b\u001b\u00106\u001a\u0004\b7\u0010\fR\u0019\u0010\u001c\u001a\u0004\u0018\u00010\n8\u0006¢\u0006\f\n\u0004\b\u001c\u00106\u001a\u0004\b8\u0010\fR\u0017\u0010\u001d\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u001d\u0010/\u001a\u0004\b9\u00101R\u0019\u0010\u001e\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u001e\u0010/\u001a\u0004\b:\u00101R\u0019\u0010\u001f\u001a\u0004\u0018\u00010\u00108\u0006¢\u0006\f\n\u0004\b\u001f\u0010;\u001a\u0004\b<\u0010\u0012R\u001f\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u00138\u0006¢\u0006\f\n\u0004\b \u0010=\u001a\u0004\b>\u0010?R\u0011\u0010C\u001a\u00020@8F¢\u0006\u0006\u001a\u0004\bA\u0010B¨\u0006G" }, d2 = { "Lcom/reddit/domain/model/RelatedSubreddit;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "", "component4", "component5", "component6", "", "component7", "()Ljava/lang/Float;", "component8", "component9", "component10", "", "component11", "()Ljava/lang/Long;", "", "component12", "name", "id", "prefixName", "isChatPostCreationAllowed", "isChatPostFeatureEnabled", "isNsfw", "difficultyScore", "similarityScore", "iconUrl", "color", "subscribersCount", "relatedSubreddits", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/List;)Lcom/reddit/domain/model/RelatedSubreddit;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "Ljava/lang/String;", "getName", "()Ljava/lang/String;", "getId", "getPrefixName", "Z", "()Z", "Ljava/lang/Float;", "getDifficultyScore", "getSimilarityScore", "getIconUrl", "getColor", "Ljava/lang/Long;", "getSubscribersCount", "Ljava/util/List;", "getRelatedSubreddits", "()Ljava/util/List;", "Lcom/reddit/domain/model/RemovalRate;", "getRemovalRate", "()Lcom/reddit/domain/model/RemovalRate;", "removalRate", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/List;)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0010\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0087\b\u0018\u0000 F2\u00020\u0001:\u0001FBw\u0012\u0006\u0010\u0015\u001a\u00020\u0002\u0012\u0006\u0010\u0016\u001a\u00020\u0002\u0012\u0006\u0010\u0017\u001a\u00020\u0002\u0012\u0006\u0010\u0018\u001a\u00020\u0006\u0012\u0006\u0010\u0019\u001a\u00020\u0006\u0012\u0006\u0010\u001a\u001a\u00020\u0006\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\u001d\u001a\u00020\u0002\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\u0010\u0012\u000e\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013¢\u0006\u0004\bD\u0010EJ\t\u0010\u0003\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0004\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0005\u001a\u00020\u0002H\u00c6\u0003J\t\u0010\u0007\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\b\u001a\u00020\u0006H\u00c6\u0003J\t\u0010\t\u001a\u00020\u0006H\u00c6\u0003J\u0012\u0010\u000b\u001a\u0004\u0018\u00010\nH\u00c6\u0003¢\u0006\u0004\b\u000b\u0010\fJ\u0012\u0010\r\u001a\u0004\u0018\u00010\nH\u00c6\u0003¢\u0006\u0004\b\r\u0010\fJ\t\u0010\u000e\u001a\u00020\u0002H\u00c6\u0003J\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u0010H\u00c6\u0003¢\u0006\u0004\b\u0011\u0010\u0012J\u0011\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013H\u00c6\u0003J\u0098\u0001\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0015\u001a\u00020\u00022\b\b\u0002\u0010\u0016\u001a\u00020\u00022\b\b\u0002\u0010\u0017\u001a\u00020\u00022\b\b\u0002\u0010\u0018\u001a\u00020\u00062\b\b\u0002\u0010\u0019\u001a\u00020\u00062\b\b\u0002\u0010\u001a\u001a\u00020\u00062\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\n2\b\b\u0002\u0010\u001d\u001a\u00020\u00022\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00102\u0010\b\u0002\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0013H\u00c6\u0001¢\u0006\u0004\b!\u0010\"J\t\u0010#\u001a\u00020\u0002H\u00d6\u0001J\t\u0010%\u001a\u00020$H\u00d6\u0001J\u0013\u0010(\u001a\u00020\u00062\b\u0010'\u001a\u0004\u0018\u00010&H\u00d6\u0003J\t\u0010)\u001a\u00020$H\u00d6\u0001J\u0019\u0010.\u001a\u00020-2\u0006\u0010+\u001a\u00020*2\u0006\u0010,\u001a\u00020$H\u00d6\u0001R\u0017\u0010\u0015\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0015\u0010/\u001a\u0004\b0\u00101R\u0017\u0010\u0016\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0016\u0010/\u001a\u0004\b2\u00101R\u0017\u0010\u0017\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0017\u0010/\u001a\u0004\b3\u00101R\u0017\u0010\u0018\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u0018\u00104\u001a\u0004\b\u0018\u00105R\u0017\u0010\u0019\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u0019\u00104\u001a\u0004\b\u0019\u00105R\u0017\u0010\u001a\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u001a\u00104\u001a\u0004\b\u001a\u00105R\u0019\u0010\u001b\u001a\u0004\u0018\u00010\n8\u0006¢\u0006\f\n\u0004\b\u001b\u00106\u001a\u0004\b7\u0010\fR\u0019\u0010\u001c\u001a\u0004\u0018\u00010\n8\u0006¢\u0006\f\n\u0004\b\u001c\u00106\u001a\u0004\b8\u0010\fR\u0017\u0010\u001d\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u001d\u0010/\u001a\u0004\b9\u00101R\u0019\u0010\u001e\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u001e\u0010/\u001a\u0004\b:\u00101R\u0019\u0010\u001f\u001a\u0004\u0018\u00010\u00108\u0006¢\u0006\f\n\u0004\b\u001f\u0010;\u001a\u0004\b<\u0010\u0012R\u001f\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u00138\u0006¢\u0006\f\n\u0004\b \u0010=\u001a\u0004\b>\u0010?R\u0011\u0010C\u001a\u00020@8F¢\u0006\u0006\u001a\u0004\bA\u0010B¨\u0006G" }, d2 = { "Lcom/reddit/domain/model/RelatedSubreddit;", "Landroid/os/Parcelable;", "", "component1", "component2", "component3", "", "component4", "component5", "component6", "", "component7", "()Ljava/lang/Float;", "component8", "component9", "component10", "", "component11", "()Ljava/lang/Long;", "", "component12", "name", "id", "prefixName", "isChatPostCreationAllowed", "isChatPostFeatureEnabled", "isNsfw", "difficultyScore", "similarityScore", "iconUrl", "color", "subscribersCount", "relatedSubreddits", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/List;)Lcom/reddit/domain/model/RelatedSubreddit;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "Ljava/lang/String;", "getName", "()Ljava/lang/String;", "getId", "getPrefixName", "Z", "()Z", "Ljava/lang/Float;", "getDifficultyScore", "getSimilarityScore", "getIconUrl", "getColor", "Ljava/lang/Long;", "getSubscribersCount", "Ljava/util/List;", "getRelatedSubreddits", "()Ljava/util/List;", "Lcom/reddit/domain/model/RemovalRate;", "getRemovalRate", "()Lcom/reddit/domain/model/RemovalRate;", "removalRate", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/List;)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class RelatedSubreddit implements Parcelable
 {
     public static final Parcelable$Creator<RelatedSubreddit> CREATOR;
@@ -42,7 +43,7 @@ public final class RelatedSubreddit implements Parcelable
     }
     
     public RelatedSubreddit(final String name, final String id, final String prefixName, final boolean isChatPostCreationAllowed, final boolean isChatPostFeatureEnabled, final boolean isNsfw, final Float difficultyScore, final Float similarityScore, final String iconUrl, final String color, final Long subscribersCount, final List<RelatedSubreddit> relatedSubreddits) {
-        a.t(name, "name", id, "id", prefixName, "prefixName", iconUrl, "iconUrl");
+        h.h(name, "name", id, "id", prefixName, "prefixName", iconUrl, "iconUrl");
         this.name = name;
         this.id = id;
         this.prefixName = prefixName;
@@ -55,6 +56,46 @@ public final class RelatedSubreddit implements Parcelable
         this.color = color;
         this.subscribersCount = subscribersCount;
         this.relatedSubreddits = relatedSubreddits;
+    }
+    
+    public static RelatedSubreddit copy$default(final RelatedSubreddit relatedSubreddit, String name, String id, String prefixName, boolean isChatPostCreationAllowed, boolean isChatPostFeatureEnabled, boolean isNsfw, Float difficultyScore, Float similarityScore, String iconUrl, String color, Long subscribersCount, List relatedSubreddits, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            name = relatedSubreddit.name;
+        }
+        if ((n & 0x2) != 0x0) {
+            id = relatedSubreddit.id;
+        }
+        if ((n & 0x4) != 0x0) {
+            prefixName = relatedSubreddit.prefixName;
+        }
+        if ((n & 0x8) != 0x0) {
+            isChatPostCreationAllowed = relatedSubreddit.isChatPostCreationAllowed;
+        }
+        if ((n & 0x10) != 0x0) {
+            isChatPostFeatureEnabled = relatedSubreddit.isChatPostFeatureEnabled;
+        }
+        if ((n & 0x20) != 0x0) {
+            isNsfw = relatedSubreddit.isNsfw;
+        }
+        if ((n & 0x40) != 0x0) {
+            difficultyScore = relatedSubreddit.difficultyScore;
+        }
+        if ((n & 0x80) != 0x0) {
+            similarityScore = relatedSubreddit.similarityScore;
+        }
+        if ((n & 0x100) != 0x0) {
+            iconUrl = relatedSubreddit.iconUrl;
+        }
+        if ((n & 0x200) != 0x0) {
+            color = relatedSubreddit.color;
+        }
+        if ((n & 0x400) != 0x0) {
+            subscribersCount = relatedSubreddit.subscribersCount;
+        }
+        if ((n & 0x800) != 0x0) {
+            relatedSubreddits = relatedSubreddit.relatedSubreddits;
+        }
+        return relatedSubreddit.copy(name, id, prefixName, isChatPostCreationAllowed, isChatPostFeatureEnabled, isNsfw, difficultyScore, similarityScore, iconUrl, color, subscribersCount, relatedSubreddits);
     }
     
     public final String component1() {
@@ -185,7 +226,7 @@ public final class RelatedSubreddit implements Parcelable
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.prefixName, b.c(this.id, this.name.hashCode() * 31, 31), 31);
+        final int e = a.e(this.prefixName, a.e(this.id, this.name.hashCode() * 31, 31), 31);
         final int isChatPostCreationAllowed = this.isChatPostCreationAllowed ? 1 : 0;
         int n = 1;
         int n2 = isChatPostCreationAllowed;
@@ -217,7 +258,7 @@ public final class RelatedSubreddit implements Parcelable
         else {
             hashCode2 = similarityScore.hashCode();
         }
-        final int c2 = b.c(this.iconUrl, (((((c + n2) * 31 + isChatPostFeatureEnabled) * 31 + n) * 31 + hashCode) * 31 + hashCode2) * 31, 31);
+        final int e2 = a.e(this.iconUrl, (((((e + n2) * 31 + isChatPostFeatureEnabled) * 31 + n) * 31 + hashCode) * 31 + hashCode2) * 31, 31);
         final String color = this.color;
         int hashCode3;
         if (color == null) {
@@ -242,7 +283,7 @@ public final class RelatedSubreddit implements Parcelable
         else {
             hashCode5 = relatedSubreddits.hashCode();
         }
-        return ((c2 + hashCode3) * 31 + hashCode4) * 31 + hashCode5;
+        return ((e2 + hashCode3) * 31 + hashCode4) * 31 + hashCode5;
     }
     
     public final boolean isChatPostCreationAllowed() {
@@ -259,30 +300,30 @@ public final class RelatedSubreddit implements Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("RelatedSubreddit(name=");
-        r.append(this.name);
-        r.append(", id=");
-        r.append(this.id);
-        r.append(", prefixName=");
-        r.append(this.prefixName);
-        r.append(", isChatPostCreationAllowed=");
-        r.append(this.isChatPostCreationAllowed);
-        r.append(", isChatPostFeatureEnabled=");
-        r.append(this.isChatPostFeatureEnabled);
-        r.append(", isNsfw=");
-        r.append(this.isNsfw);
-        r.append(", difficultyScore=");
-        r.append(this.difficultyScore);
-        r.append(", similarityScore=");
-        r.append(this.similarityScore);
-        r.append(", iconUrl=");
-        r.append(this.iconUrl);
-        r.append(", color=");
-        r.append(this.color);
-        r.append(", subscribersCount=");
-        r.append(this.subscribersCount);
-        r.append(", relatedSubreddits=");
-        return d.o(r, (List)this.relatedSubreddits, ')');
+        final StringBuilder t = a.t("RelatedSubreddit(name=");
+        t.append(this.name);
+        t.append(", id=");
+        t.append(this.id);
+        t.append(", prefixName=");
+        t.append(this.prefixName);
+        t.append(", isChatPostCreationAllowed=");
+        t.append(this.isChatPostCreationAllowed);
+        t.append(", isChatPostFeatureEnabled=");
+        t.append(this.isChatPostFeatureEnabled);
+        t.append(", isNsfw=");
+        t.append(this.isNsfw);
+        t.append(", difficultyScore=");
+        t.append(this.difficultyScore);
+        t.append(", similarityScore=");
+        t.append(this.similarityScore);
+        t.append(", iconUrl=");
+        t.append(this.iconUrl);
+        t.append(", color=");
+        t.append(this.color);
+        t.append(", subscribersCount=");
+        t.append(this.subscribersCount);
+        t.append(", relatedSubreddits=");
+        return h.d(t, (List)this.relatedSubreddits, ')');
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -316,16 +357,16 @@ public final class RelatedSubreddit implements Parcelable
             parcel.writeInt(0);
         }
         else {
-            f0.w(parcel, 1, subscribersCount);
+            b.t(parcel, 1, subscribersCount);
         }
         final List<RelatedSubreddit> relatedSubreddits = this.relatedSubreddits;
         if (relatedSubreddits == null) {
             parcel.writeInt(0);
         }
         else {
-            final Iterator t = d.t(parcel, 1, (List)relatedSubreddits);
-            while (t.hasNext()) {
-                ((RelatedSubreddit)t.next()).writeToParcel(parcel, n);
+            final Iterator j = o.j(parcel, 1, (List)relatedSubreddits);
+            while (j.hasNext()) {
+                ((RelatedSubreddit)j.next()).writeToParcel(parcel, n);
             }
         }
     }
@@ -334,6 +375,10 @@ public final class RelatedSubreddit implements Parcelable
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
     
@@ -346,10 +391,10 @@ public final class RelatedSubreddit implements Parcelable
             final String string2 = parcel.readString();
             final String string3 = parcel.readString();
             final int int1 = parcel.readInt();
-            int b = 0;
-            final boolean b2 = int1 != 0;
+            int c = 0;
+            final boolean b = int1 != 0;
+            final boolean b2 = parcel.readInt() != 0;
             final boolean b3 = parcel.readInt() != 0;
-            final boolean b4 = parcel.readInt() != 0;
             final int int2 = parcel.readInt();
             List<RelatedSubreddit> list = null;
             Float value;
@@ -380,17 +425,25 @@ public final class RelatedSubreddit implements Parcelable
                 final ArrayList list2 = new ArrayList<RelatedSubreddit>(int3);
                 while (true) {
                     list = (List<RelatedSubreddit>)list2;
-                    if (b == int3) {
+                    if (c == int3) {
                         break;
                     }
-                    b = f0.b((Parcelable$Creator)RelatedSubreddit.CREATOR, parcel, list2, b, 1);
+                    c = o.c((Parcelable$Creator)RelatedSubreddit.CREATOR, parcel, list2, c, 1);
                 }
             }
-            return new RelatedSubreddit(string, string2, string3, b2, b3, b4, value, value2, string4, string5, value3, list);
+            return new RelatedSubreddit(string, string2, string3, b, b2, b3, value, value2, string4, string5, value3, list);
+        }
+        
+        public /* bridge */ Object createFromParcel(final Parcel parcel) {
+            return this.createFromParcel(parcel);
         }
         
         public final RelatedSubreddit[] newArray(final int n) {
             return new RelatedSubreddit[n];
+        }
+        
+        public /* bridge */ Object[] newArray(final int n) {
+            return this.newArray(n);
         }
     }
 }

@@ -45,6 +45,35 @@ public abstract class SubmitParameters implements Parcelable, PostSubmitGeneralM
         this.linkId = linkId;
     }
     
+    public SubmitParameters(final String s, final PostType postType, final String s2, final String s3, final String s4, String s5, String s6, DiscussionType discussionType, boolean b, boolean b2, String s7, String s8, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x20) != 0x0) {
+            s5 = null;
+        }
+        if ((n & 0x40) != 0x0) {
+            s6 = null;
+        }
+        if ((n & 0x80) != 0x0) {
+            discussionType = null;
+        }
+        if ((n & 0x100) != 0x0) {
+            b = false;
+        }
+        if ((n & 0x200) != 0x0) {
+            b2 = false;
+        }
+        if ((n & 0x400) != 0x0) {
+            s7 = null;
+        }
+        if ((n & 0x800) != 0x0) {
+            s8 = null;
+        }
+        this(s, postType, s2, s3, s4, s5, s6, discussionType, b, b2, s7, s8, null);
+    }
+    
+    public SubmitParameters(final String s, final PostType postType, final String s2, final String s3, final String s4, final String s5, final String s6, final DiscussionType discussionType, final boolean b, final boolean b2, final String s7, final String s8, final DefaultConstructorMarker defaultConstructorMarker) {
+        this(s, postType, s2, s3, s4, s5, s6, discussionType, b, b2, s7, s8);
+    }
+    
     public String getContent() {
         return this.content;
     }

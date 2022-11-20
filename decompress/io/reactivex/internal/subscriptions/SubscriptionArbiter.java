@@ -4,10 +4,9 @@
 
 package io.reactivex.internal.subscriptions;
 
-import vl.a;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicLong;
-import qt2.d;
+import nt2.d;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SubscriptionArbiter extends AtomicInteger implements d
@@ -80,17 +79,17 @@ public class SubscriptionArbiter extends AtomicInteger implements d
                 long requested;
                 final long n5 = requested = this.requested;
                 if (n5 != Long.MAX_VALUE) {
-                    long n7;
-                    final long n6 = n7 = a.n(n5, n2);
+                    long y0;
+                    final long n6 = y0 = cg.d.y0(n5, n2);
                     if (n6 != Long.MAX_VALUE) {
-                        final long n8 = n7 = n6 - n3;
-                        if (n8 < 0L) {
-                            SubscriptionHelper.reportMoreProduced(n8);
-                            n7 = 0L;
+                        final long n7 = y0 = n6 - n3;
+                        if (n7 < 0L) {
+                            SubscriptionHelper.reportMoreProduced(n7);
+                            y0 = 0L;
                         }
                     }
-                    this.requested = n7;
-                    requested = n7;
+                    this.requested = y0;
+                    requested = y0;
                 }
                 if (actual != null) {
                     if (actual2 != null && this.cancelOnReplace) {
@@ -100,7 +99,7 @@ public class SubscriptionArbiter extends AtomicInteger implements d
                     n4 = n;
                     d2 = d;
                     if (requested != 0L) {
-                        n4 = a.n(n, requested);
+                        n4 = cg.d.y0(n, requested);
                         d2 = actual;
                     }
                 }
@@ -111,7 +110,7 @@ public class SubscriptionArbiter extends AtomicInteger implements d
                         n4 = n;
                         d2 = d;
                         if (n2 != 0L) {
-                            n4 = a.n(n, n2);
+                            n4 = cg.d.y0(n, n2);
                             d2 = actual2;
                         }
                     }
@@ -139,7 +138,7 @@ public class SubscriptionArbiter extends AtomicInteger implements d
             return;
         }
         if (this.get() != 0 || !this.compareAndSet(0, 1)) {
-            a.l(this.missedProduced, requested);
+            cg.d.w0(this.missedProduced, requested);
             this.drain();
             return;
         }
@@ -166,9 +165,9 @@ public class SubscriptionArbiter extends AtomicInteger implements d
             if (this.get() == 0 && this.compareAndSet(0, 1)) {
                 final long requested = this.requested;
                 if (requested != Long.MAX_VALUE) {
-                    final long n2 = a.n(requested, n);
-                    this.requested = n2;
-                    if (n2 == Long.MAX_VALUE) {
+                    final long y0 = cg.d.y0(requested, n);
+                    this.requested = y0;
+                    if (y0 == Long.MAX_VALUE) {
                         this.unbounded = true;
                     }
                 }
@@ -181,7 +180,7 @@ public class SubscriptionArbiter extends AtomicInteger implements d
                 }
                 return;
             }
-            a.l(this.missedRequested, n);
+            cg.d.w0(this.missedRequested, n);
             this.drain();
         }
     }

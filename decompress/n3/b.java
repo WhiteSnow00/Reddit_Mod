@@ -65,14 +65,14 @@ public final class b
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("LocusIdCompat[");
+        final StringBuilder t = a.t("LocusIdCompat[");
         final int length = this.a.length();
         final StringBuilder sb = new StringBuilder();
         sb.append(length);
         sb.append("_chars");
-        r.append(sb.toString());
-        r.append("]");
-        return r.toString();
+        t.append(sb.toString());
+        t.append("]");
+        return t.toString();
     }
     
     public static final class a

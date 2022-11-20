@@ -344,7 +344,7 @@
     <string name="ib_str_live_welcome_message_title">Wir freuen uns immer, von Ihnen zu hören.</string>
     <string name="ibg_screen_recording_notification_title">Die Bildschirmaufnahme ist aktiv</string>
     <string name="in_progress">In Bearbeitung</string>
-    <string name="indeterminate">Häkchen weder gesetzt noch entfernt</string>
+    <string name="indeterminate">Teilweise aktiviert</string>
     <string name="instabug_alert_dialog_no">NEIN</string>
     <string name="instabug_alert_dialog_yes">JA</string>
     <string name="instabug_audio_recorder_permission_denied">Genehmigung für Tonaufnahme verweigert</string>

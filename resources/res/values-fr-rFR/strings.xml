@@ -23,8 +23,8 @@
     <string name="account_settings_personalization_title">Personnalisation</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_description">Permettez-nous d\'utiliser vos interactions avec les sites et les applications avec lesquels nous sommes partenaires et les informations que nos partenaires publicitaires nous envoient pour vous montrer de meilleures publicités.</string>
     <string name="account_settings_personalized_ads_activity_and_information_from_partners_title">Personnaliser les publicités en fonction de votre activité et des informations de nos partenaires</string>
-    <string name="account_settings_personalized_ads_from_activity_description">Permettez-nous d\'utiliser vos interactions sur Reddit pour vous montrer de meilleures publicités.</string>
-    <string name="account_settings_personalized_ads_from_activity_title">Personnaliser les publicités en fonction de votre activité Reddit</string>
+    <string name="account_settings_personalized_ads_from_activity_description">Permettez-nous d\'utiliser vos interactions sur Reddit et les infos de votre compte pour vous montrer de meilleures publicités.</string>
+    <string name="account_settings_personalized_ads_from_activity_title">Personnaliser les publicités en fonction de votre activité Reddit et des infos de votre compte</string>
     <string name="account_settings_personalized_ads_from_third_party_data_description">Permettez-nous d\'utiliser vos interactions avec les sites et les applications avec lesquels nous collaborons pour vous montrer de meilleures pubs.</string>
     <string name="account_settings_personalized_ads_from_third_party_data_title">Personnaliser les publicités en fonction de votre activité avec nos partenaires</string>
     <string name="account_settings_personalized_ads_from_third_party_info_description">Permettez-nous d\'utiliser les informations que nos partenaires publicitaires nous envoient pour vous montrer de meilleures publicités.</string>
@@ -40,6 +40,11 @@
     <string name="account_suspended_fpr_message">Mise à jour du mot de passe requise.\10Afin de protéger votre compte, créez un nouveau mot de passe.</string>
     <string name="account_suspended_permanent">Votre compte a été définitivement suspendu de Reddit.</string>
     <string name="account_switch_message">Connecté(e) en tant que u/%1$s</string>
+    <string name="accounts_content_description_close">Fermer</string>
+    <string name="accounts_error_block_account">Échec du blocage du compte</string>
+    <string name="accounts_error_block_user">Échec du blocage du compte</string>
+    <string name="accounts_placeholder_karma_count">— Karma</string>
+    <string name="accounts_title_edit_profile">Modifier</string>
     <string name="achievement_flair_count_template">+ %1$d</string>
     <string name="achievement_flair_hide_flairs_checkbox_text">Afficher le flair de supporter et de réussite</string>
     <string name="achievement_flair_hide_flairs_checkbox_text_without_powerups">Afficher le flair de réalisation</string>
@@ -268,7 +273,7 @@
     <string name="action_show_fewer_posts_like_this">Voir moins de publications similaires</string>
     <string name="action_show_more_posts_like_this">Voir plus de publications similaires</string>
     <string name="action_show_original_post">Afficher la publication originale</string>
-    <string name="action_sign_up">S’inscrire</string>
+    <string name="action_sign_up">S\'inscrire</string>
     <string name="action_skip">Passer</string>
     <string name="action_sneak_peek">Voir ce que les autres ont prédit</string>
     <string name="action_sort">Trier</string>
@@ -343,6 +348,10 @@
     <string name="action_yes">Oui</string>
     <string name="action_yes_end">Oui, terminer</string>
     <string name="action_yes_save">Oui, enregistrer</string>
+    <string name="actioned_approved">Approuvée</string>
+    <string name="actioned_removed">Retiré</string>
+    <string name="actioned_removed_as_span">Retirée comme spam</string>
+    <string name="actioned_user_timestamp">%1$s • %2$s</string>
     <string name="active_chip">Actif</string>
     <string name="active_communities_banner">Participe dans ces communautés</string>
     <string name="active_count_chip">Active with count</string>
@@ -373,6 +382,7 @@
     <string name="adjust_clips_on_new_line">Modifier les extraits</string>
     <string name="adjust_crowd_control_title">Ajuster le contrôle de foule pour cette publication</string>
     <string name="adjust_video">Ajuster la vidéo</string>
+    <string name="adjust_your_search">ajuster votre recherche</string>
     <string name="ads_promoted_label">Sponsorisé(e)</string>
     <string name="agreement">Contrat d\'utilisation</string>
     <string name="agreement_message">En continuant, vous acceptez notre Contrat d\'utilisation et reconnaissez que vous comprenez notre Politique de confidentialité.</string>
@@ -664,6 +674,9 @@
     <string name="carousel_create_community_subtitle">Créez la vôtre et révélez vous comme la star de demain.</string>
     <string name="carousel_create_community_title">Ces communautés ne vous vont pas ?</string>
     <string name="carousel_hide_option_text">Masquer les suggestions de %1$s</string>
+    <string name="carousel_next_button_content_description">Suivant</string>
+    <string name="carousel_pagination_count_format">%1$d / %2$d</string>
+    <string name="carousel_prev_button_content_description">Précédent</string>
     <string name="carousel_show_less_option_text">En voir moins</string>
     <string name="cd_admin">Admin</string>
     <string name="cd_back">Retour</string>
@@ -727,7 +740,7 @@
     <string name="chat_error_channel_name_blank">Le nom du salon ne peut pas être vide.</string>
     <string name="chat_error_chat_with_yourself">Vous ne pouvez pas discuter avec vous-même.</string>
     <string name="chat_error_connect_to_chat">Échec de la création de la discussion Merci de réessayer plus tard.</string>
-    <string name="chat_error_create_chat">Une erreur est survenue et la conversation n\'a pas pu être créée.</string>
+    <string name="chat_error_create_chat">Échec de la création de la discussion</string>
     <string name="chat_error_create_group_chat">Échec de la création de la discussion groupée</string>
     <string name="chat_error_create_subreddit_channel_fail">Échec de la création du salon, veuillez réessayer plus tard.</string>
     <string name="chat_error_error_data_is_still_loading">Les données sont toujours en cours de chargement.</string>
@@ -755,8 +768,8 @@
     <string name="chat_error_load_chat_settings">Une erreur s\'est produite et les paramètres de discussion ne peuvent pas être chargés.</string>
     <string name="chat_error_load_contacts">Échec du chargement des contacts</string>
     <string name="chat_error_load_requests">Une erreur s\'est produite et les invitations n\'ont pas pu être chargées.</string>
-    <string name="chat_error_loading_live_chats">Live chats failed to load, pull to refresh</string>
-    <string name="chat_error_loading_messages">Messages failed to load, pull to refresh</string>
+    <string name="chat_error_loading_live_chats">Échec du chargement des discussions en direct, tirez la page vers le bas pour l\'actualiser</string>
+    <string name="chat_error_loading_messages">Échec du chargement des messages, tirez la page vers le bas pour l\'actualiser</string>
     <string name="chat_error_media_rejected">Le média dépasse les 20 Mo maximum pour les images et 40 Mo pour les GIFs</string>
     <string name="chat_error_message_delete">Une erreur s\'est produite et le message n\'a pas pu être supprimé.</string>
     <string name="chat_error_message_doesnt_exist">Le message n\'existe pas.</string>
@@ -782,8 +795,8 @@
     <string name="chat_input_parent_reply">Répondre à %1$s</string>
     <string name="chat_keyboard_hint_1">Envoyer un message à %1$s</string>
     <string name="chat_legacy_comment_menu_dialog_title">Commentaire de u/%1$s</string>
-    <string name="chat_loading_live_chats">Hold still, Live chats are still loading...</string>
-    <string name="chat_loading_messages">Hold still, messages are still loading...</string>
+    <string name="chat_loading_live_chats">Attendez, les discussions en direct sont toujours en cours de chargement…</string>
+    <string name="chat_loading_messages">Attendez, les messages sont toujours en cours de chargement…</string>
     <string name="chat_pager_title_directs">Directs</string>
     <string name="chat_post_tab_ftue">Retrouvez toutes les messages\10que vous avez récemment vus ici</string>
     <string name="chat_posts_quick_nav_ftue">Revenez facilement à une discussion. Swipez pour ignorer.</string>
@@ -927,6 +940,7 @@
     <string name="comment_replying_to">En réponse à</string>
     <string name="comments_disabled_message">Les commentaires ont été désactivés sur cette publication.</string>
     <string name="comments_loading_in_progress">Les commentaires sont en cours de chargement</string>
+    <string name="comments_with_query">Commentaires contenant « %1$s »</string>
     <string name="common_error_not_authorized">Cette fonctionnalité est actuellement indisponible.</string>
     <string name="common_error_service_error">Quelque chose ne va pas avec le service de Talk. Revenez plus tard. Revenez plus tard</string>
     <string name="common_error_user_not_logged_in">Connectez-vous à Reddit pour participer à ce Talk.</string>
@@ -947,6 +961,7 @@
     <string name="community_creation_module_button">Créer une communauté</string>
     <string name="community_creation_module_subtitle">Il y a de l\'idée ici… Continuez à faire vivre la discussion et faites en naître une communauté.</string>
     <string name="community_creation_module_title">Cette publication pourrait-elle devenir une communauté ?</string>
+    <string name="community_dot_tooltip">Explorez vos communautés</string>
     <string name="community_emote_pack_title">Émojis de %1$s</string>
     <string name="community_hub_channel_empty_state_message">Publiez sur cette chaîne en utilisant le flair « %1$s »</string>
     <string name="community_hub_onboarding_banner_message">Le flux %1$s est ouvert à tous les membres</string>
@@ -1070,6 +1085,7 @@
     <string name="content_desc_instagram">Instagram</string>
     <string name="content_desc_item_listing_below_illustration">illustration Snoo pouce levé</string>
     <string name="content_desc_item_related_community_icon">Icône de la communauté</string>
+    <string name="content_desc_mod_actions">Menu des actions de modération</string>
     <string name="content_desc_overflow">Menu déroulant</string>
     <string name="content_desc_overflow_button">Étiquettes supplémentaires</string>
     <string name="content_desc_related_subreddit_icon">icône de communauté connexe</string>
@@ -1110,6 +1126,7 @@
     <string name="content_description_collage_category_image">Image de la catégorie</string>
     <string name="content_description_community_avatar">Avatar de la communauté</string>
     <string name="content_description_community_icon">Icône de la communauté</string>
+    <string name="content_description_create_post">Créer une publication</string>
     <string name="content_description_crop_button">Rogner</string>
     <string name="content_description_direction">Tendance de la communauté</string>
     <string name="content_description_dismiss_subreddit">Ignorer le subreddit</string>
@@ -1481,6 +1498,7 @@
     <string name="empty_inbox_generic_header">Bienvenue dans le salon de discussion !\10Lançons une conversation</string>
     <string name="empty_inbox_live_body">Lorsqu\'une communauté ou une personne que vous suivez organise une discussion en direct, c\'est ici que vous la trouverez.</string>
     <string name="empty_inbox_live_header">Les discussions en direct se trouvent ici</string>
+    <string name="empty_post_comment_search_body">Vérifiez l\'orthographe ou essayez avec des mots-clés différents pour %1$s</string>
     <string name="empty_raised_hands">Il n\'y a pas de mains levées</string>
     <string name="empty_state_content_cats">Ce n\'est pas grave, peut-être que vous avez juste besoin de la bonne inspiration. Avez-vous déjà eu votre dose quotidienne de chatons ?</string>
     <string name="empty_state_content_community">Ce n\'est pas grave, peut-être que vous avez juste besoin de la bonne inspiration. Visitez %1$s, une communauté populaire pour discuter.</string>
@@ -1625,8 +1643,10 @@
     <string name="error_playback_error">Une erreur est survenue. Essayez à nouveau d\'écouter le Talk.</string>
     <string name="error_post_hide_failed">Échec du masquage de la publication.</string>
     <string name="error_post_hide_failure">Échec du masquage de la publication.</string>
+    <string name="error_post_saved">Échec de la sauvegarde de la publication.</string>
     <string name="error_post_unhide_failed">Échec du réaffichage de la publication.</string>
     <string name="error_post_unhide_failure">Échec du réaffichage de la publication.</string>
+    <string name="error_post_unsaved">Échec de la suppression de la publication de vos contenus sauvegardés.</string>
     <string name="error_prediction_failed">La prédiction a échoué</string>
     <string name="error_remove_failure">Échec de la suppression de la publication.</string>
     <string name="error_report_comment">Échec du signalement du commentaire.</string>
@@ -1709,6 +1729,8 @@
     <string name="expires">Expire le</string>
     <string name="explore_topics_du_title">Que voulez-vous voir plus ?</string>
     <string name="external_video_description">Aperçu vidéo</string>
+    <string name="failed_to_create_conversation_error">Une erreur est survenue et la conversation n\'a pas pu être créée.</string>
+    <string name="failed_to_create_invite_link">Impossible de créer un lien</string>
     <string name="failed_to_follow_error">Impossible de suivre %1$s</string>
     <string name="failed_to_join_error">Impossible de rejoindre %1$s</string>
     <string name="favorites_section_header">Favoris</string>
@@ -1836,7 +1858,7 @@
     <string name="fmt_u_name_no_split">u⁠/⁠%1$s</string>
     <string name="fmt_unmute_description">Si vous retirez la sourdine de %1$s, ses notifications seront activées et vous verrez à nouveau ses publications dans vos flux et recommandations.</string>
     <string name="fmt_unmute_title">Retirer la sourdine de %1$s</string>
-    <string name="fmt_unmuted_from_notification_success">Followed, now you’ll get updates on new activity</string>
+    <string name="fmt_unmuted_from_notification_success">Vous vous êtes bien abonné(e) et recevrez désormais des mises à jour en cas de nouvelle activité</string>
     <string name="fmt_unmuted_success">Sourdine retirée de %1$s</string>
     <string name="fmt_user_agent">Reddit/Version %1$s/Build %2$s/Android %3$s</string>
     <string name="fmt_user_is_typing">%1$s est en train d\'écrire</string>
@@ -2053,6 +2075,7 @@
     <string name="image_placeholder">Espace réservé pour l\'image</string>
     <string name="image_posts_subtitle">Autoriser les images mises en ligne directement sur Reddit ainsi que les liens vers des sites d\'hébergement d\'images populaires tels que Imgur</string>
     <string name="image_posts_title">Publications d’image</string>
+    <string name="image_processing">Traitement de l\'image</string>
     <string name="import_nft_description">Copiez votre adresse publique, collez-la dans votre portefeuille externe et effectuez le transfert en dehors de Reddit. Une fois le transfert terminé, votre NFT apparaîtra dans vos avatars.</string>
     <string name="import_nft_screen_title">Importer dans le coffre</string>
     <string name="import_nft_subtitle">Importer votre NFT dans le coffre</string>
@@ -2127,7 +2150,7 @@
     <string name="invite_friends_trophy_description">Invitez vos ami(e)s à télécharger l\'application Reddit et recevez ce sympathique trophée !</string>
     <string name="invite_friends_trophy_title">Invitez vos ami(e)s sur Reddit et ... ... recevez un trophée !</string>
     <string name="invite_link_copied">Lien copié !</string>
-    <string name="invite_link_copy_error">Impossible de créer un lien</string>
+    <string name="invite_link_copy_error">Impossible de copier le lien</string>
     <string name="invite_link_create_error">Impossible de créer un lien</string>
     <string name="invite_link_easy_access_tooltip">Appuyez longuement pour copier le lien de la discussion</string>
     <string name="invite_link_expired_error">Ce lien a expiré</string>
@@ -2289,6 +2312,7 @@
     <string name="key_pref_uri_base">key_pref_uri_base</string>
     <string name="key_pref_uri_gateway">key_pref_uri_gateway</string>
     <string name="key_pref_uri_meta">key_pref_uri_meta</string>
+    <string name="key_pref_use_bad_rest_api">key_pref_use_bad_rest_api</string>
     <string name="key_pref_use_fake_storefront_repository">key_pref_use_fake_storefront_repository</string>
     <string name="key_pref_use_non_persisted_graphql_ops">key_pref_use_non_persisted_graphql_ops</string>
     <string name="key_pref_use_staging">key_pref_use_staging</string>
@@ -2296,6 +2320,7 @@
     <string name="key_pref_user_agreement">key_pref_user_agreement</string>
     <string name="key_pref_ux_targeting_service_bottom_sheet_override">key_pref_ux_targeting_service_bottom_sheet_override</string>
     <string name="key_pref_ux_targeting_service_in_feed_override">key_pref_ux_targeting_service_in_feed_override</string>
+    <string name="key_pref_view_options">key_pref_view_options</string>
     <string name="key_preferred_language_category">key_preferred_language_category</string>
     <string name="key_report_netz_dg_content">key_report_netz_dg_content</string>
     <string name="key_transparency_report">key_transparency_report</string>
@@ -2518,7 +2543,6 @@
     <string name="label_create_vault_use_existing">Utiliser un Coffre existant</string>
     <string name="label_create_your_feed">Créez votre flux d\'accueil</string>
     <string name="label_create_your_profile">Créez votre profil</string>
-    <string name="label_creator_community">Communauté d\'artiste</string>
     <string name="label_crosspost">communauté</string>
     <string name="label_current_balance">Votre solde actuel est de %1$s</string>
     <string name="label_current_user_awarder">%1$s (vous)</string>
@@ -2591,13 +2615,13 @@
     <string name="label_experiment_comments_in_feed_DU">Comments In Feed DU</string>
     <string name="label_experiment_global">Override for all users</string>
     <string name="label_experiment_invite_friends">Invite Friends Painted Door</string>
-    <string name="label_experiment_toast">Show exposure toast</string>
+    <string name="label_experiment_toast">Afficher la notification toast d\'exposition</string>
     <string name="label_experiments">Experiments</string>
     <string name="label_explore_popular">Explorez des communautés populaires</string>
     <string name="label_export_video_logs">Exporter les logs vidéo</string>
     <string name="label_exposed_experiments">Exposed experiments</string>
-    <string name="label_exposure_logging">Enable all experiments exposure logging</string>
-    <string name="label_exposure_toast">Enable all experiments exposure toast</string>
+    <string name="label_exposure_logging">Activer l\'enregistrement d\'exposition de toutes les expériences</string>
+    <string name="label_exposure_toast">Activer la notification toast d\'exposition de toutes les expériences</string>
     <string name="label_facebook">Facebook</string>
     <string name="label_facebook_lite">Facebook Lite</string>
     <string name="label_feed_notice_action_sounds_good">C\'est parfait</string>
@@ -2824,7 +2848,6 @@
     <string name="label_more_in_live">Toujours plus dans Reddit Live</string>
     <string name="label_more_trending_posts">Plus de publications tendances</string>
     <string name="label_my_profile">Mon profil</string>
-    <string name="label_my_reddit">My Reddit</string>
     <string name="label_name">Titre</string>
     <string name="label_net_dg_content">Contenu NetzDG</string>
     <string name="label_network_config">Network config</string>
@@ -2923,6 +2946,7 @@
     <string name="label_personalization_settings">Personnalisation</string>
     <string name="label_pick_username">Choisissez un pseudo</string>
     <string name="label_pinned_posts">Publications épinglées</string>
+    <string name="label_pinned_posts_collapsed">Publications épinglées (%1$d)</string>
     <string name="label_place">Lieu</string>
     <string name="label_place_tile">Placez votre tuile</string>
     <string name="label_points_info_title">À propos des points</string>
@@ -3207,6 +3231,7 @@
     <string name="label_updates">Mises à jour</string>
     <string name="label_updates_from_reddit">Dernières annonces de Reddit</string>
     <string name="label_uploads">Téléchargements</string>
+    <string name="label_use_bad_network">Use BAD REST - let REST API fails randomly</string>
     <string name="label_use_non_persisted_graphql_ops">Utiliser des opérations GQL non persistantes</string>
     <string name="label_use_recovery_phrase_instead">Utiliser la phrase de récupération</string>
     <string name="label_use_staging">Use staging with local cookie</string>
@@ -4201,6 +4226,7 @@
     <string name="nsfw_popular">r/popular</string>
     <string name="nsfw_search_banner_content">Confirmez que vous avez plus de 18 ans et mettez à jour vos paramètres pour voir le contenu potentiellement explicite.</string>
     <string name="nsfw_search_banner_setting_button">METTRE À JOUR LES PARAMÈTRES</string>
+    <string name="nsfw_search_banner_setting_button_updated">METTRE À JOUR LES PARAMÈTRES</string>
     <string name="nsfw_search_banner_title">les résultats de la recherche sont masqués</string>
     <string name="nsfw_search_banner_title_updated">Les résultats de recherche 18+ sont masqués</string>
     <string name="nsfw_update_settings">Mettre à jour les paramètres</string>
@@ -5107,6 +5133,8 @@
     <string name="revealed_message_survey_gratitude">Merci de votre retour.</string>
     <string name="rising_guided_search_item">En croissance dans %1$s</string>
     <string name="ritual_link_cta">Ajouter</string>
+    <string name="ritual_post_unit_non_user">Participer</string>
+    <string name="ritual_post_unit_user">Ajouter</string>
     <string name="ritual_selection_add_post">Nouvelle publication</string>
     <string name="ritual_selection_select_topic_title">ou commencez par une thématique</string>
     <string name="ritual_selection_title">Créer une publication</string>
@@ -5117,7 +5145,10 @@
     <string name="russia">Russie</string>
     <string name="safe_search_banner_content_off">À moins d\'activer la recherche filtrée, vous verrez potentiellement des résultats 18+</string>
     <string name="safe_search_banner_content_on">À moins de désactiver la recherche sécurisée, vous ne verrez pas les résultats de recherche 18+</string>
+    <string name="safe_search_banner_cta_text">Mettre à jour</string>
     <string name="safe_search_banner_title">Recherche sécurisée</string>
+    <string name="safe_search_banner_title_off">La recherche sécurisée est désactivée</string>
+    <string name="safe_search_banner_title_on">La recherche sécurisée est activée</string>
     <string name="safe_search_filter_default">Recherche sécurisée</string>
     <string name="safe_search_off">OFF</string>
     <string name="safe_search_off_description">Activez la recherche sécurisée pour exclure le contenu 18+ réservé aux adultes de vos résultats de recherche.</string>
@@ -5169,6 +5200,7 @@
     <string name="search_more_communities">Tout voir</string>
     <string name="search_more_results">En voir plus</string>
     <string name="search_new_posts_description">nouvelles publications</string>
+    <string name="search_post_comments_hint">Rechercher des commentaires</string>
     <string name="search_preview_image_content_description">Aperçu miniature du résultat de la recherche</string>
     <string name="search_relevance_description">publications pertinentes</string>
     <string name="search_result_button">Résultats pour \"%1$s…\"</string>
@@ -5234,10 +5266,6 @@
     <string name="share_card_hide_avatar">Masquer l\'avatar</string>
     <string name="share_card_hide_username">Masquer le pseudonyme</string>
     <string name="share_card_karma_label">Karma</string>
-    <string name="share_card_level_common">COMMUN</string>
-    <string name="share_card_level_epic">ÉPIQUE</string>
-    <string name="share_card_level_legendary">LÉGENDAIRE</string>
-    <string name="share_card_level_rare">RARE</string>
     <string name="share_cards_content_description">Partager des cartes</string>
     <string name="share_cards_credit_logo_description">Reddit</string>
     <string name="share_cards_credit_template_subreddit">Publié dans r/</string>
@@ -5529,6 +5557,7 @@
     <string name="success_post_removed">La publication a été retirée.</string>
     <string name="success_post_removed_spam">La publication a été retirée en tant que spam.</string>
     <string name="success_post_save">Publication sauvegardée !</string>
+    <string name="success_post_saved">Publication sauvegardée !</string>
     <string name="success_post_subscribe">Publication suivie !</string>
     <string name="success_post_undistinguish">Cette publication n’est maintenant plus mise en valeur.</string>
     <string name="success_post_unhidden">Publication démasquée !</string>
@@ -5537,6 +5566,7 @@
     <string name="success_post_unmarked_spoiler">La publication n\'est maintenant plus marquée comme spoiler.</string>
     <string name="success_post_unpin">La publication a été désépinglée.</string>
     <string name="success_post_unsave">La publication n’est plus sauvegardée !</string>
+    <string name="success_post_unsaved">La publication n’est plus sauvegardée !</string>
     <string name="success_post_unsubscribed">Publication plus suivie !</string>
     <string name="success_report_complaint">Si vous pensez que du contenu hébergé sur Reddit transgresse votre propriété intellectuelle, vous pouvez déposer une plainte. Utilisez le lien ci-dessous :</string>
     <string name="success_report_thanks">Merci de nous en avoir informé !\10\10Nous avons bien reçu votre signalement. D\'autres choses que vous pouvez faire :</string>
@@ -5794,7 +5824,7 @@
     <string name="topic_continue">Continuer</string>
     <string name="topic_discover_recommendation_content">En raison de votre intérêt pour</string>
     <string name="topic_on_reddit">Sujet sur Reddit</string>
-    <string name="topic_order_prefix">n&lt;sup&gt;o&lt;/sup&gt; %1$s</string>
+    <string name="topic_order_prefix">no %1$s</string>
     <string name="topic_selection_interest">Centres d\'intérêt</string>
     <string name="topic_selection_pick_things">Choisissez ce que vous aimeriez voir dans votre flux d\'accueil.</string>
     <string name="topics_bottomsheet_title">Thématiques</string>

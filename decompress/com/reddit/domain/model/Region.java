@@ -4,9 +4,9 @@
 
 package com.reddit.domain.model;
 
-import al0.f0;
-import sg2.e;
-import al0.b;
+import p1.h;
+import aq2.a;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 import com.squareup.moshi.o;
@@ -27,10 +27,23 @@ public final class Region
     }
     
     public Region(final String id, final String name, final String geoFilter) {
-        b.q(id, "id", name, "name", geoFilter, "geoFilter");
+        b.w(id, "id", name, "name", geoFilter, "geoFilter");
         this.id = id;
         this.name = name;
         this.geoFilter = geoFilter;
+    }
+    
+    public static Region copy$default(final Region region, String id, String name, String geoFilter, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            id = region.id;
+        }
+        if ((n & 0x2) != 0x0) {
+            name = region.name;
+        }
+        if ((n & 0x4) != 0x0) {
+            geoFilter = region.geoFilter;
+        }
+        return region.copy(id, name, geoFilter);
     }
     
     public final String component1() {
@@ -78,23 +91,27 @@ public final class Region
     
     @Override
     public int hashCode() {
-        return this.geoFilter.hashCode() + b.c(this.name, this.id.hashCode() * 31, 31);
+        return this.geoFilter.hashCode() + a.e(this.name, this.id.hashCode() * 31, 31);
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Region(id=");
-        r.append(this.id);
-        r.append(", name=");
-        r.append(this.name);
-        r.append(", geoFilter=");
-        return f0.n(r, this.geoFilter, ')');
+        final StringBuilder t = a.t("Region(id=");
+        t.append(this.id);
+        t.append(", name=");
+        t.append(this.name);
+        t.append(", geoFilter=");
+        return h.c(t, this.geoFilter, ')');
     }
     
     @Metadata(d1 = { "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0010\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u0005" }, d2 = { "Lcom/reddit/domain/model/Region$Companion;", "", "()V", "DEFAULT", "Lcom/reddit/domain/model/Region;", "model_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
 }

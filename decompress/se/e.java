@@ -4,21 +4,18 @@
 
 package se;
 
-import com.google.android.gms.common.api.Scope;
+import com.google.android.gms.common.api.a$e;
+import com.google.android.gms.common.api.c;
+import qd.d;
+import android.os.Looper;
+import android.content.Context;
+import com.google.android.gms.common.api.a$c;
 import com.google.android.gms.common.api.a;
 
-public final class e
+public final class e extends a<j, a$c.c>
 {
-    public static final b a;
-    public static final a<se.a> b;
-    
-    static {
-        final a.f f = new a.f();
-        new a.f();
-        final b b2 = a = new b();
-        new c();
-        new Scope(1, "profile");
-        new Scope(1, "email");
-        b = new a("SignIn.API", (a.a)b2, f);
+    @Override
+    public final a$e b(final Context context, final Looper looper, final d d, final Object o, final c.b b, final c.c c) {
+        return (a$e)new j(context, looper, d, b, c);
     }
 }

@@ -4,7 +4,8 @@
 
 package com.reddit.domain.modtools.scheduledposts;
 
-import sg2.e;
+import aq2.a;
+import ng2.e;
 import java.util.List;
 import com.reddit.domain.model.MediaMetaData;
 import java.util.Map;
@@ -59,6 +60,67 @@ public final class SubredditScheduledPost
         this.isNSFW = isNSFW;
         this.username = username;
         this.publishAt = publishAt;
+    }
+    
+    public static SubredditScheduledPost copy$default(final SubredditScheduledPost subredditScheduledPost, String id, String title, String body, ContentType contentType, Map mediaMetaData, String subredditId, String subredditName, String clientTimeZone, Frequency frequency, List weekDays, List monthDays, Integer interval, boolean isSticky, boolean isDistinguishedAsMod, boolean isOriginalContent, boolean isSpoiler, boolean isNSFW, String username, Long publishAt, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            id = subredditScheduledPost.id;
+        }
+        if ((n & 0x2) != 0x0) {
+            title = subredditScheduledPost.title;
+        }
+        if ((n & 0x4) != 0x0) {
+            body = subredditScheduledPost.body;
+        }
+        if ((n & 0x8) != 0x0) {
+            contentType = subredditScheduledPost.contentType;
+        }
+        if ((n & 0x10) != 0x0) {
+            mediaMetaData = subredditScheduledPost.mediaMetaData;
+        }
+        if ((n & 0x20) != 0x0) {
+            subredditId = subredditScheduledPost.subredditId;
+        }
+        if ((n & 0x40) != 0x0) {
+            subredditName = subredditScheduledPost.subredditName;
+        }
+        if ((n & 0x80) != 0x0) {
+            clientTimeZone = subredditScheduledPost.clientTimeZone;
+        }
+        if ((n & 0x100) != 0x0) {
+            frequency = subredditScheduledPost.frequency;
+        }
+        if ((n & 0x200) != 0x0) {
+            weekDays = subredditScheduledPost.weekDays;
+        }
+        if ((n & 0x400) != 0x0) {
+            monthDays = subredditScheduledPost.monthDays;
+        }
+        if ((n & 0x800) != 0x0) {
+            interval = subredditScheduledPost.interval;
+        }
+        if ((n & 0x1000) != 0x0) {
+            isSticky = subredditScheduledPost.isSticky;
+        }
+        if ((n & 0x2000) != 0x0) {
+            isDistinguishedAsMod = subredditScheduledPost.isDistinguishedAsMod;
+        }
+        if ((n & 0x4000) != 0x0) {
+            isOriginalContent = subredditScheduledPost.isOriginalContent;
+        }
+        if ((n & 0x8000) != 0x0) {
+            isSpoiler = subredditScheduledPost.isSpoiler;
+        }
+        if ((n & 0x10000) != 0x0) {
+            isNSFW = subredditScheduledPost.isNSFW;
+        }
+        if ((n & 0x20000) != 0x0) {
+            username = subredditScheduledPost.username;
+        }
+        if ((n & 0x40000) != 0x0) {
+            publishAt = subredditScheduledPost.publishAt;
+        }
+        return subredditScheduledPost.copy(id, title, body, contentType, mediaMetaData, subredditId, subredditName, clientTimeZone, frequency, weekDays, monthDays, interval, isSticky, isDistinguishedAsMod, isOriginalContent, isSpoiler, isNSFW, username, publishAt);
     }
     
     public final String component1() {
@@ -244,7 +306,7 @@ public final class SubredditScheduledPost
         else {
             hashCode5 = mediaMetaData.hashCode();
         }
-        final int c = b.c(this.clientTimeZone, b.c(this.subredditName, b.c(this.subredditId, ((hashCode4 + ((hashCode * 31 + hashCode2) * 31 + hashCode3) * 31) * 31 + hashCode5) * 31, 31), 31), 31);
+        final int e = a.e(this.clientTimeZone, a.e(this.subredditName, a.e(this.subredditId, ((hashCode4 + ((hashCode * 31 + hashCode2) * 31 + hashCode3) * 31) * 31 + hashCode5) * 31, 31), 31), 31);
         final Frequency frequency = this.frequency;
         int hashCode6;
         if (frequency == null) {
@@ -299,7 +361,7 @@ public final class SubredditScheduledPost
         if (isNSFW == 0) {
             n2 = isNSFW;
         }
-        final int c2 = b.c(this.username, (((((((((c + hashCode6) * 31 + hashCode7) * 31 + hashCode8) * 31 + hashCode9) * 31 + n3) * 31 + isDistinguishedAsMod) * 31 + isOriginalContent) * 31 + isSpoiler) * 31 + n2) * 31, 31);
+        final int e2 = a.e(this.username, (((((((((e + hashCode6) * 31 + hashCode7) * 31 + hashCode8) * 31 + hashCode9) * 31 + n3) * 31 + isDistinguishedAsMod) * 31 + isOriginalContent) * 31 + isSpoiler) * 31 + n2) * 31, 31);
         final Long publishAt = this.publishAt;
         int hashCode10;
         if (publishAt == null) {
@@ -308,7 +370,7 @@ public final class SubredditScheduledPost
         else {
             hashCode10 = publishAt.hashCode();
         }
-        return c2 + hashCode10;
+        return e2 + hashCode10;
     }
     
     public final boolean isDistinguishedAsMod() {
@@ -333,59 +395,79 @@ public final class SubredditScheduledPost
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SubredditScheduledPost(id=");
-        r.append(this.id);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", body=");
-        r.append(this.body);
-        r.append(", contentType=");
-        r.append(this.contentType);
-        r.append(", mediaMetaData=");
-        r.append(this.mediaMetaData);
-        r.append(", subredditId=");
-        r.append(this.subredditId);
-        r.append(", subredditName=");
-        r.append(this.subredditName);
-        r.append(", clientTimeZone=");
-        r.append(this.clientTimeZone);
-        r.append(", frequency=");
-        r.append(this.frequency);
-        r.append(", weekDays=");
-        r.append(this.weekDays);
-        r.append(", monthDays=");
-        r.append(this.monthDays);
-        r.append(", interval=");
-        r.append(this.interval);
-        r.append(", isSticky=");
-        r.append(this.isSticky);
-        r.append(", isDistinguishedAsMod=");
-        r.append(this.isDistinguishedAsMod);
-        r.append(", isOriginalContent=");
-        r.append(this.isOriginalContent);
-        r.append(", isSpoiler=");
-        r.append(this.isSpoiler);
-        r.append(", isNSFW=");
-        r.append(this.isNSFW);
-        r.append(", username=");
-        r.append(this.username);
-        r.append(", publishAt=");
-        return a.l(r, this.publishAt, ')');
+        final StringBuilder t = a.t("SubredditScheduledPost(id=");
+        t.append(this.id);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", body=");
+        t.append(this.body);
+        t.append(", contentType=");
+        t.append(this.contentType);
+        t.append(", mediaMetaData=");
+        t.append(this.mediaMetaData);
+        t.append(", subredditId=");
+        t.append(this.subredditId);
+        t.append(", subredditName=");
+        t.append(this.subredditName);
+        t.append(", clientTimeZone=");
+        t.append(this.clientTimeZone);
+        t.append(", frequency=");
+        t.append(this.frequency);
+        t.append(", weekDays=");
+        t.append(this.weekDays);
+        t.append(", monthDays=");
+        t.append(this.monthDays);
+        t.append(", interval=");
+        t.append(this.interval);
+        t.append(", isSticky=");
+        t.append(this.isSticky);
+        t.append(", isDistinguishedAsMod=");
+        t.append(this.isDistinguishedAsMod);
+        t.append(", isOriginalContent=");
+        t.append(this.isOriginalContent);
+        t.append(", isSpoiler=");
+        t.append(this.isSpoiler);
+        t.append(", isNSFW=");
+        t.append(this.isNSFW);
+        t.append(", username=");
+        t.append(this.username);
+        t.append(", publishAt=");
+        return m5.a.i(t, this.publishAt, ')');
     }
     
     @Metadata(d1 = { "\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0004\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004¨\u0006\u0005" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$ContentType;", "", "(Ljava/lang/String;I)V", "RICH_TEXT", "TEXT", "domain_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public enum ContentType
     {
+        private static final ContentType[] $VALUES;
+        
         RICH_TEXT, 
         TEXT;
+        
+        private static final ContentType[] $values() {
+            return new ContentType[] { ContentType.RICH_TEXT, ContentType.TEXT };
+        }
+        
+        static {
+            $VALUES = $values();
+        }
     }
     
     @Metadata(d1 = { "\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007" }, d2 = { "Lcom/reddit/domain/modtools/scheduledposts/SubredditScheduledPost$Frequency;", "", "(Ljava/lang/String;I)V", "HOURLY", "DAILY", "WEEKLY", "MONTHLY", "domain_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public enum Frequency
     {
+        private static final Frequency[] $VALUES;
+        
         DAILY, 
         HOURLY, 
         MONTHLY, 
         WEEKLY;
+        
+        private static final Frequency[] $values() {
+            return new Frequency[] { Frequency.HOURLY, Frequency.DAILY, Frequency.WEEKLY, Frequency.MONTHLY };
+        }
+        
+        static {
+            $VALUES = $values();
+        }
     }
 }

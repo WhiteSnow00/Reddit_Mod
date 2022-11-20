@@ -4,47 +4,29 @@
 
 package j9;
 
-import java.nio.ByteBuffer;
-import java.security.MessageDigest;
-import k9.j;
-import o8.d;
+import com.bumptech.glide.load.DataSource;
+import android.graphics.drawable.Drawable;
 
-public final class a implements d
+public final class a implements e<Drawable>
 {
     public final int a;
-    public final d b;
+    public b b;
     
-    public a(final int a, final d b) {
+    public a(final int a) {
         this.a = a;
-        this.b = b;
     }
     
-    @Override
-    public final boolean equals(final Object o) {
-        final boolean b = o instanceof a;
-        boolean b3;
-        final boolean b2 = b3 = false;
-        if (b) {
-            final a a = (a)o;
-            b3 = b2;
-            if (this.a == a.a) {
-                b3 = b2;
-                if (this.b.equals(a.b)) {
-                    b3 = true;
-                }
-            }
+    public final d a(final DataSource dataSource) {
+        Object o;
+        if (dataSource == DataSource.MEMORY_CACHE) {
+            o = c.a;
         }
-        return b3;
-    }
-    
-    @Override
-    public final int hashCode() {
-        return j.g(this.a, (Object)this.b);
-    }
-    
-    @Override
-    public final void updateDiskCacheKey(final MessageDigest messageDigest) {
-        this.b.updateDiskCacheKey(messageDigest);
-        messageDigest.update(ByteBuffer.allocate(4).putInt(this.a).array());
+        else {
+            if (this.b == null) {
+                this.b = new b(this.a, false);
+            }
+            o = this.b;
+        }
+        return (d)o;
     }
 }

@@ -4,10 +4,9 @@
 
 package com.reddit.domain.model;
 
-import al0.f0;
 import android.os.Parcel;
-import al0.g7;
-import cj2.j;
+import aq2.a;
+import xi2.j;
 import java.util.Iterator;
 import java.util.Set;
 import kotlin.collections.CollectionsKt___CollectionsKt;
@@ -16,10 +15,11 @@ import java.util.Map;
 import com.reddit.structuredstyles.model.widgets.BaseWidget;
 import java.util.ArrayList;
 import com.reddit.structuredstyles.model.Style;
+import com.reddit.session.m;
 import com.reddit.domain.powerups.PowerupsBenefit;
-import bd0.m;
+import bd0.l;
 import kotlin.collections.EmptyList;
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.n;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import com.reddit.structuredstyles.model.StructuredStyle;
@@ -32,7 +32,7 @@ import com.squareup.moshi.o;
 import android.os.Parcelable;
 
 @o(generateAdapter = true)
-@Metadata(bv = {}, d1 = { "\u0000\u0092\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010\t\n\u0002\b \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\bL\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\bZ\n\u0002\u0018\u0002\n\u0002\b\u001f\b\u0087\b\u0018\u0000 ª\u00022\u00020\u00012\u00020\u0002:\u0002ª\u0002B\u00e1\u0006\u0012\b\b\u0003\u0010]\u001a\u00020\u000e\u0012\b\b\u0003\u0010^\u001a\u00020\u000e\u0012\b\b\u0003\u0010_\u001a\u00020\u000e\u0012\b\b\u0003\u0010`\u001a\u00020\u000e\u0012\n\b\u0001\u0010a\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010b\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010c\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010d\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010e\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010f\u001a\u0004\u0018\u00010\u000e\u0012\b\b\u0003\u0010g\u001a\u00020\u000e\u0012\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0003\u0010i\u001a\u0004\u0018\u00010\u001a\u0012\b\b\u0003\u0010j\u001a\u00020\u001a\u0012\b\b\u0003\u0010k\u001a\u00020\u000e\u0012\b\b\u0002\u0010l\u001a\u00020\u000e\u0012\n\b\u0002\u0010m\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010n\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010o\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010p\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010q\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010r\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010s\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010t\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010u\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010v\u001a\u0004\u0018\u00010\u000e\u0012\b\b\u0002\u0010w\u001a\u00020\u0007\u0012\n\b\u0003\u0010x\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010y\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010z\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010{\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010|\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010}\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010~\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010\u007f\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0086\u0001\u001a\u0004\u0018\u00010;\u0012\u000b\b\u0003\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u0011\b\u0003\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H\u0012\u000b\b\u0003\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000f\b\u0003\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H\u0012\u000b\b\u0003\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u009c\u0001\u001a\u0004\u0018\u00010U\u0012\u000b\b\u0003\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u0011\b\u0003\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H\u0012\u000b\b\u0002\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u0007\u0012\t\b\u0002\u0010 \u0001\u001a\u00020\u0007\u0012\t\b\u0002\u0010¡\u0001\u001a\u00020\u0007¢\u0006\u0006\b¨\u0002\u0010©\u0002J\u0010\u0010\u0006\u001a\u00020\u00052\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003J\u0006\u0010\b\u001a\u00020\u0007J\u0006\u0010\t\u001a\u00020\u0007J\u0006\u0010\n\u001a\u00020\u0007J\u0010\u0010\r\u001a\u00020\u00072\b\u0010\f\u001a\u0004\u0018\u00010\u000bJ\t\u0010\u000f\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0011\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0012\u001a\u00020\u000eH\u00c6\u0003J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u000eH\u00c6\u0003J\u0012\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u00c6\u0003¢\u0006\u0004\b\u001b\u0010\u001cJ\u0012\u0010\u001d\u001a\u0004\u0018\u00010\u001aH\u00c6\u0003¢\u0006\u0004\b\u001d\u0010\u001cJ\t\u0010\u001e\u001a\u00020\u001aH\u00c6\u0003J\t\u0010\u001f\u001a\u00020\u000eH\u00c6\u0003J\t\u0010 \u001a\u00020\u000eH\u00c6\u0003J\u0012\u0010!\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b!\u0010\"J\u0012\u0010#\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b#\u0010\"J\u000b\u0010$\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010%\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b%\u0010\"J\u0012\u0010&\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b&\u0010\"J\u0012\u0010'\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b'\u0010\"J\u000b\u0010(\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010)\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\t\u0010,\u001a\u00020\u0007H\u00c6\u0003J\u000b\u0010-\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010.\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b.\u0010\"J\u0012\u0010/\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b/\u0010\"J\u0012\u00100\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b0\u0010\"J\u0012\u00101\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b1\u0010\"J\u0012\u00102\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b2\u0010\"J\u0012\u00103\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b3\u0010\"J\u0012\u00104\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b4\u0010\"J\u0012\u00105\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b5\u0010\"J\u0012\u00106\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b6\u0010\"J\u0012\u00107\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b7\u0010\"J\u0012\u00108\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b8\u0010\"J\u0012\u00109\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b9\u0010\"J\u0012\u0010:\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b:\u0010\"J\u000b\u0010<\u001a\u0004\u0018\u00010;H\u00c6\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010?\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010@\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010A\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bA\u0010\"J\u0012\u0010B\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bB\u0010\"J\u0012\u0010C\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bC\u0010\"J\u000b\u0010D\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010E\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010F\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010G\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0011\u0010J\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010HH\u00c6\u0003J\u0012\u0010K\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bK\u0010\"J\u0012\u0010L\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bL\u0010\"J\u000b\u0010M\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010N\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010O\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bO\u0010\"J\u0012\u0010P\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bP\u0010\"J\u000f\u0010R\u001a\b\u0012\u0004\u0012\u00020Q0HH\u00c6\u0003J\u000b\u0010S\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010T\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010V\u001a\u0004\u0018\u00010UH\u00c6\u0003J\u0012\u0010W\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bW\u0010\"J\u0011\u0010Y\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010HH\u00c6\u0003J\u0012\u0010Z\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bZ\u0010\"J\t\u0010[\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\\\u001a\u00020\u0007H\u00c6\u0003J\u00eb\u0006\u0010¢\u0001\u001a\u00020\u00002\b\b\u0003\u0010]\u001a\u00020\u000e2\b\b\u0003\u0010^\u001a\u00020\u000e2\b\b\u0003\u0010_\u001a\u00020\u000e2\b\b\u0003\u0010`\u001a\u00020\u000e2\n\b\u0003\u0010a\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010b\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010c\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010d\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010e\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010f\u001a\u0004\u0018\u00010\u000e2\b\b\u0003\u0010g\u001a\u00020\u000e2\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u001a2\n\b\u0003\u0010i\u001a\u0004\u0018\u00010\u001a2\b\b\u0003\u0010j\u001a\u00020\u001a2\b\b\u0003\u0010k\u001a\u00020\u000e2\b\b\u0002\u0010l\u001a\u00020\u000e2\n\b\u0002\u0010m\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010n\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010o\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010p\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010q\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010r\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010s\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010t\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010u\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010v\u001a\u0004\u0018\u00010\u000e2\b\b\u0002\u0010w\u001a\u00020\u00072\n\b\u0003\u0010x\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010y\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010z\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010{\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010|\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010}\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010~\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010\u007f\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0086\u0001\u001a\u0004\u0018\u00010;2\u000b\b\u0003\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e2\u0011\b\u0003\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H2\u000b\b\u0003\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u00072\u000f\b\u0003\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H2\u000b\b\u0003\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u009c\u0001\u001a\u0004\u0018\u00010U2\u000b\b\u0003\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u00072\u0011\b\u0003\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H2\u000b\b\u0002\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u00072\t\b\u0002\u0010 \u0001\u001a\u00020\u00072\t\b\u0002\u0010¡\u0001\u001a\u00020\u0007H\u00c6\u0001¢\u0006\u0006\b¢\u0001\u0010£\u0001J\n\u0010¤\u0001\u001a\u00020\u000eH\u00d6\u0001J\u000b\u0010¦\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u0016\u0010©\u0001\u001a\u00020\u00072\n\u0010¨\u0001\u001a\u0005\u0018\u00010§\u0001H\u00d6\u0003J\u000b\u0010ª\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u001f\u0010¯\u0001\u001a\u00030®\u00012\b\u0010¬\u0001\u001a\u00030«\u00012\b\u0010\u00ad\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u001d\u0010²\u0001\u001a\u00030±\u00012\u0007\u0010°\u0001\u001a\u00020\u00072\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003H\u0002R\u001a\u0010]\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b]\u0010³\u0001\u001a\u0006\b´\u0001\u0010µ\u0001R\u001d\u0010^\u001a\u00020\u000e8\u0016X\u0096\u0004¢\u0006\u000f\n\u0005\b^\u0010³\u0001\u001a\u0006\b¶\u0001\u0010µ\u0001R\u001a\u0010_\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b_\u0010³\u0001\u001a\u0006\b·\u0001\u0010µ\u0001R\u001a\u0010`\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b`\u0010³\u0001\u001a\u0006\b¸\u0001\u0010µ\u0001R\u001c\u0010a\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\ba\u0010³\u0001\u001a\u0006\b¹\u0001\u0010µ\u0001R\u001c\u0010b\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bb\u0010³\u0001\u001a\u0006\bº\u0001\u0010µ\u0001R\u001c\u0010c\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bc\u0010³\u0001\u001a\u0006\b»\u0001\u0010µ\u0001R\u001c\u0010d\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bd\u0010³\u0001\u001a\u0006\b¼\u0001\u0010µ\u0001R\u001c\u0010e\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\be\u0010³\u0001\u001a\u0006\b½\u0001\u0010µ\u0001R\u001c\u0010f\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bf\u0010³\u0001\u001a\u0006\b¾\u0001\u0010µ\u0001R\u001a\u0010g\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bg\u0010³\u0001\u001a\u0006\b¿\u0001\u0010µ\u0001R\u001b\u0010h\u001a\u0004\u0018\u00010\u001a8\u0006¢\u0006\u000e\n\u0005\bh\u0010\u00c0\u0001\u001a\u0005\b\u00c1\u0001\u0010\u001cR\u001b\u0010i\u001a\u0004\u0018\u00010\u001a8\u0006¢\u0006\u000e\n\u0005\bi\u0010\u00c0\u0001\u001a\u0005\b\u00c2\u0001\u0010\u001cR\u001a\u0010j\u001a\u00020\u001a8\u0006¢\u0006\u000f\n\u0005\bj\u0010\u00c3\u0001\u001a\u0006\b\u00c4\u0001\u0010\u00c5\u0001R\u001a\u0010k\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bk\u0010³\u0001\u001a\u0006\b\u00c6\u0001\u0010µ\u0001R\u001a\u0010l\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bl\u0010³\u0001\u001a\u0006\b\u00c7\u0001\u0010µ\u0001R\u001b\u0010m\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bm\u0010\u00c8\u0001\u001a\u0005\b\u00c9\u0001\u0010\"R\u001b\u0010n\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bn\u0010\u00c8\u0001\u001a\u0005\b\u00ca\u0001\u0010\"R\u001c\u0010o\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bo\u0010³\u0001\u001a\u0006\b\u00cb\u0001\u0010µ\u0001R&\u0010p\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0016\n\u0005\bp\u0010\u00c8\u0001\u0012\u0006\b\u00cd\u0001\u0010\u00ce\u0001\u001a\u0005\b\u00cc\u0001\u0010\"R\u001b\u0010q\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bq\u0010\u00c8\u0001\u001a\u0005\b\u00cf\u0001\u0010\"R\u001b\u0010r\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\br\u0010\u00c8\u0001\u001a\u0005\b\u00d0\u0001\u0010\"R\u001c\u0010s\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bs\u0010³\u0001\u001a\u0006\b\u00d1\u0001\u0010µ\u0001R\u001c\u0010t\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bt\u0010³\u0001\u001a\u0006\b\u00d2\u0001\u0010µ\u0001R\u001c\u0010u\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bu\u0010³\u0001\u001a\u0006\b\u00d3\u0001\u0010µ\u0001R\u001c\u0010v\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bv\u0010³\u0001\u001a\u0006\b\u00d4\u0001\u0010µ\u0001R\u001a\u0010w\u001a\u00020\u00078\u0006¢\u0006\u000f\n\u0005\bw\u0010\u00d5\u0001\u001a\u0006\b\u00d6\u0001\u0010\u00d7\u0001R\u001c\u0010x\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bx\u0010³\u0001\u001a\u0006\b\u00d8\u0001\u0010µ\u0001R\u001b\u0010y\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\by\u0010\u00c8\u0001\u001a\u0005\b\u00d9\u0001\u0010\"R\u001b\u0010z\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bz\u0010\u00c8\u0001\u001a\u0005\b\u00da\u0001\u0010\"R\u001b\u0010{\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b{\u0010\u00c8\u0001\u001a\u0005\b\u00db\u0001\u0010\"R\u001b\u0010|\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b|\u0010\u00c8\u0001\u001a\u0005\b\u00dc\u0001\u0010\"R\u001a\u0010}\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\r\n\u0005\b}\u0010\u00c8\u0001\u001a\u0004\b}\u0010\"R\u001b\u0010~\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b~\u0010\u00c8\u0001\u001a\u0005\b\u00dd\u0001\u0010\"R\u001b\u0010\u007f\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b\u007f\u0010\u00c8\u0001\u001a\u0005\b\u00de\u0001\u0010\"R\u001d\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0080\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00df\u0001\u0010\"R*\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0081\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e0\u0001\u0010\"\"\u0006\b\u00e1\u0001\u0010\u00e2\u0001R*\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0082\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e3\u0001\u0010\"\"\u0006\b\u00e4\u0001\u0010\u00e2\u0001R*\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0083\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e5\u0001\u0010\"\"\u0006\b\u00e6\u0001\u0010\u00e2\u0001R*\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0084\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e7\u0001\u0010\"\"\u0006\b\u00e8\u0001\u0010\u00e2\u0001R*\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0085\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e9\u0001\u0010\"\"\u0006\b\u00ea\u0001\u0010\u00e2\u0001R\u001e\u0010\u0086\u0001\u001a\u0004\u0018\u00010;8\u0006¢\u0006\u0010\n\u0006\b\u0086\u0001\u0010\u00eb\u0001\u001a\u0006\b\u00ec\u0001\u0010\u00ed\u0001R\u001e\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0087\u0001\u0010³\u0001\u001a\u0006\b\u00ee\u0001\u0010µ\u0001R\u001e\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0088\u0001\u0010³\u0001\u001a\u0006\b\u00ef\u0001\u0010µ\u0001R\u001e\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0089\u0001\u0010³\u0001\u001a\u0006\b\u00f0\u0001\u0010µ\u0001R\u001e\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008a\u0001\u0010³\u0001\u001a\u0006\b\u00f1\u0001\u0010µ\u0001R\u001d\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008b\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f2\u0001\u0010\"R\u001d\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008c\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f3\u0001\u0010\"R\u001d\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008d\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f4\u0001\u0010\"R\u001e\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008e\u0001\u0010³\u0001\u001a\u0006\b\u00f5\u0001\u0010µ\u0001R\u001e\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008f\u0001\u0010³\u0001\u001a\u0006\b\u00f6\u0001\u0010µ\u0001R\u001e\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0090\u0001\u0010³\u0001\u001a\u0006\b\u00f7\u0001\u0010µ\u0001R\u001e\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0091\u0001\u0010³\u0001\u001a\u0006\b\u00f8\u0001\u0010µ\u0001R1\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u0092\u0001\u0010\u00f9\u0001\u001a\u0006\b\u00fa\u0001\u0010\u00fb\u0001\"\u0006\b\u00fc\u0001\u0010\u00fd\u0001R\u001d\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0093\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00fe\u0001\u0010\"R\u001d\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0094\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00ff\u0001\u0010\"R\u001e\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0095\u0001\u0010³\u0001\u001a\u0006\b\u0080\u0002\u0010µ\u0001R\u001e\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0096\u0001\u0010³\u0001\u001a\u0006\b\u0081\u0002\u0010µ\u0001R\u001d\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0097\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0082\u0002\u0010\"R\u001d\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0098\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0098\u0001\u0010\"R\"\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H8\u0006¢\u0006\u0010\n\u0006\b\u0099\u0001\u0010\u00f9\u0001\u001a\u0006\b\u0083\u0002\u0010\u00fb\u0001R\u001e\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u009a\u0001\u0010³\u0001\u001a\u0006\b\u0084\u0002\u0010µ\u0001R\u001e\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u009b\u0001\u0010³\u0001\u001a\u0006\b\u0085\u0002\u0010µ\u0001R\u001e\u0010\u009c\u0001\u001a\u0004\u0018\u00010U8\u0006¢\u0006\u0010\n\u0006\b\u009c\u0001\u0010\u0086\u0002\u001a\u0006\b\u0087\u0002\u0010\u0088\u0002R\u001d\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u009d\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0089\u0002\u0010\"R1\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u009e\u0001\u0010\u00f9\u0001\u001a\u0006\b\u008a\u0002\u0010\u00fb\u0001\"\u0006\b\u008b\u0002\u0010\u00fd\u0001R\u001d\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u009f\u0001\u0010\u00c8\u0001\u001a\u0005\b\u009f\u0001\u0010\"R\u001c\u0010 \u0001\u001a\u00020\u00078\u0006¢\u0006\u0010\n\u0006\b \u0001\u0010\u00d5\u0001\u001a\u0006\b \u0001\u0010\u00d7\u0001R\u001c\u0010¡\u0001\u001a\u00020\u00078\u0006¢\u0006\u0010\n\u0006\b¡\u0001\u0010\u00d5\u0001\u001a\u0006\b¡\u0001\u0010\u00d7\u0001R4\u0010\u008d\u0002\u001a\u0005\u0018\u00010\u008c\u00028\u0006@\u0006X\u0086\u000e¢\u0006 \n\u0006\b\u008d\u0002\u0010\u008e\u0002\u0012\u0006\b\u0093\u0002\u0010\u00ce\u0001\u001a\u0006\b\u008f\u0002\u0010\u0090\u0002\"\u0006\b\u0091\u0002\u0010\u0092\u0002R\u0014\u0010\u0094\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0094\u0002\u0010\u00d7\u0001R\u0014\u0010\u0095\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0095\u0002\u0010\u00d7\u0001R\u0014\u0010\u0096\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0096\u0002\u0010\u00d7\u0001R\u0014\u0010\u0097\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0097\u0002\u0010\u00d7\u0001R\u0014\u0010\u0098\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0098\u0002\u0010\u00d7\u0001R\u0014\u0010\u0099\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0099\u0002\u0010\u00d7\u0001R\u0014\u0010\u009a\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u009a\u0002\u0010\u00d7\u0001R\u0014\u0010\u009b\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u009b\u0002\u0010\u00d7\u0001R\u0016\u0010\u009d\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b\u009c\u0002\u0010µ\u0001R\u0016\u0010\u009f\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b\u009e\u0002\u0010µ\u0001R\u0016\u0010¡\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b \u0002\u0010µ\u0001R\u0016\u0010£\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b¢\u0002\u0010µ\u0001R\u0016\u0010¥\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b¤\u0002\u0010µ\u0001R\u0014\u0010§\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b¦\u0002\u0010\u00d7\u0001¨\u0006«\u0002" }, d2 = { "Lcom/reddit/domain/model/Subreddit;", "Lcom/reddit/domain/model/RedditModel;", "Landroid/os/Parcelable;", "Lbd0/m;", "powerupsStatus", "Lcom/reddit/domain/model/PostPermissions;", "getPostPermissions", "", "hasDescriptionInfo", "hasPredictionsLeaderboardEntryInFeedUnit", "hasPredictionsLeaderboardEntryInSubredditHeader", "Lcom/reddit/session/n;", "account", "canUserPost", "", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "", "component12", "()Ljava/lang/Long;", "component13", "component14", "component15", "component16", "component17", "()Ljava/lang/Boolean;", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component40", "component41", "Lcom/reddit/notification/common/NotificationLevel;", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component50", "component51", "component52", "component53", "", "Lcom/reddit/domain/model/FlairRichTextItem;", "component54", "component55", "component56", "component57", "component58", "component59", "component60", "Lcom/reddit/domain/model/Rule;", "component61", "component62", "component63", "Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "component64", "component65", "Lcom/reddit/domain/model/media/MediaInCommentType;", "component66", "component67", "component68", "component69", "id", "kindWithId", "displayName", "displayNamePrefixed", "iconImg", "keyColor", "bannerImg", "title", "description", "descriptionRtJson", "publicDescription", "subscribers", "accountsActive", "createdUtc", "subredditType", "url", "over18", "wikiEnabled", "whitelistStatus", "newModMailEnabled", "restrictPosting", "quarantined", "quarantineMessage", "quarantineMessageRtJson", "interstitialWarningMessage", "interstitialWarningMessageRtJson", "hasBeenVisited", "submitType", "allowImages", "allowVideos", "allowGifs", "allowChatPostCreation", "isChatPostFeatureEnabled", "spoilersEnabled", "allowPolls", "allowPredictions", "userIsBanned", "userIsContributor", "userIsModerator", "userIsSubscriber", "userHasFavorited", "notificationLevel", "primaryColorKey", "communityIconUrl", "bannerBackgroundImageUrl", "mobileBannerImageUrl", "userFlairEnabled", "canAssignUserFlair", "userSubredditFlairEnabled", "userFlairTemplateId", "userFlairBackgroundColor", "userFlairTextColor", "userFlairText", "user_flair_richtext", "postFlairEnabled", "canAssignLinkFlair", "contentCategory", "predictionLeaderboardEntryType", "allowPredictionsTournament", "isUserBanned", "rules", "countrySiteCountry", "countrySiteLanguage", "subredditCountrySiteSettings", "shouldShowMediaInCommentsSetting", "allowedMediaInComments", "isTitleSafe", "isMyReddit", "isMuted", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;JLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/reddit/notification/common/NotificationLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/SubredditCountrySiteSettings;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/Boolean;ZZ)Lcom/reddit/domain/model/Subreddit;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lhg2/j;", "writeToParcel", "linksEnabled", "Lcom/reddit/domain/model/PostPermission;", "getPostVideoPermission", "Ljava/lang/String;", "getId", "()Ljava/lang/String;", "getKindWithId", "getDisplayName", "getDisplayNamePrefixed", "getIconImg", "getKeyColor", "getBannerImg", "getTitle", "getDescription", "getDescriptionRtJson", "getPublicDescription", "Ljava/lang/Long;", "getSubscribers", "getAccountsActive", "J", "getCreatedUtc", "()J", "getSubredditType", "getUrl", "Ljava/lang/Boolean;", "getOver18", "getWikiEnabled", "getWhitelistStatus", "getNewModMailEnabled", "getNewModMailEnabled$annotations", "()V", "getRestrictPosting", "getQuarantined", "getQuarantineMessage", "getQuarantineMessageRtJson", "getInterstitialWarningMessage", "getInterstitialWarningMessageRtJson", "Z", "getHasBeenVisited", "()Z", "getSubmitType", "getAllowImages", "getAllowVideos", "getAllowGifs", "getAllowChatPostCreation", "getSpoilersEnabled", "getAllowPolls", "getAllowPredictions", "getUserIsBanned", "setUserIsBanned", "(Ljava/lang/Boolean;)V", "getUserIsContributor", "setUserIsContributor", "getUserIsModerator", "setUserIsModerator", "getUserIsSubscriber", "setUserIsSubscriber", "getUserHasFavorited", "setUserHasFavorited", "Lcom/reddit/notification/common/NotificationLevel;", "getNotificationLevel", "()Lcom/reddit/notification/common/NotificationLevel;", "getPrimaryColorKey", "getCommunityIconUrl", "getBannerBackgroundImageUrl", "getMobileBannerImageUrl", "getUserFlairEnabled", "getCanAssignUserFlair", "getUserSubredditFlairEnabled", "getUserFlairTemplateId", "getUserFlairBackgroundColor", "getUserFlairTextColor", "getUserFlairText", "Ljava/util/List;", "getUser_flair_richtext", "()Ljava/util/List;", "setUser_flair_richtext", "(Ljava/util/List;)V", "getPostFlairEnabled", "getCanAssignLinkFlair", "getContentCategory", "getPredictionLeaderboardEntryType", "getAllowPredictionsTournament", "getRules", "getCountrySiteCountry", "getCountrySiteLanguage", "Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "getSubredditCountrySiteSettings", "()Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "getShouldShowMediaInCommentsSetting", "getAllowedMediaInComments", "setAllowedMediaInComments", "Lcom/reddit/structuredstyles/model/StructuredStyle;", "structuredStyle", "Lcom/reddit/structuredstyles/model/StructuredStyle;", "getStructuredStyle", "()Lcom/reddit/structuredstyles/model/StructuredStyle;", "setStructuredStyle", "(Lcom/reddit/structuredstyles/model/StructuredStyle;)V", "getStructuredStyle$annotations", "isUser", "isPublic", "isPrivate", "isPremium", "isGoldRestricted", "isRestricted", "isArchived", "isEmployeeOnly", "getPrimaryColor", "primaryColor", "getSecondaryColor", "secondaryColor", "getCommunityIcon", "communityIcon", "getBannerBackgroundImage", "bannerBackgroundImage", "getBannerBackgroundColor", "bannerBackgroundColor", "getHasRules", "hasRules", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;JLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/reddit/notification/common/NotificationLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/SubredditCountrySiteSettings;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/Boolean;ZZ)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\u0092\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010\t\n\u0002\b \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\bL\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\bZ\n\u0002\u0018\u0002\n\u0002\b\u001f\b\u0087\b\u0018\u0000 ª\u00022\u00020\u00012\u00020\u0002:\u0002ª\u0002B\u00e1\u0006\u0012\b\b\u0003\u0010]\u001a\u00020\u000e\u0012\b\b\u0003\u0010^\u001a\u00020\u000e\u0012\b\b\u0003\u0010_\u001a\u00020\u000e\u0012\b\b\u0003\u0010`\u001a\u00020\u000e\u0012\n\b\u0001\u0010a\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010b\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010c\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010d\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010e\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010f\u001a\u0004\u0018\u00010\u000e\u0012\b\b\u0003\u0010g\u001a\u00020\u000e\u0012\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0003\u0010i\u001a\u0004\u0018\u00010\u001a\u0012\b\b\u0003\u0010j\u001a\u00020\u001a\u0012\b\b\u0003\u0010k\u001a\u00020\u000e\u0012\b\b\u0002\u0010l\u001a\u00020\u000e\u0012\n\b\u0002\u0010m\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010n\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010o\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010p\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010q\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010r\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010s\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010t\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010u\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010v\u001a\u0004\u0018\u00010\u000e\u0012\b\b\u0002\u0010w\u001a\u00020\u0007\u0012\n\b\u0003\u0010x\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0003\u0010y\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010z\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010{\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010|\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010}\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010~\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0003\u0010\u007f\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0086\u0001\u001a\u0004\u0018\u00010;\u0012\u000b\b\u0003\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u0011\b\u0003\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H\u0012\u000b\b\u0003\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000b\b\u0003\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u000f\b\u0003\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H\u0012\u000b\b\u0003\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e\u0012\u000b\b\u0003\u0010\u009c\u0001\u001a\u0004\u0018\u00010U\u0012\u000b\b\u0003\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u0007\u0012\u0011\b\u0003\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H\u0012\u000b\b\u0002\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u0007\u0012\t\b\u0002\u0010 \u0001\u001a\u00020\u0007\u0012\t\b\u0002\u0010¡\u0001\u001a\u00020\u0007¢\u0006\u0006\b¨\u0002\u0010©\u0002J\u0010\u0010\u0006\u001a\u00020\u00052\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003J\u0006\u0010\b\u001a\u00020\u0007J\u0006\u0010\t\u001a\u00020\u0007J\u0006\u0010\n\u001a\u00020\u0007J\u0010\u0010\r\u001a\u00020\u00072\b\u0010\f\u001a\u0004\u0018\u00010\u000bJ\t\u0010\u000f\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0011\u001a\u00020\u000eH\u00c6\u0003J\t\u0010\u0012\u001a\u00020\u000eH\u00c6\u0003J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u000eH\u00c6\u0003J\u0012\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u00c6\u0003¢\u0006\u0004\b\u001b\u0010\u001cJ\u0012\u0010\u001d\u001a\u0004\u0018\u00010\u001aH\u00c6\u0003¢\u0006\u0004\b\u001d\u0010\u001cJ\t\u0010\u001e\u001a\u00020\u001aH\u00c6\u0003J\t\u0010\u001f\u001a\u00020\u000eH\u00c6\u0003J\t\u0010 \u001a\u00020\u000eH\u00c6\u0003J\u0012\u0010!\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b!\u0010\"J\u0012\u0010#\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b#\u0010\"J\u000b\u0010$\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010%\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b%\u0010\"J\u0012\u0010&\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b&\u0010\"J\u0012\u0010'\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b'\u0010\"J\u000b\u0010(\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010)\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\t\u0010,\u001a\u00020\u0007H\u00c6\u0003J\u000b\u0010-\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010.\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b.\u0010\"J\u0012\u0010/\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b/\u0010\"J\u0012\u00100\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b0\u0010\"J\u0012\u00101\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b1\u0010\"J\u0012\u00102\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b2\u0010\"J\u0012\u00103\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b3\u0010\"J\u0012\u00104\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b4\u0010\"J\u0012\u00105\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b5\u0010\"J\u0012\u00106\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b6\u0010\"J\u0012\u00107\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b7\u0010\"J\u0012\u00108\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b8\u0010\"J\u0012\u00109\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b9\u0010\"J\u0012\u0010:\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\b:\u0010\"J\u000b\u0010<\u001a\u0004\u0018\u00010;H\u00c6\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010?\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010@\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010A\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bA\u0010\"J\u0012\u0010B\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bB\u0010\"J\u0012\u0010C\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bC\u0010\"J\u000b\u0010D\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010E\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010F\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010G\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0011\u0010J\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010HH\u00c6\u0003J\u0012\u0010K\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bK\u0010\"J\u0012\u0010L\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bL\u0010\"J\u000b\u0010M\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010N\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u0012\u0010O\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bO\u0010\"J\u0012\u0010P\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bP\u0010\"J\u000f\u0010R\u001a\b\u0012\u0004\u0012\u00020Q0HH\u00c6\u0003J\u000b\u0010S\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010T\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000b\u0010V\u001a\u0004\u0018\u00010UH\u00c6\u0003J\u0012\u0010W\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bW\u0010\"J\u0011\u0010Y\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010HH\u00c6\u0003J\u0012\u0010Z\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003¢\u0006\u0004\bZ\u0010\"J\t\u0010[\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\\\u001a\u00020\u0007H\u00c6\u0003J\u00eb\u0006\u0010¢\u0001\u001a\u00020\u00002\b\b\u0003\u0010]\u001a\u00020\u000e2\b\b\u0003\u0010^\u001a\u00020\u000e2\b\b\u0003\u0010_\u001a\u00020\u000e2\b\b\u0003\u0010`\u001a\u00020\u000e2\n\b\u0003\u0010a\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010b\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010c\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010d\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010e\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010f\u001a\u0004\u0018\u00010\u000e2\b\b\u0003\u0010g\u001a\u00020\u000e2\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u001a2\n\b\u0003\u0010i\u001a\u0004\u0018\u00010\u001a2\b\b\u0003\u0010j\u001a\u00020\u001a2\b\b\u0003\u0010k\u001a\u00020\u000e2\b\b\u0002\u0010l\u001a\u00020\u000e2\n\b\u0002\u0010m\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010n\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010o\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010p\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010q\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010r\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010s\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010t\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010u\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010v\u001a\u0004\u0018\u00010\u000e2\b\b\u0002\u0010w\u001a\u00020\u00072\n\b\u0003\u0010x\u001a\u0004\u0018\u00010\u000e2\n\b\u0003\u0010y\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010z\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010{\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010|\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010}\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010~\u001a\u0004\u0018\u00010\u00072\n\b\u0003\u0010\u007f\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0086\u0001\u001a\u0004\u0018\u00010;2\u000b\b\u0003\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e2\u0011\b\u0003\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H2\u000b\b\u0003\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u00072\u000b\b\u0003\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u00072\u000f\b\u0003\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H2\u000b\b\u0003\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e2\u000b\b\u0003\u0010\u009c\u0001\u001a\u0004\u0018\u00010U2\u000b\b\u0003\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u00072\u0011\b\u0003\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H2\u000b\b\u0002\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u00072\t\b\u0002\u0010 \u0001\u001a\u00020\u00072\t\b\u0002\u0010¡\u0001\u001a\u00020\u0007H\u00c6\u0001¢\u0006\u0006\b¢\u0001\u0010£\u0001J\n\u0010¤\u0001\u001a\u00020\u000eH\u00d6\u0001J\u000b\u0010¦\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u0016\u0010©\u0001\u001a\u00020\u00072\n\u0010¨\u0001\u001a\u0005\u0018\u00010§\u0001H\u00d6\u0003J\u000b\u0010ª\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u001f\u0010¯\u0001\u001a\u00030®\u00012\b\u0010¬\u0001\u001a\u00030«\u00012\b\u0010\u00ad\u0001\u001a\u00030¥\u0001H\u00d6\u0001J\u001d\u0010²\u0001\u001a\u00030±\u00012\u0007\u0010°\u0001\u001a\u00020\u00072\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003H\u0002R\u001a\u0010]\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b]\u0010³\u0001\u001a\u0006\b´\u0001\u0010µ\u0001R\u001d\u0010^\u001a\u00020\u000e8\u0016X\u0096\u0004¢\u0006\u000f\n\u0005\b^\u0010³\u0001\u001a\u0006\b¶\u0001\u0010µ\u0001R\u001a\u0010_\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b_\u0010³\u0001\u001a\u0006\b·\u0001\u0010µ\u0001R\u001a\u0010`\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\b`\u0010³\u0001\u001a\u0006\b¸\u0001\u0010µ\u0001R\u001c\u0010a\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\ba\u0010³\u0001\u001a\u0006\b¹\u0001\u0010µ\u0001R\u001c\u0010b\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bb\u0010³\u0001\u001a\u0006\bº\u0001\u0010µ\u0001R\u001c\u0010c\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bc\u0010³\u0001\u001a\u0006\b»\u0001\u0010µ\u0001R\u001c\u0010d\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bd\u0010³\u0001\u001a\u0006\b¼\u0001\u0010µ\u0001R\u001c\u0010e\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\be\u0010³\u0001\u001a\u0006\b½\u0001\u0010µ\u0001R\u001c\u0010f\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bf\u0010³\u0001\u001a\u0006\b¾\u0001\u0010µ\u0001R\u001a\u0010g\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bg\u0010³\u0001\u001a\u0006\b¿\u0001\u0010µ\u0001R\u001b\u0010h\u001a\u0004\u0018\u00010\u001a8\u0006¢\u0006\u000e\n\u0005\bh\u0010\u00c0\u0001\u001a\u0005\b\u00c1\u0001\u0010\u001cR\u001b\u0010i\u001a\u0004\u0018\u00010\u001a8\u0006¢\u0006\u000e\n\u0005\bi\u0010\u00c0\u0001\u001a\u0005\b\u00c2\u0001\u0010\u001cR\u001a\u0010j\u001a\u00020\u001a8\u0006¢\u0006\u000f\n\u0005\bj\u0010\u00c3\u0001\u001a\u0006\b\u00c4\u0001\u0010\u00c5\u0001R\u001a\u0010k\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bk\u0010³\u0001\u001a\u0006\b\u00c6\u0001\u0010µ\u0001R\u001a\u0010l\u001a\u00020\u000e8\u0006¢\u0006\u000f\n\u0005\bl\u0010³\u0001\u001a\u0006\b\u00c7\u0001\u0010µ\u0001R\u001b\u0010m\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bm\u0010\u00c8\u0001\u001a\u0005\b\u00c9\u0001\u0010\"R\u001b\u0010n\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bn\u0010\u00c8\u0001\u001a\u0005\b\u00ca\u0001\u0010\"R\u001c\u0010o\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bo\u0010³\u0001\u001a\u0006\b\u00cb\u0001\u0010µ\u0001R&\u0010p\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0016\n\u0005\bp\u0010\u00c8\u0001\u0012\u0006\b\u00cd\u0001\u0010\u00ce\u0001\u001a\u0005\b\u00cc\u0001\u0010\"R\u001b\u0010q\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bq\u0010\u00c8\u0001\u001a\u0005\b\u00cf\u0001\u0010\"R\u001b\u0010r\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\br\u0010\u00c8\u0001\u001a\u0005\b\u00d0\u0001\u0010\"R\u001c\u0010s\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bs\u0010³\u0001\u001a\u0006\b\u00d1\u0001\u0010µ\u0001R\u001c\u0010t\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bt\u0010³\u0001\u001a\u0006\b\u00d2\u0001\u0010µ\u0001R\u001c\u0010u\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bu\u0010³\u0001\u001a\u0006\b\u00d3\u0001\u0010µ\u0001R\u001c\u0010v\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bv\u0010³\u0001\u001a\u0006\b\u00d4\u0001\u0010µ\u0001R\u001a\u0010w\u001a\u00020\u00078\u0006¢\u0006\u000f\n\u0005\bw\u0010\u00d5\u0001\u001a\u0006\b\u00d6\u0001\u0010\u00d7\u0001R\u001c\u0010x\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u000f\n\u0005\bx\u0010³\u0001\u001a\u0006\b\u00d8\u0001\u0010µ\u0001R\u001b\u0010y\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\by\u0010\u00c8\u0001\u001a\u0005\b\u00d9\u0001\u0010\"R\u001b\u0010z\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\bz\u0010\u00c8\u0001\u001a\u0005\b\u00da\u0001\u0010\"R\u001b\u0010{\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b{\u0010\u00c8\u0001\u001a\u0005\b\u00db\u0001\u0010\"R\u001b\u0010|\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b|\u0010\u00c8\u0001\u001a\u0005\b\u00dc\u0001\u0010\"R\u001a\u0010}\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\r\n\u0005\b}\u0010\u00c8\u0001\u001a\u0004\b}\u0010\"R\u001b\u0010~\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b~\u0010\u00c8\u0001\u001a\u0005\b\u00dd\u0001\u0010\"R\u001b\u0010\u007f\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000e\n\u0005\b\u007f\u0010\u00c8\u0001\u001a\u0005\b\u00de\u0001\u0010\"R\u001d\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0080\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00df\u0001\u0010\"R*\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0081\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e0\u0001\u0010\"\"\u0006\b\u00e1\u0001\u0010\u00e2\u0001R*\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0082\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e3\u0001\u0010\"\"\u0006\b\u00e4\u0001\u0010\u00e2\u0001R*\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0083\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e5\u0001\u0010\"\"\u0006\b\u00e6\u0001\u0010\u00e2\u0001R*\u0010\u0084\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0084\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e7\u0001\u0010\"\"\u0006\b\u00e8\u0001\u0010\u00e2\u0001R*\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0086\u000e¢\u0006\u0017\n\u0006\b\u0085\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00e9\u0001\u0010\"\"\u0006\b\u00ea\u0001\u0010\u00e2\u0001R\u001e\u0010\u0086\u0001\u001a\u0004\u0018\u00010;8\u0006¢\u0006\u0010\n\u0006\b\u0086\u0001\u0010\u00eb\u0001\u001a\u0006\b\u00ec\u0001\u0010\u00ed\u0001R\u001e\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0087\u0001\u0010³\u0001\u001a\u0006\b\u00ee\u0001\u0010µ\u0001R\u001e\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0088\u0001\u0010³\u0001\u001a\u0006\b\u00ef\u0001\u0010µ\u0001R\u001e\u0010\u0089\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0089\u0001\u0010³\u0001\u001a\u0006\b\u00f0\u0001\u0010µ\u0001R\u001e\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008a\u0001\u0010³\u0001\u001a\u0006\b\u00f1\u0001\u0010µ\u0001R\u001d\u0010\u008b\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008b\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f2\u0001\u0010\"R\u001d\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008c\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f3\u0001\u0010\"R\u001d\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u008d\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00f4\u0001\u0010\"R\u001e\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008e\u0001\u0010³\u0001\u001a\u0006\b\u00f5\u0001\u0010µ\u0001R\u001e\u0010\u008f\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u008f\u0001\u0010³\u0001\u001a\u0006\b\u00f6\u0001\u0010µ\u0001R\u001e\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0090\u0001\u0010³\u0001\u001a\u0006\b\u00f7\u0001\u0010µ\u0001R\u001e\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0091\u0001\u0010³\u0001\u001a\u0006\b\u00f8\u0001\u0010µ\u0001R1\u0010\u0092\u0001\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010H8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u0092\u0001\u0010\u00f9\u0001\u001a\u0006\b\u00fa\u0001\u0010\u00fb\u0001\"\u0006\b\u00fc\u0001\u0010\u00fd\u0001R\u001d\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0093\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00fe\u0001\u0010\"R\u001d\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0094\u0001\u0010\u00c8\u0001\u001a\u0005\b\u00ff\u0001\u0010\"R\u001e\u0010\u0095\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0095\u0001\u0010³\u0001\u001a\u0006\b\u0080\u0002\u0010µ\u0001R\u001e\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u0096\u0001\u0010³\u0001\u001a\u0006\b\u0081\u0002\u0010µ\u0001R\u001d\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0097\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0082\u0002\u0010\"R\u001d\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u0098\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0098\u0001\u0010\"R\"\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020Q0H8\u0006¢\u0006\u0010\n\u0006\b\u0099\u0001\u0010\u00f9\u0001\u001a\u0006\b\u0083\u0002\u0010\u00fb\u0001R\u001e\u0010\u009a\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u009a\u0001\u0010³\u0001\u001a\u0006\b\u0084\u0002\u0010µ\u0001R\u001e\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u000e8\u0006¢\u0006\u0010\n\u0006\b\u009b\u0001\u0010³\u0001\u001a\u0006\b\u0085\u0002\u0010µ\u0001R\u001e\u0010\u009c\u0001\u001a\u0004\u0018\u00010U8\u0006¢\u0006\u0010\n\u0006\b\u009c\u0001\u0010\u0086\u0002\u001a\u0006\b\u0087\u0002\u0010\u0088\u0002R\u001d\u0010\u009d\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u009d\u0001\u0010\u00c8\u0001\u001a\u0005\b\u0089\u0002\u0010\"R1\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020X\u0018\u00010H8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u009e\u0001\u0010\u00f9\u0001\u001a\u0006\b\u008a\u0002\u0010\u00fb\u0001\"\u0006\b\u008b\u0002\u0010\u00fd\u0001R\u001d\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\u000f\n\u0006\b\u009f\u0001\u0010\u00c8\u0001\u001a\u0005\b\u009f\u0001\u0010\"R\u001c\u0010 \u0001\u001a\u00020\u00078\u0006¢\u0006\u0010\n\u0006\b \u0001\u0010\u00d5\u0001\u001a\u0006\b \u0001\u0010\u00d7\u0001R\u001c\u0010¡\u0001\u001a\u00020\u00078\u0006¢\u0006\u0010\n\u0006\b¡\u0001\u0010\u00d5\u0001\u001a\u0006\b¡\u0001\u0010\u00d7\u0001R4\u0010\u008d\u0002\u001a\u0005\u0018\u00010\u008c\u00028\u0006@\u0006X\u0086\u000e¢\u0006 \n\u0006\b\u008d\u0002\u0010\u008e\u0002\u0012\u0006\b\u0093\u0002\u0010\u00ce\u0001\u001a\u0006\b\u008f\u0002\u0010\u0090\u0002\"\u0006\b\u0091\u0002\u0010\u0092\u0002R\u0014\u0010\u0094\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0094\u0002\u0010\u00d7\u0001R\u0014\u0010\u0095\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0095\u0002\u0010\u00d7\u0001R\u0014\u0010\u0096\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0096\u0002\u0010\u00d7\u0001R\u0014\u0010\u0097\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0097\u0002\u0010\u00d7\u0001R\u0014\u0010\u0098\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0098\u0002\u0010\u00d7\u0001R\u0014\u0010\u0099\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u0099\u0002\u0010\u00d7\u0001R\u0014\u0010\u009a\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u009a\u0002\u0010\u00d7\u0001R\u0014\u0010\u009b\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b\u009b\u0002\u0010\u00d7\u0001R\u0016\u0010\u009d\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b\u009c\u0002\u0010µ\u0001R\u0016\u0010\u009f\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b\u009e\u0002\u0010µ\u0001R\u0016\u0010¡\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b \u0002\u0010µ\u0001R\u0016\u0010£\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b¢\u0002\u0010µ\u0001R\u0016\u0010¥\u0002\u001a\u0004\u0018\u00010\u000e8F¢\u0006\b\u001a\u0006\b¤\u0002\u0010µ\u0001R\u0014\u0010§\u0002\u001a\u00020\u00078F¢\u0006\b\u001a\u0006\b¦\u0002\u0010\u00d7\u0001¨\u0006«\u0002" }, d2 = { "Lcom/reddit/domain/model/Subreddit;", "Lcom/reddit/domain/model/RedditModel;", "Landroid/os/Parcelable;", "Lbd0/l;", "powerupsStatus", "Lcom/reddit/domain/model/PostPermissions;", "getPostPermissions", "", "hasDescriptionInfo", "hasPredictionsLeaderboardEntryInFeedUnit", "hasPredictionsLeaderboardEntryInSubredditHeader", "Lcom/reddit/session/m;", "account", "canUserPost", "", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "", "component12", "()Ljava/lang/Long;", "component13", "component14", "component15", "component16", "component17", "()Ljava/lang/Boolean;", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component40", "component41", "Lcom/reddit/notification/common/NotificationLevel;", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component50", "component51", "component52", "component53", "", "Lcom/reddit/domain/model/FlairRichTextItem;", "component54", "component55", "component56", "component57", "component58", "component59", "component60", "Lcom/reddit/domain/model/Rule;", "component61", "component62", "component63", "Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "component64", "component65", "Lcom/reddit/domain/model/media/MediaInCommentType;", "component66", "component67", "component68", "component69", "id", "kindWithId", "displayName", "displayNamePrefixed", "iconImg", "keyColor", "bannerImg", "title", "description", "descriptionRtJson", "publicDescription", "subscribers", "accountsActive", "createdUtc", "subredditType", "url", "over18", "wikiEnabled", "whitelistStatus", "newModMailEnabled", "restrictPosting", "quarantined", "quarantineMessage", "quarantineMessageRtJson", "interstitialWarningMessage", "interstitialWarningMessageRtJson", "hasBeenVisited", "submitType", "allowImages", "allowVideos", "allowGifs", "allowChatPostCreation", "isChatPostFeatureEnabled", "spoilersEnabled", "allowPolls", "allowPredictions", "userIsBanned", "userIsContributor", "userIsModerator", "userIsSubscriber", "userHasFavorited", "notificationLevel", "primaryColorKey", "communityIconUrl", "bannerBackgroundImageUrl", "mobileBannerImageUrl", "userFlairEnabled", "canAssignUserFlair", "userSubredditFlairEnabled", "userFlairTemplateId", "userFlairBackgroundColor", "userFlairTextColor", "userFlairText", "user_flair_richtext", "postFlairEnabled", "canAssignLinkFlair", "contentCategory", "predictionLeaderboardEntryType", "allowPredictionsTournament", "isUserBanned", "rules", "countrySiteCountry", "countrySiteLanguage", "subredditCountrySiteSettings", "shouldShowMediaInCommentsSetting", "allowedMediaInComments", "isTitleSafe", "isMyReddit", "isMuted", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;JLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/reddit/notification/common/NotificationLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/SubredditCountrySiteSettings;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/Boolean;ZZ)Lcom/reddit/domain/model/Subreddit;", "toString", "", "hashCode", "", "other", "equals", "describeContents", "Landroid/os/Parcel;", "parcel", "flags", "Lcg2/j;", "writeToParcel", "linksEnabled", "Lcom/reddit/domain/model/PostPermission;", "getPostVideoPermission", "Ljava/lang/String;", "getId", "()Ljava/lang/String;", "getKindWithId", "getDisplayName", "getDisplayNamePrefixed", "getIconImg", "getKeyColor", "getBannerImg", "getTitle", "getDescription", "getDescriptionRtJson", "getPublicDescription", "Ljava/lang/Long;", "getSubscribers", "getAccountsActive", "J", "getCreatedUtc", "()J", "getSubredditType", "getUrl", "Ljava/lang/Boolean;", "getOver18", "getWikiEnabled", "getWhitelistStatus", "getNewModMailEnabled", "getNewModMailEnabled$annotations", "()V", "getRestrictPosting", "getQuarantined", "getQuarantineMessage", "getQuarantineMessageRtJson", "getInterstitialWarningMessage", "getInterstitialWarningMessageRtJson", "Z", "getHasBeenVisited", "()Z", "getSubmitType", "getAllowImages", "getAllowVideos", "getAllowGifs", "getAllowChatPostCreation", "getSpoilersEnabled", "getAllowPolls", "getAllowPredictions", "getUserIsBanned", "setUserIsBanned", "(Ljava/lang/Boolean;)V", "getUserIsContributor", "setUserIsContributor", "getUserIsModerator", "setUserIsModerator", "getUserIsSubscriber", "setUserIsSubscriber", "getUserHasFavorited", "setUserHasFavorited", "Lcom/reddit/notification/common/NotificationLevel;", "getNotificationLevel", "()Lcom/reddit/notification/common/NotificationLevel;", "getPrimaryColorKey", "getCommunityIconUrl", "getBannerBackgroundImageUrl", "getMobileBannerImageUrl", "getUserFlairEnabled", "getCanAssignUserFlair", "getUserSubredditFlairEnabled", "getUserFlairTemplateId", "getUserFlairBackgroundColor", "getUserFlairTextColor", "getUserFlairText", "Ljava/util/List;", "getUser_flair_richtext", "()Ljava/util/List;", "setUser_flair_richtext", "(Ljava/util/List;)V", "getPostFlairEnabled", "getCanAssignLinkFlair", "getContentCategory", "getPredictionLeaderboardEntryType", "getAllowPredictionsTournament", "getRules", "getCountrySiteCountry", "getCountrySiteLanguage", "Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "getSubredditCountrySiteSettings", "()Lcom/reddit/domain/model/SubredditCountrySiteSettings;", "getShouldShowMediaInCommentsSetting", "getAllowedMediaInComments", "setAllowedMediaInComments", "Lcom/reddit/structuredstyles/model/StructuredStyle;", "structuredStyle", "Lcom/reddit/structuredstyles/model/StructuredStyle;", "getStructuredStyle", "()Lcom/reddit/structuredstyles/model/StructuredStyle;", "setStructuredStyle", "(Lcom/reddit/structuredstyles/model/StructuredStyle;)V", "getStructuredStyle$annotations", "isUser", "isPublic", "isPrivate", "isPremium", "isGoldRestricted", "isRestricted", "isArchived", "isEmployeeOnly", "getPrimaryColor", "primaryColor", "getSecondaryColor", "secondaryColor", "getCommunityIcon", "communityIcon", "getBannerBackgroundImage", "bannerBackgroundImage", "getBannerBackgroundColor", "bannerBackgroundColor", "getHasRules", "hasRules", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;JLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/reddit/notification/common/NotificationLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/reddit/domain/model/SubredditCountrySiteSettings;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/Boolean;ZZ)V", "Companion", "model_release" }, k = 1, mv = { 1, 7, 1 })
 public final class Subreddit implements RedditModel, Parcelable
 {
     public static final Parcelable$Creator<Subreddit> CREATOR;
@@ -412,17 +412,234 @@ public final class Subreddit implements RedditModel, Parcelable
         this(s, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, value, value2, currentTimeMillis, s12, s13, false, false2, s14, false3, false4, false5, s15, s16, s17, s18, b, s19, false6, false7, false8, false9, false10, false11, false12, false13, false14, false15, false16, false17, false18, access$getDEFAULT$cp, s20, s21, s22, s23, false19, false20, false21, s24, s25, s26, s27, list, false22, false23, s28, s29, b2, b3, (List<Rule>)instance, s30, s31, subredditCountrySiteSettings, false24, (List<? extends MediaInCommentType>)instance2, b4, b5, b6);
     }
     
-    private final PostPermission getPostVideoPermission(final boolean b, final m m) {
+    public static Subreddit copy$default(final Subreddit subreddit, String id, String kindWithId, String displayName, String displayNamePrefixed, String iconImg, String keyColor, String bannerImg, String title, String description, String descriptionRtJson, String publicDescription, Long subscribers, Long accountsActive, long createdUtc, String subredditType, String url, Boolean over18, Boolean wikiEnabled, String whitelistStatus, Boolean newModMailEnabled, Boolean restrictPosting, Boolean quarantined, String quarantineMessage, String quarantineMessageRtJson, String interstitialWarningMessage, String interstitialWarningMessageRtJson, boolean hasBeenVisited, String submitType, Boolean allowImages, Boolean allowVideos, Boolean allowGifs, Boolean allowChatPostCreation, Boolean isChatPostFeatureEnabled, Boolean spoilersEnabled, Boolean allowPolls, Boolean allowPredictions, Boolean userIsBanned, Boolean userIsContributor, Boolean userIsModerator, Boolean userIsSubscriber, Boolean userHasFavorited, NotificationLevel notificationLevel, String primaryColorKey, String communityIconUrl, String bannerBackgroundImageUrl, String mobileBannerImageUrl, Boolean userFlairEnabled, Boolean canAssignUserFlair, Boolean userSubredditFlairEnabled, String userFlairTemplateId, String userFlairBackgroundColor, String userFlairTextColor, String userFlairText, List user_flair_richtext, Boolean postFlairEnabled, Boolean canAssignLinkFlair, String contentCategory, String predictionLeaderboardEntryType, Boolean allowPredictionsTournament, Boolean isUserBanned, List rules, String countrySiteCountry, String countrySiteLanguage, SubredditCountrySiteSettings subredditCountrySiteSettings, Boolean shouldShowMediaInCommentsSetting, List allowedMediaInComments, Boolean isTitleSafe, boolean isMyReddit, boolean isMuted, final int n, final int n2, final int n3, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            id = subreddit.id;
+        }
+        if ((n & 0x2) != 0x0) {
+            kindWithId = subreddit.getKindWithId();
+        }
+        if ((n & 0x4) != 0x0) {
+            displayName = subreddit.displayName;
+        }
+        if ((n & 0x8) != 0x0) {
+            displayNamePrefixed = subreddit.displayNamePrefixed;
+        }
+        if ((n & 0x10) != 0x0) {
+            iconImg = subreddit.iconImg;
+        }
+        if ((n & 0x20) != 0x0) {
+            keyColor = subreddit.keyColor;
+        }
+        if ((n & 0x40) != 0x0) {
+            bannerImg = subreddit.bannerImg;
+        }
+        if ((n & 0x80) != 0x0) {
+            title = subreddit.title;
+        }
+        if ((n & 0x100) != 0x0) {
+            description = subreddit.description;
+        }
+        if ((n & 0x200) != 0x0) {
+            descriptionRtJson = subreddit.descriptionRtJson;
+        }
+        if ((n & 0x400) != 0x0) {
+            publicDescription = subreddit.publicDescription;
+        }
+        if ((n & 0x800) != 0x0) {
+            subscribers = subreddit.subscribers;
+        }
+        if ((n & 0x1000) != 0x0) {
+            accountsActive = subreddit.accountsActive;
+        }
+        if ((n & 0x2000) != 0x0) {
+            createdUtc = subreddit.createdUtc;
+        }
+        if ((n & 0x4000) != 0x0) {
+            subredditType = subreddit.subredditType;
+        }
+        if ((n & 0x8000) != 0x0) {
+            url = subreddit.url;
+        }
+        if ((n & 0x10000) != 0x0) {
+            over18 = subreddit.over18;
+        }
+        if ((n & 0x20000) != 0x0) {
+            wikiEnabled = subreddit.wikiEnabled;
+        }
+        if ((n & 0x40000) != 0x0) {
+            whitelistStatus = subreddit.whitelistStatus;
+        }
+        if ((n & 0x80000) != 0x0) {
+            newModMailEnabled = subreddit.newModMailEnabled;
+        }
+        if ((n & 0x100000) != 0x0) {
+            restrictPosting = subreddit.restrictPosting;
+        }
+        if ((n & 0x200000) != 0x0) {
+            quarantined = subreddit.quarantined;
+        }
+        if ((n & 0x400000) != 0x0) {
+            quarantineMessage = subreddit.quarantineMessage;
+        }
+        if ((n & 0x800000) != 0x0) {
+            quarantineMessageRtJson = subreddit.quarantineMessageRtJson;
+        }
+        if ((n & 0x1000000) != 0x0) {
+            interstitialWarningMessage = subreddit.interstitialWarningMessage;
+        }
+        if ((n & 0x2000000) != 0x0) {
+            interstitialWarningMessageRtJson = subreddit.interstitialWarningMessageRtJson;
+        }
+        if ((n & 0x4000000) != 0x0) {
+            hasBeenVisited = subreddit.hasBeenVisited;
+        }
+        if ((n & 0x8000000) != 0x0) {
+            submitType = subreddit.submitType;
+        }
+        if ((n & 0x10000000) != 0x0) {
+            allowImages = subreddit.allowImages;
+        }
+        if ((n & 0x20000000) != 0x0) {
+            allowVideos = subreddit.allowVideos;
+        }
+        if ((n & 0x40000000) != 0x0) {
+            allowGifs = subreddit.allowGifs;
+        }
+        if ((n & Integer.MIN_VALUE) != 0x0) {
+            allowChatPostCreation = subreddit.allowChatPostCreation;
+        }
+        if ((n2 & 0x1) != 0x0) {
+            isChatPostFeatureEnabled = subreddit.isChatPostFeatureEnabled;
+        }
+        if ((n2 & 0x2) != 0x0) {
+            spoilersEnabled = subreddit.spoilersEnabled;
+        }
+        if ((n2 & 0x4) != 0x0) {
+            allowPolls = subreddit.allowPolls;
+        }
+        if ((n2 & 0x8) != 0x0) {
+            allowPredictions = subreddit.allowPredictions;
+        }
+        if ((n2 & 0x10) != 0x0) {
+            userIsBanned = subreddit.userIsBanned;
+        }
+        if ((n2 & 0x20) != 0x0) {
+            userIsContributor = subreddit.userIsContributor;
+        }
+        if ((n2 & 0x40) != 0x0) {
+            userIsModerator = subreddit.userIsModerator;
+        }
+        if ((n2 & 0x80) != 0x0) {
+            userIsSubscriber = subreddit.userIsSubscriber;
+        }
+        if ((n2 & 0x100) != 0x0) {
+            userHasFavorited = subreddit.userHasFavorited;
+        }
+        if ((n2 & 0x200) != 0x0) {
+            notificationLevel = subreddit.notificationLevel;
+        }
+        if ((n2 & 0x400) != 0x0) {
+            primaryColorKey = subreddit.primaryColorKey;
+        }
+        if ((n2 & 0x800) != 0x0) {
+            communityIconUrl = subreddit.communityIconUrl;
+        }
+        if ((n2 & 0x1000) != 0x0) {
+            bannerBackgroundImageUrl = subreddit.bannerBackgroundImageUrl;
+        }
+        if ((n2 & 0x2000) != 0x0) {
+            mobileBannerImageUrl = subreddit.mobileBannerImageUrl;
+        }
+        if ((n2 & 0x4000) != 0x0) {
+            userFlairEnabled = subreddit.userFlairEnabled;
+        }
+        if ((n2 & 0x8000) != 0x0) {
+            canAssignUserFlair = subreddit.canAssignUserFlair;
+        }
+        if ((n2 & 0x10000) != 0x0) {
+            userSubredditFlairEnabled = subreddit.userSubredditFlairEnabled;
+        }
+        if ((n2 & 0x20000) != 0x0) {
+            userFlairTemplateId = subreddit.userFlairTemplateId;
+        }
+        if ((n2 & 0x40000) != 0x0) {
+            userFlairBackgroundColor = subreddit.userFlairBackgroundColor;
+        }
+        if ((n2 & 0x80000) != 0x0) {
+            userFlairTextColor = subreddit.userFlairTextColor;
+        }
+        if ((n2 & 0x100000) != 0x0) {
+            userFlairText = subreddit.userFlairText;
+        }
+        if ((n2 & 0x200000) != 0x0) {
+            user_flair_richtext = subreddit.user_flair_richtext;
+        }
+        if ((n2 & 0x400000) != 0x0) {
+            postFlairEnabled = subreddit.postFlairEnabled;
+        }
+        if ((n2 & 0x800000) != 0x0) {
+            canAssignLinkFlair = subreddit.canAssignLinkFlair;
+        }
+        if ((n2 & 0x1000000) != 0x0) {
+            contentCategory = subreddit.contentCategory;
+        }
+        if ((n2 & 0x2000000) != 0x0) {
+            predictionLeaderboardEntryType = subreddit.predictionLeaderboardEntryType;
+        }
+        if ((n2 & 0x4000000) != 0x0) {
+            allowPredictionsTournament = subreddit.allowPredictionsTournament;
+        }
+        if ((n2 & 0x8000000) != 0x0) {
+            isUserBanned = subreddit.isUserBanned;
+        }
+        if ((n2 & 0x10000000) != 0x0) {
+            rules = subreddit.rules;
+        }
+        if ((n2 & 0x20000000) != 0x0) {
+            countrySiteCountry = subreddit.countrySiteCountry;
+        }
+        if ((n2 & 0x40000000) != 0x0) {
+            countrySiteLanguage = subreddit.countrySiteLanguage;
+        }
+        if ((n2 & Integer.MIN_VALUE) != 0x0) {
+            subredditCountrySiteSettings = subreddit.subredditCountrySiteSettings;
+        }
+        if ((n3 & 0x1) != 0x0) {
+            shouldShowMediaInCommentsSetting = subreddit.shouldShowMediaInCommentsSetting;
+        }
+        if ((n3 & 0x2) != 0x0) {
+            allowedMediaInComments = subreddit.allowedMediaInComments;
+        }
+        if ((n3 & 0x4) != 0x0) {
+            isTitleSafe = subreddit.isTitleSafe;
+        }
+        if ((n3 & 0x8) != 0x0) {
+            isMyReddit = subreddit.isMyReddit;
+        }
+        if ((n3 & 0x10) != 0x0) {
+            isMuted = subreddit.isMuted;
+        }
+        return subreddit.copy(id, kindWithId, displayName, displayNamePrefixed, iconImg, keyColor, bannerImg, title, description, descriptionRtJson, publicDescription, subscribers, accountsActive, createdUtc, subredditType, url, over18, wikiEnabled, whitelistStatus, newModMailEnabled, restrictPosting, quarantined, quarantineMessage, quarantineMessageRtJson, interstitialWarningMessage, interstitialWarningMessageRtJson, hasBeenVisited, submitType, allowImages, allowVideos, allowGifs, allowChatPostCreation, isChatPostFeatureEnabled, spoilersEnabled, allowPolls, allowPredictions, userIsBanned, userIsContributor, userIsModerator, userIsSubscriber, userHasFavorited, notificationLevel, primaryColorKey, communityIconUrl, bannerBackgroundImageUrl, mobileBannerImageUrl, userFlairEnabled, canAssignUserFlair, userSubredditFlairEnabled, userFlairTemplateId, userFlairBackgroundColor, userFlairTextColor, userFlairText, user_flair_richtext, postFlairEnabled, canAssignLinkFlair, contentCategory, predictionLeaderboardEntryType, allowPredictionsTournament, isUserBanned, rules, countrySiteCountry, countrySiteLanguage, subredditCountrySiteSettings, shouldShowMediaInCommentsSetting, allowedMediaInComments, isTitleSafe, isMyReddit, isMuted);
+    }
+    
+    public static void getNewModMailEnabled$annotations() {
+    }
+    
+    private final PostPermission getPostVideoPermission(final boolean b, final l l) {
         if (b && e.a((Object)this.allowVideos, (Object)Boolean.TRUE)) {
             return PostPermission.ENABLED;
         }
-        if (m != null && (m.k.contains(PowerupsBenefit.HD_VIDEO) || m.k.contains(PowerupsBenefit.SD_VIDEO)) && !m.j.contains(PowerupsBenefit.SD_VIDEO)) {
+        if (l != null && (l.k.contains(PowerupsBenefit.HD_VIDEO) || l.k.contains(PowerupsBenefit.SD_VIDEO)) && !l.j.contains(PowerupsBenefit.SD_VIDEO)) {
             return PostPermission.LOCKED;
         }
         return PostPermission.DISABLED;
     }
     
-    public final boolean canUserPost(final com.reddit.session.n n) {
+    public static void getStructuredStyle$annotations() {
+    }
+    
+    public final boolean canUserPost(final m m) {
         final boolean public1 = this.isPublic();
         final boolean b = true;
         boolean b2;
@@ -457,7 +674,7 @@ public final class Subreddit implements RedditModel, Parcelable
                     if (b5) {
                         return b2;
                     }
-                    if (n != null && n.isEmployee()) {
+                    if (m != null && m.isEmployee()) {
                         b2 = b;
                         return b2;
                     }
@@ -485,8 +702,8 @@ public final class Subreddit implements RedditModel, Parcelable
                     if (this.isUser()) {
                         final String id = this.id;
                         String id2;
-                        if (n != null) {
-                            id2 = ((nw1.b)n).getId();
+                        if (m != null) {
+                            id2 = ((jw1.b)m).getId();
                         }
                         else {
                             id2 = null;
@@ -495,8 +712,8 @@ public final class Subreddit implements RedditModel, Parcelable
                         return b2;
                     }
                 }
-                else if (n != null) {
-                    b2 = n.getHasPremium();
+                else if (m != null) {
+                    b2 = m.getHasPremium();
                     return b2;
                 }
             }
@@ -861,12 +1078,12 @@ public final class Subreddit implements RedditModel, Parcelable
         final StructuredStyle structuredStyle = this.structuredStyle;
         final String s = null;
         String mobileBannerImage = null;
-        Label_0030: {
+        Label_0033: {
             if (structuredStyle != null) {
                 final Style style = structuredStyle.getStyle();
                 if (style != null) {
                     mobileBannerImage = style.getMobileBannerImage();
-                    break Label_0030;
+                    break Label_0033;
                 }
             }
             mobileBannerImage = null;
@@ -885,12 +1102,12 @@ public final class Subreddit implements RedditModel, Parcelable
             if (mobileBannerImageUrl == null) {
                 final StructuredStyle structuredStyle2 = this.structuredStyle;
                 String bannerBackgroundImage = null;
-                Label_0196: {
+                Label_0201: {
                     if (structuredStyle2 != null) {
                         final Style style2 = structuredStyle2.getStyle();
                         if (style2 != null) {
                             bannerBackgroundImage = style2.getBannerBackgroundImage();
-                            break Label_0196;
+                            break Label_0201;
                         }
                     }
                     bannerBackgroundImage = null;
@@ -902,11 +1119,11 @@ public final class Subreddit implements RedditModel, Parcelable
                 if (bannerBackgroundImage == null) {
                     final String bannerBackgroundImageUrl = this.bannerBackgroundImageUrl;
                     int n2 = 0;
-                    Label_0286: {
+                    Label_0291: {
                         if (bannerBackgroundImageUrl != null) {
                             n2 = n;
                             if (bannerBackgroundImageUrl.length() != 0) {
-                                break Label_0286;
+                                break Label_0291;
                             }
                         }
                         n2 = 1;
@@ -944,12 +1161,12 @@ public final class Subreddit implements RedditModel, Parcelable
         final StructuredStyle structuredStyle = this.structuredStyle;
         final String s = null;
         String communityIcon = null;
-        Label_0030: {
+        Label_0031: {
             if (structuredStyle != null) {
                 final Style style = structuredStyle.getStyle();
                 if (style != null) {
                     communityIcon = style.getCommunityIcon();
-                    break Label_0030;
+                    break Label_0031;
                 }
             }
             communityIcon = null;
@@ -962,11 +1179,11 @@ public final class Subreddit implements RedditModel, Parcelable
         if (communityIcon == null) {
             final String communityIconUrl = this.communityIconUrl;
             int n2 = 0;
-            Label_0125: {
+            Label_0118: {
                 if (communityIconUrl != null) {
                     n2 = n;
                     if (communityIconUrl.length() != 0) {
-                        break Label_0125;
+                        break Label_0118;
                     }
                 }
                 n2 = 1;
@@ -1032,7 +1249,7 @@ public final class Subreddit implements RedditModel, Parcelable
             if (widgets != null) {
                 final Set entrySet = widgets.entrySet();
                 if (entrySet != null) {
-                    final ArrayList list = new ArrayList(ig2.m.c3((Iterable)entrySet, 10));
+                    final ArrayList list = new ArrayList(dg2.m.u4((Iterable)entrySet, 10));
                     final Iterator iterator = entrySet.iterator();
                     while (iterator.hasNext()) {
                         list.add((Object)((Map.Entry<K, BaseWidget>)iterator.next()).getValue());
@@ -1043,7 +1260,7 @@ public final class Subreddit implements RedditModel, Parcelable
                             list2.add(next);
                         }
                     }
-                    final RuleWidget ruleWidget = (RuleWidget)CollectionsKt___CollectionsKt.C3((List)list2);
+                    final RuleWidget ruleWidget = (RuleWidget)CollectionsKt___CollectionsKt.U4((List)list2);
                     if (ruleWidget != null) {
                         final List data = ruleWidget.getData();
                         if (data != null) {
@@ -1101,12 +1318,12 @@ public final class Subreddit implements RedditModel, Parcelable
         return this.postFlairEnabled;
     }
     
-    public final PostPermissions getPostPermissions(final m m) {
+    public final PostPermissions getPostPermissions(final l l) {
         final boolean b = e.a((Object)this.submitType, (Object)"link") || e.a((Object)this.submitType, (Object)"any");
         final Boolean allowImages = this.allowImages;
         final Boolean true = Boolean.TRUE;
         final boolean a = e.a((Object)allowImages, (Object)true);
-        return new PostPermissions(b, b && a, this.getPostVideoPermission(b, m), e.a((Object)this.submitType, (Object)"self") || e.a((Object)this.submitType, (Object)"any"), e.a((Object)this.spoilersEnabled, (Object)true), e.a((Object)this.allowPolls, (Object)true), e.a((Object)this.allowPredictions, (Object)true));
+        return new PostPermissions(b, b && a, this.getPostVideoPermission(b, l), e.a((Object)this.submitType, (Object)"self") || e.a((Object)this.submitType, (Object)"any"), e.a((Object)this.spoilersEnabled, (Object)true), e.a((Object)this.allowPolls, (Object)true), e.a((Object)this.allowPredictions, (Object)true));
     }
     
     public final String getPredictionLeaderboardEntryType() {
@@ -1117,12 +1334,12 @@ public final class Subreddit implements RedditModel, Parcelable
         final StructuredStyle structuredStyle = this.structuredStyle;
         final String s = null;
         String primaryKeyColor = null;
-        Label_0030: {
+        Label_0033: {
             if (structuredStyle != null) {
                 final Style style = structuredStyle.getStyle();
                 if (style != null) {
                     primaryKeyColor = style.getPrimaryKeyColor();
-                    break Label_0030;
+                    break Label_0033;
                 }
             }
             primaryKeyColor = null;
@@ -1143,11 +1360,11 @@ public final class Subreddit implements RedditModel, Parcelable
             }
         }
         int n2 = 0;
-        Label_0147: {
+        Label_0151: {
             if (keyColor != null) {
                 n2 = n;
-                if (!j.H0((CharSequence)keyColor)) {
-                    break Label_0147;
+                if (!j.B0((CharSequence)keyColor)) {
+                    break Label_0151;
                 }
             }
             n2 = 1;
@@ -1325,7 +1542,7 @@ public final class Subreddit implements RedditModel, Parcelable
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.displayNamePrefixed, b.c(this.displayName, (this.getKindWithId().hashCode() + this.id.hashCode() * 31) * 31, 31), 31);
+        final int e = a.e(this.displayNamePrefixed, a.e(this.displayName, (this.getKindWithId().hashCode() + this.id.hashCode() * 31) * 31, 31), 31);
         final String iconImg = this.iconImg;
         final int n = 0;
         int hashCode;
@@ -1375,7 +1592,7 @@ public final class Subreddit implements RedditModel, Parcelable
         else {
             hashCode6 = descriptionRtJson.hashCode();
         }
-        final int c2 = b.c(this.publicDescription, ((((((c + hashCode) * 31 + hashCode2) * 31 + hashCode3) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode6) * 31, 31);
+        final int e2 = a.e(this.publicDescription, ((((((e + hashCode) * 31 + hashCode2) * 31 + hashCode3) * 31 + hashCode4) * 31 + hashCode5) * 31 + hashCode6) * 31, 31);
         final Long subscribers = this.subscribers;
         int hashCode7;
         if (subscribers == null) {
@@ -1392,7 +1609,7 @@ public final class Subreddit implements RedditModel, Parcelable
         else {
             hashCode8 = accountsActive.hashCode();
         }
-        final int c3 = b.c(this.url, b.c(this.subredditType, b.b(this.createdUtc, ((c2 + hashCode7) * 31 + hashCode8) * 31, 31), 31), 31);
+        final int e3 = a.e(this.url, a.e(this.subredditType, b.b(this.createdUtc, ((e2 + hashCode7) * 31 + hashCode8) * 31, 31), 31), 31);
         final Boolean over18 = this.over18;
         int hashCode9;
         if (over18 == null) {
@@ -1743,7 +1960,7 @@ public final class Subreddit implements RedditModel, Parcelable
         else {
             hashCode51 = isUserBanned.hashCode();
         }
-        final int c4 = aw.b.c((List)this.rules, ((((((((((((((((((((((((((((((((((((((((((((c3 + hashCode9) * 31 + hashCode10) * 31 + hashCode11) * 31 + hashCode12) * 31 + hashCode13) * 31 + hashCode14) * 31 + hashCode15) * 31 + hashCode16) * 31 + hashCode17) * 31 + hashCode18) * 31 + n3) * 31 + hashCode19) * 31 + hashCode20) * 31 + hashCode21) * 31 + hashCode22) * 31 + hashCode23) * 31 + hashCode24) * 31 + hashCode25) * 31 + hashCode26) * 31 + hashCode27) * 31 + hashCode28) * 31 + hashCode29) * 31 + hashCode30) * 31 + hashCode31) * 31 + hashCode32) * 31 + hashCode33) * 31 + hashCode34) * 31 + hashCode35) * 31 + hashCode36) * 31 + hashCode37) * 31 + hashCode38) * 31 + hashCode39) * 31 + hashCode40) * 31 + hashCode41) * 31 + hashCode42) * 31 + hashCode43) * 31 + hashCode44) * 31 + hashCode45) * 31 + hashCode46) * 31 + hashCode47) * 31 + hashCode48) * 31 + hashCode49) * 31 + hashCode50) * 31 + hashCode51) * 31, 31);
+        final int b = ph0.a.b((List)this.rules, ((((((((((((((((((((((((((((((((((((((((((((e3 + hashCode9) * 31 + hashCode10) * 31 + hashCode11) * 31 + hashCode12) * 31 + hashCode13) * 31 + hashCode14) * 31 + hashCode15) * 31 + hashCode16) * 31 + hashCode17) * 31 + hashCode18) * 31 + n3) * 31 + hashCode19) * 31 + hashCode20) * 31 + hashCode21) * 31 + hashCode22) * 31 + hashCode23) * 31 + hashCode24) * 31 + hashCode25) * 31 + hashCode26) * 31 + hashCode27) * 31 + hashCode28) * 31 + hashCode29) * 31 + hashCode30) * 31 + hashCode31) * 31 + hashCode32) * 31 + hashCode33) * 31 + hashCode34) * 31 + hashCode35) * 31 + hashCode36) * 31 + hashCode37) * 31 + hashCode38) * 31 + hashCode39) * 31 + hashCode40) * 31 + hashCode41) * 31 + hashCode42) * 31 + hashCode43) * 31 + hashCode44) * 31 + hashCode45) * 31 + hashCode46) * 31 + hashCode47) * 31 + hashCode48) * 31 + hashCode49) * 31 + hashCode50) * 31 + hashCode51) * 31, 31);
         final String countrySiteCountry = this.countrySiteCountry;
         int hashCode52;
         if (countrySiteCountry == null) {
@@ -1800,7 +2017,7 @@ public final class Subreddit implements RedditModel, Parcelable
         if (isMuted != 0) {
             isMuted = n2;
         }
-        return (((((((c4 + hashCode52) * 31 + hashCode53) * 31 + hashCode54) * 31 + hashCode55) * 31 + hashCode56) * 31 + hashCode57) * 31 + isMyReddit) * 31 + isMuted;
+        return (((((((b + hashCode52) * 31 + hashCode53) * 31 + hashCode54) * 31 + hashCode55) * 31 + hashCode56) * 31 + hashCode57) * 31 + isMyReddit) * 31 + isMuted;
     }
     
     public final boolean isArchived() {
@@ -1889,144 +2106,144 @@ public final class Subreddit implements RedditModel, Parcelable
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("Subreddit(id=");
-        r.append(this.id);
-        r.append(", kindWithId=");
-        r.append(this.getKindWithId());
-        r.append(", displayName=");
-        r.append(this.displayName);
-        r.append(", displayNamePrefixed=");
-        r.append(this.displayNamePrefixed);
-        r.append(", iconImg=");
-        r.append(this.iconImg);
-        r.append(", keyColor=");
-        r.append(this.keyColor);
-        r.append(", bannerImg=");
-        r.append(this.bannerImg);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", description=");
-        r.append(this.description);
-        r.append(", descriptionRtJson=");
-        r.append(this.descriptionRtJson);
-        r.append(", publicDescription=");
-        r.append(this.publicDescription);
-        r.append(", subscribers=");
-        r.append(this.subscribers);
-        r.append(", accountsActive=");
-        r.append(this.accountsActive);
-        r.append(", createdUtc=");
-        r.append(this.createdUtc);
-        r.append(", subredditType=");
-        r.append(this.subredditType);
-        r.append(", url=");
-        r.append(this.url);
-        r.append(", over18=");
-        r.append(this.over18);
-        r.append(", wikiEnabled=");
-        r.append(this.wikiEnabled);
-        r.append(", whitelistStatus=");
-        r.append(this.whitelistStatus);
-        r.append(", newModMailEnabled=");
-        r.append(this.newModMailEnabled);
-        r.append(", restrictPosting=");
-        r.append(this.restrictPosting);
-        r.append(", quarantined=");
-        r.append(this.quarantined);
-        r.append(", quarantineMessage=");
-        r.append(this.quarantineMessage);
-        r.append(", quarantineMessageRtJson=");
-        r.append(this.quarantineMessageRtJson);
-        r.append(", interstitialWarningMessage=");
-        r.append(this.interstitialWarningMessage);
-        r.append(", interstitialWarningMessageRtJson=");
-        r.append(this.interstitialWarningMessageRtJson);
-        r.append(", hasBeenVisited=");
-        r.append(this.hasBeenVisited);
-        r.append(", submitType=");
-        r.append(this.submitType);
-        r.append(", allowImages=");
-        r.append(this.allowImages);
-        r.append(", allowVideos=");
-        r.append(this.allowVideos);
-        r.append(", allowGifs=");
-        r.append(this.allowGifs);
-        r.append(", allowChatPostCreation=");
-        r.append(this.allowChatPostCreation);
-        r.append(", isChatPostFeatureEnabled=");
-        r.append(this.isChatPostFeatureEnabled);
-        r.append(", spoilersEnabled=");
-        r.append(this.spoilersEnabled);
-        r.append(", allowPolls=");
-        r.append(this.allowPolls);
-        r.append(", allowPredictions=");
-        r.append(this.allowPredictions);
-        r.append(", userIsBanned=");
-        r.append(this.userIsBanned);
-        r.append(", userIsContributor=");
-        r.append(this.userIsContributor);
-        r.append(", userIsModerator=");
-        r.append(this.userIsModerator);
-        r.append(", userIsSubscriber=");
-        r.append(this.userIsSubscriber);
-        r.append(", userHasFavorited=");
-        r.append(this.userHasFavorited);
-        r.append(", notificationLevel=");
-        r.append(this.notificationLevel);
-        r.append(", primaryColorKey=");
-        r.append(this.primaryColorKey);
-        r.append(", communityIconUrl=");
-        r.append(this.communityIconUrl);
-        r.append(", bannerBackgroundImageUrl=");
-        r.append(this.bannerBackgroundImageUrl);
-        r.append(", mobileBannerImageUrl=");
-        r.append(this.mobileBannerImageUrl);
-        r.append(", userFlairEnabled=");
-        r.append(this.userFlairEnabled);
-        r.append(", canAssignUserFlair=");
-        r.append(this.canAssignUserFlair);
-        r.append(", userSubredditFlairEnabled=");
-        r.append(this.userSubredditFlairEnabled);
-        r.append(", userFlairTemplateId=");
-        r.append(this.userFlairTemplateId);
-        r.append(", userFlairBackgroundColor=");
-        r.append(this.userFlairBackgroundColor);
-        r.append(", userFlairTextColor=");
-        r.append(this.userFlairTextColor);
-        r.append(", userFlairText=");
-        r.append(this.userFlairText);
-        r.append(", user_flair_richtext=");
-        r.append(this.user_flair_richtext);
-        r.append(", postFlairEnabled=");
-        r.append(this.postFlairEnabled);
-        r.append(", canAssignLinkFlair=");
-        r.append(this.canAssignLinkFlair);
-        r.append(", contentCategory=");
-        r.append(this.contentCategory);
-        r.append(", predictionLeaderboardEntryType=");
-        r.append(this.predictionLeaderboardEntryType);
-        r.append(", allowPredictionsTournament=");
-        r.append(this.allowPredictionsTournament);
-        r.append(", isUserBanned=");
-        r.append(this.isUserBanned);
-        r.append(", rules=");
-        r.append(this.rules);
-        r.append(", countrySiteCountry=");
-        r.append(this.countrySiteCountry);
-        r.append(", countrySiteLanguage=");
-        r.append(this.countrySiteLanguage);
-        r.append(", subredditCountrySiteSettings=");
-        r.append(this.subredditCountrySiteSettings);
-        r.append(", shouldShowMediaInCommentsSetting=");
-        r.append(this.shouldShowMediaInCommentsSetting);
-        r.append(", allowedMediaInComments=");
-        r.append(this.allowedMediaInComments);
-        r.append(", isTitleSafe=");
-        r.append(this.isTitleSafe);
-        r.append(", isMyReddit=");
-        r.append(this.isMyReddit);
-        r.append(", isMuted=");
-        return g7.m(r, this.isMuted, ')');
+        final StringBuilder t = a.t("Subreddit(id=");
+        t.append(this.id);
+        t.append(", kindWithId=");
+        t.append(this.getKindWithId());
+        t.append(", displayName=");
+        t.append(this.displayName);
+        t.append(", displayNamePrefixed=");
+        t.append(this.displayNamePrefixed);
+        t.append(", iconImg=");
+        t.append(this.iconImg);
+        t.append(", keyColor=");
+        t.append(this.keyColor);
+        t.append(", bannerImg=");
+        t.append(this.bannerImg);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", description=");
+        t.append(this.description);
+        t.append(", descriptionRtJson=");
+        t.append(this.descriptionRtJson);
+        t.append(", publicDescription=");
+        t.append(this.publicDescription);
+        t.append(", subscribers=");
+        t.append(this.subscribers);
+        t.append(", accountsActive=");
+        t.append(this.accountsActive);
+        t.append(", createdUtc=");
+        t.append(this.createdUtc);
+        t.append(", subredditType=");
+        t.append(this.subredditType);
+        t.append(", url=");
+        t.append(this.url);
+        t.append(", over18=");
+        t.append(this.over18);
+        t.append(", wikiEnabled=");
+        t.append(this.wikiEnabled);
+        t.append(", whitelistStatus=");
+        t.append(this.whitelistStatus);
+        t.append(", newModMailEnabled=");
+        t.append(this.newModMailEnabled);
+        t.append(", restrictPosting=");
+        t.append(this.restrictPosting);
+        t.append(", quarantined=");
+        t.append(this.quarantined);
+        t.append(", quarantineMessage=");
+        t.append(this.quarantineMessage);
+        t.append(", quarantineMessageRtJson=");
+        t.append(this.quarantineMessageRtJson);
+        t.append(", interstitialWarningMessage=");
+        t.append(this.interstitialWarningMessage);
+        t.append(", interstitialWarningMessageRtJson=");
+        t.append(this.interstitialWarningMessageRtJson);
+        t.append(", hasBeenVisited=");
+        t.append(this.hasBeenVisited);
+        t.append(", submitType=");
+        t.append(this.submitType);
+        t.append(", allowImages=");
+        t.append(this.allowImages);
+        t.append(", allowVideos=");
+        t.append(this.allowVideos);
+        t.append(", allowGifs=");
+        t.append(this.allowGifs);
+        t.append(", allowChatPostCreation=");
+        t.append(this.allowChatPostCreation);
+        t.append(", isChatPostFeatureEnabled=");
+        t.append(this.isChatPostFeatureEnabled);
+        t.append(", spoilersEnabled=");
+        t.append(this.spoilersEnabled);
+        t.append(", allowPolls=");
+        t.append(this.allowPolls);
+        t.append(", allowPredictions=");
+        t.append(this.allowPredictions);
+        t.append(", userIsBanned=");
+        t.append(this.userIsBanned);
+        t.append(", userIsContributor=");
+        t.append(this.userIsContributor);
+        t.append(", userIsModerator=");
+        t.append(this.userIsModerator);
+        t.append(", userIsSubscriber=");
+        t.append(this.userIsSubscriber);
+        t.append(", userHasFavorited=");
+        t.append(this.userHasFavorited);
+        t.append(", notificationLevel=");
+        t.append(this.notificationLevel);
+        t.append(", primaryColorKey=");
+        t.append(this.primaryColorKey);
+        t.append(", communityIconUrl=");
+        t.append(this.communityIconUrl);
+        t.append(", bannerBackgroundImageUrl=");
+        t.append(this.bannerBackgroundImageUrl);
+        t.append(", mobileBannerImageUrl=");
+        t.append(this.mobileBannerImageUrl);
+        t.append(", userFlairEnabled=");
+        t.append(this.userFlairEnabled);
+        t.append(", canAssignUserFlair=");
+        t.append(this.canAssignUserFlair);
+        t.append(", userSubredditFlairEnabled=");
+        t.append(this.userSubredditFlairEnabled);
+        t.append(", userFlairTemplateId=");
+        t.append(this.userFlairTemplateId);
+        t.append(", userFlairBackgroundColor=");
+        t.append(this.userFlairBackgroundColor);
+        t.append(", userFlairTextColor=");
+        t.append(this.userFlairTextColor);
+        t.append(", userFlairText=");
+        t.append(this.userFlairText);
+        t.append(", user_flair_richtext=");
+        t.append(this.user_flair_richtext);
+        t.append(", postFlairEnabled=");
+        t.append(this.postFlairEnabled);
+        t.append(", canAssignLinkFlair=");
+        t.append(this.canAssignLinkFlair);
+        t.append(", contentCategory=");
+        t.append(this.contentCategory);
+        t.append(", predictionLeaderboardEntryType=");
+        t.append(this.predictionLeaderboardEntryType);
+        t.append(", allowPredictionsTournament=");
+        t.append(this.allowPredictionsTournament);
+        t.append(", isUserBanned=");
+        t.append(this.isUserBanned);
+        t.append(", rules=");
+        t.append(this.rules);
+        t.append(", countrySiteCountry=");
+        t.append(this.countrySiteCountry);
+        t.append(", countrySiteLanguage=");
+        t.append(this.countrySiteLanguage);
+        t.append(", subredditCountrySiteSettings=");
+        t.append(this.subredditCountrySiteSettings);
+        t.append(", shouldShowMediaInCommentsSetting=");
+        t.append(this.shouldShowMediaInCommentsSetting);
+        t.append(", allowedMediaInComments=");
+        t.append(this.allowedMediaInComments);
+        t.append(", isTitleSafe=");
+        t.append(this.isTitleSafe);
+        t.append(", isMyReddit=");
+        t.append(this.isMyReddit);
+        t.append(", isMuted=");
+        return d.n(t, this.isMuted, ')');
     }
     
     public void writeToParcel(final Parcel parcel, final int n) {
@@ -2047,14 +2264,14 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            f0.w(parcel, 1, subscribers);
+            b.t(parcel, 1, subscribers);
         }
         final Long accountsActive = this.accountsActive;
         if (accountsActive == null) {
             parcel.writeInt(0);
         }
         else {
-            f0.w(parcel, 1, accountsActive);
+            b.t(parcel, 1, accountsActive);
         }
         parcel.writeLong(this.createdUtc);
         parcel.writeString(this.subredditType);
@@ -2064,14 +2281,14 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, over18);
+            a.w(parcel, 1, over18);
         }
         final Boolean wikiEnabled = this.wikiEnabled;
         if (wikiEnabled == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, wikiEnabled);
+            a.w(parcel, 1, wikiEnabled);
         }
         parcel.writeString(this.whitelistStatus);
         final Boolean newModMailEnabled = this.newModMailEnabled;
@@ -2079,21 +2296,21 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, newModMailEnabled);
+            a.w(parcel, 1, newModMailEnabled);
         }
         final Boolean restrictPosting = this.restrictPosting;
         if (restrictPosting == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, restrictPosting);
+            a.w(parcel, 1, restrictPosting);
         }
         final Boolean quarantined = this.quarantined;
         if (quarantined == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, quarantined);
+            a.w(parcel, 1, quarantined);
         }
         parcel.writeString(this.quarantineMessage);
         parcel.writeString(this.quarantineMessageRtJson);
@@ -2106,91 +2323,91 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowImages);
+            a.w(parcel, 1, allowImages);
         }
         final Boolean allowVideos = this.allowVideos;
         if (allowVideos == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowVideos);
+            a.w(parcel, 1, allowVideos);
         }
         final Boolean allowGifs = this.allowGifs;
         if (allowGifs == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowGifs);
+            a.w(parcel, 1, allowGifs);
         }
         final Boolean allowChatPostCreation = this.allowChatPostCreation;
         if (allowChatPostCreation == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowChatPostCreation);
+            a.w(parcel, 1, allowChatPostCreation);
         }
         final Boolean isChatPostFeatureEnabled = this.isChatPostFeatureEnabled;
         if (isChatPostFeatureEnabled == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, isChatPostFeatureEnabled);
+            a.w(parcel, 1, isChatPostFeatureEnabled);
         }
         final Boolean spoilersEnabled = this.spoilersEnabled;
         if (spoilersEnabled == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, spoilersEnabled);
+            a.w(parcel, 1, spoilersEnabled);
         }
         final Boolean allowPolls = this.allowPolls;
         if (allowPolls == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowPolls);
+            a.w(parcel, 1, allowPolls);
         }
         final Boolean allowPredictions = this.allowPredictions;
         if (allowPredictions == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowPredictions);
+            a.w(parcel, 1, allowPredictions);
         }
         final Boolean userIsBanned = this.userIsBanned;
         if (userIsBanned == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsBanned);
+            a.w(parcel, 1, userIsBanned);
         }
         final Boolean userIsContributor = this.userIsContributor;
         if (userIsContributor == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsContributor);
+            a.w(parcel, 1, userIsContributor);
         }
         final Boolean userIsModerator = this.userIsModerator;
         if (userIsModerator == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsModerator);
+            a.w(parcel, 1, userIsModerator);
         }
         final Boolean userIsSubscriber = this.userIsSubscriber;
         if (userIsSubscriber == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userIsSubscriber);
+            a.w(parcel, 1, userIsSubscriber);
         }
         final Boolean userHasFavorited = this.userHasFavorited;
         if (userHasFavorited == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userHasFavorited);
+            a.w(parcel, 1, userHasFavorited);
         }
         final NotificationLevel notificationLevel = this.notificationLevel;
         if (notificationLevel == null) {
@@ -2209,21 +2426,21 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userFlairEnabled);
+            a.w(parcel, 1, userFlairEnabled);
         }
         final Boolean canAssignUserFlair = this.canAssignUserFlair;
         if (canAssignUserFlair == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, canAssignUserFlair);
+            a.w(parcel, 1, canAssignUserFlair);
         }
         final Boolean userSubredditFlairEnabled = this.userSubredditFlairEnabled;
         if (userSubredditFlairEnabled == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, userSubredditFlairEnabled);
+            a.w(parcel, 1, userSubredditFlairEnabled);
         }
         parcel.writeString(this.userFlairTemplateId);
         parcel.writeString(this.userFlairBackgroundColor);
@@ -2234,9 +2451,9 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            final Iterator t = d.t(parcel, 1, (List)user_flair_richtext);
-            while (t.hasNext()) {
-                ((FlairRichTextItem)t.next()).writeToParcel(parcel, n);
+            final Iterator j = u10.o.j(parcel, 1, (List)user_flair_richtext);
+            while (j.hasNext()) {
+                ((FlairRichTextItem)j.next()).writeToParcel(parcel, n);
             }
         }
         final Boolean postFlairEnabled = this.postFlairEnabled;
@@ -2244,14 +2461,14 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, postFlairEnabled);
+            a.w(parcel, 1, postFlairEnabled);
         }
         final Boolean canAssignLinkFlair = this.canAssignLinkFlair;
         if (canAssignLinkFlair == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, canAssignLinkFlair);
+            a.w(parcel, 1, canAssignLinkFlair);
         }
         parcel.writeString(this.contentCategory);
         parcel.writeString(this.predictionLeaderboardEntryType);
@@ -2260,18 +2477,18 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, allowPredictionsTournament);
+            a.w(parcel, 1, allowPredictionsTournament);
         }
         final Boolean isUserBanned = this.isUserBanned;
         if (isUserBanned == null) {
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, isUserBanned);
+            a.w(parcel, 1, isUserBanned);
         }
-        final Iterator s = al0.a.s((List)this.rules, parcel);
-        while (s.hasNext()) {
-            ((Rule)s.next()).writeToParcel(parcel, n);
+        final Iterator r = android.support.v4.media.a.r((List)this.rules, parcel);
+        while (r.hasNext()) {
+            ((Rule)r.next()).writeToParcel(parcel, n);
         }
         parcel.writeString(this.countrySiteCountry);
         parcel.writeString(this.countrySiteLanguage);
@@ -2288,16 +2505,16 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, shouldShowMediaInCommentsSetting);
+            a.w(parcel, 1, shouldShowMediaInCommentsSetting);
         }
         final List<? extends MediaInCommentType> allowedMediaInComments = this.allowedMediaInComments;
         if (allowedMediaInComments == null) {
             parcel.writeInt(0);
         }
         else {
-            final Iterator t2 = d.t(parcel, 1, (List)allowedMediaInComments);
-            while (t2.hasNext()) {
-                parcel.writeString(((Enum)t2.next()).name());
+            final Iterator i = u10.o.j(parcel, 1, (List)allowedMediaInComments);
+            while (i.hasNext()) {
+                parcel.writeString(((Enum)i.next()).name());
             }
         }
         final Boolean isTitleSafe = this.isTitleSafe;
@@ -2305,7 +2522,7 @@ public final class Subreddit implements RedditModel, Parcelable
             parcel.writeInt(0);
         }
         else {
-            al0.b.o(parcel, 1, isTitleSafe);
+            a.w(parcel, 1, isTitleSafe);
         }
         parcel.writeInt((int)(this.isMyReddit ? 1 : 0));
         parcel.writeInt((int)(this.isMuted ? 1 : 0));
@@ -2315,6 +2532,10 @@ public final class Subreddit implements RedditModel, Parcelable
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
     
@@ -2529,7 +2750,7 @@ public final class Subreddit implements RedditModel, Parcelable
             else {
                 final int int1 = parcel.readInt();
                 final ArrayList list2 = new ArrayList(int1);
-                for (int i = 0; i != int1; i = f0.b(FlairRichTextItem.CREATOR, parcel, list2, i, 1)) {}
+                for (int i = 0; i != int1; i = u10.o.c(FlairRichTextItem.CREATOR, parcel, list2, i, 1)) {}
                 n = value;
                 list = (List<FlairRichTextItem>)list2;
             }
@@ -2565,7 +2786,7 @@ public final class Subreddit implements RedditModel, Parcelable
             }
             final int int2 = parcel.readInt();
             final ArrayList list3 = new ArrayList(int2);
-            for (int j = 0; j != int2; j = f0.b((Parcelable$Creator)Rule.CREATOR, parcel, list3, j, 1)) {}
+            for (int j = 0; j != int2; j = u10.o.c((Parcelable$Creator)Rule.CREATOR, parcel, list3, j, 1)) {}
             final String string30 = parcel.readString();
             final String string31 = parcel.readString();
             Object fromParcel;
@@ -2604,8 +2825,16 @@ public final class Subreddit implements RedditModel, Parcelable
             return new Subreddit(string, string2, string3, string4, string5, string6, string7, string8, string9, string10, string11, n, value2, long1, string12, string13, value3, value4, string14, value5, value6, value7, string15, string16, string17, string18, b, string19, value8, value9, value10, value11, value12, value13, value14, value15, value16, value17, value18, value19, value20, value21, string20, string21, string22, string23, value22, value23, value24, string24, string25, string26, string27, list, value25, value26, string28, string29, value27, value28, (List<Rule>)list3, string30, string31, subredditCountrySiteSettings, value29, list4, value30, parcel.readInt() != 0, parcel.readInt() != 0);
         }
         
+        public /* bridge */ Object createFromParcel(final Parcel parcel) {
+            return this.createFromParcel(parcel);
+        }
+        
         public final Subreddit[] newArray(final int n) {
             return new Subreddit[n];
+        }
+        
+        public /* bridge */ Object[] newArray(final int n) {
+            return this.newArray(n);
         }
     }
 }

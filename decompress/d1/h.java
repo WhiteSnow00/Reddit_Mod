@@ -4,35 +4,65 @@
 
 package d1;
 
-import tg2.a;
-import java.util.Map;
+import og2.a;
 import java.util.Iterator;
 
-public final class h<K, V> implements Iterator<Map.Entry<K, V>>, a
+public final class h implements Iterator, a
 {
-    public final f<K, V, Map.Entry<K, V>> f;
+    public final int f;
+    public final Iterator g;
     
-    public h(final e<K, V> e) {
-        sg2.e.f((Object)e, "builder");
+    public h(final e e) {
+        int i = 0;
+        this.f = 0;
+        ng2.e.f((Object)e, "builder");
         final t[] array = new t[8];
-        for (int i = 0; i < 8; ++i) {
+        while (i < 8) {
             array[i] = (t)new w(this);
+            ++i;
         }
-        this.f = (f<K, V, Map.Entry<K, V>>)new f((e)e, array);
+        this.g = (Iterator)new f(e, array);
+    }
+    
+    public h(final Iterator g) {
+        this.f = 1;
+        ng2.e.f((Object)g, "delegate");
+        this.g = g;
     }
     
     @Override
     public final boolean hasNext() {
-        return ((d)this.f).h;
+        switch (this.f) {
+            default: {
+                return this.g.hasNext();
+            }
+            case 0: {
+                return ((d)this.g).h;
+            }
+        }
     }
     
     @Override
     public final Object next() {
-        return this.f.next();
+        switch (this.f) {
+            default: {
+                return this.g.next();
+            }
+            case 0: {
+                return ((f)this.g).next();
+            }
+        }
     }
     
     @Override
     public final void remove() {
-        this.f.remove();
+        switch (this.f) {
+            default: {
+                throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+            }
+            case 0: {
+                ((f)this.g).remove();
+            }
+        }
     }
 }

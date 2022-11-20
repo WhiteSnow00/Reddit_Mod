@@ -35,8 +35,20 @@ public final class UsersMsg$UserAboutRequest extends GeneratedMessageLite<UsersM
         this.username_ = "";
     }
     
-    public static /* synthetic */ UsersMsg$UserAboutRequest access$10100() {
+    public static UsersMsg$UserAboutRequest access$10100() {
         return UsersMsg$UserAboutRequest.DEFAULT_INSTANCE;
+    }
+    
+    public static void access$10200(final UsersMsg$UserAboutRequest usersMsg$UserAboutRequest, final String username) {
+        usersMsg$UserAboutRequest.setUsername(username);
+    }
+    
+    public static void access$10300(final UsersMsg$UserAboutRequest usersMsg$UserAboutRequest) {
+        usersMsg$UserAboutRequest.clearUsername();
+    }
+    
+    public static void access$10400(final UsersMsg$UserAboutRequest usersMsg$UserAboutRequest, final ByteString usernameBytes) {
+        usersMsg$UserAboutRequest.setUsernameBytes(usernameBytes);
     }
     
     private void clearUsername() {

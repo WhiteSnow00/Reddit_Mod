@@ -4,16 +4,22 @@
 
 package n2;
 
-import m2.a;
-import v0.i;
+import a4.n0;
+import ng2.e;
+import android.graphics.Typeface;
 
 public final class x
 {
-    public final i a;
-    public final a<w, y> b;
+    public static final x a;
     
-    public x() {
-        this.a = new i(1);
-        this.b = new a<w, y>();
+    static {
+        a = new x();
+    }
+    
+    public final Typeface a(Typeface b, final int n, final boolean b2) {
+        e.f((Object)b, "typeface");
+        b = n0.b(b, n, b2);
+        e.e((Object)b, "create(typeface, finalFontWeight, finalFontStyle)");
+        return b;
     }
 }

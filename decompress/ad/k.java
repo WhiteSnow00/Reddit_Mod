@@ -4,33 +4,51 @@
 
 package ad;
 
-import ac.q;
+import com.google.android.exoplayer2.upstream.cache.Cache;
+import java.util.Comparator;
+import ec.a;
+import java.util.TreeSet;
+import com.google.android.exoplayer2.upstream.cache.b;
 
-public interface k
+public final class k implements b
 {
-    boolean a();
+    public final TreeSet<d> a;
+    public long b;
     
-    y.a b(final int p0);
+    public k() {
+        this.a = new TreeSet<d>((Comparator<? super d>)new a(4));
+    }
     
-    void c();
+    @Override
+    public final void a(final Cache cache, final long n) {
+        if (n != -1L) {
+            this.f(cache, n);
+        }
+    }
     
-    y.a d(final int p0, final Object p1);
+    public final void b(final Cache cache, final d d) {
+        this.a.add(d);
+        this.b += d.h;
+        this.f(cache, 0L);
+    }
     
-    y.a e(final int p0, final int p1, final int p2);
+    @Override
+    public final void c() {
+    }
     
-    y.a f(final q p0, final int p1);
+    public final void d(final d d) {
+        this.a.remove(d);
+        this.b -= d.h;
+    }
     
-    boolean g(final a p0);
+    public final void e(final Cache cache, final d d, final n n) {
+        this.d(d);
+        this.b(cache, (d)n);
+    }
     
-    void h();
-    
-    boolean i(final Runnable p0);
-    
-    boolean j(final long p0);
-    
-    boolean k(final int p0);
-    
-    public interface a
-    {
+    public final void f(final Cache cache, final long n) {
+        while (this.b + n > 268435456L && !this.a.isEmpty()) {
+            cache.b((d)this.a.first());
+        }
     }
 }

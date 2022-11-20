@@ -4,7 +4,8 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import p1.h;
+import ng2.e;
 import com.squareup.moshi.n;
 import java.util.List;
 import kotlin.Metadata;
@@ -19,6 +20,13 @@ public final class StreamRules
     public StreamRules(@n(name = "livestream_rules") final List<SiteRuleFlow> livestream_rules) {
         e.f((Object)livestream_rules, "livestream_rules");
         this.livestream_rules = livestream_rules;
+    }
+    
+    public static StreamRules copy$default(final StreamRules streamRules, List livestream_rules, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            livestream_rules = streamRules.livestream_rules;
+        }
+        return streamRules.copy(livestream_rules);
     }
     
     public final List<SiteRuleFlow> component1() {
@@ -46,6 +54,6 @@ public final class StreamRules
     
     @Override
     public String toString() {
-        return d.o(a.r("StreamRules(livestream_rules="), (List)this.livestream_rules, ')');
+        return h.d(a.t("StreamRules(livestream_rules="), (List)this.livestream_rules, ')');
     }
 }

@@ -5,7 +5,7 @@
 package com.reddit.video.player.internal;
 
 import javax.inject.Inject;
-import sg2.e;
+import ng2.e;
 import android.content.Context;
 import kotlin.Metadata;
 

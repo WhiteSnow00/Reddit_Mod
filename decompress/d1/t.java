@@ -4,7 +4,7 @@
 
 package d1;
 
-import tg2.a;
+import og2.a;
 import java.util.Iterator;
 
 public abstract class t<K, V, T> implements Iterator<T>, a

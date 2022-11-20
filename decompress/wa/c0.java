@@ -4,42 +4,21 @@
 
 package wa;
 
-import android.media.metrics.LogSessionId;
-import ad.d0;
+import com.google.android.exoplayer2.m;
+import com.google.android.exoplayer2.e0;
+import com.google.android.exoplayer2.source.i;
+import com.google.android.exoplayer2.t;
+import com.google.android.exoplayer2.source.i$c;
 
-public final class c0
+public final class c0 implements i$c
 {
-    public final a a;
+    public final t a;
     
-    static {
-        if (ad.c0.a < 31) {
-            new c0();
-        }
-        else {
-            final int b = a.b;
-        }
-    }
-    
-    public c0() {
-        this(null);
-        d0.f(ad.c0.a < 31);
-    }
-    
-    public c0(final a a) {
+    public c0(final t a) {
         this.a = a;
     }
     
-    public static final class a
-    {
-        public static final /* synthetic */ int b = 0;
-        public final LogSessionId a;
-        
-        static {
-            final LogSessionId log_SESSION_ID_NONE = LogSessionId.LOG_SESSION_ID_NONE;
-        }
-        
-        public a(final LogSessionId a) {
-            this.a = a;
-        }
+    public final void a(final i i, final e0 e0) {
+        ((m)this.a.e).m.k(22);
     }
 }

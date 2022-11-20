@@ -6,7 +6,7 @@ package com.reddit.video.player.databinding;
 
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
-import a92.b;
+import ah0.b;
 import com.reddit.video.player.R;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import x5.a;
+import w5.a;
 
 public final class RedditVideoControlsBinding implements a
 {
@@ -58,54 +58,54 @@ public final class RedditVideoControlsBinding implements a
     
     public static RedditVideoControlsBinding bind(final View view) {
         int n = R.id.reddit_video_controls_bar;
-        final ConstraintLayout constraintLayout = (ConstraintLayout)b.G(n, view);
+        final ConstraintLayout constraintLayout = (ConstraintLayout)b.d0(n, view);
         if (constraintLayout != null) {
             n = R.id.reddit_video_controls_bg;
-            final View g = b.G(n, view);
-            if (g != null) {
+            final View d0 = b.d0(n, view);
+            if (d0 != null) {
                 n = R.id.reddit_video_controls_call_to_action;
-                final TextView textView = (TextView)b.G(n, view);
+                final TextView textView = (TextView)b.d0(n, view);
                 if (textView != null) {
                     n = R.id.reddit_video_controls_call_to_action_icon;
-                    final ImageView imageView = (ImageView)b.G(n, view);
+                    final ImageView imageView = (ImageView)b.d0(n, view);
                     if (imageView != null) {
                         n = R.id.reddit_video_controls_fullscreen;
-                        final ImageView imageView2 = (ImageView)b.G(n, view);
+                        final ImageView imageView2 = (ImageView)b.d0(n, view);
                         if (imageView2 != null) {
                             n = R.id.reddit_video_controls_mute;
-                            final ImageView imageView3 = (ImageView)b.G(n, view);
+                            final ImageView imageView3 = (ImageView)b.d0(n, view);
                             if (imageView3 != null) {
                                 n = R.id.reddit_video_controls_mute_bg;
-                                final ImageView imageView4 = (ImageView)b.G(n, view);
+                                final ImageView imageView4 = (ImageView)b.d0(n, view);
                                 if (imageView4 != null) {
                                     n = R.id.reddit_video_controls_pause;
-                                    final ImageView imageView5 = (ImageView)b.G(n, view);
+                                    final ImageView imageView5 = (ImageView)b.d0(n, view);
                                     if (imageView5 != null) {
                                         n = R.id.reddit_video_controls_play;
-                                        final ImageView imageView6 = (ImageView)b.G(n, view);
+                                        final ImageView imageView6 = (ImageView)b.d0(n, view);
                                         if (imageView6 != null) {
                                             n = R.id.reddit_video_controls_replay;
-                                            final TextView textView2 = (TextView)b.G(n, view);
+                                            final TextView textView2 = (TextView)b.d0(n, view);
                                             if (textView2 != null) {
                                                 n = R.id.reddit_video_controls_replay_icon;
-                                                final ImageView imageView7 = (ImageView)b.G(n, view);
+                                                final ImageView imageView7 = (ImageView)b.d0(n, view);
                                                 if (imageView7 != null) {
                                                     n = R.id.reddit_video_controls_seek_duration;
-                                                    final TextView textView3 = (TextView)b.G(n, view);
+                                                    final TextView textView3 = (TextView)b.d0(n, view);
                                                     if (textView3 != null) {
                                                         n = R.id.reddit_video_controls_seek_position;
-                                                        final TextView textView4 = (TextView)b.G(n, view);
+                                                        final TextView textView4 = (TextView)b.d0(n, view);
                                                         if (textView4 != null) {
                                                             n = R.id.reddit_video_controls_seekbar;
-                                                            final SeekBar seekBar = (SeekBar)b.G(n, view);
+                                                            final SeekBar seekBar = (SeekBar)b.d0(n, view);
                                                             if (seekBar != null) {
                                                                 n = R.id.reddit_video_controls_shadow;
-                                                                final View g2 = b.G(n, view);
-                                                                if (g2 != null) {
+                                                                final View d2 = b.d0(n, view);
+                                                                if (d2 != null) {
                                                                     n = R.id.reddit_video_controls_spinner;
-                                                                    final ProgressBar progressBar = (ProgressBar)b.G(n, view);
+                                                                    final ProgressBar progressBar = (ProgressBar)b.d0(n, view);
                                                                     if (progressBar != null) {
-                                                                        return new RedditVideoControlsBinding((ConstraintLayout)view, constraintLayout, g, textView, imageView, imageView2, imageView3, imageView4, imageView5, imageView6, textView2, imageView7, textView3, textView4, seekBar, g2, progressBar);
+                                                                        return new RedditVideoControlsBinding((ConstraintLayout)view, constraintLayout, d0, textView, imageView, imageView2, imageView3, imageView4, imageView5, imageView6, textView2, imageView7, textView3, textView4, seekBar, d2, progressBar);
                                                                     }
                                                                 }
                                                             }
@@ -135,6 +135,11 @@ public final class RedditVideoControlsBinding implements a
             viewGroup.addView(inflate);
         }
         return bind(inflate);
+    }
+    
+    @Override
+    public /* bridge */ View getRoot() {
+        return (View)this.getRoot();
     }
     
     public ConstraintLayout getRoot() {

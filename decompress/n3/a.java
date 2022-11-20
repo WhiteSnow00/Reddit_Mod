@@ -4,15 +4,16 @@
 
 package n3;
 
-import androidx.biometric.q;
-import a4.y0;
-import a4.u;
+import a4.x0;
+import a4.n0;
+import a4.o;
 import android.content.ComponentName;
 import a4.t;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.BroadcastReceiver;
+import dg.l0;
 import android.os.Handler;
 import java.util.concurrent.Executor;
 import android.graphics.drawable.Drawable;
@@ -20,12 +21,9 @@ import java.util.WeakHashMap;
 import android.content.res.XmlResourceParser;
 import android.content.res.Resources$Theme;
 import android.content.res.Resources;
-import p3.f$b;
 import p3.b;
-import p3.f$c;
 import android.util.SparseArray;
 import p3.f;
-import p3.f$d;
 import android.content.res.ColorStateList;
 import android.os.Build$VERSION;
 import android.util.Log;
@@ -106,20 +104,20 @@ public class a
     public static ColorStateList getColorStateList(final Context context, final int n) {
         final Resources resources = context.getResources();
         final Resources$Theme theme = context.getTheme();
-        final f$d f$d = new f$d(resources, theme);
+        final p3.f.d d = new p3.f.d(resources, theme);
         Object c = p3.f.c;
         synchronized (c) {
-            final SparseArray sparseArray = p3.f.b.get(f$d);
+            final SparseArray sparseArray = p3.f.b.get(d);
             final ColorStateList list = null;
             ColorStateList list2 = null;
-            Label_0134: {
+            Label_0143: {
                 if (sparseArray != null && sparseArray.size() > 0) {
-                    final f$c f$c = (f$c)sparseArray.get(n);
-                    if (f$c != null) {
-                        if (f$c.b.equals(resources.getConfiguration()) && ((theme == null && f$c.c == 0) || (theme != null && f$c.c == theme.hashCode()))) {
-                            list2 = f$c.a;
+                    final p3.f.c c2 = (p3.f.c)sparseArray.get(n);
+                    if (c2 != null) {
+                        if (c2.b.equals(resources.getConfiguration()) && ((theme == null && c2.c == 0) || (theme != null && c2.c == theme.hashCode()))) {
+                            list2 = c2.a;
                             monitorexit(c);
-                            break Label_0134;
+                            break Label_0143;
                         }
                         sparseArray.remove(n);
                     }
@@ -128,11 +126,11 @@ public class a
                 list2 = null;
             }
             if (list2 == null) {
-                final ThreadLocal a = p3.f.a;
+                final ThreadLocal<TypedValue> a = p3.f.a;
                 c = a.get();
                 if (c == null) {
                     final TypedValue typedValue = new TypedValue();
-                    a.set(c);
+                    a.set((TypedValue)c);
                 }
                 boolean b = true;
                 resources.getValue(n, (TypedValue)c, true);
@@ -156,19 +154,19 @@ public class a
                 }
                 if (a2 != null) {
                     synchronized (p3.f.c) {
-                        final WeakHashMap b2 = p3.f.b;
-                        c = b2.get(f$d);
+                        final WeakHashMap<p3.f.d, SparseArray<p3.f.c>> b2 = p3.f.b;
+                        c = b2.get(d);
                         if (c == null) {
                             new(android.util.SparseArray.class)();
                             new SparseArray();
-                            b2.put(f$d, c);
+                            b2.put(d, (SparseArray<p3.f.c>)c);
                         }
-                        c = new f$c(a2, f$d.a.getConfiguration(), theme);
+                        c = new p3.f.c(a2, d.a.getConfiguration(), theme);
                         ((SparseArray)c).append(n, c);
                         return list2;
                     }
                 }
-                list2 = f$b.b(resources, n, theme);
+                list2 = p3.f.b.b(resources, n, theme);
             }
             return list2;
         }
@@ -222,10 +220,10 @@ public class a
         sb.append(context.getPackageName());
         sb.append(".DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION");
         final String string = sb.toString();
-        if (a92.b.A(context, string) == 0) {
+        if (l0.Q(context, string) == 0) {
             return string;
         }
-        throw new RuntimeException(a.k("Permission ", string, " is required by your application to receive broadcasts, please add it to your manifest"));
+        throw new RuntimeException(a.n("Permission ", string, " is required by your application to receive broadcasts, please add it to your manifest"));
     }
     
     public static Intent registerReceiver(final Context context, final BroadcastReceiver broadcastReceiver, final IntentFilter intentFilter, final int n) {
@@ -359,32 +357,32 @@ public class a
             if ((n & 0x4) != 0x0 && s == null) {
                 return context.registerReceiver(broadcastReceiver, intentFilter, a.obtainAndCheckReceiverPermission(context), handler);
             }
-            return t.a(context, broadcastReceiver, intentFilter, s, handler, n & 0x1);
+            return t.c(context, broadcastReceiver, intentFilter, s, handler, n & 0x1);
         }
         
         public static ComponentName b(final Context context, final Intent intent) {
-            return u.b(context, intent);
+            return o.b(context, intent);
         }
     }
     
     public static final class g
     {
         public static Executor a(final Context context) {
-            return y0.g(context);
+            return n0.f(context);
         }
     }
     
     public static final class h
     {
         public static String a(final Context context) {
-            return q.c(context);
+            return x0.c(context);
         }
     }
     
     public static final class i
     {
         public static Intent a(final Context context, final BroadcastReceiver broadcastReceiver, final IntentFilter intentFilter, final String s, final Handler handler, final int n) {
-            return t.a(context, broadcastReceiver, intentFilter, s, handler, n);
+            return t.c(context, broadcastReceiver, intentFilter, s, handler, n);
         }
     }
 }

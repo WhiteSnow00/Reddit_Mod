@@ -5,10 +5,10 @@
 package com.reddit.video.player.player;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import sg2.e;
+import ng2.e;
 import kotlin.Metadata;
 
-@Metadata(bv = {}, d1 = { "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u0014\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\u0000\u001a\u0016\u0010\u0004\u001a\u00020\u0005*\u00020\u00052\b\u0010\u0002\u001a\u0004\u0018\u00010\u0006H\u0000¨\u0006\u0007" }, d2 = { "Lcom/reddit/video/player/player/ViewModel;", "Lcom/reddit/video/player/player/ViewModelOverride;", "other", "Lhg2/j;", "override", "Lcom/reddit/video/player/player/Model;", "Lcom/reddit/video/player/player/ModelOverride;", "player_release" }, k = 2, mv = { 1, 7, 1 })
+@Metadata(bv = {}, d1 = { "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u0014\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\u0000\u001a\u0016\u0010\u0004\u001a\u00020\u0005*\u00020\u00052\b\u0010\u0002\u001a\u0004\u0018\u00010\u0006H\u0000¨\u0006\u0007" }, d2 = { "Lcom/reddit/video/player/player/ViewModel;", "Lcom/reddit/video/player/player/ViewModelOverride;", "other", "Lcg2/j;", "override", "Lcom/reddit/video/player/player/Model;", "Lcom/reddit/video/player/player/ModelOverride;", "player_release" }, k = 2, mv = { 1, 7, 1 })
 public final class ViewModelOverrideKt
 {
     public static final Model override(final Model model, final ModelOverride modelOverride) {

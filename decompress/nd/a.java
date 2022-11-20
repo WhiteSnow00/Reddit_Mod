@@ -4,12 +4,41 @@
 
 package nd;
 
-import com.google.android.gms.common.api.Status;
+import android.content.ComponentName;
+import java.util.concurrent.TimeoutException;
+import mg.d0;
+import android.os.IBinder;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.LinkedBlockingQueue;
+import android.content.ServiceConnection;
 
-public abstract class a<R extends c>
+public final class a implements ServiceConnection
 {
-    public interface a
-    {
-        void a(final Status p0);
+    public boolean f;
+    public final LinkedBlockingQueue g;
+    
+    public a() {
+        this.f = false;
+        this.g = new LinkedBlockingQueue();
+    }
+    
+    public final IBinder a(final TimeUnit timeUnit) throws InterruptedException, TimeoutException {
+        d0.x("BlockingServiceConnection.getServiceWithTimeout() called on main thread");
+        if (this.f) {
+            throw new IllegalStateException("Cannot call get on this connection more than once");
+        }
+        this.f = true;
+        final IBinder binder = this.g.poll(10000L, timeUnit);
+        if (binder != null) {
+            return binder;
+        }
+        throw new TimeoutException("Timed out waiting for the service connection");
+    }
+    
+    public final void onServiceConnected(final ComponentName componentName, final IBinder binder) {
+        this.g.add(binder);
+    }
+    
+    public final void onServiceDisconnected(final ComponentName componentName) {
     }
 }

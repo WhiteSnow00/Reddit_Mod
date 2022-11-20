@@ -4,7 +4,7 @@
 
 package n4;
 
-import ej2.c0;
+import dg.l0;
 import android.widget.TextView;
 
 public final class f
@@ -12,7 +12,7 @@ public final class f
     public final f.f$a a;
     
     public f(final TextView textView) {
-        c0.J2((Object)textView, "textView cannot be null");
+        l0.P((Object)textView, "textView cannot be null");
         this.a = new f.f$a(textView);
     }
     

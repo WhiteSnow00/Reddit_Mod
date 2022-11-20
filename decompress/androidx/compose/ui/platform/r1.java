@@ -4,24 +4,20 @@
 
 package androidx.compose.ui.platform;
 
-import gj2.t;
-import android.net.Uri;
-import android.os.Handler;
-import kotlinx.coroutines.channels.AbstractChannel;
-import hg2.j;
-import gj2.e;
-import android.database.ContentObserver;
+import ah0.b;
+import z1.x;
+import z0.k0;
 
-public final class r1 extends ContentObserver
+public final class r1 implements q1
 {
-    public final /* synthetic */ e<j> a;
+    public static final k0 b;
+    public final k0 a;
     
-    public r1(final AbstractChannel a, final Handler handler) {
-        this.a = (e<j>)a;
-        super(handler);
+    static {
+        b = ah0.b.Z0((Object)new x(0));
     }
     
-    public final void onChange(final boolean b, final Uri uri) {
-        ((t<j>)this.a).e(j.a);
+    public r1() {
+        this.a = ah0.b.Z0((Object)Boolean.FALSE);
     }
 }

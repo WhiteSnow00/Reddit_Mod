@@ -11,18 +11,19 @@ import androidx.core.graphics.drawable.IconCompat;
 import android.graphics.drawable.Icon;
 import java.util.Iterator;
 import android.app.Notification;
-import m3.h;
-import androidx.appcompat.widget.l0;
-import a4.f2;
-import a4.e2;
-import a4.x0;
+import androidx.compose.ui.platform.w0;
+import a4.v0;
+import a4.u0;
+import a4.t0;
+import a4.p0;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.os.Parcelable;
 import java.util.Collection;
 import j0.d;
-import a4.c1;
-import a4.r0;
+import a4.b1;
+import a4.s1;
+import a4.n0;
 import android.app.Notification$Action$Builder;
 import androidx.core.graphics.drawable.IconCompat$a;
 import android.os.Build$VERSION;
@@ -86,13 +87,13 @@ public final class a implements NotificationBuilderWithBuilderAccessor
             notification$Action$Builder.setAllowGeneratedReplies(notificationCompat$Action.getAllowGeneratedReplies());
             ((BaseBundle)bundle).putInt("android.support.action.semanticAction", notificationCompat$Action.getSemanticAction());
             if (sdk_INT >= 28) {
-                r0.b(notification$Action$Builder, notificationCompat$Action.getSemanticAction());
+                n0.h(notification$Action$Builder, notificationCompat$Action.getSemanticAction());
             }
             if (sdk_INT >= 29) {
-                c1.f(notification$Action$Builder, notificationCompat$Action.isContextual());
+                s1.h(notification$Action$Builder, notificationCompat$Action.isContextual());
             }
             if (sdk_INT >= 31) {
-                g01.a.b(notification$Action$Builder, notificationCompat$Action.isAuthenticationRequired());
+                b1.b(notification$Action$Builder, notificationCompat$Action.isAuthenticationRequired());
             }
             ((BaseBundle)bundle).putBoolean("android.support.action.showsUserInterface", notificationCompat$Action.getShowsUserInterface());
             notification$Action$Builder.addExtras(bundle);
@@ -255,22 +256,22 @@ public final class a implements NotificationBuilderWithBuilderAccessor
         if (sdk_INT3 >= 28) {
             final Iterator iterator5 = c.mPersonList.iterator();
             while (iterator5.hasNext()) {
-                x0.c(this.b, ((Person)iterator5.next()).toAndroidPerson());
+                p0.d(this.b, ((Person)iterator5.next()).toAndroidPerson());
             }
         }
         final int sdk_INT4 = Build$VERSION.SDK_INT;
         if (sdk_INT4 >= 29) {
-            e2.f(this.b, c.mAllowSystemGeneratedContextualActions);
-            f2.d(this.b, NotificationCompat$BubbleMetadata.toPlatform(c.mBubbleMetadata));
+            t0.d(this.b, c.mAllowSystemGeneratedContextualActions);
+            u0.e(this.b, NotificationCompat$BubbleMetadata.toPlatform(c.mBubbleMetadata));
             final n3.b mLocusId = c.mLocusId;
             if (mLocusId != null) {
-                l0.c(this.b, mLocusId.b);
+                v0.i(this.b, mLocusId.b);
             }
         }
         if (sdk_INT4 >= 31) {
             final int mFgsDeferBehavior = c.mFgsDeferBehavior;
             if (mFgsDeferBehavior != 0) {
-                h.a(this.b, mFgsDeferBehavior);
+                w0.a(this.b, mFgsDeferBehavior);
             }
         }
         if (c.mSilent) {

@@ -5,25 +5,23 @@
 package kotlinx.serialization.internal;
 
 import kotlin.collections.CollectionsKt___CollectionsKt;
-import al0.f0;
-import lg.e0;
 import java.util.HashMap;
-import qj2.i$a;
-import qj2.h;
+import mj2.i$a;
+import mj2.h;
 import kotlin.collections.EmptyList;
 import java.util.Arrays;
-import pj2.b;
+import lj2.b;
 import java.util.Set;
 import kotlin.a;
 import kotlin.LazyThreadSafetyMode;
 import kotlin.collections.c;
-import hg2.f;
+import cg2.f;
 import java.util.Map;
 import java.lang.annotation.Annotation;
 import java.util.List;
-import sj2.z;
-import sj2.l;
-import qj2.e;
+import oj2.z;
+import oj2.l;
+import mj2.e;
 
 public final class PluginGeneratedSerialDescriptor implements e, l
 {
@@ -52,11 +50,11 @@ public final class PluginGeneratedSerialDescriptor implements e, l
         c = this.c;
         this.f = new List[c];
         this.g = new boolean[c];
-        this.h = kotlin.collections.c.V0();
+        this.h = kotlin.collections.c.u4();
         final LazyThreadSafetyMode publication = LazyThreadSafetyMode.PUBLICATION;
-        this.i = kotlin.a.a(publication, (rg2.a)new PluginGeneratedSerialDescriptor$childSerializers$2(this));
-        this.j = kotlin.a.a(publication, (rg2.a)new PluginGeneratedSerialDescriptor$typeParameterDescriptors$2(this));
-        this.k = kotlin.a.a(publication, (rg2.a)new PluginGeneratedSerialDescriptor$_hashCode$2(this));
+        this.i = kotlin.a.a(publication, (mg2.a)new PluginGeneratedSerialDescriptor$childSerializers$2(this));
+        this.j = kotlin.a.a(publication, (mg2.a)new PluginGeneratedSerialDescriptor$typeParameterDescriptors$2(this));
+        this.k = kotlin.a.a(publication, (mg2.a)new PluginGeneratedSerialDescriptor$_hashCode$2(this));
     }
     
     public final Set<String> a() {
@@ -70,7 +68,7 @@ public final class PluginGeneratedSerialDescriptor implements e, l
     
     @Override
     public final int c(final String s) {
-        sg2.e.f((Object)s, "name");
+        ng2.e.f((Object)s, "name");
         final Integer n = this.h.get(s);
         int intValue;
         if (n != null) {
@@ -101,20 +99,20 @@ public final class PluginGeneratedSerialDescriptor implements e, l
             }
             final String a = this.a;
             final e e = (e)o;
-            if (!sg2.e.a((Object)a, (Object)e.h())) {
+            if (!ng2.e.a((Object)a, (Object)e.h())) {
                 return b;
             }
-            if (!Arrays.equals(this.j.getValue(), ((PluginGeneratedSerialDescriptor)o).j.getValue())) {
+            if (!Arrays.equals((Object[])this.j.getValue(), (Object[])((PluginGeneratedSerialDescriptor)o).j.getValue())) {
                 return b;
             }
             if (this.c != e.e()) {
                 return b;
             }
             for (int c = this.c, i = 0; i < c; ++i) {
-                if (!sg2.e.a((Object)this.d(i).h(), (Object)e.d(i).h())) {
+                if (!ng2.e.a((Object)this.d(i).h(), (Object)e.d(i).h())) {
                     return b;
                 }
-                if (!sg2.e.a((Object)this.d(i).getKind(), (Object)e.d(i).getKind())) {
+                if (!ng2.e.a((Object)this.d(i).getKind(), (Object)e.d(i).getKind())) {
                     return b;
                 }
             }
@@ -154,7 +152,7 @@ public final class PluginGeneratedSerialDescriptor implements e, l
     
     @Override
     public final int hashCode() {
-        return this.k.getValue().intValue();
+        return ((Number)this.k.getValue()).intValue();
     }
     
     @Override
@@ -184,6 +182,6 @@ public final class PluginGeneratedSerialDescriptor implements e, l
     
     @Override
     public final String toString() {
-        return CollectionsKt___CollectionsKt.I3((Iterable)e0.v0(0, this.c), (CharSequence)", ", f0.n(new StringBuilder(), this.a, '('), ")", (rg2.l)new PluginGeneratedSerialDescriptor$toString$1(this), 24);
+        return CollectionsKt___CollectionsKt.a5((Iterable)zd.b.w1(0, this.c), (CharSequence)", ", p1.h.c(new StringBuilder(), this.a, '('), ")", (mg2.l)new PluginGeneratedSerialDescriptor$toString$1(this), 24);
     }
 }

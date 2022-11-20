@@ -228,6 +228,10 @@
         <item quantity="one">Tu cuenta de Reddit ha sido suspendida durante %1$d día.</item>
         <item quantity="other">Tu cuenta de Reddit ha sido suspendida durante %1$d días.</item>
     </plurals>
+    <plurals name="accounts_fmt_num_followers">
+        <item quantity="one">%1$s seguidor</item>
+        <item quantity="other">%1$s seguidores</item>
+    </plurals>
     <plurals name="action_subtitle_days_ban">
         <item quantity="one">Baneado durante %1$d día</item>
         <item quantity="other">Baneado durante %1$d días</item>

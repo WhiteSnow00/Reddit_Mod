@@ -4,9 +4,9 @@
 
 package o0;
 
-import kotlinx.coroutines.flow.f;
+import kotlinx.coroutines.flow.g;
 
 public interface i
 {
-    f c();
+    g c();
 }

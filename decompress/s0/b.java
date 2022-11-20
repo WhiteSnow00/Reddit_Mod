@@ -4,7 +4,7 @@
 
 package s0;
 
-public final class b implements h$a
+public final class b implements a
 {
     public static final b a;
     
@@ -12,6 +12,7 @@ public final class b implements h$a
         a = new b();
     }
     
+    @Override
     public final void cancel() {
     }
 }

@@ -7,37 +7,37 @@ package com.google.android.gms.measurement;
 import android.util.SparseArray;
 import android.os.PowerManager$WakeLock;
 import android.content.ComponentName;
-import pe.d3;
+import qe.h3;
 import android.os.PowerManager;
-import ie.c1;
-import pe.h4;
+import je.a1;
+import qe.j4;
 import android.content.Intent;
 import android.content.Context;
-import pe.w3;
-import pe.v3;
-import u4.a;
+import qe.z3;
+import qe.y3;
+import t4.a;
 
-public final class AppMeasurementReceiver extends a implements v3
+public final class AppMeasurementReceiver extends a implements y3
 {
-    public w3 h;
+    public z3 h;
     
     public final void onReceive(final Context context, Intent f) {
         if (this.h == null) {
-            this.h = new w3(this);
+            this.h = new z3(this);
         }
-        final w3 h = this.h;
+        final z3 h = this.h;
         h.getClass();
-        final d3 h2 = h4.s(context, (c1)null, (Long)null).h();
+        final h3 c = j4.t(context, (a1)null, (Long)null).c();
         if (f == null) {
-            h2.n.a("Receiver called with null intent");
+            c.p.a("Receiver called with null intent");
         }
         else {
             final String action = f.getAction();
-            h2.s.b((Object)action, "Local receiver got");
+            c.u.b((Object)action, "Local receiver got");
             if ("com.google.android.gms.measurement.UPLOAD".equals(action)) {
                 final Intent setClassName = new Intent().setClassName(context, "com.google.android.gms.measurement.AppMeasurementService");
                 setClassName.setAction("com.google.android.gms.measurement.UPLOAD");
-                h2.s.a("Starting wakeful intent.");
+                c.u.a("Starting wakeful intent.");
                 h.a.getClass();
                 f = (Intent)a.f;
                 synchronized (f) {
@@ -62,7 +62,7 @@ public final class AppMeasurementReceiver extends a implements v3
                 }
             }
             if ("com.android.vending.INSTALL_REFERRER".equals(action)) {
-                h2.n.a("Install Referrer Broadcasts are deprecated");
+                c.p.a("Install Referrer Broadcasts are deprecated");
             }
         }
     }

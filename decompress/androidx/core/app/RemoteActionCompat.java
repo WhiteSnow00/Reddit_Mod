@@ -12,7 +12,7 @@ import androidx.core.graphics.drawable.IconCompat$a;
 import android.app.RemoteAction;
 import androidx.core.graphics.drawable.IconCompat;
 import android.app.PendingIntent;
-import w5.c;
+import v5.c;
 
 public final class RemoteActionCompat implements c
 {

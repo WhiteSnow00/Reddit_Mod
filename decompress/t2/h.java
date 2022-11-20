@@ -4,52 +4,61 @@
 
 package t2;
 
-import u2.k;
-import u2.j;
-import ej2.c0;
-
 public final class h
 {
-    public static final h c;
-    public final long a;
-    public final long b;
+    public final int a;
     
-    static {
-        c = new h(c0.m3(0), c0.m3(0));
-    }
-    
-    public h(final long a, final long b) {
+    public h(final int a) {
         this.a = a;
-        this.b = b;
     }
     
     @Override
     public final boolean equals(final Object o) {
-        if (this == o) {
-            return true;
+        final int a = this.a;
+        final boolean b = o instanceof h;
+        boolean b2 = false;
+        if (b) {
+            if (a == ((h)o).a) {
+                b2 = true;
+            }
         }
-        if (!(o instanceof h)) {
-            return false;
-        }
-        final long a = this.a;
-        final h h = (h)o;
-        return j.a(a, h.a) && j.a(this.b, h.b);
+        return b2;
     }
     
     @Override
     public final int hashCode() {
-        final long a = this.a;
-        final k[] b = j.b;
-        return Long.hashCode(this.b) + Long.hashCode(a) * 31;
+        return Integer.hashCode(this.a);
     }
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("TextIndent(firstLine=");
-        r.append((Object)j.d(this.a));
-        r.append(", restLine=");
-        r.append((Object)j.d(this.b));
-        r.append(')');
-        return r.toString();
+        final int a = this.a;
+        final int n = 0;
+        String s;
+        if (a == 1) {
+            s = "Ltr";
+        }
+        else if (a == 2) {
+            s = "Rtl";
+        }
+        else if (a == 3) {
+            s = "Content";
+        }
+        else if (a == 4) {
+            s = "ContentOrLtr";
+        }
+        else {
+            int n2 = n;
+            if (a == 5) {
+                n2 = 1;
+            }
+            if (n2 != 0) {
+                s = "ContentOrRtl";
+            }
+            else {
+                s = "Invalid";
+            }
+        }
+        return s;
     }
 }

@@ -344,7 +344,7 @@
     <string name="ib_str_live_welcome_message_title">Nous sommes toujours contents de connaître votre avis.</string>
     <string name="ibg_screen_recording_notification_title">L\'enregistrement de l\'écran est activé</string>
     <string name="in_progress">En cours</string>
-    <string name="indeterminate">Ni cochée, ni décochée</string>
+    <string name="indeterminate">Partiellement coché</string>
     <string name="instabug_alert_dialog_no">Non</string>
     <string name="instabug_alert_dialog_yes">Oui</string>
     <string name="instabug_audio_recorder_permission_denied">Permission d\'enregistrement audio refusée</string>

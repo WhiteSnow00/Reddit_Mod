@@ -4,12 +4,12 @@
 
 package io.reactivex.internal.operators.observable;
 
-import wf2.i;
-import if2.a;
-import ff2.a0;
+import rf2.i;
+import df2.a;
+import af2.a0;
 import java.util.concurrent.TimeUnit;
-import ff2.b0;
-import ff2.t;
+import af2.b0;
+import af2.t;
 
 public final class ObservableInterval extends t<Long>
 {
@@ -25,6 +25,7 @@ public final class ObservableInterval extends t<Long>
         this.f = f;
     }
     
+    @Override
     public final void subscribeActual(final a0<? super Long> a0) {
         final ObservableInterval.ObservableInterval$IntervalObserver observableInterval$IntervalObserver = new ObservableInterval.ObservableInterval$IntervalObserver((a0)a0);
         a0.onSubscribe((a)observableInterval$IntervalObserver);

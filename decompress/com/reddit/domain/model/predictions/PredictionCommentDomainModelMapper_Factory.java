@@ -4,7 +4,7 @@
 
 package com.reddit.domain.model.predictions;
 
-import se2.d;
+import ne2.d;
 
 public final class PredictionCommentDomainModelMapper_Factory implements d<PredictionCommentDomainModelMapper>
 {
@@ -18,5 +18,9 @@ public final class PredictionCommentDomainModelMapper_Factory implements d<Predi
     
     public PredictionCommentDomainModelMapper get() {
         return newInstance();
+    }
+    
+    public /* bridge */ Object get() {
+        return this.get();
     }
 }

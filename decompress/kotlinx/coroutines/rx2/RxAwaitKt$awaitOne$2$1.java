@@ -4,28 +4,27 @@
 
 package kotlinx.coroutines.rx2;
 
-import lg2.c;
-import hg2.j;
-import sg2.e;
-import yd.b;
+import gg2.c;
+import ng2.e;
+import cg.d;
 import java.util.NoSuchElementException;
 import kotlin.Result;
-import ej2.l;
-import ej2.k;
-import if2.a;
-import ff2.a0;
+import zi2.m;
+import zi2.l;
+import df2.a;
+import af2.a0;
 
 public final class RxAwaitKt$awaitOne$2$1 implements a0<Object>
 {
-    public a f;
+    public df2.a f;
     public Object g;
     public boolean h;
-    public final /* synthetic */ k<Object> i;
-    public final /* synthetic */ Mode j;
-    public final /* synthetic */ Object k;
+    public final l<Object> i;
+    public final Mode j;
+    public final Object k;
     
-    public RxAwaitKt$awaitOne$2$1(final l i, final Mode j, final Object k) {
-        this.i = (k<Object>)i;
+    public RxAwaitKt$awaitOne$2$1(final m i, final Mode j, final Object k) {
+        this.i = (l<Object>)i;
         this.j = j;
         this.k = k;
     }
@@ -41,29 +40,29 @@ public final class RxAwaitKt$awaitOne$2$1 implements a0<Object>
             ((c)this.i).resumeWith(Result.constructor-impl(this.k));
         }
         else if (this.i.isActive()) {
-            final k<Object> i = this.i;
-            final StringBuilder r = a.r("No value received via onNext for ");
-            r.append(this.j);
-            ((c)i).resumeWith(Result.constructor-impl((Object)b.o((Throwable)new NoSuchElementException(r.toString()))));
+            final l<Object> i = this.i;
+            final StringBuilder t = a.t("No value received via onNext for ");
+            t.append(this.j);
+            ((c)i).resumeWith(Result.constructor-impl((Object)d.B1((Throwable)new NoSuchElementException(t.toString()))));
         }
     }
     
     public final void onError(final Throwable t) {
-        ((c)this.i).resumeWith(Result.constructor-impl((Object)b.o(t)));
+        ((c)this.i).resumeWith(Result.constructor-impl((Object)d.B1(t)));
     }
     
     public final void onNext(final Object g) {
-        final int n = RxAwaitKt$awaitOne$2$1.RxAwaitKt$awaitOne$2$1$a.a[((Enum)this.j).ordinal()];
+        final int n = a.a[this.j.ordinal()];
         if (n != 1 && n != 2) {
             if (n == 3 || n == 4) {
                 if (this.j == Mode.SINGLE && this.h) {
                     if (this.i.isActive()) {
-                        final k<Object> i = this.i;
-                        final StringBuilder r = a.r("More than one onNext value for ");
-                        r.append(this.j);
-                        ((c)i).resumeWith(Result.constructor-impl((Object)b.o((Throwable)new IllegalArgumentException(r.toString()))));
+                        final l<Object> i = this.i;
+                        final StringBuilder t = a.t("More than one onNext value for ");
+                        t.append(this.j);
+                        ((c)i).resumeWith(Result.constructor-impl((Object)d.B1((Throwable)new IllegalArgumentException(t.toString()))));
                     }
-                    final a f = this.f;
+                    final df2.a f = this.f;
                     if (f == null) {
                         e.n("subscription");
                         throw null;
@@ -79,7 +78,7 @@ public final class RxAwaitKt$awaitOne$2$1 implements a0<Object>
         else if (!this.h) {
             this.h = true;
             ((c)this.i).resumeWith(Result.constructor-impl(g));
-            final a f2 = this.f;
+            final df2.a f2 = this.f;
             if (f2 == null) {
                 e.n("subscription");
                 throw null;
@@ -88,8 +87,22 @@ public final class RxAwaitKt$awaitOne$2$1 implements a0<Object>
         }
     }
     
-    public final void onSubscribe(final a f) {
+    public final void onSubscribe(final df2.a f) {
         this.f = f;
-        this.i.F((rg2.l<? super Throwable, j>)new RxAwaitKt$awaitOne$2$1$onSubscribe$1(f));
+        this.i.Z((mg2.l)new RxAwaitKt$awaitOne$2$1$onSubscribe$1(f));
+    }
+    
+    public final class a
+    {
+        public static final int[] a;
+        
+        static {
+            final int[] a2 = new int[Mode.values().length];
+            a2[Mode.FIRST.ordinal()] = 1;
+            a2[Mode.FIRST_OR_DEFAULT.ordinal()] = 2;
+            a2[Mode.LAST.ordinal()] = 3;
+            a2[Mode.SINGLE.ordinal()] = 4;
+            a = a2;
+        }
     }
 }

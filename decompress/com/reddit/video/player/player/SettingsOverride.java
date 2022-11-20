@@ -4,7 +4,7 @@
 
 package com.reddit.video.player.player;
 
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -23,6 +23,32 @@ public final class SettingsOverride
         this.autoplay = autoplay;
         this.loop = loop;
         this.disabled = disabled;
+    }
+    
+    public SettingsOverride(Boolean b, Boolean b2, Boolean b3, final int n, final DefaultConstructorMarker defaultConstructorMarker) {
+        if ((n & 0x1) != 0x0) {
+            b = null;
+        }
+        if ((n & 0x2) != 0x0) {
+            b2 = null;
+        }
+        if ((n & 0x4) != 0x0) {
+            b3 = null;
+        }
+        this(b, b2, b3);
+    }
+    
+    public static SettingsOverride copy$default(final SettingsOverride settingsOverride, Boolean autoplay, Boolean loop, Boolean disabled, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            autoplay = settingsOverride.autoplay;
+        }
+        if ((n & 0x2) != 0x0) {
+            loop = settingsOverride.loop;
+        }
+        if ((n & 0x4) != 0x0) {
+            disabled = settingsOverride.disabled;
+        }
+        return settingsOverride.copy(autoplay, loop, disabled);
     }
     
     public final Boolean component1() {
@@ -93,11 +119,11 @@ public final class SettingsOverride
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("SettingsOverride(autoplay=");
-        r.append(this.autoplay);
-        r.append(", loop=");
-        r.append(this.loop);
-        r.append(", disabled=");
-        return android.support.v4.media.a.j(r, this.disabled, ')');
+        final StringBuilder t = a.t("SettingsOverride(autoplay=");
+        t.append(this.autoplay);
+        t.append(", loop=");
+        t.append(this.loop);
+        t.append(", disabled=");
+        return android.support.v4.media.a.m(t, this.disabled, ')');
     }
 }

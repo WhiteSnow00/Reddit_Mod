@@ -4,46 +4,25 @@
 
 package s0;
 
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import androidx.compose.foundation.lazy.layout.a;
-import c2.j0;
+import z0.d;
+import kotlin.collections.c;
+import java.util.Map;
 
-public final class e implements j0
+public interface e
 {
-    public final a f;
-    public final LinkedHashMap g;
+    int M();
     
-    public e(final a f) {
-        sg2.e.f((Object)f, "factory");
-        this.f = f;
-        this.g = new LinkedHashMap();
+    default Object a(final int n) {
+        return new a(n);
     }
     
-    public final void f(final j0.a a) {
-        sg2.e.f((Object)a, "slotIds");
-        this.g.clear();
-        final Iterator<Object> iterator = a.iterator();
-        while (iterator.hasNext()) {
-            final Object b = this.f.b(iterator.next());
-            final Integer n = this.g.get(b);
-            int intValue;
-            if (n != null) {
-                intValue = n;
-            }
-            else {
-                intValue = 0;
-            }
-            if (intValue == 7) {
-                iterator.remove();
-            }
-            else {
-                this.g.put(b, intValue + 1);
-            }
-        }
+    default Object c(final int n) {
+        return null;
     }
     
-    public final boolean h(final Object o, final Object o2) {
-        return sg2.e.a(this.f.b(o), this.f.b(o2));
+    default Map<Object, Integer> d() {
+        return c.u4();
     }
+    
+    void g(final int p0, final d p1, final int p2);
 }

@@ -4,7 +4,7 @@
 
 package t1;
 
-import sg2.e;
+import ng2.e;
 import android.util.AttributeSet;
 import android.content.res.Resources;
 import p3.k;
@@ -78,9 +78,9 @@ public final class a
     
     @Override
     public final String toString() {
-        final StringBuilder r = a.r("AndroidVectorParser(xmlParser=");
-        r.append(this.a);
-        r.append(", config=");
-        return d.l(r, this.b, ')');
+        final StringBuilder t = a.t("AndroidVectorParser(xmlParser=");
+        t.append(this.a);
+        t.append(", config=");
+        return d.j(t, this.b, ')');
     }
 }

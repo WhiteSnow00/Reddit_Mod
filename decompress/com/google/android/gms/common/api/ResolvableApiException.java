@@ -6,7 +6,7 @@ package com.google.android.gms.common.api;
 
 import android.content.IntentSender$SendIntentException;
 import android.content.Intent;
-import lw0.b;
+import mg.d0;
 import android.app.Activity;
 import android.app.PendingIntent;
 
@@ -23,7 +23,7 @@ public class ResolvableApiException extends ApiException
     public void startResolutionForResult(final Activity activity, final int n) throws IntentSender$SendIntentException {
         final PendingIntent i = this.getStatus().i;
         if (i != null) {
-            b.R((Object)i);
+            d0.y((Object)i);
             activity.startIntentSenderForResult(i.getIntentSender(), n, (Intent)null, 0, 0, 0);
         }
     }

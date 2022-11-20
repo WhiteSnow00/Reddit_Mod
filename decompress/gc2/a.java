@@ -4,30 +4,25 @@
 
 package gc2;
 
-import java.util.Collections;
-import java.util.List;
-
-public final class a implements Cloneable
+public abstract class a implements Runnable
 {
-    public static final a h;
-    public List<Object> f;
-    public List<Object> g;
+    public final String f;
     
-    static {
-        h = new a();
+    public a(final String s, final Object... array) {
+        this.f = b.l(s, array);
     }
     
-    public a() {
-        this.f = Collections.emptyList();
-        this.g = Collections.emptyList();
-    }
+    public abstract void a();
     
-    public final Object clone() throws CloneNotSupportedException {
+    @Override
+    public final void run() {
+        final String name = Thread.currentThread().getName();
+        Thread.currentThread().setName(this.f);
         try {
-            return super.clone();
+            this.a();
         }
-        catch (final CloneNotSupportedException ex) {
-            throw new AssertionError((Object)ex);
+        finally {
+            Thread.currentThread().setName(name);
         }
     }
 }

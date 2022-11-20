@@ -4,36 +4,36 @@
 
 package c7;
 
-import java.util.HashSet;
-import android.util.Log;
+import p6.l0;
 
-public final class c
+public class c<T>
 {
-    public static b a;
+    public final b<T> a;
+    public T b;
     
-    static {
-        c.a = new b();
+    public c() {
+        this.a = new b<T>();
+        this.b = null;
     }
     
-    public static void a() {
-        c.a.getClass();
+    public c(final l0 b) {
+        this.a = new b<T>();
+        this.b = (T)b;
     }
     
-    public static void b(final String s) {
-        c.a.getClass();
-        final HashSet a = b.a;
-        if (!a.contains(s)) {
-            Log.w("LOTTIE", s, (Throwable)null);
-            a.add(s);
-        }
+    public T a(final b<T> b) {
+        return this.b;
     }
     
-    public static void c(final String s, final Throwable t) {
-        c.a.getClass();
-        final HashSet a = b.a;
-        if (!a.contains(s)) {
-            Log.w("LOTTIE", s, t);
-            a.add(s);
-        }
+    public final T b(final float a, final float b, final T c, final T d, final float e, final float f, final float g) {
+        final b<T> a2 = this.a;
+        a2.a = a;
+        a2.b = b;
+        a2.c = c;
+        a2.d = d;
+        a2.e = e;
+        a2.f = f;
+        a2.g = g;
+        return this.a(a2);
     }
 }

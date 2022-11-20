@@ -4,9 +4,8 @@
 
 package r1;
 
-import al0.f0;
 import q1.e;
-import hg2.i;
+import cg2.i;
 import o1.r;
 import n1.f;
 import o1.s;
@@ -30,7 +29,7 @@ public final class b extends Painter
         return true;
     }
     
-    public final boolean c(final s m) {
+    public final boolean e(final s m) {
         this.m = m;
         return true;
     }
@@ -50,11 +49,11 @@ public final class b extends Painter
     }
     
     public final void i(final e e) {
-        sg2.e.f((Object)e, "<this>");
-        e.P0(e, this.k, 0L, 0L, this.l, this.m, 86);
+        ng2.e.f((Object)e, "<this>");
+        e.Q0(e, this.k, 0L, 0L, this.l, this.m, 86);
     }
     
     public final String toString() {
-        return f0.g(this.k, a.r("ColorPainter(color="), ')');
+        return ph0.a.d(this.k, a.t("ColorPainter(color="), ')');
     }
 }

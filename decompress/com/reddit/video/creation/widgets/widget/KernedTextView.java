@@ -4,9 +4,8 @@
 
 package com.reddit.video.creation.widgets.widget;
 
-import android.widget.TextView;
 import android.content.res.TypedArray;
-import aa1.a;
+import zg.a;
 import android.util.AttributeSet;
 import android.content.Context;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -19,11 +18,11 @@ public class KernedTextView extends AppCompatTextView
         this(context, null);
     }
     
-    public KernedTextView(Context obtainStyledAttributes, final AttributeSet set) {
-        super(obtainStyledAttributes, set);
+    public KernedTextView(final Context context, AttributeSet obtainStyledAttributes) {
+        super(context, obtainStyledAttributes);
         this.relativeLetterSpacing = 0.0f;
-        if (set != null) {
-            obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, a.o, 0, 0);
+        if (obtainStyledAttributes != null) {
+            obtainStyledAttributes = (AttributeSet)context.getTheme().obtainStyledAttributes(obtainStyledAttributes, zg.a.p, 0, 0);
             try {
                 ((TypedArray)obtainStyledAttributes).getFloat(0, 0.0f);
             }
@@ -34,7 +33,7 @@ public class KernedTextView extends AppCompatTextView
     }
     
     public void invalidate() {
-        ((TextView)this).setLetterSpacing(this.relativeLetterSpacing / ((TextView)this).getTextSize());
+        this.setLetterSpacing(this.relativeLetterSpacing / this.getTextSize());
         super.invalidate();
     }
 }

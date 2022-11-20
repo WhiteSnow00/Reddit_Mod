@@ -4,7 +4,9 @@
 
 package com.reddit.domain.model;
 
-import sg2.e;
+import aq2.a;
+import ng2.e;
+import b5.k;
 import com.reddit.listing.model.Listable$Type;
 import kotlin.Metadata;
 import com.reddit.listing.model.Listable;
@@ -23,7 +25,7 @@ public final class VideoUploadPresentationModel implements Listable
     private final String uploadError;
     
     public VideoUploadPresentationModel(final String id, final String title, final String requestId, final int status, final String thumbnail, final String subreddit, final String uploadError, final long uniqueId) {
-        d.y(id, "id", title, "title", requestId, "requestId", thumbnail, "thumbnail", subreddit, "subreddit");
+        k.x(id, "id", title, "title", requestId, "requestId", thumbnail, "thumbnail", subreddit, "subreddit");
         this.id = id;
         this.title = title;
         this.requestId = requestId;
@@ -39,7 +41,7 @@ public final class VideoUploadPresentationModel implements Listable
         return this.uniqueId;
     }
     
-    public static /* synthetic */ VideoUploadPresentationModel copy$default(final VideoUploadPresentationModel videoUploadPresentationModel, String id, String title, String requestId, int status, String thumbnail, String subreddit, String uploadError, long uniqueId, final int n, final Object o) {
+    public static VideoUploadPresentationModel copy$default(final VideoUploadPresentationModel videoUploadPresentationModel, String id, String title, String requestId, int status, String thumbnail, String subreddit, String uploadError, long uniqueId, final int n, final Object o) {
         if ((n & 0x1) != 0x0) {
             id = videoUploadPresentationModel.id;
         }
@@ -158,7 +160,7 @@ public final class VideoUploadPresentationModel implements Listable
     
     @Override
     public int hashCode() {
-        final int c = b.c(this.subreddit, b.c(this.thumbnail, a.c(this.status, b.c(this.requestId, b.c(this.title, this.id.hashCode() * 31, 31), 31), 31), 31), 31);
+        final int e = a.e(this.subreddit, a.e(this.thumbnail, a.c(this.status, a.e(this.requestId, a.e(this.title, this.id.hashCode() * 31, 31), 31), 31), 31), 31);
         final String uploadError = this.uploadError;
         int hashCode;
         if (uploadError == null) {
@@ -167,26 +169,26 @@ public final class VideoUploadPresentationModel implements Listable
         else {
             hashCode = uploadError.hashCode();
         }
-        return Long.hashCode(this.uniqueId) + (c + hashCode) * 31;
+        return Long.hashCode(this.uniqueId) + (e + hashCode) * 31;
     }
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("VideoUploadPresentationModel(id=");
-        r.append(this.id);
-        r.append(", title=");
-        r.append(this.title);
-        r.append(", requestId=");
-        r.append(this.requestId);
-        r.append(", status=");
-        r.append(this.status);
-        r.append(", thumbnail=");
-        r.append(this.thumbnail);
-        r.append(", subreddit=");
-        r.append(this.subreddit);
-        r.append(", uploadError=");
-        r.append(this.uploadError);
-        r.append(", uniqueId=");
-        return b.i(r, this.uniqueId, ')');
+        final StringBuilder t = a.t("VideoUploadPresentationModel(id=");
+        t.append(this.id);
+        t.append(", title=");
+        t.append(this.title);
+        t.append(", requestId=");
+        t.append(this.requestId);
+        t.append(", status=");
+        t.append(this.status);
+        t.append(", thumbnail=");
+        t.append(this.thumbnail);
+        t.append(", subreddit=");
+        t.append(this.subreddit);
+        t.append(", uploadError=");
+        t.append(this.uploadError);
+        t.append(", uniqueId=");
+        return k.k(t, this.uniqueId, ')');
     }
 }

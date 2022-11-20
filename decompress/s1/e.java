@@ -4,17 +4,16 @@
 
 package s1;
 
-import ig2.w;
-import al0.g7;
-import yg2.h;
-import yg2.g;
+import dg2.w;
+import tg2.h;
+import tg2.g;
 import java.util.List;
 import java.util.Collection;
-import ig2.j;
-import ig2.m;
-import lg.e0;
-import yg2.i;
-import lw0.b;
+import aq2.a;
+import dg2.j;
+import dg2.m;
+import zd.b;
+import tg2.i;
 import o1.b0;
 import java.util.ArrayList;
 
@@ -86,24 +85,23 @@ public final class e
         final double n24 = 4;
         final int n25 = (int)Math.ceil(Math.abs(n3 * n24 / 3.141592653589793));
         final double cos2 = Math.cos(n7);
-        sin = Math.sin(n7);
+        final double sin3 = Math.sin(n7);
         n4 = Math.cos(atan2);
-        final double sin3 = Math.sin(atan2);
+        sin = Math.sin(atan2);
         final double n26 = -n5;
         final double n27 = n26 * cos2;
-        final double n28 = n6 * sin;
-        final double n29 = n26 * sin;
+        final double n28 = n6 * sin3;
+        final double n29 = n26 * sin3;
         final double n30 = n6 * cos2;
-        n6 = n3 / n25;
-        n3 = n4 * n30 + sin3 * n29;
-        n4 = n27 * sin3 - n28 * n4;
+        final double n31 = n3 / n25;
+        n3 = n4 * n30 + sin * n29;
+        sin = n27 * sin - n28 * n4;
         int i = 0;
-        double n31 = n2;
-        double n32 = n;
-        n = sin;
-        sin = n29;
-        n2 = n6;
-        n6 = n14;
+        double n32 = n2;
+        n4 = n;
+        n = sin3;
+        n6 = n29;
+        n2 = n31;
         while (i < n25) {
             final double n33 = atan2 + n2;
             final double sin4 = Math.sin(n33);
@@ -111,51 +109,51 @@ public final class e
             final double n34 = n5 * cos2 * cos3 + (n22 * cos - n23 * sin2) - n28 * sin4;
             final double n35 = n30 * sin4 + (n5 * n * cos3 + (n23 * cos + n22 * sin2));
             final double n36 = n27 * sin4 - n28 * cos3;
-            final double n37 = cos3 * n30 + sin4 * sin;
+            final double n37 = cos3 * n30 + sin4 * n6;
             final double n38 = n33 - atan2;
-            final double tan = Math.tan(n38 / n6);
+            final double tan = Math.tan(n38 / n14);
             final double n39 = (Math.sqrt(3.0 * tan * tan + n24) - 1) * Math.sin(n38) / 3;
-            b0.c((float)(n4 * n39 + n32), (float)(n3 * n39 + n31), (float)(n34 - n39 * n36), (float)(n35 - n39 * n37), (float)n34, (float)n35);
+            b0.c((float)(sin * n39 + n4), (float)(n3 * n39 + n32), (float)(n34 - n39 * n36), (float)(n35 - n39 * n37), (float)n34, (float)n35);
             ++i;
-            n32 = n34;
-            n31 = n35;
+            n4 = n34;
+            n32 = n35;
             atan2 = n33;
             n3 = n37;
-            n4 = n36;
+            sin = n36;
         }
     }
     
     public final void a(final char c, final float[] array) {
         final ArrayList a = this.a;
         boolean b = false;
-        Label_0029: {
+        Label_0030: {
             if (c != 'z') {
                 if (c != 'Z') {
                     b = false;
-                    break Label_0029;
+                    break Label_0030;
                 }
             }
             b = true;
         }
-        List r1;
+        List l3;
         if (b) {
-            r1 = lw0.b.r1((Object)s1.d.b.c);
+            l3 = cg.d.l3((Object)s1.d.b.c);
         }
         else {
             ArrayList list2;
             if (c == 'm') {
-                final g l0 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list = new ArrayList<d>(m.c3((Iterable)l0, 10));
-                final h e = l0.e();
+                final g f1 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list = new ArrayList<d>(m.u4((Iterable)f1, 10));
+                final h f2 = f1.f();
                 while (true) {
                     list2 = list;
-                    if (!e.h) {
+                    if (!f2.h) {
                         break;
                     }
-                    final int nextInt = ((w)e).nextInt();
-                    final float[] k0 = j.K0(nextInt, nextInt + 2, array);
-                    final float n = k0[0];
-                    final float n2 = k0[1];
+                    final int nextInt = ((w)f2).nextInt();
+                    final float[] t1 = j.T1(nextInt, nextInt + 2, array);
+                    final float n = t1[0];
+                    final float n2 = t1[1];
                     d d = new d.n(n, n2);
                     if (d instanceof d.f && nextInt > 0) {
                         d = new d.e(n, n2);
@@ -167,27 +165,27 @@ public final class e
                 }
             }
             else if (c == 'M') {
-                final g l2 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list3 = new ArrayList<d>(m.c3((Iterable)l2, 10));
-                final h e2 = l2.e();
+                final g f3 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list3 = new ArrayList<d>(m.u4((Iterable)f3, 10));
+                final h f4 = f3.f();
                 while (true) {
                     list2 = list3;
-                    if (!e2.h) {
+                    if (!f4.h) {
                         break;
                     }
-                    final int nextInt2 = ((w)e2).nextInt();
-                    final float[] k2 = j.K0(nextInt2, nextInt2 + 2, array);
-                    final float n3 = k2[0];
-                    final float n4 = k2[1];
-                    final d.f f = new d.f(n3, n4);
+                    final int nextInt2 = ((w)f4).nextInt();
+                    final float[] t2 = j.T1(nextInt2, nextInt2 + 2, array);
+                    final float n3 = t2[0];
+                    final float n4 = t2[1];
+                    final d.f f5 = new d.f(n3, n4);
                     d d2;
                     if (nextInt2 > 0) {
                         d2 = new d.e(n3, n4);
                     }
                     else {
-                        d2 = f;
-                        if (f instanceof d.n) {
-                            d2 = f;
+                        d2 = f5;
+                        if (f5 instanceof d.n) {
+                            d2 = f5;
                             if (nextInt2 > 0) {
                                 d2 = new d.m(n3, n4);
                             }
@@ -197,18 +195,18 @@ public final class e
                 }
             }
             else if (c == 'l') {
-                final g l3 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list4 = new ArrayList<d>(m.c3((Iterable)l3, 10));
-                final h e3 = l3.e();
+                final g f6 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list4 = new ArrayList<d>(m.u4((Iterable)f6, 10));
+                final h f7 = f6.f();
                 while (true) {
                     list2 = list4;
-                    if (!e3.h) {
+                    if (!f7.h) {
                         break;
                     }
-                    final int nextInt3 = ((w)e3).nextInt();
-                    final float[] k3 = j.K0(nextInt3, nextInt3 + 2, array);
-                    final float n5 = k3[0];
-                    final float n6 = k3[1];
+                    final int nextInt3 = ((w)f7).nextInt();
+                    final float[] t3 = j.T1(nextInt3, nextInt3 + 2, array);
+                    final float n5 = t3[0];
+                    final float n6 = t3[1];
                     final d.m m = new d.m(n5, n6);
                     d d3;
                     if (m instanceof d.f && nextInt3 > 0) {
@@ -227,27 +225,27 @@ public final class e
                 }
             }
             else if (c == 'L') {
-                final g l4 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list5 = new ArrayList<d>(m.c3((Iterable)l4, 10));
-                final h e4 = l4.e();
+                final g f8 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list5 = new ArrayList<d>(m.u4((Iterable)f8, 10));
+                final h f9 = f8.f();
                 while (true) {
                     list2 = list5;
-                    if (!e4.h) {
+                    if (!f9.h) {
                         break;
                     }
-                    final int nextInt4 = ((w)e4).nextInt();
-                    final float[] k4 = j.K0(nextInt4, nextInt4 + 2, array);
-                    final float n7 = k4[0];
-                    final float n8 = k4[1];
-                    final d.e e5 = new d.e(n7, n8);
+                    final int nextInt4 = ((w)f9).nextInt();
+                    final float[] t4 = j.T1(nextInt4, nextInt4 + 2, array);
+                    final float n7 = t4[0];
+                    final float n8 = t4[1];
+                    final d.e e = new d.e(n7, n8);
                     d d4;
-                    if (e5 instanceof d.f && nextInt4 > 0) {
+                    if (e instanceof d.f && nextInt4 > 0) {
                         d4 = new d.e(n7, n8);
                     }
                     else {
-                        d4 = e5;
-                        if (e5 instanceof d.n) {
-                            d4 = e5;
+                        d4 = e;
+                        if (e instanceof d.n) {
+                            d4 = e;
                             if (nextInt4 > 0) {
                                 d4 = new d.m(n7, n8);
                             }
@@ -257,28 +255,28 @@ public final class e
                 }
             }
             else if (c == 'h') {
-                final g l5 = e0.l0(new i(0, array.length - 1), 1);
-                final ArrayList list6 = new ArrayList<d>(m.c3((Iterable)l5, 10));
-                final h e6 = l5.e();
+                final g f10 = zd.b.f1(new i(0, array.length - 1), 1);
+                final ArrayList list6 = new ArrayList<d>(m.u4((Iterable)f10, 10));
+                final h f11 = f10.f();
                 while (true) {
                     list2 = list6;
-                    if (!e6.h) {
+                    if (!f11.h) {
                         break;
                     }
-                    final int nextInt5 = ((w)e6).nextInt();
-                    final float[] k5 = j.K0(nextInt5, nextInt5 + 1, array);
-                    final float n9 = k5[0];
+                    final int nextInt5 = ((w)f11).nextInt();
+                    final float[] t5 = j.T1(nextInt5, nextInt5 + 1, array);
+                    final float n9 = t5[0];
                     final d.l i = new d.l(n9);
                     d d5;
                     if (i instanceof d.f && nextInt5 > 0) {
-                        d5 = new d.e(n9, k5[1]);
+                        d5 = new d.e(n9, t5[1]);
                     }
                     else {
                         d5 = i;
                         if (i instanceof d.n) {
                             d5 = i;
                             if (nextInt5 > 0) {
-                                d5 = new d.m(n9, k5[1]);
+                                d5 = new d.m(n9, t5[1]);
                             }
                         }
                     }
@@ -286,28 +284,28 @@ public final class e
                 }
             }
             else if (c == 'H') {
-                final g l6 = e0.l0(new i(0, array.length - 1), 1);
-                final ArrayList list7 = new ArrayList<d>(m.c3((Iterable)l6, 10));
-                final h e7 = l6.e();
+                final g f12 = zd.b.f1(new i(0, array.length - 1), 1);
+                final ArrayList list7 = new ArrayList<d>(m.u4((Iterable)f12, 10));
+                final h f13 = f12.f();
                 while (true) {
                     list2 = list7;
-                    if (!e7.h) {
+                    if (!f13.h) {
                         break;
                     }
-                    final int nextInt6 = ((w)e7).nextInt();
-                    final float[] k6 = j.K0(nextInt6, nextInt6 + 1, array);
-                    final float n10 = k6[0];
+                    final int nextInt6 = ((w)f13).nextInt();
+                    final float[] t6 = j.T1(nextInt6, nextInt6 + 1, array);
+                    final float n10 = t6[0];
                     final d.d d6 = new d.d(n10);
                     d d7;
                     if (d6 instanceof d.f && nextInt6 > 0) {
-                        d7 = new d.e(n10, k6[1]);
+                        d7 = new d.e(n10, t6[1]);
                     }
                     else {
                         d7 = d6;
                         if (d6 instanceof d.n) {
                             d7 = d6;
                             if (nextInt6 > 0) {
-                                d7 = new d.m(n10, k6[1]);
+                                d7 = new d.m(n10, t6[1]);
                             }
                         }
                     }
@@ -315,28 +313,28 @@ public final class e
                 }
             }
             else if (c == 'v') {
-                final g l7 = e0.l0(new i(0, array.length - 1), 1);
-                final ArrayList list8 = new ArrayList<d>(m.c3((Iterable)l7, 10));
-                final h e8 = l7.e();
+                final g f14 = zd.b.f1(new i(0, array.length - 1), 1);
+                final ArrayList list8 = new ArrayList<d>(m.u4((Iterable)f14, 10));
+                final h f15 = f14.f();
                 while (true) {
                     list2 = list8;
-                    if (!e8.h) {
+                    if (!f15.h) {
                         break;
                     }
-                    final int nextInt7 = ((w)e8).nextInt();
-                    final float[] k7 = j.K0(nextInt7, nextInt7 + 1, array);
-                    final float n11 = k7[0];
-                    final d.r r2 = new d.r(n11);
+                    final int nextInt7 = ((w)f15).nextInt();
+                    final float[] t7 = j.T1(nextInt7, nextInt7 + 1, array);
+                    final float n11 = t7[0];
+                    final d.r r = new d.r(n11);
                     d d8;
-                    if (r2 instanceof d.f && nextInt7 > 0) {
-                        d8 = new d.e(n11, k7[1]);
+                    if (r instanceof d.f && nextInt7 > 0) {
+                        d8 = new d.e(n11, t7[1]);
                     }
                     else {
-                        d8 = r2;
-                        if (r2 instanceof d.n) {
-                            d8 = r2;
+                        d8 = r;
+                        if (r instanceof d.n) {
+                            d8 = r;
                             if (nextInt7 > 0) {
-                                d8 = new d.m(n11, k7[1]);
+                                d8 = new d.m(n11, t7[1]);
                             }
                         }
                     }
@@ -344,28 +342,28 @@ public final class e
                 }
             }
             else if (c == 'V') {
-                final g l8 = e0.l0(new i(0, array.length - 1), 1);
-                final ArrayList list9 = new ArrayList<d>(m.c3((Iterable)l8, 10));
-                final h e9 = l8.e();
+                final g f16 = zd.b.f1(new i(0, array.length - 1), 1);
+                final ArrayList list9 = new ArrayList<d>(m.u4((Iterable)f16, 10));
+                final h f17 = f16.f();
                 while (true) {
                     list2 = list9;
-                    if (!e9.h) {
+                    if (!f17.h) {
                         break;
                     }
-                    final int nextInt8 = ((w)e9).nextInt();
-                    final float[] k8 = j.K0(nextInt8, nextInt8 + 1, array);
-                    final float n12 = k8[0];
+                    final int nextInt8 = ((w)f17).nextInt();
+                    final float[] t8 = j.T1(nextInt8, nextInt8 + 1, array);
+                    final float n12 = t8[0];
                     final d.s s = new d.s(n12);
                     d d9;
                     if (s instanceof d.f && nextInt8 > 0) {
-                        d9 = new d.e(n12, k8[1]);
+                        d9 = new d.e(n12, t8[1]);
                     }
                     else {
                         d9 = s;
                         if (s instanceof d.n) {
                             d9 = s;
                             if (nextInt8 > 0) {
-                                d9 = new d.m(n12, k8[1]);
+                                d9 = new d.m(n12, t8[1]);
                             }
                         }
                     }
@@ -373,19 +371,19 @@ public final class e
                 }
             }
             else if (c == 'c') {
-                final g l9 = e0.l0(new i(0, array.length - 6), 6);
-                final ArrayList list10 = new ArrayList<d>(m.c3((Iterable)l9, 10));
-                final h e10 = l9.e();
+                final g f18 = zd.b.f1(new i(0, array.length - 6), 6);
+                final ArrayList list10 = new ArrayList<d>(m.u4((Iterable)f18, 10));
+                final h f19 = f18.f();
                 while (true) {
                     list2 = list10;
-                    if (!e10.h) {
+                    if (!f19.h) {
                         break;
                     }
-                    final int nextInt9 = ((w)e10).nextInt();
-                    final float[] k9 = j.K0(nextInt9, nextInt9 + 6, array);
-                    final float n13 = k9[0];
-                    final float n14 = k9[1];
-                    d d10 = new d.k(n13, n14, k9[2], k9[3], k9[4], k9[5]);
+                    final int nextInt9 = ((w)f19).nextInt();
+                    final float[] t9 = j.T1(nextInt9, nextInt9 + 6, array);
+                    final float n13 = t9[0];
+                    final float n14 = t9[1];
+                    d d10 = new d.k(n13, n14, t9[2], t9[3], t9[4], t9[5]);
                     if (d10 instanceof d.f && nextInt9 > 0) {
                         d10 = new d.e(n13, n14);
                     }
@@ -396,19 +394,19 @@ public final class e
                 }
             }
             else if (c == 'C') {
-                final g l10 = e0.l0(new i(0, array.length - 6), 6);
-                final ArrayList list11 = new ArrayList<d>(m.c3((Iterable)l10, 10));
-                final h e11 = l10.e();
+                final g f20 = zd.b.f1(new i(0, array.length - 6), 6);
+                final ArrayList list11 = new ArrayList<d>(m.u4((Iterable)f20, 10));
+                final h f21 = f20.f();
                 while (true) {
                     list2 = list11;
-                    if (!e11.h) {
+                    if (!f21.h) {
                         break;
                     }
-                    final int nextInt10 = ((w)e11).nextInt();
-                    final float[] k10 = j.K0(nextInt10, nextInt10 + 6, array);
-                    final float n15 = k10[0];
-                    final float n16 = k10[1];
-                    final d.c c2 = new d.c(n15, n16, k10[2], k10[3], k10[4], k10[5]);
+                    final int nextInt10 = ((w)f21).nextInt();
+                    final float[] t10 = j.T1(nextInt10, nextInt10 + 6, array);
+                    final float n15 = t10[0];
+                    final float n16 = t10[1];
+                    final d.c c2 = new d.c(n15, n16, t10[2], t10[3], t10[4], t10[5]);
                     d d11;
                     if (c2 instanceof d.f && nextInt10 > 0) {
                         d11 = new d.e(n15, n16);
@@ -426,19 +424,19 @@ public final class e
                 }
             }
             else if (c == 's') {
-                final g l11 = e0.l0(new i(0, array.length - 4), 4);
-                final ArrayList list12 = new ArrayList<d>(m.c3((Iterable)l11, 10));
-                final h e12 = l11.e();
+                final g f22 = zd.b.f1(new i(0, array.length - 4), 4);
+                final ArrayList list12 = new ArrayList<d>(m.u4((Iterable)f22, 10));
+                final h f23 = f22.f();
                 while (true) {
                     list2 = list12;
-                    if (!e12.h) {
+                    if (!f23.h) {
                         break;
                     }
-                    final int nextInt11 = ((w)e12).nextInt();
-                    final float[] k11 = j.K0(nextInt11, nextInt11 + 4, array);
-                    final float n17 = k11[0];
-                    final float n18 = k11[1];
-                    final d.p p2 = new d.p(n17, n18, k11[2], k11[3]);
+                    final int nextInt11 = ((w)f23).nextInt();
+                    final float[] t11 = j.T1(nextInt11, nextInt11 + 4, array);
+                    final float n17 = t11[0];
+                    final float n18 = t11[1];
+                    final d.p p2 = new d.p(n17, n18, t11[2], t11[3]);
                     d d12;
                     if (p2 instanceof d.f && nextInt11 > 0) {
                         d12 = new d.e(n17, n18);
@@ -456,19 +454,19 @@ public final class e
                 }
             }
             else if (c == 'S') {
-                final g l12 = e0.l0(new i(0, array.length - 4), 4);
-                final ArrayList list13 = new ArrayList<d>(m.c3((Iterable)l12, 10));
-                final h e13 = l12.e();
+                final g f24 = zd.b.f1(new i(0, array.length - 4), 4);
+                final ArrayList list13 = new ArrayList<d>(m.u4((Iterable)f24, 10));
+                final h f25 = f24.f();
                 while (true) {
                     list2 = list13;
-                    if (!e13.h) {
+                    if (!f25.h) {
                         break;
                     }
-                    final int nextInt12 = ((w)e13).nextInt();
-                    final float[] k12 = j.K0(nextInt12, nextInt12 + 4, array);
-                    final float n19 = k12[0];
-                    final float n20 = k12[1];
-                    final d.h h = new d.h(n19, n20, k12[2], k12[3]);
+                    final int nextInt12 = ((w)f25).nextInt();
+                    final float[] t12 = j.T1(nextInt12, nextInt12 + 4, array);
+                    final float n19 = t12[0];
+                    final float n20 = t12[1];
+                    final d.h h = new d.h(n19, n20, t12[2], t12[3]);
                     d d13;
                     if (h instanceof d.f && nextInt12 > 0) {
                         d13 = new d.e(n19, n20);
@@ -486,19 +484,19 @@ public final class e
                 }
             }
             else if (c == 'q') {
-                final g l13 = e0.l0(new i(0, array.length - 4), 4);
-                final ArrayList list14 = new ArrayList<d>(m.c3((Iterable)l13, 10));
-                final h e14 = l13.e();
+                final g f26 = zd.b.f1(new i(0, array.length - 4), 4);
+                final ArrayList list14 = new ArrayList<d>(m.u4((Iterable)f26, 10));
+                final h f27 = f26.f();
                 while (true) {
                     list2 = list14;
-                    if (!e14.h) {
+                    if (!f27.h) {
                         break;
                     }
-                    final int nextInt13 = ((w)e14).nextInt();
-                    final float[] k13 = j.K0(nextInt13, nextInt13 + 4, array);
-                    final float n21 = k13[0];
-                    final float n22 = k13[1];
-                    final d.o o = new d.o(n21, n22, k13[2], k13[3]);
+                    final int nextInt13 = ((w)f27).nextInt();
+                    final float[] t13 = j.T1(nextInt13, nextInt13 + 4, array);
+                    final float n21 = t13[0];
+                    final float n22 = t13[1];
+                    final d.o o = new d.o(n21, n22, t13[2], t13[3]);
                     d d14;
                     if (o instanceof d.f && nextInt13 > 0) {
                         d14 = new d.e(n21, n22);
@@ -516,19 +514,19 @@ public final class e
                 }
             }
             else if (c == 'Q') {
-                final g l14 = e0.l0(new i(0, array.length - 4), 4);
-                final ArrayList list15 = new ArrayList<d>(m.c3((Iterable)l14, 10));
-                final h e15 = l14.e();
+                final g f28 = zd.b.f1(new i(0, array.length - 4), 4);
+                final ArrayList list15 = new ArrayList<d>(m.u4((Iterable)f28, 10));
+                final h f29 = f28.f();
                 while (true) {
                     list2 = list15;
-                    if (!e15.h) {
+                    if (!f29.h) {
                         break;
                     }
-                    final int nextInt14 = ((w)e15).nextInt();
-                    final float[] k14 = j.K0(nextInt14, nextInt14 + 4, array);
-                    final float n23 = k14[0];
-                    final float n24 = k14[1];
-                    final d.g g = new d.g(n23, n24, k14[2], k14[3]);
+                    final int nextInt14 = ((w)f29).nextInt();
+                    final float[] t14 = j.T1(nextInt14, nextInt14 + 4, array);
+                    final float n23 = t14[0];
+                    final float n24 = t14[1];
+                    final d.g g = new d.g(n23, n24, t14[2], t14[3]);
                     d d15;
                     if (g instanceof d.f && nextInt14 > 0) {
                         d15 = new d.e(n23, n24);
@@ -546,18 +544,18 @@ public final class e
                 }
             }
             else if (c == 't') {
-                final g l15 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list16 = new ArrayList<d>(m.c3((Iterable)l15, 10));
-                final h e16 = l15.e();
+                final g f30 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list16 = new ArrayList<d>(m.u4((Iterable)f30, 10));
+                final h f31 = f30.f();
                 while (true) {
                     list2 = list16;
-                    if (!e16.h) {
+                    if (!f31.h) {
                         break;
                     }
-                    final int nextInt15 = ((w)e16).nextInt();
-                    final float[] k15 = j.K0(nextInt15, nextInt15 + 2, array);
-                    final float n25 = k15[0];
-                    final float n26 = k15[1];
+                    final int nextInt15 = ((w)f31).nextInt();
+                    final float[] t15 = j.T1(nextInt15, nextInt15 + 2, array);
+                    final float n25 = t15[0];
+                    final float n26 = t15[1];
                     final d.q q = new d.q(n25, n26);
                     d d16;
                     if (q instanceof d.f && nextInt15 > 0) {
@@ -576,18 +574,18 @@ public final class e
                 }
             }
             else if (c == 'T') {
-                final g l16 = e0.l0(new i(0, array.length - 2), 2);
-                final ArrayList list17 = new ArrayList<d>(m.c3((Iterable)l16, 10));
-                final h e17 = l16.e();
+                final g f32 = zd.b.f1(new i(0, array.length - 2), 2);
+                final ArrayList list17 = new ArrayList<d>(m.u4((Iterable)f32, 10));
+                final h f33 = f32.f();
                 while (true) {
                     list2 = list17;
-                    if (!e17.h) {
+                    if (!f33.h) {
                         break;
                     }
-                    final int nextInt16 = ((w)e17).nextInt();
-                    final float[] k16 = j.K0(nextInt16, nextInt16 + 2, array);
-                    final float n27 = k16[0];
-                    final float n28 = k16[1];
+                    final int nextInt16 = ((w)f33).nextInt();
+                    final float[] t16 = j.T1(nextInt16, nextInt16 + 2, array);
+                    final float n27 = t16[0];
+                    final float n28 = t16[1];
                     final d.i j = new d.i(n27, n28);
                     d d17;
                     if (j instanceof d.f && nextInt16 > 0) {
@@ -606,57 +604,57 @@ public final class e
                 }
             }
             else if (c == 'a') {
-                final g l17 = e0.l0(new i(0, array.length - 7), 7);
-                final ArrayList list18 = new ArrayList<d>(m.c3((Iterable)l17, 10));
-                final h e18 = l17.e();
+                final g f34 = zd.b.f1(new i(0, array.length - 7), 7);
+                final ArrayList list18 = new ArrayList<d>(m.u4((Iterable)f34, 10));
+                final h f35 = f34.f();
                 while (true) {
                     list2 = list18;
-                    if (!e18.h) {
+                    if (!f35.h) {
                         break;
                     }
-                    final int nextInt17 = ((w)e18).nextInt();
-                    final float[] k17 = j.K0(nextInt17, nextInt17 + 7, array);
-                    d d18 = new d.j(k17[0], k17[1], k17[2], Float.compare(k17[3], 0.0f) != 0, Float.compare(k17[4], 0.0f) != 0, k17[5], k17[6]);
+                    final int nextInt17 = ((w)f35).nextInt();
+                    final float[] t17 = j.T1(nextInt17, nextInt17 + 7, array);
+                    d d18 = new d.j(t17[0], t17[1], t17[2], Float.compare(t17[3], 0.0f) != 0, Float.compare(t17[4], 0.0f) != 0, t17[5], t17[6]);
                     if (d18 instanceof d.f && nextInt17 > 0) {
-                        d18 = new d.e(k17[0], k17[1]);
+                        d18 = new d.e(t17[0], t17[1]);
                     }
                     else if (d18 instanceof d.n && nextInt17 > 0) {
-                        d18 = new d.m(k17[0], k17[1]);
+                        d18 = new d.m(t17[0], t17[1]);
                     }
                     list18.add((Object)d18);
                 }
             }
             else {
                 if (c != 'A') {
-                    throw new IllegalArgumentException(b.f("Unknown command for: ", c));
+                    throw new IllegalArgumentException(aq2.a.k("Unknown command for: ", c));
                 }
-                final g l18 = e0.l0(new i(0, array.length - 7), 7);
-                final ArrayList list19 = new ArrayList<d>(m.c3((Iterable)l18, 10));
-                final h e19 = l18.e();
+                final g f36 = zd.b.f1(new i(0, array.length - 7), 7);
+                final ArrayList list19 = new ArrayList<d>(m.u4((Iterable)f36, 10));
+                final h f37 = f36.f();
                 while (true) {
                     list2 = list19;
-                    if (!e19.h) {
+                    if (!f37.h) {
                         break;
                     }
-                    final int nextInt18 = ((w)e19).nextInt();
-                    final float[] k18 = j.K0(nextInt18, nextInt18 + 7, array);
-                    d d19 = new d.a(k18[0], k18[1], k18[2], Float.compare(k18[3], 0.0f) != 0, Float.compare(k18[4], 0.0f) != 0, k18[5], k18[6]);
+                    final int nextInt18 = ((w)f37).nextInt();
+                    final float[] t18 = j.T1(nextInt18, nextInt18 + 7, array);
+                    d d19 = new d.a(t18[0], t18[1], t18[2], Float.compare(t18[3], 0.0f) != 0, Float.compare(t18[4], 0.0f) != 0, t18[5], t18[6]);
                     if (d19 instanceof d.f && nextInt18 > 0) {
-                        d19 = new d.e(k18[0], k18[1]);
+                        d19 = new d.e(t18[0], t18[1]);
                     }
                     else if (d19 instanceof d.n && nextInt18 > 0) {
-                        d19 = new d.m(k18[0], k18[1]);
+                        d19 = new d.m(t18[0], t18[1]);
                     }
                     list19.add((Object)d19);
                 }
             }
-            r1 = list2;
+            l3 = list2;
         }
-        a.addAll(r1);
+        a.addAll(l3);
     }
     
     public final void c(final b0 b0) {
-        sg2.e.f((Object)b0, "target");
+        ng2.e.f((Object)b0, "target");
         b0.reset();
         this.b.a();
         this.c.a();
@@ -767,7 +765,7 @@ public final class e
             }
             else if (d2 instanceof d.p) {
                 final d.p p = (d.p)d2;
-                sg2.e.c((Object)d3);
+                ng2.e.c((Object)d3);
                 if (d3.a) {
                     final b e3 = e.e;
                     final b b15 = e.b;
@@ -790,7 +788,7 @@ public final class e
             }
             else if (d2 instanceof d.h) {
                 final d.h h = (d.h)d2;
-                sg2.e.c((Object)d3);
+                ng2.e.c((Object)d3);
                 if (d3.a) {
                     final b e5 = e.e;
                     final float n2 = 2;
@@ -837,7 +835,7 @@ public final class e
             }
             else if (d2 instanceof d.q) {
                 final d.q q = (d.q)d2;
-                sg2.e.c((Object)d3);
+                ng2.e.c((Object)d3);
                 if (d3.b) {
                     final b e8 = e.e;
                     final b b22 = e.b;
@@ -862,7 +860,7 @@ public final class e
             }
             else if (d2 instanceof d.i) {
                 final d.i j = (d.i)d2;
-                sg2.e.c((Object)d3);
+                ng2.e.c((Object)d3);
                 if (d3.b) {
                     final b e11 = e.e;
                     final float n3 = 2;
@@ -965,10 +963,10 @@ public final class e
         
         @Override
         public final String toString() {
-            final StringBuilder r = a.r("ExtractFloatResult(endPosition=");
-            r.append(this.a);
-            r.append(", endWithNegativeOrDot=");
-            return g7.m(r, this.b, ')');
+            final StringBuilder t = a.t("ExtractFloatResult(endPosition=");
+            t.append(this.a);
+            t.append(", endWithNegativeOrDot=");
+            return d.n(t, this.b, ')');
         }
     }
     
@@ -1000,7 +998,7 @@ public final class e
                 return false;
             }
             final b b = (b)o;
-            return sg2.e.a((Object)this.a, (Object)b.a) && sg2.e.a((Object)this.b, (Object)b.b);
+            return ng2.e.a((Object)this.a, (Object)b.a) && ng2.e.a((Object)this.b, (Object)b.b);
         }
         
         @Override
@@ -1010,10 +1008,10 @@ public final class e
         
         @Override
         public final String toString() {
-            final StringBuilder r = a.r("PathPoint(x=");
-            r.append(this.a);
-            r.append(", y=");
-            return b.h(r, this.b, ')');
+            final StringBuilder t = a.t("PathPoint(x=");
+            t.append(this.a);
+            t.append(", y=");
+            return aq2.a.n(t, this.b, ')');
         }
     }
 }

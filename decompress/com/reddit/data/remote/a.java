@@ -4,13 +4,15 @@
 
 package com.reddit.data.remote;
 
-import rg2.p;
-import lg2.c;
-import hj2.v;
+import cg2.j;
+import cj2.f;
+import mg2.p;
+import gg2.c;
+import cj2.s;
 import javax.inject.Inject;
 import mr0.g;
 
-public final class a implements db0.a
+public final class a implements eb0.a
 {
     public final g a;
     
@@ -19,7 +21,7 @@ public final class a implements db0.a
         this.a = a;
     }
     
-    public final v a(final String s) {
-        return new v((p)new RedditGraphqlCreatorStatsDataSource$loadStats$1(this, s, (c)null));
+    public final s a(final String s) {
+        return new s((p<? super f<? super T>, ? super c<? super j>, ?>)new RedditGraphqlCreatorStatsDataSource$loadStats$1(this, s, (c)null));
     }
 }

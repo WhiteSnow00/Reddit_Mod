@@ -4,7 +4,7 @@
 
 package com.reddit.domain.chat.model;
 
-import sg2.e;
+import ng2.e;
 import com.squareup.moshi.n;
 import java.util.List;
 import kotlin.Metadata;

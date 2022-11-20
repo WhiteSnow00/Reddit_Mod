@@ -4,47 +4,47 @@
 
 package com.google.android.gms.internal.firebase_auth_api;
 
-import ge.h1;
-import com.google.android.gms.internal.firebase-auth-api.zzacf;
-import ge.r;
-import ge.w7;
-import com.google.android.gms.internal.firebase-auth-api.zzaau;
-import ge.y0;
+import he.g1;
+import he.u7;
+import he.x0;
 
-public final class s extends e implements y0
+public final class s extends e implements x0
 {
     private static final com.google.android.gms.internal.firebase-auth-api.s zzb;
     private int zze;
-    private zzaau zzf;
     
     static {
         e.d((Class)com.google.android.gms.internal.firebase-auth-api.s.class, (com.google.android.gms.internal.firebase-auth-api.e)(zzb = (com.google.android.gms.internal.firebase-auth-api.s)new s()));
     }
     
-    public s() {
-        this.zzf = com.google.android.gms.internal.firebase_auth_api.zzaau.zzb;
+    public static u7 s() {
+        return (u7)((e)s.zzb).k();
     }
     
-    public static w7 s() {
-        return (w7)((e)s.zzb).i();
+    public static com.google.android.gms.internal.firebase-auth-api.s t() {
+        return s.zzb;
     }
     
-    public static com.google.android.gms.internal.firebase-auth-api.s u(final zzaau zzaau, final r r) throws zzacf {
-        return (com.google.android.gms.internal.firebase-auth-api.s)e.p((com.google.android.gms.internal.firebase-auth-api.e)s.zzb, zzaau, r);
+    public static com.google.android.gms.internal.firebase-auth-api.s u() {
+        return s.zzb;
     }
     
-    public final Object g(int n) {
+    public static void v(final com.google.android.gms.internal.firebase-auth-api.s s) {
+        ((s)s).zze = 16;
+    }
+    
+    public final Object h(int n) {
         if (--n == 0) {
             return 1;
         }
         if (n == 2) {
-            return new h1((com.google.android.gms.internal.firebase-auth-api.e)s.zzb, "\u0000\u0002\u0000\u0000\u0001\u0003\u0002\u0000\u0000\u0000\u0001\u000b\u0003\n", new Object[] { "zze", "zzf" });
+            return new g1((com.google.android.gms.internal.firebase-auth-api.e)s.zzb, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u000b", new Object[] { "zze" });
         }
         if (n == 3) {
             return new s();
         }
         if (n == 4) {
-            return new w7(0);
+            return new u7(0);
         }
         if (n != 5) {
             return null;
@@ -54,9 +54,5 @@ public final class s extends e implements y0
     
     public final int r() {
         return this.zze;
-    }
-    
-    public final zzaau v() {
-        return this.zzf;
     }
 }

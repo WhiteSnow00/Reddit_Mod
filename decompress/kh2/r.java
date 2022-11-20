@@ -4,64 +4,58 @@
 
 package kh2;
 
-import hg2.j;
-import rg2.l;
-import kotlin.reflect.jvm.internal.impl.resolve.OverridingUtil;
-import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import fi2.g;
+import xi2.j;
+import ng2.e;
+import yh2.b;
+import yh2.c;
 
-public final class r extends g
+public final class r
 {
-    public final /* synthetic */ Set f;
+    public static final c a;
+    public static final b b;
     
-    public r(final LinkedHashSet f) {
-        this.f = f;
+    static {
+        yh2.b.l(a = new c("kotlin.jvm.JvmField"));
+        yh2.b.l(new c("kotlin.reflect.jvm.internal.ReflectionFactoryImpl"));
+        b = yh2.b.f("kotlin/jvm/internal/RepeatableContainer", false);
     }
     
-    public static /* synthetic */ void d1(final int n) {
-        final Object[] array = new Object[3];
-        if (n != 1) {
-            if (n != 2) {
-                array[0] = "fakeOverride";
-            }
-            else {
-                array[0] = "fromCurrent";
-            }
+    public static final String a(String string) {
+        e.f((Object)string, "propertyName");
+        if (!c(string)) {
+            final StringBuilder t = a.t("get");
+            t.append(zg.a.h(string));
+            string = t.toString();
+        }
+        return string;
+    }
+    
+    public static final String b(String s) {
+        final StringBuilder t = a.t("set");
+        if (c(s)) {
+            s = s.substring(2);
+            e.e((Object)s, "this as java.lang.String).substring(startIndex)");
         }
         else {
-            array[0] = "fromSuper";
+            s = zg.a.h(s);
         }
-        array[1] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/EnumEntrySyntheticClassDescriptor$EnumEntryScope$4";
-        if (n != 1 && n != 2) {
-            array[2] = "addFakeOverride";
-        }
-        else {
-            array[2] = "conflict";
-        }
-        throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", array));
+        t.append(s);
+        return t.toString();
     }
     
-    public final void c1(final CallableMemberDescriptor callableMemberDescriptor, final CallableMemberDescriptor callableMemberDescriptor2) {
-        if (callableMemberDescriptor == null) {
-            d1(1);
-            throw null;
+    public static final boolean c(final String s) {
+        e.f((Object)s, "name");
+        boolean b = false;
+        if (!j.I0(s, "is", false)) {
+            return false;
         }
-        if (callableMemberDescriptor2 != null) {
-            return;
+        if (s.length() == 2) {
+            return false;
         }
-        d1(2);
-        throw null;
-    }
-    
-    public final void m(final CallableMemberDescriptor callableMemberDescriptor) {
-        if (callableMemberDescriptor != null) {
-            OverridingUtil.r(callableMemberDescriptor, null);
-            this.f.add(callableMemberDescriptor);
-            return;
+        final char char1 = s.charAt(2);
+        if (e.h(97, (int)char1) > 0 || e.h((int)char1, 122) > 0) {
+            b = true;
         }
-        d1(0);
-        throw null;
+        return b;
     }
 }

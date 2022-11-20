@@ -8,7 +8,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager$NameNotFoundException;
 import android.content.Context;
-import sg2.e;
+import ng2.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.Metadata;
 
@@ -27,6 +27,16 @@ public final class AppVersionInfo
         e.f((Object)name, "name");
         this.name = name;
         this.code = code;
+    }
+    
+    public static AppVersionInfo copy$default(final AppVersionInfo appVersionInfo, String name, int code, final int n, final Object o) {
+        if ((n & 0x1) != 0x0) {
+            name = appVersionInfo.name;
+        }
+        if ((n & 0x2) != 0x0) {
+            code = appVersionInfo.code;
+        }
+        return appVersionInfo.copy(name, code);
     }
     
     public final String component1() {
@@ -69,16 +79,20 @@ public final class AppVersionInfo
     
     @Override
     public String toString() {
-        final StringBuilder r = a.r("AppVersionInfo(name=");
-        r.append(this.name);
-        r.append(", code=");
-        return d.l(r, this.code, ')');
+        final StringBuilder t = a.t("AppVersionInfo(name=");
+        t.append(this.name);
+        t.append(", code=");
+        return d.j(t, this.code, ')');
     }
     
     @Metadata(d1 = { "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007" }, d2 = { "Lcom/reddit/video/player/internal/AppVersionInfo$Companion;", "", "()V", "from", "Lcom/reddit/video/player/internal/AppVersionInfo;", "context", "Landroid/content/Context;", "player_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
         
         public final AppVersionInfo from(final Context context) {

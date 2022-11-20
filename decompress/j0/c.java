@@ -8,7 +8,7 @@ import java.util.Map;
 
 public final class c extends h<Object, Object>
 {
-    public final /* synthetic */ d d;
+    public final d d;
     
     public c(final d d) {
         this.d = d;
@@ -43,7 +43,7 @@ public final class c extends h<Object, Object>
     }
     
     public final void h(final int n) {
-        this.d.e(n);
+        this.d.f(n);
     }
     
     public final Object i(final int n, final Object o) {

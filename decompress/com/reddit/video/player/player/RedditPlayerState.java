@@ -10,6 +10,8 @@ import kotlin.Metadata;
 @Metadata(d1 = { "\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\t\b\u0086\u0001\u0018\u0000 \t2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\tB\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\b¨\u0006\n" }, d2 = { "Lcom/reddit/video/player/player/RedditPlayerState;", "", "(Ljava/lang/String;I)V", "IDLE", "BUFFERING", "PLAYING", "PAUSED", "ENDED", "TRANSITIONAL", "Companion", "player_release" }, k = 1, mv = { 1, 7, 1 }, xi = 48)
 public enum RedditPlayerState
 {
+    private static final RedditPlayerState[] $VALUES;
+    
     BUFFERING;
     
     public static final Companion Companion;
@@ -20,7 +22,12 @@ public enum RedditPlayerState
     PLAYING, 
     TRANSITIONAL;
     
+    private static final RedditPlayerState[] $values() {
+        return new RedditPlayerState[] { RedditPlayerState.IDLE, RedditPlayerState.BUFFERING, RedditPlayerState.PLAYING, RedditPlayerState.PAUSED, RedditPlayerState.ENDED, RedditPlayerState.TRANSITIONAL };
+    }
+    
     static {
+        $VALUES = $values();
         Companion = new Companion(null);
     }
     
@@ -28,6 +35,10 @@ public enum RedditPlayerState
     public static final class Companion
     {
         private Companion() {
+        }
+        
+        public Companion(final DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
 }

@@ -7,9 +7,8 @@ package com.bumptech.glide.load.data;
 import java.util.Iterator;
 import java.net.URISyntaxException;
 import java.net.MalformedURLException;
-import al0.b;
 import com.bumptech.glide.load.HttpException;
-import k9.c;
+import l9.c;
 import android.text.TextUtils;
 import com.google.firebase.perf.network.FirebasePerfUrlConnection;
 import java.net.URLConnection;
@@ -21,7 +20,7 @@ import com.bumptech.glide.load.DataSource;
 import java.io.IOException;
 import android.util.Log;
 import java.net.HttpURLConnection;
-import u8.f;
+import v8.f;
 import java.io.InputStream;
 
 public final class j implements d<InputStream>
@@ -33,7 +32,7 @@ public final class j implements d<InputStream>
     public volatile boolean j;
     
     static {
-        new a();
+        new j.j$a();
     }
     
     public j(final f f, final int g) {
@@ -53,12 +52,10 @@ public final class j implements d<InputStream>
         }
     }
     
-    @Override
     public final Class<InputStream> a() {
         return InputStream.class;
     }
     
-    @Override
     public final void b() {
         final InputStream i = this.i;
         while (true) {
@@ -80,19 +77,16 @@ public final class j implements d<InputStream>
         }
     }
     
-    @Override
     public final DataSource c() {
         return DataSource.REMOTE;
     }
     
-    @Override
     public final void cancel() {
         this.j = true;
     }
     
-    @Override
-    public final void d(final Priority priority, final d.a<? super InputStream> a) {
-        final int b = k9.f.b;
+    public final void d(final Priority priority, final d$a<? super InputStream> d$a) {
+        final int b = l9.f.b;
         final long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         try {
             Label_0136: {
@@ -101,7 +95,7 @@ public final class j implements d<InputStream>
                     if (f.f == null) {
                         f.f = new URL(f.b());
                     }
-                    a.e(this.f(f.f, 0, null, this.f.a.getHeaders()));
+                    d$a.e((Object)this.f(f.f, 0, null, this.f.a.getHeaders()));
                     if (Log.isLoggable("HttpUrlFetcher", 2)) {
                         final StringBuilder sb = new StringBuilder();
                         break Label_0136;
@@ -109,23 +103,21 @@ public final class j implements d<InputStream>
                 }
                 finally {
                     if (Log.isLoggable("HttpUrlFetcher", 2)) {
-                        final StringBuilder r = a.r("Finished http url fetcher fetch in ");
-                        r.append(k9.f.a(elapsedRealtimeNanos));
-                        Log.v("HttpUrlFetcher", r.toString());
+                        final StringBuilder t = a.t("Finished http url fetcher fetch in ");
+                        t.append(l9.f.a(elapsedRealtimeNanos));
+                        Log.v("HttpUrlFetcher", t.toString());
                     }
                     final IOException ex;
                     Log.d("HttpUrlFetcher", "Failed to load data for url", (Throwable)ex);
-                    a.f(ex);
+                    d$a.f((Exception)ex);
                     iftrue(Label_0163:)(!Log.isLoggable("HttpUrlFetcher", 2));
-                    Block_9: {
-                        break Block_9;
-                        Label_0163: {
-                            return;
-                        }
-                    }
                     final StringBuilder sb = new StringBuilder();
+                    break Label_0136;
+                    Label_0163: {
+                        return;
+                    }
                     sb.append("Finished http url fetcher fetch in ");
-                    sb.append(k9.f.a(elapsedRealtimeNanos));
+                    sb.append(l9.f.a(elapsedRealtimeNanos));
                     Log.v("HttpUrlFetcher", sb.toString());
                 }
             }
@@ -133,10 +125,10 @@ public final class j implements d<InputStream>
         catch (final IOException ex2) {}
     }
     
-    public final InputStream f(URL h, int contentLength, URL headerField, Map<String, String> inputStream) throws HttpException {
-        Label_0525: {
+    public final InputStream f(URL h, int contentLength, URL headerField, Map<String, String> i) throws HttpException {
+        Label_0526: {
             if (contentLength >= 5) {
-                break Label_0525;
+                break Label_0526;
             }
             while (true) {
                 if (headerField == null) {
@@ -147,8 +139,8 @@ public final class j implements d<InputStream>
                         final int n = 0;
                         try {
                             final HttpURLConnection h2 = (HttpURLConnection)FirebasePerfUrlConnection.instrument((Object)((URL)h).openConnection());
-                            for (final Map.Entry entry : ((Map<String, String>)inputStream).entrySet()) {
-                                h2.addRequestProperty((String)entry.getKey(), (String)entry.getValue());
+                            for (final Map.Entry<String, V> entry : ((Map<String, String>)i).entrySet()) {
+                                h2.addRequestProperty(entry.getKey(), (String)entry.getValue());
                             }
                             h2.setConnectTimeout(this.g);
                             h2.setReadTimeout(this.g);
@@ -169,8 +161,8 @@ public final class j implements d<InputStream>
                                     try {
                                         if (TextUtils.isEmpty((CharSequence)((URLConnection)h).getContentEncoding())) {
                                             contentLength = ((URLConnection)h).getContentLength();
-                                            inputStream = ((URLConnection)h).getInputStream();
-                                            this.i = (InputStream)new c(inputStream, (long)contentLength);
+                                            i = new c(((URLConnection)h).getInputStream(), (long)contentLength);
+                                            this.i = (InputStream)i;
                                         }
                                         else {
                                             if (Log.isLoggable("HttpUrlFetcher", 3)) {
@@ -184,7 +176,7 @@ public final class j implements d<InputStream>
                                         return this.i;
                                     }
                                     catch (final IOException ex) {
-                                        throw new HttpException("Failed to obtain InputStream", e((HttpURLConnection)h), ex);
+                                        throw new HttpException("Failed to obtain InputStream", e((HttpURLConnection)h), (Throwable)ex);
                                     }
                                 }
                                 int n3 = n;
@@ -197,10 +189,10 @@ public final class j implements d<InputStream>
                                         try {
                                             final URL url = new URL((URL)h, (String)headerField);
                                             this.b();
-                                            return this.f(url, contentLength + 1, (URL)h, (Map<String, String>)inputStream);
+                                            return this.f(url, contentLength + 1, (URL)h, (Map<String, String>)i);
                                         }
                                         catch (final MalformedURLException ex2) {
-                                            throw new HttpException(b.h("Bad redirect url: ", (String)headerField), e, ex2);
+                                            throw new HttpException(b.l("Bad redirect url: ", (String)headerField), e, (Throwable)ex2);
                                         }
                                     }
                                     throw new HttpException("Received empty or null redirect url", e);
@@ -212,15 +204,15 @@ public final class j implements d<InputStream>
                                     throw new HttpException(this.h.getResponseMessage(), e);
                                 }
                                 catch (final IOException ex3) {
-                                    throw new HttpException("Failed to get a response message", e, ex3);
+                                    throw new HttpException("Failed to get a response message", e, (Throwable)ex3);
                                 }
                             }
                             catch (final IOException ex4) {
-                                throw new HttpException("Failed to connect or obtain data", e(this.h), ex4);
+                                throw new HttpException("Failed to connect or obtain data", e(this.h), (Throwable)ex4);
                             }
                         }
                         catch (final IOException h) {
-                            throw new HttpException("URL.openConnection threw", 0, h);
+                            throw new HttpException("URL.openConnection threw", 0, (Throwable)h);
                         }
                         throw new HttpException("Too many (> 5) redirects!", -1);
                     }
@@ -232,9 +224,5 @@ public final class j implements d<InputStream>
                 break;
             }
         }
-    }
-    
-    public static final class a
-    {
     }
 }

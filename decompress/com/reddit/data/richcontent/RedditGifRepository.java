@@ -5,18 +5,19 @@
 package com.reddit.data.richcontent;
 
 import com.reddit.domain.richcontent.Gif;
-import kf2.o;
-import cj2.j;
-import ff2.c0;
+import q20.d;
+import ff2.o;
+import xi2.j;
+import af2.c0;
 import com.reddit.domain.richcontent.GifImage;
 import javax.inject.Inject;
-import sg2.e;
-import hg2.f;
-import uy0.b;
-import n20.a;
-import yd0.d;
+import ng2.e;
+import cg2.f;
+import wy0.b;
+import q20.a;
+import yd0.c;
 
-public final class RedditGifRepository implements d
+public final class RedditGifRepository implements c
 {
     public final a a;
     public final RemoteGifDataSource b;
@@ -31,7 +32,7 @@ public final class RedditGifRepository implements d
         this.a = a;
         this.b = b;
         this.c = c;
-        this.d = kotlin.a.b((rg2.a)new RedditGifRepository$giphyApiKey$2(this));
+        this.d = kotlin.a.b((mg2.a)new RedditGifRepository$giphyApiKey$2(this));
     }
     
     public static GifImage c(final GifImageDataModel gifImageDataModel) {
@@ -53,22 +54,22 @@ public final class RedditGifRepository implements d
     
     public final c0 a(final int n, final String s) {
         e.f((Object)s, "searchTerm");
-        c0<GifResponseDataModel> c0;
-        if (j.H0((CharSequence)s)) {
-            c0 = this.b.trending(this.d.getValue(), "pg", n);
+        c0 c0;
+        if (j.B0((CharSequence)s)) {
+            c0 = this.b.trending((String)this.d.getValue(), "pg", n);
         }
         else {
-            c0 = this.b.search(this.d.getValue(), "pg", s, n, "en");
+            c0 = this.b.search((String)this.d.getValue(), "pg", s, n, "en");
         }
-        final c0<Object> w = c0.w((kf2.o<? super GifResponseDataModel, ?>)new su.e((Object)this, 11));
+        final c0 w = c0.w((o)new su.e((Object)this, 12));
         e.e((Object)w, "resultSingle\n      .map { it.toDomainModel() }");
-        return nn0.a.V((c0)w, (n20.d)this.a);
+        return px1.a.K0((c0)w, (d)this.a);
     }
     
     public final c0<Gif> b(final String s) {
         e.f((Object)s, "gifId");
-        final c0<Object> w = this.b.gifDetail(s, this.d.getValue()).w((kf2.o<? super GifDetailResponseDataModel, ?>)new nw.b((Object)this, 6));
+        final c0 w = this.b.gifDetail(s, (String)this.d.getValue()).w((o)new l10.f((Object)this, 10));
         e.e((Object)w, "remote.gifDetail(gifId, \u2026ap { it.toDomainModel() }");
-        return nn0.a.V((c0)w, (n20.d)this.a);
+        return px1.a.K0((c0)w, (d)this.a);
     }
 }
